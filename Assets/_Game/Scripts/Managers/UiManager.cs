@@ -6,7 +6,13 @@ using UnityEngine.SceneManagement;
 public class UiManager : MonoBehaviour
 {
     #region .
-
+    
+    public float PlayerCash
+    {
+        get => PlayerPrefs.GetFloat("PlayerCash", 100);
+        set => PlayerPrefs.SetFloat("PlayerCash", value);
+    }
+    
     int LevelNumberPref
     {
         get => PlayerPrefs.GetInt("LevelNumberPref", 1);

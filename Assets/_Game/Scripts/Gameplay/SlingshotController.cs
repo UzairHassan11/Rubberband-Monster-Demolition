@@ -75,7 +75,7 @@ public class SlingshotController : MonoBehaviour
     {
         idle = false;
         movementTransform.DOLocalMoveX(0, .15f);
-        movementTransform.DOLocalMoveZ(_swerveMovement.minMaxZ.x, .15f);
+        movementTransform.DOLocalMoveZ(_swerveMovement.minMaxZ.y, .15f);
         rotationTransform.DOLocalRotate(Vector3.zero, .15f);
     }
 }
