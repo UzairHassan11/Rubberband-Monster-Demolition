@@ -12,7 +12,7 @@ public class Car : MonoBehaviour
 
     [SerializeField] private Transform cam;
 
-    [SerializeField] private GameObject trailsContainer;
+    [SerializeField] private GameObject trailsContainer, cam2;
 
     [SerializeField] private float followTrackSpeedMultiple;
     
@@ -49,7 +49,10 @@ public class Car : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Ramp"))
+        if (other.CompareTag("Ramp"))
+        {
+            cam2.SetActive(true);
             cam.parent = null;
+        }
     }
 }
