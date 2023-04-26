@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class SlingshotController : MonoBehaviour
 {
+    [SerializeField] private Car car;
+    
     [SerializeField] private Transform movementTransform, rotationTransform;
 
     [SerializeField] private Vector2 minMaxRotation;
@@ -15,24 +17,38 @@ public class SlingshotController : MonoBehaviour
 
     [SerializeField] private Vector2 carShootForce;
 
-    private bool idle = true;
+    private bool idle = true, aiming = false;
     
-
     private void Update()
     {
         if (idle)
+        {
+            if(Input.GetMouseButtonDown(0))
+            {
+                idle = false;
+                aiming = true;
+                car.TurnDirectionalArrow(true);
+            }
+        }
+        
+        if (aiming)
         {
             if (swerveX)
                 _swerveMovement.xSwerveMovement();
             if (swerveZ)
                 _swerveMovement.zSwerveMovement();
             MapRotation();
-
-            if (Input.GetMouseButtonUp(0))
+        }
+        
+        if (aiming)
+        {
+            if(Input.GetMouseButtonUp(0))
             {
-                idle = false;
+                idle = true;
+                aiming = false;
                 ResetSlingshot();
                 ShootCar();
+                car.TurnDirectionalArrow(false);
             }
         }
         // arrowMat.SetTextureOffset();
@@ -51,9 +67,8 @@ public class SlingshotController : MonoBehaviour
 
     public void ShootCar()
     {
-        rb.transform.parent = null;
-        rb.useGravity = true;
-        rb.AddForce(rb.transform.forward * Mathf.Lerp(carShootForce.x, carShootForce.y, _swerveMovement.GetPercentage()), ForceMode.Impulse);
+        float speed = Mathf.Lerp(carShootForce.x, carShootForce.y, _swerveMovement.GetPercentage());
+        car.ShootCar(speed);
     }
 
     void ResetSlingshot()

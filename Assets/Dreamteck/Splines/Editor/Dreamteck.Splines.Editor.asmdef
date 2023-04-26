@@ -1,0 +1,20 @@
+{
+    "name": "Dreamteck.Splines.Editor",
+    "references": [
+        "Dreamteck.Splines",
+        "Dreamteck.Utilities.Editor",
+        "Dreamteck.Utilities",
+        "UnityEngine.TestRunner",
+        "UnityEditor.TestRunner"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": []
+}
