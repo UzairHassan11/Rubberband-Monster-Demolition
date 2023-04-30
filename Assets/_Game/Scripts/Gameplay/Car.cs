@@ -1,9 +1,12 @@
+using System;
 using _Game.Scripts.Gameplay;
 using Dreamteck.Splines;
 using UnityEngine;
 
 public class Car : MonoBehaviour
 {
+    #region vars
+
     [SerializeField] private DirectionalArrow _directionalArrow;
 
     [SerializeField] SplineFollower _splineFollower;
@@ -15,7 +18,25 @@ public class Car : MonoBehaviour
     [SerializeField] private GameObject trailsContainer, cam2;
 
     [SerializeField] private float followTrackSpeedMultiple;
+
+    [SerializeField] private CarMidAirControl _midAirControl;
+
+    #endregion
+
+    #region unity
+
+    private void Update()
+    {
+        if (GameManager.instance.currentGameState == GameState.FinalMomentum)
+        {
+            _midAirControl.ControlAfterRamp();
+        }
+    }
+
+    #endregion
     
+    #region others
+
     public void TurnDirectionalArrow(bool state)
     {
         _directionalArrow.TurnIt(state);
@@ -40,7 +61,6 @@ public class Car : MonoBehaviour
     
     public void ShootCar(float speed)
     {
-        cam.parent = null;
         trailsContainer.SetActive(true);
         _rigidbody.transform.parent = null;
         _rigidbody.useGravity = true;
@@ -51,8 +71,13 @@ public class Car : MonoBehaviour
     {
         if (other.CompareTag("Ramp"))
         {
-            cam2.SetActive(true);
-            cam.parent = null;
+            GameManager.instance.ChangeGameState(GameState.FinalMomentum);
+        }
+        else if (other.CompareTag("Finish"))
+        {
+            GameManager.instance.ChangeGameState(GameState.Win);
         }
     }
+
+    #endregion
 }

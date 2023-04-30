@@ -1,8 +1,11 @@
 using DG.Tweening;
+using TMPro;
 using UnityEngine;
 
 public class SlingshotController : MonoBehaviour
 {
+    #region vars
+
     [SerializeField] private Car car;
     
     [SerializeField] private Transform movementTransform, rotationTransform;
@@ -18,9 +21,16 @@ public class SlingshotController : MonoBehaviour
     [SerializeField] private Vector2 carShootForce;
 
     private bool idle = true, aiming = false;
+
+    [SerializeField] private TextMeshPro powerPercentageText;
+
+    #endregion
     
     private void Update()
     {
+        if(GameManager.instance.currentGameState != GameState.Running)
+            return;
+        
         if (idle)
         {
             if(Input.GetMouseButtonDown(0))
@@ -28,6 +38,7 @@ public class SlingshotController : MonoBehaviour
                 idle = false;
                 aiming = true;
                 car.TurnDirectionalArrow(true);
+                TurnPercentageText(true);
             }
         }
         
@@ -38,6 +49,7 @@ public class SlingshotController : MonoBehaviour
             if (swerveZ)
                 _swerveMovement.zSwerveMovement();
             MapRotation();
+            AssignPercentageText();
         }
         
         if (aiming)
@@ -49,6 +61,7 @@ public class SlingshotController : MonoBehaviour
                 ResetSlingshot();
                 ShootCar();
                 car.TurnDirectionalArrow(false);
+                TurnPercentageText(false);
             }
         }
         // arrowMat.SetTextureOffset();
@@ -77,5 +90,16 @@ public class SlingshotController : MonoBehaviour
         movementTransform.DOLocalMoveX(0, .15f);
         movementTransform.DOLocalMoveZ(_swerveMovement.minMaxZ.y, .15f);
         rotationTransform.DOLocalRotate(Vector3.zero, .15f);
+    }
+
+    void AssignPercentageText()
+    {
+        powerPercentageText.text = Mathf.Lerp(1, 100,
+            Mathf.InverseLerp(_swerveMovement.minMaxZ.y, _swerveMovement.minMaxZ.x, movementTransform.localPosition.z)).ToString("F0") + "%";
+    }
+
+    void TurnPercentageText(bool state)
+    {
+        powerPercentageText.gameObject.SetActive(state);   
     }
 }

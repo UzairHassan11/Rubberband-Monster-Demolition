@@ -9,7 +9,7 @@ public class UiManager : MonoBehaviour
     
     public float PlayerCash
     {
-        get => PlayerPrefs.GetFloat("PlayerCash", 100);
+        get => PlayerPrefs.GetFloat("PlayerCash", 100000);
         set => PlayerPrefs.SetFloat("PlayerCash", value);
     }
     
@@ -36,7 +36,8 @@ public class UiManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        levelText.text = "Level " + LevelNumberAnalytics.ToString("00");
+        if(levelText)
+            levelText.text = "Level " + LevelNumberAnalytics.ToString("00");
         if (!test)
         {
             // GameAnalytics.NewProgressionEvent(GAProgressionStatus.Start, "LevelStart", LevelNumberAnalytics);

@@ -14,6 +14,13 @@ public class Splash : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        SceneManager.LoadScene(LevelNumberPref);
+        //Invoke("LoadScene", 2);
+        SceneManager.LoadScene(1);
+    }
+
+    void LoadScene()
+    {
+        SceneManager.LoadScene(1);
+
     }
 }

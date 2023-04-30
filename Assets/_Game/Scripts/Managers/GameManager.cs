@@ -44,6 +44,7 @@ public class GameManager : MonoBehaviour
                  requestedState == GameState.FinalMomentum)
         {
             currentGameState = requestedState;
+            //Time.timeScale = .75f;
             CameraManager.instance.SetAnimatorState(CamStates.finalMomentum);
         }
         else if (currentGameState == GameState.FinalMomentum &&
@@ -51,6 +52,7 @@ public class GameManager : MonoBehaviour
         {
             currentGameState = requestedState;
             uiManager.ShowWinPanel(2);
+            //Time.timeScale = 1;
             CameraManager.instance.SetAnimatorState(CamStates.endPoint);
         }
         else if (currentGameState == GameState.Running &&
@@ -58,6 +60,7 @@ public class GameManager : MonoBehaviour
         {
             currentGameState = requestedState;
             uiManager.ShowFailPanel();
+            Time.timeScale = 1;
             CameraManager.instance.SetAnimatorState(CamStates.endPoint);
         }
     }
