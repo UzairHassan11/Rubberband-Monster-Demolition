@@ -102,5 +102,4 @@ public class SlingshotController : MonoBehaviour
     {
         powerPercentageText.gameObject.SetActive(state);   
     }
-    
 }

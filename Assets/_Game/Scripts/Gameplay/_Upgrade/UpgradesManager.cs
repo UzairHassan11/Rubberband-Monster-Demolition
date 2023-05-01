@@ -233,8 +233,9 @@ public class Upgrade
     
     public bool HasNotReachedMaxUpgrade => NextUpgrade < upgradePrices.Length;
     public int GetMaxCount => upgradePrices.Length;
+    public float GetMaxActualValue => actualUpgradeValue[^1];
 
-    // price is always sows for next unlockable item
+    // price is always sows for next unlock-able item
     public float GetNextPrice => upgradePrices[NextUpgrade];
     public float GetPriceWithIndex(int i) => upgradePrices[i];
 
