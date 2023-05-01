@@ -2,11 +2,14 @@ using System;
 using _Game.Scripts.Gameplay;
 using Dreamteck.Splines;
 using UnityEngine;
+using VoxelDestruction;
 
 public class Car : MonoBehaviour
 {
     #region vars
 
+    [SerializeField] private VoxelCollider _voxelCollider;
+    
     [SerializeField] private DirectionalArrow _directionalArrow;
 
     [SerializeField] SplineFollower _splineFollower;
@@ -24,6 +27,11 @@ public class Car : MonoBehaviour
     #endregion
 
     #region unity
+
+    private void Start()
+    {
+        AssignCollisionScale();
+    }
 
     private void Update()
     {
@@ -71,6 +79,7 @@ public class Car : MonoBehaviour
     {
         if (other.CompareTag("Ramp"))
         {
+            _rigidbody.constraints = RigidbodyConstraints.FreezeRotationZ;
             GameManager.instance.ChangeGameState(GameState.FinalMomentum);
         }
         else if (other.CompareTag("Finish"))
@@ -80,4 +89,9 @@ public class Car : MonoBehaviour
     }
 
     #endregion
+
+    public void AssignCollisionScale()
+    {
+        _voxelCollider.collisionScale = UpgradesManager.instance.upgrades[1].GetCurrentActualValue;
+    }
 }

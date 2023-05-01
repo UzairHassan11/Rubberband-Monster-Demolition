@@ -15,6 +15,7 @@ public class SwereMovement : MonoBehaviour
         _transform = transform;
         moveFactorX = 0;
         carStartPos = _transform.position;
+        AssignCurrentMaxZ();
     }
     
     public void xSwerveMovement()
@@ -80,5 +81,10 @@ public class SwereMovement : MonoBehaviour
     public float GetPercentage()
     {
         return Mathf.InverseLerp(minMaxZ.y, minMaxZ.x, _transform.localPosition.z);
+    }
+
+    public void AssignCurrentMaxZ()
+    {
+        minMaxZ.y = UpgradesManager.instance.upgrades[0].GetCurrentActualValue;
     }
 }
