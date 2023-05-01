@@ -1,5 +1,6 @@
 using Dreamteck.Splines;
 using UnityEngine;
+using VoxelDestruction;
 
 public class SplineTrigger : MonoBehaviour
 {
@@ -12,4 +13,11 @@ public class SplineTrigger : MonoBehaviour
             other.GetComponent<Car>().FollowSpline(_splineComputer);
         }
     }
+
+    // private VoxelObject _voxelObject;
+    //
+    // void func()
+    // {
+    //     _voxelObject.debug
+    // }
 }
