@@ -1,4 +1,6 @@
 using System.Collections;
+using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -32,6 +34,8 @@ public class UiManager : MonoBehaviour
     [SerializeField] private bool test;
     
     [SerializeField] private GameObject startPanel, gameplayPanel, winPanel, failPanel;
+
+    [SerializeField] private Transform cashObject;
     
     // Start is called before the first frame update
     void Start()
@@ -42,8 +46,15 @@ public class UiManager : MonoBehaviour
         {
             // GameAnalytics.NewProgressionEvent(GAProgressionStatus.Start, "LevelStart", LevelNumberAnalytics);
         }
+
+        waitPerFragmentRewardDelay = new WaitForSeconds(perFragmentRewardDelay);
     }
 
+    public void ShowStartPanel()
+    {
+        gameplayPanel.SetActive(false);
+        startPanel.SetActive(true);
+    }
 
     public void OnClickStartPanel()
     {
@@ -109,4 +120,64 @@ public class UiManager : MonoBehaviour
     {
         SceneManager.LoadScene(LevelNumberPref);
     }
+    
+    #region plus-anim
+
+
+    [SerializeField] private Text plusCash;
+    public void ShowPlusAnim(Transform t, float cash)
+    {
+        // plusCash.gameObject.SetActive(false);
+        Vector3 pos = Camera.main.WorldToScreenPoint(t.position);
+        pos.z = 0;
+        if (plusAnims.Count == 0)
+        {
+            Text newText = Instantiate(plusCash, plusCash.transform.parent);
+            plusAnims.Add(newText);
+            newText.gameObject.SetActive(true);
+        }
+
+        Text currentText = plusAnims[0];
+        plusAnims.RemoveAt(0);
+        currentText.GetComponent<RectTransform>().position = pos;
+        currentText.text = "+"+ cash +"$";
+        // Color c = currentText.color;
+        // c.a = 1;
+        // currentText.color = c;
+        currentText.transform.localScale = Vector3.one;
+        currentText.transform.DOScale(1, .3f);
+        currentText.DOFade(1, .3f);
+        
+        currentText.transform.DOMoveY(
+            // new Vector3( Screen.currentResolution.width/2, Screen.currentResolution.height/2, 0)
+            // cashObject.position
+            Random.Range(200, 300)
+            , 1f).SetRelative(true).OnComplete(()=>
+            plusAnims.Add(currentText)
+        );
+        currentText.transform.DOScale(0, .1f).SetDelay(1.2f);
+        currentText.DOFade(0, .1f).SetDelay(1.2f);
+        // plusCash.gameObject.SetActive(true);
+    }
+
+    private List<Text> plusAnims = new List<Text>();
+
+    #endregion
+
+    #region per-fragment-reward
+
+    [SerializeField] private float rewardPerBaseFragment, perFragmentRewardDelay;
+    private WaitForSeconds waitPerFragmentRewardDelay;
+    public void GiveReward(Transform t)
+    {
+        StartCoroutine(giveReward(t));
+    }
+
+    IEnumerator giveReward(Transform t)
+    {
+        yield return new WaitForSeconds(Random.Range(0, 1));
+        ShowPlusAnim(t, rewardPerBaseFragment * UpgradesManager.instance.upgrades[2].GetCurrentActualValue);
+    }
+    
+    #endregion
 }

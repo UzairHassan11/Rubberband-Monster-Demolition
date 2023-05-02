@@ -465,7 +465,9 @@ namespace DG.Tweening
         /// Also stores the Slider as the tween's target so it can be used for filtered operations</summary>
         /// <param name="endValue">The end value to reach</param><param name="duration">The duration of the tween</param>
         /// <param name="snapping">If TRUE the tween will smoothly snap all values to integers</param>
-        public static TweenerCore<float, float, FloatOptions> DOValue(this Slider target, float endValue, float duration, bool snapping = false)
+        public static TweenerCore<float, float, FloatOptions> 
+            
+            DOValue(this Slider target, float endValue, float duration, bool snapping = false)
         {
             TweenerCore<float, float, FloatOptions> t = DOTween.To(() => target.value, x => target.value = x, endValue, duration);
             t.SetOptions(snapping).SetTarget(target);

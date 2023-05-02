@@ -1,4 +1,3 @@
-using System;
 using _Game.Scripts.Gameplay;
 using Dreamteck.Splines;
 using UnityEngine;
@@ -24,12 +23,23 @@ public class Car : MonoBehaviour
 
     [SerializeField] private CarMidAirControl _midAirControl;
 
+    private Vector3 startPosition;
+
+    private Transform parent;
+    
+    Transform _transform;
+
+    [SerializeField] private GameObject []carMeshes;
+
     #endregion
 
     #region unity
 
     private void Start()
     {
+        _transform = transform;
+        startPosition = _transform.position;
+        parent = _transform.parent;
         AssignCollisionScale();
     }
 
@@ -38,6 +48,22 @@ public class Car : MonoBehaviour
         if (GameManager.instance.currentGameState == GameState.FinalMomentum)
         {
             _midAirControl.ControlAfterRamp();
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Ramp"))
+        {
+            _rigidbody.constraints = RigidbodyConstraints.FreezeRotationZ;
+            GameManager.instance.ChangeGameState(GameState.FinalMomentum);
+        }
+        else if (other.CompareTag("Finish"))
+        {
+            CameraManager.instance.SetAnimatorState(CamStates.endPoint);
+            ParticlesController.instance.SpawnParticle(ParticlesNames.Explosion, _transform);
+            GameManager.instance.ChangeGameState(GameState.Idle, 3);
+            CameraManager.instance.TurnSpeedFx(false);
         }
     }
 
@@ -75,23 +101,28 @@ public class Car : MonoBehaviour
         _rigidbody.AddForce(_rigidbody.transform.forward * speed, ForceMode.Impulse);
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Ramp"))
-        {
-            _rigidbody.constraints = RigidbodyConstraints.FreezeRotationZ;
-            GameManager.instance.ChangeGameState(GameState.FinalMomentum);
-        }
-        else if (other.CompareTag("Finish"))
-        {
-            GameManager.instance.ChangeGameState(GameState.Win);
-        }
-    }
-
     #endregion
 
     public void AssignCollisionScale()
     {
         _voxelCollider.collisionScale = UpgradesManager.instance.upgrades[1].GetCurrentActualValue;
+        AssignCarMesh(UpgradesManager.instance.upgrades[1].NextUpgrade);
+    }
+
+    public void ResetMe()
+    {
+        _rigidbody.constraints = RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezeRotationX;
+        _rigidbody.Sleep();
+        _transform.rotation = Quaternion.identity;
+        _transform.position = startPosition;
+        _transform.parent = parent;
+    }
+
+    void AssignCarMesh(int i)
+    {
+        for (int j = 0; j < carMeshes.Length; j++)
+        {
+            carMeshes[j].SetActive(i == j);
+        }
     }
 }

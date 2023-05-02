@@ -16,6 +16,8 @@ public class CameraManager : MonoBehaviour
     
     [SerializeField] Animator animator;
 
+    [SerializeField] private GameObject speedFx;
+
     public void SetAnimatorState(CamStates camState)
     {
         animator.CrossFade(camState.ToString(), .1f);
@@ -29,6 +31,11 @@ public class CameraManager : MonoBehaviour
     public void SetAnimatorState(string state)
     {
         animator.CrossFade(state, .1f);
+    }
+
+    public void TurnSpeedFx(bool state)
+    {
+        speedFx.SetActive(state);
     }
 }
 [System.Serializable]

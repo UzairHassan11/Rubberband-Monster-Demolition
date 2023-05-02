@@ -50,6 +50,7 @@ public class SlingshotController : MonoBehaviour
                 _swerveMovement.zSwerveMovement();
             MapRotation();
             AssignPercentageText();
+            ContinuousHaptic.instance.PlayContinuousHaptic();
         }
         
         if (aiming)
@@ -81,6 +82,7 @@ public class SlingshotController : MonoBehaviour
     public void ShootCar()
     {
         float speed = Mathf.Lerp(carShootForce.x, carShootForce.y, _swerveMovement.GetPercentage());
+        CameraManager.instance.TurnSpeedFx(true);
         car.ShootCar(speed);
     }
 
@@ -96,10 +98,17 @@ public class SlingshotController : MonoBehaviour
     {
         powerPercentageText.text = Mathf.Lerp(1, 100,
             Mathf.InverseLerp(_swerveMovement.minMaxZ.y, _swerveMovement.minMaxZ.x, movementTransform.localPosition.z)).ToString("F0") + "%";
+        ContinuousHaptic.instance.ChangeLimits(_swerveMovement.minMaxZ);
     }
 
     void TurnPercentageText(bool state)
     {
         powerPercentageText.gameObject.SetActive(state);   
+    }
+
+    public void ResetCar()
+    {
+        idle = true;
+        car.ResetMe();
     }
 }

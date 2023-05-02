@@ -225,7 +225,6 @@ namespace VoxelDestruction
                         modelChild.GetComponent<MeshRenderer>().shadowCastingMode = ShadowCastingMode.TwoSided;
 
                         transform.localScale = new Vector3(objectScale, objectScale, objectScale);
-
                         BuildModel(file.Models[i], i);
                     }
                     else
@@ -745,6 +744,7 @@ namespace VoxelDestruction
                 
                 if (particle && removalCount > 0)
                 {
+                    
                     Quaternion rot = Quaternion.FromToRotation(Vector3.up, normal);
                     GameObject par = Instantiate(particle, point, rot);
                     ParticleSystem.MainModule mod = par.GetComponentInChildren<ParticleSystem>().main;
@@ -884,6 +884,8 @@ namespace VoxelDestruction
                             if ((fragmentsT[fragments[i]].position - point).sqrMagnitude >  Mathf.Pow(overrideMax == -1f ? destructionGS.maxVoxelDistance : overrideMax, 2))
                                 continue;
                         
+                            GameManager.instance.uiManager.GiveReward(fragmentsT[fragments[i]]);
+                            
                             int[] toRemove = fragmentsT[fragments[i]].GetComponent<VoxelFragment>().fragment;
 
                             for (int j = 0; j < toRemove.Length; j++)

@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -8,6 +9,8 @@ public class GameManager : MonoBehaviour
 
     public UiManager uiManager;
 
+    [SerializeField] private SlingshotController _slingshotController;
+    
     #endregion
 
     #region singleton
@@ -48,6 +51,14 @@ public class GameManager : MonoBehaviour
             CameraManager.instance.SetAnimatorState(CamStates.finalMomentum);
         }
         else if (currentGameState == GameState.FinalMomentum &&
+                 requestedState == GameState.Idle)
+        {
+            currentGameState = requestedState;
+            CameraManager.instance.SetAnimatorState(CamStates.start);
+            _slingshotController.ResetCar();
+            uiManager.ShowStartPanel();
+        }
+        else if (currentGameState == GameState.FinalMomentum &&
                  requestedState == GameState.Win)
         {
             currentGameState = requestedState;
@@ -65,6 +76,16 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void ChangeGameState(GameState requestedState, float delay)
+    {
+        StartCoroutine(ChangeGameStateWithDelay(requestedState, delay));
+    }
+
+    IEnumerator ChangeGameStateWithDelay(GameState requestedState, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        ChangeGameState(requestedState);
+    }
     public void ChangeGameState(int index)
     {
         ChangeGameState((GameState) index);
