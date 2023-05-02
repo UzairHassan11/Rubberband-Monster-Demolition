@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using DG.Tweening;
 using Unity.Collections;
 using Unity.Mathematics;
 using Unity.VisualScripting;
@@ -885,6 +886,8 @@ namespace VoxelDestruction
                                 continue;
                         
                             GameManager.instance.uiManager.GiveReward(fragmentsT[fragments[i]]);
+                            // fragmentsT[fragments[i]].DOScale(0, 2);
+                                // .OnComplete(() => fragmentsT[fragments[i]].gameObject.SetActive(false));
                             
                             int[] toRemove = fragmentsT[fragments[i]].GetComponent<VoxelFragment>().fragment;
 

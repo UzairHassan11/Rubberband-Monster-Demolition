@@ -3,7 +3,9 @@
     "references": [
         "Dreamteck.Splines",
         "Dreamteck.Utilities.Editor",
-        "Dreamteck.Utilities"
+        "Dreamteck.Utilities",
+        "UnityEngine.TestRunner",
+        "UnityEditor.TestRunner"
     ],
     "optionalUnityReferences": [],
     "includePlatforms": [
