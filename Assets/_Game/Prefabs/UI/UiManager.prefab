@@ -2345,6 +2345,7 @@ MonoBehaviour:
   gameplayPanel: {fileID: 4921336858915523253}
   winPanel: {fileID: 3440279328314600533}
   failPanel: {fileID: 6258945295016927595}
+  cashObject: {fileID: 0}
   plusCash: {fileID: 4521621898688142806}
   rewardPerBaseFragment: 5
   perFragmentRewardDelay: 0.5
@@ -2805,7 +2806,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.48235294}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.29803923}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

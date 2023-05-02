@@ -38,7 +38,7 @@ public class ContinuousHaptic : MonoBehaviour
         if (timer < 0)
         {
             timer = currentDelay;
-            MMVibrationManager.Haptic(HapticTypes.RigidImpact);
+            MMVibrationManager.Haptic(HapticTypes.LightImpact);
         }
     }
 
