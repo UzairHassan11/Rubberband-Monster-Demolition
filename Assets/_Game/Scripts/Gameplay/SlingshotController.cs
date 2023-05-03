@@ -83,7 +83,7 @@ public class SlingshotController : MonoBehaviour
     public void ShootCar()
     {
         float speed = Mathf.Lerp(carShootForce.x, carShootForce.y, _swerveMovement.GetPercentage());
-        CameraManager.instance.TurnSpeedFx(true);
+        //CameraManager.instance.TurnSpeedFx(true);
         car.ShootCar(speed);
     }
 

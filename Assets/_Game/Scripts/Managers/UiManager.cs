@@ -175,7 +175,8 @@ public class UiManager : MonoBehaviour
 
     IEnumerator giveReward(Transform t)
     {
-        yield return new WaitForSeconds(Random.Range(0, 1));
+        // yield return new WaitForSeconds(Random.Range(0, 1));
+        yield return waitPerFragmentRewardDelay;
         ShowPlusAnim(t, rewardPerBaseFragment * UpgradesManager.instance.upgrades[2].GetCurrentActualValue);
     }
     

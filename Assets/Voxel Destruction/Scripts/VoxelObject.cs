@@ -885,7 +885,7 @@ namespace VoxelDestruction
                             if ((fragmentsT[fragments[i]].position - point).sqrMagnitude >  Mathf.Pow(overrideMax == -1f ? destructionGS.maxVoxelDistance : overrideMax, 2))
                                 continue;
                         
-                            GameManager.instance.uiManager.GiveReward(fragmentsT[fragments[i]]);
+                            // GameManager.instance.uiManager.GiveReward(fragmentsT[fragments[i]]);
                             // fragmentsT[fragments[i]].DOScale(0, 2);
                                 // .OnComplete(() => fragmentsT[fragments[i]].gameObject.SetActive(false));
                             

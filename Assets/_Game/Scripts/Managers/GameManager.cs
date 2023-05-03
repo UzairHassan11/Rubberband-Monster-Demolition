@@ -50,6 +50,14 @@ public class GameManager : MonoBehaviour
             //Time.timeScale = .75f;
             CameraManager.instance.SetAnimatorState(CamStates.finalMomentum);
         }
+        else if (currentGameState == GameState.Running &&
+                 requestedState == GameState.Idle)
+        {
+            currentGameState = requestedState;
+            CameraManager.instance.SetAnimatorState(CamStates.start);
+            _slingshotController.ResetCar();
+            uiManager.ShowStartPanel();
+        }
         else if (currentGameState == GameState.FinalMomentum &&
                  requestedState == GameState.Idle)
         {

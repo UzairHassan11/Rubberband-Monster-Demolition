@@ -54,15 +54,17 @@ public class Car : MonoBehaviour
             _midAirControl.ControlAfterRamp();
         }
 
-        if (isShooted)
-        {
-            if (IfCarStopped())
-            {
-                // do reset work
-                isShooted = false;
-                print("car stopped");
-            }
-        }
+        // if (isShooted)
+        // {
+        //     if (IfCarStopped())
+        //     {
+        //         print(_rigidbody.velocity.magnitude);
+        //         // do reset work
+        //         isShooted = false;
+        //         print("car stopped");
+        //         CarStopped();
+        //     }
+        // }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -102,13 +104,20 @@ public class Car : MonoBehaviour
         MMVibrationManager.Haptic(HapticTypes.HeavyImpact);
         ParticlesController.instance.SpawnParticle(ParticlesNames.Explosion, _transform);
         GameManager.instance.ChangeGameState(GameState.Idle, 3);
-        CameraManager.instance.TurnSpeedFx(false);
+        // CameraManager.instance.TurnSpeedFx(false);
         SoundManager.Instance.PlaySound(ClipName.Break);
+    }
+
+    void CarStopped()
+    {
+        isShooted = false;
+        GameManager.instance.ChangeGameState(GameState.Idle, .5f);
+        // CameraManager.instance.TurnSpeedFx(false);
     }
     
     bool IfCarStopped()
     {
-        return _rigidbody.velocity.magnitude < 1;
+        return _rigidbody.velocity.magnitude < 0.1f;
     }
     
     public void TurnDirectionalArrow(bool state)
