@@ -384,8 +384,6 @@ struct SlotU5BU5D_tC4D7CD3E804DC835CCF2F990797BC1D9AE4330D7;
 struct TMP_TextProcessingStack_1U5BU5D_t08293E0BB072311BB96170F351D1083BCA97B9B2;
 // UnityEngine.AudioClip[]
 struct AudioClipU5BU5D_t916722468F7EDCFA833318C35CD7D41097D75D31;
-// System.Boolean[]
-struct BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4;
 // System.Byte[]
 struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031;
 // System.Char[]
@@ -944,8 +942,6 @@ struct Spline_t12C5A067E46309006E34F9A5B0AD58FCD51BEAD1;
 struct SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28;
 // Dreamteck.Splines.SplineFollower
 struct SplineFollower_t4DEE4AB05F4B1C7E6F03A71F23E304526DB4B88F;
-// Dreamteck.Splines.SplineSample
-struct SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143;
 // SplineTrigger
 struct SplineTrigger_t365232BCF32C4EA6447E42E6267FBD80B4494BE8;
 // Dreamteck.Splines.SplineUser
@@ -5131,6 +5127,23 @@ struct SizeChunk_t9B2C4C66F224F50EE8FC8AC1EAFB248D9F58854A  : public Chunk_t0E0C
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___U3CSizeU3Ek__BackingField_4;
 };
 
+// Dreamteck.Splines.SplineSample
+struct SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 
+{
+	// UnityEngine.Vector3 Dreamteck.Splines.SplineSample::position
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___position_0;
+	// UnityEngine.Vector3 Dreamteck.Splines.SplineSample::up
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___up_1;
+	// UnityEngine.Vector3 Dreamteck.Splines.SplineSample::forward
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___forward_2;
+	// UnityEngine.Color Dreamteck.Splines.SplineSample::color
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___color_3;
+	// System.Single Dreamteck.Splines.SplineSample::size
+	float ___size_4;
+	// System.Double Dreamteck.Splines.SplineSample::percent
+	double ___percent_5;
+};
+
 // System.IO.StreamReader
 struct StreamReader_t81027449065C1B0C339DB46241D8001A6F61130B  : public TextReader_tB8D43017CB6BE1633E5A86D64E7757366507C1F7
 {
@@ -6926,66 +6939,50 @@ struct SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28  : public MonoBe
 {
 	// System.Boolean Dreamteck.Splines.SplineComputer::multithreaded
 	bool ___multithreaded_4;
-	// System.Boolean Dreamteck.Splines.SplineComputer::rebuildOnAwake
-	bool ___rebuildOnAwake_5;
 	// Dreamteck.Splines.SplineComputer/UpdateMode Dreamteck.Splines.SplineComputer::updateMode
-	int32_t ___updateMode_6;
+	int32_t ___updateMode_5;
 	// Dreamteck.Splines.TriggerGroup[] Dreamteck.Splines.SplineComputer::triggerGroups
-	TriggerGroupU5BU5D_tDD9644D34D55E3781E16C0A84A45D08B1AC2FBFB* ___triggerGroups_7;
-	// Dreamteck.Splines.Spline Dreamteck.Splines.SplineComputer::spline
-	Spline_t12C5A067E46309006E34F9A5B0AD58FCD51BEAD1* ___spline_8;
-	// Dreamteck.Splines.SplineSample[] Dreamteck.Splines.SplineComputer::_rawSamples
-	SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* ____rawSamples_9;
-	// Dreamteck.Splines.SplineSample[] Dreamteck.Splines.SplineComputer::_transformedSamples
-	SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* ____transformedSamples_10;
-	// Dreamteck.Splines.SampleCollection Dreamteck.Splines.SplineComputer::sampleCollection
-	SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* ___sampleCollection_11;
-	// System.Double[] Dreamteck.Splines.SplineComputer::originalSamplePercents
-	DoubleU5BU5D_tCC308475BD3B8229DB2582938669EF2F9ECC1FEE* ___originalSamplePercents_12;
-	// System.Boolean[] Dreamteck.Splines.SplineComputer::sampleFlter
-	BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* ___sampleFlter_13;
-	// System.Int32 Dreamteck.Splines.SplineComputer::_sampleCount
-	int32_t ____sampleCount_14;
+	TriggerGroupU5BU5D_tDD9644D34D55E3781E16C0A84A45D08B1AC2FBFB* ___triggerGroups_6;
+	// Dreamteck.Splines.Spline Dreamteck.Splines.SplineComputer::_spline
+	Spline_t12C5A067E46309006E34F9A5B0AD58FCD51BEAD1* ____spline_7;
+	// Dreamteck.Splines.SampleCollection Dreamteck.Splines.SplineComputer::_sampleCollection
+	SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* ____sampleCollection_8;
+	// System.Double[] Dreamteck.Splines.SplineComputer::_originalSamplePercents
+	DoubleU5BU5D_tCC308475BD3B8229DB2582938669EF2F9ECC1FEE* ____originalSamplePercents_9;
 	// System.Boolean Dreamteck.Splines.SplineComputer::_is2D
-	bool ____is2D_15;
+	bool ____is2D_10;
 	// System.Boolean Dreamteck.Splines.SplineComputer::hasSamples
-	bool ___hasSamples_16;
-	// System.Boolean[] Dreamteck.Splines.SplineComputer::pointsDirty
-	BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* ___pointsDirty_17;
+	bool ___hasSamples_11;
 	// System.Single Dreamteck.Splines.SplineComputer::_optimizeAngleThreshold
-	float ____optimizeAngleThreshold_18;
+	float ____optimizeAngleThreshold_12;
 	// Dreamteck.Splines.SplineComputer/Space Dreamteck.Splines.SplineComputer::_space
-	int32_t ____space_19;
+	int32_t ____space_13;
 	// Dreamteck.Splines.SplineComputer/SampleMode Dreamteck.Splines.SplineComputer::_sampleMode
-	int32_t ____sampleMode_20;
+	int32_t ____sampleMode_14;
 	// Dreamteck.Splines.SplineUser[] Dreamteck.Splines.SplineComputer::_subscribers
-	SplineUserU5BU5D_t2DEE72099A791439AED64381AE7F97F515AD9E2B* ____subscribers_21;
-	// Dreamteck.Splines.SplineComputer/NodeLink[] Dreamteck.Splines.SplineComputer::nodes
-	NodeLinkU5BU5D_tE659E0179FF2ADA844DE0A3E300403C4E7641112* ___nodes_22;
+	SplineUserU5BU5D_t2DEE72099A791439AED64381AE7F97F515AD9E2B* ____subscribers_15;
+	// Dreamteck.Splines.SplineSample[] Dreamteck.Splines.SplineComputer::_rawSamples
+	SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* ____rawSamples_16;
+	// UnityEngine.Matrix4x4 Dreamteck.Splines.SplineComputer::_localToWorldMatrix
+	Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ____localToWorldMatrix_17;
+	// UnityEngine.Matrix4x4 Dreamteck.Splines.SplineComputer::_worldToLocalMatrix
+	Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ____worldToLocalMatrix_18;
+	// UnityEngine.Matrix4x4 Dreamteck.Splines.SplineComputer::_localToWorldRotationMatrix
+	Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ____localToWorldRotationMatrix_19;
+	// Dreamteck.Splines.SplineComputer/NodeLink[] Dreamteck.Splines.SplineComputer::_nodes
+	NodeLinkU5BU5D_tE659E0179FF2ADA844DE0A3E300403C4E7641112* ____nodes_20;
 	// System.Boolean Dreamteck.Splines.SplineComputer::_rebuildPending
-	bool ____rebuildPending_23;
+	bool ____rebuildPending_21;
 	// System.Boolean Dreamteck.Splines.SplineComputer::_trsCached
-	bool ____trsCached_24;
+	bool ____trsCached_22;
 	// UnityEngine.Transform Dreamteck.Splines.SplineComputer::_trs
-	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ____trs_25;
-	// UnityEngine.Matrix4x4 Dreamteck.Splines.SplineComputer::_transformMatrix
-	Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ____transformMatrix_26;
-	// UnityEngine.Matrix4x4 Dreamteck.Splines.SplineComputer::_inverseTransformMatrix
-	Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ____inverseTransformMatrix_27;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ____trs_23;
 	// System.Boolean Dreamteck.Splines.SplineComputer::_queueResample
-	bool ____queueResample_28;
+	bool ____queueResample_24;
 	// System.Boolean Dreamteck.Splines.SplineComputer::_queueRebuild
-	bool ____queueRebuild_29;
-	// UnityEngine.Vector3 Dreamteck.Splines.SplineComputer::_lastPosition
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ____lastPosition_30;
-	// UnityEngine.Vector3 Dreamteck.Splines.SplineComputer::_lastScale
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ____lastScale_31;
-	// System.Boolean Dreamteck.Splines.SplineComputer::_uniformScale
-	bool ____uniformScale_32;
-	// UnityEngine.Quaternion Dreamteck.Splines.SplineComputer::_lastRotation
-	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ____lastRotation_33;
+	bool ____queueRebuild_25;
 	// Dreamteck.Splines.EmptySplineHandler Dreamteck.Splines.SplineComputer::onRebuild
-	EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* ___onRebuild_34;
+	EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* ___onRebuild_26;
 };
 
 // SplineTrigger
@@ -7012,22 +7009,22 @@ struct SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE  : public MonoBehavi
 	ColorModifier_tD41275A2C32D892D074F3959B5B202AA46C8A2B5* ____colorModifier_9;
 	// Dreamteck.Splines.SizeModifier Dreamteck.Splines.SplineUser::_sizeModifier
 	SizeModifier_t3DD6048AE4DEB93810D8325EDB2065AA05671BEE* ____sizeModifier_10;
-	// Dreamteck.Splines.SampleCollection Dreamteck.Splines.SplineUser::sampleCollection
-	SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* ___sampleCollection_11;
-	// Dreamteck.Splines.SplineSample Dreamteck.Splines.SplineUser::clipFromSample
-	SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ___clipFromSample_12;
-	// Dreamteck.Splines.SplineSample Dreamteck.Splines.SplineUser::clipToSample
-	SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ___clipToSample_13;
+	// Dreamteck.Splines.SplineSample Dreamteck.Splines.SplineUser::_clipFromSample
+	SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 ____clipFromSample_11;
+	// Dreamteck.Splines.SplineSample Dreamteck.Splines.SplineUser::_clipToSample
+	SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 ____clipToSample_12;
 	// System.Boolean Dreamteck.Splines.SplineUser::_loopSamples
-	bool ____loopSamples_14;
+	bool ____loopSamples_13;
 	// System.Double Dreamteck.Splines.SplineUser::_clipFrom
-	double ____clipFrom_15;
+	double ____clipFrom_14;
 	// System.Double Dreamteck.Splines.SplineUser::_clipTo
-	double ____clipTo_16;
+	double ____clipTo_15;
 	// System.Single Dreamteck.Splines.SplineUser::animClipFrom
-	float ___animClipFrom_17;
+	float ___animClipFrom_16;
 	// System.Single Dreamteck.Splines.SplineUser::animClipTo
-	float ___animClipTo_18;
+	float ___animClipTo_17;
+	// Dreamteck.Splines.SampleCollection Dreamteck.Splines.SplineUser::_sampleCollection
+	SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* ____sampleCollection_18;
 	// System.Boolean Dreamteck.Splines.SplineUser::rebuild
 	bool ___rebuild_19;
 	// System.Boolean Dreamteck.Splines.SplineUser::getSamples
@@ -7038,22 +7035,22 @@ struct SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE  : public MonoBehavi
 	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ____trs_22;
 	// System.Boolean Dreamteck.Splines.SplineUser::_hasTransform
 	bool ____hasTransform_23;
+	// Dreamteck.Splines.SplineSample Dreamteck.Splines.SplineUser::_workSample
+	SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 ____workSample_24;
 	// System.Int32 Dreamteck.Splines.SplineUser::_sampleCount
-	int32_t ____sampleCount_24;
-	// System.Int32 Dreamteck.Splines.SplineUser::startSampleIndex
-	int32_t ___startSampleIndex_25;
+	int32_t ____sampleCount_25;
+	// System.Int32 Dreamteck.Splines.SplineUser::_startSampleIndex
+	int32_t ____startSampleIndex_26;
 	// Dreamteck.Splines.SplineSample Dreamteck.Splines.SplineUser::evalResult
-	SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ___evalResult_26;
+	SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 ___evalResult_27;
 	// System.Boolean modreq(System.Runtime.CompilerServices.IsVolatile) Dreamteck.Splines.SplineUser::multithreaded
-	bool ___multithreaded_27;
+	bool ___multithreaded_28;
 	// System.Boolean Dreamteck.Splines.SplineUser::buildOnAwake
-	bool ___buildOnAwake_28;
+	bool ___buildOnAwake_29;
 	// System.Boolean Dreamteck.Splines.SplineUser::buildOnEnable
-	bool ___buildOnEnable_29;
+	bool ___buildOnEnable_30;
 	// Dreamteck.Splines.EmptySplineHandler Dreamteck.Splines.SplineUser::onPostBuild
-	EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* ___onPostBuild_30;
-	// System.Boolean Dreamteck.Splines.SplineUser::_isUpdated
-	bool ____isUpdated_31;
+	EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* ___onPostBuild_31;
 };
 
 // SwereMovement
@@ -7530,40 +7527,40 @@ struct Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712_StaticFields
 // Dreamteck.Splines.SplineTracer
 struct SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A  : public SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE
 {
-	// Dreamteck.Splines.SplineTrigger[] Dreamteck.Splines.SplineTracer::triggerInvokeQueue
-	SplineTriggerU5BU5D_t8E0726E768BEDD7B9DFF5C85AA98F808CEB4DB75* ___triggerInvokeQueue_32;
-	// System.Collections.Generic.List`1<Dreamteck.Splines.SplineTracer/NodeConnection> Dreamteck.Splines.SplineTracer::nodeConnectionQueue
-	List_1_tC286A128F0893DC219DD3E0A289632F1C4EF5791* ___nodeConnectionQueue_33;
-	// System.Int32 Dreamteck.Splines.SplineTracer::addTriggerIndex
-	int32_t ___addTriggerIndex_34;
 	// System.Boolean Dreamteck.Splines.SplineTracer::applyDirectionRotation
-	bool ___applyDirectionRotation_35;
+	bool ___applyDirectionRotation_32;
 	// System.Boolean Dreamteck.Splines.SplineTracer::useTriggers
-	bool ___useTriggers_36;
+	bool ___useTriggers_33;
 	// System.Int32 Dreamteck.Splines.SplineTracer::triggerGroup
-	int32_t ___triggerGroup_37;
+	int32_t ___triggerGroup_34;
 	// Dreamteck.Splines.Spline/Direction Dreamteck.Splines.SplineTracer::_direction
-	int32_t ____direction_38;
+	int32_t ____direction_35;
 	// System.Boolean Dreamteck.Splines.SplineTracer::_dontLerpDirection
-	bool ____dontLerpDirection_39;
+	bool ____dontLerpDirection_36;
 	// Dreamteck.Splines.SplineTracer/PhysicsMode Dreamteck.Splines.SplineTracer::_physicsMode
-	int32_t ____physicsMode_40;
+	int32_t ____physicsMode_37;
 	// Dreamteck.Splines.TransformModule Dreamteck.Splines.SplineTracer::_motion
-	TransformModule_t3CAD9DEFF242B9200AC9FA51CF3F3417DCE72A8B* ____motion_41;
+	TransformModule_t3CAD9DEFF242B9200AC9FA51CF3F3417DCE72A8B* ____motion_38;
 	// UnityEngine.Rigidbody Dreamteck.Splines.SplineTracer::targetRigidbody
-	Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* ___targetRigidbody_42;
+	Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* ___targetRigidbody_39;
 	// UnityEngine.Rigidbody2D Dreamteck.Splines.SplineTracer::targetRigidbody2D
-	Rigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F* ___targetRigidbody2D_43;
+	Rigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F* ___targetRigidbody2D_40;
 	// UnityEngine.Transform Dreamteck.Splines.SplineTracer::targetTransform
-	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___targetTransform_44;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___targetTransform_41;
 	// Dreamteck.Splines.SplineSample Dreamteck.Splines.SplineTracer::_result
-	SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ____result_45;
+	SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 ____result_42;
 	// Dreamteck.Splines.SplineSample Dreamteck.Splines.SplineTracer::_finalResult
-	SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ____finalResult_46;
+	SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 ____finalResult_43;
 	// Dreamteck.Splines.SplineTracer/JunctionHandler Dreamteck.Splines.SplineTracer::onNode
-	JunctionHandler_t0A4A89D185BAF77E68113E13444973A668A6B27D* ___onNode_47;
+	JunctionHandler_t0A4A89D185BAF77E68113E13444973A668A6B27D* ___onNode_44;
 	// Dreamteck.Splines.EmptySplineHandler Dreamteck.Splines.SplineTracer::onMotionApplied
-	EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* ___onMotionApplied_48;
+	EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* ___onMotionApplied_45;
+	// Dreamteck.Splines.SplineTrigger[] Dreamteck.Splines.SplineTracer::triggerInvokeQueue
+	SplineTriggerU5BU5D_t8E0726E768BEDD7B9DFF5C85AA98F808CEB4DB75* ___triggerInvokeQueue_46;
+	// System.Collections.Generic.List`1<Dreamteck.Splines.SplineTracer/NodeConnection> Dreamteck.Splines.SplineTracer::nodeConnectionQueue
+	List_1_tC286A128F0893DC219DD3E0A289632F1C4EF5791* ___nodeConnectionQueue_47;
+	// System.Int32 Dreamteck.Splines.SplineTracer::addTriggerIndex
+	int32_t ___addTriggerIndex_48;
 };
 
 // UnityEngine.UI.Button
@@ -7796,18 +7793,18 @@ struct SplineFollower_t4DEE4AB05F4B1C7E6F03A71F23E304526DB4B88F  : public Spline
 	bool ___autoStartPosition_52;
 	// System.Boolean Dreamteck.Splines.SplineFollower::_follow
 	bool ____follow_53;
-	// System.Boolean Dreamteck.Splines.SplineFollower::preserveUniformSpeedWithOffset
-	bool ___preserveUniformSpeedWithOffset_54;
-	// System.Action`1<System.Double> Dreamteck.Splines.SplineFollower::onEndReached
-	Action_1_t981ADB3D546655C41CBF61B0CB6DC0A30B7BB98A* ___onEndReached_55;
-	// System.Action`1<System.Double> Dreamteck.Splines.SplineFollower::onBeginningReached
-	Action_1_t981ADB3D546655C41CBF61B0CB6DC0A30B7BB98A* ___onBeginningReached_56;
-	// System.Single Dreamteck.Splines.SplineFollower::_followSpeed
-	float ____followSpeed_57;
-	// System.Single Dreamteck.Splines.SplineFollower::_followDuration
-	float ____followDuration_58;
 	// System.Double Dreamteck.Splines.SplineFollower::_startPosition
-	double ____startPosition_59;
+	double ____startPosition_54;
+	// System.Boolean Dreamteck.Splines.SplineFollower::preserveUniformSpeedWithOffset
+	bool ___preserveUniformSpeedWithOffset_55;
+	// System.Action`1<System.Double> Dreamteck.Splines.SplineFollower::onEndReached
+	Action_1_t981ADB3D546655C41CBF61B0CB6DC0A30B7BB98A* ___onEndReached_56;
+	// System.Action`1<System.Double> Dreamteck.Splines.SplineFollower::onBeginningReached
+	Action_1_t981ADB3D546655C41CBF61B0CB6DC0A30B7BB98A* ___onBeginningReached_57;
+	// System.Single Dreamteck.Splines.SplineFollower::_followSpeed
+	float ____followSpeed_58;
+	// System.Single Dreamteck.Splines.SplineFollower::_followDuration
+	float ____followDuration_59;
 	// Dreamteck.Splines.FollowerSpeedModifier Dreamteck.Splines.SplineFollower::_speedModifier
 	FollowerSpeedModifier_t9A6F72A6420DA8A2441B6633DF92EF6EDDBE5585* ____speedModifier_60;
 	// Dreamteck.Splines.SplineFollower/FloatEvent Dreamteck.Splines.SplineFollower::_unityOnEndReached
@@ -23367,9 +23364,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ContinuousHaptic_PlayContinuousHaptic_m5
 		// timer = currentDelay;
 		float L_16 = __this->___currentDelay_7;
 		__this->___timer_9 = L_16;
-		// MMVibrationManager.Haptic(HapticTypes.RigidImpact);
+		// MMVibrationManager.Haptic(HapticTypes.LightImpact);
 		il2cpp_codegen_runtime_class_init_inline(MMVibrationManager_tB42436F2E58622D42F35C9E283DA70029A2DB634_il2cpp_TypeInfo_var);
-		MMVibrationManager_Haptic_m7EF0B121247FBA25916B2029E854E5B7A9F5BC94(7, (bool)0, (bool)0, (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71*)NULL, (-1), NULL);
+		MMVibrationManager_Haptic_m7EF0B121247FBA25916B2029E854E5B7A9F5BC94(4, (bool)0, (bool)0, (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71*)NULL, (-1), NULL);
 	}
 
 IL_0081:
@@ -23473,6 +23470,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Car_OnTriggerEnter_m8955D01F901BC6DE6B14
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CameraManager_t27CFDF23ED636E9025EFEA9A5E8B0004355206BB_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MMVibrationManager_tB42436F2E58622D42F35C9E283DA70029A2DB634_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ParticlesController_t1B10ED469D34ED0C774B28EE33671674D495D4C1_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2AE6AEB6EECD5A7288785251BA302763265BD7A6);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7591C6B2C207685CBD36BB3D5ED56CC4ADA8FBD5);
@@ -23488,7 +23486,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Car_OnTriggerEnter_m8955D01F901BC6DE6B14
 		L_1 = Component_CompareTag_mE6F8897E84F12DF12D302FFC4D58204D51096FC5(L_0, _stringLiteral2AE6AEB6EECD5A7288785251BA302763265BD7A6, NULL);
 		if (!L_1)
 		{
-			goto IL_0026;
+			goto IL_0030;
 		}
 	}
 	{
@@ -23500,10 +23498,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Car_OnTriggerEnter_m8955D01F901BC6DE6B14
 		GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* L_3 = ((GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6_StaticFields*)il2cpp_codegen_static_fields_for(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6_il2cpp_TypeInfo_var))->___instance_7;
 		NullCheck(L_3);
 		GameManager_ChangeGameState_mDEF9951357968852CB86ADCEDE6229BEBB233132(L_3, 2, NULL);
+		// MMVibrationManager.Haptic(HapticTypes.MediumImpact);
+		il2cpp_codegen_runtime_class_init_inline(MMVibrationManager_tB42436F2E58622D42F35C9E283DA70029A2DB634_il2cpp_TypeInfo_var);
+		MMVibrationManager_Haptic_m7EF0B121247FBA25916B2029E854E5B7A9F5BC94(5, (bool)0, (bool)0, (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71*)NULL, (-1), NULL);
 		return;
 	}
 
-IL_0026:
+IL_0030:
 	{
 		// else if (other.CompareTag("Finish"))
 		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_4 = ___other0;
@@ -23512,7 +23513,7 @@ IL_0026:
 		L_5 = Component_CompareTag_mE6F8897E84F12DF12D302FFC4D58204D51096FC5(L_4, _stringLiteral7591C6B2C207685CBD36BB3D5ED56CC4ADA8FBD5, NULL);
 		if (!L_5)
 		{
-			goto IL_007d;
+			goto IL_0091;
 		}
 	}
 	{
@@ -23520,6 +23521,9 @@ IL_0026:
 		CameraManager_t27CFDF23ED636E9025EFEA9A5E8B0004355206BB* L_6 = ((CameraManager_t27CFDF23ED636E9025EFEA9A5E8B0004355206BB_StaticFields*)il2cpp_codegen_static_fields_for(CameraManager_t27CFDF23ED636E9025EFEA9A5E8B0004355206BB_il2cpp_TypeInfo_var))->___instance_4;
 		NullCheck(L_6);
 		CameraManager_SetAnimatorState_mF574A9DFF3EA1919D8B2CDCB5B1AC202E8B7EDFF(L_6, 2, NULL);
+		// MMVibrationManager.Haptic(HapticTypes.HeavyImpact);
+		il2cpp_codegen_runtime_class_init_inline(MMVibrationManager_tB42436F2E58622D42F35C9E283DA70029A2DB634_il2cpp_TypeInfo_var);
+		MMVibrationManager_Haptic_m7EF0B121247FBA25916B2029E854E5B7A9F5BC94(6, (bool)0, (bool)0, (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71*)NULL, (-1), NULL);
 		// ParticlesController.instance.SpawnParticle(ParticlesNames.Explosion, _transform);
 		ParticlesController_t1B10ED469D34ED0C774B28EE33671674D495D4C1* L_7 = ((ParticlesController_t1B10ED469D34ED0C774B28EE33671674D495D4C1_StaticFields*)il2cpp_codegen_static_fields_for(ParticlesController_t1B10ED469D34ED0C774B28EE33671674D495D4C1_il2cpp_TypeInfo_var))->___instance_6;
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_8 = __this->____transform_15;
@@ -23537,7 +23541,7 @@ IL_0026:
 		CameraManager_TurnSpeedFx_mEBBBC5D93082386EC52AD08EB3767BD2F2885999(L_11, (bool)0, NULL);
 	}
 
-IL_007d:
+IL_0091:
 	{
 		// }
 		return;

@@ -12,8 +12,12 @@
 
 
 
+// System.Collections.Generic.List`1<UnityEngine.Vector4>
+struct List_1_tF42FEB6C3B18B7E7C8F2DE1FEBA00D2491736317;
 // UnityEngine.Mesh[]
 struct MeshU5BU5D_t178CA36422FC397211E68FB7E39C5B2F95619689;
+// UnityEngine.Vector4[]
+struct Vector4U5BU5D_tC0F3A7115F85007510F6D173968200CD31BCF7AD;
 // UnityEngine.ParticleSystem/Particle[]
 struct ParticleU5BU5D_tE2CC7CC8844B6F592CC26DE7B533D8BC74C9BEC7;
 // UnityEngine.AnimationCurve
@@ -50,6 +54,25 @@ IL2CPP_EXTERN_C_END
 // <Module>
 struct U3CModuleU3E_tD4D8152B1CC10B76FF3BD3BF122F926B6BF0D3EE 
 {
+};
+
+// System.Collections.Generic.List`1<UnityEngine.Vector4>
+struct List_1_tF42FEB6C3B18B7E7C8F2DE1FEBA00D2491736317  : public RuntimeObject
+{
+	// T[] System.Collections.Generic.List`1::_items
+	Vector4U5BU5D_tC0F3A7115F85007510F6D173968200CD31BCF7AD* ____items_1;
+	// System.Int32 System.Collections.Generic.List`1::_size
+	int32_t ____size_2;
+	// System.Int32 System.Collections.Generic.List`1::_version
+	int32_t ____version_3;
+	// System.Object System.Collections.Generic.List`1::_syncRoot
+	RuntimeObject* ____syncRoot_4;
+};
+
+struct List_1_tF42FEB6C3B18B7E7C8F2DE1FEBA00D2491736317_StaticFields
+{
+	// T[] System.Collections.Generic.List`1::s_emptyArray
+	Vector4U5BU5D_tC0F3A7115F85007510F6D173968200CD31BCF7AD* ___s_emptyArray_5;
 };
 struct Il2CppArrayBounds;
 
@@ -824,6 +847,25 @@ IL_000c:
 		int32_t L_2 = V_0;
 		return L_2;
 	}
+}
+// System.Void UnityEngine.ParticleSystem::SetCustomParticleData(System.Collections.Generic.List`1<UnityEngine.Vector4>,UnityEngine.ParticleSystemCustomData)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ParticleSystem_SetCustomParticleData_m00DE2BB34BFE3221AD472040E6554E05FA29F258 (ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* __this, List_1_tF42FEB6C3B18B7E7C8F2DE1FEBA00D2491736317* ___customData0, int32_t ___streamIndex1, const RuntimeMethod* method) 
+{
+	typedef void (*ParticleSystem_SetCustomParticleData_m00DE2BB34BFE3221AD472040E6554E05FA29F258_ftn) (ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1*, List_1_tF42FEB6C3B18B7E7C8F2DE1FEBA00D2491736317*, int32_t);
+	static ParticleSystem_SetCustomParticleData_m00DE2BB34BFE3221AD472040E6554E05FA29F258_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (ParticleSystem_SetCustomParticleData_m00DE2BB34BFE3221AD472040E6554E05FA29F258_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.ParticleSystem::SetCustomParticleData(System.Collections.Generic.List`1<UnityEngine.Vector4>,UnityEngine.ParticleSystemCustomData)");
+	_il2cpp_icall_func(__this, ___customData0, ___streamIndex1);
+}
+// System.Int32 UnityEngine.ParticleSystem::GetCustomParticleData(System.Collections.Generic.List`1<UnityEngine.Vector4>,UnityEngine.ParticleSystemCustomData)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ParticleSystem_GetCustomParticleData_m5A4E0CCEEF03F77F239D856DB80FA61F479C7670 (ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* __this, List_1_tF42FEB6C3B18B7E7C8F2DE1FEBA00D2491736317* ___customData0, int32_t ___streamIndex1, const RuntimeMethod* method) 
+{
+	typedef int32_t (*ParticleSystem_GetCustomParticleData_m5A4E0CCEEF03F77F239D856DB80FA61F479C7670_ftn) (ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1*, List_1_tF42FEB6C3B18B7E7C8F2DE1FEBA00D2491736317*, int32_t);
+	static ParticleSystem_GetCustomParticleData_m5A4E0CCEEF03F77F239D856DB80FA61F479C7670_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (ParticleSystem_GetCustomParticleData_m5A4E0CCEEF03F77F239D856DB80FA61F479C7670_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.ParticleSystem::GetCustomParticleData(System.Collections.Generic.List`1<UnityEngine.Vector4>,UnityEngine.ParticleSystemCustomData)");
+	int32_t icallRetVal = _il2cpp_icall_func(__this, ___customData0, ___streamIndex1);
+	return icallRetVal;
 }
 // System.Void UnityEngine.ParticleSystem::Simulate(System.Single,System.Boolean,System.Boolean,System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ParticleSystem_Simulate_m514E1FCC76A6882650BD237E1D14B43ECAA97643 (ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* __this, float ___t0, bool ___withChildren1, bool ___restart2, bool ___fixedTimeStep3, const RuntimeMethod* method) 

@@ -131,24 +131,12 @@ struct InvokerActionInvoker2<T1*, T2*>
 	}
 };
 
-// System.Action`1<Dreamteck.Splines.SplineUser>
-struct Action_1_t01F475F4FC77E8DE989AAA90CF0F8F2749CFE915;
 // System.Collections.Generic.List`1<System.Int32[]>
 struct List_1_tDEC4119E22EFA9DBE2F6B6C4F3ACD2FD0849215C;
 // System.Collections.Generic.List`1<System.Object>
 struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D;
-// System.Collections.Generic.List`1<Dreamteck.Splines.ColorModifier/ColorKey>
-struct List_1_tCB2A0E1A81AE3AC8B4F592CA07241C1A95BA36DC;
-// System.Collections.Generic.List`1<Dreamteck.Splines.OffsetModifier/OffsetKey>
-struct List_1_tD03B1187FA73B02D87C28D9FBABF4A5ABB6B2835;
-// System.Collections.Generic.List`1<Dreamteck.Splines.RotationModifier/RotationKey>
-struct List_1_t36C5F0E769C9E1DAAF595592CD15F0147E5C909F;
-// System.Collections.Generic.List`1<Dreamteck.Splines.SizeModifier/SizeKey>
-struct List_1_tD5A48608126D9287352B30EB9FEF0350A32078DC;
 // System.Collections.Generic.List`1<Dreamteck.Splines.SplineTracer/NodeConnection>
 struct List_1_tC286A128F0893DC219DD3E0A289632F1C4EF5791;
-// System.Boolean[]
-struct BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4;
 // UnityEngine.Color[]
 struct ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389;
 // System.Delegate[]
@@ -179,8 +167,16 @@ struct Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA;
 struct Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C;
 // UnityEngine.Vector4[]
 struct Vector4U5BU5D_tC0F3A7115F85007510F6D173968200CD31BCF7AD;
+// Dreamteck.Splines.ColorModifier/ColorKey[]
+struct ColorKeyU5BU5D_t2993E0D1B08EEA17301949E019BD0D358494A081;
 // Dreamteck.Splines.Node/Connection[]
 struct ConnectionU5BU5D_tD445248C6C216BB24649352ABE772639E2D4D721;
+// Dreamteck.Splines.OffsetModifier/OffsetKey[]
+struct OffsetKeyU5BU5D_t88389903E980EAF6CBD882814B14850123DE30C9;
+// Dreamteck.Splines.RotationModifier/RotationKey[]
+struct RotationKeyU5BU5D_tEA3D7BA1B8EBE2FEB0B42ECA1DC509C44383A0B7;
+// Dreamteck.Splines.SizeModifier/SizeKey[]
+struct SizeKeyU5BU5D_t4EFC8F60546834AC91D3DC849728469B2FF001A1;
 // Dreamteck.Splines.SplineComputer/NodeLink[]
 struct NodeLinkU5BU5D_tE659E0179FF2ADA844DE0A3E300403C4E7641112;
 // Dreamteck.Splines.SplineMorph/Channel[]
@@ -257,8 +253,8 @@ struct SplineProjector_t7894D8EA56C41AF5B75BEDA8D0C7C06E5B07BD05;
 struct SplineReachHandler_t0E1B29CF51FD07E391093971AD9624D6ABB6BDDE;
 // Dreamteck.Splines.SplineRenderer
 struct SplineRenderer_tEA46B320767235A628ACD393AD0602351322D127;
-// Dreamteck.Splines.SplineSample
-struct SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143;
+// Dreamteck.Splines.SplineSampleModifier
+struct SplineSampleModifier_t22889DA69F7EB5513465DE330AFF6D213F260150;
 // Dreamteck.Splines.SplineTracer
 struct SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A;
 // Dreamteck.Splines.SplineTrigger
@@ -281,8 +277,6 @@ struct TransformModule_t3CAD9DEFF242B9200AC9FA51CF3F3417DCE72A8B;
 struct TriggerGroup_tF5515893936F34945D2E19F563C53AC1220B2E6E;
 // Dreamteck.Splines.TubeGenerator
 struct TubeGenerator_t4E485B46B06DA51CFB07F5C1E751CC1010BCD2DE;
-// UnityEngine.Events.UnityEvent
-struct UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977;
 // System.Void
 struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915;
 // Dreamteck.Splines.WaveformGenerator
@@ -297,6 +291,8 @@ struct EmptyHandler_t4B14D7C3896E95A95AA6639D9B0496DB8AC6879B;
 struct JunctionHandler_t0A4A89D185BAF77E68113E13444973A668A6B27D;
 // Dreamteck.Splines.SplineTracer/NodeConnection
 struct NodeConnection_tAC4CB5DFF5E5186DBFA585F543F5299CC139E309;
+// Dreamteck.Splines.SplineTrigger/TriggerEvent
+struct TriggerEvent_t6ADE502ACA55E950D6FDC0ADEAF7B57D0815E2D8;
 // Dreamteck.Splines.SplineMesh/Channel/MeshDefinition/Submesh
 struct Submesh_tE7808DD3A38B859BF331AA95FAC223E19C39834E;
 // Dreamteck.Splines.SplineMesh/Channel/MeshDefinition/VertexGroup
@@ -327,7 +323,6 @@ IL2CPP_EXTERN_C RuntimeClass* SizeModifier_t3DD6048AE4DEB93810D8325EDB2065AA0567
 IL2CPP_EXTERN_C RuntimeClass* SplinePointU5BU5D_t12CABDB19A63EBEEF143CE26C78D27708EC0CBF3_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* SplineReachHandler_t0E1B29CF51FD07E391093971AD9624D6ABB6BDDE_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* SplineThreading_tCC2347F01CD63D04E07FB2D534E0C816B4474C67_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* SplineTriggerU5BU5D_t8E0726E768BEDD7B9DFF5C85AA98F808CEB4DB75_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Spline_t12C5A067E46309006E34F9A5B0AD58FCD51BEAD1_il2cpp_TypeInfo_var;
@@ -336,15 +331,15 @@ IL2CPP_EXTERN_C RuntimeClass* Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6E
 IL2CPP_EXTERN_C RuntimeClass* Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C String_t* _stringLiteral1E60ED2E7B21CE7BABE99A45D5D0998B513D58F1;
+IL2CPP_EXTERN_C String_t* _stringLiteral1C8480B9FE28ACE422D3D9A1473AB0CE4BF09882;
+IL2CPP_EXTERN_C String_t* _stringLiteral1FFAD832E2A46056E6477B083852CDF7D4E226E3;
 IL2CPP_EXTERN_C String_t* _stringLiteral253608E6A159D60124AB24A5B200C75308F1367E;
 IL2CPP_EXTERN_C String_t* _stringLiteral484C4A3DA2A8B6B21D460346407F1703059F8391;
-IL2CPP_EXTERN_C String_t* _stringLiteral5C26206B271C04DE25C912191A4DE9E52D02A9AA;
 IL2CPP_EXTERN_C String_t* _stringLiteral8E6808F822EC09BEBDBA493DA4808B3AE02A75B2;
 IL2CPP_EXTERN_C String_t* _stringLiteralB3A05808CBC59DEC06679B66DF8DC45D806D558C;
-IL2CPP_EXTERN_C String_t* _stringLiteralC8030254E2A044716BE5C6218DC805EFA9F40947;
+IL2CPP_EXTERN_C String_t* _stringLiteralB854FB00C4B4A27C3F1B8572007239AB388C7ABA;
 IL2CPP_EXTERN_C String_t* _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
-IL2CPP_EXTERN_C String_t* _stringLiteralEB5F7E205563AF268B2398339D6BC44920D66CE0;
+IL2CPP_EXTERN_C String_t* _stringLiteralE3FB52A6A499BD50CACB93900D84D32D55B8CD1D;
 IL2CPP_EXTERN_C String_t* _stringLiteralF77AF0D62BCA5AC31A42E3490CA3F66A799AC9BA;
 IL2CPP_EXTERN_C const RuntimeMethod* ArrayUtility_Add_TisChannel_t1D85DCC98DE1E5AAB159111EEF30FE0C5AF2A594_m354BA23CE93EF35EAE2D440A761E0C8A85C5701C_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisRigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F_m0712B7A9DBBAE2C319B4B03394E7731B86FACBF2_RuntimeMethod_var;
@@ -356,6 +351,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_m36049C84C04F6C0A3744B32162EB214
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_Clear_mA55A5056C5E9D4B5AF8E4771EFE7F869DD69A1BD_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_m527D8575BB41802ACD7B3D210656C0173D3B90F0_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Count_m9AA7A1F6D6736C80CE9633846DBC570F735A5A7D_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* SplinePositioner_OnFollowTargetMotionApplied_m2C64EDAC5EDC4AAB599759D62A715DB7E436DDFC_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* SplineTracer_ApplyMotion_m9812460F0F35A431056378746089FA16705FBADD_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* SplineUser_BuildThreaded_m0A8E9715D53362A6716FDD15F923F20049B25EAA_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* SplineUser_ResampleAndBuildThreaded_mA189CCCFEE2FC698A55563404F1E1696D2F2431A_RuntimeMethod_var;
@@ -424,30 +420,13 @@ struct List_1_tC286A128F0893DC219DD3E0A289632F1C4EF5791_StaticFields
 };
 struct Il2CppArrayBounds;
 
-// Dreamteck.Splines.SampleCollection
-struct SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265  : public RuntimeObject
-{
-	// Dreamteck.Splines.SplineSample[] Dreamteck.Splines.SampleCollection::samples
-	SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* ___samples_0;
-	// System.Int32[] Dreamteck.Splines.SampleCollection::optimizedIndices
-	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___optimizedIndices_1;
-	// Dreamteck.Splines.SplineComputer/SampleMode Dreamteck.Splines.SampleCollection::sampleMode
-	int32_t ___sampleMode_2;
-	// Dreamteck.Splines.SplineSample Dreamteck.Splines.SampleCollection::_workSample
-	SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ____workSample_3;
-	// System.Double Dreamteck.Splines.SampleCollection::clipFrom
-	double ___clipFrom_4;
-	// System.Double Dreamteck.Splines.SampleCollection::clipTo
-	double ___clipTo_5;
-	// System.Boolean Dreamteck.Splines.SampleCollection::loopSamples
-	bool ___loopSamples_6;
-};
-
 // Dreamteck.Splines.SplineSampleModifier
 struct SplineSampleModifier_t22889DA69F7EB5513465DE330AFF6D213F260150  : public RuntimeObject
 {
 	// System.Single Dreamteck.Splines.SplineSampleModifier::blend
 	float ___blend_0;
+	// System.Boolean Dreamteck.Splines.SplineSampleModifier::useClippedPercent
+	bool ___useClippedPercent_1;
 };
 
 // System.String
@@ -494,6 +473,10 @@ struct TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969  : public RuntimeObject
 	int32_t ___indexFormat_11;
 	// System.Boolean modreq(System.Runtime.CompilerServices.IsVolatile) Dreamteck.TS_Mesh::hasUpdate
 	bool ___hasUpdate_12;
+	// System.Int32[] Dreamteck.TS_Mesh::_submeshTrisCount
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ____submeshTrisCount_13;
+	// System.Int32[] Dreamteck.TS_Mesh::_submeshOffsets
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ____submeshOffsets_14;
 };
 
 // System.ValueType
@@ -582,8 +565,8 @@ struct Color_tD001788D726C3A7F1379BEED0260B9591F440C1F
 // Dreamteck.Splines.ColorModifier
 struct ColorModifier_tD41275A2C32D892D074F3959B5B202AA46C8A2B5  : public SplineSampleModifier_t22889DA69F7EB5513465DE330AFF6D213F260150
 {
-	// System.Collections.Generic.List`1<Dreamteck.Splines.ColorModifier/ColorKey> Dreamteck.Splines.ColorModifier::keys
-	List_1_tCB2A0E1A81AE3AC8B4F592CA07241C1A95BA36DC* ___keys_1;
+	// Dreamteck.Splines.ColorModifier/ColorKey[] Dreamteck.Splines.ColorModifier::keys
+	ColorKeyU5BU5D_t2993E0D1B08EEA17301949E019BD0D358494A081* ___keys_2;
 };
 
 // System.Double
@@ -705,8 +688,8 @@ struct Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6_StaticFields
 // Dreamteck.Splines.OffsetModifier
 struct OffsetModifier_t6750449B324B80EB198DAF68209DDC8F041A363C  : public SplineSampleModifier_t22889DA69F7EB5513465DE330AFF6D213F260150
 {
-	// System.Collections.Generic.List`1<Dreamteck.Splines.OffsetModifier/OffsetKey> Dreamteck.Splines.OffsetModifier::keys
-	List_1_tD03B1187FA73B02D87C28D9FBABF4A5ABB6B2835* ___keys_1;
+	// Dreamteck.Splines.OffsetModifier/OffsetKey[] Dreamteck.Splines.OffsetModifier::keys
+	OffsetKeyU5BU5D_t88389903E980EAF6CBD882814B14850123DE30C9* ___keys_2;
 };
 
 // UnityEngine.Quaternion
@@ -731,8 +714,8 @@ struct Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_StaticFields
 // Dreamteck.Splines.RotationModifier
 struct RotationModifier_tFF6A3FB575FDBEAA61EF0A57017019986EAC0607  : public SplineSampleModifier_t22889DA69F7EB5513465DE330AFF6D213F260150
 {
-	// System.Collections.Generic.List`1<Dreamteck.Splines.RotationModifier/RotationKey> Dreamteck.Splines.RotationModifier::keys
-	List_1_t36C5F0E769C9E1DAAF595592CD15F0147E5C909F* ___keys_1;
+	// Dreamteck.Splines.RotationModifier/RotationKey[] Dreamteck.Splines.RotationModifier::keys
+	RotationKeyU5BU5D_tEA3D7BA1B8EBE2FEB0B42ECA1DC509C44383A0B7* ___keys_2;
 };
 
 // System.Single
@@ -745,8 +728,8 @@ struct Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C
 // Dreamteck.Splines.SizeModifier
 struct SizeModifier_t3DD6048AE4DEB93810D8325EDB2065AA05671BEE  : public SplineSampleModifier_t22889DA69F7EB5513465DE330AFF6D213F260150
 {
-	// System.Collections.Generic.List`1<Dreamteck.Splines.SizeModifier/SizeKey> Dreamteck.Splines.SizeModifier::keys
-	List_1_tD5A48608126D9287352B30EB9FEF0350A32078DC* ___keys_1;
+	// Dreamteck.Splines.SizeModifier/SizeKey[] Dreamteck.Splines.SizeModifier::keys
+	SizeKeyU5BU5D_t4EFC8F60546834AC91D3DC849728469B2FF001A1* ___keys_2;
 };
 
 // UnityEngine.Vector2
@@ -1016,24 +999,50 @@ struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_marshaled_com
 // Dreamteck.Splines.SplinePoint
 struct SplinePoint_t803756424E55814ED6D69A9F4386106A4334C084 
 {
+	// System.Boolean Dreamteck.Splines.SplinePoint::isDirty
+	bool ___isDirty_0;
 	// Dreamteck.Splines.SplinePoint/Type Dreamteck.Splines.SplinePoint::_type
-	int32_t ____type_0;
+	int32_t ____type_1;
 	// UnityEngine.Vector3 Dreamteck.Splines.SplinePoint::position
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___position_1;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___position_2;
 	// UnityEngine.Color Dreamteck.Splines.SplinePoint::color
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___color_2;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___color_3;
 	// UnityEngine.Vector3 Dreamteck.Splines.SplinePoint::normal
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___normal_3;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___normal_4;
 	// System.Single Dreamteck.Splines.SplinePoint::size
-	float ___size_4;
+	float ___size_5;
 	// UnityEngine.Vector3 Dreamteck.Splines.SplinePoint::tangent
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___tangent_5;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___tangent_6;
 	// UnityEngine.Vector3 Dreamteck.Splines.SplinePoint::tangent2
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___tangent2_6;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___tangent2_7;
+};
+// Native definition for P/Invoke marshalling of Dreamteck.Splines.SplinePoint
+struct SplinePoint_t803756424E55814ED6D69A9F4386106A4334C084_marshaled_pinvoke
+{
+	int32_t ___isDirty_0;
+	int32_t ____type_1;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___position_2;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___color_3;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___normal_4;
+	float ___size_5;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___tangent_6;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___tangent2_7;
+};
+// Native definition for COM marshalling of Dreamteck.Splines.SplinePoint
+struct SplinePoint_t803756424E55814ED6D69A9F4386106A4334C084_marshaled_com
+{
+	int32_t ___isDirty_0;
+	int32_t ____type_1;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___position_2;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___color_3;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___normal_4;
+	float ___size_5;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___tangent_6;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___tangent2_7;
 };
 
 // Dreamteck.Splines.SplineSample
-struct SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143  : public RuntimeObject
+struct SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 
 {
 	// UnityEngine.Vector3 Dreamteck.Splines.SplineSample::position
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___position_0;
@@ -1066,10 +1075,66 @@ struct SplineTrigger_t1229B1EB36A06D13AE5F5AF78B9AAD934DF6239D  : public Runtime
 	bool ___enabled_5;
 	// UnityEngine.Color Dreamteck.Splines.SplineTrigger::color
 	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___color_6;
-	// UnityEngine.Events.UnityEvent Dreamteck.Splines.SplineTrigger::onCross
-	UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* ___onCross_7;
-	// System.Action`1<Dreamteck.Splines.SplineUser> Dreamteck.Splines.SplineTrigger::onUserCross
-	Action_1_t01F475F4FC77E8DE989AAA90CF0F8F2749CFE915* ___onUserCross_8;
+	// Dreamteck.Splines.SplineTrigger/TriggerEvent Dreamteck.Splines.SplineTrigger::onCross
+	TriggerEvent_t6ADE502ACA55E950D6FDC0ADEAF7B57D0815E2D8* ___onCross_7;
+};
+
+// Dreamteck.Splines.TriggerGroup
+struct TriggerGroup_tF5515893936F34945D2E19F563C53AC1220B2E6E  : public RuntimeObject
+{
+	// System.Boolean Dreamteck.Splines.TriggerGroup::enabled
+	bool ___enabled_0;
+	// System.String Dreamteck.Splines.TriggerGroup::name
+	String_t* ___name_1;
+	// UnityEngine.Color Dreamteck.Splines.TriggerGroup::color
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___color_2;
+	// Dreamteck.Splines.SplineTrigger[] Dreamteck.Splines.TriggerGroup::triggers
+	SplineTriggerU5BU5D_t8E0726E768BEDD7B9DFF5C85AA98F808CEB4DB75* ___triggers_3;
+};
+
+// UnityEngine.Component
+struct Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
+{
+};
+
+// UnityEngine.GameObject
+struct GameObject_t76FEDD663AB33C991A9C9A23129337651094216F  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
+{
+};
+
+// UnityEngine.MissingComponentException
+struct MissingComponentException_tFBBE11BC7F2A81EE2B3E19B2B7F6AA4131F84A0E  : public Exception_t
+{
+};
+
+// System.MulticastDelegate
+struct MulticastDelegate_t  : public Delegate_t
+{
+	// System.Delegate[] System.MulticastDelegate::delegates
+	DelegateU5BU5D_tC5AB7E8F745616680F337909D3A8E6C722CDF771* ___delegates_13;
+};
+// Native definition for P/Invoke marshalling of System.MulticastDelegate
+struct MulticastDelegate_t_marshaled_pinvoke : public Delegate_t_marshaled_pinvoke
+{
+	Delegate_t_marshaled_pinvoke** ___delegates_13;
+};
+// Native definition for COM marshalling of System.MulticastDelegate
+struct MulticastDelegate_t_marshaled_com : public Delegate_t_marshaled_com
+{
+	Delegate_t_marshaled_com** ___delegates_13;
+};
+
+// Dreamteck.Splines.SampleCollection
+struct SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265  : public RuntimeObject
+{
+	// Dreamteck.Splines.SplineSample[] Dreamteck.Splines.SampleCollection::samples
+	SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* ___samples_0;
+	// System.Int32[] Dreamteck.Splines.SampleCollection::optimizedIndices
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___optimizedIndices_1;
+	// Dreamteck.Splines.SplineComputer/SampleMode Dreamteck.Splines.SampleCollection::sampleMode
+	int32_t ___sampleMode_2;
+	// Dreamteck.Splines.SplineSample Dreamteck.Splines.SampleCollection::_workSample
+	SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 ____workSample_3;
 };
 
 // Dreamteck.Splines.TransformModule
@@ -1090,7 +1155,7 @@ struct TransformModule_t3CAD9DEFF242B9200AC9FA51CF3F3417DCE72A8B  : public Runti
 	// Dreamteck.Splines.TransformModule/VelocityHandleMode Dreamteck.Splines.TransformModule::velocityHandleMode
 	int32_t ___velocityHandleMode_6;
 	// Dreamteck.Splines.SplineSample Dreamteck.Splines.TransformModule::_splineResult
-	SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ____splineResult_7;
+	SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 ____splineResult_7;
 	// System.Boolean Dreamteck.Splines.TransformModule::applyPositionX
 	bool ___applyPositionX_8;
 	// System.Boolean Dreamteck.Splines.TransformModule::applyPositionY
@@ -1129,56 +1194,6 @@ struct TransformModule_t3CAD9DEFF242B9200AC9FA51CF3F3417DCE72A8B_StaticFields
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___position_23;
 	// UnityEngine.Quaternion Dreamteck.Splines.TransformModule::rotation
 	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___rotation_24;
-};
-
-// Dreamteck.Splines.TriggerGroup
-struct TriggerGroup_tF5515893936F34945D2E19F563C53AC1220B2E6E  : public RuntimeObject
-{
-	// System.Boolean Dreamteck.Splines.TriggerGroup::enabled
-	bool ___enabled_0;
-	// System.String Dreamteck.Splines.TriggerGroup::name
-	String_t* ___name_1;
-	// UnityEngine.Color Dreamteck.Splines.TriggerGroup::color
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___color_2;
-	// Dreamteck.Splines.SplineTrigger[] Dreamteck.Splines.TriggerGroup::triggers
-	SplineTriggerU5BU5D_t8E0726E768BEDD7B9DFF5C85AA98F808CEB4DB75* ___triggers_3;
-};
-
-// UnityEngine.Component
-struct Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
-{
-};
-
-// UnityEngine.GameObject
-struct GameObject_t76FEDD663AB33C991A9C9A23129337651094216F  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
-{
-};
-
-// UnityEngine.Mesh
-struct Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
-{
-};
-
-// UnityEngine.MissingComponentException
-struct MissingComponentException_tFBBE11BC7F2A81EE2B3E19B2B7F6AA4131F84A0E  : public Exception_t
-{
-};
-
-// System.MulticastDelegate
-struct MulticastDelegate_t  : public Delegate_t
-{
-	// System.Delegate[] System.MulticastDelegate::delegates
-	DelegateU5BU5D_tC5AB7E8F745616680F337909D3A8E6C722CDF771* ___delegates_13;
-};
-// Native definition for P/Invoke marshalling of System.MulticastDelegate
-struct MulticastDelegate_t_marshaled_pinvoke : public Delegate_t_marshaled_pinvoke
-{
-	Delegate_t_marshaled_pinvoke** ___delegates_13;
-};
-// Native definition for COM marshalling of System.MulticastDelegate
-struct MulticastDelegate_t_marshaled_com : public Delegate_t_marshaled_com
-{
-	Delegate_t_marshaled_com** ___delegates_13;
 };
 
 // System.AsyncCallback
@@ -1274,66 +1289,50 @@ struct SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28  : public MonoBe
 {
 	// System.Boolean Dreamteck.Splines.SplineComputer::multithreaded
 	bool ___multithreaded_4;
-	// System.Boolean Dreamteck.Splines.SplineComputer::rebuildOnAwake
-	bool ___rebuildOnAwake_5;
 	// Dreamteck.Splines.SplineComputer/UpdateMode Dreamteck.Splines.SplineComputer::updateMode
-	int32_t ___updateMode_6;
+	int32_t ___updateMode_5;
 	// Dreamteck.Splines.TriggerGroup[] Dreamteck.Splines.SplineComputer::triggerGroups
-	TriggerGroupU5BU5D_tDD9644D34D55E3781E16C0A84A45D08B1AC2FBFB* ___triggerGroups_7;
-	// Dreamteck.Splines.Spline Dreamteck.Splines.SplineComputer::spline
-	Spline_t12C5A067E46309006E34F9A5B0AD58FCD51BEAD1* ___spline_8;
-	// Dreamteck.Splines.SplineSample[] Dreamteck.Splines.SplineComputer::_rawSamples
-	SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* ____rawSamples_9;
-	// Dreamteck.Splines.SplineSample[] Dreamteck.Splines.SplineComputer::_transformedSamples
-	SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* ____transformedSamples_10;
-	// Dreamteck.Splines.SampleCollection Dreamteck.Splines.SplineComputer::sampleCollection
-	SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* ___sampleCollection_11;
-	// System.Double[] Dreamteck.Splines.SplineComputer::originalSamplePercents
-	DoubleU5BU5D_tCC308475BD3B8229DB2582938669EF2F9ECC1FEE* ___originalSamplePercents_12;
-	// System.Boolean[] Dreamteck.Splines.SplineComputer::sampleFlter
-	BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* ___sampleFlter_13;
-	// System.Int32 Dreamteck.Splines.SplineComputer::_sampleCount
-	int32_t ____sampleCount_14;
+	TriggerGroupU5BU5D_tDD9644D34D55E3781E16C0A84A45D08B1AC2FBFB* ___triggerGroups_6;
+	// Dreamteck.Splines.Spline Dreamteck.Splines.SplineComputer::_spline
+	Spline_t12C5A067E46309006E34F9A5B0AD58FCD51BEAD1* ____spline_7;
+	// Dreamteck.Splines.SampleCollection Dreamteck.Splines.SplineComputer::_sampleCollection
+	SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* ____sampleCollection_8;
+	// System.Double[] Dreamteck.Splines.SplineComputer::_originalSamplePercents
+	DoubleU5BU5D_tCC308475BD3B8229DB2582938669EF2F9ECC1FEE* ____originalSamplePercents_9;
 	// System.Boolean Dreamteck.Splines.SplineComputer::_is2D
-	bool ____is2D_15;
+	bool ____is2D_10;
 	// System.Boolean Dreamteck.Splines.SplineComputer::hasSamples
-	bool ___hasSamples_16;
-	// System.Boolean[] Dreamteck.Splines.SplineComputer::pointsDirty
-	BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* ___pointsDirty_17;
+	bool ___hasSamples_11;
 	// System.Single Dreamteck.Splines.SplineComputer::_optimizeAngleThreshold
-	float ____optimizeAngleThreshold_18;
+	float ____optimizeAngleThreshold_12;
 	// Dreamteck.Splines.SplineComputer/Space Dreamteck.Splines.SplineComputer::_space
-	int32_t ____space_19;
+	int32_t ____space_13;
 	// Dreamteck.Splines.SplineComputer/SampleMode Dreamteck.Splines.SplineComputer::_sampleMode
-	int32_t ____sampleMode_20;
+	int32_t ____sampleMode_14;
 	// Dreamteck.Splines.SplineUser[] Dreamteck.Splines.SplineComputer::_subscribers
-	SplineUserU5BU5D_t2DEE72099A791439AED64381AE7F97F515AD9E2B* ____subscribers_21;
-	// Dreamteck.Splines.SplineComputer/NodeLink[] Dreamteck.Splines.SplineComputer::nodes
-	NodeLinkU5BU5D_tE659E0179FF2ADA844DE0A3E300403C4E7641112* ___nodes_22;
+	SplineUserU5BU5D_t2DEE72099A791439AED64381AE7F97F515AD9E2B* ____subscribers_15;
+	// Dreamteck.Splines.SplineSample[] Dreamteck.Splines.SplineComputer::_rawSamples
+	SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* ____rawSamples_16;
+	// UnityEngine.Matrix4x4 Dreamteck.Splines.SplineComputer::_localToWorldMatrix
+	Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ____localToWorldMatrix_17;
+	// UnityEngine.Matrix4x4 Dreamteck.Splines.SplineComputer::_worldToLocalMatrix
+	Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ____worldToLocalMatrix_18;
+	// UnityEngine.Matrix4x4 Dreamteck.Splines.SplineComputer::_localToWorldRotationMatrix
+	Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ____localToWorldRotationMatrix_19;
+	// Dreamteck.Splines.SplineComputer/NodeLink[] Dreamteck.Splines.SplineComputer::_nodes
+	NodeLinkU5BU5D_tE659E0179FF2ADA844DE0A3E300403C4E7641112* ____nodes_20;
 	// System.Boolean Dreamteck.Splines.SplineComputer::_rebuildPending
-	bool ____rebuildPending_23;
+	bool ____rebuildPending_21;
 	// System.Boolean Dreamteck.Splines.SplineComputer::_trsCached
-	bool ____trsCached_24;
+	bool ____trsCached_22;
 	// UnityEngine.Transform Dreamteck.Splines.SplineComputer::_trs
-	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ____trs_25;
-	// UnityEngine.Matrix4x4 Dreamteck.Splines.SplineComputer::_transformMatrix
-	Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ____transformMatrix_26;
-	// UnityEngine.Matrix4x4 Dreamteck.Splines.SplineComputer::_inverseTransformMatrix
-	Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ____inverseTransformMatrix_27;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ____trs_23;
 	// System.Boolean Dreamteck.Splines.SplineComputer::_queueResample
-	bool ____queueResample_28;
+	bool ____queueResample_24;
 	// System.Boolean Dreamteck.Splines.SplineComputer::_queueRebuild
-	bool ____queueRebuild_29;
-	// UnityEngine.Vector3 Dreamteck.Splines.SplineComputer::_lastPosition
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ____lastPosition_30;
-	// UnityEngine.Vector3 Dreamteck.Splines.SplineComputer::_lastScale
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ____lastScale_31;
-	// System.Boolean Dreamteck.Splines.SplineComputer::_uniformScale
-	bool ____uniformScale_32;
-	// UnityEngine.Quaternion Dreamteck.Splines.SplineComputer::_lastRotation
-	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ____lastRotation_33;
+	bool ____queueRebuild_25;
 	// Dreamteck.Splines.EmptySplineHandler Dreamteck.Splines.SplineComputer::onRebuild
-	EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* ___onRebuild_34;
+	EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* ___onRebuild_26;
 };
 
 // Dreamteck.Splines.SplineMorph
@@ -1378,22 +1377,22 @@ struct SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE  : public MonoBehavi
 	ColorModifier_tD41275A2C32D892D074F3959B5B202AA46C8A2B5* ____colorModifier_9;
 	// Dreamteck.Splines.SizeModifier Dreamteck.Splines.SplineUser::_sizeModifier
 	SizeModifier_t3DD6048AE4DEB93810D8325EDB2065AA05671BEE* ____sizeModifier_10;
-	// Dreamteck.Splines.SampleCollection Dreamteck.Splines.SplineUser::sampleCollection
-	SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* ___sampleCollection_11;
-	// Dreamteck.Splines.SplineSample Dreamteck.Splines.SplineUser::clipFromSample
-	SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ___clipFromSample_12;
-	// Dreamteck.Splines.SplineSample Dreamteck.Splines.SplineUser::clipToSample
-	SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ___clipToSample_13;
+	// Dreamteck.Splines.SplineSample Dreamteck.Splines.SplineUser::_clipFromSample
+	SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 ____clipFromSample_11;
+	// Dreamteck.Splines.SplineSample Dreamteck.Splines.SplineUser::_clipToSample
+	SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 ____clipToSample_12;
 	// System.Boolean Dreamteck.Splines.SplineUser::_loopSamples
-	bool ____loopSamples_14;
+	bool ____loopSamples_13;
 	// System.Double Dreamteck.Splines.SplineUser::_clipFrom
-	double ____clipFrom_15;
+	double ____clipFrom_14;
 	// System.Double Dreamteck.Splines.SplineUser::_clipTo
-	double ____clipTo_16;
+	double ____clipTo_15;
 	// System.Single Dreamteck.Splines.SplineUser::animClipFrom
-	float ___animClipFrom_17;
+	float ___animClipFrom_16;
 	// System.Single Dreamteck.Splines.SplineUser::animClipTo
-	float ___animClipTo_18;
+	float ___animClipTo_17;
+	// Dreamteck.Splines.SampleCollection Dreamteck.Splines.SplineUser::_sampleCollection
+	SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* ____sampleCollection_18;
 	// System.Boolean Dreamteck.Splines.SplineUser::rebuild
 	bool ___rebuild_19;
 	// System.Boolean Dreamteck.Splines.SplineUser::getSamples
@@ -1404,22 +1403,22 @@ struct SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE  : public MonoBehavi
 	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ____trs_22;
 	// System.Boolean Dreamteck.Splines.SplineUser::_hasTransform
 	bool ____hasTransform_23;
+	// Dreamteck.Splines.SplineSample Dreamteck.Splines.SplineUser::_workSample
+	SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 ____workSample_24;
 	// System.Int32 Dreamteck.Splines.SplineUser::_sampleCount
-	int32_t ____sampleCount_24;
-	// System.Int32 Dreamteck.Splines.SplineUser::startSampleIndex
-	int32_t ___startSampleIndex_25;
+	int32_t ____sampleCount_25;
+	// System.Int32 Dreamteck.Splines.SplineUser::_startSampleIndex
+	int32_t ____startSampleIndex_26;
 	// Dreamteck.Splines.SplineSample Dreamteck.Splines.SplineUser::evalResult
-	SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ___evalResult_26;
+	SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 ___evalResult_27;
 	// System.Boolean modreq(System.Runtime.CompilerServices.IsVolatile) Dreamteck.Splines.SplineUser::multithreaded
-	bool ___multithreaded_27;
+	bool ___multithreaded_28;
 	// System.Boolean Dreamteck.Splines.SplineUser::buildOnAwake
-	bool ___buildOnAwake_28;
+	bool ___buildOnAwake_29;
 	// System.Boolean Dreamteck.Splines.SplineUser::buildOnEnable
-	bool ___buildOnEnable_29;
+	bool ___buildOnEnable_30;
 	// Dreamteck.Splines.EmptySplineHandler Dreamteck.Splines.SplineUser::onPostBuild
-	EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* ___onPostBuild_30;
-	// System.Boolean Dreamteck.Splines.SplineUser::_isUpdated
-	bool ____isUpdated_31;
+	EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* ___onPostBuild_31;
 };
 
 // Dreamteck.Splines.MeshGenerator
@@ -1459,69 +1458,71 @@ struct MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E  : public SplineU
 	float ____uvRotation_48;
 	// UnityEngine.Rendering.IndexFormat Dreamteck.Splines.MeshGenerator::_meshIndexFormat
 	int32_t ____meshIndexFormat_49;
-	// UnityEngine.MeshCollider Dreamteck.Splines.MeshGenerator::meshCollider
-	MeshCollider_tB525E4DDE383252364ED0BDD32CF2B53914EE455* ___meshCollider_50;
-	// UnityEngine.MeshFilter Dreamteck.Splines.MeshGenerator::filter
-	MeshFilter_t6D1CE2473A1E45AC73013400585A1163BF66B2F5* ___filter_51;
-	// UnityEngine.MeshRenderer Dreamteck.Splines.MeshGenerator::meshRenderer
-	MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* ___meshRenderer_52;
-	// Dreamteck.TS_Mesh Dreamteck.Splines.MeshGenerator::tsMesh
-	TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* ___tsMesh_53;
-	// UnityEngine.Mesh Dreamteck.Splines.MeshGenerator::mesh
-	Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* ___mesh_54;
+	// UnityEngine.Mesh Dreamteck.Splines.MeshGenerator::_bakedMesh
+	Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* ____bakedMesh_50;
 	// System.Single Dreamteck.Splines.MeshGenerator::colliderUpdateRate
-	float ___colliderUpdateRate_55;
-	// System.Boolean Dreamteck.Splines.MeshGenerator::updateCollider
-	bool ___updateCollider_56;
-	// System.Single Dreamteck.Splines.MeshGenerator::lastUpdateTime
-	float ___lastUpdateTime_57;
-	// System.Single Dreamteck.Splines.MeshGenerator::vDist
-	float ___vDist_58;
+	float ___colliderUpdateRate_51;
+	// System.Boolean Dreamteck.Splines.MeshGenerator::_updateCollider
+	bool ____updateCollider_52;
+	// System.Single Dreamteck.Splines.MeshGenerator::_lastUpdateTime
+	float ____lastUpdateTime_53;
+	// System.Single Dreamteck.Splines.MeshGenerator::_vDist
+	float ____vDist_54;
+	// Dreamteck.TS_Mesh Dreamteck.Splines.MeshGenerator::<_tsMesh>k__BackingField
+	TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* ___U3C_tsMeshU3Ek__BackingField_56;
+	// UnityEngine.Mesh Dreamteck.Splines.MeshGenerator::_mesh
+	Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* ____mesh_57;
+	// UnityEngine.MeshFilter Dreamteck.Splines.MeshGenerator::filter
+	MeshFilter_t6D1CE2473A1E45AC73013400585A1163BF66B2F5* ___filter_58;
+	// UnityEngine.MeshRenderer Dreamteck.Splines.MeshGenerator::meshRenderer
+	MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* ___meshRenderer_59;
+	// UnityEngine.MeshCollider Dreamteck.Splines.MeshGenerator::meshCollider
+	MeshCollider_tB525E4DDE383252364ED0BDD32CF2B53914EE455* ___meshCollider_60;
 };
 
 struct MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E_StaticFields
 {
-	// UnityEngine.Vector2 Dreamteck.Splines.MeshGenerator::uvs
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___uvs_59;
+	// UnityEngine.Vector2 Dreamteck.Splines.MeshGenerator::__uvs
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 _____uvs_55;
 };
 
 // Dreamteck.Splines.SplineTracer
 struct SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A  : public SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE
 {
-	// Dreamteck.Splines.SplineTrigger[] Dreamteck.Splines.SplineTracer::triggerInvokeQueue
-	SplineTriggerU5BU5D_t8E0726E768BEDD7B9DFF5C85AA98F808CEB4DB75* ___triggerInvokeQueue_32;
-	// System.Collections.Generic.List`1<Dreamteck.Splines.SplineTracer/NodeConnection> Dreamteck.Splines.SplineTracer::nodeConnectionQueue
-	List_1_tC286A128F0893DC219DD3E0A289632F1C4EF5791* ___nodeConnectionQueue_33;
-	// System.Int32 Dreamteck.Splines.SplineTracer::addTriggerIndex
-	int32_t ___addTriggerIndex_34;
 	// System.Boolean Dreamteck.Splines.SplineTracer::applyDirectionRotation
-	bool ___applyDirectionRotation_35;
+	bool ___applyDirectionRotation_32;
 	// System.Boolean Dreamteck.Splines.SplineTracer::useTriggers
-	bool ___useTriggers_36;
+	bool ___useTriggers_33;
 	// System.Int32 Dreamteck.Splines.SplineTracer::triggerGroup
-	int32_t ___triggerGroup_37;
+	int32_t ___triggerGroup_34;
 	// Dreamteck.Splines.Spline/Direction Dreamteck.Splines.SplineTracer::_direction
-	int32_t ____direction_38;
+	int32_t ____direction_35;
 	// System.Boolean Dreamteck.Splines.SplineTracer::_dontLerpDirection
-	bool ____dontLerpDirection_39;
+	bool ____dontLerpDirection_36;
 	// Dreamteck.Splines.SplineTracer/PhysicsMode Dreamteck.Splines.SplineTracer::_physicsMode
-	int32_t ____physicsMode_40;
+	int32_t ____physicsMode_37;
 	// Dreamteck.Splines.TransformModule Dreamteck.Splines.SplineTracer::_motion
-	TransformModule_t3CAD9DEFF242B9200AC9FA51CF3F3417DCE72A8B* ____motion_41;
+	TransformModule_t3CAD9DEFF242B9200AC9FA51CF3F3417DCE72A8B* ____motion_38;
 	// UnityEngine.Rigidbody Dreamteck.Splines.SplineTracer::targetRigidbody
-	Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* ___targetRigidbody_42;
+	Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* ___targetRigidbody_39;
 	// UnityEngine.Rigidbody2D Dreamteck.Splines.SplineTracer::targetRigidbody2D
-	Rigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F* ___targetRigidbody2D_43;
+	Rigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F* ___targetRigidbody2D_40;
 	// UnityEngine.Transform Dreamteck.Splines.SplineTracer::targetTransform
-	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___targetTransform_44;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___targetTransform_41;
 	// Dreamteck.Splines.SplineSample Dreamteck.Splines.SplineTracer::_result
-	SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ____result_45;
+	SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 ____result_42;
 	// Dreamteck.Splines.SplineSample Dreamteck.Splines.SplineTracer::_finalResult
-	SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ____finalResult_46;
+	SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 ____finalResult_43;
 	// Dreamteck.Splines.SplineTracer/JunctionHandler Dreamteck.Splines.SplineTracer::onNode
-	JunctionHandler_t0A4A89D185BAF77E68113E13444973A668A6B27D* ___onNode_47;
+	JunctionHandler_t0A4A89D185BAF77E68113E13444973A668A6B27D* ___onNode_44;
 	// Dreamteck.Splines.EmptySplineHandler Dreamteck.Splines.SplineTracer::onMotionApplied
-	EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* ___onMotionApplied_48;
+	EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* ___onMotionApplied_45;
+	// Dreamteck.Splines.SplineTrigger[] Dreamteck.Splines.SplineTracer::triggerInvokeQueue
+	SplineTriggerU5BU5D_t8E0726E768BEDD7B9DFF5C85AA98F808CEB4DB75* ___triggerInvokeQueue_46;
+	// System.Collections.Generic.List`1<Dreamteck.Splines.SplineTracer/NodeConnection> Dreamteck.Splines.SplineTracer::nodeConnectionQueue
+	List_1_tC286A128F0893DC219DD3E0A289632F1C4EF5791* ___nodeConnectionQueue_47;
+	// System.Int32 Dreamteck.Splines.SplineTracer::addTriggerIndex
+	int32_t ___addTriggerIndex_48;
 };
 
 // Dreamteck.Splines.SplinePositioner
@@ -1529,12 +1530,20 @@ struct SplinePositioner_t65907A7478BF746830F2EC0659B5B7AC010129AC  : public Spli
 {
 	// UnityEngine.GameObject Dreamteck.Splines.SplinePositioner::_targetObject
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ____targetObject_50;
+	// Dreamteck.Splines.SplineTracer Dreamteck.Splines.SplinePositioner::_followTarget
+	SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A* ____followTarget_51;
+	// System.Single Dreamteck.Splines.SplinePositioner::_followTargetDistance
+	float ____followTargetDistance_52;
+	// System.Boolean Dreamteck.Splines.SplinePositioner::_followLoop
+	bool ____followLoop_53;
+	// Dreamteck.Splines.Spline/Direction Dreamteck.Splines.SplinePositioner::_followTargetDirection
+	int32_t ____followTargetDirection_54;
 	// System.Single Dreamteck.Splines.SplinePositioner::_position
-	float ____position_51;
+	float ____position_55;
 	// Dreamteck.Splines.SplinePositioner/Mode Dreamteck.Splines.SplinePositioner::_mode
-	int32_t ____mode_52;
+	int32_t ____mode_56;
 	// System.Single Dreamteck.Splines.SplinePositioner::_lastPosition
-	float ____lastPosition_53;
+	float ____lastPosition_57;
 };
 
 // Dreamteck.Splines.SplineProjector
@@ -1568,98 +1577,100 @@ struct SplineProjector_t7894D8EA56C41AF5B75BEDA8D0C7C06E5B07BD05  : public Splin
 struct SplineRenderer_tEA46B320767235A628ACD393AD0602351322D127  : public MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E
 {
 	// System.Boolean Dreamteck.Splines.SplineRenderer::autoOrient
-	bool ___autoOrient_60;
+	bool ___autoOrient_61;
 	// System.Int32 Dreamteck.Splines.SplineRenderer::updateFrameInterval
-	int32_t ___updateFrameInterval_61;
+	int32_t ___updateFrameInterval_62;
 	// System.Int32 Dreamteck.Splines.SplineRenderer::_slices
-	int32_t ____slices_62;
+	int32_t ____slices_63;
 	// System.Int32 Dreamteck.Splines.SplineRenderer::_currentFrame
-	int32_t ____currentFrame_63;
+	int32_t ____currentFrame_64;
 	// UnityEngine.Vector3 Dreamteck.Splines.SplineRenderer::_vertexDirection
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ____vertexDirection_64;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ____vertexDirection_65;
 	// System.Boolean Dreamteck.Splines.SplineRenderer::_orthographic
-	bool ____orthographic_65;
+	bool ____orthographic_66;
 	// System.Boolean Dreamteck.Splines.SplineRenderer::_init
-	bool ____init_66;
+	bool ____init_67;
 };
 
 // Dreamteck.Splines.SurfaceGenerator
 struct SurfaceGenerator_tDFCDF8C58D9EE70F31FF2AA4700B256F46B58258  : public MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E
 {
 	// System.Single Dreamteck.Splines.SurfaceGenerator::_expand
-	float ____expand_60;
+	float ____expand_61;
 	// System.Single Dreamteck.Splines.SurfaceGenerator::_extrude
-	float ____extrude_61;
+	float ____extrude_62;
 	// UnityEngine.Vector2 Dreamteck.Splines.SurfaceGenerator::_sideUvScale
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ____sideUvScale_62;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ____sideUvScale_63;
 	// UnityEngine.Vector2 Dreamteck.Splines.SurfaceGenerator::_sideUvOffset
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ____sideUvOffset_63;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ____sideUvOffset_64;
+	// System.Single Dreamteck.Splines.SurfaceGenerator::_sideUvRotation
+	float ____sideUvRotation_65;
 	// Dreamteck.Splines.SplineComputer Dreamteck.Splines.SurfaceGenerator::_extrudeSpline
-	SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* ____extrudeSpline_64;
+	SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* ____extrudeSpline_66;
 	// UnityEngine.Vector3 Dreamteck.Splines.SurfaceGenerator::_extrudeOffset
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ____extrudeOffset_65;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ____extrudeOffset_67;
 	// Dreamteck.Splines.SplineSample[] Dreamteck.Splines.SurfaceGenerator::extrudeResults
-	SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* ___extrudeResults_66;
+	SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* ___extrudeResults_68;
 	// UnityEngine.Vector3[] Dreamteck.Splines.SurfaceGenerator::identityVertices
-	Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* ___identityVertices_67;
+	Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* ___identityVertices_69;
 	// UnityEngine.Vector3[] Dreamteck.Splines.SurfaceGenerator::identityNormals
-	Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* ___identityNormals_68;
+	Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* ___identityNormals_70;
 	// UnityEngine.Vector2[] Dreamteck.Splines.SurfaceGenerator::projectedVerts
-	Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* ___projectedVerts_69;
+	Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* ___projectedVerts_71;
 	// System.Int32[] Dreamteck.Splines.SurfaceGenerator::surfaceTris
-	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___surfaceTris_70;
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___surfaceTris_72;
 	// System.Int32[] Dreamteck.Splines.SurfaceGenerator::wallTris
-	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___wallTris_71;
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___wallTris_73;
 	// System.Double Dreamteck.Splines.SurfaceGenerator::_extrudeFrom
-	double ____extrudeFrom_72;
+	double ____extrudeFrom_74;
 	// System.Double Dreamteck.Splines.SurfaceGenerator::_extrudeTo
-	double ____extrudeTo_73;
+	double ____extrudeTo_75;
 	// System.Boolean Dreamteck.Splines.SurfaceGenerator::_uniformUvs
-	bool ____uniformUvs_74;
+	bool ____uniformUvs_76;
 	// UnityEngine.Vector3 Dreamteck.Splines.SurfaceGenerator::_trsRight
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ____trsRight_75;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ____trsRight_77;
 	// UnityEngine.Vector3 Dreamteck.Splines.SurfaceGenerator::_trsUp
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ____trsUp_76;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ____trsUp_78;
 	// UnityEngine.Vector3 Dreamteck.Splines.SurfaceGenerator::_trsForward
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ____trsForward_77;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ____trsForward_79;
 };
 
 // Dreamteck.Splines.TubeGenerator
 struct TubeGenerator_t4E485B46B06DA51CFB07F5C1E751CC1010BCD2DE  : public MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E
 {
 	// System.Int32 Dreamteck.Splines.TubeGenerator::_sides
-	int32_t ____sides_60;
+	int32_t ____sides_61;
 	// System.Int32 Dreamteck.Splines.TubeGenerator::_roundCapLatitude
-	int32_t ____roundCapLatitude_61;
+	int32_t ____roundCapLatitude_62;
 	// Dreamteck.Splines.TubeGenerator/CapMethod Dreamteck.Splines.TubeGenerator::_capMode
-	int32_t ____capMode_62;
+	int32_t ____capMode_63;
 	// System.Single Dreamteck.Splines.TubeGenerator::_revolve
-	float ____revolve_63;
+	float ____revolve_64;
 	// System.Single Dreamteck.Splines.TubeGenerator::_capUVScale
-	float ____capUVScale_64;
+	float ____capUVScale_65;
 	// System.Single Dreamteck.Splines.TubeGenerator::_uvTwist
-	float ____uvTwist_65;
+	float ____uvTwist_66;
 	// System.Int32 Dreamteck.Splines.TubeGenerator::bodyVertexCount
-	int32_t ___bodyVertexCount_66;
+	int32_t ___bodyVertexCount_67;
 	// System.Int32 Dreamteck.Splines.TubeGenerator::bodyTrisCount
-	int32_t ___bodyTrisCount_67;
+	int32_t ___bodyTrisCount_68;
 	// System.Int32 Dreamteck.Splines.TubeGenerator::capVertexCount
-	int32_t ___capVertexCount_68;
+	int32_t ___capVertexCount_69;
 	// System.Int32 Dreamteck.Splines.TubeGenerator::capTrisCount
-	int32_t ___capTrisCount_69;
+	int32_t ___capTrisCount_70;
 };
 
 // Dreamteck.Splines.WaveformGenerator
 struct WaveformGenerator_t88067D558E128EBDBE4C561A4F312243DBE055B1  : public MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E
 {
 	// Dreamteck.Splines.WaveformGenerator/Axis Dreamteck.Splines.WaveformGenerator::_axis
-	int32_t ____axis_60;
+	int32_t ____axis_61;
 	// System.Boolean Dreamteck.Splines.WaveformGenerator::_symmetry
-	bool ____symmetry_61;
+	bool ____symmetry_62;
 	// Dreamteck.Splines.WaveformGenerator/UVWrapMode Dreamteck.Splines.WaveformGenerator::_uvWrapMode
-	int32_t ____uvWrapMode_62;
+	int32_t ____uvWrapMode_63;
 	// System.Int32 Dreamteck.Splines.WaveformGenerator::_slices
-	int32_t ____slices_63;
+	int32_t ____slices_64;
 };
 #ifdef __clang__
 #pragma clang diagnostic pop
@@ -1864,41 +1875,6 @@ struct ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389  : public RuntimeAr
 		m_Items[index] = value;
 	}
 };
-// Dreamteck.Splines.SplineSample[]
-struct SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF  : public RuntimeArray
-{
-	ALIGN_FIELD (8) SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* m_Items[1];
-
-	inline SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* GetAt(il2cpp_array_size_t index) const
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items[index];
-	}
-	inline SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143** GetAddressAt(il2cpp_array_size_t index)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items + index;
-	}
-	inline void SetAt(il2cpp_array_size_t index, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* value)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		m_Items[index] = value;
-		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
-	}
-	inline SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* GetAtUnchecked(il2cpp_array_size_t index) const
-	{
-		return m_Items[index];
-	}
-	inline SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143** GetAddressAtUnchecked(il2cpp_array_size_t index)
-	{
-		return m_Items + index;
-	}
-	inline void SetAtUnchecked(il2cpp_array_size_t index, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* value)
-	{
-		m_Items[index] = value;
-		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
-	}
-};
 // Dreamteck.Splines.TriggerGroup[]
 struct TriggerGroupU5BU5D_tDD9644D34D55E3781E16C0A84A45D08B1AC2FBFB  : public RuntimeArray
 {
@@ -2002,6 +1978,39 @@ struct DelegateU5BU5D_tC5AB7E8F745616680F337909D3A8E6C722CDF771  : public Runtim
 	{
 		m_Items[index] = value;
 		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+};
+// Dreamteck.Splines.SplineSample[]
+struct SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF  : public RuntimeArray
+{
+	ALIGN_FIELD (8) SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 m_Items[1];
+
+	inline SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 value)
+	{
+		m_Items[index] = value;
 	}
 };
 // System.Object[]
@@ -2148,8 +2157,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___x0, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___y1, const RuntimeMethod* method) ;
 // System.Void Dreamteck.Splines.SplineTracer::RefreshTargets()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineTracer_RefreshTargets_mC0654283C581BA5399F379F97E19D7756B9E301F (SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A* __this, const RuntimeMethod* method) ;
+// System.Void Dreamteck.Splines.EmptySplineHandler::.ctor(System.Object,System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EmptySplineHandler__ctor_m24C3D3F5240BEDB0365026CED366261659D54E02 (EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) ;
+// System.Void Dreamteck.Splines.SplineTracer::remove_onMotionApplied(Dreamteck.Splines.EmptySplineHandler)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineTracer_remove_onMotionApplied_mAD4F774DB2EFAD9F1FE5364E5F247B2AEA1C8BEE (SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A* __this, EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* ___value0, const RuntimeMethod* method) ;
+// System.Void Dreamteck.Splines.SplineTracer::add_onMotionApplied(Dreamteck.Splines.EmptySplineHandler)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineTracer_add_onMotionApplied_m5AFC0CDA154BAB8654F6A6271EBE3B733952B30F (SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A* __this, EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* ___value0, const RuntimeMethod* method) ;
+// System.Void Dreamteck.Splines.SplinePositioner::OnFollowTargetMotionApplied()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplinePositioner_OnFollowTargetMotionApplied_m2C64EDAC5EDC4AAB599759D62A715DB7E436DDFC (SplinePositioner_t65907A7478BF746830F2EC0659B5B7AC010129AC* __this, const RuntimeMethod* method) ;
+// Dreamteck.Splines.SplineTracer Dreamteck.Splines.SplinePositioner::get_followTarget()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A* SplinePositioner_get_followTarget_mF4DA2D84E33A70829EFF3AAF12C876487D633715_inline (SplinePositioner_t65907A7478BF746830F2EC0659B5B7AC010129AC* __this, const RuntimeMethod* method) ;
 // Dreamteck.Splines.SplinePositioner/Mode Dreamteck.Splines.SplinePositioner::get_mode()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t SplinePositioner_get_mode_mE89FF72BE2024DD0A2DEE7155DB5880964BC3240_inline (SplinePositioner_t65907A7478BF746830F2EC0659B5B7AC010129AC* __this, const RuntimeMethod* method) ;
+// Dreamteck.Splines.SplineSample Dreamteck.Splines.SplineTracer::get_result()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 SplineTracer_get_result_m8A513BF63623991012285DF1DA233EFD51A76C47_inline (SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A* __this, const RuntimeMethod* method) ;
+// System.Double Dreamteck.Splines.SplineUser::Travel(System.Double,System.Single,Dreamteck.Splines.Spline/Direction,System.Single&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double SplineUser_Travel_mF13A3ED21B0CECF21A76ACB47E744AF3A222490B (SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE* __this, double ___start0, float ___distance1, int32_t ___direction2, float* ___moved3, const RuntimeMethod* method) ;
+// System.Void Dreamteck.Splines.SplineTracer::Awake()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineTracer_Awake_m76F12DBD6CE77C306220F87340EDD4DE3E6E5DCE (SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A* __this, const RuntimeMethod* method) ;
+// System.Void Dreamteck.Splines.SplineUser::OnDestroy()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineUser_OnDestroy_mB5406FC624E2C06F97031D9A9952E9CC20C086D3 (SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE* __this, const RuntimeMethod* method) ;
 // System.Void Dreamteck.Splines.SplineUser::OnDidApplyAnimationProperties()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineUser_OnDidApplyAnimationProperties_m970D55542854714D9C681D74D3E0871D98B7262A (SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE* __this, const RuntimeMethod* method) ;
 // UnityEngine.GameObject Dreamteck.Splines.SplinePositioner::get_targetObject()
@@ -2206,8 +2233,8 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR double SplineUser_get_clipFrom_m2
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR double SplineUser_get_clipTo_mE824718C3FB404D8172DCFD93F214F487550E9C2_inline (SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE* __this, const RuntimeMethod* method) ;
 // System.Int32 Dreamteck.Splines.SplineProjector::get_subdivide()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t SplineProjector_get_subdivide_mD1E14F67D36D7A5A94996BD51C4805A181933357_inline (SplineProjector_t7894D8EA56C41AF5B75BEDA8D0C7C06E5B07BD05* __this, const RuntimeMethod* method) ;
-// System.Void Dreamteck.Splines.SplineComputer::Project(Dreamteck.Splines.SplineSample,UnityEngine.Vector3,System.Double,System.Double,Dreamteck.Splines.SplineComputer/EvaluateMode,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineComputer_Project_m1D86B74DE3D2DE94E06EDAB56441671A59FE11F2 (SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* __this, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ___result0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___position1, double ___from2, double ___to3, int32_t ___mode4, int32_t ___subdivisions5, const RuntimeMethod* method) ;
+// System.Void Dreamteck.Splines.SplineComputer::Project(UnityEngine.Vector3,Dreamteck.Splines.SplineSample&,System.Double,System.Double,Dreamteck.Splines.SplineComputer/EvaluateMode,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineComputer_Project_m1941776733636317ED354B36D9E43E9CE2883471 (SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___worldPoint0, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ___result1, double ___from2, double ___to3, int32_t ___mode4, int32_t ___subdivisions5, const RuntimeMethod* method) ;
 // System.Double Dreamteck.Splines.SplineUser::ClipPercent(System.Double)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double SplineUser_ClipPercent_mED0EF31DFC5F9C4B249460624AF547EED3EA07E4 (SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE* __this, double ___percent0, const RuntimeMethod* method) ;
 // System.Void Dreamteck.Splines.SplineProjector::Project()
@@ -2230,10 +2257,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineTracer_InvokeTriggers_m4DE15E24835
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineTracer_InvokeNodes_mF74FDDC1F9D2C888B0CFAD94A8F769FBD3FF5362 (SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A* __this, const RuntimeMethod* method) ;
 // UnityEngine.Vector3 UnityEngine.Vector3::get_zero()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline (const RuntimeMethod* method) ;
-// System.Void Dreamteck.Splines.MeshGenerator::Awake()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MeshGenerator_Awake_m0B8F023A8612CDFFC6AAEE858462B8CB97B48960 (MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E* __this, const RuntimeMethod* method) ;
-// System.Void UnityEngine.Object::set_name(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object_set_name_mC79E6DC8FFD72479C90F0C4CC7F42A0FEAF5AE47 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* __this, String_t* ___value0, const RuntimeMethod* method) ;
 // UnityEngine.Camera UnityEngine.Camera::get_current()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* Camera_get_current_m25217A02CB09E3BD50E3E0327879E870AD58C6C3 (const RuntimeMethod* method) ;
 // System.Boolean UnityEngine.Camera::get_orthographic()
@@ -2244,6 +2267,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MeshGenerator_BuildMesh_m8593689F27E5E6B70A36B3E4058C9FA5E933A07A (MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E* __this, const RuntimeMethod* method) ;
 // System.Void Dreamteck.Splines.SplineRenderer::GenerateVertices(UnityEngine.Vector3,System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineRenderer_GenerateVertices_mEF26279876DB445208FBB66FCB2CD4AD81A5D07F (SplineRenderer_tEA46B320767235A628ACD393AD0602351322D127* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___vertexDirection0, bool ___orthoGraphic1, const RuntimeMethod* method) ;
+// Dreamteck.TS_Mesh Dreamteck.Splines.MeshGenerator::get__tsMesh()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline (MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E* __this, const RuntimeMethod* method) ;
 // System.Int32 Dreamteck.Splines.SplineUser::get_sampleCount()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t SplineUser_get_sampleCount_m72EB98E357EB6A53B94626C14D2F0CAF87997AFC_inline (SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE* __this, const RuntimeMethod* method) ;
 // System.Int32[] Dreamteck.MeshUtility::GeneratePlaneTriangles(System.Int32[]&,System.Int32,System.Int32,System.Boolean,System.Int32,System.Int32,System.Boolean)
@@ -2258,8 +2283,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineRenderer_RenderWithCamera_m91E781C
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MeshGenerator_ResetUVDistance_mBC889B0DF8BA3B6125FE13E4F3336E3508F9993D (MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E* __this, const RuntimeMethod* method) ;
 // UnityEngine.Vector3 Dreamteck.Splines.MeshGenerator::get_offset()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 MeshGenerator_get_offset_m05B30B6A00C843F0C0D2D97FE5C13544BE501436_inline (MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E* __this, const RuntimeMethod* method) ;
-// System.Void Dreamteck.Splines.SplineUser::GetSample(System.Int32,Dreamteck.Splines.SplineSample)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineUser_GetSample_m3BC18583D33B76D600B873A10966C3AAD9744139 (SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE* __this, int32_t ___index0, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ___target1, const RuntimeMethod* method) ;
+// System.Void Dreamteck.Splines.SplineUser::GetSample(System.Int32,Dreamteck.Splines.SplineSample&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineUser_GetSample_m880DFE2CAAE9E9F4D85F68B13E9DE816186C3D8E (SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE* __this, int32_t ___index0, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ___target1, const RuntimeMethod* method) ;
 // UnityEngine.Vector3 UnityEngine.Vector3::Cross(UnityEngine.Vector3,UnityEngine.Vector3)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_Cross_mF93A280558BCE756D13B6CC5DCD7DE8A43148987_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___lhs0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___rhs1, const RuntimeMethod* method) ;
 // UnityEngine.Vector3 UnityEngine.Vector3::op_Multiply(System.Single,UnityEngine.Vector3)
@@ -2304,8 +2329,10 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MeshGenerator__ctor_m5D5CE5E6D63ED2D3AE7688622270EA42D9363ED6 (MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E* __this, const RuntimeMethod* method) ;
 // System.Void Dreamteck.Splines.TransformModule::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransformModule__ctor_mC44E819D74762A181B660E14BE48FE47EF764CC9 (TransformModule_t3CAD9DEFF242B9200AC9FA51CF3F3417DCE72A8B* __this, const RuntimeMethod* method) ;
-// System.Void Dreamteck.Splines.SplineUser::Evaluate(System.Double,Dreamteck.Splines.SplineSample)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineUser_Evaluate_m91FFF67B6286E06723C5A4CF5E25D6CF30A36722 (SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE* __this, double ___percent0, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ___result1, const RuntimeMethod* method) ;
+// System.Void Dreamteck.Splines.SplineUser::Awake()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineUser_Awake_mC11EE0E4589956036EDBA5A8F8BD5130318BF926 (SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE* __this, const RuntimeMethod* method) ;
+// System.Void Dreamteck.Splines.SplineUser::Evaluate(System.Double,Dreamteck.Splines.SplineSample&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineUser_Evaluate_m9E8A8AD4FFABC3D03F502DF4878DA05CF5387A74 (SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE* __this, double ___percent0, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ___result1, const RuntimeMethod* method) ;
 // System.Double Dreamteck.Splines.SplineUser::Travel(System.Double,System.Single,Dreamteck.Splines.Spline/Direction)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double SplineUser_Travel_m995131F3C3C2AD270BD106AE58DA831A54346FB9 (SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE* __this, double ___start0, float ___distance1, int32_t ___direction2, const RuntimeMethod* method) ;
 // T UnityEngine.Component::GetComponent<UnityEngine.Rigidbody>()
@@ -2318,18 +2345,18 @@ inline Rigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F* Component_GetCompo
 {
 	return ((  Rigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared)(__this, method);
 }
-// System.Void Dreamteck.Splines.SplineUser::ModifySample(Dreamteck.Splines.SplineSample,Dreamteck.Splines.SplineSample)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineUser_ModifySample_mB328F837A84F1114AD3CE2D38F1D7FCF1676B568 (SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE* __this, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ___source0, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ___destination1, const RuntimeMethod* method) ;
+// System.Void Dreamteck.Splines.SplineUser::ModifySample(Dreamteck.Splines.SplineSample&,Dreamteck.Splines.SplineSample&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineUser_ModifySample_m6BDF2C7D753B61E10DA92846995AB088ED4BB1D8 (SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE* __this, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ___source0, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ___destination1, const RuntimeMethod* method) ;
 // System.Double Dreamteck.Splines.SplineUser::UnclipPercent(System.Double)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double SplineUser_UnclipPercent_m72517A645203A5148B9028F686B0CC626769AC67 (SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE* __this, double ___percent0, const RuntimeMethod* method) ;
 // System.Void Dreamteck.Splines.SplineComputer::GetSamplingValues(System.Double,System.Int32&,System.Double&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineComputer_GetSamplingValues_m1457A738ECA022ACB3D4E1AE4996ACF5F9A4FFA6 (SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* __this, double ___percent0, int32_t* ___index1, double* ___lerp2, const RuntimeMethod* method) ;
-// Dreamteck.Splines.SplineSample[] Dreamteck.Splines.SplineComputer::get_samples()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* SplineComputer_get_samples_m597B55E2C6B1B0A67BB5034FE751BF732EA741E7 (SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* __this, const RuntimeMethod* method) ;
+// Dreamteck.Splines.SplineSample Dreamteck.Splines.SplineComputer::get_Item(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 SplineComputer_get_Item_m17A63FF085FDE4B39D5BD07EBCD20B7D341825E1 (SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* __this, int32_t ___index0, const RuntimeMethod* method) ;
 // Dreamteck.Splines.TransformModule Dreamteck.Splines.SplineTracer::get_motion()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TransformModule_t3CAD9DEFF242B9200AC9FA51CF3F3417DCE72A8B* SplineTracer_get_motion_m077DA0AB0D211B79AD19112DD01939AAD8C2F967 (SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A* __this, const RuntimeMethod* method) ;
 // System.Void Dreamteck.Splines.TransformModule::set_splineResult(Dreamteck.Splines.SplineSample)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransformModule_set_splineResult_m0DDF74A97858048914CCC84042A3C62E28D4AFD8 (TransformModule_t3CAD9DEFF242B9200AC9FA51CF3F3417DCE72A8B* __this, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ___value0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void TransformModule_set_splineResult_m0DDF74A97858048914CCC84042A3C62E28D4AFD8_inline (TransformModule_t3CAD9DEFF242B9200AC9FA51CF3F3417DCE72A8B* __this, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 ___value0, const RuntimeMethod* method) ;
 // System.Void Dreamteck.Splines.TransformModule::ApplyTransform(UnityEngine.Transform)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransformModule_ApplyTransform_mDA000A86E9F4C681AAB69A133326758AA8071414 (TransformModule_t3CAD9DEFF242B9200AC9FA51CF3F3417DCE72A8B* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___input0, const RuntimeMethod* method) ;
 // System.Void Dreamteck.Splines.EmptySplineHandler::Invoke()
@@ -2357,6 +2384,8 @@ inline void List_1_Add_m36049C84C04F6C0A3744B32162EB21461CB9DFE3_inline (List_1_
 {
 	((  void (*) (List_1_tC286A128F0893DC219DD3E0A289632F1C4EF5791*, NodeConnection_tAC4CB5DFF5E5186DBFA585F543F5299CC139E309*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___item0, method);
 }
+// System.Boolean Dreamteck.Splines.SplineComputer::get_isClosed()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SplineComputer_get_isClosed_mE595EC65CA59406A9CC67B3EACB7F3DFA24F3CBF (SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* __this, const RuntimeMethod* method) ;
 // System.Int32 System.Collections.Generic.List`1<Dreamteck.Splines.SplineTracer/NodeConnection>::get_Count()
 inline int32_t List_1_get_Count_m9AA7A1F6D6736C80CE9633846DBC570F735A5A7D_inline (List_1_tC286A128F0893DC219DD3E0A289632F1C4EF5791* __this, const RuntimeMethod* method)
 {
@@ -2384,8 +2413,6 @@ inline void List_1__ctor_m527D8575BB41802ACD7B3D210656C0173D3B90F0 (List_1_tC286
 {
 	((  void (*) (List_1_tC286A128F0893DC219DD3E0A289632F1C4EF5791*, const RuntimeMethod*))List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared)(__this, method);
 }
-// System.Void Dreamteck.Splines.SplineSample::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineSample__ctor_m7DA9B02EC62251E38E12FAD0BACEE7E75DDC61DB (SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* __this, const RuntimeMethod* method) ;
 // System.Void Dreamteck.Splines.SplineUser::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineUser__ctor_mEE63396AB9A2A932D2BCA526EC42DFD13A626BF2 (SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE* __this, const RuntimeMethod* method) ;
 // System.Void Dreamteck.Splines.SplineComputer::Unsubscribe(Dreamteck.Splines.SplineUser)
@@ -2394,18 +2421,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineComputer_Unsubscribe_mDBCCBF9C301B
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineComputer_Subscribe_m1E5BF1D5CF2B807ED4302E1EB6B490143E83FAAD (SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* __this, SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE* ___input0, const RuntimeMethod* method) ;
 // System.Double Dreamteck.DMath::Clamp01(System.Double)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double DMath_Clamp01_mB366A5E5D6963102BBC75A3CE5FA29E5B50F46A2 (double ___a0, const RuntimeMethod* method) ;
-// System.Boolean Dreamteck.Splines.SplineComputer::get_isClosed()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SplineComputer_get_isClosed_mE595EC65CA59406A9CC67B3EACB7F3DFA24F3CBF (SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* __this, const RuntimeMethod* method) ;
 // System.Void Dreamteck.Splines.SplineUser::CacheTransform()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineUser_CacheTransform_mF25A467D2A66C6EEEE706CD6B5C7D794E1A77DF5 (SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE* __this, const RuntimeMethod* method) ;
 // System.Void Dreamteck.Splines.SplineUser::GetSamples()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineUser_GetSamples_m13C1D157947BA8108C4F687D49CC2E87F092A117 (SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE* __this, const RuntimeMethod* method) ;
+// System.Void Dreamteck.Splines.SplineSample::FastCopy(Dreamteck.Splines.SplineSample&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineSample_FastCopy_m8DD8D90BE9DD47EED748197D5872BB4A1AA05CEF (SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* __this, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ___sample0, const RuntimeMethod* method) ;
+// System.Void Dreamteck.Splines.SplineUser::ClampLoopSampleIndex(System.Int32&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineUser_ClampLoopSampleIndex_m49737A4E17CB38C3AD94626FE29F2E14170D0C63 (SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE* __this, int32_t* ___index0, const RuntimeMethod* method) ;
 // System.Void Dreamteck.Splines.SampleCollection::GetSamplingValues(System.Double,System.Int32&,System.Double&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SampleCollection_GetSamplingValues_mEFAC249D9870E0F0EE0CFC9637EF39BBC68AE843 (SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* __this, double ___percent0, int32_t* ___sampleIndex1, double* ___lerp2, const RuntimeMethod* method) ;
-// System.Int32 Dreamteck.Splines.SampleCollection::get_Count()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t SampleCollection_get_Count_m4CD74F577287B307B57A1E6A07AA4A7D5032128F (SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* __this, const RuntimeMethod* method) ;
-// Dreamteck.Splines.SplineSample Dreamteck.Splines.SplineUser::GetSampleRaw(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* SplineUser_GetSampleRaw_m348FCC800AC627A1C1FE4D63D0D6258FBE771315 (SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE* __this, int32_t ___index0, const RuntimeMethod* method) ;
+// System.Int32 Dreamteck.Splines.SampleCollection::get_length()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t SampleCollection_get_length_mB42A3EAF2CB5B8F16CBF5D91048A6DC72A17BD3B (SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* __this, const RuntimeMethod* method) ;
+// System.Void Dreamteck.Splines.SplineUser::GetSampleRaw(System.Int32,Dreamteck.Splines.SplineSample&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineUser_GetSampleRaw_m9E2F85951E397274852DB80A6EC5C634822AB110 (SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE* __this, int32_t ___index0, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ___sample1, const RuntimeMethod* method) ;
+// System.Single UnityEngine.Vector3::Dot(UnityEngine.Vector3,UnityEngine.Vector3)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Dot_mBB86BB940AA0A32FA7D3C02AC42E5BC7095A5D52_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___lhs0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___rhs1, const RuntimeMethod* method) ;
 // System.Boolean Dreamteck.Splines.SplineUser::get_autoUpdate()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool SplineUser_get_autoUpdate_mE971A36D7170716FF13A8BA403EC02986F8D886E_inline (SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE* __this, const RuntimeMethod* method) ;
 // System.Void Dreamteck.Splines.SplineUser::RunUpdate()
@@ -2416,20 +2447,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EmptyHandler__ctor_m841E9CF5DC2F71982AF7
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineThreading_Run_m8D18C3F0113800FAEA412F1521A7D6C8200DAAEB (EmptyHandler_t4B14D7C3896E95A95AA6639D9B0496DB8AC6879B* ___handler0, const RuntimeMethod* method) ;
 // Dreamteck.Splines.SplineComputer/SampleMode Dreamteck.Splines.SplineComputer::get_sampleMode()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t SplineComputer_get_sampleMode_mA483D03C3E4C99B6124F275B3123505B7843639A_inline (SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* __this, const RuntimeMethod* method) ;
-// System.Void Dreamteck.Splines.SplineSample::CopyFrom(Dreamteck.Splines.SplineSample)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineSample_CopyFrom_m78352CD91991F2090066C4C8897A2306D6CDC701 (SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* __this, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ___input0, const RuntimeMethod* method) ;
-// System.Void Dreamteck.Splines.SplineUser::ModifySample(Dreamteck.Splines.SplineSample)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineUser_ModifySample_m9EC7F43C6AABDEEDB8CD2B6A97D6A672493D6CBB (SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE* __this, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ___sample0, const RuntimeMethod* method) ;
-// Dreamteck.Splines.OffsetModifier Dreamteck.Splines.SplineUser::get_offsetModifier()
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR OffsetModifier_t6750449B324B80EB198DAF68209DDC8F041A363C* SplineUser_get_offsetModifier_mE21C06401900A7944EF4351516BC525EA47F4C8C_inline (SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE* __this, const RuntimeMethod* method) ;
-// System.Void Dreamteck.Splines.SplineComputer::GetSamples(Dreamteck.Splines.SampleCollection)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineComputer_GetSamples_m33A60A29D028CC6C48F9E4D282A6EF4097B425C1 (SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* __this, SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* ___collection0, const RuntimeMethod* method) ;
-// System.Void Dreamteck.Splines.SampleCollection::Evaluate(System.Double,Dreamteck.Splines.SplineSample)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SampleCollection_Evaluate_mF6024ABA400EE30B80F468DCF53A1C28ACE21306 (SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* __this, double ___percent0, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ___result1, const RuntimeMethod* method) ;
-// System.Int32 Dreamteck.Splines.SampleCollection::GetClippedSampleCount(System.Double,System.Double,System.Int32&,System.Int32&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t SampleCollection_GetClippedSampleCount_m2D15178087169063141251347714E028A86EC990 (SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* __this, double ___clipFrom0, double ___clipTo1, int32_t* ___startIndex2, int32_t* ___endIndex3, const RuntimeMethod* method) ;
+// System.Void Dreamteck.Splines.SplineUser::ModifySample(Dreamteck.Splines.SplineSample&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineUser_ModifySample_m3175943B69EA85D618EC580DDA83CF3E13889D21 (SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE* __this, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ___sample0, const RuntimeMethod* method) ;
+// System.Void Dreamteck.Splines.SplineUser::ApplyModifier(Dreamteck.Splines.SplineSampleModifier,Dreamteck.Splines.SplineSample&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineUser_ApplyModifier_m4B74B05AEFA641B6733E8D6511F3D2C2B0AE2335 (SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE* __this, SplineSampleModifier_t22889DA69F7EB5513465DE330AFF6D213F260150* ___modifier0, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ___sample1, const RuntimeMethod* method) ;
 // System.Void Dreamteck.Splines.SplineUser::ClipPercent(System.Double&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineUser_ClipPercent_mA5A8CE8C0D8B3462062250BFCB594C93A3E64885 (SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE* __this, double* ___percent0, const RuntimeMethod* method) ;
+// System.Void Dreamteck.Splines.SplineComputer::GetSamples(Dreamteck.Splines.SampleCollection)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineComputer_GetSamples_m33A60A29D028CC6C48F9E4D282A6EF4097B425C1 (SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* __this, SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* ___collection0, const RuntimeMethod* method) ;
+// System.Void Dreamteck.Splines.SampleCollection::Evaluate(System.Double,Dreamteck.Splines.SplineSample&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SampleCollection_Evaluate_mAAC912C0D30624A4CE054FDD16943264D579BD20 (SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* __this, double ___percent0, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ___result1, const RuntimeMethod* method) ;
+// System.Int32 Dreamteck.Splines.SampleCollection::GetClippedSampleCount(System.Double,System.Double,System.Int32&,System.Int32&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t SampleCollection_GetClippedSampleCount_m2D15178087169063141251347714E028A86EC990 (SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* __this, double ___clipFrom0, double ___clipTo1, int32_t* ___startIndex2, int32_t* ___endIndex3, const RuntimeMethod* method) ;
 // System.Double Dreamteck.Splines.SplineUser::get_span()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double SplineUser_get_span_m400497F3FC35398E43FC0200CEDD1CFE3893021E (SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE* __this, const RuntimeMethod* method) ;
 // System.Double Dreamteck.DMath::InverseLerp(System.Double,System.Double,System.Double)
@@ -2444,12 +2473,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SampleCollection_Evaluate_m24254B2BC7A00
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SampleCollection_EvaluatePositions_m0B60ADE8F791B32A2D8DD345BA6E572C1B61AA0E (SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* __this, Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C** ___positions0, double ___from1, double ___to2, const RuntimeMethod* method) ;
 // System.Double Dreamteck.Splines.SampleCollection::Travel(System.Double,System.Single,Dreamteck.Splines.Spline/Direction,System.Single&,System.Double,System.Double)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double SampleCollection_Travel_mCC4EB579751BC33446AC07ADA47CCBAF858F388D (SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* __this, double ___start0, float ___distance1, int32_t ___direction2, float* ___moved3, double ___clipFrom4, double ___clipTo5, const RuntimeMethod* method) ;
-// System.Double Dreamteck.Splines.SplineUser::Travel(System.Double,System.Single,Dreamteck.Splines.Spline/Direction,System.Single&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double SplineUser_Travel_mF13A3ED21B0CECF21A76ACB47E744AF3A222490B (SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE* __this, double ___start0, float ___distance1, int32_t ___direction2, float* ___moved3, const RuntimeMethod* method) ;
 // System.Double Dreamteck.Splines.SampleCollection::TravelWithOffset(System.Double,System.Single,Dreamteck.Splines.Spline/Direction,UnityEngine.Vector3,System.Single&,System.Double,System.Double)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double SampleCollection_TravelWithOffset_mD5E6A0D6E82C4B5A39FBEE2F9AA6C8342A504E22 (SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* __this, double ___start0, float ___distance1, int32_t ___direction2, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___offset3, float* ___moved4, double ___clipFrom5, double ___clipTo6, const RuntimeMethod* method) ;
-// System.Void Dreamteck.Splines.SampleCollection::Project(UnityEngine.Vector3,System.Int32,Dreamteck.Splines.SplineSample,System.Double,System.Double)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SampleCollection_Project_m9B76C6B2E3A8200FDADAC758D417BFC581817F4A (SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___position0, int32_t ___controlPointCount1, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ___result2, double ___from3, double ___to4, const RuntimeMethod* method) ;
+// System.Void Dreamteck.Splines.SampleCollection::Project(UnityEngine.Vector3,System.Int32,Dreamteck.Splines.SplineSample&,System.Double,System.Double)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SampleCollection_Project_mB4F44CAE815483E587671F56A0C61C5BFF66F6B7 (SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___position0, int32_t ___controlPointCount1, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ___result2, double ___from3, double ___to4, const RuntimeMethod* method) ;
 // System.Single Dreamteck.Splines.SampleCollection::CalculateLength(System.Double,System.Double)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float SampleCollection_CalculateLength_m3F7C0C305C79417A7AC164B65F4EECC04726BCD4 (SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* __this, double ___from0, double ___to1, const RuntimeMethod* method) ;
 // System.Single Dreamteck.Splines.SampleCollection::CalculateLengthWithOffset(UnityEngine.Vector3,System.Double,System.Double)
@@ -2468,6 +2495,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SizeModifier__ctor_mD1F7E4B797D0B8FF0E40
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SampleCollection__ctor_m2B54EDA6616B6E2BE005422C239068BAC475EAC3 (SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* __this, const RuntimeMethod* method) ;
 // System.Boolean UnityEngine.Vector2::op_Inequality(UnityEngine.Vector2,UnityEngine.Vector2)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Vector2_op_Inequality_mBEA93B5A0E954FEFB863DC61CB209119980EC713_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___lhs0, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___rhs1, const RuntimeMethod* method) ;
+// System.Void Dreamteck.Splines.MeshGenerator::Awake()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MeshGenerator_Awake_m0B8F023A8612CDFFC6AAEE858462B8CB97B48960 (MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E* __this, const RuntimeMethod* method) ;
 // UnityEngine.Transform Dreamteck.Splines.SplineUser::get_trs()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* SplineUser_get_trs_m6F25CC917BE93D65101D7016F71C0BC4B9D089CF_inline (SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE* __this, const RuntimeMethod* method) ;
 // UnityEngine.Vector3 UnityEngine.Transform::get_right()
@@ -2495,7 +2524,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2D
 // System.Void Dreamteck.Splines.SurfaceGenerator::GetIdentityVerts(UnityEngine.Vector3,UnityEngine.Vector3,System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SurfaceGenerator_GetIdentityVerts_m76E370FF529BCB49C5E1224565A2DB55AD435C4F (SurfaceGenerator_tDFCDF8C58D9EE70F31FF2AA4700B256F46B58258* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___center0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___normal1, bool ___clockwise2, const RuntimeMethod* method) ;
 // UnityEngine.Vector3 Dreamteck.Splines.SplineUser::TransformOffset(Dreamteck.Splines.SplineSample,UnityEngine.Vector3)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 SplineUser_TransformOffset_mFDEF031F967F1C74E0D60465DF9BC38441D0309B (SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ___sample0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___localOffset1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 SplineUser_TransformOffset_mFDEF031F967F1C74E0D60465DF9BC38441D0309B (SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 ___sample0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___localOffset1, const RuntimeMethod* method) ;
 // UnityEngine.Quaternion Dreamteck.Splines.SplineSample::get_rotation()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 SplineSample_get_rotation_m99770800A7D9C757DE6AC3E6A9A94BD67C4CCD60 (SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Vector2::.ctor(System.Single,System.Single)
@@ -2522,8 +2551,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_Project_m85DF3CB297EC5E1A17BD6266FF65E86AB7372C9B_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___vector0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___onNormal1, const RuntimeMethod* method) ;
 // System.Single UnityEngine.Vector3::get_magnitude()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_get_magnitude_mF0D6017E90B345F1F52D1CC564C640F1A847AF2D_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, const RuntimeMethod* method) ;
-// System.Single UnityEngine.Vector3::Dot(UnityEngine.Vector3,UnityEngine.Vector3)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Dot_mBB86BB940AA0A32FA7D3C02AC42E5BC7095A5D52_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___lhs0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___rhs1, const RuntimeMethod* method) ;
 // UnityEngine.Vector2 UnityEngine.Vector2::get_zero()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_get_zero_m32506C40EC2EE7D5D4410BF40D3EE683A3D5F32C_inline (const RuntimeMethod* method) ;
 // System.Void Dreamteck.Splines.MeshGenerator::Reset()
@@ -2539,9 +2566,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TubeGenerator_GenerateFlatCaps_m0273F58B
 // System.Void Dreamteck.Splines.TubeGenerator::GenerateRoundCaps()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TubeGenerator_GenerateRoundCaps_mF8B516070A13EF55129B54290A29A993A6581C2B (TubeGenerator_t4E485B46B06DA51CFB07F5C1E751CC1010BCD2DE* __this, const RuntimeMethod* method) ;
 // System.Single Dreamteck.Splines.MeshGenerator::GetBaseSize(Dreamteck.Splines.SplineSample)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float MeshGenerator_GetBaseSize_m3AA0C08209F5E80A02EDE2F76C32D1249A47E5B1 (MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E* __this, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ___sample0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float MeshGenerator_GetBaseSize_m3AA0C08209F5E80A02EDE2F76C32D1249A47E5B1 (MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E* __this, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 ___sample0, const RuntimeMethod* method) ;
 // UnityEngine.Color Dreamteck.Splines.MeshGenerator::GetBaseColor(Dreamteck.Splines.SplineSample)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F MeshGenerator_GetBaseColor_mA53F6B90FFB54A8BA028FD12E109CB36B83F5723 (MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E* __this, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ___sample0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F MeshGenerator_GetBaseColor_mA53F6B90FFB54A8BA028FD12E109CB36B83F5723 (MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E* __this, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 ___sample0, const RuntimeMethod* method) ;
 // System.Single Dreamteck.Splines.MeshGenerator::get_rotation()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float MeshGenerator_get_rotation_mF01F123A8637DB897577510B334D675B3B9C55CE_inline (MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E* __this, const RuntimeMethod* method) ;
 // UnityEngine.Vector2 UnityEngine.Vector2::get_right()
@@ -2561,7 +2588,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MeshGenerator_Build_mC4CAB714A79CC0643DF
 // System.Void Dreamteck.Splines.MeshGenerator::LateRun()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MeshGenerator_LateRun_m64D45E55DFD5E097CDEB0B5158E431548B486AF7 (MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E* __this, const RuntimeMethod* method) ;
 // UnityEngine.Vector3 Dreamteck.Splines.SplineComputer::get_position()
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 SplineComputer_get_position_m446882D1914FB13D41458DE237BCF5B685A1F854_inline (SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 SplineComputer_get_position_m446882D1914FB13D41458DE237BCF5B685A1F854 (SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* __this, const RuntimeMethod* method) ;
 // UnityEngine.Vector3 Dreamteck.Splines.SplineComputer::TransformDirection(UnityEngine.Vector3)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 SplineComputer_TransformDirection_m1765BDC618FE42CD60FA7824994CDAE27E85EB2C (SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___direction0, const RuntimeMethod* method) ;
 // UnityEngine.Vector3 Dreamteck.Splines.SplineComputer::InverseTransformPoint(UnityEngine.Vector3)
@@ -2576,12 +2603,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t DMath_FloorInt_m53383BF81F27E02DAC245
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t DMath_CeilInt_m30A0442D9F9301FF6EE6213F2983A9725A7FDEFC (double ___a0, const RuntimeMethod* method) ;
 // System.Boolean Dreamteck.Splines.SampleCollection::get_hasSamples()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SampleCollection_get_hasSamples_mB6A2376A38325B047A3CFB35EFEF4DE64F48070F (SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* __this, const RuntimeMethod* method) ;
-// System.Void Dreamteck.Splines.SplineSample::Lerp(Dreamteck.Splines.SplineSample,Dreamteck.Splines.SplineSample,System.Double,Dreamteck.Splines.SplineSample)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineSample_Lerp_m110B177EE8A19CE9EA649E4C799D2124CFD2D3CF (SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ___a0, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ___b1, double ___t2, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ___target3, const RuntimeMethod* method) ;
+// System.Void Dreamteck.Splines.SplineSample::Lerp(Dreamteck.Splines.SplineSample&,Dreamteck.Splines.SplineSample&,System.Double,Dreamteck.Splines.SplineSample&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineSample_Lerp_mDC2046D9C41B063337F15327E3B8FF688E8C4352 (SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ___a0, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ___b1, double ___t2, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ___target3, const RuntimeMethod* method) ;
 // Dreamteck.Splines.SplineSample Dreamteck.Splines.SampleCollection::Evaluate(System.Double)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* SampleCollection_Evaluate_mBAC7EF0F05390FAAC84F8BA6AAD7C18B59521E82 (SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* __this, double ___percent0, const RuntimeMethod* method) ;
-// System.Void Dreamteck.Splines.SplineSample::.ctor(Dreamteck.Splines.SplineSample)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineSample__ctor_mB06F05646531A8824E65D3C0EF61A76774109AEC (SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* __this, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ___input0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 SampleCollection_Evaluate_mBAC7EF0F05390FAAC84F8BA6AAD7C18B59521E82 (SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* __this, double ___percent0, const RuntimeMethod* method) ;
 // System.Single UnityEngine.Vector3::get_sqrMagnitude()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_get_sqrMagnitude_m43C27DEC47C4811FB30AB474FF2131A963B66FC8_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, const RuntimeMethod* method) ;
 // System.Int32 UnityEngine.Mathf::Min(System.Int32,System.Int32)
@@ -2590,8 +2615,8 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Mathf_Min_m888083F74FF565
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 LinearAlgebraUtility_ProjectOnLine_m5A6BF6DD69841B252A2A1D18F802453BACAAE278 (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___fromPoint0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___toPoint1, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___project2, const RuntimeMethod* method) ;
 // System.Int32 UnityEngine.Mathf::Max(System.Int32,System.Int32)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Mathf_Max_m7FA442918DE37E3A00106D1F2E789D65829792B8_inline (int32_t ___a0, int32_t ___b1, const RuntimeMethod* method) ;
-// System.Void Dreamteck.Splines.SplineSample::Lerp(Dreamteck.Splines.SplineSample,Dreamteck.Splines.SplineSample,System.Single,Dreamteck.Splines.SplineSample)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineSample_Lerp_m8B6172938B0453C682A4F606B5C9BA03EEA57E2F (SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ___a0, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ___b1, float ___t2, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ___target3, const RuntimeMethod* method) ;
+// System.Void Dreamteck.Splines.SplineSample::Lerp(Dreamteck.Splines.SplineSample&,Dreamteck.Splines.SplineSample&,System.Single,Dreamteck.Splines.SplineSample&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineSample_Lerp_m714FB2D7D68C98B87E44014ABB468884D761142C (SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ___a0, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ___b1, float ___t2, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ___target3, const RuntimeMethod* method) ;
 // System.Double Dreamteck.Splines.SampleCollection::GetSamplePercent(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double SampleCollection_GetSamplePercent_m786D6EBE7E0B8497A7A61C7C9383369EBF521DE0 (SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* __this, int32_t ___sampleIndex0, const RuntimeMethod* method) ;
 // System.Single Dreamteck.LinearAlgebraUtility::InverseLerp(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)
@@ -3158,14 +3183,14 @@ IL_001f:
 		float L_5 = V_0;
 		float L_6;
 		L_6 = fabsf(((float)il2cpp_codegen_subtract(((float)L_4), L_5)));
-		// if (delta > 1f) SetWeight(i, 0f);
+		// if (delta > 1f)
 		if ((!(((float)L_6) > ((float)(1.0f)))))
 		{
 			goto IL_003d;
 		}
 	}
 	{
-		// if (delta > 1f) SetWeight(i, 0f);
+		// SetWeight(i, 0f);
 		int32_t L_7 = V_1;
 		SplineMorph_SetWeight_m436FEA55C0D23932129D862B3A769C467F729CE4(__this, L_7, (0.0f), NULL);
 		goto IL_0066;
@@ -3173,7 +3198,7 @@ IL_001f:
 
 IL_003d:
 	{
-		// if (channelValue <= i) SetWeight(i, 1f - (i - channelValue));
+		// if (channelValue <= i)
 		float L_8 = V_0;
 		int32_t L_9 = V_1;
 		if ((!(((float)L_8) <= ((float)((float)L_9)))))
@@ -3182,7 +3207,7 @@ IL_003d:
 		}
 	}
 	{
-		// if (channelValue <= i) SetWeight(i, 1f - (i - channelValue));
+		// SetWeight(i, 1f - (i - channelValue));
 		int32_t L_10 = V_1;
 		int32_t L_11 = V_1;
 		float L_12 = V_0;
@@ -3192,7 +3217,7 @@ IL_003d:
 
 IL_0055:
 	{
-		// else SetWeight(i, 1f - (channelValue - i));
+		// SetWeight(i, 1f - (channelValue - i));
 		int32_t L_13 = V_1;
 		float L_14 = V_0;
 		int32_t L_15 = V_1;
@@ -3218,7 +3243,7 @@ IL_006a:
 		}
 	}
 	{
-		// if (loop && channelValue >= channels.Length - 1) SetWeight(0, channelValue - (channels.Length - 1));
+		// if (loop && channelValue >= channels.Length - 1)
 		bool L_19 = ___loop1;
 		if (!L_19)
 		{
@@ -3235,7 +3260,7 @@ IL_006a:
 		}
 	}
 	{
-		// if (loop && channelValue >= channels.Length - 1) SetWeight(0, channelValue - (channels.Length - 1));
+		// SetWeight(0, channelValue - (channels.Length - 1));
 		float L_22 = V_0;
 		ChannelU5BU5D_t4045445C7661927EC3DDEA8FEE6C65B56355CEE4* L_23 = __this->___channels_13;
 		NullCheck(L_23);
@@ -3393,6 +3418,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR SplinePointU5BU5D_t12CABDB19A63EBEEF143CE26C7
 		NullCheck(L_3);
 		SplinePointU5BU5D_t12CABDB19A63EBEEF143CE26C78D27708EC0CBF3* L_4 = L_3->___points_0;
 		return L_4;
+	}
+}
+// System.Void Dreamteck.Splines.SplineMorph::SetSnapshot(System.Int32,Dreamteck.Splines.SplinePoint[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineMorph_SetSnapshot_mE7CDE4EBA4F8E619BAFCFAA7A5ACE765D80FF917 (SplineMorph_tE814D4DB80D739AC3B8CEBB024FBE7FACC9E2795* __this, int32_t ___index0, SplinePointU5BU5D_t12CABDB19A63EBEEF143CE26C78D27708EC0CBF3* ___points1, const RuntimeMethod* method) 
+{
+	{
+		// channels[index].points = points;
+		ChannelU5BU5D_t4045445C7661927EC3DDEA8FEE6C65B56355CEE4* L_0 = __this->___channels_13;
+		int32_t L_1 = ___index0;
+		NullCheck(L_0);
+		int32_t L_2 = L_1;
+		Channel_t1D85DCC98DE1E5AAB159111EEF30FE0C5AF2A594* L_3 = (L_0)->GetAt(static_cast<il2cpp_array_size_t>(L_2));
+		SplinePointU5BU5D_t12CABDB19A63EBEEF143CE26C78D27708EC0CBF3* L_4 = ___points1;
+		NullCheck(L_3);
+		L_3->___points_0 = L_4;
+		Il2CppCodeGenWriteBarrier((void**)(&L_3->___points_0), (void*)L_4);
+		// }
+		return;
 	}
 }
 // Dreamteck.Splines.SplinePoint[] Dreamteck.Splines.SplineMorph::GetSnapshot(System.String)
@@ -4023,7 +4066,7 @@ IL_0081:
 		SplinePointU5BU5D_t12CABDB19A63EBEEF143CE26C78D27708EC0CBF3* L_39 = __this->___points_10;
 		int32_t L_40 = V_1;
 		NullCheck(L_39);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_41 = (&((L_39)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_40)))->___position_1);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_41 = (&((L_39)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_40)))->___position_2);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_42 = L_41;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_43 = (*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_42);
 		ChannelU5BU5D_t4045445C7661927EC3DDEA8FEE6C65B56355CEE4* L_44 = __this->___channels_13;
@@ -4035,7 +4078,7 @@ IL_0081:
 		SplinePointU5BU5D_t12CABDB19A63EBEEF143CE26C78D27708EC0CBF3* L_48 = L_47->___points_0;
 		int32_t L_49 = V_1;
 		NullCheck(L_48);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_50 = ((L_48)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_49)))->___position_1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_50 = ((L_48)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_49)))->___position_2;
 		ChannelU5BU5D_t4045445C7661927EC3DDEA8FEE6C65B56355CEE4* L_51 = __this->___channels_13;
 		NullCheck(L_51);
 		int32_t L_52 = 0;
@@ -4044,7 +4087,7 @@ IL_0081:
 		SplinePointU5BU5D_t12CABDB19A63EBEEF143CE26C78D27708EC0CBF3* L_54 = L_53->___points_0;
 		int32_t L_55 = V_1;
 		NullCheck(L_54);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_56 = ((L_54)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_55)))->___position_1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_56 = ((L_54)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_55)))->___position_2;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_57;
 		L_57 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_50, L_56, NULL);
 		float L_58 = V_2;
@@ -4057,7 +4100,7 @@ IL_0081:
 		SplinePointU5BU5D_t12CABDB19A63EBEEF143CE26C78D27708EC0CBF3* L_61 = __this->___points_10;
 		int32_t L_62 = V_1;
 		NullCheck(L_61);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_63 = (&((L_61)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_62)))->___tangent_5);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_63 = (&((L_61)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_62)))->___tangent_6);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_64 = L_63;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_65 = (*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_64);
 		ChannelU5BU5D_t4045445C7661927EC3DDEA8FEE6C65B56355CEE4* L_66 = __this->___channels_13;
@@ -4069,7 +4112,7 @@ IL_0081:
 		SplinePointU5BU5D_t12CABDB19A63EBEEF143CE26C78D27708EC0CBF3* L_70 = L_69->___points_0;
 		int32_t L_71 = V_1;
 		NullCheck(L_70);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_72 = ((L_70)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_71)))->___tangent_5;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_72 = ((L_70)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_71)))->___tangent_6;
 		ChannelU5BU5D_t4045445C7661927EC3DDEA8FEE6C65B56355CEE4* L_73 = __this->___channels_13;
 		NullCheck(L_73);
 		int32_t L_74 = 0;
@@ -4078,7 +4121,7 @@ IL_0081:
 		SplinePointU5BU5D_t12CABDB19A63EBEEF143CE26C78D27708EC0CBF3* L_76 = L_75->___points_0;
 		int32_t L_77 = V_1;
 		NullCheck(L_76);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_78 = ((L_76)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_77)))->___tangent_5;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_78 = ((L_76)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_77)))->___tangent_6;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_79;
 		L_79 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_72, L_78, NULL);
 		float L_80 = V_2;
@@ -4091,7 +4134,7 @@ IL_0081:
 		SplinePointU5BU5D_t12CABDB19A63EBEEF143CE26C78D27708EC0CBF3* L_83 = __this->___points_10;
 		int32_t L_84 = V_1;
 		NullCheck(L_83);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_85 = (&((L_83)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_84)))->___tangent2_6);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_85 = (&((L_83)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_84)))->___tangent2_7);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_86 = L_85;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_87 = (*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_86);
 		ChannelU5BU5D_t4045445C7661927EC3DDEA8FEE6C65B56355CEE4* L_88 = __this->___channels_13;
@@ -4103,7 +4146,7 @@ IL_0081:
 		SplinePointU5BU5D_t12CABDB19A63EBEEF143CE26C78D27708EC0CBF3* L_92 = L_91->___points_0;
 		int32_t L_93 = V_1;
 		NullCheck(L_92);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_94 = ((L_92)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_93)))->___tangent2_6;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_94 = ((L_92)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_93)))->___tangent2_7;
 		ChannelU5BU5D_t4045445C7661927EC3DDEA8FEE6C65B56355CEE4* L_95 = __this->___channels_13;
 		NullCheck(L_95);
 		int32_t L_96 = 0;
@@ -4112,7 +4155,7 @@ IL_0081:
 		SplinePointU5BU5D_t12CABDB19A63EBEEF143CE26C78D27708EC0CBF3* L_98 = L_97->___points_0;
 		int32_t L_99 = V_1;
 		NullCheck(L_98);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_100 = ((L_98)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_99)))->___tangent2_6;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_100 = ((L_98)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_99)))->___tangent2_7;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_101;
 		L_101 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_94, L_100, NULL);
 		float L_102 = V_2;
@@ -4125,7 +4168,7 @@ IL_0081:
 		SplinePointU5BU5D_t12CABDB19A63EBEEF143CE26C78D27708EC0CBF3* L_105 = __this->___points_10;
 		int32_t L_106 = V_1;
 		NullCheck(L_105);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_107 = (&((L_105)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_106)))->___normal_3);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_107 = (&((L_105)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_106)))->___normal_4);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_108 = L_107;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_109 = (*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_108);
 		ChannelU5BU5D_t4045445C7661927EC3DDEA8FEE6C65B56355CEE4* L_110 = __this->___channels_13;
@@ -4137,7 +4180,7 @@ IL_0081:
 		SplinePointU5BU5D_t12CABDB19A63EBEEF143CE26C78D27708EC0CBF3* L_114 = L_113->___points_0;
 		int32_t L_115 = V_1;
 		NullCheck(L_114);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_116 = ((L_114)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_115)))->___normal_3;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_116 = ((L_114)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_115)))->___normal_4;
 		ChannelU5BU5D_t4045445C7661927EC3DDEA8FEE6C65B56355CEE4* L_117 = __this->___channels_13;
 		NullCheck(L_117);
 		int32_t L_118 = 0;
@@ -4146,7 +4189,7 @@ IL_0081:
 		SplinePointU5BU5D_t12CABDB19A63EBEEF143CE26C78D27708EC0CBF3* L_120 = L_119->___points_0;
 		int32_t L_121 = V_1;
 		NullCheck(L_120);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_122 = ((L_120)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_121)))->___normal_3;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_122 = ((L_120)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_121)))->___normal_4;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_123;
 		L_123 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_116, L_122, NULL);
 		float L_124 = V_2;
@@ -4167,11 +4210,11 @@ IL_0228:
 		SplinePointU5BU5D_t12CABDB19A63EBEEF143CE26C78D27708EC0CBF3* L_129 = __this->___points_10;
 		int32_t L_130 = V_1;
 		NullCheck(L_129);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_131 = ((L_129)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_130)))->___position_1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_131 = ((L_129)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_130)))->___position_2;
 		SplinePointU5BU5D_t12CABDB19A63EBEEF143CE26C78D27708EC0CBF3* L_132 = __this->___points_10;
 		int32_t L_133 = V_1;
 		NullCheck(L_132);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_134 = ((L_132)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_133)))->___position_1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_134 = ((L_132)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_133)))->___position_2;
 		ChannelU5BU5D_t4045445C7661927EC3DDEA8FEE6C65B56355CEE4* L_135 = __this->___channels_13;
 		int32_t L_136 = V_0;
 		NullCheck(L_135);
@@ -4181,7 +4224,7 @@ IL_0228:
 		SplinePointU5BU5D_t12CABDB19A63EBEEF143CE26C78D27708EC0CBF3* L_139 = L_138->___points_0;
 		int32_t L_140 = V_1;
 		NullCheck(L_139);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_141 = ((L_139)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_140)))->___position_1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_141 = ((L_139)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_140)))->___position_2;
 		ChannelU5BU5D_t4045445C7661927EC3DDEA8FEE6C65B56355CEE4* L_142 = __this->___channels_13;
 		NullCheck(L_142);
 		int32_t L_143 = 0;
@@ -4190,7 +4233,7 @@ IL_0228:
 		SplinePointU5BU5D_t12CABDB19A63EBEEF143CE26C78D27708EC0CBF3* L_145 = L_144->___points_0;
 		int32_t L_146 = V_1;
 		NullCheck(L_145);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_147 = ((L_145)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_146)))->___position_1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_147 = ((L_145)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_146)))->___position_2;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_148;
 		L_148 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_141, L_147, NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_149;
@@ -4198,7 +4241,7 @@ IL_0228:
 		float L_150 = V_2;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_151;
 		L_151 = Vector3_Slerp_m6CA14E5B6F6217802BAA0ADD2C9D086C741BA09C(L_131, L_149, L_150, NULL);
-		((L_127)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_128)))->___position_1 = L_151;
+		((L_127)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_128)))->___position_2 = L_151;
 		// points[j].tangent = Vector3.Slerp(points[j].tangent, points[j].tangent + (channels[i].points[j].tangent - channels[0].points[j].tangent), percent);
 		SplinePointU5BU5D_t12CABDB19A63EBEEF143CE26C78D27708EC0CBF3* L_152 = __this->___points_10;
 		int32_t L_153 = V_1;
@@ -4206,11 +4249,11 @@ IL_0228:
 		SplinePointU5BU5D_t12CABDB19A63EBEEF143CE26C78D27708EC0CBF3* L_154 = __this->___points_10;
 		int32_t L_155 = V_1;
 		NullCheck(L_154);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_156 = ((L_154)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_155)))->___tangent_5;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_156 = ((L_154)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_155)))->___tangent_6;
 		SplinePointU5BU5D_t12CABDB19A63EBEEF143CE26C78D27708EC0CBF3* L_157 = __this->___points_10;
 		int32_t L_158 = V_1;
 		NullCheck(L_157);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_159 = ((L_157)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_158)))->___tangent_5;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_159 = ((L_157)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_158)))->___tangent_6;
 		ChannelU5BU5D_t4045445C7661927EC3DDEA8FEE6C65B56355CEE4* L_160 = __this->___channels_13;
 		int32_t L_161 = V_0;
 		NullCheck(L_160);
@@ -4220,7 +4263,7 @@ IL_0228:
 		SplinePointU5BU5D_t12CABDB19A63EBEEF143CE26C78D27708EC0CBF3* L_164 = L_163->___points_0;
 		int32_t L_165 = V_1;
 		NullCheck(L_164);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_166 = ((L_164)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_165)))->___tangent_5;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_166 = ((L_164)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_165)))->___tangent_6;
 		ChannelU5BU5D_t4045445C7661927EC3DDEA8FEE6C65B56355CEE4* L_167 = __this->___channels_13;
 		NullCheck(L_167);
 		int32_t L_168 = 0;
@@ -4229,7 +4272,7 @@ IL_0228:
 		SplinePointU5BU5D_t12CABDB19A63EBEEF143CE26C78D27708EC0CBF3* L_170 = L_169->___points_0;
 		int32_t L_171 = V_1;
 		NullCheck(L_170);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_172 = ((L_170)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_171)))->___tangent_5;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_172 = ((L_170)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_171)))->___tangent_6;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_173;
 		L_173 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_166, L_172, NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_174;
@@ -4237,7 +4280,7 @@ IL_0228:
 		float L_175 = V_2;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_176;
 		L_176 = Vector3_Slerp_m6CA14E5B6F6217802BAA0ADD2C9D086C741BA09C(L_156, L_174, L_175, NULL);
-		((L_152)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_153)))->___tangent_5 = L_176;
+		((L_152)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_153)))->___tangent_6 = L_176;
 		// points[j].tangent2 = Vector3.Slerp(points[j].tangent2, points[j].tangent2 + (channels[i].points[j].tangent2 - channels[0].points[j].tangent2), percent);
 		SplinePointU5BU5D_t12CABDB19A63EBEEF143CE26C78D27708EC0CBF3* L_177 = __this->___points_10;
 		int32_t L_178 = V_1;
@@ -4245,11 +4288,11 @@ IL_0228:
 		SplinePointU5BU5D_t12CABDB19A63EBEEF143CE26C78D27708EC0CBF3* L_179 = __this->___points_10;
 		int32_t L_180 = V_1;
 		NullCheck(L_179);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_181 = ((L_179)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_180)))->___tangent2_6;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_181 = ((L_179)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_180)))->___tangent2_7;
 		SplinePointU5BU5D_t12CABDB19A63EBEEF143CE26C78D27708EC0CBF3* L_182 = __this->___points_10;
 		int32_t L_183 = V_1;
 		NullCheck(L_182);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_184 = ((L_182)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_183)))->___tangent2_6;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_184 = ((L_182)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_183)))->___tangent2_7;
 		ChannelU5BU5D_t4045445C7661927EC3DDEA8FEE6C65B56355CEE4* L_185 = __this->___channels_13;
 		int32_t L_186 = V_0;
 		NullCheck(L_185);
@@ -4259,7 +4302,7 @@ IL_0228:
 		SplinePointU5BU5D_t12CABDB19A63EBEEF143CE26C78D27708EC0CBF3* L_189 = L_188->___points_0;
 		int32_t L_190 = V_1;
 		NullCheck(L_189);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_191 = ((L_189)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_190)))->___tangent2_6;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_191 = ((L_189)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_190)))->___tangent2_7;
 		ChannelU5BU5D_t4045445C7661927EC3DDEA8FEE6C65B56355CEE4* L_192 = __this->___channels_13;
 		NullCheck(L_192);
 		int32_t L_193 = 0;
@@ -4268,7 +4311,7 @@ IL_0228:
 		SplinePointU5BU5D_t12CABDB19A63EBEEF143CE26C78D27708EC0CBF3* L_195 = L_194->___points_0;
 		int32_t L_196 = V_1;
 		NullCheck(L_195);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_197 = ((L_195)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_196)))->___tangent2_6;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_197 = ((L_195)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_196)))->___tangent2_7;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_198;
 		L_198 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_191, L_197, NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_199;
@@ -4276,7 +4319,7 @@ IL_0228:
 		float L_200 = V_2;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_201;
 		L_201 = Vector3_Slerp_m6CA14E5B6F6217802BAA0ADD2C9D086C741BA09C(L_181, L_199, L_200, NULL);
-		((L_177)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_178)))->___tangent2_6 = L_201;
+		((L_177)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_178)))->___tangent2_7 = L_201;
 		// points[j].normal = Vector3.Slerp(points[j].normal, points[j].normal + (channels[i].points[j].normal - channels[0].points[j].normal), percent);
 		SplinePointU5BU5D_t12CABDB19A63EBEEF143CE26C78D27708EC0CBF3* L_202 = __this->___points_10;
 		int32_t L_203 = V_1;
@@ -4284,11 +4327,11 @@ IL_0228:
 		SplinePointU5BU5D_t12CABDB19A63EBEEF143CE26C78D27708EC0CBF3* L_204 = __this->___points_10;
 		int32_t L_205 = V_1;
 		NullCheck(L_204);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_206 = ((L_204)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_205)))->___normal_3;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_206 = ((L_204)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_205)))->___normal_4;
 		SplinePointU5BU5D_t12CABDB19A63EBEEF143CE26C78D27708EC0CBF3* L_207 = __this->___points_10;
 		int32_t L_208 = V_1;
 		NullCheck(L_207);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_209 = ((L_207)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_208)))->___normal_3;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_209 = ((L_207)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_208)))->___normal_4;
 		ChannelU5BU5D_t4045445C7661927EC3DDEA8FEE6C65B56355CEE4* L_210 = __this->___channels_13;
 		int32_t L_211 = V_0;
 		NullCheck(L_210);
@@ -4298,7 +4341,7 @@ IL_0228:
 		SplinePointU5BU5D_t12CABDB19A63EBEEF143CE26C78D27708EC0CBF3* L_214 = L_213->___points_0;
 		int32_t L_215 = V_1;
 		NullCheck(L_214);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_216 = ((L_214)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_215)))->___normal_3;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_216 = ((L_214)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_215)))->___normal_4;
 		ChannelU5BU5D_t4045445C7661927EC3DDEA8FEE6C65B56355CEE4* L_217 = __this->___channels_13;
 		NullCheck(L_217);
 		int32_t L_218 = 0;
@@ -4307,7 +4350,7 @@ IL_0228:
 		SplinePointU5BU5D_t12CABDB19A63EBEEF143CE26C78D27708EC0CBF3* L_220 = L_219->___points_0;
 		int32_t L_221 = V_1;
 		NullCheck(L_220);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_222 = ((L_220)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_221)))->___normal_3;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_222 = ((L_220)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_221)))->___normal_4;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_223;
 		L_223 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_216, L_222, NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_224;
@@ -4315,7 +4358,7 @@ IL_0228:
 		float L_225 = V_2;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_226;
 		L_226 = Vector3_Slerp_m6CA14E5B6F6217802BAA0ADD2C9D086C741BA09C(L_206, L_224, L_225, NULL);
-		((L_202)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_203)))->___normal_3 = L_226;
+		((L_202)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_203)))->___normal_4 = L_226;
 	}
 
 IL_03f4:
@@ -4324,7 +4367,7 @@ IL_03f4:
 		SplinePointU5BU5D_t12CABDB19A63EBEEF143CE26C78D27708EC0CBF3* L_227 = __this->___points_10;
 		int32_t L_228 = V_1;
 		NullCheck(L_227);
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F* L_229 = (&((L_227)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_228)))->___color_2);
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F* L_229 = (&((L_227)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_228)))->___color_3);
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F* L_230 = L_229;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_231 = (*(Color_tD001788D726C3A7F1379BEED0260B9591F440C1F*)L_230);
 		ChannelU5BU5D_t4045445C7661927EC3DDEA8FEE6C65B56355CEE4* L_232 = __this->___channels_13;
@@ -4336,7 +4379,7 @@ IL_03f4:
 		SplinePointU5BU5D_t12CABDB19A63EBEEF143CE26C78D27708EC0CBF3* L_236 = L_235->___points_0;
 		int32_t L_237 = V_1;
 		NullCheck(L_236);
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_238 = ((L_236)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_237)))->___color_2;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_238 = ((L_236)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_237)))->___color_3;
 		ChannelU5BU5D_t4045445C7661927EC3DDEA8FEE6C65B56355CEE4* L_239 = __this->___channels_13;
 		NullCheck(L_239);
 		int32_t L_240 = 0;
@@ -4345,7 +4388,7 @@ IL_03f4:
 		SplinePointU5BU5D_t12CABDB19A63EBEEF143CE26C78D27708EC0CBF3* L_242 = L_241->___points_0;
 		int32_t L_243 = V_1;
 		NullCheck(L_242);
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_244 = ((L_242)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_243)))->___color_2;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_244 = ((L_242)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_243)))->___color_3;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_245;
 		L_245 = Color_op_Subtraction_mF003448D819F2A41405BB6D85F1563CDA900B07F_inline(L_238, L_244, NULL);
 		float L_246 = V_2;
@@ -4358,7 +4401,7 @@ IL_03f4:
 		SplinePointU5BU5D_t12CABDB19A63EBEEF143CE26C78D27708EC0CBF3* L_249 = __this->___points_10;
 		int32_t L_250 = V_1;
 		NullCheck(L_249);
-		float* L_251 = (&((L_249)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_250)))->___size_4);
+		float* L_251 = (&((L_249)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_250)))->___size_5);
 		float* L_252 = L_251;
 		float L_253 = *((float*)L_252);
 		ChannelU5BU5D_t4045445C7661927EC3DDEA8FEE6C65B56355CEE4* L_254 = __this->___channels_13;
@@ -4370,7 +4413,7 @@ IL_03f4:
 		SplinePointU5BU5D_t12CABDB19A63EBEEF143CE26C78D27708EC0CBF3* L_258 = L_257->___points_0;
 		int32_t L_259 = V_1;
 		NullCheck(L_258);
-		float L_260 = ((L_258)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_259)))->___size_4;
+		float L_260 = ((L_258)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_259)))->___size_5;
 		ChannelU5BU5D_t4045445C7661927EC3DDEA8FEE6C65B56355CEE4* L_261 = __this->___channels_13;
 		NullCheck(L_261);
 		int32_t L_262 = 0;
@@ -4379,7 +4422,7 @@ IL_03f4:
 		SplinePointU5BU5D_t12CABDB19A63EBEEF143CE26C78D27708EC0CBF3* L_264 = L_263->___points_0;
 		int32_t L_265 = V_1;
 		NullCheck(L_264);
-		float L_266 = ((L_264)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_265)))->___size_4;
+		float L_266 = ((L_264)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_265)))->___size_5;
 		float L_267 = V_2;
 		*((float*)L_252) = (float)((float)il2cpp_codegen_add(L_253, ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_subtract(L_260, L_266)), L_267))));
 		// if(points[j].type == SplinePoint.Type.SmoothMirrored) points[j].type = channels[i].points[j].type;
@@ -4488,27 +4531,27 @@ IL_052d:
 		}
 	}
 	{
-		// for (int i = 0; i < points.Length; i++) points[i].normal.Normalize();
+		// for (int i = 0; i < points.Length; i++)
 		V_3 = 0;
 		goto IL_0559;
 	}
 
 IL_053f:
 	{
-		// for (int i = 0; i < points.Length; i++) points[i].normal.Normalize();
+		// points[i].normal.Normalize();
 		SplinePointU5BU5D_t12CABDB19A63EBEEF143CE26C78D27708EC0CBF3* L_298 = __this->___points_10;
 		int32_t L_299 = V_3;
 		NullCheck(L_298);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_300 = (&((L_298)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_299)))->___normal_3);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_300 = (&((L_298)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_299)))->___normal_4);
 		Vector3_Normalize_mC749B887A4C74BA0A2E13E6377F17CCAEB0AADA8_inline(L_300, NULL);
-		// for (int i = 0; i < points.Length; i++) points[i].normal.Normalize();
+		// for (int i = 0; i < points.Length; i++)
 		int32_t L_301 = V_3;
 		V_3 = ((int32_t)il2cpp_codegen_add(L_301, 1));
 	}
 
 IL_0559:
 	{
-		// for (int i = 0; i < points.Length; i++) points[i].normal.Normalize();
+		// for (int i = 0; i < points.Length; i++)
 		int32_t L_302 = V_3;
 		SplinePointU5BU5D_t12CABDB19A63EBEEF143CE26C78D27708EC0CBF3* L_303 = __this->___points_10;
 		NullCheck(L_303);
@@ -4669,13 +4712,280 @@ IL_0021:
 		return;
 	}
 }
+// Dreamteck.Splines.SplineTracer Dreamteck.Splines.SplinePositioner::get_followTarget()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A* SplinePositioner_get_followTarget_mF4DA2D84E33A70829EFF3AAF12C876487D633715 (SplinePositioner_t65907A7478BF746830F2EC0659B5B7AC010129AC* __this, const RuntimeMethod* method) 
+{
+	{
+		// get { return _followTarget; }
+		SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A* L_0 = __this->____followTarget_51;
+		return L_0;
+	}
+}
+// System.Void Dreamteck.Splines.SplinePositioner::set_followTarget(Dreamteck.Splines.SplineTracer)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplinePositioner_set_followTarget_mB173F2B4F67E35490B39DA41AC96385734774F73 (SplinePositioner_t65907A7478BF746830F2EC0659B5B7AC010129AC* __this, SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A* ___value0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SplinePositioner_OnFollowTargetMotionApplied_m2C64EDAC5EDC4AAB599759D62A715DB7E436DDFC_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1C8480B9FE28ACE422D3D9A1473AB0CE4BF09882);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if(value != _followTarget)
+		SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A* L_0 = ___value0;
+		SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A* L_1 = __this->____followTarget_51;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_2;
+		L_2 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_0, L_1, NULL);
+		if (!L_2)
+		{
+			goto IL_0079;
+		}
+	}
+	{
+		// if(_followTarget != null)
+		SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A* L_3 = __this->____followTarget_51;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_4;
+		L_4 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_3, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_4)
+		{
+			goto IL_0033;
+		}
+	}
+	{
+		// _followTarget.onMotionApplied -= OnFollowTargetMotionApplied;
+		SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A* L_5 = __this->____followTarget_51;
+		EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* L_6 = (EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8*)il2cpp_codegen_object_new(EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8_il2cpp_TypeInfo_var);
+		NullCheck(L_6);
+		EmptySplineHandler__ctor_m24C3D3F5240BEDB0365026CED366261659D54E02(L_6, __this, (intptr_t)((void*)SplinePositioner_OnFollowTargetMotionApplied_m2C64EDAC5EDC4AAB599759D62A715DB7E436DDFC_RuntimeMethod_var), NULL);
+		NullCheck(L_5);
+		SplineTracer_remove_onMotionApplied_mAD4F774DB2EFAD9F1FE5364E5F247B2AEA1C8BEE(L_5, L_6, NULL);
+	}
+
+IL_0033:
+	{
+		// if(value == this)
+		SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A* L_7 = ___value0;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_8;
+		L_8 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_7, __this, NULL);
+		if (!L_8)
+		{
+			goto IL_0047;
+		}
+	}
+	{
+		// Debug.Log("You should not be assigning a self-reference to the followTarget field.");
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteral1C8480B9FE28ACE422D3D9A1473AB0CE4BF09882, NULL);
+		// return;
+		return;
+	}
+
+IL_0047:
+	{
+		// _followTarget = value;
+		SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A* L_9 = ___value0;
+		__this->____followTarget_51 = L_9;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____followTarget_51), (void*)L_9);
+		// if(_followTarget != null)
+		SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A* L_10 = __this->____followTarget_51;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_11;
+		L_11 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_10, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_11)
+		{
+			goto IL_0079;
+		}
+	}
+	{
+		// _followTarget.onMotionApplied += OnFollowTargetMotionApplied;
+		SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A* L_12 = __this->____followTarget_51;
+		EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* L_13 = (EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8*)il2cpp_codegen_object_new(EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8_il2cpp_TypeInfo_var);
+		NullCheck(L_13);
+		EmptySplineHandler__ctor_m24C3D3F5240BEDB0365026CED366261659D54E02(L_13, __this, (intptr_t)((void*)SplinePositioner_OnFollowTargetMotionApplied_m2C64EDAC5EDC4AAB599759D62A715DB7E436DDFC_RuntimeMethod_var), NULL);
+		NullCheck(L_12);
+		SplineTracer_add_onMotionApplied_m5AFC0CDA154BAB8654F6A6271EBE3B733952B30F(L_12, L_13, NULL);
+		// OnFollowTargetMotionApplied();
+		SplinePositioner_OnFollowTargetMotionApplied_m2C64EDAC5EDC4AAB599759D62A715DB7E436DDFC(__this, NULL);
+	}
+
+IL_0079:
+	{
+		// }
+		return;
+	}
+}
+// System.Single Dreamteck.Splines.SplinePositioner::get_followTargetDistance()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float SplinePositioner_get_followTargetDistance_m06ECA89C1F8AC764A0186262D82B29DE6E93B168 (SplinePositioner_t65907A7478BF746830F2EC0659B5B7AC010129AC* __this, const RuntimeMethod* method) 
+{
+	{
+		// get { return _followTargetDistance;  }
+		float L_0 = __this->____followTargetDistance_52;
+		return L_0;
+	}
+}
+// System.Void Dreamteck.Splines.SplinePositioner::set_followTargetDistance(System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplinePositioner_set_followTargetDistance_m2BF17E829FCF472D1D98494DE94FBC608F462EF8 (SplinePositioner_t65907A7478BF746830F2EC0659B5B7AC010129AC* __this, float ___value0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if(value != _followTargetDistance)
+		float L_0 = ___value0;
+		float L_1 = __this->____followTargetDistance_52;
+		if ((((float)L_0) == ((float)L_1)))
+		{
+			goto IL_0024;
+		}
+	}
+	{
+		// _followTargetDistance = value;
+		float L_2 = ___value0;
+		__this->____followTargetDistance_52 = L_2;
+		// if(followTarget != null)
+		SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A* L_3;
+		L_3 = SplinePositioner_get_followTarget_mF4DA2D84E33A70829EFF3AAF12C876487D633715_inline(__this, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_4;
+		L_4 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_3, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_4)
+		{
+			goto IL_0024;
+		}
+	}
+	{
+		// OnFollowTargetMotionApplied();
+		SplinePositioner_OnFollowTargetMotionApplied_m2C64EDAC5EDC4AAB599759D62A715DB7E436DDFC(__this, NULL);
+	}
+
+IL_0024:
+	{
+		// }
+		return;
+	}
+}
+// System.Boolean Dreamteck.Splines.SplinePositioner::get_followLoop()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SplinePositioner_get_followLoop_mD103A64F51FE44C201B2D6EAF50FEB4ABDF983D5 (SplinePositioner_t65907A7478BF746830F2EC0659B5B7AC010129AC* __this, const RuntimeMethod* method) 
+{
+	{
+		// get { return _followLoop; }
+		bool L_0 = __this->____followLoop_53;
+		return L_0;
+	}
+}
+// System.Void Dreamteck.Splines.SplinePositioner::set_followLoop(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplinePositioner_set_followLoop_m519C48BAE46CF9F20575336C1411004B8A00B0E9 (SplinePositioner_t65907A7478BF746830F2EC0659B5B7AC010129AC* __this, bool ___value0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (value != _followLoop)
+		bool L_0 = ___value0;
+		bool L_1 = __this->____followLoop_53;
+		if ((((int32_t)L_0) == ((int32_t)L_1)))
+		{
+			goto IL_0024;
+		}
+	}
+	{
+		// _followLoop = value;
+		bool L_2 = ___value0;
+		__this->____followLoop_53 = L_2;
+		// if (followTarget != null)
+		SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A* L_3;
+		L_3 = SplinePositioner_get_followTarget_mF4DA2D84E33A70829EFF3AAF12C876487D633715_inline(__this, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_4;
+		L_4 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_3, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_4)
+		{
+			goto IL_0024;
+		}
+	}
+	{
+		// OnFollowTargetMotionApplied();
+		SplinePositioner_OnFollowTargetMotionApplied_m2C64EDAC5EDC4AAB599759D62A715DB7E436DDFC(__this, NULL);
+	}
+
+IL_0024:
+	{
+		// }
+		return;
+	}
+}
+// Dreamteck.Splines.Spline/Direction Dreamteck.Splines.SplinePositioner::get_followTargetDirection()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t SplinePositioner_get_followTargetDirection_m4FA387DBBD70D91EDEDAE304EAD3F40D71B67C69 (SplinePositioner_t65907A7478BF746830F2EC0659B5B7AC010129AC* __this, const RuntimeMethod* method) 
+{
+	{
+		// get { return _followTargetDirection; }
+		int32_t L_0 = __this->____followTargetDirection_54;
+		return L_0;
+	}
+}
+// System.Void Dreamteck.Splines.SplinePositioner::set_followTargetDirection(Dreamteck.Splines.Spline/Direction)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplinePositioner_set_followTargetDirection_m461761CDB40E24BA3D2AE77204D8CF647D0C04ED (SplinePositioner_t65907A7478BF746830F2EC0659B5B7AC010129AC* __this, int32_t ___value0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (value != _followTargetDirection)
+		int32_t L_0 = ___value0;
+		int32_t L_1 = __this->____followTargetDirection_54;
+		if ((((int32_t)L_0) == ((int32_t)L_1)))
+		{
+			goto IL_0024;
+		}
+	}
+	{
+		// _followTargetDirection = value;
+		int32_t L_2 = ___value0;
+		__this->____followTargetDirection_54 = L_2;
+		// if (followTarget != null)
+		SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A* L_3;
+		L_3 = SplinePositioner_get_followTarget_mF4DA2D84E33A70829EFF3AAF12C876487D633715_inline(__this, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_4;
+		L_4 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_3, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_4)
+		{
+			goto IL_0024;
+		}
+	}
+	{
+		// OnFollowTargetMotionApplied();
+		SplinePositioner_OnFollowTargetMotionApplied_m2C64EDAC5EDC4AAB599759D62A715DB7E436DDFC(__this, NULL);
+	}
+
+IL_0024:
+	{
+		// }
+		return;
+	}
+}
 // System.Double Dreamteck.Splines.SplinePositioner::get_position()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double SplinePositioner_get_position_m2A317FF3D633F36F2047E2F35FE4AD3E146E2E18 (SplinePositioner_t65907A7478BF746830F2EC0659B5B7AC010129AC* __this, const RuntimeMethod* method) 
 {
 	{
 		// return _result.percent;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_0 = ((SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A*)__this)->____result_45;
-		NullCheck(L_0);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_0 = (&((SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A*)__this)->____result_42);
 		double L_1 = L_0->___percent_5;
 		return L_1;
 	}
@@ -4686,7 +4996,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplinePositioner_set_position_mBF0CD7AC1
 	{
 		// if (value != _position)
 		double L_0 = ___value0;
-		float L_1 = __this->____position_51;
+		float L_1 = __this->____position_55;
 		if ((((double)L_0) == ((double)((double)L_1))))
 		{
 			goto IL_0033;
@@ -4695,7 +5005,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplinePositioner_set_position_mBF0CD7AC1
 	{
 		// _position = (float)value;
 		double L_2 = ___value0;
-		__this->____position_51 = ((float)L_2);
+		__this->____position_55 = ((float)L_2);
 		// if (mode == Mode.Distance)
 		int32_t L_3;
 		L_3 = SplinePositioner_get_mode_mE89FF72BE2024DD0A2DEE7155DB5880964BC3240_inline(__this, NULL);
@@ -4705,17 +5015,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplinePositioner_set_position_mBF0CD7AC1
 		}
 	}
 	{
-		// SetDistance(_position, true);
-		float L_4 = __this->____position_51;
-		VirtualActionInvoker3< float, bool, bool >::Invoke(24 /* System.Void Dreamteck.Splines.SplineTracer::SetDistance(System.Single,System.Boolean,System.Boolean) */, __this, L_4, (bool)1, (bool)0);
+		// SetDistance(_position, true, true);
+		float L_4 = __this->____position_55;
+		VirtualActionInvoker3< float, bool, bool >::Invoke(26 /* System.Void Dreamteck.Splines.SplineTracer::SetDistance(System.Single,System.Boolean,System.Boolean) */, __this, L_4, (bool)1, (bool)1);
 		return;
 	}
 
 IL_002a:
 	{
-		// SetPercent(value, true);
+		// SetPercent(value, true, true);
 		double L_5 = ___value0;
-		VirtualActionInvoker3< double, bool, bool >::Invoke(23 /* System.Void Dreamteck.Splines.SplineTracer::SetPercent(System.Double,System.Boolean,System.Boolean) */, __this, L_5, (bool)1, (bool)0);
+		VirtualActionInvoker3< double, bool, bool >::Invoke(25 /* System.Void Dreamteck.Splines.SplineTracer::SetPercent(System.Double,System.Boolean,System.Boolean) */, __this, L_5, (bool)1, (bool)1);
 	}
 
 IL_0033:
@@ -4729,7 +5039,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t SplinePositioner_get_mode_mE89FF72BE2
 {
 	{
 		// get { return _mode;  }
-		int32_t L_0 = __this->____mode_52;
+		int32_t L_0 = __this->____mode_56;
 		return L_0;
 	}
 }
@@ -4739,7 +5049,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplinePositioner_set_mode_mEEB21565E587E
 	{
 		// if (value != _mode)
 		int32_t L_0 = ___value0;
-		int32_t L_1 = __this->____mode_52;
+		int32_t L_1 = __this->____mode_56;
 		if ((((int32_t)L_0) == ((int32_t)L_1)))
 		{
 			goto IL_0016;
@@ -4748,7 +5058,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplinePositioner_set_mode_mEEB21565E587E
 	{
 		// _mode = value;
 		int32_t L_2 = ___value0;
-		__this->____mode_52 = L_2;
+		__this->____mode_56 = L_2;
 		// Rebuild();
 		VirtualActionInvoker0::Invoke(12 /* System.Void Dreamteck.Splines.SplineUser::Rebuild() */, __this);
 	}
@@ -4759,13 +5069,174 @@ IL_0016:
 		return;
 	}
 }
+// System.Void Dreamteck.Splines.SplinePositioner::OnFollowTargetMotionApplied()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplinePositioner_OnFollowTargetMotionApplied_m2C64EDAC5EDC4AAB599759D62A715DB7E436DDFC (SplinePositioner_t65907A7478BF746830F2EC0659B5B7AC010129AC* __this, const RuntimeMethod* method) 
+{
+	float V_0 = 0.0f;
+	double V_1 = 0.0;
+	{
+		// double percent = Travel(followTarget.result.percent, _followTargetDistance, _followTargetDirection, out moved);
+		SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A* L_0;
+		L_0 = SplinePositioner_get_followTarget_mF4DA2D84E33A70829EFF3AAF12C876487D633715_inline(__this, NULL);
+		NullCheck(L_0);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 L_1;
+		L_1 = SplineTracer_get_result_m8A513BF63623991012285DF1DA233EFD51A76C47_inline(L_0, NULL);
+		double L_2 = L_1.___percent_5;
+		float L_3 = __this->____followTargetDistance_52;
+		int32_t L_4 = __this->____followTargetDirection_54;
+		double L_5;
+		L_5 = SplineUser_Travel_mF13A3ED21B0CECF21A76ACB47E744AF3A222490B(__this, L_2, L_3, L_4, (&V_0), NULL);
+		V_1 = L_5;
+		// if (_followLoop)
+		bool L_6 = __this->____followLoop_53;
+		if (!L_6)
+		{
+			goto IL_0096;
+		}
+	}
+	{
+		// if (_followTargetDistance - moved > 0.000001f)
+		float L_7 = __this->____followTargetDistance_52;
+		float L_8 = V_0;
+		if ((!(((float)((float)il2cpp_codegen_subtract(L_7, L_8))) > ((float)(9.99999997E-07f)))))
+		{
+			goto IL_0096;
+		}
+	}
+	{
+		// if (percent <= 0.000001)
+		double L_9 = V_1;
+		if ((!(((double)L_9) <= ((double)(9.9999999999999995E-07)))))
+		{
+			goto IL_006a;
+		}
+	}
+	{
+		// percent = Travel(1.0, _followTargetDistance - moved, _followTargetDirection, out moved);
+		float L_10 = __this->____followTargetDistance_52;
+		float L_11 = V_0;
+		int32_t L_12 = __this->____followTargetDirection_54;
+		double L_13;
+		L_13 = SplineUser_Travel_mF13A3ED21B0CECF21A76ACB47E744AF3A222490B(__this, (1.0), ((float)il2cpp_codegen_subtract(L_10, L_11)), L_12, (&V_0), NULL);
+		V_1 = L_13;
+		goto IL_0096;
+	}
+
+IL_006a:
+	{
+		// else if (percent >= 0.999999)
+		double L_14 = V_1;
+		if ((!(((double)L_14) >= ((double)(0.99999899999999997)))))
+		{
+			goto IL_0096;
+		}
+	}
+	{
+		// percent = Travel(0.0, _followTargetDistance - moved, _followTargetDirection, out moved);
+		float L_15 = __this->____followTargetDistance_52;
+		float L_16 = V_0;
+		int32_t L_17 = __this->____followTargetDirection_54;
+		double L_18;
+		L_18 = SplineUser_Travel_mF13A3ED21B0CECF21A76ACB47E744AF3A222490B(__this, (0.0), ((float)il2cpp_codegen_subtract(L_15, L_16)), L_17, (&V_0), NULL);
+		V_1 = L_18;
+	}
+
+IL_0096:
+	{
+		// SetPercent(percent, true);
+		double L_19 = V_1;
+		VirtualActionInvoker3< double, bool, bool >::Invoke(25 /* System.Void Dreamteck.Splines.SplineTracer::SetPercent(System.Double,System.Boolean,System.Boolean) */, __this, L_19, (bool)1, (bool)0);
+		// }
+		return;
+	}
+}
+// System.Void Dreamteck.Splines.SplinePositioner::Awake()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplinePositioner_Awake_m3048054C121DB0EEC8DF7EFF46B694E0D43C2BEE (SplinePositioner_t65907A7478BF746830F2EC0659B5B7AC010129AC* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SplinePositioner_OnFollowTargetMotionApplied_m2C64EDAC5EDC4AAB599759D62A715DB7E436DDFC_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// base.Awake();
+		SplineTracer_Awake_m76F12DBD6CE77C306220F87340EDD4DE3E6E5DCE(__this, NULL);
+		// if(_followTarget != null)
+		SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A* L_0 = __this->____followTarget_51;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
+		{
+			goto IL_002b;
+		}
+	}
+	{
+		// _followTarget.onMotionApplied += OnFollowTargetMotionApplied;
+		SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A* L_2 = __this->____followTarget_51;
+		EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* L_3 = (EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8*)il2cpp_codegen_object_new(EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8_il2cpp_TypeInfo_var);
+		NullCheck(L_3);
+		EmptySplineHandler__ctor_m24C3D3F5240BEDB0365026CED366261659D54E02(L_3, __this, (intptr_t)((void*)SplinePositioner_OnFollowTargetMotionApplied_m2C64EDAC5EDC4AAB599759D62A715DB7E436DDFC_RuntimeMethod_var), NULL);
+		NullCheck(L_2);
+		SplineTracer_add_onMotionApplied_m5AFC0CDA154BAB8654F6A6271EBE3B733952B30F(L_2, L_3, NULL);
+	}
+
+IL_002b:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Dreamteck.Splines.SplinePositioner::OnDestroy()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplinePositioner_OnDestroy_mE25CBDB2ACA0BBEEDCD252C6C5E42C36066498E1 (SplinePositioner_t65907A7478BF746830F2EC0659B5B7AC010129AC* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SplinePositioner_OnFollowTargetMotionApplied_m2C64EDAC5EDC4AAB599759D62A715DB7E436DDFC_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// base.OnDestroy();
+		SplineUser_OnDestroy_mB5406FC624E2C06F97031D9A9952E9CC20C086D3(__this, NULL);
+		// if (_followTarget != null)
+		SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A* L_0 = __this->____followTarget_51;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
+		{
+			goto IL_002b;
+		}
+	}
+	{
+		// _followTarget.onMotionApplied -= OnFollowTargetMotionApplied;
+		SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A* L_2 = __this->____followTarget_51;
+		EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* L_3 = (EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8*)il2cpp_codegen_object_new(EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8_il2cpp_TypeInfo_var);
+		NullCheck(L_3);
+		EmptySplineHandler__ctor_m24C3D3F5240BEDB0365026CED366261659D54E02(L_3, __this, (intptr_t)((void*)SplinePositioner_OnFollowTargetMotionApplied_m2C64EDAC5EDC4AAB599759D62A715DB7E436DDFC_RuntimeMethod_var), NULL);
+		NullCheck(L_2);
+		SplineTracer_remove_onMotionApplied_mAD4F774DB2EFAD9F1FE5364E5F247B2AEA1C8BEE(L_2, L_3, NULL);
+	}
+
+IL_002b:
+	{
+		// }
+		return;
+	}
+}
 // System.Void Dreamteck.Splines.SplinePositioner::OnDidApplyAnimationProperties()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplinePositioner_OnDidApplyAnimationProperties_m0BF7DEC6BFBDEB33CF2CE5BF2691C6B76BF6FB0B (SplinePositioner_t65907A7478BF746830F2EC0659B5B7AC010129AC* __this, const RuntimeMethod* method) 
 {
 	{
 		// if (_lastPosition != _position)
-		float L_0 = __this->____lastPosition_53;
-		float L_1 = __this->____position_51;
+		float L_0 = __this->____lastPosition_57;
+		float L_1 = __this->____position_55;
 		if ((((float)L_0) == ((float)L_1)))
 		{
 			goto IL_0042;
@@ -4773,8 +5244,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplinePositioner_OnDidApplyAnimationProp
 	}
 	{
 		// _lastPosition = _position;
-		float L_2 = __this->____position_51;
-		__this->____lastPosition_53 = L_2;
+		float L_2 = __this->____position_55;
+		__this->____lastPosition_57 = L_2;
 		// if (mode == Mode.Distance)
 		int32_t L_3;
 		L_3 = SplinePositioner_get_mode_mE89FF72BE2024DD0A2DEE7155DB5880964BC3240_inline(__this, NULL);
@@ -4785,16 +5256,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplinePositioner_OnDidApplyAnimationProp
 	}
 	{
 		// SetDistance(_position, true);
-		float L_4 = __this->____position_51;
-		VirtualActionInvoker3< float, bool, bool >::Invoke(24 /* System.Void Dreamteck.Splines.SplineTracer::SetDistance(System.Single,System.Boolean,System.Boolean) */, __this, L_4, (bool)1, (bool)0);
+		float L_4 = __this->____position_55;
+		VirtualActionInvoker3< float, bool, bool >::Invoke(26 /* System.Void Dreamteck.Splines.SplineTracer::SetDistance(System.Single,System.Boolean,System.Boolean) */, __this, L_4, (bool)1, (bool)0);
 		goto IL_0042;
 	}
 
 IL_0033:
 	{
 		// SetPercent(_position, true);
-		float L_5 = __this->____position_51;
-		VirtualActionInvoker3< double, bool, bool >::Invoke(23 /* System.Void Dreamteck.Splines.SplineTracer::SetPercent(System.Double,System.Boolean,System.Boolean) */, __this, ((double)L_5), (bool)1, (bool)0);
+		float L_5 = __this->____position_55;
+		VirtualActionInvoker3< double, bool, bool >::Invoke(25 /* System.Void Dreamteck.Splines.SplineTracer::SetPercent(System.Double,System.Boolean,System.Boolean) */, __this, ((double)L_5), (bool)1, (bool)0);
 	}
 
 IL_0042:
@@ -4872,16 +5343,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplinePositioner_PostBuild_mA2A73FB02181
 	}
 	{
 		// if (mode == Mode.Distance) SetDistance((float)_position, true);
-		float L_1 = __this->____position_51;
-		VirtualActionInvoker3< float, bool, bool >::Invoke(24 /* System.Void Dreamteck.Splines.SplineTracer::SetDistance(System.Single,System.Boolean,System.Boolean) */, __this, ((float)L_1), (bool)1, (bool)0);
+		float L_1 = __this->____position_55;
+		VirtualActionInvoker3< float, bool, bool >::Invoke(26 /* System.Void Dreamteck.Splines.SplineTracer::SetDistance(System.Single,System.Boolean,System.Boolean) */, __this, ((float)L_1), (bool)1, (bool)0);
 		return;
 	}
 
 IL_001f:
 	{
 		// else SetPercent(_position, true);
-		float L_2 = __this->____position_51;
-		VirtualActionInvoker3< double, bool, bool >::Invoke(23 /* System.Void Dreamteck.Splines.SplineTracer::SetPercent(System.Double,System.Boolean,System.Boolean) */, __this, ((double)L_2), (bool)1, (bool)0);
+		float L_2 = __this->____position_55;
+		VirtualActionInvoker3< double, bool, bool >::Invoke(25 /* System.Void Dreamteck.Splines.SplineTracer::SetPercent(System.Double,System.Boolean,System.Boolean) */, __this, ((double)L_2), (bool)1, (bool)0);
 		// }
 		return;
 	}
@@ -4897,7 +5368,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplinePositioner_SetPercent_m6F16A17DFA0
 		SplineTracer_SetPercent_m95DF632F7D0DF0097C9774FB2C9DAF362B9B801C(__this, L_0, L_1, L_2, NULL);
 		// _position = (float)percent;
 		double L_3 = ___percent0;
-		__this->____position_51 = ((float)L_3);
+		__this->____position_55 = ((float)L_3);
 		// }
 		return;
 	}
@@ -4913,7 +5384,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplinePositioner_SetDistance_m40C13679FF
 		SplineTracer_SetDistance_m48B040DE703A633E9FC6A17BEDF7D2F1F2F1A298(__this, L_0, L_1, L_2, NULL);
 		// _position = distance;
 		float L_3 = ___distance0;
-		__this->____position_51 = L_3;
+		__this->____position_55 = L_3;
 		// }
 		return;
 	}
@@ -4922,6 +5393,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplinePositioner_SetDistance_m40C13679FF
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplinePositioner__ctor_mA3333DE0C59E2407C5E0808193675EFD5577657D (SplinePositioner_t65907A7478BF746830F2EC0659B5B7AC010129AC* __this, const RuntimeMethod* method) 
 {
 	{
+		// private Spline.Direction _followTargetDirection = Spline.Direction.Backward;
+		__this->____followTargetDirection_54 = (-1);
 		SplineTracer__ctor_mD656C3CEB4137F7D81B065927F4A3C2CCD7C2CC2(__this, NULL);
 		return;
 	}
@@ -5623,14 +6096,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineProjector_OnSplineChanged_m996880D
 		}
 	}
 	{
-		// spline.Project(_result, _projectTarget.position, clipFrom, clipTo, SplineComputer.EvaluateMode.Calculate, subdivide);
+		// spline.Project(_projectTarget.position, ref _result, clipFrom, clipTo, SplineComputer.EvaluateMode.Calculate, subdivide);
 		SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* L_3;
 		L_3 = SplineUser_get_spline_mFCDA5843B398053A190E9A6B6971331A19033E15_inline(__this, NULL);
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_4 = ((SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A*)__this)->____result_45;
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_5 = __this->____projectTarget_53;
-		NullCheck(L_5);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6;
-		L_6 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_5, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_4 = __this->____projectTarget_53;
+		NullCheck(L_4);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5;
+		L_5 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_4, NULL);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_6 = (&((SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A*)__this)->____result_42);
 		double L_7;
 		L_7 = SplineUser_get_clipFrom_m2366D6F30DAD8E29DBD02FB70B070B0FEE51909E_inline(__this, NULL);
 		double L_8;
@@ -5638,38 +6111,36 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineProjector_OnSplineChanged_m996880D
 		int32_t L_9;
 		L_9 = SplineProjector_get_subdivide_mD1E14F67D36D7A5A94996BD51C4805A181933357_inline(__this, NULL);
 		NullCheck(L_3);
-		SplineComputer_Project_m1D86B74DE3D2DE94E06EDAB56441671A59FE11F2(L_3, L_4, L_6, L_7, L_8, 1, L_9, NULL);
+		SplineComputer_Project_m1941776733636317ED354B36D9E43E9CE2883471(L_3, L_5, L_6, L_7, L_8, 1, L_9, NULL);
 		goto IL_0071;
 	}
 
 IL_0047:
 	{
-		// spline.Project(_result, _projectTarget.position, clipFrom, clipTo);
+		// spline.Project(_projectTarget.position, ref _result, clipFrom, clipTo);
 		SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* L_10;
 		L_10 = SplineUser_get_spline_mFCDA5843B398053A190E9A6B6971331A19033E15_inline(__this, NULL);
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_11 = ((SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A*)__this)->____result_45;
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_12 = __this->____projectTarget_53;
-		NullCheck(L_12);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_13;
-		L_13 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_12, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_11 = __this->____projectTarget_53;
+		NullCheck(L_11);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12;
+		L_12 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_11, NULL);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_13 = (&((SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A*)__this)->____result_42);
 		double L_14;
 		L_14 = SplineUser_get_clipFrom_m2366D6F30DAD8E29DBD02FB70B070B0FEE51909E_inline(__this, NULL);
 		double L_15;
 		L_15 = SplineUser_get_clipTo_mE824718C3FB404D8172DCFD93F214F487550E9C2_inline(__this, NULL);
 		NullCheck(L_10);
-		SplineComputer_Project_m1D86B74DE3D2DE94E06EDAB56441671A59FE11F2(L_10, L_11, L_13, L_14, L_15, 0, 4, NULL);
+		SplineComputer_Project_m1941776733636317ED354B36D9E43E9CE2883471(L_10, L_12, L_13, L_14, L_15, 0, 4, NULL);
 	}
 
 IL_0071:
 	{
 		// _result.percent = ClipPercent(_result.percent);
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_16 = ((SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A*)__this)->____result_45;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_17 = ((SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A*)__this)->____result_45;
-		NullCheck(L_17);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_16 = (&((SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A*)__this)->____result_42);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_17 = (&((SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A*)__this)->____result_42);
 		double L_18 = L_17->___percent_5;
 		double L_19;
 		L_19 = SplineUser_ClipPercent_mED0EF31DFC5F9C4B249460624AF547EED3EA07E4(__this, L_18, NULL);
-		NullCheck(L_16);
 		L_16->___percent_5 = L_19;
 	}
 
@@ -5708,14 +6179,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineProjector_Project_mF90A338E8608171
 		}
 	}
 	{
-		// spline.Project(_result, _projectTarget.position, clipFrom, clipTo, SplineComputer.EvaluateMode.Calculate, subdivide);
+		// spline.Project(_projectTarget.position, ref _result, clipFrom, clipTo, SplineComputer.EvaluateMode.Calculate, subdivide);
 		SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* L_3;
 		L_3 = SplineUser_get_spline_mFCDA5843B398053A190E9A6B6971331A19033E15_inline(__this, NULL);
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_4 = ((SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A*)__this)->____result_45;
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_5 = __this->____projectTarget_53;
-		NullCheck(L_5);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6;
-		L_6 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_5, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_4 = __this->____projectTarget_53;
+		NullCheck(L_4);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5;
+		L_5 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_4, NULL);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_6 = (&((SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A*)__this)->____result_42);
 		double L_7;
 		L_7 = SplineUser_get_clipFrom_m2366D6F30DAD8E29DBD02FB70B070B0FEE51909E_inline(__this, NULL);
 		double L_8;
@@ -5723,28 +6194,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineProjector_Project_mF90A338E8608171
 		int32_t L_9;
 		L_9 = SplineProjector_get_subdivide_mD1E14F67D36D7A5A94996BD51C4805A181933357_inline(__this, NULL);
 		NullCheck(L_3);
-		SplineComputer_Project_m1D86B74DE3D2DE94E06EDAB56441671A59FE11F2(L_3, L_4, L_6, L_7, L_8, 1, L_9, NULL);
+		SplineComputer_Project_m1941776733636317ED354B36D9E43E9CE2883471(L_3, L_5, L_6, L_7, L_8, 1, L_9, NULL);
 		// _result.percent = ClipPercent(_result.percent);
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_10 = ((SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A*)__this)->____result_45;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_11 = ((SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A*)__this)->____result_45;
-		NullCheck(L_11);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_10 = (&((SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A*)__this)->____result_42);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_11 = (&((SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A*)__this)->____result_42);
 		double L_12 = L_11->___percent_5;
 		double L_13;
 		L_13 = SplineUser_ClipPercent_mED0EF31DFC5F9C4B249460624AF547EED3EA07E4(__this, L_12, NULL);
-		NullCheck(L_10);
 		L_10->___percent_5 = L_13;
 		return;
 	}
 
 IL_0062:
 	{
-		// Project(_projectTarget.position, _result);
+		// Project(_projectTarget.position, ref _result);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_14 = __this->____projectTarget_53;
 		NullCheck(L_14);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_15;
 		L_15 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_14, NULL);
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_16 = ((SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A*)__this)->____result_45;
-		VirtualActionInvoker4< Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143*, double, double >::Invoke(19 /* System.Void Dreamteck.Splines.SplineUser::Project(UnityEngine.Vector3,Dreamteck.Splines.SplineSample,System.Double,System.Double) */, __this, L_15, L_16, (0.0), (1.0));
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_16 = (&((SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A*)__this)->____result_42);
+		VirtualActionInvoker4< Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143*, double, double >::Invoke(19 /* System.Void Dreamteck.Splines.SplineUser::Project(UnityEngine.Vector3,Dreamteck.Splines.SplineSample&,System.Double,System.Double) */, __this, L_15, L_16, (0.0), (1.0));
 		// }
 		return;
 	}
@@ -5778,8 +6247,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineProjector_CalculateProjection_mB21
 IL_000f:
 	{
 		// double lastPercent = _result.percent;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_2 = ((SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A*)__this)->____result_45;
-		NullCheck(L_2);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_2 = (&((SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A*)__this)->____result_42);
 		double L_3 = L_2->___percent_5;
 		V_0 = L_3;
 		// Project();
@@ -5792,8 +6260,7 @@ IL_000f:
 		}
 	}
 	{
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_5 = ((SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A*)__this)->____result_45;
-		NullCheck(L_5);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_5 = (&((SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A*)__this)->____result_42);
 		double L_6 = L_5->___percent_5;
 		double L_7;
 		L_7 = SplineUser_get_clipFrom_m2366D6F30DAD8E29DBD02FB70B070B0FEE51909E_inline(__this, NULL);
@@ -5805,8 +6272,7 @@ IL_000f:
 	{
 		// if (!Mathf.Approximately((float)lastPercent, (float)_result.percent))
 		double L_8 = V_0;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_9 = ((SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A*)__this)->____result_45;
-		NullCheck(L_9);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_9 = (&((SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A*)__this)->____result_42);
 		double L_10 = L_9->___percent_5;
 		bool L_11;
 		L_11 = Mathf_Approximately_m1DADD012A8FC82E11FB282501AE2EBBF9A77150B_inline(((float)L_8), ((float)L_10), NULL);
@@ -5850,8 +6316,7 @@ IL_0096:
 		}
 	}
 	{
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_17 = ((SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A*)__this)->____result_45;
-		NullCheck(L_17);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_17 = (&((SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A*)__this)->____result_42);
 		double L_18 = L_17->___percent_5;
 		double L_19;
 		L_19 = SplineUser_get_clipTo_mE824718C3FB404D8172DCFD93F214F487550E9C2_inline(__this, NULL);
@@ -5863,8 +6328,7 @@ IL_0096:
 	{
 		// if (!Mathf.Approximately((float)lastPercent, (float)_result.percent))
 		double L_20 = V_0;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_21 = ((SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A*)__this)->____result_45;
-		NullCheck(L_21);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_21 = (&((SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A*)__this)->____result_42);
 		double L_22 = L_21->___percent_5;
 		bool L_23;
 		L_23 = Mathf_Approximately_m1DADD012A8FC82E11FB282501AE2EBBF9A77150B_inline(((float)L_20), ((float)L_22), NULL);
@@ -5901,14 +6365,12 @@ IL_0103:
 	{
 		// CheckTriggers(lastPercent, _result.percent);
 		double L_28 = V_0;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_29 = ((SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A*)__this)->____result_45;
-		NullCheck(L_29);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_29 = (&((SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A*)__this)->____result_42);
 		double L_30 = L_29->___percent_5;
 		SplineTracer_CheckTriggers_m2C2D9E3B48BC5760D7B4C683A0145F04DDBAD648(__this, L_28, L_30, NULL);
 		// CheckNodes(lastPercent, _result.percent);
 		double L_31 = V_0;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_32 = ((SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A*)__this)->____result_45;
-		NullCheck(L_32);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_32 = (&((SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A*)__this)->____result_42);
 		double L_33 = L_32->___percent_5;
 		SplineTracer_CheckNodes_mEC30A052FBFC1A44EF1085ECDB5589B9605ECECE(__this, L_31, L_33, NULL);
 		// if (targetObject != null)
@@ -5979,7 +6441,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t SplineRenderer_get_slices_m21C4F2C9C7
 {
 	{
 		// get { return _slices; }
-		int32_t L_0 = __this->____slices_62;
+		int32_t L_0 = __this->____slices_63;
 		return L_0;
 	}
 }
@@ -5989,7 +6451,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineRenderer_set_slices_m10969FA01A162
 	{
 		// if (value != _slices)
 		int32_t L_0 = ___value0;
-		int32_t L_1 = __this->____slices_62;
+		int32_t L_1 = __this->____slices_63;
 		if ((((int32_t)L_0) == ((int32_t)L_1)))
 		{
 			goto IL_001d;
@@ -6012,33 +6474,13 @@ IL_0010:
 	{
 		// _slices = value;
 		int32_t L_3 = ___value0;
-		__this->____slices_62 = L_3;
+		__this->____slices_63 = L_3;
 		// Rebuild();
 		VirtualActionInvoker0::Invoke(12 /* System.Void Dreamteck.Splines.SplineUser::Rebuild() */, __this);
 	}
 
 IL_001d:
 	{
-		// }
-		return;
-	}
-}
-// System.Void Dreamteck.Splines.SplineRenderer::Awake()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineRenderer_Awake_m4A6FD46473C3E152896A38CEA977CE830C43E9C1 (SplineRenderer_tEA46B320767235A628ACD393AD0602351322D127* __this, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral5C26206B271C04DE25C912191A4DE9E52D02A9AA);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		// base.Awake();
-		MeshGenerator_Awake_m0B8F023A8612CDFFC6AAEE858462B8CB97B48960(__this, NULL);
-		// mesh.name = "spline";
-		Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* L_0 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___mesh_54;
-		NullCheck(L_0);
-		Object_set_name_mC79E6DC8FFD72479C90F0C4CC7F42A0FEAF5AE47(L_0, _stringLiteral5C26206B271C04DE25C912191A4DE9E52D02A9AA, NULL);
 		// }
 		return;
 	}
@@ -6061,7 +6503,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineRenderer_Start_mAC08986483F26158F6
 		L_1 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
 		if (!L_1)
 		{
-			goto IL_001e;
+			goto IL_001f;
 		}
 	}
 	{
@@ -6071,11 +6513,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineRenderer_Start_mAC08986483F26158F6
 		NullCheck(L_2);
 		bool L_3;
 		L_3 = Camera_get_orthographic_m904DEFC76C54DA4E30C20A62A86D5D87B7D4DD8F(L_2, NULL);
-		__this->____orthographic_65 = L_3;
-		return;
+		__this->____orthographic_66 = L_3;
+		goto IL_003c;
 	}
 
-IL_001e:
+IL_001f:
 	{
 		// else if (Camera.main != null)
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_4;
@@ -6085,7 +6527,7 @@ IL_001e:
 		L_5 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_4, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
 		if (!L_5)
 		{
-			goto IL_003b;
+			goto IL_003c;
 		}
 	}
 	{
@@ -6095,11 +6537,13 @@ IL_001e:
 		NullCheck(L_6);
 		bool L_7;
 		L_7 = Camera_get_orthographic_m904DEFC76C54DA4E30C20A62A86D5D87B7D4DD8F(L_6, NULL);
-		__this->____orthographic_65 = L_7;
+		__this->____orthographic_66 = L_7;
 	}
 
-IL_003b:
+IL_003c:
 	{
+		// CreateMesh();
+		VirtualActionInvoker0::Invoke(27 /* System.Void Dreamteck.Splines.MeshGenerator::CreateMesh() */, __this);
 		// }
 		return;
 	}
@@ -6109,7 +6553,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineRenderer_LateRun_m3A741A84D475DA27
 {
 	{
 		// if (updateFrameInterval > 0)
-		int32_t L_0 = __this->___updateFrameInterval_61;
+		int32_t L_0 = __this->___updateFrameInterval_62;
 		if ((((int32_t)L_0) <= ((int32_t)0)))
 		{
 			goto IL_002c;
@@ -6117,11 +6561,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineRenderer_LateRun_m3A741A84D475DA27
 	}
 	{
 		// _currentFrame++;
-		int32_t L_1 = __this->____currentFrame_63;
-		__this->____currentFrame_63 = ((int32_t)il2cpp_codegen_add(L_1, 1));
+		int32_t L_1 = __this->____currentFrame_64;
+		__this->____currentFrame_64 = ((int32_t)il2cpp_codegen_add(L_1, 1));
 		// if (_currentFrame > updateFrameInterval) _currentFrame = 0;
-		int32_t L_2 = __this->____currentFrame_63;
-		int32_t L_3 = __this->___updateFrameInterval_61;
+		int32_t L_2 = __this->____currentFrame_64;
+		int32_t L_3 = __this->___updateFrameInterval_62;
 		if ((((int32_t)L_2) <= ((int32_t)L_3)))
 		{
 			goto IL_002c;
@@ -6129,7 +6573,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineRenderer_LateRun_m3A741A84D475DA27
 	}
 	{
 		// if (_currentFrame > updateFrameInterval) _currentFrame = 0;
-		__this->____currentFrame_63 = 0;
+		__this->____currentFrame_64 = 0;
 	}
 
 IL_002c:
@@ -6151,14 +6595,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineRenderer_BuildMesh_m4D377DB5D8E3CA
 		// base.BuildMesh();
 		MeshGenerator_BuildMesh_m8593689F27E5E6B70A36B3E4058C9FA5E933A07A(__this, NULL);
 		// GenerateVertices(_vertexDirection, _orthographic);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = __this->____vertexDirection_64;
-		bool L_1 = __this->____orthographic_65;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = __this->____vertexDirection_65;
+		bool L_1 = __this->____orthographic_66;
 		SplineRenderer_GenerateVertices_mEF26279876DB445208FBB66FCB2CD4AD81A5D07F(__this, L_0, L_1, NULL);
-		// MeshUtility.GeneratePlaneTriangles(ref tsMesh.triangles, _slices, sampleCount, false, 0, 0);
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_2 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		// MeshUtility.GeneratePlaneTriangles(ref _tsMesh.triangles, _slices, sampleCount, false, 0, 0);
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_2;
+		L_2 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
 		NullCheck(L_2);
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C** L_3 = (&L_2->___triangles_8);
-		int32_t L_4 = __this->____slices_62;
+		int32_t L_4 = __this->____slices_63;
 		int32_t L_5;
 		L_5 = SplineUser_get_sampleCount_m72EB98E357EB6A53B94626C14D2F0CAF87997AFC_inline(__this, NULL);
 		il2cpp_codegen_runtime_class_init_inline(MeshUtility_t290F5EC43C76DF1C4B2D3C845F319E4C9E5D82BA_il2cpp_TypeInfo_var);
@@ -6177,9 +6622,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineRenderer_RenderWithCamera_m91E781C
 		NullCheck(L_0);
 		bool L_1;
 		L_1 = Camera_get_orthographic_m904DEFC76C54DA4E30C20A62A86D5D87B7D4DD8F(L_0, NULL);
-		__this->____orthographic_65 = L_1;
+		__this->____orthographic_66 = L_1;
 		// if (_orthographic)
-		bool L_2 = __this->____orthographic_65;
+		bool L_2 = __this->____orthographic_66;
 		if (!L_2)
 		{
 			goto IL_002c;
@@ -6196,7 +6641,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineRenderer_RenderWithCamera_m91E781C
 		L_5 = Transform_get_forward_mFCFACF7165FDAB21E80E384C494DF278386CEE2F(L_4, NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6;
 		L_6 = Vector3_op_UnaryNegation_m5450829F333BD2A88AF9A592C4EE331661225915_inline(L_5, NULL);
-		__this->____vertexDirection_64 = L_6;
+		__this->____vertexDirection_65 = L_6;
 		goto IL_003d;
 	}
 
@@ -6210,15 +6655,15 @@ IL_002c:
 		NullCheck(L_8);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9;
 		L_9 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_8, NULL);
-		__this->____vertexDirection_64 = L_9;
+		__this->____vertexDirection_65 = L_9;
 	}
 
 IL_003d:
 	{
 		// BuildMesh();
-		VirtualActionInvoker0::Invoke(22 /* System.Void Dreamteck.Splines.MeshGenerator::BuildMesh() */, __this);
+		VirtualActionInvoker0::Invoke(24 /* System.Void Dreamteck.Splines.MeshGenerator::BuildMesh() */, __this);
 		// WriteMesh();
-		VirtualActionInvoker0::Invoke(23 /* System.Void Dreamteck.Splines.MeshGenerator::WriteMesh() */, __this);
+		VirtualActionInvoker0::Invoke(25 /* System.Void Dreamteck.Splines.MeshGenerator::WriteMesh() */, __this);
 		// }
 		return;
 	}
@@ -6234,7 +6679,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineRenderer_OnWillRenderObject_m79036
 	}
 	{
 		// if (!autoOrient) return;
-		bool L_0 = __this->___autoOrient_60;
+		bool L_0 = __this->___autoOrient_61;
 		if (L_0)
 		{
 			goto IL_0009;
@@ -6248,7 +6693,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineRenderer_OnWillRenderObject_m79036
 IL_0009:
 	{
 		// if (updateFrameInterval > 0)
-		int32_t L_1 = __this->___updateFrameInterval_61;
+		int32_t L_1 = __this->___updateFrameInterval_62;
 		if ((((int32_t)L_1) <= ((int32_t)0)))
 		{
 			goto IL_001b;
@@ -6256,7 +6701,7 @@ IL_0009:
 	}
 	{
 		// if (_currentFrame != 0) return;
-		int32_t L_2 = __this->____currentFrame_63;
+		int32_t L_2 = __this->____currentFrame_64;
 		if (!L_2)
 		{
 			goto IL_001b;
@@ -6279,7 +6724,7 @@ IL_001b:
 	}
 	{
 		// if (!_init)
-		bool L_4 = __this->____init_66;
+		bool L_4 = __this->____init_67;
 		if (L_4)
 		{
 			goto IL_0037;
@@ -6289,7 +6734,7 @@ IL_001b:
 		// Awake();
 		VirtualActionInvoker0::Invoke(6 /* System.Void Dreamteck.Splines.SplineUser::Awake() */, __this);
 		// _init = true;
-		__this->____init_66 = (bool)1;
+		__this->____init_67 = (bool)1;
 	}
 
 IL_0037:
@@ -6365,13 +6810,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineRenderer_GenerateVertices_mEF26279
 	float V_9 = 0.0f;
 	{
 		// AllocateMesh((_slices + 1) * sampleCount, _slices * (sampleCount - 1) * 6);
-		int32_t L_0 = __this->____slices_62;
+		int32_t L_0 = __this->____slices_63;
 		int32_t L_1;
 		L_1 = SplineUser_get_sampleCount_m72EB98E357EB6A53B94626C14D2F0CAF87997AFC_inline(__this, NULL);
-		int32_t L_2 = __this->____slices_62;
+		int32_t L_2 = __this->____slices_63;
 		int32_t L_3;
 		L_3 = SplineUser_get_sampleCount_m72EB98E357EB6A53B94626C14D2F0CAF87997AFC_inline(__this, NULL);
-		VirtualActionInvoker2< int32_t, int32_t >::Invoke(24 /* System.Void Dreamteck.Splines.MeshGenerator::AllocateMesh(System.Int32,System.Int32) */, __this, ((int32_t)il2cpp_codegen_multiply(((int32_t)il2cpp_codegen_add(L_0, 1)), L_1)), ((int32_t)il2cpp_codegen_multiply(((int32_t)il2cpp_codegen_multiply(L_2, ((int32_t)il2cpp_codegen_subtract(L_3, 1)))), 6)));
+		VirtualActionInvoker2< int32_t, int32_t >::Invoke(26 /* System.Void Dreamteck.Splines.MeshGenerator::AllocateMesh(System.Int32,System.Int32) */, __this, ((int32_t)il2cpp_codegen_multiply(((int32_t)il2cpp_codegen_add(L_0, 1)), L_1)), ((int32_t)il2cpp_codegen_multiply(((int32_t)il2cpp_codegen_multiply(L_2, ((int32_t)il2cpp_codegen_subtract(L_3, 1)))), 6)));
 		// int vertexIndex = 0;
 		V_0 = 0;
 		// ResetUVDistance();
@@ -6391,13 +6836,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineRenderer_GenerateVertices_mEF26279
 
 IL_0046:
 	{
-		// GetSample(i, evalResult);
+		// GetSample(i, ref evalResult);
 		int32_t L_7 = V_2;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_8 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
-		SplineUser_GetSample_m3BC18583D33B76D600B873A10966C3AAD9744139(__this, L_7, L_8, NULL);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_8 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
+		SplineUser_GetSample_m880DFE2CAAE9E9F4D85F68B13E9DE816186C3D8E(__this, L_7, L_8, NULL);
 		// Vector3 center = evalResult.position;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_9 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
-		NullCheck(L_9);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_9 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10 = L_9->___position_0;
 		V_3 = L_10;
 		// if (hasOffset) center += offset.x * -Vector3.Cross(evalResult.forward, evalResult.up) + offset.y * evalResult.up + offset.z * evalResult.forward;
@@ -6413,11 +6857,9 @@ IL_0046:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_13;
 		L_13 = MeshGenerator_get_offset_m05B30B6A00C843F0C0D2D97FE5C13544BE501436_inline(__this, NULL);
 		float L_14 = L_13.___x_2;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_15 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
-		NullCheck(L_15);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_15 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_16 = L_15->___forward_2;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_17 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
-		NullCheck(L_17);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_17 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_18 = L_17->___up_1;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_19;
 		L_19 = Vector3_Cross_mF93A280558BCE756D13B6CC5DCD7DE8A43148987_inline(L_16, L_18, NULL);
@@ -6428,8 +6870,7 @@ IL_0046:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_22;
 		L_22 = MeshGenerator_get_offset_m05B30B6A00C843F0C0D2D97FE5C13544BE501436_inline(__this, NULL);
 		float L_23 = L_22.___y_3;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_24 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
-		NullCheck(L_24);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_24 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_25 = L_24->___up_1;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_26;
 		L_26 = Vector3_op_Multiply_m7F3B0FA9256CE368D7636558EFEFC4AB0E1A0F41_inline(L_23, L_25, NULL);
@@ -6438,8 +6879,7 @@ IL_0046:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_28;
 		L_28 = MeshGenerator_get_offset_m05B30B6A00C843F0C0D2D97FE5C13544BE501436_inline(__this, NULL);
 		float L_29 = L_28.___z_4;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_30 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
-		NullCheck(L_30);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_30 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_31 = L_30->___forward_2;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_32;
 		L_32 = Vector3_op_Multiply_m7F3B0FA9256CE368D7636558EFEFC4AB0E1A0F41_inline(L_29, L_31, NULL);
@@ -6482,8 +6922,7 @@ IL_00e1:
 IL_00f3:
 	{
 		// Vector3 vertexRight = Vector3.Cross(evalResult.forward, vertexNormal).normalized;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_41 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
-		NullCheck(L_41);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_41 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_42 = L_41->___forward_2;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_43 = V_4;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_44;
@@ -6519,8 +6958,7 @@ IL_0122:
 IL_0129:
 	{
 		// Color vertexColor = evalResult.color * color;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_49 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
-		NullCheck(L_49);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_49 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_50 = L_49->___color_3;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_51;
 		L_51 = MeshGenerator_get_color_m304FC1A34B1FE17F535528AFDCE7A1AC90258A33_inline(__this, NULL);
@@ -6536,17 +6974,17 @@ IL_0149:
 	{
 		// float slicePercent = ((float)n / _slices);
 		int32_t L_53 = V_8;
-		int32_t L_54 = __this->____slices_62;
+		int32_t L_54 = __this->____slices_63;
 		V_9 = ((float)(((float)L_53)/((float)L_54)));
-		// tsMesh.vertices[vertexIndex] = center - vertexRight * evalResult.size * 0.5f * size + vertexRight * evalResult.size * slicePercent * size;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_55 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		// _tsMesh.vertices[vertexIndex] = center - vertexRight * evalResult.size * 0.5f * size + vertexRight * evalResult.size * slicePercent * size;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_55;
+		L_55 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
 		NullCheck(L_55);
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_56 = L_55->___vertices_0;
 		int32_t L_57 = V_0;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_58 = V_3;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_59 = V_5;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_60 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
-		NullCheck(L_60);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_60 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
 		float L_61 = L_60->___size_4;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_62;
 		L_62 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_59, L_61, NULL);
@@ -6559,8 +6997,7 @@ IL_0149:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_66;
 		L_66 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_58, L_65, NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_67 = V_5;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_68 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
-		NullCheck(L_68);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_68 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
 		float L_69 = L_68->___size_4;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_70;
 		L_70 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_67, L_69, NULL);
@@ -6576,13 +7013,13 @@ IL_0149:
 		NullCheck(L_56);
 		(L_56)->SetAt(static_cast<il2cpp_array_size_t>(L_57), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_75);
 		// CalculateUVs(evalResult.percent, slicePercent);
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_76 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
-		NullCheck(L_76);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_76 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
 		double L_77 = L_76->___percent_5;
 		float L_78 = V_9;
 		MeshGenerator_CalculateUVs_m6EF52B8AA80896038E1731EF4906EC64CC65FC48(__this, L_77, L_78, NULL);
-		// tsMesh.uv[vertexIndex] = Vector2.one * 0.5f + (Vector2)(Quaternion.AngleAxis(uvRotation + 180f, Vector3.forward) * (Vector2.one * 0.5f - uvs));
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_79 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		// _tsMesh.uv[vertexIndex] = Vector2.one * 0.5f + (Vector2)(Quaternion.AngleAxis(uvRotation + 180f, Vector3.forward) * (Vector2.one * 0.5f - __uvs));
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_79;
+		L_79 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
 		NullCheck(L_79);
 		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_80 = L_79->___uv_4;
 		int32_t L_81 = V_0;
@@ -6601,7 +7038,7 @@ IL_0149:
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_88;
 		L_88 = Vector2_op_Multiply_m2D984B613020089BF5165BA4CA10988E2DC771FE_inline(L_87, (0.5f), NULL);
 		il2cpp_codegen_runtime_class_init_inline(MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E_il2cpp_TypeInfo_var);
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_89 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E_StaticFields*)il2cpp_codegen_static_fields_for(MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E_il2cpp_TypeInfo_var))->___uvs_59;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_89 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E_StaticFields*)il2cpp_codegen_static_fields_for(MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E_il2cpp_TypeInfo_var))->_____uvs_55;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_90;
 		L_90 = Vector2_op_Subtraction_m44475FCDAD2DA2F98D78A6625EC2DCDFE8803837_inline(L_88, L_89, NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_91;
@@ -6614,16 +7051,18 @@ IL_0149:
 		L_94 = Vector2_op_Addition_m8136742CE6EE33BA4EB81C5F584678455917D2AE_inline(L_83, L_93, NULL);
 		NullCheck(L_80);
 		(L_80)->SetAt(static_cast<il2cpp_array_size_t>(L_81), (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7)L_94);
-		// tsMesh.normals[vertexIndex] = vertexNormal;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_95 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		// _tsMesh.normals[vertexIndex] = vertexNormal;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_95;
+		L_95 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
 		NullCheck(L_95);
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_96 = L_95->___normals_1;
 		int32_t L_97 = V_0;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_98 = V_4;
 		NullCheck(L_96);
 		(L_96)->SetAt(static_cast<il2cpp_array_size_t>(L_97), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_98);
-		// tsMesh.colors[vertexIndex] = vertexColor;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_99 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		// _tsMesh.colors[vertexIndex] = vertexColor;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_99;
+		L_99 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
 		NullCheck(L_99);
 		ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389* L_100 = L_99->___colors_3;
 		int32_t L_101 = V_0;
@@ -6642,7 +7081,7 @@ IL_0263:
 	{
 		// for (int n = 0; n < _slices + 1; n++)
 		int32_t L_105 = V_8;
-		int32_t L_106 = __this->____slices_62;
+		int32_t L_106 = __this->____slices_63;
 		if ((((int32_t)L_105) < ((int32_t)((int32_t)il2cpp_codegen_add(L_106, 1)))))
 		{
 			goto IL_0149;
@@ -6681,13 +7120,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineRenderer__ctor_mE8CCC5FE29670D3F0D
 	}
 	{
 		// public bool autoOrient = true;
-		__this->___autoOrient_60 = (bool)1;
+		__this->___autoOrient_61 = (bool)1;
 		// private int _slices = 1;
-		__this->____slices_62 = 1;
+		__this->____slices_63 = 1;
 		// private Vector3 _vertexDirection = Vector3.up;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0;
 		L_0 = Vector3_get_up_m128AF3FDC820BF59D5DE86D973E7DE3F20C3AEBA_inline(NULL);
-		__this->____vertexDirection_64 = L_0;
+		__this->____vertexDirection_65 = L_0;
 		il2cpp_codegen_runtime_class_init_inline(MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E_il2cpp_TypeInfo_var);
 		MeshGenerator__ctor_m5D5CE5E6D63ED2D3AE7688622270EA42D9363ED6(__this, NULL);
 		return;
@@ -6706,7 +7145,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t SplineTracer_get_physicsMode_mED01FA8
 {
 	{
 		// get { return _physicsMode; }
-		int32_t L_0 = __this->____physicsMode_40;
+		int32_t L_0 = __this->____physicsMode_37;
 		return L_0;
 	}
 }
@@ -6716,7 +7155,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineTracer_set_physicsMode_m595082A6FE
 	{
 		// _physicsMode = value;
 		int32_t L_0 = ___value0;
-		__this->____physicsMode_40 = L_0;
+		__this->____physicsMode_37 = L_0;
 		// RefreshTargets();
 		SplineTracer_RefreshTargets_mC0654283C581BA5399F379F97E19D7756B9E301F(__this, NULL);
 		// }
@@ -6734,7 +7173,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TransformModule_t3CAD9DEFF242B9200AC9FA51CF3F
 	}
 	{
 		// if (_motion == null) _motion = new TransformModule();
-		TransformModule_t3CAD9DEFF242B9200AC9FA51CF3F3417DCE72A8B* L_0 = __this->____motion_41;
+		TransformModule_t3CAD9DEFF242B9200AC9FA51CF3F3417DCE72A8B* L_0 = __this->____motion_38;
 		if (L_0)
 		{
 			goto IL_0013;
@@ -6745,32 +7184,32 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TransformModule_t3CAD9DEFF242B9200AC9FA51CF3F
 		TransformModule_t3CAD9DEFF242B9200AC9FA51CF3F3417DCE72A8B* L_1 = (TransformModule_t3CAD9DEFF242B9200AC9FA51CF3F3417DCE72A8B*)il2cpp_codegen_object_new(TransformModule_t3CAD9DEFF242B9200AC9FA51CF3F3417DCE72A8B_il2cpp_TypeInfo_var);
 		NullCheck(L_1);
 		TransformModule__ctor_mC44E819D74762A181B660E14BE48FE47EF764CC9(L_1, NULL);
-		__this->____motion_41 = L_1;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____motion_41), (void*)L_1);
+		__this->____motion_38 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____motion_38), (void*)L_1);
 	}
 
 IL_0013:
 	{
 		// return _motion;
-		TransformModule_t3CAD9DEFF242B9200AC9FA51CF3F3417DCE72A8B* L_2 = __this->____motion_41;
+		TransformModule_t3CAD9DEFF242B9200AC9FA51CF3F3417DCE72A8B* L_2 = __this->____motion_38;
 		return L_2;
 	}
 }
 // Dreamteck.Splines.SplineSample Dreamteck.Splines.SplineTracer::get_result()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* SplineTracer_get_result_m8A513BF63623991012285DF1DA233EFD51A76C47 (SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A* __this, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 SplineTracer_get_result_m8A513BF63623991012285DF1DA233EFD51A76C47 (SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A* __this, const RuntimeMethod* method) 
 {
 	{
 		// get { return _result; }
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_0 = __this->____result_45;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 L_0 = __this->____result_42;
 		return L_0;
 	}
 }
 // Dreamteck.Splines.SplineSample Dreamteck.Splines.SplineTracer::get_modifiedResult()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* SplineTracer_get_modifiedResult_mECBB63EE3C3325F4293DB340C0F41DDBBD5D5F9C (SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A* __this, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 SplineTracer_get_modifiedResult_mECBB63EE3C3325F4293DB340C0F41DDBBD5D5F9C (SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A* __this, const RuntimeMethod* method) 
 {
 	{
 		// return _finalResult;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_0 = __this->____finalResult_46;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 L_0 = __this->____finalResult_43;
 		return L_0;
 	}
 }
@@ -6779,7 +7218,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SplineTracer_get_dontLerpDirection_m3F2D
 {
 	{
 		// get { return _dontLerpDirection; }
-		bool L_0 = __this->____dontLerpDirection_39;
+		bool L_0 = __this->____dontLerpDirection_36;
 		return L_0;
 	}
 }
@@ -6789,7 +7228,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineTracer_set_dontLerpDirection_m59C3
 	{
 		// if (value != _dontLerpDirection)
 		bool L_0 = ___value0;
-		bool L_1 = __this->____dontLerpDirection_39;
+		bool L_1 = __this->____dontLerpDirection_36;
 		if ((((int32_t)L_0) == ((int32_t)L_1)))
 		{
 			goto IL_0016;
@@ -6798,7 +7237,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineTracer_set_dontLerpDirection_m59C3
 	{
 		// _dontLerpDirection = value;
 		bool L_2 = ___value0;
-		__this->____dontLerpDirection_39 = L_2;
+		__this->____dontLerpDirection_36 = L_2;
 		// ApplyMotion();
 		SplineTracer_ApplyMotion_m9812460F0F35A431056378746089FA16705FBADD(__this, NULL);
 	}
@@ -6814,7 +7253,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t SplineTracer_get_direction_mC1F07AC64
 {
 	{
 		// get { return _direction; }
-		int32_t L_0 = __this->____direction_38;
+		int32_t L_0 = __this->____direction_35;
 		return L_0;
 	}
 }
@@ -6824,7 +7263,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineTracer_set_direction_mAA6286F0A2E4
 	{
 		// if (value != _direction)
 		int32_t L_0 = ___value0;
-		int32_t L_1 = __this->____direction_38;
+		int32_t L_1 = __this->____direction_35;
 		if ((((int32_t)L_0) == ((int32_t)L_1)))
 		{
 			goto IL_0016;
@@ -6833,7 +7272,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineTracer_set_direction_mAA6286F0A2E4
 	{
 		// _direction = value;
 		int32_t L_2 = ___value0;
-		__this->____direction_38 = L_2;
+		__this->____direction_35 = L_2;
 		// ApplyMotion();
 		SplineTracer_ApplyMotion_m9812460F0F35A431056378746089FA16705FBADD(__this, NULL);
 	}
@@ -6857,7 +7296,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineTracer_add_onNode_mBD6546AF738BB79
 	JunctionHandler_t0A4A89D185BAF77E68113E13444973A668A6B27D* V_1 = NULL;
 	JunctionHandler_t0A4A89D185BAF77E68113E13444973A668A6B27D* V_2 = NULL;
 	{
-		JunctionHandler_t0A4A89D185BAF77E68113E13444973A668A6B27D* L_0 = __this->___onNode_47;
+		JunctionHandler_t0A4A89D185BAF77E68113E13444973A668A6B27D* L_0 = __this->___onNode_44;
 		V_0 = L_0;
 	}
 
@@ -6870,7 +7309,7 @@ IL_0007:
 		Delegate_t* L_4;
 		L_4 = Delegate_Combine_m1F725AEF318BE6F0426863490691A6F4606E7D00(L_2, L_3, NULL);
 		V_2 = ((JunctionHandler_t0A4A89D185BAF77E68113E13444973A668A6B27D*)CastclassSealed((RuntimeObject*)L_4, JunctionHandler_t0A4A89D185BAF77E68113E13444973A668A6B27D_il2cpp_TypeInfo_var));
-		JunctionHandler_t0A4A89D185BAF77E68113E13444973A668A6B27D** L_5 = (&__this->___onNode_47);
+		JunctionHandler_t0A4A89D185BAF77E68113E13444973A668A6B27D** L_5 = (&__this->___onNode_44);
 		JunctionHandler_t0A4A89D185BAF77E68113E13444973A668A6B27D* L_6 = V_2;
 		JunctionHandler_t0A4A89D185BAF77E68113E13444973A668A6B27D* L_7 = V_1;
 		JunctionHandler_t0A4A89D185BAF77E68113E13444973A668A6B27D* L_8;
@@ -6900,7 +7339,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineTracer_remove_onNode_m94792E2DF29A
 	JunctionHandler_t0A4A89D185BAF77E68113E13444973A668A6B27D* V_1 = NULL;
 	JunctionHandler_t0A4A89D185BAF77E68113E13444973A668A6B27D* V_2 = NULL;
 	{
-		JunctionHandler_t0A4A89D185BAF77E68113E13444973A668A6B27D* L_0 = __this->___onNode_47;
+		JunctionHandler_t0A4A89D185BAF77E68113E13444973A668A6B27D* L_0 = __this->___onNode_44;
 		V_0 = L_0;
 	}
 
@@ -6913,7 +7352,7 @@ IL_0007:
 		Delegate_t* L_4;
 		L_4 = Delegate_Remove_m8B7DD5661308FA972E23CA1CC3FC9CEB355504E3(L_2, L_3, NULL);
 		V_2 = ((JunctionHandler_t0A4A89D185BAF77E68113E13444973A668A6B27D*)CastclassSealed((RuntimeObject*)L_4, JunctionHandler_t0A4A89D185BAF77E68113E13444973A668A6B27D_il2cpp_TypeInfo_var));
-		JunctionHandler_t0A4A89D185BAF77E68113E13444973A668A6B27D** L_5 = (&__this->___onNode_47);
+		JunctionHandler_t0A4A89D185BAF77E68113E13444973A668A6B27D** L_5 = (&__this->___onNode_44);
 		JunctionHandler_t0A4A89D185BAF77E68113E13444973A668A6B27D* L_6 = V_2;
 		JunctionHandler_t0A4A89D185BAF77E68113E13444973A668A6B27D* L_7 = V_1;
 		JunctionHandler_t0A4A89D185BAF77E68113E13444973A668A6B27D* L_8;
@@ -6943,7 +7382,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineTracer_add_onMotionApplied_m5AFC0C
 	EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* V_1 = NULL;
 	EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* V_2 = NULL;
 	{
-		EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* L_0 = __this->___onMotionApplied_48;
+		EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* L_0 = __this->___onMotionApplied_45;
 		V_0 = L_0;
 	}
 
@@ -6956,7 +7395,7 @@ IL_0007:
 		Delegate_t* L_4;
 		L_4 = Delegate_Combine_m1F725AEF318BE6F0426863490691A6F4606E7D00(L_2, L_3, NULL);
 		V_2 = ((EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8*)CastclassSealed((RuntimeObject*)L_4, EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8_il2cpp_TypeInfo_var));
-		EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8** L_5 = (&__this->___onMotionApplied_48);
+		EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8** L_5 = (&__this->___onMotionApplied_45);
 		EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* L_6 = V_2;
 		EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* L_7 = V_1;
 		EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* L_8;
@@ -6986,7 +7425,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineTracer_remove_onMotionApplied_mAD4
 	EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* V_1 = NULL;
 	EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* V_2 = NULL;
 	{
-		EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* L_0 = __this->___onMotionApplied_48;
+		EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* L_0 = __this->___onMotionApplied_45;
 		V_0 = L_0;
 	}
 
@@ -6999,7 +7438,7 @@ IL_0007:
 		Delegate_t* L_4;
 		L_4 = Delegate_Remove_m8B7DD5661308FA972E23CA1CC3FC9CEB355504E3(L_2, L_3, NULL);
 		V_2 = ((EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8*)CastclassSealed((RuntimeObject*)L_4, EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8_il2cpp_TypeInfo_var));
-		EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8** L_5 = (&__this->___onMotionApplied_48);
+		EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8** L_5 = (&__this->___onMotionApplied_45);
 		EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* L_6 = V_2;
 		EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* L_7 = V_1;
 		EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* L_8;
@@ -7016,12 +7455,22 @@ IL_0007:
 		return;
 	}
 }
+// System.Void Dreamteck.Splines.SplineTracer::Awake()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineTracer_Awake_m76F12DBD6CE77C306220F87340EDD4DE3E6E5DCE (SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A* __this, const RuntimeMethod* method) 
+{
+	{
+		// base.Awake();
+		SplineUser_Awake_mC11EE0E4589956036EDBA5A8F8BD5130318BF926(__this, NULL);
+		// RefreshTargets();
+		SplineTracer_RefreshTargets_mC0654283C581BA5399F379F97E19D7756B9E301F(__this, NULL);
+		// }
+		return;
+	}
+}
 // System.Void Dreamteck.Splines.SplineTracer::Start()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineTracer_Start_mE295EE585FDFE58A411BD691547D14419DD54774 (SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A* __this, const RuntimeMethod* method) 
 {
 	{
-		// RefreshTargets();
-		SplineTracer_RefreshTargets_mC0654283C581BA5399F379F97E19D7756B9E301F(__this, NULL);
 		// }
 		return;
 	}
@@ -7031,50 +7480,64 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineTracer_SetPercent_m95DF632F7D0DF00
 {
 	double V_0 = 0.0;
 	{
+		// if (sampleCount == 0) return;
+		int32_t L_0;
+		L_0 = SplineUser_get_sampleCount_m72EB98E357EB6A53B94626C14D2F0CAF87997AFC_inline(__this, NULL);
+		if (L_0)
+		{
+			goto IL_0009;
+		}
+	}
+	{
+		// if (sampleCount == 0) return;
+		return;
+	}
+
+IL_0009:
+	{
 		// double lastPercent = _result.percent;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_0 = __this->____result_45;
-		NullCheck(L_0);
-		double L_1 = L_0->___percent_5;
-		V_0 = L_1;
-		// Evaluate(percent, _result);
-		double L_2 = ___percent0;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_3 = __this->____result_45;
-		SplineUser_Evaluate_m91FFF67B6286E06723C5A4CF5E25D6CF30A36722(__this, L_2, L_3, NULL);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_1 = (&__this->____result_42);
+		double L_2 = L_1->___percent_5;
+		V_0 = L_2;
+		// Evaluate(percent, ref _result);
+		double L_3 = ___percent0;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_4 = (&__this->____result_42);
+		SplineUser_Evaluate_m9E8A8AD4FFABC3D03F502DF4878DA05CF5387A74(__this, L_3, L_4, NULL);
 		// ApplyMotion();
 		SplineTracer_ApplyMotion_m9812460F0F35A431056378746089FA16705FBADD(__this, NULL);
 		// if (checkTriggers)
-		bool L_4 = ___checkTriggers1;
-		if (!L_4)
+		bool L_5 = ___checkTriggers1;
+		if (!L_5)
 		{
-			goto IL_0030;
+			goto IL_0039;
 		}
 	}
 	{
 		// CheckTriggers(lastPercent, percent);
-		double L_5 = V_0;
-		double L_6 = ___percent0;
-		SplineTracer_CheckTriggers_m2C2D9E3B48BC5760D7B4C683A0145F04DDBAD648(__this, L_5, L_6, NULL);
+		double L_6 = V_0;
+		double L_7 = ___percent0;
+		SplineTracer_CheckTriggers_m2C2D9E3B48BC5760D7B4C683A0145F04DDBAD648(__this, L_6, L_7, NULL);
 		// InvokeTriggers();
 		SplineTracer_InvokeTriggers_m4DE15E24835DB39F63791B6CBBF57BF04DFC1DD7(__this, NULL);
 	}
 
-IL_0030:
+IL_0039:
 	{
 		// if (handleJunctions)
-		bool L_7 = ___handleJunctions2;
-		if (!L_7)
+		bool L_8 = ___handleJunctions2;
+		if (!L_8)
 		{
-			goto IL_003b;
+			goto IL_0044;
 		}
 	}
 	{
 		// CheckNodes(lastPercent, percent);
-		double L_8 = V_0;
-		double L_9 = ___percent0;
-		SplineTracer_CheckNodes_mEC30A052FBFC1A44EF1085ECDB5589B9605ECECE(__this, L_8, L_9, NULL);
+		double L_9 = V_0;
+		double L_10 = ___percent0;
+		SplineTracer_CheckNodes_mEC30A052FBFC1A44EF1085ECDB5589B9605ECECE(__this, L_9, L_10, NULL);
 	}
 
-IL_003b:
+IL_0044:
 	{
 		// }
 		return;
@@ -7085,8 +7548,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double SplineTracer_GetPercent_mAFD612E6D11F9
 {
 	{
 		// return _result.percent;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_0 = __this->____result_45;
-		NullCheck(L_0);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_0 = (&__this->____result_42);
 		double L_1 = L_0->___percent_5;
 		return L_1;
 	}
@@ -7097,16 +7559,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineTracer_SetDistance_m48B040DE703A63
 	double V_0 = 0.0;
 	{
 		// double lastPercent = _result.percent;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_0 = __this->____result_45;
-		NullCheck(L_0);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_0 = (&__this->____result_42);
 		double L_1 = L_0->___percent_5;
 		V_0 = L_1;
-		// Evaluate(Travel(0.0, distance, Spline.Direction.Forward), _result);
+		// Evaluate(Travel(0.0, distance, Spline.Direction.Forward), ref _result);
 		float L_2 = ___distance0;
 		double L_3;
 		L_3 = SplineUser_Travel_m995131F3C3C2AD270BD106AE58DA831A54346FB9(__this, (0.0), L_2, 1, NULL);
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_4 = __this->____result_45;
-		SplineUser_Evaluate_m91FFF67B6286E06723C5A4CF5E25D6CF30A36722(__this, L_3, L_4, NULL);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_4 = (&__this->____result_42);
+		SplineUser_Evaluate_m9E8A8AD4FFABC3D03F502DF4878DA05CF5387A74(__this, L_3, L_4, NULL);
 		// ApplyMotion();
 		SplineTracer_ApplyMotion_m9812460F0F35A431056378746089FA16705FBADD(__this, NULL);
 		// if (checkTriggers)
@@ -7119,8 +7580,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineTracer_SetDistance_m48B040DE703A63
 	{
 		// CheckTriggers(lastPercent, _result.percent);
 		double L_6 = V_0;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_7 = __this->____result_45;
-		NullCheck(L_7);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_7 = (&__this->____result_42);
 		double L_8 = L_7->___percent_5;
 		SplineTracer_CheckTriggers_m2C2D9E3B48BC5760D7B4C683A0145F04DDBAD648(__this, L_6, L_8, NULL);
 		// InvokeTriggers();
@@ -7139,8 +7599,7 @@ IL_004a:
 	{
 		// CheckNodes(lastPercent, _result.percent);
 		double L_10 = V_0;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_11 = __this->____result_45;
-		NullCheck(L_11);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_11 = (&__this->____result_42);
 		double L_12 = L_11->___percent_5;
 		SplineTracer_CheckNodes_mEC30A052FBFC1A44EF1085ECDB5589B9605ECECE(__this, L_10, L_12, NULL);
 	}
@@ -7207,122 +7666,126 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineTracer_ApplyMotion_m9812460F0F35A4
 	double V_2 = 0.0;
 	int32_t V_3 = 0;
 	{
-		// ModifySample(_result, _finalResult);
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_0 = __this->____result_45;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_1 = __this->____finalResult_46;
-		SplineUser_ModifySample_mB328F837A84F1114AD3CE2D38F1D7FCF1676B568(__this, L_0, L_1, NULL);
-		// if (_dontLerpDirection)
-		bool L_2 = __this->____dontLerpDirection_39;
-		if (!L_2)
+		// if (sampleCount == 0) return;
+		int32_t L_0;
+		L_0 = SplineUser_get_sampleCount_m72EB98E357EB6A53B94626C14D2F0CAF87997AFC_inline(__this, NULL);
+		if (L_0)
 		{
-			goto IL_0076;
+			goto IL_0009;
+		}
+	}
+	{
+		// if (sampleCount == 0) return;
+		return;
+	}
+
+IL_0009:
+	{
+		// ModifySample(ref _result, ref _finalResult);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_1 = (&__this->____result_42);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_2 = (&__this->____finalResult_43);
+		SplineUser_ModifySample_m6BDF2C7D753B61E10DA92846995AB088ED4BB1D8(__this, L_1, L_2, NULL);
+		// if (_dontLerpDirection)
+		bool L_3 = __this->____dontLerpDirection_36;
+		if (!L_3)
+		{
+			goto IL_007d;
 		}
 	}
 	{
 		// double unclippedPercent = UnclipPercent(_result.percent);
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_3 = __this->____result_45;
-		NullCheck(L_3);
-		double L_4 = L_3->___percent_5;
-		double L_5;
-		L_5 = SplineUser_UnclipPercent_m72517A645203A5148B9028F686B0CC626769AC67(__this, L_4, NULL);
-		V_0 = L_5;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_4 = (&__this->____result_42);
+		double L_5 = L_4->___percent_5;
+		double L_6;
+		L_6 = SplineUser_UnclipPercent_m72517A645203A5148B9028F686B0CC626769AC67(__this, L_5, NULL);
+		V_0 = L_6;
 		// spline.GetSamplingValues(unclippedPercent, out index, out lerp);
-		SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* L_6;
-		L_6 = SplineUser_get_spline_mFCDA5843B398053A190E9A6B6971331A19033E15_inline(__this, NULL);
-		double L_7 = V_0;
-		NullCheck(L_6);
-		SplineComputer_GetSamplingValues_m1457A738ECA022ACB3D4E1AE4996ACF5F9A4FFA6(L_6, L_7, (&V_1), (&V_2), NULL);
-		// _finalResult.forward = spline.samples[index].forward;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_8 = __this->____finalResult_46;
-		SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* L_9;
-		L_9 = SplineUser_get_spline_mFCDA5843B398053A190E9A6B6971331A19033E15_inline(__this, NULL);
-		NullCheck(L_9);
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_10;
-		L_10 = SplineComputer_get_samples_m597B55E2C6B1B0A67BB5034FE751BF732EA741E7(L_9, NULL);
+		SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* L_7;
+		L_7 = SplineUser_get_spline_mFCDA5843B398053A190E9A6B6971331A19033E15_inline(__this, NULL);
+		double L_8 = V_0;
+		NullCheck(L_7);
+		SplineComputer_GetSamplingValues_m1457A738ECA022ACB3D4E1AE4996ACF5F9A4FFA6(L_7, L_8, (&V_1), (&V_2), NULL);
+		// _finalResult.forward = spline[index].forward;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_9 = (&__this->____finalResult_43);
+		SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* L_10;
+		L_10 = SplineUser_get_spline_mFCDA5843B398053A190E9A6B6971331A19033E15_inline(__this, NULL);
 		int32_t L_11 = V_1;
 		NullCheck(L_10);
-		int32_t L_12 = L_11;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_13 = (L_10)->GetAt(static_cast<il2cpp_array_size_t>(L_12));
-		NullCheck(L_13);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_14 = L_13->___forward_2;
-		NullCheck(L_8);
-		L_8->___forward_2 = L_14;
-		// _finalResult.up = spline.samples[index].up;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_15 = __this->____finalResult_46;
-		SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* L_16;
-		L_16 = SplineUser_get_spline_mFCDA5843B398053A190E9A6B6971331A19033E15_inline(__this, NULL);
-		NullCheck(L_16);
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_17;
-		L_17 = SplineComputer_get_samples_m597B55E2C6B1B0A67BB5034FE751BF732EA741E7(L_16, NULL);
-		int32_t L_18 = V_1;
-		NullCheck(L_17);
-		int32_t L_19 = L_18;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_20 = (L_17)->GetAt(static_cast<il2cpp_array_size_t>(L_19));
-		NullCheck(L_20);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_21 = L_20->___up_1;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 L_12;
+		L_12 = SplineComputer_get_Item_m17A63FF085FDE4B39D5BD07EBCD20B7D341825E1(L_10, L_11, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_13 = L_12.___forward_2;
+		L_9->___forward_2 = L_13;
+		// _finalResult.up = spline[index].up;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_14 = (&__this->____finalResult_43);
+		SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* L_15;
+		L_15 = SplineUser_get_spline_mFCDA5843B398053A190E9A6B6971331A19033E15_inline(__this, NULL);
+		int32_t L_16 = V_1;
 		NullCheck(L_15);
-		L_15->___up_1 = L_21;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 L_17;
+		L_17 = SplineComputer_get_Item_m17A63FF085FDE4B39D5BD07EBCD20B7D341825E1(L_15, L_16, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_18 = L_17.___up_1;
+		L_14->___up_1 = L_18;
 	}
 
-IL_0076:
+IL_007d:
 	{
 		// motion.targetUser = this;
-		TransformModule_t3CAD9DEFF242B9200AC9FA51CF3F3417DCE72A8B* L_22;
-		L_22 = SplineTracer_get_motion_m077DA0AB0D211B79AD19112DD01939AAD8C2F967(__this, NULL);
-		NullCheck(L_22);
-		L_22->___targetUser_22 = __this;
-		Il2CppCodeGenWriteBarrier((void**)(&L_22->___targetUser_22), (void*)__this);
+		TransformModule_t3CAD9DEFF242B9200AC9FA51CF3F3417DCE72A8B* L_19;
+		L_19 = SplineTracer_get_motion_m077DA0AB0D211B79AD19112DD01939AAD8C2F967(__this, NULL);
+		NullCheck(L_19);
+		L_19->___targetUser_22 = __this;
+		Il2CppCodeGenWriteBarrier((void**)(&L_19->___targetUser_22), (void*)__this);
 		// motion.splineResult = _finalResult;
-		TransformModule_t3CAD9DEFF242B9200AC9FA51CF3F3417DCE72A8B* L_23;
-		L_23 = SplineTracer_get_motion_m077DA0AB0D211B79AD19112DD01939AAD8C2F967(__this, NULL);
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_24 = __this->____finalResult_46;
-		NullCheck(L_23);
-		TransformModule_set_splineResult_m0DDF74A97858048914CCC84042A3C62E28D4AFD8(L_23, L_24, NULL);
+		TransformModule_t3CAD9DEFF242B9200AC9FA51CF3F3417DCE72A8B* L_20;
+		L_20 = SplineTracer_get_motion_m077DA0AB0D211B79AD19112DD01939AAD8C2F967(__this, NULL);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 L_21 = __this->____finalResult_43;
+		NullCheck(L_20);
+		TransformModule_set_splineResult_m0DDF74A97858048914CCC84042A3C62E28D4AFD8_inline(L_20, L_21, NULL);
 		// if (applyDirectionRotation) motion.direction = _direction;
-		bool L_25 = __this->___applyDirectionRotation_35;
-		if (!L_25)
+		bool L_22 = __this->___applyDirectionRotation_32;
+		if (!L_22)
 		{
-			goto IL_00ae;
+			goto IL_00b5;
 		}
 	}
 	{
 		// if (applyDirectionRotation) motion.direction = _direction;
-		TransformModule_t3CAD9DEFF242B9200AC9FA51CF3F3417DCE72A8B* L_26;
-		L_26 = SplineTracer_get_motion_m077DA0AB0D211B79AD19112DD01939AAD8C2F967(__this, NULL);
-		int32_t L_27 = __this->____direction_38;
-		NullCheck(L_26);
-		L_26->___direction_13 = L_27;
-		goto IL_00ba;
+		TransformModule_t3CAD9DEFF242B9200AC9FA51CF3F3417DCE72A8B* L_23;
+		L_23 = SplineTracer_get_motion_m077DA0AB0D211B79AD19112DD01939AAD8C2F967(__this, NULL);
+		int32_t L_24 = __this->____direction_35;
+		NullCheck(L_23);
+		L_23->___direction_13 = L_24;
+		goto IL_00c1;
 	}
 
-IL_00ae:
+IL_00b5:
 	{
 		// else motion.direction = Spline.Direction.Forward;
-		TransformModule_t3CAD9DEFF242B9200AC9FA51CF3F3417DCE72A8B* L_28;
-		L_28 = SplineTracer_get_motion_m077DA0AB0D211B79AD19112DD01939AAD8C2F967(__this, NULL);
-		NullCheck(L_28);
-		L_28->___direction_13 = 1;
+		TransformModule_t3CAD9DEFF242B9200AC9FA51CF3F3417DCE72A8B* L_25;
+		L_25 = SplineTracer_get_motion_m077DA0AB0D211B79AD19112DD01939AAD8C2F967(__this, NULL);
+		NullCheck(L_25);
+		L_25->___direction_13 = 1;
 	}
 
-IL_00ba:
+IL_00c1:
 	{
 		// switch (_physicsMode)
-		int32_t L_29 = __this->____physicsMode_40;
-		V_3 = L_29;
-		int32_t L_30 = V_3;
-		switch (L_30)
+		int32_t L_26 = __this->____physicsMode_37;
+		V_3 = L_26;
+		int32_t L_27 = V_3;
+		switch (L_27)
 		{
 			case 0:
 			{
-				goto IL_00d4;
+				goto IL_00db;
 			}
 			case 1:
 			{
-				goto IL_011f;
+				goto IL_0126;
 			}
 			case 2:
 			{
-				goto IL_0181;
+				goto IL_0188;
 			}
 		}
 	}
@@ -7330,16 +7793,16 @@ IL_00ba:
 		return;
 	}
 
-IL_00d4:
+IL_00db:
 	{
 		// if (targetTransform == null) RefreshTargets();
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_31 = __this->___targetTransform_44;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_28 = __this->___targetTransform_41;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		bool L_32;
-		L_32 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_31, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		if (!L_32)
+		bool L_29;
+		L_29 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_28, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_29)
 		{
-			goto IL_00e8;
+			goto IL_00ef;
 		}
 	}
 	{
@@ -7347,16 +7810,16 @@ IL_00d4:
 		SplineTracer_RefreshTargets_mC0654283C581BA5399F379F97E19D7756B9E301F(__this, NULL);
 	}
 
-IL_00e8:
+IL_00ef:
 	{
 		// if (targetTransform == null) return;
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_33 = __this->___targetTransform_44;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_30 = __this->___targetTransform_41;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		bool L_34;
-		L_34 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_33, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		if (!L_34)
+		bool L_31;
+		L_31 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_30, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_31)
 		{
-			goto IL_00f7;
+			goto IL_00fe;
 		}
 	}
 	{
@@ -7364,151 +7827,151 @@ IL_00e8:
 		return;
 	}
 
-IL_00f7:
+IL_00fe:
 	{
 		// motion.ApplyTransform(targetTransform);
-		TransformModule_t3CAD9DEFF242B9200AC9FA51CF3F3417DCE72A8B* L_35;
-		L_35 = SplineTracer_get_motion_m077DA0AB0D211B79AD19112DD01939AAD8C2F967(__this, NULL);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_36 = __this->___targetTransform_44;
-		NullCheck(L_35);
-		TransformModule_ApplyTransform_mDA000A86E9F4C681AAB69A133326758AA8071414(L_35, L_36, NULL);
+		TransformModule_t3CAD9DEFF242B9200AC9FA51CF3F3417DCE72A8B* L_32;
+		L_32 = SplineTracer_get_motion_m077DA0AB0D211B79AD19112DD01939AAD8C2F967(__this, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_33 = __this->___targetTransform_41;
+		NullCheck(L_32);
+		TransformModule_ApplyTransform_mDA000A86E9F4C681AAB69A133326758AA8071414(L_32, L_33, NULL);
 		// if (onMotionApplied != null) onMotionApplied();
-		EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* L_37 = __this->___onMotionApplied_48;
-		if (!L_37)
+		EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* L_34 = __this->___onMotionApplied_45;
+		if (!L_34)
 		{
-			goto IL_01e2;
+			goto IL_01e9;
 		}
 	}
 	{
 		// if (onMotionApplied != null) onMotionApplied();
-		EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* L_38 = __this->___onMotionApplied_48;
-		NullCheck(L_38);
-		EmptySplineHandler_Invoke_mE91CF4B98F35A97F8D3227EE70F664A4A9C1D312_inline(L_38, NULL);
+		EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* L_35 = __this->___onMotionApplied_45;
+		NullCheck(L_35);
+		EmptySplineHandler_Invoke_mE91CF4B98F35A97F8D3227EE70F664A4A9C1D312_inline(L_35, NULL);
 		// break;
 		return;
 	}
 
-IL_011f:
+IL_0126:
 	{
 		// if (targetRigidbody == null)
-		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_39 = __this->___targetRigidbody_42;
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_36 = __this->___targetRigidbody_39;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		bool L_40;
-		L_40 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_39, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		if (!L_40)
+		bool L_37;
+		L_37 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_36, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_37)
 		{
-			goto IL_015c;
+			goto IL_0163;
 		}
 	}
 	{
 		// RefreshTargets();
 		SplineTracer_RefreshTargets_mC0654283C581BA5399F379F97E19D7756B9E301F(__this, NULL);
 		// if (targetRigidbody == null)  throw new MissingComponentException("There is no Rigidbody attached to " + name + " but the Physics mode is set to use one.");
-		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_41 = __this->___targetRigidbody_42;
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_38 = __this->___targetRigidbody_39;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		bool L_42;
-		L_42 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_41, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		if (!L_42)
+		bool L_39;
+		L_39 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_38, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_39)
 		{
-			goto IL_015c;
+			goto IL_0163;
 		}
 	}
 	{
 		// if (targetRigidbody == null)  throw new MissingComponentException("There is no Rigidbody attached to " + name + " but the Physics mode is set to use one.");
-		String_t* L_43;
-		L_43 = Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392(__this, NULL);
-		String_t* L_44;
-		L_44 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral8E6808F822EC09BEBDBA493DA4808B3AE02A75B2)), L_43, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral484C4A3DA2A8B6B21D460346407F1703059F8391)), NULL);
-		MissingComponentException_tFBBE11BC7F2A81EE2B3E19B2B7F6AA4131F84A0E* L_45 = (MissingComponentException_tFBBE11BC7F2A81EE2B3E19B2B7F6AA4131F84A0E*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&MissingComponentException_tFBBE11BC7F2A81EE2B3E19B2B7F6AA4131F84A0E_il2cpp_TypeInfo_var)));
-		NullCheck(L_45);
-		MissingComponentException__ctor_m51EF49C768D48FBCDFE9F639815A42F50C0259C8(L_45, L_44, NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_45, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&SplineTracer_ApplyMotion_m9812460F0F35A431056378746089FA16705FBADD_RuntimeMethod_var)));
+		String_t* L_40;
+		L_40 = Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392(__this, NULL);
+		String_t* L_41;
+		L_41 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral8E6808F822EC09BEBDBA493DA4808B3AE02A75B2)), L_40, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral484C4A3DA2A8B6B21D460346407F1703059F8391)), NULL);
+		MissingComponentException_tFBBE11BC7F2A81EE2B3E19B2B7F6AA4131F84A0E* L_42 = (MissingComponentException_tFBBE11BC7F2A81EE2B3E19B2B7F6AA4131F84A0E*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&MissingComponentException_tFBBE11BC7F2A81EE2B3E19B2B7F6AA4131F84A0E_il2cpp_TypeInfo_var)));
+		NullCheck(L_42);
+		MissingComponentException__ctor_m51EF49C768D48FBCDFE9F639815A42F50C0259C8(L_42, L_41, NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_42, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&SplineTracer_ApplyMotion_m9812460F0F35A431056378746089FA16705FBADD_RuntimeMethod_var)));
 	}
 
-IL_015c:
+IL_0163:
 	{
 		// motion.ApplyRigidbody(targetRigidbody);
-		TransformModule_t3CAD9DEFF242B9200AC9FA51CF3F3417DCE72A8B* L_46;
-		L_46 = SplineTracer_get_motion_m077DA0AB0D211B79AD19112DD01939AAD8C2F967(__this, NULL);
-		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_47 = __this->___targetRigidbody_42;
-		NullCheck(L_46);
-		TransformModule_ApplyRigidbody_m118DCB494FE2D96F0591D7C40CA42FE78DB165EC(L_46, L_47, NULL);
+		TransformModule_t3CAD9DEFF242B9200AC9FA51CF3F3417DCE72A8B* L_43;
+		L_43 = SplineTracer_get_motion_m077DA0AB0D211B79AD19112DD01939AAD8C2F967(__this, NULL);
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_44 = __this->___targetRigidbody_39;
+		NullCheck(L_43);
+		TransformModule_ApplyRigidbody_m118DCB494FE2D96F0591D7C40CA42FE78DB165EC(L_43, L_44, NULL);
 		// if (onMotionApplied != null) onMotionApplied();
-		EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* L_48 = __this->___onMotionApplied_48;
-		if (!L_48)
+		EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* L_45 = __this->___onMotionApplied_45;
+		if (!L_45)
 		{
-			goto IL_01e2;
+			goto IL_01e9;
 		}
 	}
 	{
 		// if (onMotionApplied != null) onMotionApplied();
-		EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* L_49 = __this->___onMotionApplied_48;
-		NullCheck(L_49);
-		EmptySplineHandler_Invoke_mE91CF4B98F35A97F8D3227EE70F664A4A9C1D312_inline(L_49, NULL);
+		EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* L_46 = __this->___onMotionApplied_45;
+		NullCheck(L_46);
+		EmptySplineHandler_Invoke_mE91CF4B98F35A97F8D3227EE70F664A4A9C1D312_inline(L_46, NULL);
 		// break;
 		return;
 	}
 
-IL_0181:
+IL_0188:
 	{
 		// if (targetRigidbody2D == null)
-		Rigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F* L_50 = __this->___targetRigidbody2D_43;
+		Rigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F* L_47 = __this->___targetRigidbody2D_40;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		bool L_51;
-		L_51 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_50, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		if (!L_51)
+		bool L_48;
+		L_48 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_47, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_48)
 		{
-			goto IL_01be;
+			goto IL_01c5;
 		}
 	}
 	{
 		// RefreshTargets();
 		SplineTracer_RefreshTargets_mC0654283C581BA5399F379F97E19D7756B9E301F(__this, NULL);
 		// if (targetRigidbody2D == null) throw new MissingComponentException("There is no Rigidbody2D attached to " + name + " but the Physics mode is set to use one.");
-		Rigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F* L_52 = __this->___targetRigidbody2D_43;
+		Rigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F* L_49 = __this->___targetRigidbody2D_40;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		bool L_53;
-		L_53 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_52, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		if (!L_53)
+		bool L_50;
+		L_50 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_49, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_50)
 		{
-			goto IL_01be;
+			goto IL_01c5;
 		}
 	}
 	{
 		// if (targetRigidbody2D == null) throw new MissingComponentException("There is no Rigidbody2D attached to " + name + " but the Physics mode is set to use one.");
-		String_t* L_54;
-		L_54 = Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392(__this, NULL);
-		String_t* L_55;
-		L_55 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralB3A05808CBC59DEC06679B66DF8DC45D806D558C)), L_54, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral484C4A3DA2A8B6B21D460346407F1703059F8391)), NULL);
-		MissingComponentException_tFBBE11BC7F2A81EE2B3E19B2B7F6AA4131F84A0E* L_56 = (MissingComponentException_tFBBE11BC7F2A81EE2B3E19B2B7F6AA4131F84A0E*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&MissingComponentException_tFBBE11BC7F2A81EE2B3E19B2B7F6AA4131F84A0E_il2cpp_TypeInfo_var)));
-		NullCheck(L_56);
-		MissingComponentException__ctor_m51EF49C768D48FBCDFE9F639815A42F50C0259C8(L_56, L_55, NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_56, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&SplineTracer_ApplyMotion_m9812460F0F35A431056378746089FA16705FBADD_RuntimeMethod_var)));
+		String_t* L_51;
+		L_51 = Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392(__this, NULL);
+		String_t* L_52;
+		L_52 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralB3A05808CBC59DEC06679B66DF8DC45D806D558C)), L_51, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral484C4A3DA2A8B6B21D460346407F1703059F8391)), NULL);
+		MissingComponentException_tFBBE11BC7F2A81EE2B3E19B2B7F6AA4131F84A0E* L_53 = (MissingComponentException_tFBBE11BC7F2A81EE2B3E19B2B7F6AA4131F84A0E*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&MissingComponentException_tFBBE11BC7F2A81EE2B3E19B2B7F6AA4131F84A0E_il2cpp_TypeInfo_var)));
+		NullCheck(L_53);
+		MissingComponentException__ctor_m51EF49C768D48FBCDFE9F639815A42F50C0259C8(L_53, L_52, NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_53, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&SplineTracer_ApplyMotion_m9812460F0F35A431056378746089FA16705FBADD_RuntimeMethod_var)));
 	}
 
-IL_01be:
+IL_01c5:
 	{
 		// motion.ApplyRigidbody2D(targetRigidbody2D);
-		TransformModule_t3CAD9DEFF242B9200AC9FA51CF3F3417DCE72A8B* L_57;
-		L_57 = SplineTracer_get_motion_m077DA0AB0D211B79AD19112DD01939AAD8C2F967(__this, NULL);
-		Rigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F* L_58 = __this->___targetRigidbody2D_43;
-		NullCheck(L_57);
-		TransformModule_ApplyRigidbody2D_mEEE2F9E55A0F37570CC0C55B7E3705F3D27035BA(L_57, L_58, NULL);
+		TransformModule_t3CAD9DEFF242B9200AC9FA51CF3F3417DCE72A8B* L_54;
+		L_54 = SplineTracer_get_motion_m077DA0AB0D211B79AD19112DD01939AAD8C2F967(__this, NULL);
+		Rigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F* L_55 = __this->___targetRigidbody2D_40;
+		NullCheck(L_54);
+		TransformModule_ApplyRigidbody2D_mEEE2F9E55A0F37570CC0C55B7E3705F3D27035BA(L_54, L_55, NULL);
 		// if (onMotionApplied != null) onMotionApplied();
-		EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* L_59 = __this->___onMotionApplied_48;
-		if (!L_59)
+		EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* L_56 = __this->___onMotionApplied_45;
+		if (!L_56)
 		{
-			goto IL_01e2;
+			goto IL_01e9;
 		}
 	}
 	{
 		// if (onMotionApplied != null) onMotionApplied();
-		EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* L_60 = __this->___onMotionApplied_48;
-		NullCheck(L_60);
-		EmptySplineHandler_Invoke_mE91CF4B98F35A97F8D3227EE70F664A4A9C1D312_inline(L_60, NULL);
+		EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* L_57 = __this->___onMotionApplied_45;
+		NullCheck(L_57);
+		EmptySplineHandler_Invoke_mE91CF4B98F35A97F8D3227EE70F664A4A9C1D312_inline(L_57, NULL);
 	}
 
-IL_01e2:
+IL_01e9:
 	{
 		// }
 		return;
@@ -7531,10 +7994,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineTracer_CheckNodes_mEC30A052FBFC1A4
 	int32_t V_4 = 0;
 	NodeConnection_tAC4CB5DFF5E5186DBFA585F543F5299CC139E309* V_5 = NULL;
 	NodeConnection_tAC4CB5DFF5E5186DBFA585F543F5299CC139E309* V_6 = NULL;
-	NodeConnection_tAC4CB5DFF5E5186DBFA585F543F5299CC139E309* V_7 = NULL;
+	int32_t V_7 = 0;
+	NodeConnection_tAC4CB5DFF5E5186DBFA585F543F5299CC139E309* V_8 = NULL;
 	{
 		// if (onNode == null) return;
-		JunctionHandler_t0A4A89D185BAF77E68113E13444973A668A6B27D* L_0 = __this->___onNode_47;
+		JunctionHandler_t0A4A89D185BAF77E68113E13444973A668A6B27D* L_0 = __this->___onNode_44;
 		if (L_0)
 		{
 			goto IL_0009;
@@ -7573,7 +8037,7 @@ IL_000e:
 		SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* L_3;
 		L_3 = SplineUser_get_spline_mFCDA5843B398053A190E9A6B6971331A19033E15_inline(__this, NULL);
 		double L_4 = ___from0;
-		int32_t L_5 = __this->____direction_38;
+		int32_t L_5 = __this->____direction_35;
 		NullCheck(L_3);
 		int32_t L_6;
 		L_6 = SplineComputer_PercentToPointIndex_m9A4F1F53FA6CFB9E56955D87DB53EC46CEFA70C7(L_3, L_4, L_5, NULL);
@@ -7582,7 +8046,7 @@ IL_000e:
 		SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* L_7;
 		L_7 = SplineUser_get_spline_mFCDA5843B398053A190E9A6B6971331A19033E15_inline(__this, NULL);
 		double L_8 = ___to1;
-		int32_t L_9 = __this->____direction_38;
+		int32_t L_9 = __this->____direction_35;
 		NullCheck(L_7);
 		int32_t L_10;
 		L_10 = SplineComputer_PercentToPointIndex_m9A4F1F53FA6CFB9E56955D87DB53EC46CEFA70C7(L_7, L_8, L_9, NULL);
@@ -7597,7 +8061,7 @@ IL_000e:
 	}
 	{
 		// if (_direction == Spline.Direction.Forward)
-		int32_t L_13 = __this->____direction_38;
+		int32_t L_13 = __this->____direction_35;
 		if ((!(((uint32_t)L_13) == ((uint32_t)1))))
 		{
 			goto IL_0081;
@@ -7626,7 +8090,7 @@ IL_0061:
 	}
 	{
 		// if (junction != null) nodeConnectionQueue.Add(junction);
-		List_1_tC286A128F0893DC219DD3E0A289632F1C4EF5791* L_18 = __this->___nodeConnectionQueue_33;
+		List_1_tC286A128F0893DC219DD3E0A289632F1C4EF5791* L_18 = __this->___nodeConnectionQueue_47;
 		NodeConnection_tAC4CB5DFF5E5186DBFA585F543F5299CC139E309* L_19 = V_3;
 		NullCheck(L_18);
 		List_1_Add_m36049C84C04F6C0A3744B32162EB21461CB9DFE3_inline(L_18, L_19, List_1_Add_m36049C84C04F6C0A3744B32162EB21461CB9DFE3_RuntimeMethod_var);
@@ -7677,7 +8141,7 @@ IL_0088:
 	}
 	{
 		// if (junction != null) nodeConnectionQueue.Add(junction);
-		List_1_tC286A128F0893DC219DD3E0A289632F1C4EF5791* L_27 = __this->___nodeConnectionQueue_33;
+		List_1_tC286A128F0893DC219DD3E0A289632F1C4EF5791* L_27 = __this->___nodeConnectionQueue_47;
 		NodeConnection_tAC4CB5DFF5E5186DBFA585F543F5299CC139E309* L_28 = V_5;
 		NullCheck(L_27);
 		List_1_Add_m36049C84C04F6C0A3744B32162EB21461CB9DFE3_inline(L_27, L_28, List_1_Add_m36049C84C04F6C0A3744B32162EB21461CB9DFE3_RuntimeMethod_var);
@@ -7730,12 +8194,12 @@ IL_00af:
 		NodeConnection_tAC4CB5DFF5E5186DBFA585F543F5299CC139E309* L_36 = V_6;
 		if (!L_36)
 		{
-			goto IL_0110;
+			goto IL_012e;
 		}
 	}
 	{
 		// if (junction != null) nodeConnectionQueue.Add(junction);
-		List_1_tC286A128F0893DC219DD3E0A289632F1C4EF5791* L_37 = __this->___nodeConnectionQueue_33;
+		List_1_tC286A128F0893DC219DD3E0A289632F1C4EF5791* L_37 = __this->___nodeConnectionQueue_47;
 		NodeConnection_tAC4CB5DFF5E5186DBFA585F543F5299CC139E309* L_38 = V_6;
 		NullCheck(L_37);
 		List_1_Add_m36049C84C04F6C0A3744B32162EB21461CB9DFE3_inline(L_37, L_38, List_1_Add_m36049C84C04F6C0A3744B32162EB21461CB9DFE3_RuntimeMethod_var);
@@ -7748,7 +8212,7 @@ IL_00da:
 		double L_39 = ___to1;
 		if ((!(((double)L_39) > ((double)(0.99999899999999997)))))
 		{
-			goto IL_0110;
+			goto IL_012e;
 		}
 	}
 	{
@@ -7756,35 +8220,61 @@ IL_00da:
 		double L_41 = ___to1;
 		if ((!(((double)L_40) < ((double)L_41))))
 		{
-			goto IL_0110;
+			goto IL_012e;
 		}
 	}
 	{
-		// NodeConnection junction = GetJunction(spline.pointCount - 1);
+		// int pointCount = spline.pointCount - 1;
 		SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* L_42;
 		L_42 = SplineUser_get_spline_mFCDA5843B398053A190E9A6B6971331A19033E15_inline(__this, NULL);
 		NullCheck(L_42);
 		int32_t L_43;
 		L_43 = SplineComputer_get_pointCount_m18F61DBEBA82046494D3CE6C08FB2BCD3960FA20(L_42, NULL);
-		NodeConnection_tAC4CB5DFF5E5186DBFA585F543F5299CC139E309* L_44;
-		L_44 = SplineTracer_GetJunction_mBE8005175260AB1348E0754996D25B35CBBFEFA4(__this, ((int32_t)il2cpp_codegen_subtract(L_43, 1)), NULL);
-		V_7 = L_44;
-		// if (junction != null) nodeConnectionQueue.Add(junction);
-		NodeConnection_tAC4CB5DFF5E5186DBFA585F543F5299CC139E309* L_45 = V_7;
+		V_7 = ((int32_t)il2cpp_codegen_subtract(L_43, 1));
+		// if (spline.isClosed)
+		SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* L_44;
+		L_44 = SplineUser_get_spline_mFCDA5843B398053A190E9A6B6971331A19033E15_inline(__this, NULL);
+		NullCheck(L_44);
+		bool L_45;
+		L_45 = SplineComputer_get_isClosed_mE595EC65CA59406A9CC67B3EACB7F3DFA24F3CBF(L_44, NULL);
 		if (!L_45)
 		{
-			goto IL_0110;
+			goto IL_0113;
+		}
+	}
+	{
+		// pointCount = spline.pointCount;
+		SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* L_46;
+		L_46 = SplineUser_get_spline_mFCDA5843B398053A190E9A6B6971331A19033E15_inline(__this, NULL);
+		NullCheck(L_46);
+		int32_t L_47;
+		L_47 = SplineComputer_get_pointCount_m18F61DBEBA82046494D3CE6C08FB2BCD3960FA20(L_46, NULL);
+		V_7 = L_47;
+	}
+
+IL_0113:
+	{
+		// NodeConnection junction = GetJunction(pointCount);
+		int32_t L_48 = V_7;
+		NodeConnection_tAC4CB5DFF5E5186DBFA585F543F5299CC139E309* L_49;
+		L_49 = SplineTracer_GetJunction_mBE8005175260AB1348E0754996D25B35CBBFEFA4(__this, L_48, NULL);
+		V_8 = L_49;
+		// if (junction != null) nodeConnectionQueue.Add(junction);
+		NodeConnection_tAC4CB5DFF5E5186DBFA585F543F5299CC139E309* L_50 = V_8;
+		if (!L_50)
+		{
+			goto IL_012e;
 		}
 	}
 	{
 		// if (junction != null) nodeConnectionQueue.Add(junction);
-		List_1_tC286A128F0893DC219DD3E0A289632F1C4EF5791* L_46 = __this->___nodeConnectionQueue_33;
-		NodeConnection_tAC4CB5DFF5E5186DBFA585F543F5299CC139E309* L_47 = V_7;
-		NullCheck(L_46);
-		List_1_Add_m36049C84C04F6C0A3744B32162EB21461CB9DFE3_inline(L_46, L_47, List_1_Add_m36049C84C04F6C0A3744B32162EB21461CB9DFE3_RuntimeMethod_var);
+		List_1_tC286A128F0893DC219DD3E0A289632F1C4EF5791* L_51 = __this->___nodeConnectionQueue_47;
+		NodeConnection_tAC4CB5DFF5E5186DBFA585F543F5299CC139E309* L_52 = V_8;
+		NullCheck(L_51);
+		List_1_Add_m36049C84C04F6C0A3744B32162EB21461CB9DFE3_inline(L_51, L_52, List_1_Add_m36049C84C04F6C0A3744B32162EB21461CB9DFE3_RuntimeMethod_var);
 	}
 
-IL_0110:
+IL_012e:
 	{
 		// }
 		return;
@@ -7802,7 +8292,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineTracer_InvokeNodes_mF74FDDC1F9D2C8
 	}
 	{
 		// if(nodeConnectionQueue.Count > 0)
-		List_1_tC286A128F0893DC219DD3E0A289632F1C4EF5791* L_0 = __this->___nodeConnectionQueue_33;
+		List_1_tC286A128F0893DC219DD3E0A289632F1C4EF5791* L_0 = __this->___nodeConnectionQueue_47;
 		NullCheck(L_0);
 		int32_t L_1;
 		L_1 = List_1_get_Count_m9AA7A1F6D6736C80CE9633846DBC570F735A5A7D_inline(L_0, List_1_get_Count_m9AA7A1F6D6736C80CE9633846DBC570F735A5A7D_RuntimeMethod_var);
@@ -7813,12 +8303,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineTracer_InvokeNodes_mF74FDDC1F9D2C8
 	}
 	{
 		// onNode(nodeConnectionQueue);
-		JunctionHandler_t0A4A89D185BAF77E68113E13444973A668A6B27D* L_2 = __this->___onNode_47;
-		List_1_tC286A128F0893DC219DD3E0A289632F1C4EF5791* L_3 = __this->___nodeConnectionQueue_33;
+		JunctionHandler_t0A4A89D185BAF77E68113E13444973A668A6B27D* L_2 = __this->___onNode_44;
+		List_1_tC286A128F0893DC219DD3E0A289632F1C4EF5791* L_3 = __this->___nodeConnectionQueue_47;
 		NullCheck(L_2);
 		JunctionHandler_Invoke_m8DF9084524201A866719CEF385869D9204601EFE_inline(L_2, L_3, NULL);
 		// nodeConnectionQueue.Clear();
-		List_1_tC286A128F0893DC219DD3E0A289632F1C4EF5791* L_4 = __this->___nodeConnectionQueue_33;
+		List_1_tC286A128F0893DC219DD3E0A289632F1C4EF5791* L_4 = __this->___nodeConnectionQueue_47;
 		NullCheck(L_4);
 		List_1_Clear_mA55A5056C5E9D4B5AF8E4771EFE7F869DD69A1BD_inline(L_4, List_1_Clear_mA55A5056C5E9D4B5AF8E4771EFE7F869DD69A1BD_RuntimeMethod_var);
 	}
@@ -7835,7 +8325,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineTracer_CheckTriggers_m2C2D9E3B48BC
 	int32_t V_0 = 0;
 	{
 		// if (!useTriggers) return;
-		bool L_0 = __this->___useTriggers_36;
+		bool L_0 = __this->___useTriggers_33;
 		if (L_0)
 		{
 			goto IL_0009;
@@ -7868,18 +8358,18 @@ IL_000e:
 		// UnclipPercent(ref to);
 		SplineUser_UnclipPercent_m5692FC9019E1DC74455B13C9458374EC91C20F3F(__this, (&___to1), NULL);
 		// if (triggerGroup < 0 || triggerGroup >= spline.triggerGroups.Length) return;
-		int32_t L_3 = __this->___triggerGroup_37;
+		int32_t L_3 = __this->___triggerGroup_34;
 		if ((((int32_t)L_3) < ((int32_t)0)))
 		{
 			goto IL_003c;
 		}
 	}
 	{
-		int32_t L_4 = __this->___triggerGroup_37;
+		int32_t L_4 = __this->___triggerGroup_34;
 		SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* L_5;
 		L_5 = SplineUser_get_spline_mFCDA5843B398053A190E9A6B6971331A19033E15_inline(__this, NULL);
 		NullCheck(L_5);
-		TriggerGroupU5BU5D_tDD9644D34D55E3781E16C0A84A45D08B1AC2FBFB* L_6 = L_5->___triggerGroups_7;
+		TriggerGroupU5BU5D_tDD9644D34D55E3781E16C0A84A45D08B1AC2FBFB* L_6 = L_5->___triggerGroups_6;
 		NullCheck(L_6);
 		if ((((int32_t)L_4) < ((int32_t)((int32_t)(((RuntimeArray*)L_6)->max_length)))))
 		{
@@ -7906,8 +8396,8 @@ IL_0041:
 		SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* L_7;
 		L_7 = SplineUser_get_spline_mFCDA5843B398053A190E9A6B6971331A19033E15_inline(__this, NULL);
 		NullCheck(L_7);
-		TriggerGroupU5BU5D_tDD9644D34D55E3781E16C0A84A45D08B1AC2FBFB* L_8 = L_7->___triggerGroups_7;
-		int32_t L_9 = __this->___triggerGroup_37;
+		TriggerGroupU5BU5D_tDD9644D34D55E3781E16C0A84A45D08B1AC2FBFB* L_8 = L_7->___triggerGroups_6;
+		int32_t L_9 = __this->___triggerGroup_34;
 		NullCheck(L_8);
 		int32_t L_10 = L_9;
 		TriggerGroup_tF5515893936F34945D2E19F563C53AC1220B2E6E* L_11 = (L_8)->GetAt(static_cast<il2cpp_array_size_t>(L_10));
@@ -7927,8 +8417,8 @@ IL_0041:
 		SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* L_16;
 		L_16 = SplineUser_get_spline_mFCDA5843B398053A190E9A6B6971331A19033E15_inline(__this, NULL);
 		NullCheck(L_16);
-		TriggerGroupU5BU5D_tDD9644D34D55E3781E16C0A84A45D08B1AC2FBFB* L_17 = L_16->___triggerGroups_7;
-		int32_t L_18 = __this->___triggerGroup_37;
+		TriggerGroupU5BU5D_tDD9644D34D55E3781E16C0A84A45D08B1AC2FBFB* L_17 = L_16->___triggerGroups_6;
+		int32_t L_18 = __this->___triggerGroup_34;
 		NullCheck(L_17);
 		int32_t L_19 = L_18;
 		TriggerGroup_tF5515893936F34945D2E19F563C53AC1220B2E6E* L_20 = (L_17)->GetAt(static_cast<il2cpp_array_size_t>(L_19));
@@ -7953,8 +8443,8 @@ IL_0041:
 		SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* L_28;
 		L_28 = SplineUser_get_spline_mFCDA5843B398053A190E9A6B6971331A19033E15_inline(__this, NULL);
 		NullCheck(L_28);
-		TriggerGroupU5BU5D_tDD9644D34D55E3781E16C0A84A45D08B1AC2FBFB* L_29 = L_28->___triggerGroups_7;
-		int32_t L_30 = __this->___triggerGroup_37;
+		TriggerGroupU5BU5D_tDD9644D34D55E3781E16C0A84A45D08B1AC2FBFB* L_29 = L_28->___triggerGroups_6;
+		int32_t L_30 = __this->___triggerGroup_34;
 		NullCheck(L_29);
 		int32_t L_31 = L_30;
 		TriggerGroup_tF5515893936F34945D2E19F563C53AC1220B2E6E* L_32 = (L_29)->GetAt(static_cast<il2cpp_array_size_t>(L_31));
@@ -7981,8 +8471,8 @@ IL_00a1:
 		SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* L_39;
 		L_39 = SplineUser_get_spline_mFCDA5843B398053A190E9A6B6971331A19033E15_inline(__this, NULL);
 		NullCheck(L_39);
-		TriggerGroupU5BU5D_tDD9644D34D55E3781E16C0A84A45D08B1AC2FBFB* L_40 = L_39->___triggerGroups_7;
-		int32_t L_41 = __this->___triggerGroup_37;
+		TriggerGroupU5BU5D_tDD9644D34D55E3781E16C0A84A45D08B1AC2FBFB* L_40 = L_39->___triggerGroups_6;
+		int32_t L_41 = __this->___triggerGroup_34;
 		NullCheck(L_40);
 		int32_t L_42 = L_41;
 		TriggerGroup_tF5515893936F34945D2E19F563C53AC1220B2E6E* L_43 = (L_40)->GetAt(static_cast<il2cpp_array_size_t>(L_42));
@@ -8058,7 +8548,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineTracer_InvokeTriggers_m4DE15E24835
 IL_0004:
 	{
 		// if (triggerInvokeQueue[i] != null)
-		SplineTriggerU5BU5D_t8E0726E768BEDD7B9DFF5C85AA98F808CEB4DB75* L_0 = __this->___triggerInvokeQueue_32;
+		SplineTriggerU5BU5D_t8E0726E768BEDD7B9DFF5C85AA98F808CEB4DB75* L_0 = __this->___triggerInvokeQueue_46;
 		int32_t L_1 = V_0;
 		NullCheck(L_0);
 		int32_t L_2 = L_1;
@@ -8070,7 +8560,7 @@ IL_0004:
 	}
 	{
 		// triggerInvokeQueue[i].Invoke(this);
-		SplineTriggerU5BU5D_t8E0726E768BEDD7B9DFF5C85AA98F808CEB4DB75* L_4 = __this->___triggerInvokeQueue_32;
+		SplineTriggerU5BU5D_t8E0726E768BEDD7B9DFF5C85AA98F808CEB4DB75* L_4 = __this->___triggerInvokeQueue_46;
 		int32_t L_5 = V_0;
 		NullCheck(L_4);
 		int32_t L_6 = L_5;
@@ -8090,7 +8580,7 @@ IL_0020:
 	{
 		// for (int i = 0; i < addTriggerIndex; i++)
 		int32_t L_9 = V_0;
-		int32_t L_10 = __this->___addTriggerIndex_34;
+		int32_t L_10 = __this->___addTriggerIndex_48;
 		if ((((int32_t)L_9) < ((int32_t)L_10)))
 		{
 			goto IL_0004;
@@ -8098,7 +8588,7 @@ IL_0020:
 	}
 	{
 		// addTriggerIndex = 0;
-		__this->___addTriggerIndex_34 = 0;
+		__this->___addTriggerIndex_48 = 0;
 		// }
 		return;
 	}
@@ -8109,7 +8599,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineTracer_RefreshTargets_mC0654283C58
 	int32_t V_0 = 0;
 	{
 		// switch (_physicsMode)
-		int32_t L_0 = __this->____physicsMode_40;
+		int32_t L_0 = __this->____physicsMode_37;
 		V_0 = L_0;
 		int32_t L_1 = V_0;
 		switch (L_1)
@@ -8136,9 +8626,9 @@ IL_001a:
 	{
 		// targetTransform = GetTransform();
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_2;
-		L_2 = VirtualFuncInvoker0< Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* >::Invoke(27 /* UnityEngine.Transform Dreamteck.Splines.SplineTracer::GetTransform() */, __this);
-		__this->___targetTransform_44 = L_2;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___targetTransform_44), (void*)L_2);
+		L_2 = VirtualFuncInvoker0< Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* >::Invoke(29 /* UnityEngine.Transform Dreamteck.Splines.SplineTracer::GetTransform() */, __this);
+		__this->___targetTransform_41 = L_2;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___targetTransform_41), (void*)L_2);
 		// break;
 		return;
 	}
@@ -8147,9 +8637,9 @@ IL_0027:
 	{
 		// targetRigidbody = GetRigidbody();
 		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_3;
-		L_3 = VirtualFuncInvoker0< Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* >::Invoke(25 /* UnityEngine.Rigidbody Dreamteck.Splines.SplineTracer::GetRigidbody() */, __this);
-		__this->___targetRigidbody_42 = L_3;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___targetRigidbody_42), (void*)L_3);
+		L_3 = VirtualFuncInvoker0< Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* >::Invoke(27 /* UnityEngine.Rigidbody Dreamteck.Splines.SplineTracer::GetRigidbody() */, __this);
+		__this->___targetRigidbody_39 = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___targetRigidbody_39), (void*)L_3);
 		// break;
 		return;
 	}
@@ -8158,9 +8648,9 @@ IL_0034:
 	{
 		// targetRigidbody2D = GetRigidbody2D();
 		Rigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F* L_4;
-		L_4 = VirtualFuncInvoker0< Rigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F* >::Invoke(26 /* UnityEngine.Rigidbody2D Dreamteck.Splines.SplineTracer::GetRigidbody2D() */, __this);
-		__this->___targetRigidbody2D_43 = L_4;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___targetRigidbody2D_43), (void*)L_4);
+		L_4 = VirtualFuncInvoker0< Rigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F* >::Invoke(28 /* UnityEngine.Rigidbody2D Dreamteck.Splines.SplineTracer::GetRigidbody2D() */, __this);
+		__this->___targetRigidbody2D_40 = L_4;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___targetRigidbody2D_40), (void*)L_4);
 		// }
 		return;
 	}
@@ -8177,8 +8667,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineTracer_AddTriggerToQueue_m40F211EC
 	SplineTriggerU5BU5D_t8E0726E768BEDD7B9DFF5C85AA98F808CEB4DB75* V_0 = NULL;
 	{
 		// if (addTriggerIndex >= triggerInvokeQueue.Length)
-		int32_t L_0 = __this->___addTriggerIndex_34;
-		SplineTriggerU5BU5D_t8E0726E768BEDD7B9DFF5C85AA98F808CEB4DB75* L_1 = __this->___triggerInvokeQueue_32;
+		int32_t L_0 = __this->___addTriggerIndex_48;
+		SplineTriggerU5BU5D_t8E0726E768BEDD7B9DFF5C85AA98F808CEB4DB75* L_1 = __this->___triggerInvokeQueue_46;
 		NullCheck(L_1);
 		if ((((int32_t)L_0) < ((int32_t)((int32_t)(((RuntimeArray*)L_1)->max_length)))))
 		{
@@ -8187,13 +8677,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineTracer_AddTriggerToQueue_m40F211EC
 	}
 	{
 		// SplineTrigger[] newQueue = new SplineTrigger[triggerInvokeQueue.Length + spline.triggerGroups[triggerGroup].triggers.Length];
-		SplineTriggerU5BU5D_t8E0726E768BEDD7B9DFF5C85AA98F808CEB4DB75* L_2 = __this->___triggerInvokeQueue_32;
+		SplineTriggerU5BU5D_t8E0726E768BEDD7B9DFF5C85AA98F808CEB4DB75* L_2 = __this->___triggerInvokeQueue_46;
 		NullCheck(L_2);
 		SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* L_3;
 		L_3 = SplineUser_get_spline_mFCDA5843B398053A190E9A6B6971331A19033E15_inline(__this, NULL);
 		NullCheck(L_3);
-		TriggerGroupU5BU5D_tDD9644D34D55E3781E16C0A84A45D08B1AC2FBFB* L_4 = L_3->___triggerGroups_7;
-		int32_t L_5 = __this->___triggerGroup_37;
+		TriggerGroupU5BU5D_tDD9644D34D55E3781E16C0A84A45D08B1AC2FBFB* L_4 = L_3->___triggerGroups_6;
+		int32_t L_5 = __this->___triggerGroup_34;
 		NullCheck(L_4);
 		int32_t L_6 = L_5;
 		TriggerGroup_tF5515893936F34945D2E19F563C53AC1220B2E6E* L_7 = (L_4)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
@@ -8203,28 +8693,28 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineTracer_AddTriggerToQueue_m40F211EC
 		SplineTriggerU5BU5D_t8E0726E768BEDD7B9DFF5C85AA98F808CEB4DB75* L_9 = (SplineTriggerU5BU5D_t8E0726E768BEDD7B9DFF5C85AA98F808CEB4DB75*)(SplineTriggerU5BU5D_t8E0726E768BEDD7B9DFF5C85AA98F808CEB4DB75*)SZArrayNew(SplineTriggerU5BU5D_t8E0726E768BEDD7B9DFF5C85AA98F808CEB4DB75_il2cpp_TypeInfo_var, (uint32_t)((int32_t)il2cpp_codegen_add(((int32_t)(((RuntimeArray*)L_2)->max_length)), ((int32_t)(((RuntimeArray*)L_8)->max_length)))));
 		V_0 = L_9;
 		// triggerInvokeQueue.CopyTo(newQueue, 0);
-		SplineTriggerU5BU5D_t8E0726E768BEDD7B9DFF5C85AA98F808CEB4DB75* L_10 = __this->___triggerInvokeQueue_32;
+		SplineTriggerU5BU5D_t8E0726E768BEDD7B9DFF5C85AA98F808CEB4DB75* L_10 = __this->___triggerInvokeQueue_46;
 		SplineTriggerU5BU5D_t8E0726E768BEDD7B9DFF5C85AA98F808CEB4DB75* L_11 = V_0;
 		NullCheck((RuntimeArray*)L_10);
 		Array_CopyTo_mFD42E3443AB3B850ED6F19359698E242A08E1BAB((RuntimeArray*)L_10, (RuntimeArray*)L_11, 0, NULL);
 		// triggerInvokeQueue = newQueue;
 		SplineTriggerU5BU5D_t8E0726E768BEDD7B9DFF5C85AA98F808CEB4DB75* L_12 = V_0;
-		__this->___triggerInvokeQueue_32 = L_12;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___triggerInvokeQueue_32), (void*)L_12);
+		__this->___triggerInvokeQueue_46 = L_12;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___triggerInvokeQueue_46), (void*)L_12);
 	}
 
 IL_004c:
 	{
 		// triggerInvokeQueue[addTriggerIndex] = trigger;
-		SplineTriggerU5BU5D_t8E0726E768BEDD7B9DFF5C85AA98F808CEB4DB75* L_13 = __this->___triggerInvokeQueue_32;
-		int32_t L_14 = __this->___addTriggerIndex_34;
+		SplineTriggerU5BU5D_t8E0726E768BEDD7B9DFF5C85AA98F808CEB4DB75* L_13 = __this->___triggerInvokeQueue_46;
+		int32_t L_14 = __this->___addTriggerIndex_48;
 		SplineTrigger_t1229B1EB36A06D13AE5F5AF78B9AAD934DF6239D* L_15 = ___trigger0;
 		NullCheck(L_13);
 		ArrayElementTypeCheck (L_13, L_15);
 		(L_13)->SetAt(static_cast<il2cpp_array_size_t>(L_14), (SplineTrigger_t1229B1EB36A06D13AE5F5AF78B9AAD934DF6239D*)L_15);
 		// addTriggerIndex++;
-		int32_t L_16 = __this->___addTriggerIndex_34;
-		__this->___addTriggerIndex_34 = ((int32_t)il2cpp_codegen_add(L_16, 1));
+		int32_t L_16 = __this->___addTriggerIndex_48;
+		__this->___addTriggerIndex_48 = ((int32_t)il2cpp_codegen_add(L_16, 1));
 		// }
 		return;
 	}
@@ -8237,37 +8727,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineTracer__ctor_mD656C3CEB4137F7D81B0
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_m527D8575BB41802ACD7B3D210656C0173D3B90F0_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_tC286A128F0893DC219DD3E0A289632F1C4EF5791_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SplineTriggerU5BU5D_t8E0726E768BEDD7B9DFF5C85AA98F808CEB4DB75_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// SplineTrigger[] triggerInvokeQueue = new SplineTrigger[0];
+		// public bool applyDirectionRotation = true;
+		__this->___applyDirectionRotation_32 = (bool)1;
+		// protected Spline.Direction _direction = Spline.Direction.Forward;
+		__this->____direction_35 = 1;
+		// private SplineTrigger[] triggerInvokeQueue = new SplineTrigger[0];
 		SplineTriggerU5BU5D_t8E0726E768BEDD7B9DFF5C85AA98F808CEB4DB75* L_0 = (SplineTriggerU5BU5D_t8E0726E768BEDD7B9DFF5C85AA98F808CEB4DB75*)(SplineTriggerU5BU5D_t8E0726E768BEDD7B9DFF5C85AA98F808CEB4DB75*)SZArrayNew(SplineTriggerU5BU5D_t8E0726E768BEDD7B9DFF5C85AA98F808CEB4DB75_il2cpp_TypeInfo_var, (uint32_t)0);
-		__this->___triggerInvokeQueue_32 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___triggerInvokeQueue_32), (void*)L_0);
-		// List<NodeConnection> nodeConnectionQueue = new List<NodeConnection>();
+		__this->___triggerInvokeQueue_46 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___triggerInvokeQueue_46), (void*)L_0);
+		// private List<NodeConnection> nodeConnectionQueue = new List<NodeConnection>();
 		List_1_tC286A128F0893DC219DD3E0A289632F1C4EF5791* L_1 = (List_1_tC286A128F0893DC219DD3E0A289632F1C4EF5791*)il2cpp_codegen_object_new(List_1_tC286A128F0893DC219DD3E0A289632F1C4EF5791_il2cpp_TypeInfo_var);
 		NullCheck(L_1);
 		List_1__ctor_m527D8575BB41802ACD7B3D210656C0173D3B90F0(L_1, List_1__ctor_m527D8575BB41802ACD7B3D210656C0173D3B90F0_RuntimeMethod_var);
-		__this->___nodeConnectionQueue_33 = L_1;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___nodeConnectionQueue_33), (void*)L_1);
-		// public bool applyDirectionRotation = true;
-		__this->___applyDirectionRotation_35 = (bool)1;
-		// protected Spline.Direction _direction = Spline.Direction.Forward;
-		__this->____direction_38 = 1;
-		// protected SplineSample _result = new SplineSample();
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_2 = (SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143*)il2cpp_codegen_object_new(SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143_il2cpp_TypeInfo_var);
-		NullCheck(L_2);
-		SplineSample__ctor_m7DA9B02EC62251E38E12FAD0BACEE7E75DDC61DB(L_2, NULL);
-		__this->____result_45 = L_2;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____result_45), (void*)L_2);
-		// protected SplineSample _finalResult = new SplineSample();
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_3 = (SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143*)il2cpp_codegen_object_new(SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143_il2cpp_TypeInfo_var);
-		NullCheck(L_3);
-		SplineSample__ctor_m7DA9B02EC62251E38E12FAD0BACEE7E75DDC61DB(L_3, NULL);
-		__this->____finalResult_46 = L_3;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____finalResult_46), (void*)L_3);
+		__this->___nodeConnectionQueue_47 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___nodeConnectionQueue_47), (void*)L_1);
 		SplineUser__ctor_mEE63396AB9A2A932D2BCA526EC42DFD13A626BF2(__this, NULL);
 		return;
 	}
@@ -8530,7 +9007,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double SplineUser_get_clipFrom_m2366D6F30DAD8
 {
 	{
 		// return _clipFrom;
-		double L_0 = __this->____clipFrom_15;
+		double L_0 = __this->____clipFrom_14;
 		return L_0;
 	}
 }
@@ -8540,7 +9017,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineUser_set_clipFrom_m58D5B802248877A
 	{
 		// if (value != _clipFrom)
 		double L_0 = ___value0;
-		double L_1 = __this->____clipFrom_15;
+		double L_1 = __this->____clipFrom_14;
 		if ((((double)L_0) == ((double)L_1)))
 		{
 			goto IL_0056;
@@ -8548,16 +9025,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineUser_set_clipFrom_m58D5B802248877A
 	}
 	{
 		// animClipFrom = (float)_clipFrom;
-		double L_2 = __this->____clipFrom_15;
-		__this->___animClipFrom_17 = ((float)L_2);
+		double L_2 = __this->____clipFrom_14;
+		__this->___animClipFrom_16 = ((float)L_2);
 		// _clipFrom = DMath.Clamp01(value);
 		double L_3 = ___value0;
 		double L_4;
 		L_4 = DMath_Clamp01_mB366A5E5D6963102BBC75A3CE5FA29E5B50F46A2(L_3, NULL);
-		__this->____clipFrom_15 = L_4;
+		__this->____clipFrom_14 = L_4;
 		// if (_clipFrom > _clipTo)
-		double L_5 = __this->____clipFrom_15;
-		double L_6 = __this->____clipTo_16;
+		double L_5 = __this->____clipFrom_14;
+		double L_6 = __this->____clipTo_15;
 		if ((!(((double)L_5) > ((double)L_6))))
 		{
 			goto IL_0049;
@@ -8576,8 +9053,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineUser_set_clipFrom_m58D5B802248877A
 	}
 	{
 		// if (!_spline.isClosed) _clipTo = _clipFrom;
-		double L_9 = __this->____clipFrom_15;
-		__this->____clipTo_16 = L_9;
+		double L_9 = __this->____clipFrom_14;
+		__this->____clipTo_15 = L_9;
 	}
 
 IL_0049:
@@ -8599,7 +9076,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double SplineUser_get_clipTo_mE824718C3FB404D
 {
 	{
 		// return _clipTo;
-		double L_0 = __this->____clipTo_16;
+		double L_0 = __this->____clipTo_15;
 		return L_0;
 	}
 }
@@ -8609,7 +9086,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineUser_set_clipTo_m551536BFDE879C64A
 	{
 		// if (value != _clipTo)
 		double L_0 = ___value0;
-		double L_1 = __this->____clipTo_16;
+		double L_1 = __this->____clipTo_15;
 		if ((((double)L_0) == ((double)L_1)))
 		{
 			goto IL_0056;
@@ -8617,16 +9094,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineUser_set_clipTo_m551536BFDE879C64A
 	}
 	{
 		// animClipTo = (float)_clipTo;
-		double L_2 = __this->____clipTo_16;
-		__this->___animClipTo_18 = ((float)L_2);
+		double L_2 = __this->____clipTo_15;
+		__this->___animClipTo_17 = ((float)L_2);
 		// _clipTo = DMath.Clamp01(value);
 		double L_3 = ___value0;
 		double L_4;
 		L_4 = DMath_Clamp01_mB366A5E5D6963102BBC75A3CE5FA29E5B50F46A2(L_3, NULL);
-		__this->____clipTo_16 = L_4;
+		__this->____clipTo_15 = L_4;
 		// if (_clipTo < _clipFrom)
-		double L_5 = __this->____clipTo_16;
-		double L_6 = __this->____clipFrom_15;
+		double L_5 = __this->____clipTo_15;
+		double L_6 = __this->____clipFrom_14;
 		if ((!(((double)L_5) < ((double)L_6))))
 		{
 			goto IL_0049;
@@ -8645,8 +9122,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineUser_set_clipTo_m551536BFDE879C64A
 	}
 	{
 		// if (!_spline.isClosed) _clipFrom = _clipTo;
-		double L_9 = __this->____clipTo_16;
-		__this->____clipFrom_15 = L_9;
+		double L_9 = __this->____clipTo_15;
+		__this->____clipFrom_14 = L_9;
 	}
 
 IL_0049:
@@ -8711,7 +9188,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SplineUser_get_loopSamples_m58B66F9DFAC2
 {
 	{
 		// return _loopSamples;
-		bool L_0 = __this->____loopSamples_14;
+		bool L_0 = __this->____loopSamples_13;
 		return L_0;
 	}
 }
@@ -8722,7 +9199,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineUser_set_loopSamples_m078312380189
 	{
 		// if (value != _loopSamples)
 		bool L_0 = ___value0;
-		bool L_1 = __this->____loopSamples_14;
+		bool L_1 = __this->____loopSamples_13;
 		if ((((int32_t)L_0) == ((int32_t)L_1)))
 		{
 			goto IL_0046;
@@ -8731,17 +9208,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineUser_set_loopSamples_m078312380189
 	{
 		// _loopSamples = value;
 		bool L_2 = ___value0;
-		__this->____loopSamples_14 = L_2;
+		__this->____loopSamples_13 = L_2;
 		// if(!_loopSamples && _clipTo < _clipFrom)
-		bool L_3 = __this->____loopSamples_14;
+		bool L_3 = __this->____loopSamples_13;
 		if (L_3)
 		{
 			goto IL_0040;
 		}
 	}
 	{
-		double L_4 = __this->____clipTo_16;
-		double L_5 = __this->____clipFrom_15;
+		double L_4 = __this->____clipTo_15;
+		double L_5 = __this->____clipFrom_14;
 		if ((!(((double)L_4) < ((double)L_5))))
 		{
 			goto IL_0040;
@@ -8749,14 +9226,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineUser_set_loopSamples_m078312380189
 	}
 	{
 		// double temp = _clipTo;
-		double L_6 = __this->____clipTo_16;
+		double L_6 = __this->____clipTo_15;
 		V_0 = L_6;
 		// _clipTo = _clipFrom;
-		double L_7 = __this->____clipFrom_15;
-		__this->____clipTo_16 = L_7;
+		double L_7 = __this->____clipFrom_14;
+		__this->____clipTo_15 = L_7;
 		// _clipFrom = temp;
 		double L_8 = V_0;
-		__this->____clipFrom_15 = L_8;
+		__this->____clipFrom_14 = L_8;
 	}
 
 IL_0040:
@@ -8785,16 +9262,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double SplineUser_get_span_m400497F3FC35398E4
 	}
 	{
 		// if (samplesAreLooped) return (1.0 - _clipFrom) + _clipTo;
-		double L_1 = __this->____clipFrom_15;
-		double L_2 = __this->____clipTo_16;
+		double L_1 = __this->____clipFrom_14;
+		double L_2 = __this->____clipTo_15;
 		return ((double)il2cpp_codegen_add(((double)il2cpp_codegen_subtract((1.0), L_1)), L_2));
 	}
 
 IL_0020:
 	{
 		// return _clipTo - _clipFrom;
-		double L_3 = __this->____clipTo_16;
-		double L_4 = __this->____clipFrom_15;
+		double L_3 = __this->____clipTo_15;
+		double L_4 = __this->____clipFrom_14;
 		return ((double)il2cpp_codegen_subtract(L_3, L_4));
 	}
 }
@@ -8803,15 +9280,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SplineUser_get_samplesAreLooped_m6A6EB36
 {
 	{
 		// return _loopSamples && _clipFrom >= _clipTo;
-		bool L_0 = __this->____loopSamples_14;
+		bool L_0 = __this->____loopSamples_13;
 		if (!L_0)
 		{
 			goto IL_001a;
 		}
 	}
 	{
-		double L_1 = __this->____clipFrom_15;
-		double L_2 = __this->____clipTo_16;
+		double L_1 = __this->____clipFrom_14;
+		double L_2 = __this->____clipTo_15;
 		return (bool)((((int32_t)((!(((double)L_1) >= ((double)L_2)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 	}
 
@@ -8879,7 +9356,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t SplineUser_get_sampleCount_m72EB98E35
 {
 	{
 		// get { return _sampleCount; }
-		int32_t L_0 = __this->____sampleCount_24;
+		int32_t L_0 = __this->____sampleCount_25;
 		return L_0;
 	}
 }
@@ -8896,7 +9373,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineUser_add_onPostBuild_mCE66BC7F3347
 	EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* V_1 = NULL;
 	EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* V_2 = NULL;
 	{
-		EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* L_0 = __this->___onPostBuild_30;
+		EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* L_0 = __this->___onPostBuild_31;
 		V_0 = L_0;
 	}
 
@@ -8909,7 +9386,7 @@ IL_0007:
 		Delegate_t* L_4;
 		L_4 = Delegate_Combine_m1F725AEF318BE6F0426863490691A6F4606E7D00(L_2, L_3, NULL);
 		V_2 = ((EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8*)CastclassSealed((RuntimeObject*)L_4, EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8_il2cpp_TypeInfo_var));
-		EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8** L_5 = (&__this->___onPostBuild_30);
+		EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8** L_5 = (&__this->___onPostBuild_31);
 		EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* L_6 = V_2;
 		EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* L_7 = V_1;
 		EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* L_8;
@@ -8939,7 +9416,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineUser_remove_onPostBuild_m077C8CC3A
 	EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* V_1 = NULL;
 	EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* V_2 = NULL;
 	{
-		EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* L_0 = __this->___onPostBuild_30;
+		EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* L_0 = __this->___onPostBuild_31;
 		V_0 = L_0;
 	}
 
@@ -8952,7 +9429,7 @@ IL_0007:
 		Delegate_t* L_4;
 		L_4 = Delegate_Remove_m8B7DD5661308FA972E23CA1CC3FC9CEB355504E3(L_2, L_3, NULL);
 		V_2 = ((EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8*)CastclassSealed((RuntimeObject*)L_4, EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8_il2cpp_TypeInfo_var));
-		EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8** L_5 = (&__this->___onPostBuild_30);
+		EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8** L_5 = (&__this->___onPostBuild_31);
 		EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* L_6 = V_2;
 		EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* L_7 = V_1;
 		EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* L_8;
@@ -8975,20 +9452,31 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineUser_Awake_mC11EE0E4589956036EDBA5
 	{
 		// CacheTransform();
 		SplineUser_CacheTransform_mF25A467D2A66C6EEEE706CD6B5C7D794E1A77DF5(__this, NULL);
-		// if (buildOnAwake)
-		bool L_0 = __this->___buildOnAwake_28;
+		// if (buildOnAwake && Application.isPlaying)
+		bool L_0 = __this->___buildOnAwake_29;
 		if (!L_0)
 		{
-			goto IL_0014;
+			goto IL_001c;
+		}
+	}
+	{
+		bool L_1;
+		L_1 = Application_get_isPlaying_m25B0ABDFEF54F5370CD3F263A813540843D00F34(NULL);
+		if (!L_1)
+		{
+			goto IL_001c;
 		}
 	}
 	{
 		// RebuildImmediate();
 		VirtualActionInvoker0::Invoke(13 /* System.Void Dreamteck.Splines.SplineUser::RebuildImmediate() */, __this);
+		return;
 	}
 
-IL_0014:
+IL_001c:
 	{
+		// GetSamples();
+		SplineUser_GetSamples_m13C1D157947BA8108C4F687D49CC2E87F092A117(__this, NULL);
 		// }
 		return;
 	}
@@ -9021,7 +9509,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineUser_OnEnable_m7E44C429FC3F42EB573
 {
 	{
 		// if (buildOnEnable){
-		bool L_0 = __this->___buildOnEnable_29;
+		bool L_0 = __this->___buildOnEnable_30;
 		if (!L_0)
 		{
 			goto IL_000e;
@@ -9062,16 +9550,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineUser_OnDidApplyAnimationProperties
 		// bool clip = false;
 		V_0 = (bool)0;
 		// if (_clipFrom != animClipFrom || _clipTo != animClipTo) clip = true;
-		double L_0 = __this->____clipFrom_15;
-		float L_1 = __this->___animClipFrom_17;
+		double L_0 = __this->____clipFrom_14;
+		float L_1 = __this->___animClipFrom_16;
 		if ((!(((double)L_0) == ((double)((double)L_1)))))
 		{
 			goto IL_0020;
 		}
 	}
 	{
-		double L_2 = __this->____clipTo_16;
-		float L_3 = __this->___animClipTo_18;
+		double L_2 = __this->____clipTo_15;
+		float L_3 = __this->___animClipTo_17;
 		if ((((double)L_2) == ((double)((double)L_3))))
 		{
 			goto IL_0022;
@@ -9087,11 +9575,11 @@ IL_0020:
 IL_0022:
 	{
 		// _clipFrom = animClipFrom;
-		float L_4 = __this->___animClipFrom_17;
-		__this->____clipFrom_15 = ((double)L_4);
+		float L_4 = __this->___animClipFrom_16;
+		__this->____clipFrom_14 = ((double)L_4);
 		// _clipTo = animClipTo;
-		float L_5 = __this->___animClipTo_18;
-		__this->____clipTo_16 = ((double)L_5);
+		float L_5 = __this->___animClipTo_17;
+		__this->____clipTo_15 = ((double)L_5);
 		// Rebuild();
 		VirtualActionInvoker0::Invoke(12 /* System.Void Dreamteck.Splines.SplineUser::Rebuild() */, __this);
 		// if (clip) GetSamples();
@@ -9112,194 +9600,295 @@ IL_004b:
 		return;
 	}
 }
-// Dreamteck.Splines.SplineSample Dreamteck.Splines.SplineUser::GetSampleRaw(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* SplineUser_GetSampleRaw_m348FCC800AC627A1C1FE4D63D0D6258FBE771315 (SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE* __this, int32_t ___index0, const RuntimeMethod* method) 
+// System.Void Dreamteck.Splines.SplineUser::GetSampleRaw(System.Int32,Dreamteck.Splines.SplineSample&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineUser_GetSampleRaw_m9E2F85951E397274852DB80A6EC5C634822AB110 (SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE* __this, int32_t ___index0, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ___sample1, const RuntimeMethod* method) 
 {
-	int32_t V_0 = 0;
-	int32_t V_1 = 0;
-	double V_2 = 0.0;
-	int32_t V_3 = 0;
-	int32_t V_4 = 0;
 	{
-		// if (index >= _sampleCount) index = _sampleCount - 1;
+		// if (index == 0)
 		int32_t L_0 = ___index0;
-		int32_t L_1 = __this->____sampleCount_24;
-		if ((((int32_t)L_0) < ((int32_t)L_1)))
+		if (L_0)
 		{
-			goto IL_0013;
+			goto IL_0010;
 		}
 	}
 	{
-		// if (index >= _sampleCount) index = _sampleCount - 1;
-		int32_t L_2 = __this->____sampleCount_24;
-		___index0 = ((int32_t)il2cpp_codegen_subtract(L_2, 1));
+		// sample.FastCopy(ref _clipFromSample);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_1 = ___sample1;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_2 = (&__this->____clipFromSample_11);
+		SplineSample_FastCopy_m8DD8D90BE9DD47EED748197D5872BB4A1AA05CEF(L_1, L_2, NULL);
+		// return;
+		return;
 	}
 
-IL_0013:
+IL_0010:
 	{
-		// if (samplesAreLooped)
-		bool L_3;
-		L_3 = SplineUser_get_samplesAreLooped_m6A6EB360E1F0746E4B861F81CEA3EE489AB4092A(__this, NULL);
-		if (!L_3)
+		// if (index == _sampleCount - 1)
+		int32_t L_3 = ___index0;
+		int32_t L_4 = __this->____sampleCount_25;
+		if ((!(((uint32_t)L_3) == ((uint32_t)((int32_t)il2cpp_codegen_subtract(L_4, 1))))))
 		{
-			goto IL_00a9;
+			goto IL_0028;
 		}
 	}
 	{
-		// sampleCollection.GetSamplingValues(clipFrom, out start, out lerp);
-		SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* L_4 = __this->___sampleCollection_11;
-		double L_5;
-		L_5 = SplineUser_get_clipFrom_m2366D6F30DAD8E29DBD02FB70B070B0FEE51909E_inline(__this, NULL);
-		NullCheck(L_4);
-		SampleCollection_GetSamplingValues_mEFAC249D9870E0F0EE0CFC9637EF39BBC68AE843(L_4, L_5, (&V_0), (&V_2), NULL);
-		// sampleCollection.GetSamplingValues(clipTo, out end, out lerp);
-		SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* L_6 = __this->___sampleCollection_11;
-		double L_7;
-		L_7 = SplineUser_get_clipTo_mE824718C3FB404D8172DCFD93F214F487550E9C2_inline(__this, NULL);
-		NullCheck(L_6);
-		SampleCollection_GetSamplingValues_mEFAC249D9870E0F0EE0CFC9637EF39BBC68AE843(L_6, L_7, (&V_1), (&V_2), NULL);
-		// if (index == 0) return clipFromSample;
-		int32_t L_8 = ___index0;
-		if (L_8)
-		{
-			goto IL_0052;
-		}
-	}
-	{
-		// if (index == 0) return clipFromSample;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_9 = __this->___clipFromSample_12;
-		return L_9;
+		// sample.FastCopy(ref _clipToSample);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_5 = ___sample1;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_6 = (&__this->____clipToSample_12);
+		SplineSample_FastCopy_m8DD8D90BE9DD47EED748197D5872BB4A1AA05CEF(L_5, L_6, NULL);
+		// return;
+		return;
 	}
 
-IL_0052:
+IL_0028:
 	{
-		// int endSample = end;
-		int32_t L_10 = V_1;
-		V_3 = L_10;
-		// if (lerp > 0.0) endSample++;
-		double L_11 = V_2;
-		if ((!(((double)L_11) > ((double)(0.0)))))
-		{
-			goto IL_0064;
-		}
-	}
-	{
-		// if (lerp > 0.0) endSample++;
-		int32_t L_12 = V_3;
-		V_3 = ((int32_t)il2cpp_codegen_add(L_12, 1));
-	}
-
-IL_0064:
-	{
-		// if (index == _sampleCount - 1) return clipToSample;
-		int32_t L_13 = ___index0;
-		int32_t L_14 = __this->____sampleCount_24;
-		if ((!(((uint32_t)L_13) == ((uint32_t)((int32_t)il2cpp_codegen_subtract(L_14, 1))))))
-		{
-			goto IL_0076;
-		}
-	}
-	{
-		// if (index == _sampleCount - 1) return clipToSample;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_15 = __this->___clipToSample_13;
-		return L_15;
-	}
-
-IL_0076:
-	{
-		// int loopedIndex = start + index;
-		int32_t L_16 = V_0;
-		int32_t L_17 = ___index0;
-		V_4 = ((int32_t)il2cpp_codegen_add(L_16, L_17));
-		// if (loopedIndex >= sampleCollection.Count) loopedIndex -= sampleCollection.Count;
-		int32_t L_18 = V_4;
-		SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* L_19 = __this->___sampleCollection_11;
-		NullCheck(L_19);
-		int32_t L_20;
-		L_20 = SampleCollection_get_Count_m4CD74F577287B307B57A1E6A07AA4A7D5032128F(L_19, NULL);
-		if ((((int32_t)L_18) < ((int32_t)L_20)))
-		{
-			goto IL_009a;
-		}
-	}
-	{
-		// if (loopedIndex >= sampleCollection.Count) loopedIndex -= sampleCollection.Count;
-		int32_t L_21 = V_4;
-		SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* L_22 = __this->___sampleCollection_11;
-		NullCheck(L_22);
-		int32_t L_23;
-		L_23 = SampleCollection_get_Count_m4CD74F577287B307B57A1E6A07AA4A7D5032128F(L_22, NULL);
-		V_4 = ((int32_t)il2cpp_codegen_subtract(L_21, L_23));
-	}
-
-IL_009a:
-	{
-		// return sampleCollection.samples[loopedIndex];
-		SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* L_24 = __this->___sampleCollection_11;
-		NullCheck(L_24);
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_25 = L_24->___samples_0;
-		int32_t L_26 = V_4;
-		NullCheck(L_25);
-		int32_t L_27 = L_26;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_28 = (L_25)->GetAt(static_cast<il2cpp_array_size_t>(L_27));
-		return L_28;
-	}
-
-IL_00a9:
-	{
-		// if (index == 0) return clipFromSample;
-		int32_t L_29 = ___index0;
-		if (L_29)
-		{
-			goto IL_00b3;
-		}
-	}
-	{
-		// if (index == 0) return clipFromSample;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_30 = __this->___clipFromSample_12;
-		return L_30;
-	}
-
-IL_00b3:
-	{
-		// if (index == _sampleCount - 1) return clipToSample;
-		int32_t L_31 = ___index0;
-		int32_t L_32 = __this->____sampleCount_24;
-		if ((!(((uint32_t)L_31) == ((uint32_t)((int32_t)il2cpp_codegen_subtract(L_32, 1))))))
-		{
-			goto IL_00c5;
-		}
-	}
-	{
-		// if (index == _sampleCount - 1) return clipToSample;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_33 = __this->___clipToSample_13;
-		return L_33;
-	}
-
-IL_00c5:
-	{
-		// return sampleCollection.samples[startSampleIndex + index];
-		SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* L_34 = __this->___sampleCollection_11;
-		NullCheck(L_34);
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_35 = L_34->___samples_0;
-		int32_t L_36 = __this->___startSampleIndex_25;
-		int32_t L_37 = ___index0;
-		NullCheck(L_35);
-		int32_t L_38 = ((int32_t)il2cpp_codegen_add(L_36, L_37));
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_39 = (L_35)->GetAt(static_cast<il2cpp_array_size_t>(L_38));
-		return L_39;
+		// ClampLoopSampleIndex(ref index);
+		SplineUser_ClampLoopSampleIndex_m49737A4E17CB38C3AD94626FE29F2E14170D0C63(__this, (&___index0), NULL);
+		// sample.FastCopy(ref _sampleCollection.samples[index]);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_7 = ___sample1;
+		SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* L_8 = __this->____sampleCollection_18;
+		NullCheck(L_8);
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_9 = L_8->___samples_0;
+		int32_t L_10 = ___index0;
+		NullCheck(L_9);
+		SplineSample_FastCopy_m8DD8D90BE9DD47EED748197D5872BB4A1AA05CEF(L_7, ((L_9)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_10))), NULL);
+		// }
+		return;
 	}
 }
-// System.Void Dreamteck.Splines.SplineUser::GetSample(System.Int32,Dreamteck.Splines.SplineSample)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineUser_GetSample_m3BC18583D33B76D600B873A10966C3AAD9744139 (SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE* __this, int32_t ___index0, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ___target1, const RuntimeMethod* method) 
+// System.Double Dreamteck.Splines.SplineUser::GetSamplePercent(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double SplineUser_GetSamplePercent_mF001FD7C2CB9B6952A9A7917B7F0B5DBCE14F6ED (SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE* __this, int32_t ___index0, const RuntimeMethod* method) 
 {
 	{
-		// ModifySample(GetSampleRaw(index), target);
+		// if (index == 0)
 		int32_t L_0 = ___index0;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_1;
-		L_1 = SplineUser_GetSampleRaw_m348FCC800AC627A1C1FE4D63D0D6258FBE771315(__this, L_0, NULL);
+		if (L_0)
+		{
+			goto IL_000f;
+		}
+	}
+	{
+		// return _clipFromSample.percent;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_1 = (&__this->____clipFromSample_11);
+		double L_2 = L_1->___percent_5;
+		return L_2;
+	}
+
+IL_000f:
+	{
+		// if (index == _sampleCount - 1)
+		int32_t L_3 = ___index0;
+		int32_t L_4 = __this->____sampleCount_25;
+		if ((!(((uint32_t)L_3) == ((uint32_t)((int32_t)il2cpp_codegen_subtract(L_4, 1))))))
+		{
+			goto IL_0026;
+		}
+	}
+	{
+		// return _clipToSample.percent;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_5 = (&__this->____clipToSample_12);
+		double L_6 = L_5->___percent_5;
+		return L_6;
+	}
+
+IL_0026:
+	{
+		// ClampLoopSampleIndex(ref index);
+		SplineUser_ClampLoopSampleIndex_m49737A4E17CB38C3AD94626FE29F2E14170D0C63(__this, (&___index0), NULL);
+		// return _sampleCollection.samples[index].percent;
+		SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* L_7 = __this->____sampleCollection_18;
+		NullCheck(L_7);
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_8 = L_7->___samples_0;
+		int32_t L_9 = ___index0;
+		NullCheck(L_8);
+		double L_10 = ((L_8)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_9)))->___percent_5;
+		return L_10;
+	}
+}
+// System.Void Dreamteck.Splines.SplineUser::ClampLoopSampleIndex(System.Int32&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineUser_ClampLoopSampleIndex_m49737A4E17CB38C3AD94626FE29F2E14170D0C63 (SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE* __this, int32_t* ___index0, const RuntimeMethod* method) 
+{
+	int32_t V_0 = 0;
+	double V_1 = 0.0;
+	{
+		// if (index >= _sampleCount)
+		int32_t* L_0 = ___index0;
+		int32_t L_1 = *((int32_t*)L_0);
+		int32_t L_2 = __this->____sampleCount_25;
+		if ((((int32_t)L_1) < ((int32_t)L_2)))
+		{
+			goto IL_0014;
+		}
+	}
+	{
+		// index = _sampleCount - 1;
+		int32_t* L_3 = ___index0;
+		int32_t L_4 = __this->____sampleCount_25;
+		*((int32_t*)L_3) = (int32_t)((int32_t)il2cpp_codegen_subtract(L_4, 1));
+	}
+
+IL_0014:
+	{
+		// if (samplesAreLooped)
+		bool L_5;
+		L_5 = SplineUser_get_samplesAreLooped_m6A6EB360E1F0746E4B861F81CEA3EE489AB4092A(__this, NULL);
+		if (!L_5)
+		{
+			goto IL_0057;
+		}
+	}
+	{
+		// _sampleCollection.GetSamplingValues(clipFrom, out start, out lerp);
+		SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* L_6 = __this->____sampleCollection_18;
+		double L_7;
+		L_7 = SplineUser_get_clipFrom_m2366D6F30DAD8E29DBD02FB70B070B0FEE51909E_inline(__this, NULL);
+		NullCheck(L_6);
+		SampleCollection_GetSamplingValues_mEFAC249D9870E0F0EE0CFC9637EF39BBC68AE843(L_6, L_7, (&V_0), (&V_1), NULL);
+		// index = start + index;
+		int32_t* L_8 = ___index0;
+		int32_t L_9 = V_0;
+		int32_t* L_10 = ___index0;
+		int32_t L_11 = *((int32_t*)L_10);
+		*((int32_t*)L_8) = (int32_t)((int32_t)il2cpp_codegen_add(L_9, L_11));
+		// if (index >= _sampleCollection.length)
+		int32_t* L_12 = ___index0;
+		int32_t L_13 = *((int32_t*)L_12);
+		SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* L_14 = __this->____sampleCollection_18;
+		NullCheck(L_14);
+		int32_t L_15;
+		L_15 = SampleCollection_get_length_mB42A3EAF2CB5B8F16CBF5D91048A6DC72A17BD3B(L_14, NULL);
+		if ((((int32_t)L_13) < ((int32_t)L_15)))
+		{
+			goto IL_0062;
+		}
+	}
+	{
+		// index -= _sampleCollection.length;
+		int32_t* L_16 = ___index0;
+		int32_t* L_17 = ___index0;
+		int32_t L_18 = *((int32_t*)L_17);
+		SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* L_19 = __this->____sampleCollection_18;
+		NullCheck(L_19);
+		int32_t L_20;
+		L_20 = SampleCollection_get_length_mB42A3EAF2CB5B8F16CBF5D91048A6DC72A17BD3B(L_19, NULL);
+		*((int32_t*)L_16) = (int32_t)((int32_t)il2cpp_codegen_subtract(L_18, L_20));
+		return;
+	}
+
+IL_0057:
+	{
+		// index = _startSampleIndex + index;
+		int32_t* L_21 = ___index0;
+		int32_t L_22 = __this->____startSampleIndex_26;
+		int32_t* L_23 = ___index0;
+		int32_t L_24 = *((int32_t*)L_23);
+		*((int32_t*)L_21) = (int32_t)((int32_t)il2cpp_codegen_add(L_22, L_24));
+	}
+
+IL_0062:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Dreamteck.Splines.SplineUser::GetSample(System.Int32,Dreamteck.Splines.SplineSample&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineUser_GetSample_m880DFE2CAAE9E9F4D85F68B13E9DE816186C3D8E (SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE* __this, int32_t ___index0, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ___target1, const RuntimeMethod* method) 
+{
+	{
+		// GetSampleRaw(index, ref _workSample);
+		int32_t L_0 = ___index0;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_1 = (&__this->____workSample_24);
+		SplineUser_GetSampleRaw_m9E2F85951E397274852DB80A6EC5C634822AB110(__this, L_0, L_1, NULL);
+		// ModifySample(ref _workSample, ref target);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_2 = (&__this->____workSample_24);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_3 = ___target1;
+		SplineUser_ModifySample_m6BDF2C7D753B61E10DA92846995AB088ED4BB1D8(__this, L_2, L_3, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Dreamteck.Splines.SplineUser::GetSampleWithAngleCompensation(System.Int32,Dreamteck.Splines.SplineSample&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineUser_GetSampleWithAngleCompensation_mEBCFF7A6C09ED401F86729B91882912BF32D3A71 (SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE* __this, int32_t ___index0, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ___target1, const RuntimeMethod* method) 
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	{
+		// GetSampleRaw(index, ref target);
+		int32_t L_0 = ___index0;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_1 = ___target1;
+		SplineUser_GetSampleRaw_m9E2F85951E397274852DB80A6EC5C634822AB110(__this, L_0, L_1, NULL);
+		// ModifySample(ref target, ref target);
 		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_2 = ___target1;
-		SplineUser_ModifySample_mB328F837A84F1114AD3CE2D38F1D7FCF1676B568(__this, L_1, L_2, NULL);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_3 = ___target1;
+		SplineUser_ModifySample_m6BDF2C7D753B61E10DA92846995AB088ED4BB1D8(__this, L_2, L_3, NULL);
+		// if(index > 0 && index < sampleCount - 1)
+		int32_t L_4 = ___index0;
+		if ((((int32_t)L_4) <= ((int32_t)0)))
+		{
+			goto IL_00c9;
+		}
+	}
+	{
+		int32_t L_5 = ___index0;
+		int32_t L_6;
+		L_6 = SplineUser_get_sampleCount_m72EB98E357EB6A53B94626C14D2F0CAF87997AFC_inline(__this, NULL);
+		if ((((int32_t)L_5) >= ((int32_t)((int32_t)il2cpp_codegen_subtract(L_6, 1)))))
+		{
+			goto IL_00c9;
+		}
+	}
+	{
+		// GetSampleRaw(index - 1, ref _workSample);
+		int32_t L_7 = ___index0;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_8 = (&__this->____workSample_24);
+		SplineUser_GetSampleRaw_m9E2F85951E397274852DB80A6EC5C634822AB110(__this, ((int32_t)il2cpp_codegen_subtract(L_7, 1)), L_8, NULL);
+		// ModifySample(ref _workSample, ref _workSample);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_9 = (&__this->____workSample_24);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_10 = (&__this->____workSample_24);
+		SplineUser_ModifySample_m6BDF2C7D753B61E10DA92846995AB088ED4BB1D8(__this, L_9, L_10, NULL);
+		// Vector3 prev = target.position - _workSample.position;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_11 = ___target1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12 = L_11->___position_0;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_13 = (&__this->____workSample_24);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_14 = L_13->___position_0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_15;
+		L_15 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_12, L_14, NULL);
+		V_0 = L_15;
+		// GetSampleRaw(index + 1, ref _workSample);
+		int32_t L_16 = ___index0;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_17 = (&__this->____workSample_24);
+		SplineUser_GetSampleRaw_m9E2F85951E397274852DB80A6EC5C634822AB110(__this, ((int32_t)il2cpp_codegen_add(L_16, 1)), L_17, NULL);
+		// ModifySample(ref _workSample, ref _workSample);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_18 = (&__this->____workSample_24);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_19 = (&__this->____workSample_24);
+		SplineUser_ModifySample_m6BDF2C7D753B61E10DA92846995AB088ED4BB1D8(__this, L_18, L_19, NULL);
+		// Vector3 next = _workSample.position - target.position;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_20 = (&__this->____workSample_24);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_21 = L_20->___position_0;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_22 = ___target1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_23 = L_22->___position_0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_24;
+		L_24 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_21, L_23, NULL);
+		V_1 = L_24;
+		// target.size *= 1 / Mathf.Sqrt(Vector3.Dot(prev.normalized, next.normalized) * 0.5f + 0.5f);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_25 = ___target1;
+		float* L_26 = (&L_25->___size_4);
+		float* L_27 = L_26;
+		float L_28 = *((float*)L_27);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_29;
+		L_29 = Vector3_get_normalized_m736BBF65D5CDA7A18414370D15B4DFCC1E466F07_inline((&V_0), NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_30;
+		L_30 = Vector3_get_normalized_m736BBF65D5CDA7A18414370D15B4DFCC1E466F07_inline((&V_1), NULL);
+		float L_31;
+		L_31 = Vector3_Dot_mBB86BB940AA0A32FA7D3C02AC42E5BC7095A5D52_inline(L_29, L_30, NULL);
+		float L_32;
+		L_32 = sqrtf(((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(L_31, (0.5f))), (0.5f))));
+		*((float*)L_27) = (float)((float)il2cpp_codegen_multiply(L_28, ((float)((1.0f)/L_32))));
+	}
+
+IL_00c9:
+	{
 		// }
 		return;
 	}
@@ -9361,12 +9950,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineUser_RebuildImmediate_mBDD10617A51
 
 CATCH_0014:
 	{// begin catch(System.Exception)
-		// Debug.Log(ex.Message);
+		// Debug.LogError(ex.Message);
 		NullCheck(((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*)));
 		String_t* L_0;
 		L_0 = VirtualFuncInvoker0< String_t* >::Invoke(5 /* System.String System.Exception::get_Message() */, ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*)));
 		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var)));
-		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_0, NULL);
+		Debug_LogError_mB00B2B4468EF3CAF041B038D840820FB84C924B2(L_0, NULL);
 		// }
 		IL2CPP_POP_ACTIVE_EXCEPTION();
 		goto IL_0020;
@@ -9472,6 +10061,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineUser_RunUpdate_m3E701394593C716AF9
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SplineUser_ResampleAndBuildThreaded_mA189CCCFEE2FC698A55563404F1E1696D2F2431A_RuntimeMethod_var);
 		s_Il2CppMethodInitialized = true;
 	}
+	EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* V_0 = NULL;
 	{
 		// if (rebuild)
 		bool L_0 = __this->___rebuild_19;
@@ -9482,7 +10072,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineUser_RunUpdate_m3E701394593C716AF9
 	}
 	{
 		// if (multithreaded)
-		bool L_1 = __this->___multithreaded_27;
+		bool L_1 = __this->___multithreaded_28;
 		il2cpp_codegen_memory_barrier();
 		if (!L_1)
 		{
@@ -9520,7 +10110,7 @@ IL_002d:
 
 IL_0040:
 	{
-		// if (getSamples || spline.sampleMode == SplineComputer.SampleMode.Optimized) GetSamples();
+		// if (getSamples || _spline.sampleMode == SplineComputer.SampleMode.Optimized) GetSamples();
 		bool L_5 = __this->___getSamples_20;
 		if (L_5)
 		{
@@ -9528,8 +10118,7 @@ IL_0040:
 		}
 	}
 	{
-		SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* L_6;
-		L_6 = SplineUser_get_spline_mFCDA5843B398053A190E9A6B6971331A19033E15_inline(__this, NULL);
+		SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* L_6 = __this->____spline_5;
 		NullCheck(L_6);
 		int32_t L_7;
 		L_7 = SplineComputer_get_sampleMode_mA483D03C3E4C99B6124F275B3123505B7843639A_inline(L_6, NULL);
@@ -9541,7 +10130,7 @@ IL_0040:
 
 IL_0056:
 	{
-		// if (getSamples || spline.sampleMode == SplineComputer.SampleMode.Optimized) GetSamples();
+		// if (getSamples || _spline.sampleMode == SplineComputer.SampleMode.Optimized) GetSamples();
 		SplineUser_GetSamples_m13C1D157947BA8108C4F687D49CC2E87F092A117(__this, NULL);
 	}
 
@@ -9565,33 +10154,36 @@ IL_0070:
 		bool L_8 = __this->___postBuild_21;
 		if (!L_8)
 		{
-			goto IL_0098;
+			goto IL_0095;
 		}
 	}
 	{
 		// PostBuild();
 		VirtualActionInvoker0::Invoke(17 /* System.Void Dreamteck.Splines.SplineUser::PostBuild() */, __this);
-		// if(onPostBuild != null)
-		EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* L_9 = __this->___onPostBuild_30;
-		if (!L_9)
+		// EmptySplineHandler postBuildHandler = onPostBuild;
+		EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* L_9 = __this->___onPostBuild_31;
+		V_0 = L_9;
+		// if(postBuildHandler != null)
+		EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* L_10 = V_0;
+		if (!L_10)
 		{
-			goto IL_0091;
+			goto IL_008e;
 		}
 	}
 	{
-		// onPostBuild();
-		EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* L_10 = __this->___onPostBuild_30;
-		NullCheck(L_10);
-		EmptySplineHandler_Invoke_mE91CF4B98F35A97F8D3227EE70F664A4A9C1D312_inline(L_10, NULL);
+		// postBuildHandler();
+		EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* L_11 = V_0;
+		NullCheck(L_11);
+		EmptySplineHandler_Invoke_mE91CF4B98F35A97F8D3227EE70F664A4A9C1D312_inline(L_11, NULL);
 	}
 
-IL_0091:
+IL_008e:
 	{
 		// postBuild = false;
 		__this->___postBuild_21 = (bool)0;
 	}
 
-IL_0098:
+IL_0095:
 	{
 		// }
 		return;
@@ -9683,47 +10275,91 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineUser_OnSplineChanged_mB0D90B1CCDC5
 		return;
 	}
 }
-// System.Void Dreamteck.Splines.SplineUser::ModifySample(Dreamteck.Splines.SplineSample,Dreamteck.Splines.SplineSample)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineUser_ModifySample_mB328F837A84F1114AD3CE2D38F1D7FCF1676B568 (SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE* __this, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ___source0, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ___destination1, const RuntimeMethod* method) 
+// System.Void Dreamteck.Splines.SplineUser::ModifySample(Dreamteck.Splines.SplineSample&,Dreamteck.Splines.SplineSample&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineUser_ModifySample_m6BDF2C7D753B61E10DA92846995AB088ED4BB1D8 (SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE* __this, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ___source0, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ___destination1, const RuntimeMethod* method) 
 {
 	{
-		// destination.CopyFrom(source);
+		// destination = source;
 		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_0 = ___destination1;
 		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_1 = ___source0;
-		NullCheck(L_0);
-		SplineSample_CopyFrom_m78352CD91991F2090066C4C8897A2306D6CDC701(L_0, L_1, NULL);
-		// ModifySample(destination);
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_2 = ___destination1;
-		SplineUser_ModifySample_m9EC7F43C6AABDEEDB8CD2B6A97D6A672493D6CBB(__this, L_2, NULL);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 L_2 = (*(SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143*)L_1);
+		*(SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143*)L_0 = L_2;
+		// ModifySample(ref destination);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_3 = ___destination1;
+		SplineUser_ModifySample_m3175943B69EA85D618EC580DDA83CF3E13889D21(__this, L_3, NULL);
 		// }
 		return;
 	}
 }
-// System.Void Dreamteck.Splines.SplineUser::ModifySample(Dreamteck.Splines.SplineSample)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineUser_ModifySample_m9EC7F43C6AABDEEDB8CD2B6A97D6A672493D6CBB (SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE* __this, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ___sample0, const RuntimeMethod* method) 
+// System.Void Dreamteck.Splines.SplineUser::ModifySample(Dreamteck.Splines.SplineSample&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineUser_ModifySample_m3175943B69EA85D618EC580DDA83CF3E13889D21 (SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE* __this, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ___sample0, const RuntimeMethod* method) 
 {
 	{
-		// offsetModifier.Apply(sample);
-		OffsetModifier_t6750449B324B80EB198DAF68209DDC8F041A363C* L_0;
-		L_0 = SplineUser_get_offsetModifier_mE21C06401900A7944EF4351516BC525EA47F4C8C_inline(__this, NULL);
+		// ApplyModifier(_offsetModifier, ref sample);
+		OffsetModifier_t6750449B324B80EB198DAF68209DDC8F041A363C* L_0 = __this->____offsetModifier_8;
 		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_1 = ___sample0;
-		NullCheck(L_0);
-		VirtualActionInvoker1< SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* >::Invoke(6 /* System.Void Dreamteck.Splines.SplineSampleModifier::Apply(Dreamteck.Splines.SplineSample) */, L_0, L_1);
-		// _rotationModifier.Apply(sample);
+		SplineUser_ApplyModifier_m4B74B05AEFA641B6733E8D6511F3D2C2B0AE2335(__this, L_0, L_1, NULL);
+		// ApplyModifier(_rotationModifier, ref sample);
 		RotationModifier_tFF6A3FB575FDBEAA61EF0A57017019986EAC0607* L_2 = __this->____rotationModifier_7;
 		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_3 = ___sample0;
-		NullCheck(L_2);
-		VirtualActionInvoker1< SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* >::Invoke(6 /* System.Void Dreamteck.Splines.SplineSampleModifier::Apply(Dreamteck.Splines.SplineSample) */, L_2, L_3);
-		// _colorModifier.Apply(sample);
+		SplineUser_ApplyModifier_m4B74B05AEFA641B6733E8D6511F3D2C2B0AE2335(__this, L_2, L_3, NULL);
+		// ApplyModifier(_colorModifier, ref sample);
 		ColorModifier_tD41275A2C32D892D074F3959B5B202AA46C8A2B5* L_4 = __this->____colorModifier_9;
 		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_5 = ___sample0;
-		NullCheck(L_4);
-		VirtualActionInvoker1< SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* >::Invoke(6 /* System.Void Dreamteck.Splines.SplineSampleModifier::Apply(Dreamteck.Splines.SplineSample) */, L_4, L_5);
-		// _sizeModifier.Apply(sample);
+		SplineUser_ApplyModifier_m4B74B05AEFA641B6733E8D6511F3D2C2B0AE2335(__this, L_4, L_5, NULL);
+		// ApplyModifier(_sizeModifier, ref sample);
 		SizeModifier_t3DD6048AE4DEB93810D8325EDB2065AA05671BEE* L_6 = __this->____sizeModifier_10;
 		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_7 = ___sample0;
+		SplineUser_ApplyModifier_m4B74B05AEFA641B6733E8D6511F3D2C2B0AE2335(__this, L_6, L_7, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Dreamteck.Splines.SplineUser::ApplyModifier(Dreamteck.Splines.SplineSampleModifier,Dreamteck.Splines.SplineSample&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineUser_ApplyModifier_m4B74B05AEFA641B6733E8D6511F3D2C2B0AE2335 (SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE* __this, SplineSampleModifier_t22889DA69F7EB5513465DE330AFF6D213F260150* ___modifier0, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ___sample1, const RuntimeMethod* method) 
+{
+	{
+		// if (modifier.useClippedPercent)
+		SplineSampleModifier_t22889DA69F7EB5513465DE330AFF6D213F260150* L_0 = ___modifier0;
+		NullCheck(L_0);
+		bool L_1 = L_0->___useClippedPercent_1;
+		if (!L_1)
+		{
+			goto IL_0014;
+		}
+	}
+	{
+		// ClipPercent(ref sample.percent);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_2 = ___sample1;
+		double* L_3 = (&L_2->___percent_5);
+		SplineUser_ClipPercent_mA5A8CE8C0D8B3462062250BFCB594C93A3E64885(__this, L_3, NULL);
+	}
+
+IL_0014:
+	{
+		// modifier.Apply(ref sample);
+		SplineSampleModifier_t22889DA69F7EB5513465DE330AFF6D213F260150* L_4 = ___modifier0;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_5 = ___sample1;
+		NullCheck(L_4);
+		VirtualActionInvoker1< SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* >::Invoke(6 /* System.Void Dreamteck.Splines.SplineSampleModifier::Apply(Dreamteck.Splines.SplineSample&) */, L_4, L_5);
+		// if (modifier.useClippedPercent)
+		SplineSampleModifier_t22889DA69F7EB5513465DE330AFF6D213F260150* L_6 = ___modifier0;
 		NullCheck(L_6);
-		VirtualActionInvoker1< SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* >::Invoke(6 /* System.Void Dreamteck.Splines.SplineSampleModifier::Apply(Dreamteck.Splines.SplineSample) */, L_6, L_7);
+		bool L_7 = L_6->___useClippedPercent_1;
+		if (!L_7)
+		{
+			goto IL_002f;
+		}
+	}
+	{
+		// UnclipPercent(ref sample.percent);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_8 = ___sample1;
+		double* L_9 = (&L_8->___percent_5);
+		SplineUser_UnclipPercent_m5692FC9019E1DC74455B13C9458374EC91C20F3F(__this, L_9, NULL);
+	}
+
+IL_002f:
+	{
 		// }
 		return;
 	}
@@ -9762,12 +10398,12 @@ IL_0014:
 		double L_5 = ___from0;
 		double L_6;
 		L_6 = DMath_Clamp01_mB366A5E5D6963102BBC75A3CE5FA29E5B50F46A2(L_5, NULL);
-		__this->____clipFrom_15 = L_6;
+		__this->____clipFrom_14 = L_6;
 		// _clipTo = DMath.Clamp01(to);
 		double L_7 = ___to1;
 		double L_8;
 		L_8 = DMath_Clamp01_mB366A5E5D6963102BBC75A3CE5FA29E5B50F46A2(L_7, NULL);
-		__this->____clipTo_16 = L_8;
+		__this->____clipTo_15 = L_8;
 		// GetSamples();
 		SplineUser_GetSamples_m13C1D157947BA8108C4F687D49CC2E87F092A117(__this, NULL);
 		// Rebuild();
@@ -9783,13 +10419,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineUser_GetSamples_m13C1D157947BA8108
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
 	int32_t V_0 = 0;
 	int32_t V_1 = 0;
 	double V_2 = 0.0;
 	{
-		// if (spline == null) return;
+		// getSamples = false;
+		__this->___getSamples_20 = (bool)0;
+		// if (spline == null)
 		SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* L_0;
 		L_0 = SplineUser_get_spline_mFCDA5843B398053A190E9A6B6971331A19033E15_inline(__this, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
@@ -9797,54 +10436,110 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineUser_GetSamples_m13C1D157947BA8108
 		L_1 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
 		if (!L_1)
 		{
-			goto IL_000f;
+			goto IL_002e;
 		}
 	}
 	{
-		// if (spline == null) return;
+		// _sampleCollection.samples = new SplineSample[0];
+		SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* L_2 = __this->____sampleCollection_18;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_3 = (SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF*)(SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF*)SZArrayNew(SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF_il2cpp_TypeInfo_var, (uint32_t)0);
+		NullCheck(L_2);
+		L_2->___samples_0 = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&L_2->___samples_0), (void*)L_3);
+		// _sampleCount = 0;
+		__this->____sampleCount_25 = 0;
+		// return;
 		return;
 	}
 
-IL_000f:
+IL_002e:
 	{
-		// getSamples = false;
-		__this->___getSamples_20 = (bool)0;
-		// spline.GetSamples(sampleCollection);
-		SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* L_2;
-		L_2 = SplineUser_get_spline_mFCDA5843B398053A190E9A6B6971331A19033E15_inline(__this, NULL);
-		SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* L_3 = __this->___sampleCollection_11;
-		NullCheck(L_2);
-		SplineComputer_GetSamples_m33A60A29D028CC6C48F9E4D282A6EF4097B425C1(L_2, L_3, NULL);
-		// sampleCollection.Evaluate(clipFrom, clipFromSample);
-		SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* L_4 = __this->___sampleCollection_11;
-		double L_5;
-		L_5 = SplineUser_get_clipFrom_m2366D6F30DAD8E29DBD02FB70B070B0FEE51909E_inline(__this, NULL);
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_6 = __this->___clipFromSample_12;
+		// _spline.GetSamples(_sampleCollection);
+		SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* L_4 = __this->____spline_5;
+		SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* L_5 = __this->____sampleCollection_18;
 		NullCheck(L_4);
-		SampleCollection_Evaluate_mF6024ABA400EE30B80F468DCF53A1C28ACE21306(L_4, L_5, L_6, NULL);
-		// sampleCollection.Evaluate(clipTo, clipToSample);
-		SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* L_7 = __this->___sampleCollection_11;
+		SplineComputer_GetSamples_m33A60A29D028CC6C48F9E4D282A6EF4097B425C1(L_4, L_5, NULL);
+		// if(_clipFrom != 0.0)
+		double L_6 = __this->____clipFrom_14;
+		if ((((double)L_6) == ((double)(0.0))))
+		{
+			goto IL_0069;
+		}
+	}
+	{
+		// _sampleCollection.Evaluate(clipFrom, ref _clipFromSample);
+		SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* L_7 = __this->____sampleCollection_18;
 		double L_8;
-		L_8 = SplineUser_get_clipTo_mE824718C3FB404D8172DCFD93F214F487550E9C2_inline(__this, NULL);
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_9 = __this->___clipToSample_13;
+		L_8 = SplineUser_get_clipFrom_m2366D6F30DAD8E29DBD02FB70B070B0FEE51909E_inline(__this, NULL);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_9 = (&__this->____clipFromSample_11);
 		NullCheck(L_7);
-		SampleCollection_Evaluate_mF6024ABA400EE30B80F468DCF53A1C28ACE21306(L_7, L_8, L_9, NULL);
-		// _sampleCount = sampleCollection.GetClippedSampleCount(clipFrom, clipTo, out start, out end);
-		SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* L_10 = __this->___sampleCollection_11;
-		double L_11;
-		L_11 = SplineUser_get_clipFrom_m2366D6F30DAD8E29DBD02FB70B070B0FEE51909E_inline(__this, NULL);
-		double L_12;
-		L_12 = SplineUser_get_clipTo_mE824718C3FB404D8172DCFD93F214F487550E9C2_inline(__this, NULL);
+		SampleCollection_Evaluate_mAAC912C0D30624A4CE054FDD16943264D579BD20(L_7, L_8, L_9, NULL);
+		goto IL_0080;
+	}
+
+IL_0069:
+	{
+		// _clipFromSample = _sampleCollection.samples[0];
+		SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* L_10 = __this->____sampleCollection_18;
 		NullCheck(L_10);
-		int32_t L_13;
-		L_13 = SampleCollection_GetClippedSampleCount_m2D15178087169063141251347714E028A86EC990(L_10, L_11, L_12, (&V_0), (&V_1), NULL);
-		__this->____sampleCount_24 = L_13;
-		// sampleCollection.GetSamplingValues(_clipFrom, out startSampleIndex, out lerp);
-		SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* L_14 = __this->___sampleCollection_11;
-		double L_15 = __this->____clipFrom_15;
-		int32_t* L_16 = (&__this->___startSampleIndex_25);
-		NullCheck(L_14);
-		SampleCollection_GetSamplingValues_mEFAC249D9870E0F0EE0CFC9637EF39BBC68AE843(L_14, L_15, L_16, (&V_2), NULL);
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_11 = L_10->___samples_0;
+		NullCheck(L_11);
+		int32_t L_12 = 0;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 L_13 = (L_11)->GetAt(static_cast<il2cpp_array_size_t>(L_12));
+		__this->____clipFromSample_11 = L_13;
+	}
+
+IL_0080:
+	{
+		// if(_clipTo != 1.0)
+		double L_14 = __this->____clipTo_15;
+		if ((((double)L_14) == ((double)(1.0))))
+		{
+			goto IL_00aa;
+		}
+	}
+	{
+		// _sampleCollection.Evaluate(_clipTo, ref _clipToSample);
+		SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* L_15 = __this->____sampleCollection_18;
+		double L_16 = __this->____clipTo_15;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_17 = (&__this->____clipToSample_12);
+		NullCheck(L_15);
+		SampleCollection_Evaluate_mAAC912C0D30624A4CE054FDD16943264D579BD20(L_15, L_16, L_17, NULL);
+		goto IL_00cd;
+	}
+
+IL_00aa:
+	{
+		// _clipToSample = _sampleCollection.samples[_sampleCollection.length - 1];
+		SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* L_18 = __this->____sampleCollection_18;
+		NullCheck(L_18);
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_19 = L_18->___samples_0;
+		SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* L_20 = __this->____sampleCollection_18;
+		NullCheck(L_20);
+		int32_t L_21;
+		L_21 = SampleCollection_get_length_mB42A3EAF2CB5B8F16CBF5D91048A6DC72A17BD3B(L_20, NULL);
+		NullCheck(L_19);
+		int32_t L_22 = ((int32_t)il2cpp_codegen_subtract(L_21, 1));
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 L_23 = (L_19)->GetAt(static_cast<il2cpp_array_size_t>(L_22));
+		__this->____clipToSample_12 = L_23;
+	}
+
+IL_00cd:
+	{
+		// _sampleCount = _sampleCollection.GetClippedSampleCount(_clipFrom, _clipTo, out start, out end);
+		SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* L_24 = __this->____sampleCollection_18;
+		double L_25 = __this->____clipFrom_14;
+		double L_26 = __this->____clipTo_15;
+		NullCheck(L_24);
+		int32_t L_27;
+		L_27 = SampleCollection_GetClippedSampleCount_m2D15178087169063141251347714E028A86EC990(L_24, L_25, L_26, (&V_0), (&V_1), NULL);
+		__this->____sampleCount_25 = L_27;
+		// _sampleCollection.GetSamplingValues(_clipFrom, out _startSampleIndex, out lerp);
+		SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* L_28 = __this->____sampleCollection_18;
+		double L_29 = __this->____clipFrom_14;
+		int32_t* L_30 = (&__this->____startSampleIndex_26);
+		NullCheck(L_28);
+		SampleCollection_GetSamplingValues_mEFAC249D9870E0F0EE0CFC9637EF39BBC68AE843(L_28, L_29, L_30, (&V_2), NULL);
 		// }
 		return;
 	}
@@ -9864,11 +10559,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double SplineUser_ClipPercent_mED0EF31DFC5F9C
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineUser_ClipPercent_mA5A8CE8C0D8B3462062250BFCB594C93A3E64885 (SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE* __this, double* ___percent0, const RuntimeMethod* method) 
 {
 	{
-		// if (sampleCollection.Count == 0)
-		SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* L_0 = __this->___sampleCollection_11;
+		// if (_sampleCollection.length == 0)
+		SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* L_0 = __this->____sampleCollection_18;
 		NullCheck(L_0);
 		int32_t L_1;
-		L_1 = SampleCollection_get_Count_m4CD74F577287B307B57A1E6A07AA4A7D5032128F(L_0, NULL);
+		L_1 = SampleCollection_get_length_mB42A3EAF2CB5B8F16CBF5D91048A6DC72A17BD3B(L_0, NULL);
 		if (L_1)
 		{
 			goto IL_0019;
@@ -10187,8 +10882,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t SplineUser_GetSampleIndex_m27A00002BC
 	int32_t V_0 = 0;
 	double V_1 = 0.0;
 	{
-		// sampleCollection.GetSamplingValues(UnclipPercent(percent), out index, out lerp);
-		SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* L_0 = __this->___sampleCollection_11;
+		// _sampleCollection.GetSamplingValues(UnclipPercent(percent), out index, out lerp);
+		SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* L_0 = __this->____sampleCollection_18;
 		double L_1 = ___percent0;
 		double L_2;
 		L_2 = SplineUser_UnclipPercent_m72517A645203A5148B9028F686B0CC626769AC67(__this, L_1, NULL);
@@ -10203,8 +10898,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t SplineUser_GetSampleIndex_m27A00002BC
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 SplineUser_EvaluatePosition_mAB7DD1E0216F271474D92B1D6ABAFEC6303AD0DC (SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE* __this, double ___percent0, const RuntimeMethod* method) 
 {
 	{
-		// return sampleCollection.EvaluatePosition(UnclipPercent(percent));
-		SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* L_0 = __this->___sampleCollection_11;
+		// return _sampleCollection.EvaluatePosition(UnclipPercent(percent));
+		SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* L_0 = __this->____sampleCollection_18;
 		double L_1 = ___percent0;
 		double L_2;
 		L_2 = SplineUser_UnclipPercent_m72517A645203A5148B9028F686B0CC626769AC67(__this, L_1, NULL);
@@ -10214,61 +10909,47 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 		return L_3;
 	}
 }
-// System.Void Dreamteck.Splines.SplineUser::Evaluate(System.Double,Dreamteck.Splines.SplineSample)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineUser_Evaluate_m91FFF67B6286E06723C5A4CF5E25D6CF30A36722 (SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE* __this, double ___percent0, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ___result1, const RuntimeMethod* method) 
+// System.Void Dreamteck.Splines.SplineUser::Evaluate(System.Double,Dreamteck.Splines.SplineSample&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineUser_Evaluate_m9E8A8AD4FFABC3D03F502DF4878DA05CF5387A74 (SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE* __this, double ___percent0, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ___result1, const RuntimeMethod* method) 
 {
 	{
-		// sampleCollection.Evaluate(UnclipPercent(percent), result);
-		SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* L_0 = __this->___sampleCollection_11;
+		// _sampleCollection.Evaluate(UnclipPercent(percent), ref result);
+		SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* L_0 = __this->____sampleCollection_18;
 		double L_1 = ___percent0;
 		double L_2;
 		L_2 = SplineUser_UnclipPercent_m72517A645203A5148B9028F686B0CC626769AC67(__this, L_1, NULL);
 		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_3 = ___result1;
 		NullCheck(L_0);
-		SampleCollection_Evaluate_mF6024ABA400EE30B80F468DCF53A1C28ACE21306(L_0, L_2, L_3, NULL);
+		SampleCollection_Evaluate_mAAC912C0D30624A4CE054FDD16943264D579BD20(L_0, L_2, L_3, NULL);
 		// result.percent = DMath.Clamp01(percent);
 		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_4 = ___result1;
 		double L_5 = ___percent0;
 		double L_6;
 		L_6 = DMath_Clamp01_mB366A5E5D6963102BBC75A3CE5FA29E5B50F46A2(L_5, NULL);
-		NullCheck(L_4);
 		L_4->___percent_5 = L_6;
 		// }
 		return;
 	}
 }
 // Dreamteck.Splines.SplineSample Dreamteck.Splines.SplineUser::Evaluate(System.Double)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* SplineUser_Evaluate_mE303282CD880F8B361ED9D7898D3B6F781B64901 (SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE* __this, double ___percent0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 SplineUser_Evaluate_mE303282CD880F8B361ED9D7898D3B6F781B64901 (SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE* __this, double ___percent0, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* V_0 = NULL;
+	SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 V_0;
+	memset((&V_0), 0, sizeof(V_0));
 	{
 		// SplineSample result = new SplineSample();
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_0 = (SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143*)il2cpp_codegen_object_new(SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143_il2cpp_TypeInfo_var);
-		NullCheck(L_0);
-		SplineSample__ctor_m7DA9B02EC62251E38E12FAD0BACEE7E75DDC61DB(L_0, NULL);
-		V_0 = L_0;
-		// Evaluate(UnclipPercent(percent), result);
+		il2cpp_codegen_initobj((&V_0), sizeof(SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143));
+		// Evaluate(percent, ref result);
+		double L_0 = ___percent0;
+		SplineUser_Evaluate_m9E8A8AD4FFABC3D03F502DF4878DA05CF5387A74(__this, L_0, (&V_0), NULL);
+		// result.percent = DMath.Clamp01(percent);
 		double L_1 = ___percent0;
 		double L_2;
-		L_2 = SplineUser_UnclipPercent_m72517A645203A5148B9028F686B0CC626769AC67(__this, L_1, NULL);
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_3 = V_0;
-		SplineUser_Evaluate_m91FFF67B6286E06723C5A4CF5E25D6CF30A36722(__this, L_2, L_3, NULL);
-		// result.percent = DMath.Clamp01(percent);
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_4 = V_0;
-		double L_5 = ___percent0;
-		double L_6;
-		L_6 = DMath_Clamp01_mB366A5E5D6963102BBC75A3CE5FA29E5B50F46A2(L_5, NULL);
-		NullCheck(L_4);
-		L_4->___percent_5 = L_6;
+		L_2 = DMath_Clamp01_mB366A5E5D6963102BBC75A3CE5FA29E5B50F46A2(L_1, NULL);
+		(&V_0)->___percent_5 = L_2;
 		// return result;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_7 = V_0;
-		return L_7;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 L_3 = V_0;
+		return L_3;
 	}
 }
 // System.Void Dreamteck.Splines.SplineUser::Evaluate(Dreamteck.Splines.SplineSample[]&,System.Double,System.Double)
@@ -10276,8 +10957,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineUser_Evaluate_m3E2CC0E79E47BB4FCBA
 {
 	int32_t V_0 = 0;
 	{
-		// sampleCollection.Evaluate(ref results, UnclipPercent(from), UnclipPercent(to));
-		SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* L_0 = __this->___sampleCollection_11;
+		// _sampleCollection.Evaluate(ref results, UnclipPercent(from), UnclipPercent(to));
+		SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* L_0 = __this->____sampleCollection_18;
 		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF** L_1 = ___results0;
 		double L_2 = ___from1;
 		double L_3;
@@ -10289,7 +10970,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineUser_Evaluate_m3E2CC0E79E47BB4FCBA
 		SampleCollection_Evaluate_m24254B2BC7A002B010CD6DA2DC13F6AA2B9CB93E(L_0, L_1, L_3, L_5, NULL);
 		// for (int i = 0; i < results.Length; i++)
 		V_0 = 0;
-		goto IL_0031;
+		goto IL_0035;
 	}
 
 IL_001e:
@@ -10299,24 +10980,21 @@ IL_001e:
 		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_7 = *((SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF**)L_6);
 		int32_t L_8 = V_0;
 		NullCheck(L_7);
-		int32_t L_9 = L_8;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_10 = (L_7)->GetAt(static_cast<il2cpp_array_size_t>(L_9));
-		NullCheck(L_10);
-		double* L_11 = (&L_10->___percent_5);
-		SplineUser_ClipPercent_mA5A8CE8C0D8B3462062250BFCB594C93A3E64885(__this, L_11, NULL);
+		double* L_9 = (&((L_7)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_8)))->___percent_5);
+		SplineUser_ClipPercent_mA5A8CE8C0D8B3462062250BFCB594C93A3E64885(__this, L_9, NULL);
 		// for (int i = 0; i < results.Length; i++)
-		int32_t L_12 = V_0;
-		V_0 = ((int32_t)il2cpp_codegen_add(L_12, 1));
+		int32_t L_10 = V_0;
+		V_0 = ((int32_t)il2cpp_codegen_add(L_10, 1));
 	}
 
-IL_0031:
+IL_0035:
 	{
 		// for (int i = 0; i < results.Length; i++)
-		int32_t L_13 = V_0;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF** L_14 = ___results0;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_15 = *((SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF**)L_14);
-		NullCheck(L_15);
-		if ((((int32_t)L_13) < ((int32_t)((int32_t)(((RuntimeArray*)L_15)->max_length)))))
+		int32_t L_11 = V_0;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF** L_12 = ___results0;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_13 = *((SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF**)L_12);
+		NullCheck(L_13);
+		if ((((int32_t)L_11) < ((int32_t)((int32_t)(((RuntimeArray*)L_13)->max_length)))))
 		{
 			goto IL_001e;
 		}
@@ -10330,8 +11008,8 @@ IL_0031:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineUser_EvaluatePositions_m462A1280F9EC5D62F5E1C0880E9AEC6D76D6FB9E (SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE* __this, Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C** ___positions0, double ___from1, double ___to2, const RuntimeMethod* method) 
 {
 	{
-		// sampleCollection.EvaluatePositions(ref positions, UnclipPercent(from), UnclipPercent(to));
-		SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* L_0 = __this->___sampleCollection_11;
+		// _sampleCollection.EvaluatePositions(ref positions, UnclipPercent(from), UnclipPercent(to));
+		SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* L_0 = __this->____sampleCollection_18;
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C** L_1 = ___positions0;
 		double L_2 = ___from1;
 		double L_3;
@@ -10412,8 +11090,8 @@ IL_003c:
 
 IL_004b:
 	{
-		// double result = sampleCollection.Travel(UnclipPercent(start), distance, direction, out moved, clipFrom, clipTo);
-		SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* L_8 = __this->___sampleCollection_11;
+		// double result = _sampleCollection.Travel(UnclipPercent(start), distance, direction, out moved, clipFrom, clipTo);
+		SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* L_8 = __this->____sampleCollection_18;
 		double L_9 = ___start0;
 		double L_10;
 		L_10 = SplineUser_UnclipPercent_m72517A645203A5148B9028F686B0CC626769AC67(__this, L_9, NULL);
@@ -10516,8 +11194,8 @@ IL_003c:
 
 IL_004b:
 	{
-		// double result = sampleCollection.TravelWithOffset(UnclipPercent(start), distance, direction, offset, out moved, clipFrom, clipTo);
-		SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* L_8 = __this->___sampleCollection_11;
+		// double result = _sampleCollection.TravelWithOffset(UnclipPercent(start), distance, direction, offset, out moved, clipFrom, clipTo);
+		SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* L_8 = __this->____sampleCollection_18;
 		double L_9 = ___start0;
 		double L_10;
 		L_10 = SplineUser_UnclipPercent_m72517A645203A5148B9028F686B0CC626769AC67(__this, L_9, NULL);
@@ -10540,8 +11218,8 @@ IL_004b:
 		return L_19;
 	}
 }
-// System.Void Dreamteck.Splines.SplineUser::Project(UnityEngine.Vector3,Dreamteck.Splines.SplineSample,System.Double,System.Double)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineUser_Project_m31301DD6D890216BDCE13B2033B230290F9A818E (SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___position0, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ___result1, double ___from2, double ___to3, const RuntimeMethod* method) 
+// System.Void Dreamteck.Splines.SplineUser::Project(UnityEngine.Vector3,Dreamteck.Splines.SplineSample&,System.Double,System.Double)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineUser_Project_m8C1D32C1B082E4C51778843DE2BF2B0CD7FA0494 (SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___position0, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ___result1, double ___from2, double ___to3, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -10567,8 +11245,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineUser_Project_m31301DD6D890216BDCE1
 
 IL_000f:
 	{
-		// sampleCollection.Project(position, _spline.pointCount, result, UnclipPercent(from), UnclipPercent(to));
-		SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* L_2 = __this->___sampleCollection_11;
+		// _sampleCollection.Project(position, _spline.pointCount, ref result, UnclipPercent(from), UnclipPercent(to));
+		SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* L_2 = __this->____sampleCollection_18;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3 = ___position0;
 		SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* L_4 = __this->____spline_5;
 		NullCheck(L_4);
@@ -10582,10 +11260,9 @@ IL_000f:
 		double L_10;
 		L_10 = SplineUser_UnclipPercent_m72517A645203A5148B9028F686B0CC626769AC67(__this, L_9, NULL);
 		NullCheck(L_2);
-		SampleCollection_Project_m9B76C6B2E3A8200FDADAC758D417BFC581817F4A(L_2, L_3, L_5, L_6, L_8, L_10, NULL);
+		SampleCollection_Project_mB4F44CAE815483E587671F56A0C61C5BFF66F6B7(L_2, L_3, L_5, L_6, L_8, L_10, NULL);
 		// ClipPercent(ref result.percent);
 		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_11 = ___result1;
-		NullCheck(L_11);
 		double* L_12 = (&L_11->___percent_5);
 		SplineUser_ClipPercent_mA5A8CE8C0D8B3462062250BFCB594C93A3E64885(__this, L_12, NULL);
 		// }
@@ -10596,8 +11273,8 @@ IL_000f:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float SplineUser_CalculateLength_m2E1DA79AA14F0B903B251A7CA77F1518727892CE (SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE* __this, double ___from0, double ___to1, const RuntimeMethod* method) 
 {
 	{
-		// return sampleCollection.CalculateLength(UnclipPercent(from), UnclipPercent(to));
-		SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* L_0 = __this->___sampleCollection_11;
+		// return _sampleCollection.CalculateLength(UnclipPercent(from), UnclipPercent(to));
+		SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* L_0 = __this->____sampleCollection_18;
 		double L_1 = ___from0;
 		double L_2;
 		L_2 = SplineUser_UnclipPercent_m72517A645203A5148B9028F686B0CC626769AC67(__this, L_1, NULL);
@@ -10614,8 +11291,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float SplineUser_CalculateLength_m2E1DA79AA14
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float SplineUser_CalculateLengthWithOffset_m39A3003400FC281AAA1F5A77B3248E0B1A0E8AAC (SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___offset0, double ___from1, double ___to2, const RuntimeMethod* method) 
 {
 	{
-		// return sampleCollection.CalculateLengthWithOffset(offset, UnclipPercent(from), UnclipPercent(to));
-		SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* L_0 = __this->___sampleCollection_11;
+		// return _sampleCollection.CalculateLengthWithOffset(offset, UnclipPercent(from), UnclipPercent(to));
+		SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* L_0 = __this->____sampleCollection_18;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1 = ___offset0;
 		double L_2 = ___from1;
 		double L_3;
@@ -10633,21 +11310,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float SplineUser_CalculateLengthWithOffset_m3
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineUser_OnBeforeSerialize_m4394DA7342F085D9E4C85D878F86C1AA53368CF3 (SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE* __this, const RuntimeMethod* method) 
 {
 	{
-		// sampleCollection.clipFrom = _clipFrom;
-		SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* L_0 = __this->___sampleCollection_11;
-		double L_1 = __this->____clipFrom_15;
-		NullCheck(L_0);
-		L_0->___clipFrom_4 = L_1;
-		// sampleCollection.clipTo = _clipTo;
-		SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* L_2 = __this->___sampleCollection_11;
-		double L_3 = __this->____clipTo_16;
-		NullCheck(L_2);
-		L_2->___clipTo_5 = L_3;
-		// sampleCollection.loopSamples = _loopSamples;
-		SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* L_4 = __this->___sampleCollection_11;
-		bool L_5 = __this->____loopSamples_14;
-		NullCheck(L_4);
-		L_4->___loopSamples_6 = L_5;
 		// }
 		return;
 	}
@@ -10655,100 +11317,43 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineUser_OnBeforeSerialize_m4394DA7342
 // System.Void Dreamteck.Splines.SplineUser::OnAfterDeserialize()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineUser_OnAfterDeserialize_m0FE222F831020760B1858C3A5BFACF1B05D1E87C (SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		// if (!_isUpdated)
-		bool L_0 = __this->____isUpdated_31;
-		if (L_0)
-		{
-			goto IL_005b;
-		}
-	}
-	{
-		// _clipFrom = sampleCollection.clipFrom;
-		SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* L_1 = __this->___sampleCollection_11;
-		NullCheck(L_1);
-		double L_2 = L_1->___clipFrom_4;
-		__this->____clipFrom_15 = L_2;
-		// _clipTo = sampleCollection.clipTo;
-		SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* L_3 = __this->___sampleCollection_11;
-		NullCheck(L_3);
-		double L_4 = L_3->___clipTo_5;
-		__this->____clipTo_16 = L_4;
-		// _loopSamples = sampleCollection.loopSamples;
-		SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* L_5 = __this->___sampleCollection_11;
-		NullCheck(L_5);
-		bool L_6 = L_5->___loopSamples_6;
-		__this->____loopSamples_14 = L_6;
-		// _isUpdated = true;
-		__this->____isUpdated_31 = (bool)1;
-		// if (spline)
-		SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* L_7;
-		L_7 = SplineUser_get_spline_mFCDA5843B398053A190E9A6B6971331A19033E15_inline(__this, NULL);
-		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		bool L_8;
-		L_8 = Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A(L_7, NULL);
-		if (!L_8)
-		{
-			goto IL_005b;
-		}
-	}
-	{
-		// spline.Subscribe(this);
-		SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* L_9;
-		L_9 = SplineUser_get_spline_mFCDA5843B398053A190E9A6B6971331A19033E15_inline(__this, NULL);
-		NullCheck(L_9);
-		SplineComputer_Subscribe_m1E5BF1D5CF2B807ED4302E1EB6B490143E83FAAD(L_9, __this, NULL);
-	}
-
-IL_005b:
 	{
 		// }
 		return;
 	}
 }
 // UnityEngine.Vector3 Dreamteck.Splines.SplineUser::TransformOffset(Dreamteck.Splines.SplineSample,UnityEngine.Vector3)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 SplineUser_TransformOffset_mFDEF031F967F1C74E0D60465DF9BC38441D0309B (SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ___sample0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___localOffset1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 SplineUser_TransformOffset_mFDEF031F967F1C74E0D60465DF9BC38441D0309B (SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 ___sample0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___localOffset1, const RuntimeMethod* method) 
 {
 	{
 		// return (sample.right * localOffset.x + sample.up * localOffset.y + sample.forward * localOffset.z) * sample.size;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_0 = ___sample0;
-		NullCheck(L_0);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1;
-		L_1 = SplineSample_get_right_mEAF1BE463979ED78C482FEADFCCE3E694E3DA491(L_0, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2 = ___localOffset1;
-		float L_3 = L_2.___x_2;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4;
-		L_4 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_1, L_3, NULL);
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_5 = ___sample0;
-		NullCheck(L_5);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = L_5->___up_1;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_7 = ___localOffset1;
-		float L_8 = L_7.___y_3;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0;
+		L_0 = SplineSample_get_right_mEAF1BE463979ED78C482FEADFCCE3E694E3DA491((&___sample0), NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1 = ___localOffset1;
+		float L_2 = L_1.___x_2;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3;
+		L_3 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_0, L_2, NULL);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 L_4 = ___sample0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5 = L_4.___up_1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___localOffset1;
+		float L_7 = L_6.___y_3;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8;
+		L_8 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_5, L_7, NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9;
-		L_9 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_6, L_8, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10;
-		L_10 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_4, L_9, NULL);
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_11 = ___sample0;
-		NullCheck(L_11);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12 = L_11->___forward_2;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_13 = ___localOffset1;
-		float L_14 = L_13.___z_4;
+		L_9 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_3, L_8, NULL);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 L_10 = ___sample0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_11 = L_10.___forward_2;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12 = ___localOffset1;
+		float L_13 = L_12.___z_4;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_14;
+		L_14 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_11, L_13, NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_15;
-		L_15 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_12, L_14, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_16;
-		L_16 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_10, L_15, NULL);
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_17 = ___sample0;
-		NullCheck(L_17);
-		float L_18 = L_17->___size_4;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_19;
-		L_19 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_16, L_18, NULL);
-		return L_19;
+		L_15 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_9, L_14, NULL);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 L_16 = ___sample0;
+		float L_17 = L_16.___size_4;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_18;
+		L_18 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_15, L_17, NULL);
+		return L_18;
 	}
 }
 // System.Void Dreamteck.Splines.SplineUser::.ctor()
@@ -10762,7 +11367,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineUser__ctor_mEE63396AB9A2A932D2BCA5
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RotationModifier_tFF6A3FB575FDBEAA61EF0A57017019986EAC0607_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SizeModifier_t3DD6048AE4DEB93810D8325EDB2065AA05671BEE_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
@@ -10792,34 +11396,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SplineUser__ctor_mEE63396AB9A2A932D2BCA5
 		SizeModifier__ctor_mD1F7E4B797D0B8FF0E4074F1711253D4727CB184(L_3, NULL);
 		__this->____sizeModifier_10 = L_3;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____sizeModifier_10), (void*)L_3);
-		// private SampleCollection sampleCollection = new SampleCollection();
+		// private double _clipTo = 1.0;
+		__this->____clipTo_15 = (1.0);
+		// private float animClipTo = 1f;
+		__this->___animClipTo_17 = (1.0f);
+		// private SampleCollection _sampleCollection = new SampleCollection();
 		SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* L_4 = (SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265*)il2cpp_codegen_object_new(SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265_il2cpp_TypeInfo_var);
 		NullCheck(L_4);
 		SampleCollection__ctor_m2B54EDA6616B6E2BE005422C239068BAC475EAC3(L_4, NULL);
-		__this->___sampleCollection_11 = L_4;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___sampleCollection_11), (void*)L_4);
-		// private SplineSample clipFromSample = new SplineSample(), clipToSample = new SplineSample();
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_5 = (SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143*)il2cpp_codegen_object_new(SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143_il2cpp_TypeInfo_var);
-		NullCheck(L_5);
-		SplineSample__ctor_m7DA9B02EC62251E38E12FAD0BACEE7E75DDC61DB(L_5, NULL);
-		__this->___clipFromSample_12 = L_5;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___clipFromSample_12), (void*)L_5);
-		// private SplineSample clipFromSample = new SplineSample(), clipToSample = new SplineSample();
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_6 = (SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143*)il2cpp_codegen_object_new(SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143_il2cpp_TypeInfo_var);
-		NullCheck(L_6);
-		SplineSample__ctor_m7DA9B02EC62251E38E12FAD0BACEE7E75DDC61DB(L_6, NULL);
-		__this->___clipToSample_13 = L_6;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___clipToSample_13), (void*)L_6);
-		// private double _clipTo = 1.0;
-		__this->____clipTo_16 = (1.0);
-		// private float animClipTo = 1f;
-		__this->___animClipTo_18 = (1.0f);
-		// protected SplineSample evalResult = new SplineSample();
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_7 = (SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143*)il2cpp_codegen_object_new(SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143_il2cpp_TypeInfo_var);
-		NullCheck(L_7);
-		SplineSample__ctor_m7DA9B02EC62251E38E12FAD0BACEE7E75DDC61DB(L_7, NULL);
-		__this->___evalResult_26 = L_7;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___evalResult_26), (void*)L_7);
+		__this->____sampleCollection_18 = L_4;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____sampleCollection_18), (void*)L_4);
+		// public bool buildOnAwake = true;
+		__this->___buildOnAwake_29 = (bool)1;
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
 	}
@@ -10837,7 +11425,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float SurfaceGenerator_get_expand_m52A4551D4E
 {
 	{
 		// get { return _expand; }
-		float L_0 = __this->____expand_60;
+		float L_0 = __this->____expand_61;
 		return L_0;
 	}
 }
@@ -10847,7 +11435,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SurfaceGenerator_set_expand_m1052ADE3681
 	{
 		// if (value != _expand)
 		float L_0 = ___value0;
-		float L_1 = __this->____expand_60;
+		float L_1 = __this->____expand_61;
 		if ((((float)L_0) == ((float)L_1)))
 		{
 			goto IL_0016;
@@ -10856,7 +11444,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SurfaceGenerator_set_expand_m1052ADE3681
 	{
 		// _expand = value;
 		float L_2 = ___value0;
-		__this->____expand_60 = L_2;
+		__this->____expand_61 = L_2;
 		// Rebuild();
 		VirtualActionInvoker0::Invoke(12 /* System.Void Dreamteck.Splines.SplineUser::Rebuild() */, __this);
 	}
@@ -10872,7 +11460,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float SurfaceGenerator_get_extrude_mD73278140
 {
 	{
 		// get { return _extrude; }
-		float L_0 = __this->____extrude_61;
+		float L_0 = __this->____extrude_62;
 		return L_0;
 	}
 }
@@ -10882,7 +11470,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SurfaceGenerator_set_extrude_mC12BD4C384
 	{
 		// if (value != _extrude)
 		float L_0 = ___value0;
-		float L_1 = __this->____extrude_61;
+		float L_1 = __this->____extrude_62;
 		if ((((float)L_0) == ((float)L_1)))
 		{
 			goto IL_0016;
@@ -10891,7 +11479,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SurfaceGenerator_set_extrude_mC12BD4C384
 	{
 		// _extrude = value;
 		float L_2 = ___value0;
-		__this->____extrude_61 = L_2;
+		__this->____extrude_62 = L_2;
 		// Rebuild();
 		VirtualActionInvoker0::Invoke(12 /* System.Void Dreamteck.Splines.SplineUser::Rebuild() */, __this);
 	}
@@ -10907,7 +11495,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double SurfaceGenerator_get_extrudeClipFrom_m
 {
 	{
 		// get { return _extrudeFrom; }
-		double L_0 = __this->____extrudeFrom_72;
+		double L_0 = __this->____extrudeFrom_74;
 		return L_0;
 	}
 }
@@ -10917,7 +11505,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SurfaceGenerator_set_extrudeClipFrom_m2D
 	{
 		// if (value != _extrudeFrom)
 		double L_0 = ___value0;
-		double L_1 = __this->____extrudeFrom_72;
+		double L_1 = __this->____extrudeFrom_74;
 		if ((((double)L_0) == ((double)L_1)))
 		{
 			goto IL_0016;
@@ -10926,7 +11514,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SurfaceGenerator_set_extrudeClipFrom_m2D
 	{
 		// _extrudeFrom = value;
 		double L_2 = ___value0;
-		__this->____extrudeFrom_72 = L_2;
+		__this->____extrudeFrom_74 = L_2;
 		// Rebuild();
 		VirtualActionInvoker0::Invoke(12 /* System.Void Dreamteck.Splines.SplineUser::Rebuild() */, __this);
 	}
@@ -10942,7 +11530,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double SurfaceGenerator_get_extrudeClipTo_m96
 {
 	{
 		// get { return _extrudeTo; }
-		double L_0 = __this->____extrudeTo_73;
+		double L_0 = __this->____extrudeTo_75;
 		return L_0;
 	}
 }
@@ -10952,7 +11540,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SurfaceGenerator_set_extrudeClipTo_m102E
 	{
 		// if (value != _extrudeTo)
 		double L_0 = ___value0;
-		double L_1 = __this->____extrudeTo_73;
+		double L_1 = __this->____extrudeTo_75;
 		if ((((double)L_0) == ((double)L_1)))
 		{
 			goto IL_0016;
@@ -10961,7 +11549,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SurfaceGenerator_set_extrudeClipTo_m102E
 	{
 		// _extrudeTo = value;
 		double L_2 = ___value0;
-		__this->____extrudeTo_73 = L_2;
+		__this->____extrudeTo_75 = L_2;
 		// Rebuild();
 		VirtualActionInvoker0::Invoke(12 /* System.Void Dreamteck.Splines.SplineUser::Rebuild() */, __this);
 	}
@@ -10977,7 +11565,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D
 {
 	{
 		// get { return _sideUvScale; }
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_0 = __this->____sideUvScale_62;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_0 = __this->____sideUvScale_63;
 		return L_0;
 	}
 }
@@ -10987,7 +11575,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SurfaceGenerator_set_sideUvScale_m99B9A0
 	{
 		// if (value != _sideUvScale)
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_0 = ___value0;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_1 = __this->____sideUvScale_62;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_1 = __this->____sideUvScale_63;
 		bool L_2;
 		L_2 = Vector2_op_Inequality_mBEA93B5A0E954FEFB863DC61CB209119980EC713_inline(L_0, L_1, NULL);
 		if (!L_2)
@@ -10998,7 +11586,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SurfaceGenerator_set_sideUvScale_m99B9A0
 	{
 		// _sideUvScale = value;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_3 = ___value0;
-		__this->____sideUvScale_62 = L_3;
+		__this->____sideUvScale_63 = L_3;
 		// Rebuild();
 		VirtualActionInvoker0::Invoke(12 /* System.Void Dreamteck.Splines.SplineUser::Rebuild() */, __this);
 		return;
@@ -11006,9 +11594,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SurfaceGenerator_set_sideUvScale_m99B9A0
 
 IL_001c:
 	{
-		// else _sideUvScale = value;
+		// _sideUvScale = value;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_4 = ___value0;
-		__this->____sideUvScale_62 = L_4;
+		__this->____sideUvScale_63 = L_4;
 		// }
 		return;
 	}
@@ -11018,7 +11606,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D
 {
 	{
 		// get { return _sideUvOffset; }
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_0 = __this->____sideUvOffset_63;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_0 = __this->____sideUvOffset_64;
 		return L_0;
 	}
 }
@@ -11028,7 +11616,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SurfaceGenerator_set_sideUvOffset_m527FC
 	{
 		// if (value != _sideUvOffset)
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_0 = ___value0;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_1 = __this->____sideUvOffset_63;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_1 = __this->____sideUvOffset_64;
 		bool L_2;
 		L_2 = Vector2_op_Inequality_mBEA93B5A0E954FEFB863DC61CB209119980EC713_inline(L_0, L_1, NULL);
 		if (!L_2)
@@ -11039,7 +11627,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SurfaceGenerator_set_sideUvOffset_m527FC
 	{
 		// _sideUvOffset = value;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_3 = ___value0;
-		__this->____sideUvOffset_63 = L_3;
+		__this->____sideUvOffset_64 = L_3;
 		// Rebuild();
 		VirtualActionInvoker0::Invoke(12 /* System.Void Dreamteck.Splines.SplineUser::Rebuild() */, __this);
 		return;
@@ -11047,9 +11635,48 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SurfaceGenerator_set_sideUvOffset_m527FC
 
 IL_001c:
 	{
-		// else _sideUvOffset = value;
+		// _sideUvOffset = value;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_4 = ___value0;
-		__this->____sideUvOffset_63 = L_4;
+		__this->____sideUvOffset_64 = L_4;
+		// }
+		return;
+	}
+}
+// System.Single Dreamteck.Splines.SurfaceGenerator::get_sideUvRotation()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float SurfaceGenerator_get_sideUvRotation_mF2815251DE7C5153A00918361B66A350D38BFB98 (SurfaceGenerator_tDFCDF8C58D9EE70F31FF2AA4700B256F46B58258* __this, const RuntimeMethod* method) 
+{
+	{
+		// get { return _sideUvRotation; }
+		float L_0 = __this->____sideUvRotation_65;
+		return L_0;
+	}
+}
+// System.Void Dreamteck.Splines.SurfaceGenerator::set_sideUvRotation(System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SurfaceGenerator_set_sideUvRotation_m1A92D3801DFFF41604DEDA3C459916086FC53155 (SurfaceGenerator_tDFCDF8C58D9EE70F31FF2AA4700B256F46B58258* __this, float ___value0, const RuntimeMethod* method) 
+{
+	{
+		// if (value != _sideUvRotation)
+		float L_0 = ___value0;
+		float L_1 = __this->____sideUvRotation_65;
+		if ((((float)L_0) == ((float)L_1)))
+		{
+			goto IL_0017;
+		}
+	}
+	{
+		// _sideUvRotation = value;
+		float L_2 = ___value0;
+		__this->____sideUvRotation_65 = L_2;
+		// Rebuild();
+		VirtualActionInvoker0::Invoke(12 /* System.Void Dreamteck.Splines.SplineUser::Rebuild() */, __this);
+		return;
+	}
+
+IL_0017:
+	{
+		// _sideUvRotation = value;
+		float L_3 = ___value0;
+		__this->____sideUvRotation_65 = L_3;
 		// }
 		return;
 	}
@@ -11059,7 +11686,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR SplineComputer_tD91FD662973937372715D22E05E6C
 {
 	{
 		// get { return _extrudeSpline; }
-		SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* L_0 = __this->____extrudeSpline_64;
+		SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* L_0 = __this->____extrudeSpline_66;
 		return L_0;
 	}
 }
@@ -11075,7 +11702,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SurfaceGenerator_set_extrudeSpline_m3B49
 	{
 		// if (value != _extrudeSpline)
 		SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* L_0 = ___value0;
-		SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* L_1 = __this->____extrudeSpline_64;
+		SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* L_1 = __this->____extrudeSpline_66;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_2;
 		L_2 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_0, L_1, NULL);
@@ -11086,7 +11713,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SurfaceGenerator_set_extrudeSpline_m3B49
 	}
 	{
 		// if (_extrudeSpline != null)
-		SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* L_3 = __this->____extrudeSpline_64;
+		SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* L_3 = __this->____extrudeSpline_66;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_4;
 		L_4 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_3, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
@@ -11097,7 +11724,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SurfaceGenerator_set_extrudeSpline_m3B49
 	}
 	{
 		// _extrudeSpline.Unsubscribe(this);
-		SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* L_5 = __this->____extrudeSpline_64;
+		SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* L_5 = __this->____extrudeSpline_66;
 		NullCheck(L_5);
 		SplineComputer_Unsubscribe_mDBCCBF9C301B9B8C725113E7409DFD0802540BE2(L_5, __this, NULL);
 	}
@@ -11106,8 +11733,8 @@ IL_0028:
 	{
 		// _extrudeSpline = value;
 		SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* L_6 = ___value0;
-		__this->____extrudeSpline_64 = L_6;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____extrudeSpline_64), (void*)L_6);
+		__this->____extrudeSpline_66 = L_6;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____extrudeSpline_66), (void*)L_6);
 		// if (value != null)
 		SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* L_7 = ___value0;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
@@ -11120,7 +11747,7 @@ IL_0028:
 	}
 	{
 		// _extrudeSpline.Subscribe(this);
-		SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* L_9 = __this->____extrudeSpline_64;
+		SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* L_9 = __this->____extrudeSpline_66;
 		NullCheck(L_9);
 		SplineComputer_Subscribe_m1E5BF1D5CF2B807ED4302E1EB6B490143E83FAAD(L_9, __this, NULL);
 	}
@@ -11142,7 +11769,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 {
 	{
 		// get { return _extrudeOffset; }
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = __this->____extrudeOffset_65;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = __this->____extrudeOffset_67;
 		return L_0;
 	}
 }
@@ -11152,7 +11779,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SurfaceGenerator_set_extrudeOffset_m233D
 	{
 		// if(value != _extrudeOffset)
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___value0;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1 = __this->____extrudeOffset_65;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1 = __this->____extrudeOffset_67;
 		bool L_2;
 		L_2 = Vector3_op_Inequality_m9F170CDFBF1E490E559DA5D06D6547501A402BBF_inline(L_0, L_1, NULL);
 		if (!L_2)
@@ -11163,7 +11790,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SurfaceGenerator_set_extrudeOffset_m233D
 	{
 		// _extrudeOffset = value;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3 = ___value0;
-		__this->____extrudeOffset_65 = L_3;
+		__this->____extrudeOffset_67 = L_3;
 		// Rebuild();
 		VirtualActionInvoker0::Invoke(12 /* System.Void Dreamteck.Splines.SplineUser::Rebuild() */, __this);
 	}
@@ -11179,7 +11806,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SurfaceGenerator_get_uniformUvs_m56A2AC1
 {
 	{
 		// get { return _uniformUvs; }
-		bool L_0 = __this->____uniformUvs_74;
+		bool L_0 = __this->____uniformUvs_76;
 		return L_0;
 	}
 }
@@ -11189,7 +11816,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SurfaceGenerator_set_uniformUvs_mCBB9974
 	{
 		// if (value != _uniformUvs)
 		bool L_0 = ___value0;
-		bool L_1 = __this->____uniformUvs_74;
+		bool L_1 = __this->____uniformUvs_76;
 		if ((((int32_t)L_0) == ((int32_t)L_1)))
 		{
 			goto IL_0016;
@@ -11198,7 +11825,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SurfaceGenerator_set_uniformUvs_mCBB9974
 	{
 		// _uniformUvs = value;
 		bool L_2 = ___value0;
-		__this->____uniformUvs_74 = L_2;
+		__this->____uniformUvs_76 = L_2;
 		// Rebuild();
 		VirtualActionInvoker0::Invoke(12 /* System.Void Dreamteck.Splines.SplineUser::Rebuild() */, __this);
 	}
@@ -11209,43 +11836,47 @@ IL_0016:
 		return;
 	}
 }
-// System.Void Dreamteck.Splines.SurfaceGenerator::Awake()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SurfaceGenerator_Awake_mFACA178A5603FF0F035DA211F749296FC12E6AF7 (SurfaceGenerator_tDFCDF8C58D9EE70F31FF2AA4700B256F46B58258* __this, const RuntimeMethod* method) 
+// System.String Dreamteck.Splines.SurfaceGenerator::get_meshName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* SurfaceGenerator_get_meshName_m211891754CDEC5C98CC70DEA65BC461F229B87B4 (SurfaceGenerator_tDFCDF8C58D9EE70F31FF2AA4700B256F46B58258* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1E60ED2E7B21CE7BABE99A45D5D0998B513D58F1);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB854FB00C4B4A27C3F1B8572007239AB388C7ABA);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
+		// protected override string meshName => "Surface";
+		return _stringLiteralB854FB00C4B4A27C3F1B8572007239AB388C7ABA;
+	}
+}
+// System.Void Dreamteck.Splines.SurfaceGenerator::Awake()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SurfaceGenerator_Awake_mFACA178A5603FF0F035DA211F749296FC12E6AF7 (SurfaceGenerator_tDFCDF8C58D9EE70F31FF2AA4700B256F46B58258* __this, const RuntimeMethod* method) 
+{
+	{
 		// base.Awake();
 		MeshGenerator_Awake_m0B8F023A8612CDFFC6AAEE858462B8CB97B48960(__this, NULL);
-		// mesh.name = "surface";
-		Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* L_0 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___mesh_54;
-		NullCheck(L_0);
-		Object_set_name_mC79E6DC8FFD72479C90F0C4CC7F42A0FEAF5AE47(L_0, _stringLiteral1E60ED2E7B21CE7BABE99A45D5D0998B513D58F1, NULL);
 		// _trsRight = trs.right;
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_1;
-		L_1 = SplineUser_get_trs_m6F25CC917BE93D65101D7016F71C0BC4B9D089CF_inline(__this, NULL);
-		NullCheck(L_1);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2;
-		L_2 = Transform_get_right_mC6DC057C23313802E2186A9E0DB760D795A758A4(L_1, NULL);
-		__this->____trsRight_75 = L_2;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0;
+		L_0 = SplineUser_get_trs_m6F25CC917BE93D65101D7016F71C0BC4B9D089CF_inline(__this, NULL);
+		NullCheck(L_0);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1;
+		L_1 = Transform_get_right_mC6DC057C23313802E2186A9E0DB760D795A758A4(L_0, NULL);
+		__this->____trsRight_77 = L_1;
 		// _trsUp = trs.up;
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_3;
-		L_3 = SplineUser_get_trs_m6F25CC917BE93D65101D7016F71C0BC4B9D089CF_inline(__this, NULL);
-		NullCheck(L_3);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4;
-		L_4 = Transform_get_up_mE47A9D9D96422224DD0539AA5524DA5440145BB2(L_3, NULL);
-		__this->____trsUp_76 = L_4;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_2;
+		L_2 = SplineUser_get_trs_m6F25CC917BE93D65101D7016F71C0BC4B9D089CF_inline(__this, NULL);
+		NullCheck(L_2);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3;
+		L_3 = Transform_get_up_mE47A9D9D96422224DD0539AA5524DA5440145BB2(L_2, NULL);
+		__this->____trsUp_78 = L_3;
 		// _trsForward = trs.forward;
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_5;
-		L_5 = SplineUser_get_trs_m6F25CC917BE93D65101D7016F71C0BC4B9D089CF_inline(__this, NULL);
-		NullCheck(L_5);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6;
-		L_6 = Transform_get_forward_mFCFACF7165FDAB21E80E384C494DF278386CEE2F(L_5, NULL);
-		__this->____trsForward_77 = L_6;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_4;
+		L_4 = SplineUser_get_trs_m6F25CC917BE93D65101D7016F71C0BC4B9D089CF_inline(__this, NULL);
+		NullCheck(L_4);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5;
+		L_5 = Transform_get_forward_mFCFACF7165FDAB21E80E384C494DF278386CEE2F(L_4, NULL);
+		__this->____trsForward_79 = L_5;
 		// }
 		return;
 	}
@@ -11285,7 +11916,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SurfaceGenerator_LateUpdate_m029DD73E03D
 {
 	{
 		// if (multithreaded && trs.hasChanged)
-		bool L_0 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___multithreaded_27;
+		bool L_0 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___multithreaded_28;
 		il2cpp_codegen_memory_barrier();
 		if (!L_0)
 		{
@@ -11310,21 +11941,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SurfaceGenerator_LateUpdate_m029DD73E03D
 		NullCheck(L_3);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4;
 		L_4 = Transform_get_right_mC6DC057C23313802E2186A9E0DB760D795A758A4(L_3, NULL);
-		__this->____trsRight_75 = L_4;
+		__this->____trsRight_77 = L_4;
 		// _trsUp = trs.up;
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_5;
 		L_5 = SplineUser_get_trs_m6F25CC917BE93D65101D7016F71C0BC4B9D089CF_inline(__this, NULL);
 		NullCheck(L_5);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6;
 		L_6 = Transform_get_up_mE47A9D9D96422224DD0539AA5524DA5440145BB2(L_5, NULL);
-		__this->____trsUp_76 = L_6;
+		__this->____trsUp_78 = L_6;
 		// _trsForward = trs.forward;
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_7;
 		L_7 = SplineUser_get_trs_m6F25CC917BE93D65101D7016F71C0BC4B9D089CF_inline(__this, NULL);
 		NullCheck(L_7);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8;
 		L_8 = Transform_get_forward_mFCFACF7165FDAB21E80E384C494DF278386CEE2F(L_7, NULL);
-		__this->____trsForward_77 = L_8;
+		__this->____trsForward_79 = L_8;
 	}
 
 IL_004a:
@@ -11383,29 +12014,28 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SurfaceGenerator_Generate_m0308CC730E06F
 	int32_t V_29 = 0;
 	int32_t V_30 = 0;
 	int32_t G_B11_0 = 0;
-	int32_t G_B14_0 = 0;
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 G_B51_0;
-	memset((&G_B51_0), 0, sizeof(G_B51_0));
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* G_B51_1 = NULL;
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 G_B50_0;
-	memset((&G_B50_0), 0, sizeof(G_B50_0));
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* G_B50_1 = NULL;
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 G_B52_0;
-	memset((&G_B52_0), 0, sizeof(G_B52_0));
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 G_B52_1;
-	memset((&G_B52_1), 0, sizeof(G_B52_1));
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* G_B52_2 = NULL;
-	int32_t G_B82_0 = 0;
-	Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* G_B82_1 = NULL;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 G_B48_0;
+	memset((&G_B48_0), 0, sizeof(G_B48_0));
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* G_B48_1 = NULL;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 G_B47_0;
+	memset((&G_B47_0), 0, sizeof(G_B47_0));
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* G_B47_1 = NULL;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 G_B49_0;
+	memset((&G_B49_0), 0, sizeof(G_B49_0));
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 G_B49_1;
+	memset((&G_B49_1), 0, sizeof(G_B49_1));
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* G_B49_2 = NULL;
 	int32_t G_B81_0 = 0;
 	Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* G_B81_1 = NULL;
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 G_B83_0;
-	memset((&G_B83_0), 0, sizeof(G_B83_0));
-	int32_t G_B83_1 = 0;
-	Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* G_B83_2 = NULL;
+	int32_t G_B80_0 = 0;
+	Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* G_B80_1 = NULL;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 G_B82_0;
+	memset((&G_B82_0), 0, sizeof(G_B82_0));
+	int32_t G_B82_1 = 0;
+	Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* G_B82_2 = NULL;
 	{
 		// if (!multithreaded)
-		bool L_0 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___multithreaded_27;
+		bool L_0 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___multithreaded_28;
 		il2cpp_codegen_memory_barrier();
 		if (L_0)
 		{
@@ -11419,21 +12049,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SurfaceGenerator_Generate_m0308CC730E06F
 		NullCheck(L_1);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2;
 		L_2 = Transform_get_right_mC6DC057C23313802E2186A9E0DB760D795A758A4(L_1, NULL);
-		__this->____trsRight_75 = L_2;
+		__this->____trsRight_77 = L_2;
 		// _trsUp = trs.up;
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_3;
 		L_3 = SplineUser_get_trs_m6F25CC917BE93D65101D7016F71C0BC4B9D089CF_inline(__this, NULL);
 		NullCheck(L_3);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4;
 		L_4 = Transform_get_up_mE47A9D9D96422224DD0539AA5524DA5440145BB2(L_3, NULL);
-		__this->____trsUp_76 = L_4;
+		__this->____trsUp_78 = L_4;
 		// _trsForward = trs.forward;
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_5;
 		L_5 = SplineUser_get_trs_m6F25CC917BE93D65101D7016F71C0BC4B9D089CF_inline(__this, NULL);
 		NullCheck(L_5);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6;
 		L_6 = Transform_get_forward_mFCFACF7165FDAB21E80E384C494DF278386CEE2F(L_5, NULL);
-		__this->____trsForward_77 = L_6;
+		__this->____trsForward_79 = L_6;
 	}
 
 IL_003d:
@@ -11464,815 +12094,816 @@ IL_0055:
 		// int vertexCount = surfaceVertexCount;
 		int32_t L_11 = V_0;
 		V_1 = L_11;
+		// bool pathExtrude = false;
+		V_2 = (bool)0;
 		// if (_extrudeSpline != null)
-		SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* L_12 = __this->____extrudeSpline_64;
+		SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* L_12 = __this->____extrudeSpline_66;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_13;
 		L_13 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_12, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
 		if (!L_13)
 		{
-			goto IL_0084;
+			goto IL_0091;
 		}
 	}
 	{
 		// _extrudeSpline.Evaluate(ref extrudeResults, _extrudeFrom, _extrudeTo);
-		SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* L_14 = __this->____extrudeSpline_64;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF** L_15 = (&__this->___extrudeResults_66);
-		double L_16 = __this->____extrudeFrom_72;
-		double L_17 = __this->____extrudeTo_73;
+		SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* L_14 = __this->____extrudeSpline_66;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF** L_15 = (&__this->___extrudeResults_68);
+		double L_16 = __this->____extrudeFrom_74;
+		double L_17 = __this->____extrudeTo_75;
 		NullCheck(L_14);
 		SplineComputer_Evaluate_mE18148AADA271C1588D51B60830E774665E61A68(L_14, L_15, L_16, L_17, NULL);
-		goto IL_0099;
+		// pathExtrude = extrudeResults.Length > 0;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_18 = __this->___extrudeResults_68;
+		NullCheck(L_18);
+		V_2 = (bool)((!(((uint32_t)(((RuntimeArray*)L_18)->max_length)) <= ((uint32_t)0)))? 1 : 0);
+		goto IL_00a6;
 	}
 
-IL_0084:
+IL_0091:
 	{
 		// } else if(extrudeResults.Length > 0)
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_18 = __this->___extrudeResults_66;
-		NullCheck(L_18);
-		if (!(((RuntimeArray*)L_18)->max_length))
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_19 = __this->___extrudeResults_68;
+		NullCheck(L_19);
+		if (!(((RuntimeArray*)L_19)->max_length))
 		{
-			goto IL_0099;
+			goto IL_00a6;
 		}
 	}
 	{
 		// extrudeResults = new SplineSample[0];
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_19 = (SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF*)(SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF*)SZArrayNew(SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF_il2cpp_TypeInfo_var, (uint32_t)0);
-		__this->___extrudeResults_66 = L_19;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___extrudeResults_66), (void*)L_19);
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_20 = (SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF*)(SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF*)SZArrayNew(SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF_il2cpp_TypeInfo_var, (uint32_t)0);
+		__this->___extrudeResults_68 = L_20;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___extrudeResults_68), (void*)L_20);
 	}
 
-IL_0099:
+IL_00a6:
 	{
-		// bool pathExtrude = _extrudeSpline && extrudeResults.Length > 0;
-		SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* L_20 = __this->____extrudeSpline_64;
-		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		bool L_21;
-		L_21 = Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A(L_20, NULL);
-		if (!L_21)
+		// bool simpleExtrude = !pathExtrude && _extrude != 0f;
+		bool L_21 = V_2;
+		if (L_21)
 		{
-			goto IL_00b2;
+			goto IL_00bb;
 		}
 	}
 	{
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_22 = __this->___extrudeResults_66;
-		NullCheck(L_22);
-		G_B11_0 = ((!(((uint32_t)(((RuntimeArray*)L_22)->max_length)) <= ((uint32_t)0)))? 1 : 0);
-		goto IL_00b3;
+		float L_22 = __this->____extrude_62;
+		G_B11_0 = ((((int32_t)((((float)L_22) == ((float)(0.0f)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		goto IL_00bc;
 	}
 
-IL_00b2:
+IL_00bb:
 	{
 		G_B11_0 = 0;
 	}
 
-IL_00b3:
+IL_00bc:
 	{
-		V_2 = (bool)G_B11_0;
-		// bool simpleExtrude = !pathExtrude && _extrude != 0f;
-		bool L_23 = V_2;
-		if (L_23)
-		{
-			goto IL_00c9;
-		}
-	}
-	{
-		float L_24 = __this->____extrude_61;
-		G_B14_0 = ((((int32_t)((((float)L_24) == ((float)(0.0f)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
-		goto IL_00ca;
-	}
-
-IL_00c9:
-	{
-		G_B14_0 = 0;
-	}
-
-IL_00ca:
-	{
-		V_3 = (bool)G_B14_0;
+		V_3 = (bool)G_B11_0;
 		// if (pathExtrude)
-		bool L_25 = V_2;
-		if (!L_25)
+		bool L_23 = V_2;
+		if (!L_23)
 		{
-			goto IL_00e6;
+			goto IL_00d8;
 		}
 	}
 	{
 		// vertexCount *= 2;
-		int32_t L_26 = V_1;
-		V_1 = ((int32_t)il2cpp_codegen_multiply(L_26, 2));
+		int32_t L_24 = V_1;
+		V_1 = ((int32_t)il2cpp_codegen_multiply(L_24, 2));
 		// vertexCount += sampleCount * extrudeResults.Length;
-		int32_t L_27 = V_1;
-		int32_t L_28;
-		L_28 = SplineUser_get_sampleCount_m72EB98E357EB6A53B94626C14D2F0CAF87997AFC_inline(__this, NULL);
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_29 = __this->___extrudeResults_66;
-		NullCheck(L_29);
-		V_1 = ((int32_t)il2cpp_codegen_add(L_27, ((int32_t)il2cpp_codegen_multiply(L_28, ((int32_t)(((RuntimeArray*)L_29)->max_length))))));
-		goto IL_00f1;
+		int32_t L_25 = V_1;
+		int32_t L_26;
+		L_26 = SplineUser_get_sampleCount_m72EB98E357EB6A53B94626C14D2F0CAF87997AFC_inline(__this, NULL);
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_27 = __this->___extrudeResults_68;
+		NullCheck(L_27);
+		V_1 = ((int32_t)il2cpp_codegen_add(L_25, ((int32_t)il2cpp_codegen_multiply(L_26, ((int32_t)(((RuntimeArray*)L_27)->max_length))))));
+		goto IL_00e3;
 	}
 
-IL_00e6:
+IL_00d8:
 	{
 		// else if (simpleExtrude)
-		bool L_30 = V_3;
-		if (!L_30)
+		bool L_28 = V_3;
+		if (!L_28)
 		{
-			goto IL_00f1;
+			goto IL_00e3;
 		}
 	}
 	{
 		// vertexCount *= 4;
-		int32_t L_31 = V_1;
-		V_1 = ((int32_t)il2cpp_codegen_multiply(L_31, 4));
+		int32_t L_29 = V_1;
+		V_1 = ((int32_t)il2cpp_codegen_multiply(L_29, 4));
 		// vertexCount += 2;
-		int32_t L_32 = V_1;
-		V_1 = ((int32_t)il2cpp_codegen_add(L_32, 2));
+		int32_t L_30 = V_1;
+		V_1 = ((int32_t)il2cpp_codegen_add(L_30, 2));
 	}
 
-IL_00f1:
+IL_00e3:
 	{
 		// GetProjectedVertices(surfaceVertexCount, out center, out normal);
-		int32_t L_33 = V_0;
-		SurfaceGenerator_GetProjectedVertices_mC71B207D22E62E8F57AEEA59BEAA3CDC99DF52F3(__this, L_33, (&V_4), (&V_5), NULL);
+		int32_t L_31 = V_0;
+		SurfaceGenerator_GetProjectedVertices_mC71B207D22E62E8F57AEEA59BEAA3CDC99DF52F3(__this, L_31, (&V_4), (&V_5), NULL);
 		// bool clockwise = IsClockwise(projectedVerts);
-		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_34 = __this->___projectedVerts_69;
-		bool L_35;
-		L_35 = SurfaceGenerator_IsClockwise_mFE762D18E021DFFE8A32EE8666E4EAD9330ACB41(__this, L_34, NULL);
-		V_6 = L_35;
+		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_32 = __this->___projectedVerts_71;
+		bool L_33;
+		L_33 = SurfaceGenerator_IsClockwise_mFE762D18E021DFFE8A32EE8666E4EAD9330ACB41(__this, L_32, NULL);
+		V_6 = L_33;
 		// bool flipCap = false;
 		V_7 = (bool)0;
 		// bool flipSide = false;
 		V_8 = (bool)0;
 		// if (!clockwise) flipSide = !flipSide;
-		bool L_36 = V_6;
-		if (L_36)
+		bool L_34 = V_6;
+		if (L_34)
 		{
-			goto IL_011b;
+			goto IL_010d;
 		}
 	}
 	{
 		// if (!clockwise) flipSide = !flipSide;
-		bool L_37 = V_8;
-		V_8 = (bool)((((int32_t)L_37) == ((int32_t)0))? 1 : 0);
+		bool L_35 = V_8;
+		V_8 = (bool)((((int32_t)L_35) == ((int32_t)0))? 1 : 0);
 	}
 
-IL_011b:
+IL_010d:
 	{
 		// if (simpleExtrude && _extrude < 0f)
-		bool L_38 = V_3;
-		if (!L_38)
+		bool L_36 = V_3;
+		if (!L_36)
 		{
-			goto IL_0139;
+			goto IL_012b;
 		}
 	}
 	{
-		float L_39 = __this->____extrude_61;
-		if ((!(((float)L_39) < ((float)(0.0f)))))
+		float L_37 = __this->____extrude_62;
+		if ((!(((float)L_37) < ((float)(0.0f)))))
 		{
-			goto IL_0139;
+			goto IL_012b;
 		}
 	}
 	{
 		// flipCap = !flipCap;
-		bool L_40 = V_7;
-		V_7 = (bool)((((int32_t)L_40) == ((int32_t)0))? 1 : 0);
+		bool L_38 = V_7;
+		V_7 = (bool)((((int32_t)L_38) == ((int32_t)0))? 1 : 0);
 		// flipSide = !flipSide;
-		bool L_41 = V_8;
-		V_8 = (bool)((((int32_t)L_41) == ((int32_t)0))? 1 : 0);
+		bool L_39 = V_8;
+		V_8 = (bool)((((int32_t)L_39) == ((int32_t)0))? 1 : 0);
 	}
 
-IL_0139:
+IL_012b:
 	{
 		// GenerateSurfaceTris(flipCap);
-		bool L_42 = V_7;
-		SurfaceGenerator_GenerateSurfaceTris_mC4B5AF18C8D9315E4F1E325E08E6233E5B1BB5F5(__this, L_42, NULL);
+		bool L_40 = V_7;
+		SurfaceGenerator_GenerateSurfaceTris_mC4B5AF18C8D9315E4F1E325E08E6233E5B1BB5F5(__this, L_40, NULL);
 		// int totalTrisCount = surfaceTris.Length;
-		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_43 = __this->___surfaceTris_70;
-		NullCheck(L_43);
-		V_9 = ((int32_t)(((RuntimeArray*)L_43)->max_length));
+		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_41 = __this->___surfaceTris_72;
+		NullCheck(L_41);
+		V_9 = ((int32_t)(((RuntimeArray*)L_41)->max_length));
 		// if (simpleExtrude)
-		bool L_44 = V_3;
-		if (!L_44)
+		bool L_42 = V_3;
+		if (!L_42)
 		{
-			goto IL_0167;
+			goto IL_0159;
 		}
 	}
 	{
 		// totalTrisCount *= 2;
-		int32_t L_45 = V_9;
-		V_9 = ((int32_t)il2cpp_codegen_multiply(L_45, 2));
+		int32_t L_43 = V_9;
+		V_9 = ((int32_t)il2cpp_codegen_multiply(L_43, 2));
 		// totalTrisCount += 2 * sampleCount * 2 * 3;
-		int32_t L_46 = V_9;
-		int32_t L_47;
-		L_47 = SplineUser_get_sampleCount_m72EB98E357EB6A53B94626C14D2F0CAF87997AFC_inline(__this, NULL);
-		V_9 = ((int32_t)il2cpp_codegen_add(L_46, ((int32_t)il2cpp_codegen_multiply(((int32_t)il2cpp_codegen_multiply(((int32_t)il2cpp_codegen_multiply(2, L_47)), 2)), 3))));
-		goto IL_0185;
+		int32_t L_44 = V_9;
+		int32_t L_45;
+		L_45 = SplineUser_get_sampleCount_m72EB98E357EB6A53B94626C14D2F0CAF87997AFC_inline(__this, NULL);
+		V_9 = ((int32_t)il2cpp_codegen_add(L_44, ((int32_t)il2cpp_codegen_multiply(((int32_t)il2cpp_codegen_multiply(((int32_t)il2cpp_codegen_multiply(2, L_45)), 2)), 3))));
+		goto IL_0177;
 	}
 
-IL_0167:
+IL_0159:
 	{
 		// totalTrisCount *= 2;
-		int32_t L_48 = V_9;
-		V_9 = ((int32_t)il2cpp_codegen_multiply(L_48, 2));
+		int32_t L_46 = V_9;
+		V_9 = ((int32_t)il2cpp_codegen_multiply(L_46, 2));
 		// totalTrisCount += extrudeResults .Length * sampleCount * 2 * 3;
-		int32_t L_49 = V_9;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_50 = __this->___extrudeResults_66;
-		NullCheck(L_50);
-		int32_t L_51;
-		L_51 = SplineUser_get_sampleCount_m72EB98E357EB6A53B94626C14D2F0CAF87997AFC_inline(__this, NULL);
-		V_9 = ((int32_t)il2cpp_codegen_add(L_49, ((int32_t)il2cpp_codegen_multiply(((int32_t)il2cpp_codegen_multiply(((int32_t)il2cpp_codegen_multiply(((int32_t)(((RuntimeArray*)L_50)->max_length)), L_51)), 2)), 3))));
+		int32_t L_47 = V_9;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_48 = __this->___extrudeResults_68;
+		NullCheck(L_48);
+		int32_t L_49;
+		L_49 = SplineUser_get_sampleCount_m72EB98E357EB6A53B94626C14D2F0CAF87997AFC_inline(__this, NULL);
+		V_9 = ((int32_t)il2cpp_codegen_add(L_47, ((int32_t)il2cpp_codegen_multiply(((int32_t)il2cpp_codegen_multiply(((int32_t)il2cpp_codegen_multiply(((int32_t)(((RuntimeArray*)L_48)->max_length)), L_49)), 2)), 3))));
 	}
 
-IL_0185:
+IL_0177:
 	{
 		// AllocateMesh(vertexCount, totalTrisCount);
-		int32_t L_52 = V_1;
-		int32_t L_53 = V_9;
-		VirtualActionInvoker2< int32_t, int32_t >::Invoke(24 /* System.Void Dreamteck.Splines.MeshGenerator::AllocateMesh(System.Int32,System.Int32) */, __this, L_52, L_53);
+		int32_t L_50 = V_1;
+		int32_t L_51 = V_9;
+		VirtualActionInvoker2< int32_t, int32_t >::Invoke(26 /* System.Void Dreamteck.Splines.MeshGenerator::AllocateMesh(System.Int32,System.Int32) */, __this, L_50, L_51);
 		// Vector3 off = _trsRight * offset.x + _trsUp * offset.y + _trsForward * offset.z;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_54 = __this->____trsRight_75;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_52 = __this->____trsRight_77;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_53;
+		L_53 = MeshGenerator_get_offset_m05B30B6A00C843F0C0D2D97FE5C13544BE501436_inline(__this, NULL);
+		float L_54 = L_53.___x_2;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_55;
-		L_55 = MeshGenerator_get_offset_m05B30B6A00C843F0C0D2D97FE5C13544BE501436_inline(__this, NULL);
-		float L_56 = L_55.___x_2;
+		L_55 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_52, L_54, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_56 = __this->____trsUp_78;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_57;
-		L_57 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_54, L_56, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_58 = __this->____trsUp_76;
+		L_57 = MeshGenerator_get_offset_m05B30B6A00C843F0C0D2D97FE5C13544BE501436_inline(__this, NULL);
+		float L_58 = L_57.___y_3;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_59;
-		L_59 = MeshGenerator_get_offset_m05B30B6A00C843F0C0D2D97FE5C13544BE501436_inline(__this, NULL);
-		float L_60 = L_59.___y_3;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_61;
-		L_61 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_58, L_60, NULL);
+		L_59 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_56, L_58, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_60;
+		L_60 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_55, L_59, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_61 = __this->____trsForward_79;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_62;
-		L_62 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_57, L_61, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_63 = __this->____trsForward_77;
+		L_62 = MeshGenerator_get_offset_m05B30B6A00C843F0C0D2D97FE5C13544BE501436_inline(__this, NULL);
+		float L_63 = L_62.___z_4;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_64;
-		L_64 = MeshGenerator_get_offset_m05B30B6A00C843F0C0D2D97FE5C13544BE501436_inline(__this, NULL);
-		float L_65 = L_64.___z_4;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_66;
-		L_66 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_63, L_65, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_67;
-		L_67 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_62, L_66, NULL);
-		V_10 = L_67;
+		L_64 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_61, L_63, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_65;
+		L_65 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_60, L_64, NULL);
+		V_10 = L_65;
 		// for (int i = 0; i < surfaceVertexCount; i++)
 		V_13 = 0;
-		goto IL_025e;
+		goto IL_0250;
 	}
 
-IL_01e1:
+IL_01d3:
 	{
-		// GetSample(i, evalResult);
-		int32_t L_68 = V_13;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_69 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
-		SplineUser_GetSample_m3BC18583D33B76D600B873A10966C3AAD9744139(__this, L_68, L_69, NULL);
-		// tsMesh.vertices[i] = evalResult.position + off;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_70 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
-		NullCheck(L_70);
-		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_71 = L_70->___vertices_0;
-		int32_t L_72 = V_13;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_73 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
-		NullCheck(L_73);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_74 = L_73->___position_0;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_75 = V_10;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_76;
-		L_76 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_74, L_75, NULL);
-		NullCheck(L_71);
-		(L_71)->SetAt(static_cast<il2cpp_array_size_t>(L_72), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_76);
-		// tsMesh.normals[i] = evalResult.up;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_77 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
-		NullCheck(L_77);
-		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_78 = L_77->___normals_1;
-		int32_t L_79 = V_13;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_80 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
+		// GetSample(i, ref evalResult);
+		int32_t L_66 = V_13;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_67 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
+		SplineUser_GetSample_m880DFE2CAAE9E9F4D85F68B13E9DE816186C3D8E(__this, L_66, L_67, NULL);
+		// _tsMesh.vertices[i] = evalResult.position + off;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_68;
+		L_68 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_68);
+		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_69 = L_68->___vertices_0;
+		int32_t L_70 = V_13;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_71 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_72 = L_71->___position_0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_73 = V_10;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_74;
+		L_74 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_72, L_73, NULL);
+		NullCheck(L_69);
+		(L_69)->SetAt(static_cast<il2cpp_array_size_t>(L_70), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_74);
+		// _tsMesh.normals[i] = evalResult.up;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_75;
+		L_75 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_75);
+		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_76 = L_75->___normals_1;
+		int32_t L_77 = V_13;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_78 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_79 = L_78->___up_1;
+		NullCheck(L_76);
+		(L_76)->SetAt(static_cast<il2cpp_array_size_t>(L_77), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_79);
+		// _tsMesh.colors[i] = evalResult.color * color;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_80;
+		L_80 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
 		NullCheck(L_80);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_81 = L_80->___up_1;
-		NullCheck(L_78);
-		(L_78)->SetAt(static_cast<il2cpp_array_size_t>(L_79), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_81);
-		// tsMesh.colors[i] = evalResult.color * color;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_82 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
-		NullCheck(L_82);
-		ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389* L_83 = L_82->___colors_3;
-		int32_t L_84 = V_13;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_85 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
-		NullCheck(L_85);
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_86 = L_85->___color_3;
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_87;
-		L_87 = MeshGenerator_get_color_m304FC1A34B1FE17F535528AFDCE7A1AC90258A33_inline(__this, NULL);
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_88;
-		L_88 = Color_op_Multiply_mD0296202733CB2D5342FB7C82B48AEDA63036758_inline(L_86, L_87, NULL);
-		NullCheck(L_83);
-		(L_83)->SetAt(static_cast<il2cpp_array_size_t>(L_84), (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F)L_88);
+		ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389* L_81 = L_80->___colors_3;
+		int32_t L_82 = V_13;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_83 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_84 = L_83->___color_3;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_85;
+		L_85 = MeshGenerator_get_color_m304FC1A34B1FE17F535528AFDCE7A1AC90258A33_inline(__this, NULL);
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_86;
+		L_86 = Color_op_Multiply_mD0296202733CB2D5342FB7C82B48AEDA63036758_inline(L_84, L_85, NULL);
+		NullCheck(L_81);
+		(L_81)->SetAt(static_cast<il2cpp_array_size_t>(L_82), (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F)L_86);
 		// for (int i = 0; i < surfaceVertexCount; i++)
-		int32_t L_89 = V_13;
-		V_13 = ((int32_t)il2cpp_codegen_add(L_89, 1));
+		int32_t L_87 = V_13;
+		V_13 = ((int32_t)il2cpp_codegen_add(L_87, 1));
 	}
 
-IL_025e:
+IL_0250:
 	{
 		// for (int i = 0; i < surfaceVertexCount; i++)
-		int32_t L_90 = V_13;
-		int32_t L_91 = V_0;
-		if ((((int32_t)L_90) < ((int32_t)L_91)))
+		int32_t L_88 = V_13;
+		int32_t L_89 = V_0;
+		if ((((int32_t)L_88) < ((int32_t)L_89)))
 		{
-			goto IL_01e1;
+			goto IL_01d3;
 		}
 	}
 	{
 		// Vector2 min = projectedVerts[0];
-		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_92 = __this->___projectedVerts_69;
-		NullCheck(L_92);
-		int32_t L_93 = 0;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_94 = (L_92)->GetAt(static_cast<il2cpp_array_size_t>(L_93));
-		V_11 = L_94;
+		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_90 = __this->___projectedVerts_71;
+		NullCheck(L_90);
+		int32_t L_91 = 0;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_92 = (L_90)->GetAt(static_cast<il2cpp_array_size_t>(L_91));
+		V_11 = L_92;
 		// Vector2 max = projectedVerts[0];
-		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_95 = __this->___projectedVerts_69;
-		NullCheck(L_95);
-		int32_t L_96 = 0;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_97 = (L_95)->GetAt(static_cast<il2cpp_array_size_t>(L_96));
-		V_12 = L_97;
+		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_93 = __this->___projectedVerts_71;
+		NullCheck(L_93);
+		int32_t L_94 = 0;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_95 = (L_93)->GetAt(static_cast<il2cpp_array_size_t>(L_94));
+		V_12 = L_95;
 		// for (int i = 1; i < projectedVerts.Length; i++)
 		V_14 = 1;
-		goto IL_0360;
+		goto IL_0352;
 	}
 
-IL_028a:
+IL_027c:
 	{
 		// if (min.x < projectedVerts[i].x) min.x = projectedVerts[i].x;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_98 = V_11;
-		float L_99 = L_98.___x_0;
-		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_100 = __this->___projectedVerts_69;
-		int32_t L_101 = V_14;
-		NullCheck(L_100);
-		float L_102 = ((L_100)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_101)))->___x_0;
-		if ((!(((float)L_99) < ((float)L_102))))
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_96 = V_11;
+		float L_97 = L_96.___x_0;
+		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_98 = __this->___projectedVerts_71;
+		int32_t L_99 = V_14;
+		NullCheck(L_98);
+		float L_100 = ((L_98)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_99)))->___x_0;
+		if ((!(((float)L_97) < ((float)L_100))))
 		{
-			goto IL_02be;
+			goto IL_02b0;
 		}
 	}
 	{
 		// if (min.x < projectedVerts[i].x) min.x = projectedVerts[i].x;
-		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_103 = __this->___projectedVerts_69;
-		int32_t L_104 = V_14;
-		NullCheck(L_103);
-		float L_105 = ((L_103)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_104)))->___x_0;
-		(&V_11)->___x_0 = L_105;
+		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_101 = __this->___projectedVerts_71;
+		int32_t L_102 = V_14;
+		NullCheck(L_101);
+		float L_103 = ((L_101)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_102)))->___x_0;
+		(&V_11)->___x_0 = L_103;
 	}
 
-IL_02be:
+IL_02b0:
 	{
 		// if (min.y < projectedVerts[i].y) min.y = projectedVerts[i].y;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_106 = V_11;
-		float L_107 = L_106.___y_1;
-		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_108 = __this->___projectedVerts_69;
-		int32_t L_109 = V_14;
-		NullCheck(L_108);
-		float L_110 = ((L_108)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_109)))->___y_1;
-		if ((!(((float)L_107) < ((float)L_110))))
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_104 = V_11;
+		float L_105 = L_104.___y_1;
+		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_106 = __this->___projectedVerts_71;
+		int32_t L_107 = V_14;
+		NullCheck(L_106);
+		float L_108 = ((L_106)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_107)))->___y_1;
+		if ((!(((float)L_105) < ((float)L_108))))
 		{
-			goto IL_02f2;
+			goto IL_02e4;
 		}
 	}
 	{
 		// if (min.y < projectedVerts[i].y) min.y = projectedVerts[i].y;
-		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_111 = __this->___projectedVerts_69;
-		int32_t L_112 = V_14;
-		NullCheck(L_111);
-		float L_113 = ((L_111)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_112)))->___y_1;
-		(&V_11)->___y_1 = L_113;
+		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_109 = __this->___projectedVerts_71;
+		int32_t L_110 = V_14;
+		NullCheck(L_109);
+		float L_111 = ((L_109)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_110)))->___y_1;
+		(&V_11)->___y_1 = L_111;
 	}
 
-IL_02f2:
+IL_02e4:
 	{
 		// if (max.x > projectedVerts[i].x) max.x = projectedVerts[i].x;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_114 = V_12;
-		float L_115 = L_114.___x_0;
-		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_116 = __this->___projectedVerts_69;
-		int32_t L_117 = V_14;
-		NullCheck(L_116);
-		float L_118 = ((L_116)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_117)))->___x_0;
-		if ((!(((float)L_115) > ((float)L_118))))
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_112 = V_12;
+		float L_113 = L_112.___x_0;
+		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_114 = __this->___projectedVerts_71;
+		int32_t L_115 = V_14;
+		NullCheck(L_114);
+		float L_116 = ((L_114)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_115)))->___x_0;
+		if ((!(((float)L_113) > ((float)L_116))))
 		{
-			goto IL_0326;
+			goto IL_0318;
 		}
 	}
 	{
 		// if (max.x > projectedVerts[i].x) max.x = projectedVerts[i].x;
-		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_119 = __this->___projectedVerts_69;
-		int32_t L_120 = V_14;
-		NullCheck(L_119);
-		float L_121 = ((L_119)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_120)))->___x_0;
-		(&V_12)->___x_0 = L_121;
+		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_117 = __this->___projectedVerts_71;
+		int32_t L_118 = V_14;
+		NullCheck(L_117);
+		float L_119 = ((L_117)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_118)))->___x_0;
+		(&V_12)->___x_0 = L_119;
 	}
 
-IL_0326:
+IL_0318:
 	{
 		// if (max.y > projectedVerts[i].y) max.y = projectedVerts[i].y;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_122 = V_12;
-		float L_123 = L_122.___y_1;
-		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_124 = __this->___projectedVerts_69;
-		int32_t L_125 = V_14;
-		NullCheck(L_124);
-		float L_126 = ((L_124)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_125)))->___y_1;
-		if ((!(((float)L_123) > ((float)L_126))))
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_120 = V_12;
+		float L_121 = L_120.___y_1;
+		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_122 = __this->___projectedVerts_71;
+		int32_t L_123 = V_14;
+		NullCheck(L_122);
+		float L_124 = ((L_122)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_123)))->___y_1;
+		if ((!(((float)L_121) > ((float)L_124))))
 		{
-			goto IL_035a;
+			goto IL_034c;
 		}
 	}
 	{
 		// if (max.y > projectedVerts[i].y) max.y = projectedVerts[i].y;
-		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_127 = __this->___projectedVerts_69;
+		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_125 = __this->___projectedVerts_71;
+		int32_t L_126 = V_14;
+		NullCheck(L_125);
+		float L_127 = ((L_125)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_126)))->___y_1;
+		(&V_12)->___y_1 = L_127;
+	}
+
+IL_034c:
+	{
+		// for (int i = 1; i < projectedVerts.Length; i++)
 		int32_t L_128 = V_14;
-		NullCheck(L_127);
-		float L_129 = ((L_127)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_128)))->___y_1;
-		(&V_12)->___y_1 = L_129;
+		V_14 = ((int32_t)il2cpp_codegen_add(L_128, 1));
 	}
 
-IL_035a:
+IL_0352:
 	{
 		// for (int i = 1; i < projectedVerts.Length; i++)
-		int32_t L_130 = V_14;
-		V_14 = ((int32_t)il2cpp_codegen_add(L_130, 1));
-	}
-
-IL_0360:
-	{
-		// for (int i = 1; i < projectedVerts.Length; i++)
-		int32_t L_131 = V_14;
-		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_132 = __this->___projectedVerts_69;
-		NullCheck(L_132);
-		if ((((int32_t)L_131) < ((int32_t)((int32_t)(((RuntimeArray*)L_132)->max_length)))))
+		int32_t L_129 = V_14;
+		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_130 = __this->___projectedVerts_71;
+		NullCheck(L_130);
+		if ((((int32_t)L_129) < ((int32_t)((int32_t)(((RuntimeArray*)L_130)->max_length)))))
 		{
-			goto IL_028a;
+			goto IL_027c;
 		}
 	}
 	{
 		// for (int i = 0; i < projectedVerts.Length; i++)
 		V_15 = 0;
-		goto IL_0455;
+		goto IL_048a;
 	}
 
-IL_0377:
+IL_0369:
 	{
-		// tsMesh.uv[i].x = Mathf.InverseLerp(max.x, min.x, projectedVerts[i].x) * uvScale.x - uvScale.x * 0.5f + uvOffset.x + 0.5f;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_133 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
-		NullCheck(L_133);
-		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_134 = L_133->___uv_4;
-		int32_t L_135 = V_15;
-		NullCheck(L_134);
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_136 = V_12;
+		// _tsMesh.uv[i].x = Mathf.InverseLerp(max.x, min.x, projectedVerts[i].x) * uvScale.x - uvScale.x * 0.5f + uvOffset.x + 0.5f;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_131;
+		L_131 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_131);
+		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_132 = L_131->___uv_4;
+		int32_t L_133 = V_15;
+		NullCheck(L_132);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_134 = V_12;
+		float L_135 = L_134.___x_0;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_136 = V_11;
 		float L_137 = L_136.___x_0;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_138 = V_11;
-		float L_139 = L_138.___x_0;
-		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_140 = __this->___projectedVerts_69;
-		int32_t L_141 = V_15;
-		NullCheck(L_140);
-		float L_142 = ((L_140)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_141)))->___x_0;
-		float L_143;
-		L_143 = Mathf_InverseLerp_mBD7EC6A7173CE082226077E1557D5BC2D2AE0D9D_inline(L_137, L_139, L_142, NULL);
+		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_138 = __this->___projectedVerts_71;
+		int32_t L_139 = V_15;
+		NullCheck(L_138);
+		float L_140 = ((L_138)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_139)))->___x_0;
+		float L_141;
+		L_141 = Mathf_InverseLerp_mBD7EC6A7173CE082226077E1557D5BC2D2AE0D9D_inline(L_135, L_137, L_140, NULL);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_142;
+		L_142 = MeshGenerator_get_uvScale_m096A30E796CA2F89EADB0DA7A9DA085674DF5B48_inline(__this, NULL);
+		float L_143 = L_142.___x_0;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_144;
 		L_144 = MeshGenerator_get_uvScale_m096A30E796CA2F89EADB0DA7A9DA085674DF5B48_inline(__this, NULL);
 		float L_145 = L_144.___x_0;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_146;
-		L_146 = MeshGenerator_get_uvScale_m096A30E796CA2F89EADB0DA7A9DA085674DF5B48_inline(__this, NULL);
+		L_146 = MeshGenerator_get_uvOffset_m97DFF76D2B0A2F4B426D5E2AB9CF8630D315154D_inline(__this, NULL);
 		float L_147 = L_146.___x_0;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_148;
-		L_148 = MeshGenerator_get_uvOffset_m97DFF76D2B0A2F4B426D5E2AB9CF8630D315154D_inline(__this, NULL);
-		float L_149 = L_148.___x_0;
-		((L_134)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_135)))->___x_0 = ((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(((float)il2cpp_codegen_subtract(((float)il2cpp_codegen_multiply(L_143, L_145)), ((float)il2cpp_codegen_multiply(L_147, (0.5f))))), L_149)), (0.5f)));
-		// tsMesh.uv[i].y = Mathf.InverseLerp(min.y, max.y, projectedVerts[i].y) * uvScale.y - uvScale.y * 0.5f + uvOffset.y + 0.5f;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_150 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
-		NullCheck(L_150);
-		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_151 = L_150->___uv_4;
-		int32_t L_152 = V_15;
-		NullCheck(L_151);
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_153 = V_11;
+		((L_132)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_133)))->___x_0 = ((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(((float)il2cpp_codegen_subtract(((float)il2cpp_codegen_multiply(L_141, L_143)), ((float)il2cpp_codegen_multiply(L_145, (0.5f))))), L_147)), (0.5f)));
+		// _tsMesh.uv[i].y = Mathf.InverseLerp(min.y, max.y, projectedVerts[i].y) * uvScale.y - uvScale.y * 0.5f + uvOffset.y + 0.5f;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_148;
+		L_148 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_148);
+		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_149 = L_148->___uv_4;
+		int32_t L_150 = V_15;
+		NullCheck(L_149);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_151 = V_11;
+		float L_152 = L_151.___y_1;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_153 = V_12;
 		float L_154 = L_153.___y_1;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_155 = V_12;
-		float L_156 = L_155.___y_1;
-		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_157 = __this->___projectedVerts_69;
-		int32_t L_158 = V_15;
-		NullCheck(L_157);
-		float L_159 = ((L_157)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_158)))->___y_1;
-		float L_160;
-		L_160 = Mathf_InverseLerp_mBD7EC6A7173CE082226077E1557D5BC2D2AE0D9D_inline(L_154, L_156, L_159, NULL);
+		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_155 = __this->___projectedVerts_71;
+		int32_t L_156 = V_15;
+		NullCheck(L_155);
+		float L_157 = ((L_155)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_156)))->___y_1;
+		float L_158;
+		L_158 = Mathf_InverseLerp_mBD7EC6A7173CE082226077E1557D5BC2D2AE0D9D_inline(L_152, L_154, L_157, NULL);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_159;
+		L_159 = MeshGenerator_get_uvScale_m096A30E796CA2F89EADB0DA7A9DA085674DF5B48_inline(__this, NULL);
+		float L_160 = L_159.___y_1;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_161;
 		L_161 = MeshGenerator_get_uvScale_m096A30E796CA2F89EADB0DA7A9DA085674DF5B48_inline(__this, NULL);
 		float L_162 = L_161.___y_1;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_163;
-		L_163 = MeshGenerator_get_uvScale_m096A30E796CA2F89EADB0DA7A9DA085674DF5B48_inline(__this, NULL);
+		L_163 = MeshGenerator_get_uvOffset_m97DFF76D2B0A2F4B426D5E2AB9CF8630D315154D_inline(__this, NULL);
 		float L_164 = L_163.___y_1;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_165;
-		L_165 = MeshGenerator_get_uvOffset_m97DFF76D2B0A2F4B426D5E2AB9CF8630D315154D_inline(__this, NULL);
-		float L_166 = L_165.___y_1;
-		((L_151)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_152)))->___y_1 = ((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(((float)il2cpp_codegen_subtract(((float)il2cpp_codegen_multiply(L_160, L_162)), ((float)il2cpp_codegen_multiply(L_164, (0.5f))))), L_166)), (0.5f)));
-		// for (int i = 0; i < projectedVerts.Length; i++)
+		((L_149)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_150)))->___y_1 = ((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(((float)il2cpp_codegen_subtract(((float)il2cpp_codegen_multiply(L_158, L_160)), ((float)il2cpp_codegen_multiply(L_162, (0.5f))))), L_164)), (0.5f)));
+		// _tsMesh.uv[i] = Quaternion.AngleAxis(uvRotation, Vector3.forward) * _tsMesh.uv[i];
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_165;
+		L_165 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_165);
+		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_166 = L_165->___uv_4;
 		int32_t L_167 = V_15;
-		V_15 = ((int32_t)il2cpp_codegen_add(L_167, 1));
+		float L_168;
+		L_168 = MeshGenerator_get_uvRotation_mC52520BC955782A962951A765CC06A86D89835D9_inline(__this, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_169;
+		L_169 = Vector3_get_forward_mAA55A7034304DF8B2152EAD49AE779FC4CA2EB4A_inline(NULL);
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_170;
+		L_170 = Quaternion_AngleAxis_mF37022977B297E63AA70D69EA1C4C922FF22CC80(L_168, L_169, NULL);
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_171;
+		L_171 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_171);
+		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_172 = L_171->___uv_4;
+		int32_t L_173 = V_15;
+		NullCheck(L_172);
+		int32_t L_174 = L_173;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_175 = (L_172)->GetAt(static_cast<il2cpp_array_size_t>(L_174));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_176;
+		L_176 = Vector2_op_Implicit_m6D9CABB2C791A192867D7A4559D132BE86DD3EB7_inline(L_175, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_177;
+		L_177 = Quaternion_op_Multiply_mE1EBA73F9173432B50F8F17CE8190C5A7986FB8C(L_170, L_176, NULL);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_178;
+		L_178 = Vector2_op_Implicit_mE8EBEE9291F11BB02F062D6E000F4798968CBD96_inline(L_177, NULL);
+		NullCheck(L_166);
+		(L_166)->SetAt(static_cast<il2cpp_array_size_t>(L_167), (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7)L_178);
+		// for (int i = 0; i < projectedVerts.Length; i++)
+		int32_t L_179 = V_15;
+		V_15 = ((int32_t)il2cpp_codegen_add(L_179, 1));
 	}
 
-IL_0455:
+IL_048a:
 	{
 		// for (int i = 0; i < projectedVerts.Length; i++)
-		int32_t L_168 = V_15;
-		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_169 = __this->___projectedVerts_69;
-		NullCheck(L_169);
-		if ((((int32_t)L_168) < ((int32_t)((int32_t)(((RuntimeArray*)L_169)->max_length)))))
+		int32_t L_180 = V_15;
+		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_181 = __this->___projectedVerts_71;
+		NullCheck(L_181);
+		if ((((int32_t)L_180) < ((int32_t)((int32_t)(((RuntimeArray*)L_181)->max_length)))))
 		{
-			goto IL_0377;
+			goto IL_0369;
 		}
 	}
 	{
 		// if (flipCap)
-		bool L_170 = V_7;
-		if (!L_170)
+		bool L_182 = V_7;
+		if (!L_182)
 		{
-			goto IL_049f;
+			goto IL_04d4;
 		}
 	}
 	{
 		// for (int i = 0; i < surfaceVertexCount; i++)
 		V_16 = 0;
-		goto IL_049a;
+		goto IL_04cf;
 	}
 
-IL_046d:
+IL_04a2:
 	{
-		// tsMesh.normals[i] *= -1f;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_171 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
-		NullCheck(L_171);
-		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_172 = L_171->___normals_1;
-		int32_t L_173 = V_16;
-		NullCheck(L_172);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_174 = ((L_172)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_173)));
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_175 = (*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_174);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_176;
-		L_176 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_175, (-1.0f), NULL);
-		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_174 = L_176;
+		// _tsMesh.normals[i] *= -1f;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_183;
+		L_183 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_183);
+		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_184 = L_183->___normals_1;
+		int32_t L_185 = V_16;
+		NullCheck(L_184);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_186 = ((L_184)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_185)));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_187 = (*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_186);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_188;
+		L_188 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_187, (-1.0f), NULL);
+		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_186 = L_188;
 		// for (int i = 0; i < surfaceVertexCount; i++)
-		int32_t L_177 = V_16;
-		V_16 = ((int32_t)il2cpp_codegen_add(L_177, 1));
+		int32_t L_189 = V_16;
+		V_16 = ((int32_t)il2cpp_codegen_add(L_189, 1));
 	}
 
-IL_049a:
+IL_04cf:
 	{
 		// for (int i = 0; i < surfaceVertexCount; i++)
-		int32_t L_178 = V_16;
-		int32_t L_179 = V_0;
-		if ((((int32_t)L_178) < ((int32_t)L_179)))
+		int32_t L_190 = V_16;
+		int32_t L_191 = V_0;
+		if ((((int32_t)L_190) < ((int32_t)L_191)))
 		{
-			goto IL_046d;
+			goto IL_04a2;
 		}
 	}
 
-IL_049f:
+IL_04d4:
 	{
 		// if (_expand != 0f)
-		float L_180 = __this->____expand_60;
-		if ((((float)L_180) == ((float)(0.0f))))
+		float L_192 = __this->____expand_61;
+		if ((((float)L_192) == ((float)(0.0f))))
 		{
-			goto IL_0518;
+			goto IL_054d;
 		}
 	}
 	{
 		// for (int i = 0; i < surfaceVertexCount; i++)
 		V_17 = 0;
-		goto IL_0513;
+		goto IL_0548;
 	}
 
-IL_04b1:
+IL_04e6:
 	{
-		// GetSample(i, evalResult);
-		int32_t L_181 = V_17;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_182 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
-		SplineUser_GetSample_m3BC18583D33B76D600B873A10966C3AAD9744139(__this, L_181, L_182, NULL);
-		// tsMesh.vertices[i] += (clockwise ? -evalResult.right : evalResult.right) * _expand;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_183 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
-		NullCheck(L_183);
-		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_184 = L_183->___vertices_0;
-		int32_t L_185 = V_17;
-		NullCheck(L_184);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_186 = ((L_184)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_185)));
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_187 = (*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_186);
-		bool L_188 = V_6;
-		G_B50_0 = L_187;
-		G_B50_1 = L_186;
-		if (L_188)
-		{
-			G_B51_0 = L_187;
-			G_B51_1 = L_186;
-			goto IL_04e8;
-		}
-	}
-	{
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_189 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
-		NullCheck(L_189);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_190;
-		L_190 = SplineSample_get_right_mEAF1BE463979ED78C482FEADFCCE3E694E3DA491(L_189, NULL);
-		G_B52_0 = L_190;
-		G_B52_1 = G_B50_0;
-		G_B52_2 = G_B50_1;
-		goto IL_04f8;
-	}
-
-IL_04e8:
-	{
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_191 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
-		NullCheck(L_191);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_192;
-		L_192 = SplineSample_get_right_mEAF1BE463979ED78C482FEADFCCE3E694E3DA491(L_191, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_193;
-		L_193 = Vector3_op_UnaryNegation_m5450829F333BD2A88AF9A592C4EE331661225915_inline(L_192, NULL);
-		G_B52_0 = L_193;
-		G_B52_1 = G_B51_0;
-		G_B52_2 = G_B51_1;
-	}
-
-IL_04f8:
-	{
-		float L_194 = __this->____expand_60;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_195;
-		L_195 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(G_B52_0, L_194, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_196;
-		L_196 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(G_B52_1, L_195, NULL);
-		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)G_B52_2 = L_196;
-		// for (int i = 0; i < surfaceVertexCount; i++)
+		// GetSample(i, ref evalResult);
+		int32_t L_193 = V_17;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_194 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
+		SplineUser_GetSample_m880DFE2CAAE9E9F4D85F68B13E9DE816186C3D8E(__this, L_193, L_194, NULL);
+		// _tsMesh.vertices[i] += (clockwise ? -evalResult.right : evalResult.right) * _expand;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_195;
+		L_195 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_195);
+		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_196 = L_195->___vertices_0;
 		int32_t L_197 = V_17;
-		V_17 = ((int32_t)il2cpp_codegen_add(L_197, 1));
+		NullCheck(L_196);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_198 = ((L_196)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_197)));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_199 = (*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_198);
+		bool L_200 = V_6;
+		G_B47_0 = L_199;
+		G_B47_1 = L_198;
+		if (L_200)
+		{
+			G_B48_0 = L_199;
+			G_B48_1 = L_198;
+			goto IL_051d;
+		}
+	}
+	{
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_201 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_202;
+		L_202 = SplineSample_get_right_mEAF1BE463979ED78C482FEADFCCE3E694E3DA491(L_201, NULL);
+		G_B49_0 = L_202;
+		G_B49_1 = G_B47_0;
+		G_B49_2 = G_B47_1;
+		goto IL_052d;
 	}
 
-IL_0513:
+IL_051d:
+	{
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_203 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_204;
+		L_204 = SplineSample_get_right_mEAF1BE463979ED78C482FEADFCCE3E694E3DA491(L_203, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_205;
+		L_205 = Vector3_op_UnaryNegation_m5450829F333BD2A88AF9A592C4EE331661225915_inline(L_204, NULL);
+		G_B49_0 = L_205;
+		G_B49_1 = G_B48_0;
+		G_B49_2 = G_B48_1;
+	}
+
+IL_052d:
+	{
+		float L_206 = __this->____expand_61;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_207;
+		L_207 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(G_B49_0, L_206, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_208;
+		L_208 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(G_B49_1, L_207, NULL);
+		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)G_B49_2 = L_208;
+		// for (int i = 0; i < surfaceVertexCount; i++)
+		int32_t L_209 = V_17;
+		V_17 = ((int32_t)il2cpp_codegen_add(L_209, 1));
+	}
+
+IL_0548:
 	{
 		// for (int i = 0; i < surfaceVertexCount; i++)
-		int32_t L_198 = V_17;
-		int32_t L_199 = V_0;
-		if ((((int32_t)L_198) < ((int32_t)L_199)))
+		int32_t L_210 = V_17;
+		int32_t L_211 = V_0;
+		if ((((int32_t)L_210) < ((int32_t)L_211)))
 		{
-			goto IL_04b1;
+			goto IL_04e6;
 		}
 	}
 
-IL_0518:
+IL_054d:
 	{
 		// if (pathExtrude)
-		bool L_200 = V_2;
-		if (!L_200)
+		bool L_212 = V_2;
+		if (!L_212)
 		{
-			goto IL_09de;
+			goto IL_0aa9;
 		}
 	}
 	{
 		// GetIdentityVerts(center, normal, clockwise);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_201 = V_4;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_202 = V_5;
-		bool L_203 = V_6;
-		SurfaceGenerator_GetIdentityVerts_m76E370FF529BCB49C5E1224565A2DB55AD435C4F(__this, L_201, L_202, L_203, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_213 = V_4;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_214 = V_5;
+		bool L_215 = V_6;
+		SurfaceGenerator_GetIdentityVerts_m76E370FF529BCB49C5E1224565A2DB55AD435C4F(__this, L_213, L_214, L_215, NULL);
 		// for (int i = 0; i < surfaceVertexCount; i++)
 		V_20 = 0;
-		goto IL_072c;
+		goto IL_0789;
 	}
 
-IL_0532:
+IL_0567:
 	{
 		// Vector3 vertexOffset = TransformOffset(extrudeResults[0], _extrudeOffset);
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_204 = __this->___extrudeResults_66;
-		NullCheck(L_204);
-		int32_t L_205 = 0;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_206 = (L_204)->GetAt(static_cast<il2cpp_array_size_t>(L_205));
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_207 = __this->____extrudeOffset_65;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_208;
-		L_208 = SplineUser_TransformOffset_mFDEF031F967F1C74E0D60465DF9BC38441D0309B(L_206, L_207, NULL);
-		V_21 = L_208;
-		// tsMesh.vertices[i + surfaceVertexCount] = extrudeResults[0].position + (extrudeResults[0].rotation * identityVertices[i] + off) + vertexOffset;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_209 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
-		NullCheck(L_209);
-		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_210 = L_209->___vertices_0;
-		int32_t L_211 = V_20;
-		int32_t L_212 = V_0;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_213 = __this->___extrudeResults_66;
-		NullCheck(L_213);
-		int32_t L_214 = 0;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_215 = (L_213)->GetAt(static_cast<il2cpp_array_size_t>(L_214));
-		NullCheck(L_215);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_216 = L_215->___position_0;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_217 = __this->___extrudeResults_66;
-		NullCheck(L_217);
-		int32_t L_218 = 0;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_219 = (L_217)->GetAt(static_cast<il2cpp_array_size_t>(L_218));
-		NullCheck(L_219);
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_220;
-		L_220 = SplineSample_get_rotation_m99770800A7D9C757DE6AC3E6A9A94BD67C4CCD60(L_219, NULL);
-		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_221 = __this->___identityVertices_67;
-		int32_t L_222 = V_20;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_216 = __this->___extrudeResults_68;
+		NullCheck(L_216);
+		int32_t L_217 = 0;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 L_218 = (L_216)->GetAt(static_cast<il2cpp_array_size_t>(L_217));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_219 = __this->____extrudeOffset_67;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_220;
+		L_220 = SplineUser_TransformOffset_mFDEF031F967F1C74E0D60465DF9BC38441D0309B(L_218, L_219, NULL);
+		V_21 = L_220;
+		// _tsMesh.vertices[i + surfaceVertexCount] = extrudeResults[0].position + (extrudeResults[0].rotation * identityVertices[i] + off) + vertexOffset;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_221;
+		L_221 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
 		NullCheck(L_221);
-		int32_t L_223 = L_222;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_224 = (L_221)->GetAt(static_cast<il2cpp_array_size_t>(L_223));
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_225;
-		L_225 = Quaternion_op_Multiply_mE1EBA73F9173432B50F8F17CE8190C5A7986FB8C(L_220, L_224, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_226 = V_10;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_227;
-		L_227 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_225, L_226, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_228;
-		L_228 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_216, L_227, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_229 = V_21;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_230;
-		L_230 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_228, L_229, NULL);
-		NullCheck(L_210);
-		(L_210)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_211, L_212))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_230);
-		// tsMesh.normals[i + surfaceVertexCount] = -extrudeResults[0].forward;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_231 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
-		NullCheck(L_231);
-		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_232 = L_231->___normals_1;
-		int32_t L_233 = V_20;
-		int32_t L_234 = V_0;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_235 = __this->___extrudeResults_66;
-		NullCheck(L_235);
-		int32_t L_236 = 0;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_237 = (L_235)->GetAt(static_cast<il2cpp_array_size_t>(L_236));
-		NullCheck(L_237);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_238 = L_237->___forward_2;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_239;
-		L_239 = Vector3_op_UnaryNegation_m5450829F333BD2A88AF9A592C4EE331661225915_inline(L_238, NULL);
-		NullCheck(L_232);
-		(L_232)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_233, L_234))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_239);
-		// tsMesh.colors[i + surfaceVertexCount] = tsMesh.colors[i] * extrudeResults[0].color;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_240 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_222 = L_221->___vertices_0;
+		int32_t L_223 = V_20;
+		int32_t L_224 = V_0;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_225 = __this->___extrudeResults_68;
+		NullCheck(L_225);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_226 = ((L_225)->GetAddressAt(static_cast<il2cpp_array_size_t>(0)))->___position_0;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_227 = __this->___extrudeResults_68;
+		NullCheck(L_227);
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_228;
+		L_228 = SplineSample_get_rotation_m99770800A7D9C757DE6AC3E6A9A94BD67C4CCD60(((L_227)->GetAddressAt(static_cast<il2cpp_array_size_t>(0))), NULL);
+		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_229 = __this->___identityVertices_69;
+		int32_t L_230 = V_20;
+		NullCheck(L_229);
+		int32_t L_231 = L_230;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_232 = (L_229)->GetAt(static_cast<il2cpp_array_size_t>(L_231));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_233;
+		L_233 = Quaternion_op_Multiply_mE1EBA73F9173432B50F8F17CE8190C5A7986FB8C(L_228, L_232, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_234 = V_10;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_235;
+		L_235 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_233, L_234, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_236;
+		L_236 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_226, L_235, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_237 = V_21;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_238;
+		L_238 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_236, L_237, NULL);
+		NullCheck(L_222);
+		(L_222)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_223, L_224))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_238);
+		// _tsMesh.normals[i + surfaceVertexCount] = -extrudeResults[0].forward;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_239;
+		L_239 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_239);
+		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_240 = L_239->___normals_1;
+		int32_t L_241 = V_20;
+		int32_t L_242 = V_0;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_243 = __this->___extrudeResults_68;
+		NullCheck(L_243);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_244 = ((L_243)->GetAddressAt(static_cast<il2cpp_array_size_t>(0)))->___forward_2;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_245;
+		L_245 = Vector3_op_UnaryNegation_m5450829F333BD2A88AF9A592C4EE331661225915_inline(L_244, NULL);
 		NullCheck(L_240);
-		ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389* L_241 = L_240->___colors_3;
-		int32_t L_242 = V_20;
-		int32_t L_243 = V_0;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_244 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
-		NullCheck(L_244);
-		ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389* L_245 = L_244->___colors_3;
-		int32_t L_246 = V_20;
-		NullCheck(L_245);
-		int32_t L_247 = L_246;
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_248 = (L_245)->GetAt(static_cast<il2cpp_array_size_t>(L_247));
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_249 = __this->___extrudeResults_66;
-		NullCheck(L_249);
-		int32_t L_250 = 0;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_251 = (L_249)->GetAt(static_cast<il2cpp_array_size_t>(L_250));
+		(L_240)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_241, L_242))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_245);
+		// _tsMesh.colors[i + surfaceVertexCount] = _tsMesh.colors[i] * extrudeResults[0].color;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_246;
+		L_246 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_246);
+		ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389* L_247 = L_246->___colors_3;
+		int32_t L_248 = V_20;
+		int32_t L_249 = V_0;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_250;
+		L_250 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_250);
+		ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389* L_251 = L_250->___colors_3;
+		int32_t L_252 = V_20;
 		NullCheck(L_251);
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_252 = L_251->___color_3;
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_253;
-		L_253 = Color_op_Multiply_mD0296202733CB2D5342FB7C82B48AEDA63036758_inline(L_248, L_252, NULL);
-		NullCheck(L_241);
-		(L_241)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_242, L_243))), (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F)L_253);
-		// tsMesh.uv[i + surfaceVertexCount] = new Vector2(1f - tsMesh.uv[i].x, tsMesh.uv[i].y);
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_254 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
-		NullCheck(L_254);
-		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_255 = L_254->___uv_4;
-		int32_t L_256 = V_20;
-		int32_t L_257 = V_0;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_258 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		int32_t L_253 = L_252;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_254 = (L_251)->GetAt(static_cast<il2cpp_array_size_t>(L_253));
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_255 = __this->___extrudeResults_68;
+		NullCheck(L_255);
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_256 = ((L_255)->GetAddressAt(static_cast<il2cpp_array_size_t>(0)))->___color_3;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_257;
+		L_257 = Color_op_Multiply_mD0296202733CB2D5342FB7C82B48AEDA63036758_inline(L_254, L_256, NULL);
+		NullCheck(L_247);
+		(L_247)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_248, L_249))), (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F)L_257);
+		// _tsMesh.uv[i + surfaceVertexCount] = new Vector2(1f - _tsMesh.uv[i].x, _tsMesh.uv[i].y);
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_258;
+		L_258 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
 		NullCheck(L_258);
 		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_259 = L_258->___uv_4;
 		int32_t L_260 = V_20;
-		NullCheck(L_259);
-		float L_261 = ((L_259)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_260)))->___x_0;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_262 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		int32_t L_261 = V_0;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_262;
+		L_262 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
 		NullCheck(L_262);
 		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_263 = L_262->___uv_4;
 		int32_t L_264 = V_20;
 		NullCheck(L_263);
-		float L_265 = ((L_263)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_264)))->___y_1;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_266;
-		memset((&L_266), 0, sizeof(L_266));
-		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_266), ((float)il2cpp_codegen_subtract((1.0f), L_261)), L_265, /*hidden argument*/NULL);
-		NullCheck(L_255);
-		(L_255)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_256, L_257))), (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7)L_266);
-		// vertexOffset = TransformOffset(extrudeResults[extrudeResults.Length - 1], _extrudeOffset);
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_267 = __this->___extrudeResults_66;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_268 = __this->___extrudeResults_66;
-		NullCheck(L_268);
+		float L_265 = ((L_263)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_264)))->___x_0;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_266;
+		L_266 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_266);
+		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_267 = L_266->___uv_4;
+		int32_t L_268 = V_20;
 		NullCheck(L_267);
-		int32_t L_269 = ((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_268)->max_length)), 1));
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_270 = (L_267)->GetAt(static_cast<il2cpp_array_size_t>(L_269));
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_271 = __this->____extrudeOffset_65;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_272;
-		L_272 = SplineUser_TransformOffset_mFDEF031F967F1C74E0D60465DF9BC38441D0309B(L_270, L_271, NULL);
-		V_21 = L_272;
-		// tsMesh.vertices[i] = extrudeResults[extrudeResults.Length - 1].position + (extrudeResults[extrudeResults.Length - 1].rotation * identityVertices[i] + off) + vertexOffset;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_273 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
-		NullCheck(L_273);
-		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_274 = L_273->___vertices_0;
-		int32_t L_275 = V_20;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_276 = __this->___extrudeResults_66;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_277 = __this->___extrudeResults_66;
+		float L_269 = ((L_267)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_268)))->___y_1;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_270;
+		memset((&L_270), 0, sizeof(L_270));
+		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_270), ((float)il2cpp_codegen_subtract((1.0f), L_265)), L_269, /*hidden argument*/NULL);
+		NullCheck(L_259);
+		(L_259)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_260, L_261))), (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7)L_270);
+		// vertexOffset = TransformOffset(extrudeResults[extrudeResults.Length - 1], _extrudeOffset);
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_271 = __this->___extrudeResults_68;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_272 = __this->___extrudeResults_68;
+		NullCheck(L_272);
+		NullCheck(L_271);
+		int32_t L_273 = ((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_272)->max_length)), 1));
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 L_274 = (L_271)->GetAt(static_cast<il2cpp_array_size_t>(L_273));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_275 = __this->____extrudeOffset_67;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_276;
+		L_276 = SplineUser_TransformOffset_mFDEF031F967F1C74E0D60465DF9BC38441D0309B(L_274, L_275, NULL);
+		V_21 = L_276;
+		// _tsMesh.vertices[i] = extrudeResults[extrudeResults.Length - 1].position + (extrudeResults[extrudeResults.Length - 1].rotation * identityVertices[i] + off) + vertexOffset;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_277;
+		L_277 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
 		NullCheck(L_277);
-		NullCheck(L_276);
-		int32_t L_278 = ((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_277)->max_length)), 1));
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_279 = (L_276)->GetAt(static_cast<il2cpp_array_size_t>(L_278));
-		NullCheck(L_279);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_280 = L_279->___position_0;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_281 = __this->___extrudeResults_66;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_282 = __this->___extrudeResults_66;
-		NullCheck(L_282);
+		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_278 = L_277->___vertices_0;
+		int32_t L_279 = V_20;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_280 = __this->___extrudeResults_68;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_281 = __this->___extrudeResults_68;
 		NullCheck(L_281);
-		int32_t L_283 = ((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_282)->max_length)), 1));
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_284 = (L_281)->GetAt(static_cast<il2cpp_array_size_t>(L_283));
+		NullCheck(L_280);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_282 = ((L_280)->GetAddressAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_281)->max_length)), 1)))))->___position_0;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_283 = __this->___extrudeResults_68;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_284 = __this->___extrudeResults_68;
 		NullCheck(L_284);
+		NullCheck(L_283);
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_285;
-		L_285 = SplineSample_get_rotation_m99770800A7D9C757DE6AC3E6A9A94BD67C4CCD60(L_284, NULL);
-		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_286 = __this->___identityVertices_67;
+		L_285 = SplineSample_get_rotation_m99770800A7D9C757DE6AC3E6A9A94BD67C4CCD60(((L_283)->GetAddressAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_284)->max_length)), 1))))), NULL);
+		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_286 = __this->___identityVertices_69;
 		int32_t L_287 = V_20;
 		NullCheck(L_286);
 		int32_t L_288 = L_287;
@@ -12283,59 +12914,55 @@ IL_0532:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_292;
 		L_292 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_290, L_291, NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_293;
-		L_293 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_280, L_292, NULL);
+		L_293 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_282, L_292, NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_294 = V_21;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_295;
 		L_295 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_293, L_294, NULL);
-		NullCheck(L_274);
-		(L_274)->SetAt(static_cast<il2cpp_array_size_t>(L_275), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_295);
-		// tsMesh.normals[i] = extrudeResults[extrudeResults.Length - 1].forward;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_296 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		NullCheck(L_278);
+		(L_278)->SetAt(static_cast<il2cpp_array_size_t>(L_279), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_295);
+		// _tsMesh.normals[i] = extrudeResults[extrudeResults.Length - 1].forward;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_296;
+		L_296 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
 		NullCheck(L_296);
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_297 = L_296->___normals_1;
 		int32_t L_298 = V_20;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_299 = __this->___extrudeResults_66;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_300 = __this->___extrudeResults_66;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_299 = __this->___extrudeResults_68;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_300 = __this->___extrudeResults_68;
 		NullCheck(L_300);
 		NullCheck(L_299);
-		int32_t L_301 = ((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_300)->max_length)), 1));
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_302 = (L_299)->GetAt(static_cast<il2cpp_array_size_t>(L_301));
-		NullCheck(L_302);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_303 = L_302->___forward_2;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_301 = ((L_299)->GetAddressAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_300)->max_length)), 1)))))->___forward_2;
 		NullCheck(L_297);
-		(L_297)->SetAt(static_cast<il2cpp_array_size_t>(L_298), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_303);
-		// tsMesh.colors[i] *= extrudeResults[extrudeResults.Length - 1].color;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_304 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
-		NullCheck(L_304);
-		ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389* L_305 = L_304->___colors_3;
-		int32_t L_306 = V_20;
-		NullCheck(L_305);
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F* L_307 = ((L_305)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_306)));
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_308 = (*(Color_tD001788D726C3A7F1379BEED0260B9591F440C1F*)L_307);
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_309 = __this->___extrudeResults_66;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_310 = __this->___extrudeResults_66;
-		NullCheck(L_310);
-		NullCheck(L_309);
-		int32_t L_311 = ((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_310)->max_length)), 1));
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_312 = (L_309)->GetAt(static_cast<il2cpp_array_size_t>(L_311));
-		NullCheck(L_312);
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_313 = L_312->___color_3;
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_314;
-		L_314 = Color_op_Multiply_mD0296202733CB2D5342FB7C82B48AEDA63036758_inline(L_308, L_313, NULL);
-		*(Color_tD001788D726C3A7F1379BEED0260B9591F440C1F*)L_307 = L_314;
+		(L_297)->SetAt(static_cast<il2cpp_array_size_t>(L_298), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_301);
+		// _tsMesh.colors[i] *= extrudeResults[extrudeResults.Length - 1].color;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_302;
+		L_302 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_302);
+		ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389* L_303 = L_302->___colors_3;
+		int32_t L_304 = V_20;
+		NullCheck(L_303);
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F* L_305 = ((L_303)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_304)));
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_306 = (*(Color_tD001788D726C3A7F1379BEED0260B9591F440C1F*)L_305);
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_307 = __this->___extrudeResults_68;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_308 = __this->___extrudeResults_68;
+		NullCheck(L_308);
+		NullCheck(L_307);
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_309 = ((L_307)->GetAddressAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_308)->max_length)), 1)))))->___color_3;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_310;
+		L_310 = Color_op_Multiply_mD0296202733CB2D5342FB7C82B48AEDA63036758_inline(L_306, L_309, NULL);
+		*(Color_tD001788D726C3A7F1379BEED0260B9591F440C1F*)L_305 = L_310;
 		// for (int i = 0; i < surfaceVertexCount; i++)
-		int32_t L_315 = V_20;
-		V_20 = ((int32_t)il2cpp_codegen_add(L_315, 1));
+		int32_t L_311 = V_20;
+		V_20 = ((int32_t)il2cpp_codegen_add(L_311, 1));
 	}
 
-IL_072c:
+IL_0789:
 	{
 		// for (int i = 0; i < surfaceVertexCount; i++)
-		int32_t L_316 = V_20;
-		int32_t L_317 = V_0;
-		if ((((int32_t)L_316) < ((int32_t)L_317)))
+		int32_t L_312 = V_20;
+		int32_t L_313 = V_0;
+		if ((((int32_t)L_312) < ((int32_t)L_313)))
 		{
-			goto IL_0532;
+			goto IL_0567;
 		}
 	}
 	{
@@ -12343,767 +12970,871 @@ IL_072c:
 		V_18 = (0.0f);
 		// for (int i = 0; i < extrudeResults.Length; i++)
 		V_22 = 0;
-		goto IL_0956;
+		goto IL_0a21;
 	}
 
-IL_0743:
+IL_07a0:
 	{
 		// if (_uniformUvs && i > 0) totalLength += Vector3.Distance(extrudeResults[i].position, extrudeResults[i - 1].position);
-		bool L_318 = __this->____uniformUvs_74;
-		if (!L_318)
+		bool L_314 = __this->____uniformUvs_76;
+		if (!L_314)
 		{
-			goto IL_0778;
+			goto IL_07dd;
 		}
 	}
 	{
-		int32_t L_319 = V_22;
-		if ((((int32_t)L_319) <= ((int32_t)0)))
+		int32_t L_315 = V_22;
+		if ((((int32_t)L_315) <= ((int32_t)0)))
 		{
-			goto IL_0778;
+			goto IL_07dd;
 		}
 	}
 	{
 		// if (_uniformUvs && i > 0) totalLength += Vector3.Distance(extrudeResults[i].position, extrudeResults[i - 1].position);
-		float L_320 = V_18;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_321 = __this->___extrudeResults_66;
-		int32_t L_322 = V_22;
-		NullCheck(L_321);
-		int32_t L_323 = L_322;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_324 = (L_321)->GetAt(static_cast<il2cpp_array_size_t>(L_323));
-		NullCheck(L_324);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_325 = L_324->___position_0;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_326 = __this->___extrudeResults_66;
-		int32_t L_327 = V_22;
-		NullCheck(L_326);
-		int32_t L_328 = ((int32_t)il2cpp_codegen_subtract(L_327, 1));
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_329 = (L_326)->GetAt(static_cast<il2cpp_array_size_t>(L_328));
-		NullCheck(L_329);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_330 = L_329->___position_0;
-		float L_331;
-		L_331 = Vector3_Distance_m2314DB9B8BD01157E013DF87BEA557375C7F9FF9_inline(L_325, L_330, NULL);
-		V_18 = ((float)il2cpp_codegen_add(L_320, L_331));
+		float L_316 = V_18;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_317 = __this->___extrudeResults_68;
+		int32_t L_318 = V_22;
+		NullCheck(L_317);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_319 = ((L_317)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_318)))->___position_0;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_320 = __this->___extrudeResults_68;
+		int32_t L_321 = V_22;
+		NullCheck(L_320);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_322 = ((L_320)->GetAddressAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_subtract(L_321, 1)))))->___position_0;
+		float L_323;
+		L_323 = Vector3_Distance_m2314DB9B8BD01157E013DF87BEA557375C7F9FF9_inline(L_319, L_322, NULL);
+		V_18 = ((float)il2cpp_codegen_add(L_316, L_323));
 	}
 
-IL_0778:
+IL_07dd:
 	{
 		// int startIndex = surfaceVertexCount * 2 + i * sampleCount;
-		int32_t L_332 = V_0;
-		int32_t L_333 = V_22;
-		int32_t L_334;
-		L_334 = SplineUser_get_sampleCount_m72EB98E357EB6A53B94626C14D2F0CAF87997AFC_inline(__this, NULL);
-		V_23 = ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_multiply(L_332, 2)), ((int32_t)il2cpp_codegen_multiply(L_333, L_334))));
+		int32_t L_324 = V_0;
+		int32_t L_325 = V_22;
+		int32_t L_326;
+		L_326 = SplineUser_get_sampleCount_m72EB98E357EB6A53B94626C14D2F0CAF87997AFC_inline(__this, NULL);
+		V_23 = ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_multiply(L_324, 2)), ((int32_t)il2cpp_codegen_multiply(L_325, L_326))));
 		// for (int n = 0; n < identityVertices.Length; n++)
 		V_24 = 0;
-		goto IL_0941;
+		goto IL_0a0c;
 	}
 
-IL_078f:
+IL_07f4:
 	{
 		// Vector3 vertexOffset = TransformOffset(extrudeResults[i], _extrudeOffset);
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_335 = __this->___extrudeResults_66;
-		int32_t L_336 = V_22;
-		NullCheck(L_335);
-		int32_t L_337 = L_336;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_338 = (L_335)->GetAt(static_cast<il2cpp_array_size_t>(L_337));
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_339 = __this->____extrudeOffset_65;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_340;
-		L_340 = SplineUser_TransformOffset_mFDEF031F967F1C74E0D60465DF9BC38441D0309B(L_338, L_339, NULL);
-		V_25 = L_340;
-		// tsMesh.vertices[startIndex + n] = extrudeResults[i].position + (extrudeResults[i].rotation * identityVertices[n] + off) + vertexOffset;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_341 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
-		NullCheck(L_341);
-		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_342 = L_341->___vertices_0;
-		int32_t L_343 = V_23;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_327 = __this->___extrudeResults_68;
+		int32_t L_328 = V_22;
+		NullCheck(L_327);
+		int32_t L_329 = L_328;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 L_330 = (L_327)->GetAt(static_cast<il2cpp_array_size_t>(L_329));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_331 = __this->____extrudeOffset_67;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_332;
+		L_332 = SplineUser_TransformOffset_mFDEF031F967F1C74E0D60465DF9BC38441D0309B(L_330, L_331, NULL);
+		V_25 = L_332;
+		// _tsMesh.vertices[startIndex + n] = extrudeResults[i].position + (extrudeResults[i].rotation * identityVertices[n] + off) + vertexOffset;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_333;
+		L_333 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_333);
+		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_334 = L_333->___vertices_0;
+		int32_t L_335 = V_23;
+		int32_t L_336 = V_24;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_337 = __this->___extrudeResults_68;
+		int32_t L_338 = V_22;
+		NullCheck(L_337);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_339 = ((L_337)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_338)))->___position_0;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_340 = __this->___extrudeResults_68;
+		int32_t L_341 = V_22;
+		NullCheck(L_340);
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_342;
+		L_342 = SplineSample_get_rotation_m99770800A7D9C757DE6AC3E6A9A94BD67C4CCD60(((L_340)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_341))), NULL);
+		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_343 = __this->___identityVertices_69;
 		int32_t L_344 = V_24;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_345 = __this->___extrudeResults_66;
-		int32_t L_346 = V_22;
-		NullCheck(L_345);
-		int32_t L_347 = L_346;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_348 = (L_345)->GetAt(static_cast<il2cpp_array_size_t>(L_347));
-		NullCheck(L_348);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_349 = L_348->___position_0;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_350 = __this->___extrudeResults_66;
-		int32_t L_351 = V_22;
-		NullCheck(L_350);
-		int32_t L_352 = L_351;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_353 = (L_350)->GetAt(static_cast<il2cpp_array_size_t>(L_352));
+		NullCheck(L_343);
+		int32_t L_345 = L_344;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_346 = (L_343)->GetAt(static_cast<il2cpp_array_size_t>(L_345));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_347;
+		L_347 = Quaternion_op_Multiply_mE1EBA73F9173432B50F8F17CE8190C5A7986FB8C(L_342, L_346, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_348 = V_10;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_349;
+		L_349 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_347, L_348, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_350;
+		L_350 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_339, L_349, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_351 = V_25;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_352;
+		L_352 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_350, L_351, NULL);
+		NullCheck(L_334);
+		(L_334)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_335, L_336))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_352);
+		// _tsMesh.normals[startIndex + n] = extrudeResults[i].rotation * identityNormals[n];
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_353;
+		L_353 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
 		NullCheck(L_353);
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_354;
-		L_354 = SplineSample_get_rotation_m99770800A7D9C757DE6AC3E6A9A94BD67C4CCD60(L_353, NULL);
-		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_355 = __this->___identityVertices_67;
+		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_354 = L_353->___normals_1;
+		int32_t L_355 = V_23;
 		int32_t L_356 = V_24;
-		NullCheck(L_355);
-		int32_t L_357 = L_356;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_358 = (L_355)->GetAt(static_cast<il2cpp_array_size_t>(L_357));
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_359;
-		L_359 = Quaternion_op_Multiply_mE1EBA73F9173432B50F8F17CE8190C5A7986FB8C(L_354, L_358, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_360 = V_10;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_361;
-		L_361 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_359, L_360, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_362;
-		L_362 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_349, L_361, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_363 = V_25;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_357 = __this->___extrudeResults_68;
+		int32_t L_358 = V_22;
+		NullCheck(L_357);
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_359;
+		L_359 = SplineSample_get_rotation_m99770800A7D9C757DE6AC3E6A9A94BD67C4CCD60(((L_357)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_358))), NULL);
+		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_360 = __this->___identityNormals_70;
+		int32_t L_361 = V_24;
+		NullCheck(L_360);
+		int32_t L_362 = L_361;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_363 = (L_360)->GetAt(static_cast<il2cpp_array_size_t>(L_362));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_364;
-		L_364 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_362, L_363, NULL);
-		NullCheck(L_342);
-		(L_342)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_343, L_344))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_364);
-		// tsMesh.normals[startIndex + n] = extrudeResults[i].rotation * identityNormals[n];
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_365 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
-		NullCheck(L_365);
-		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_366 = L_365->___normals_1;
-		int32_t L_367 = V_23;
-		int32_t L_368 = V_24;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_369 = __this->___extrudeResults_66;
-		int32_t L_370 = V_22;
-		NullCheck(L_369);
-		int32_t L_371 = L_370;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_372 = (L_369)->GetAt(static_cast<il2cpp_array_size_t>(L_371));
-		NullCheck(L_372);
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_373;
-		L_373 = SplineSample_get_rotation_m99770800A7D9C757DE6AC3E6A9A94BD67C4CCD60(L_372, NULL);
-		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_374 = __this->___identityNormals_68;
-		int32_t L_375 = V_24;
-		NullCheck(L_374);
-		int32_t L_376 = L_375;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_377 = (L_374)->GetAt(static_cast<il2cpp_array_size_t>(L_376));
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_378;
-		L_378 = Quaternion_op_Multiply_mE1EBA73F9173432B50F8F17CE8190C5A7986FB8C(L_373, L_377, NULL);
+		L_364 = Quaternion_op_Multiply_mE1EBA73F9173432B50F8F17CE8190C5A7986FB8C(L_359, L_363, NULL);
+		NullCheck(L_354);
+		(L_354)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_355, L_356))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_364);
+		// if (_uniformUvs)
+		bool L_365 = __this->____uniformUvs_76;
+		if (!L_365)
+		{
+			goto IL_090a;
+		}
+	}
+	{
+		// _tsMesh.uv[startIndex + n] = new Vector2((float)n / (identityVertices.Length - 1) * _sideUvScale.x + _sideUvOffset.x, totalLength * _sideUvScale.y + _sideUvOffset.y);
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_366;
+		L_366 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
 		NullCheck(L_366);
-		(L_366)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_367, L_368))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_378);
-		// if (_uniformUvs) tsMesh.uv[startIndex + n] = new Vector2((float)n / (identityVertices.Length - 1) * _sideUvScale.x + _sideUvOffset.x, totalLength * _sideUvScale.y + _sideUvOffset.y);
-		bool L_379 = __this->____uniformUvs_74;
-		if (!L_379)
-		{
-			goto IL_0895;
-		}
+		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_367 = L_366->___uv_4;
+		int32_t L_368 = V_23;
+		int32_t L_369 = V_24;
+		int32_t L_370 = V_24;
+		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_371 = __this->___identityVertices_69;
+		NullCheck(L_371);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_372 = (&__this->____sideUvScale_63);
+		float L_373 = L_372->___x_0;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_374 = (&__this->____sideUvOffset_64);
+		float L_375 = L_374->___x_0;
+		float L_376 = V_18;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_377 = (&__this->____sideUvScale_63);
+		float L_378 = L_377->___y_1;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_379 = (&__this->____sideUvOffset_64);
+		float L_380 = L_379->___y_1;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_381;
+		memset((&L_381), 0, sizeof(L_381));
+		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_381), ((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(((float)(((float)L_370)/((float)((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_371)->max_length)), 1))))), L_373)), L_375)), ((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(L_376, L_378)), L_380)), /*hidden argument*/NULL);
+		NullCheck(L_367);
+		(L_367)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_368, L_369))), (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7)L_381);
+		goto IL_0972;
 	}
+
+IL_090a:
 	{
-		// if (_uniformUvs) tsMesh.uv[startIndex + n] = new Vector2((float)n / (identityVertices.Length - 1) * _sideUvScale.x + _sideUvOffset.x, totalLength * _sideUvScale.y + _sideUvOffset.y);
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_380 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
-		NullCheck(L_380);
-		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_381 = L_380->___uv_4;
-		int32_t L_382 = V_23;
-		int32_t L_383 = V_24;
-		int32_t L_384 = V_24;
-		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_385 = __this->___identityVertices_67;
-		NullCheck(L_385);
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_386 = (&__this->____sideUvScale_62);
-		float L_387 = L_386->___x_0;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_388 = (&__this->____sideUvOffset_63);
+		// _tsMesh.uv[startIndex + n] = new Vector2((float)n / (identityVertices.Length - 1) * _sideUvScale.x + _sideUvOffset.x, (float)i / (extrudeResults.Length - 1) * _sideUvScale.y + _sideUvOffset.y);
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_382;
+		L_382 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_382);
+		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_383 = L_382->___uv_4;
+		int32_t L_384 = V_23;
+		int32_t L_385 = V_24;
+		int32_t L_386 = V_24;
+		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_387 = __this->___identityVertices_69;
+		NullCheck(L_387);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_388 = (&__this->____sideUvScale_63);
 		float L_389 = L_388->___x_0;
-		float L_390 = V_18;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_391 = (&__this->____sideUvScale_62);
-		float L_392 = L_391->___y_1;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_393 = (&__this->____sideUvOffset_63);
-		float L_394 = L_393->___y_1;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_395;
-		memset((&L_395), 0, sizeof(L_395));
-		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_395), ((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(((float)(((float)L_384)/((float)((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_385)->max_length)), 1))))), L_387)), L_389)), ((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(L_390, L_392)), L_394)), /*hidden argument*/NULL);
-		NullCheck(L_381);
-		(L_381)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_382, L_383))), (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7)L_395);
-		goto IL_08fd;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_390 = (&__this->____sideUvOffset_64);
+		float L_391 = L_390->___x_0;
+		int32_t L_392 = V_22;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_393 = __this->___extrudeResults_68;
+		NullCheck(L_393);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_394 = (&__this->____sideUvScale_63);
+		float L_395 = L_394->___y_1;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_396 = (&__this->____sideUvOffset_64);
+		float L_397 = L_396->___y_1;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_398;
+		memset((&L_398), 0, sizeof(L_398));
+		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_398), ((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(((float)(((float)L_386)/((float)((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_387)->max_length)), 1))))), L_389)), L_391)), ((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(((float)(((float)L_392)/((float)((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_393)->max_length)), 1))))), L_395)), L_397)), /*hidden argument*/NULL);
+		NullCheck(L_383);
+		(L_383)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_384, L_385))), (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7)L_398);
 	}
 
-IL_0895:
+IL_0972:
 	{
-		// else tsMesh.uv[startIndex + n] = new Vector2((float)n / (identityVertices.Length - 1) * _sideUvScale.x + _sideUvOffset.x, (float)i / (extrudeResults.Length - 1) * _sideUvScale.y + _sideUvOffset.y);
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_396 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
-		NullCheck(L_396);
-		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_397 = L_396->___uv_4;
-		int32_t L_398 = V_23;
-		int32_t L_399 = V_24;
-		int32_t L_400 = V_24;
-		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_401 = __this->___identityVertices_67;
-		NullCheck(L_401);
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_402 = (&__this->____sideUvScale_62);
-		float L_403 = L_402->___x_0;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_404 = (&__this->____sideUvOffset_63);
-		float L_405 = L_404->___x_0;
-		int32_t L_406 = V_22;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_407 = __this->___extrudeResults_66;
+		// if (_sideUvRotation != 0f)
+		float L_399 = __this->____sideUvRotation_65;
+		if ((((float)L_399) == ((float)(0.0f))))
+		{
+			goto IL_09c8;
+		}
+	}
+	{
+		// _tsMesh.uv[startIndex + n] = Quaternion.AngleAxis(_sideUvRotation, Vector3.forward) * _tsMesh.uv[startIndex + n];
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_400;
+		L_400 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_400);
+		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_401 = L_400->___uv_4;
+		int32_t L_402 = V_23;
+		int32_t L_403 = V_24;
+		float L_404 = __this->____sideUvRotation_65;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_405;
+		L_405 = Vector3_get_forward_mAA55A7034304DF8B2152EAD49AE779FC4CA2EB4A_inline(NULL);
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_406;
+		L_406 = Quaternion_AngleAxis_mF37022977B297E63AA70D69EA1C4C922FF22CC80(L_404, L_405, NULL);
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_407;
+		L_407 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
 		NullCheck(L_407);
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_408 = (&__this->____sideUvScale_62);
-		float L_409 = L_408->___y_1;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_410 = (&__this->____sideUvOffset_63);
-		float L_411 = L_410->___y_1;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_412;
-		memset((&L_412), 0, sizeof(L_412));
-		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_412), ((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(((float)(((float)L_400)/((float)((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_401)->max_length)), 1))))), L_403)), L_405)), ((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(((float)(((float)L_406)/((float)((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_407)->max_length)), 1))))), L_409)), L_411)), /*hidden argument*/NULL);
-		NullCheck(L_397);
-		(L_397)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_398, L_399))), (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7)L_412);
+		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_408 = L_407->___uv_4;
+		int32_t L_409 = V_23;
+		int32_t L_410 = V_24;
+		NullCheck(L_408);
+		int32_t L_411 = ((int32_t)il2cpp_codegen_add(L_409, L_410));
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_412 = (L_408)->GetAt(static_cast<il2cpp_array_size_t>(L_411));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_413;
+		L_413 = Vector2_op_Implicit_m6D9CABB2C791A192867D7A4559D132BE86DD3EB7_inline(L_412, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_414;
+		L_414 = Quaternion_op_Multiply_mE1EBA73F9173432B50F8F17CE8190C5A7986FB8C(L_406, L_413, NULL);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_415;
+		L_415 = Vector2_op_Implicit_mE8EBEE9291F11BB02F062D6E000F4798968CBD96_inline(L_414, NULL);
+		NullCheck(L_401);
+		(L_401)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_402, L_403))), (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7)L_415);
 	}
 
-IL_08fd:
+IL_09c8:
 	{
-		// if (clockwise) tsMesh.uv[startIndex + n].x = 1f - tsMesh.uv[startIndex + n].x;
-		bool L_413 = V_6;
-		if (!L_413)
+		// if (clockwise)
+		bool L_416 = V_6;
+		if (!L_416)
 		{
-			goto IL_093b;
+			goto IL_0a06;
 		}
 	}
 	{
-		// if (clockwise) tsMesh.uv[startIndex + n].x = 1f - tsMesh.uv[startIndex + n].x;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_414 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
-		NullCheck(L_414);
-		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_415 = L_414->___uv_4;
-		int32_t L_416 = V_23;
-		int32_t L_417 = V_24;
-		NullCheck(L_415);
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_418 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		// _tsMesh.uv[startIndex + n].x = 1f - _tsMesh.uv[startIndex + n].x;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_417;
+		L_417 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_417);
+		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_418 = L_417->___uv_4;
+		int32_t L_419 = V_23;
+		int32_t L_420 = V_24;
 		NullCheck(L_418);
-		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_419 = L_418->___uv_4;
-		int32_t L_420 = V_23;
-		int32_t L_421 = V_24;
-		NullCheck(L_419);
-		float L_422 = ((L_419)->GetAddressAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_420, L_421)))))->___x_0;
-		((L_415)->GetAddressAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_416, L_417)))))->___x_0 = ((float)il2cpp_codegen_subtract((1.0f), L_422));
-	}
-
-IL_093b:
-	{
-		// for (int n = 0; n < identityVertices.Length; n++)
-		int32_t L_423 = V_24;
-		V_24 = ((int32_t)il2cpp_codegen_add(L_423, 1));
-	}
-
-IL_0941:
-	{
-		// for (int n = 0; n < identityVertices.Length; n++)
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_421;
+		L_421 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_421);
+		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_422 = L_421->___uv_4;
+		int32_t L_423 = V_23;
 		int32_t L_424 = V_24;
-		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_425 = __this->___identityVertices_67;
-		NullCheck(L_425);
-		if ((((int32_t)L_424) < ((int32_t)((int32_t)(((RuntimeArray*)L_425)->max_length)))))
-		{
-			goto IL_078f;
-		}
-	}
-	{
-		// for (int i = 0; i < extrudeResults.Length; i++)
-		int32_t L_426 = V_22;
-		V_22 = ((int32_t)il2cpp_codegen_add(L_426, 1));
+		NullCheck(L_422);
+		float L_425 = ((L_422)->GetAddressAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_423, L_424)))))->___x_0;
+		((L_418)->GetAddressAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_419, L_420)))))->___x_0 = ((float)il2cpp_codegen_subtract((1.0f), L_425));
 	}
 
-IL_0956:
+IL_0a06:
 	{
-		// for (int i = 0; i < extrudeResults.Length; i++)
-		int32_t L_427 = V_22;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_428 = __this->___extrudeResults_66;
+		// for (int n = 0; n < identityVertices.Length; n++)
+		int32_t L_426 = V_24;
+		V_24 = ((int32_t)il2cpp_codegen_add(L_426, 1));
+	}
+
+IL_0a0c:
+	{
+		// for (int n = 0; n < identityVertices.Length; n++)
+		int32_t L_427 = V_24;
+		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_428 = __this->___identityVertices_69;
 		NullCheck(L_428);
 		if ((((int32_t)L_427) < ((int32_t)((int32_t)(((RuntimeArray*)L_428)->max_length)))))
 		{
-			goto IL_0743;
+			goto IL_07f4;
 		}
 	}
 	{
-		// int written = WriteTris(ref surfaceTris, ref tsMesh.triangles, 0, 0, false);
-		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C** L_429 = (&__this->___surfaceTris_70);
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_430 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
-		NullCheck(L_430);
-		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C** L_431 = (&L_430->___triangles_8);
-		int32_t L_432;
-		L_432 = SurfaceGenerator_WriteTris_m61B7A44F9E6EB4B97E9848F9875F0A45F47E8A2B(__this, L_429, L_431, 0, 0, (bool)0, NULL);
-		V_19 = L_432;
-		// written = WriteTris(ref surfaceTris, ref tsMesh.triangles, surfaceVertexCount, written, true);
-		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C** L_433 = (&__this->___surfaceTris_70);
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_434 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
-		NullCheck(L_434);
-		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C** L_435 = (&L_434->___triangles_8);
-		int32_t L_436 = V_0;
-		int32_t L_437 = V_19;
-		int32_t L_438;
-		L_438 = SurfaceGenerator_WriteTris_m61B7A44F9E6EB4B97E9848F9875F0A45F47E8A2B(__this, L_433, L_435, L_436, L_437, (bool)1, NULL);
-		V_19 = L_438;
+		// for (int i = 0; i < extrudeResults.Length; i++)
+		int32_t L_429 = V_22;
+		V_22 = ((int32_t)il2cpp_codegen_add(L_429, 1));
+	}
+
+IL_0a21:
+	{
+		// for (int i = 0; i < extrudeResults.Length; i++)
+		int32_t L_430 = V_22;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_431 = __this->___extrudeResults_68;
+		NullCheck(L_431);
+		if ((((int32_t)L_430) < ((int32_t)((int32_t)(((RuntimeArray*)L_431)->max_length)))))
+		{
+			goto IL_07a0;
+		}
+	}
+	{
+		// int written = WriteTris(ref surfaceTris, ref _tsMesh.triangles, 0, 0, false);
+		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C** L_432 = (&__this->___surfaceTris_72);
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_433;
+		L_433 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_433);
+		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C** L_434 = (&L_433->___triangles_8);
+		int32_t L_435;
+		L_435 = SurfaceGenerator_WriteTris_m61B7A44F9E6EB4B97E9848F9875F0A45F47E8A2B(__this, L_432, L_434, 0, 0, (bool)0, NULL);
+		V_19 = L_435;
+		// written = WriteTris(ref surfaceTris, ref _tsMesh.triangles, surfaceVertexCount, written, true);
+		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C** L_436 = (&__this->___surfaceTris_72);
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_437;
+		L_437 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_437);
+		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C** L_438 = (&L_437->___triangles_8);
+		int32_t L_439 = V_0;
+		int32_t L_440 = V_19;
+		int32_t L_441;
+		L_441 = SurfaceGenerator_WriteTris_m61B7A44F9E6EB4B97E9848F9875F0A45F47E8A2B(__this, L_436, L_438, L_439, L_440, (bool)1, NULL);
+		V_19 = L_441;
 		// MeshUtility.GeneratePlaneTriangles(ref wallTris, sampleCount - 1, extrudeResults.Length, flipSide, 0, 0, true);
-		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C** L_439 = (&__this->___wallTris_71);
-		int32_t L_440;
-		L_440 = SplineUser_get_sampleCount_m72EB98E357EB6A53B94626C14D2F0CAF87997AFC_inline(__this, NULL);
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_441 = __this->___extrudeResults_66;
-		NullCheck(L_441);
-		bool L_442 = V_8;
+		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C** L_442 = (&__this->___wallTris_73);
+		int32_t L_443;
+		L_443 = SplineUser_get_sampleCount_m72EB98E357EB6A53B94626C14D2F0CAF87997AFC_inline(__this, NULL);
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_444 = __this->___extrudeResults_68;
+		NullCheck(L_444);
+		bool L_445 = V_8;
 		il2cpp_codegen_runtime_class_init_inline(MeshUtility_t290F5EC43C76DF1C4B2D3C845F319E4C9E5D82BA_il2cpp_TypeInfo_var);
-		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_443;
-		L_443 = MeshUtility_GeneratePlaneTriangles_m7330D4B70527489798A2A095F6152DBCB8FADC3F(L_439, ((int32_t)il2cpp_codegen_subtract(L_440, 1)), ((int32_t)(((RuntimeArray*)L_441)->max_length)), L_442, 0, 0, (bool)1, NULL);
-		// WriteTris(ref wallTris, ref tsMesh.triangles, surfaceVertexCount * 2, written, false);
-		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C** L_444 = (&__this->___wallTris_71);
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_445 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
-		NullCheck(L_445);
-		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C** L_446 = (&L_445->___triangles_8);
-		int32_t L_447 = V_0;
-		int32_t L_448 = V_19;
-		int32_t L_449;
-		L_449 = SurfaceGenerator_WriteTris_m61B7A44F9E6EB4B97E9848F9875F0A45F47E8A2B(__this, L_444, L_446, ((int32_t)il2cpp_codegen_multiply(L_447, 2)), L_448, (bool)0, NULL);
+		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_446;
+		L_446 = MeshUtility_GeneratePlaneTriangles_m7330D4B70527489798A2A095F6152DBCB8FADC3F(L_442, ((int32_t)il2cpp_codegen_subtract(L_443, 1)), ((int32_t)(((RuntimeArray*)L_444)->max_length)), L_445, 0, 0, (bool)1, NULL);
+		// WriteTris(ref wallTris, ref _tsMesh.triangles, surfaceVertexCount * 2, written, false);
+		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C** L_447 = (&__this->___wallTris_73);
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_448;
+		L_448 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_448);
+		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C** L_449 = (&L_448->___triangles_8);
+		int32_t L_450 = V_0;
+		int32_t L_451 = V_19;
+		int32_t L_452;
+		L_452 = SurfaceGenerator_WriteTris_m61B7A44F9E6EB4B97E9848F9875F0A45F47E8A2B(__this, L_447, L_449, ((int32_t)il2cpp_codegen_multiply(L_450, 2)), L_451, (bool)0, NULL);
 		return;
 	}
 
-IL_09de:
+IL_0aa9:
 	{
 		// else if (simpleExtrude)
-		bool L_450 = V_3;
-		if (!L_450)
+		bool L_453 = V_3;
+		if (!L_453)
 		{
-			goto IL_0e1a;
+			goto IL_0f35;
 		}
 	}
 	{
 		// for (int i = 0; i < surfaceVertexCount; i++)
 		V_27 = 0;
-		goto IL_0ae5;
+		goto IL_0bb0;
 	}
 
-IL_09ec:
+IL_0ab7:
 	{
-		// tsMesh.vertices[i + surfaceVertexCount] = tsMesh.vertices[i];
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_451 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
-		NullCheck(L_451);
-		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_452 = L_451->___vertices_0;
-		int32_t L_453 = V_27;
-		int32_t L_454 = V_0;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_455 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		// _tsMesh.vertices[i + surfaceVertexCount] = _tsMesh.vertices[i];
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_454;
+		L_454 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_454);
+		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_455 = L_454->___vertices_0;
+		int32_t L_456 = V_27;
+		int32_t L_457 = V_0;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_458;
+		L_458 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_458);
+		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_459 = L_458->___vertices_0;
+		int32_t L_460 = V_27;
+		NullCheck(L_459);
+		int32_t L_461 = L_460;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_462 = (L_459)->GetAt(static_cast<il2cpp_array_size_t>(L_461));
 		NullCheck(L_455);
-		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_456 = L_455->___vertices_0;
-		int32_t L_457 = V_27;
-		NullCheck(L_456);
-		int32_t L_458 = L_457;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_459 = (L_456)->GetAt(static_cast<il2cpp_array_size_t>(L_458));
-		NullCheck(L_452);
-		(L_452)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_453, L_454))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_459);
-		// tsMesh.normals[i + surfaceVertexCount] = -tsMesh.normals[i];
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_460 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
-		NullCheck(L_460);
-		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_461 = L_460->___normals_1;
-		int32_t L_462 = V_27;
-		int32_t L_463 = V_0;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_464 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		(L_455)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_456, L_457))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_462);
+		// _tsMesh.normals[i + surfaceVertexCount] = -_tsMesh.normals[i];
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_463;
+		L_463 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_463);
+		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_464 = L_463->___normals_1;
+		int32_t L_465 = V_27;
+		int32_t L_466 = V_0;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_467;
+		L_467 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_467);
+		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_468 = L_467->___normals_1;
+		int32_t L_469 = V_27;
+		NullCheck(L_468);
+		int32_t L_470 = L_469;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_471 = (L_468)->GetAt(static_cast<il2cpp_array_size_t>(L_470));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_472;
+		L_472 = Vector3_op_UnaryNegation_m5450829F333BD2A88AF9A592C4EE331661225915_inline(L_471, NULL);
 		NullCheck(L_464);
-		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_465 = L_464->___normals_1;
-		int32_t L_466 = V_27;
-		NullCheck(L_465);
-		int32_t L_467 = L_466;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_468 = (L_465)->GetAt(static_cast<il2cpp_array_size_t>(L_467));
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_469;
-		L_469 = Vector3_op_UnaryNegation_m5450829F333BD2A88AF9A592C4EE331661225915_inline(L_468, NULL);
-		NullCheck(L_461);
-		(L_461)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_462, L_463))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_469);
-		// tsMesh.colors[i + surfaceVertexCount] = tsMesh.colors[i];
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_470 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
-		NullCheck(L_470);
-		ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389* L_471 = L_470->___colors_3;
-		int32_t L_472 = V_27;
-		int32_t L_473 = V_0;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_474 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		(L_464)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_465, L_466))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_472);
+		// _tsMesh.colors[i + surfaceVertexCount] = _tsMesh.colors[i];
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_473;
+		L_473 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_473);
+		ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389* L_474 = L_473->___colors_3;
+		int32_t L_475 = V_27;
+		int32_t L_476 = V_0;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_477;
+		L_477 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_477);
+		ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389* L_478 = L_477->___colors_3;
+		int32_t L_479 = V_27;
+		NullCheck(L_478);
+		int32_t L_480 = L_479;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_481 = (L_478)->GetAt(static_cast<il2cpp_array_size_t>(L_480));
 		NullCheck(L_474);
-		ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389* L_475 = L_474->___colors_3;
-		int32_t L_476 = V_27;
-		NullCheck(L_475);
-		int32_t L_477 = L_476;
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_478 = (L_475)->GetAt(static_cast<il2cpp_array_size_t>(L_477));
-		NullCheck(L_471);
-		(L_471)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_472, L_473))), (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F)L_478);
-		// tsMesh.uv[i + surfaceVertexCount] = new Vector2(1f - tsMesh.uv[i].x, tsMesh.uv[i].y);
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_479 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
-		NullCheck(L_479);
-		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_480 = L_479->___uv_4;
-		int32_t L_481 = V_27;
-		int32_t L_482 = V_0;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_483 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
-		NullCheck(L_483);
-		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_484 = L_483->___uv_4;
-		int32_t L_485 = V_27;
-		NullCheck(L_484);
-		float L_486 = ((L_484)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_485)))->___x_0;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_487 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		(L_474)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_475, L_476))), (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F)L_481);
+		// _tsMesh.uv[i + surfaceVertexCount] = new Vector2(1f - _tsMesh.uv[i].x, _tsMesh.uv[i].y);
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_482;
+		L_482 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_482);
+		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_483 = L_482->___uv_4;
+		int32_t L_484 = V_27;
+		int32_t L_485 = V_0;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_486;
+		L_486 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_486);
+		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_487 = L_486->___uv_4;
+		int32_t L_488 = V_27;
 		NullCheck(L_487);
-		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_488 = L_487->___uv_4;
-		int32_t L_489 = V_27;
-		NullCheck(L_488);
-		float L_490 = ((L_488)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_489)))->___y_1;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_491;
-		memset((&L_491), 0, sizeof(L_491));
-		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_491), ((float)il2cpp_codegen_subtract((1.0f), L_486)), L_490, /*hidden argument*/NULL);
-		NullCheck(L_480);
-		(L_480)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_481, L_482))), (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7)L_491);
-		// tsMesh.vertices[i] += normal * _extrude;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_492 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
-		NullCheck(L_492);
-		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_493 = L_492->___vertices_0;
-		int32_t L_494 = V_27;
-		NullCheck(L_493);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_495 = ((L_493)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_494)));
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_496 = (*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_495);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_497 = V_5;
-		float L_498 = __this->____extrude_61;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_499;
-		L_499 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_497, L_498, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_500;
-		L_500 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_496, L_499, NULL);
-		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_495 = L_500;
+		float L_489 = ((L_487)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_488)))->___x_0;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_490;
+		L_490 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_490);
+		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_491 = L_490->___uv_4;
+		int32_t L_492 = V_27;
+		NullCheck(L_491);
+		float L_493 = ((L_491)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_492)))->___y_1;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_494;
+		memset((&L_494), 0, sizeof(L_494));
+		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_494), ((float)il2cpp_codegen_subtract((1.0f), L_489)), L_493, /*hidden argument*/NULL);
+		NullCheck(L_483);
+		(L_483)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_484, L_485))), (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7)L_494);
+		// _tsMesh.vertices[i] += normal * _extrude;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_495;
+		L_495 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_495);
+		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_496 = L_495->___vertices_0;
+		int32_t L_497 = V_27;
+		NullCheck(L_496);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_498 = ((L_496)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_497)));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_499 = (*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_498);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_500 = V_5;
+		float L_501 = __this->____extrude_62;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_502;
+		L_502 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_500, L_501, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_503;
+		L_503 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_499, L_502, NULL);
+		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_498 = L_503;
 		// for (int i = 0; i < surfaceVertexCount; i++)
-		int32_t L_501 = V_27;
-		V_27 = ((int32_t)il2cpp_codegen_add(L_501, 1));
+		int32_t L_504 = V_27;
+		V_27 = ((int32_t)il2cpp_codegen_add(L_504, 1));
 	}
 
-IL_0ae5:
+IL_0bb0:
 	{
 		// for (int i = 0; i < surfaceVertexCount; i++)
-		int32_t L_502 = V_27;
-		int32_t L_503 = V_0;
-		if ((((int32_t)L_502) < ((int32_t)L_503)))
+		int32_t L_505 = V_27;
+		int32_t L_506 = V_0;
+		if ((((int32_t)L_505) < ((int32_t)L_506)))
 		{
-			goto IL_09ec;
+			goto IL_0ab7;
 		}
 	}
 	{
 		// for (int i = 0; i < surfaceVertexCount + 1; i++)
 		V_28 = 0;
-		goto IL_0d9e;
+		goto IL_0eb9;
 	}
 
-IL_0af5:
+IL_0bc0:
 	{
 		// int index = i;
-		int32_t L_504 = V_28;
-		V_29 = L_504;
-		// if (i >= surfaceVertexCount) index = i - surfaceVertexCount;
-		int32_t L_505 = V_28;
-		int32_t L_506 = V_0;
-		if ((((int32_t)L_505) < ((int32_t)L_506)))
-		{
-			goto IL_0b04;
-		}
-	}
-	{
-		// if (i >= surfaceVertexCount) index = i - surfaceVertexCount;
 		int32_t L_507 = V_28;
-		int32_t L_508 = V_0;
-		V_29 = ((int32_t)il2cpp_codegen_subtract(L_507, L_508));
+		V_29 = L_507;
+		// if (i >= surfaceVertexCount) index = i - surfaceVertexCount;
+		int32_t L_508 = V_28;
+		int32_t L_509 = V_0;
+		if ((((int32_t)L_508) < ((int32_t)L_509)))
+		{
+			goto IL_0bcf;
+		}
+	}
+	{
+		// if (i >= surfaceVertexCount) index = i - surfaceVertexCount;
+		int32_t L_510 = V_28;
+		int32_t L_511 = V_0;
+		V_29 = ((int32_t)il2cpp_codegen_subtract(L_510, L_511));
 	}
 
-IL_0b04:
+IL_0bcf:
 	{
-		// GetSample(index, evalResult);
-		int32_t L_509 = V_29;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_510 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
-		SplineUser_GetSample_m3BC18583D33B76D600B873A10966C3AAD9744139(__this, L_509, L_510, NULL);
-		// tsMesh.vertices[i + surfaceVertexCount * 2] = tsMesh.vertices[index] - normal * _extrude;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_511 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
-		NullCheck(L_511);
-		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_512 = L_511->___vertices_0;
-		int32_t L_513 = V_28;
-		int32_t L_514 = V_0;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_515 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		// GetSample(index, ref evalResult);
+		int32_t L_512 = V_29;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_513 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
+		SplineUser_GetSample_m880DFE2CAAE9E9F4D85F68B13E9DE816186C3D8E(__this, L_512, L_513, NULL);
+		// _tsMesh.vertices[i + surfaceVertexCount * 2] = _tsMesh.vertices[index] - normal * _extrude;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_514;
+		L_514 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_514);
+		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_515 = L_514->___vertices_0;
+		int32_t L_516 = V_28;
+		int32_t L_517 = V_0;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_518;
+		L_518 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_518);
+		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_519 = L_518->___vertices_0;
+		int32_t L_520 = V_29;
+		NullCheck(L_519);
+		int32_t L_521 = L_520;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_522 = (L_519)->GetAt(static_cast<il2cpp_array_size_t>(L_521));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_523 = V_5;
+		float L_524 = __this->____extrude_62;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_525;
+		L_525 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_523, L_524, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_526;
+		L_526 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_522, L_525, NULL);
 		NullCheck(L_515);
-		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_516 = L_515->___vertices_0;
-		int32_t L_517 = V_29;
-		NullCheck(L_516);
-		int32_t L_518 = L_517;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_519 = (L_516)->GetAt(static_cast<il2cpp_array_size_t>(L_518));
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_520 = V_5;
-		float L_521 = __this->____extrude_61;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_522;
-		L_522 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_520, L_521, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_523;
-		L_523 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_519, L_522, NULL);
-		NullCheck(L_512);
-		(L_512)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_513, ((int32_t)il2cpp_codegen_multiply(L_514, 2))))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_523);
-		// tsMesh.normals[i + surfaceVertexCount * 2] = clockwise ? -evalResult.right : evalResult.right;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_524 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
-		NullCheck(L_524);
-		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_525 = L_524->___normals_1;
-		int32_t L_526 = V_28;
-		int32_t L_527 = V_0;
-		bool L_528 = V_6;
-		G_B81_0 = ((int32_t)il2cpp_codegen_add(L_526, ((int32_t)il2cpp_codegen_multiply(L_527, 2))));
-		G_B81_1 = L_525;
-		if (L_528)
+		(L_515)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_516, ((int32_t)il2cpp_codegen_multiply(L_517, 2))))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_526);
+		// _tsMesh.normals[i + surfaceVertexCount * 2] = clockwise ? -evalResult.right : evalResult.right;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_527;
+		L_527 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_527);
+		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_528 = L_527->___normals_1;
+		int32_t L_529 = V_28;
+		int32_t L_530 = V_0;
+		bool L_531 = V_6;
+		G_B80_0 = ((int32_t)il2cpp_codegen_add(L_529, ((int32_t)il2cpp_codegen_multiply(L_530, 2))));
+		G_B80_1 = L_528;
+		if (L_531)
 		{
-			G_B82_0 = ((int32_t)il2cpp_codegen_add(L_526, ((int32_t)il2cpp_codegen_multiply(L_527, 2))));
-			G_B82_1 = L_525;
-			goto IL_0b6e;
+			G_B81_0 = ((int32_t)il2cpp_codegen_add(L_529, ((int32_t)il2cpp_codegen_multiply(L_530, 2))));
+			G_B81_1 = L_528;
+			goto IL_0c39;
 		}
 	}
 	{
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_529 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
-		NullCheck(L_529);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_530;
-		L_530 = SplineSample_get_right_mEAF1BE463979ED78C482FEADFCCE3E694E3DA491(L_529, NULL);
-		G_B83_0 = L_530;
-		G_B83_1 = G_B81_0;
-		G_B83_2 = G_B81_1;
-		goto IL_0b7e;
-	}
-
-IL_0b6e:
-	{
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_531 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
-		NullCheck(L_531);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_532;
-		L_532 = SplineSample_get_right_mEAF1BE463979ED78C482FEADFCCE3E694E3DA491(L_531, NULL);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_532 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_533;
-		L_533 = Vector3_op_UnaryNegation_m5450829F333BD2A88AF9A592C4EE331661225915_inline(L_532, NULL);
-		G_B83_0 = L_533;
-		G_B83_1 = G_B82_0;
-		G_B83_2 = G_B82_1;
+		L_533 = SplineSample_get_right_mEAF1BE463979ED78C482FEADFCCE3E694E3DA491(L_532, NULL);
+		G_B82_0 = L_533;
+		G_B82_1 = G_B80_0;
+		G_B82_2 = G_B80_1;
+		goto IL_0c49;
 	}
 
-IL_0b7e:
+IL_0c39:
 	{
-		NullCheck(G_B83_2);
-		(G_B83_2)->SetAt(static_cast<il2cpp_array_size_t>(G_B83_1), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)G_B83_0);
-		// tsMesh.colors[i + surfaceVertexCount * 2] = tsMesh.colors[index];
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_534 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
-		NullCheck(L_534);
-		ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389* L_535 = L_534->___colors_3;
-		int32_t L_536 = V_28;
-		int32_t L_537 = V_0;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_538 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_534 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_535;
+		L_535 = SplineSample_get_right_mEAF1BE463979ED78C482FEADFCCE3E694E3DA491(L_534, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_536;
+		L_536 = Vector3_op_UnaryNegation_m5450829F333BD2A88AF9A592C4EE331661225915_inline(L_535, NULL);
+		G_B82_0 = L_536;
+		G_B82_1 = G_B81_0;
+		G_B82_2 = G_B81_1;
+	}
+
+IL_0c49:
+	{
+		NullCheck(G_B82_2);
+		(G_B82_2)->SetAt(static_cast<il2cpp_array_size_t>(G_B82_1), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)G_B82_0);
+		// _tsMesh.colors[i + surfaceVertexCount * 2] = _tsMesh.colors[index];
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_537;
+		L_537 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_537);
+		ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389* L_538 = L_537->___colors_3;
+		int32_t L_539 = V_28;
+		int32_t L_540 = V_0;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_541;
+		L_541 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_541);
+		ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389* L_542 = L_541->___colors_3;
+		int32_t L_543 = V_29;
+		NullCheck(L_542);
+		int32_t L_544 = L_543;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_545 = (L_542)->GetAt(static_cast<il2cpp_array_size_t>(L_544));
 		NullCheck(L_538);
-		ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389* L_539 = L_538->___colors_3;
-		int32_t L_540 = V_29;
-		NullCheck(L_539);
-		int32_t L_541 = L_540;
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_542 = (L_539)->GetAt(static_cast<il2cpp_array_size_t>(L_541));
-		NullCheck(L_535);
-		(L_535)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_536, ((int32_t)il2cpp_codegen_multiply(L_537, 2))))), (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F)L_542);
-		// tsMesh.uv[i + surfaceVertexCount * 2] = new Vector2((float)i / (surfaceVertexCount - 1) * _sideUvScale.x + _sideUvOffset.x, 0f + _sideUvOffset.y);
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_543 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
-		NullCheck(L_543);
-		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_544 = L_543->___uv_4;
-		int32_t L_545 = V_28;
-		int32_t L_546 = V_0;
-		int32_t L_547 = V_28;
-		int32_t L_548 = V_0;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_549 = (&__this->____sideUvScale_62);
-		float L_550 = L_549->___x_0;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_551 = (&__this->____sideUvOffset_63);
-		float L_552 = L_551->___x_0;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_553 = (&__this->____sideUvOffset_63);
-		float L_554 = L_553->___y_1;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_555;
-		memset((&L_555), 0, sizeof(L_555));
-		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_555), ((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(((float)(((float)L_547)/((float)((int32_t)il2cpp_codegen_subtract(L_548, 1))))), L_550)), L_552)), ((float)il2cpp_codegen_add((0.0f), L_554)), /*hidden argument*/NULL);
-		NullCheck(L_544);
-		(L_544)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_545, ((int32_t)il2cpp_codegen_multiply(L_546, 2))))), (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7)L_555);
-		// if (clockwise) tsMesh.uv[i + surfaceVertexCount * 2].x = 1f - tsMesh.uv[i + surfaceVertexCount * 2].x;
-		bool L_556 = V_6;
-		if (!L_556)
+		(L_538)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_539, ((int32_t)il2cpp_codegen_multiply(L_540, 2))))), (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F)L_545);
+		// _tsMesh.uv[i + surfaceVertexCount * 2] = new Vector2((float)i / (surfaceVertexCount - 1) * _sideUvScale.x + _sideUvOffset.x, 0f + _sideUvOffset.y);
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_546;
+		L_546 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_546);
+		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_547 = L_546->___uv_4;
+		int32_t L_548 = V_28;
+		int32_t L_549 = V_0;
+		int32_t L_550 = V_28;
+		int32_t L_551 = V_0;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_552 = (&__this->____sideUvScale_63);
+		float L_553 = L_552->___x_0;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_554 = (&__this->____sideUvOffset_64);
+		float L_555 = L_554->___x_0;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_556 = (&__this->____sideUvOffset_64);
+		float L_557 = L_556->___y_1;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_558;
+		memset((&L_558), 0, sizeof(L_558));
+		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_558), ((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(((float)(((float)L_550)/((float)((int32_t)il2cpp_codegen_subtract(L_551, 1))))), L_553)), L_555)), ((float)il2cpp_codegen_add((0.0f), L_557)), /*hidden argument*/NULL);
+		NullCheck(L_547);
+		(L_547)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_548, ((int32_t)il2cpp_codegen_multiply(L_549, 2))))), (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7)L_558);
+		// if (clockwise)
+		bool L_559 = V_6;
+		if (!L_559)
 		{
-			goto IL_0c37;
+			goto IL_0d02;
 		}
 	}
 	{
-		// if (clockwise) tsMesh.uv[i + surfaceVertexCount * 2].x = 1f - tsMesh.uv[i + surfaceVertexCount * 2].x;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_557 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
-		NullCheck(L_557);
-		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_558 = L_557->___uv_4;
-		int32_t L_559 = V_28;
-		int32_t L_560 = V_0;
-		NullCheck(L_558);
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_561 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		// _tsMesh.uv[i + surfaceVertexCount * 2].x = 1f - _tsMesh.uv[i + surfaceVertexCount * 2].x;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_560;
+		L_560 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_560);
+		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_561 = L_560->___uv_4;
+		int32_t L_562 = V_28;
+		int32_t L_563 = V_0;
 		NullCheck(L_561);
-		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_562 = L_561->___uv_4;
-		int32_t L_563 = V_28;
-		int32_t L_564 = V_0;
-		NullCheck(L_562);
-		float L_565 = ((L_562)->GetAddressAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_563, ((int32_t)il2cpp_codegen_multiply(L_564, 2)))))))->___x_0;
-		((L_558)->GetAddressAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_559, ((int32_t)il2cpp_codegen_multiply(L_560, 2)))))))->___x_0 = ((float)il2cpp_codegen_subtract((1.0f), L_565));
-	}
-
-IL_0c37:
-	{
-		// int offsetIndex = i + surfaceVertexCount * 3 + 1;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_564;
+		L_564 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_564);
+		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_565 = L_564->___uv_4;
 		int32_t L_566 = V_28;
 		int32_t L_567 = V_0;
-		V_30 = ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(L_566, ((int32_t)il2cpp_codegen_multiply(L_567, 3)))), 1));
-		// tsMesh.vertices[offsetIndex] = tsMesh.vertices[index];
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_568 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
-		NullCheck(L_568);
-		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_569 = L_568->___vertices_0;
-		int32_t L_570 = V_30;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_571 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		NullCheck(L_565);
+		float L_568 = ((L_565)->GetAddressAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_566, ((int32_t)il2cpp_codegen_multiply(L_567, 2)))))))->___x_0;
+		((L_561)->GetAddressAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_562, ((int32_t)il2cpp_codegen_multiply(L_563, 2)))))))->___x_0 = ((float)il2cpp_codegen_subtract((1.0f), L_568));
+	}
+
+IL_0d02:
+	{
+		// int offsetIndex = i + surfaceVertexCount * 3 + 1;
+		int32_t L_569 = V_28;
+		int32_t L_570 = V_0;
+		V_30 = ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(L_569, ((int32_t)il2cpp_codegen_multiply(L_570, 3)))), 1));
+		// _tsMesh.vertices[offsetIndex] = _tsMesh.vertices[index];
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_571;
+		L_571 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
 		NullCheck(L_571);
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_572 = L_571->___vertices_0;
-		int32_t L_573 = V_29;
+		int32_t L_573 = V_30;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_574;
+		L_574 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_574);
+		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_575 = L_574->___vertices_0;
+		int32_t L_576 = V_29;
+		NullCheck(L_575);
+		int32_t L_577 = L_576;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_578 = (L_575)->GetAt(static_cast<il2cpp_array_size_t>(L_577));
 		NullCheck(L_572);
-		int32_t L_574 = L_573;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_575 = (L_572)->GetAt(static_cast<il2cpp_array_size_t>(L_574));
-		NullCheck(L_569);
-		(L_569)->SetAt(static_cast<il2cpp_array_size_t>(L_570), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_575);
-		// tsMesh.normals[offsetIndex] = tsMesh.normals[i + surfaceVertexCount * 2];
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_576 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
-		NullCheck(L_576);
-		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_577 = L_576->___normals_1;
-		int32_t L_578 = V_30;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_579 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		(L_572)->SetAt(static_cast<il2cpp_array_size_t>(L_573), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_578);
+		// _tsMesh.normals[offsetIndex] = _tsMesh.normals[i + surfaceVertexCount * 2];
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_579;
+		L_579 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
 		NullCheck(L_579);
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_580 = L_579->___normals_1;
-		int32_t L_581 = V_28;
-		int32_t L_582 = V_0;
+		int32_t L_581 = V_30;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_582;
+		L_582 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_582);
+		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_583 = L_582->___normals_1;
+		int32_t L_584 = V_28;
+		int32_t L_585 = V_0;
+		NullCheck(L_583);
+		int32_t L_586 = ((int32_t)il2cpp_codegen_add(L_584, ((int32_t)il2cpp_codegen_multiply(L_585, 2))));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_587 = (L_583)->GetAt(static_cast<il2cpp_array_size_t>(L_586));
 		NullCheck(L_580);
-		int32_t L_583 = ((int32_t)il2cpp_codegen_add(L_581, ((int32_t)il2cpp_codegen_multiply(L_582, 2))));
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_584 = (L_580)->GetAt(static_cast<il2cpp_array_size_t>(L_583));
-		NullCheck(L_577);
-		(L_577)->SetAt(static_cast<il2cpp_array_size_t>(L_578), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_584);
-		// tsMesh.colors[offsetIndex] = tsMesh.colors[index];
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_585 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
-		NullCheck(L_585);
-		ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389* L_586 = L_585->___colors_3;
-		int32_t L_587 = V_30;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_588 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		(L_580)->SetAt(static_cast<il2cpp_array_size_t>(L_581), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_587);
+		// _tsMesh.colors[offsetIndex] = _tsMesh.colors[index];
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_588;
+		L_588 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
 		NullCheck(L_588);
 		ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389* L_589 = L_588->___colors_3;
-		int32_t L_590 = V_29;
+		int32_t L_590 = V_30;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_591;
+		L_591 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_591);
+		ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389* L_592 = L_591->___colors_3;
+		int32_t L_593 = V_29;
+		NullCheck(L_592);
+		int32_t L_594 = L_593;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_595 = (L_592)->GetAt(static_cast<il2cpp_array_size_t>(L_594));
 		NullCheck(L_589);
-		int32_t L_591 = L_590;
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_592 = (L_589)->GetAt(static_cast<il2cpp_array_size_t>(L_591));
-		NullCheck(L_586);
-		(L_586)->SetAt(static_cast<il2cpp_array_size_t>(L_587), (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F)L_592);
-		// if (_uniformUvs) tsMesh.uv[offsetIndex] = new Vector2((float)i / surfaceVertexCount * _sideUvScale.x + _sideUvOffset.x, _extrude * _sideUvScale.y + _sideUvOffset.y);
-		bool L_593 = __this->____uniformUvs_74;
-		if (!L_593)
+		(L_589)->SetAt(static_cast<il2cpp_array_size_t>(L_590), (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F)L_595);
+		// if (_uniformUvs)
+		bool L_596 = __this->____uniformUvs_76;
+		if (!L_596)
 		{
-			goto IL_0d0e;
+			goto IL_0dd9;
 		}
 	}
 	{
-		// if (_uniformUvs) tsMesh.uv[offsetIndex] = new Vector2((float)i / surfaceVertexCount * _sideUvScale.x + _sideUvOffset.x, _extrude * _sideUvScale.y + _sideUvOffset.y);
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_594 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
-		NullCheck(L_594);
-		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_595 = L_594->___uv_4;
-		int32_t L_596 = V_30;
-		int32_t L_597 = V_28;
-		int32_t L_598 = V_0;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_599 = (&__this->____sideUvScale_62);
-		float L_600 = L_599->___x_0;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_601 = (&__this->____sideUvOffset_63);
-		float L_602 = L_601->___x_0;
-		float L_603 = __this->____extrude_61;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_604 = (&__this->____sideUvScale_62);
-		float L_605 = L_604->___y_1;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_606 = (&__this->____sideUvOffset_63);
-		float L_607 = L_606->___y_1;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_608;
-		memset((&L_608), 0, sizeof(L_608));
-		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_608), ((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(((float)(((float)L_597)/((float)L_598))), L_600)), L_602)), ((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(L_603, L_605)), L_607)), /*hidden argument*/NULL);
-		NullCheck(L_595);
-		(L_595)->SetAt(static_cast<il2cpp_array_size_t>(L_596), (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7)L_608);
-		goto IL_0d60;
+		// _tsMesh.uv[offsetIndex] = new Vector2((float)i / surfaceVertexCount * _sideUvScale.x + _sideUvOffset.x, _extrude * _sideUvScale.y + _sideUvOffset.y);
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_597;
+		L_597 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_597);
+		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_598 = L_597->___uv_4;
+		int32_t L_599 = V_30;
+		int32_t L_600 = V_28;
+		int32_t L_601 = V_0;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_602 = (&__this->____sideUvScale_63);
+		float L_603 = L_602->___x_0;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_604 = (&__this->____sideUvOffset_64);
+		float L_605 = L_604->___x_0;
+		float L_606 = __this->____extrude_62;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_607 = (&__this->____sideUvScale_63);
+		float L_608 = L_607->___y_1;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_609 = (&__this->____sideUvOffset_64);
+		float L_610 = L_609->___y_1;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_611;
+		memset((&L_611), 0, sizeof(L_611));
+		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_611), ((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(((float)(((float)L_600)/((float)L_601))), L_603)), L_605)), ((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(L_606, L_608)), L_610)), /*hidden argument*/NULL);
+		NullCheck(L_598);
+		(L_598)->SetAt(static_cast<il2cpp_array_size_t>(L_599), (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7)L_611);
+		goto IL_0e2b;
 	}
 
-IL_0d0e:
+IL_0dd9:
 	{
-		// else tsMesh.uv[offsetIndex] = new Vector2((float)i / surfaceVertexCount * _sideUvScale.x + _sideUvOffset.x, 1f * _sideUvScale.y + _sideUvOffset.y);
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_609 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
-		NullCheck(L_609);
-		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_610 = L_609->___uv_4;
-		int32_t L_611 = V_30;
-		int32_t L_612 = V_28;
-		int32_t L_613 = V_0;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_614 = (&__this->____sideUvScale_62);
-		float L_615 = L_614->___x_0;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_616 = (&__this->____sideUvOffset_63);
-		float L_617 = L_616->___x_0;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_618 = (&__this->____sideUvScale_62);
-		float L_619 = L_618->___y_1;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_620 = (&__this->____sideUvOffset_63);
-		float L_621 = L_620->___y_1;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_622;
-		memset((&L_622), 0, sizeof(L_622));
-		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_622), ((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(((float)(((float)L_612)/((float)L_613))), L_615)), L_617)), ((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply((1.0f), L_619)), L_621)), /*hidden argument*/NULL);
-		NullCheck(L_610);
-		(L_610)->SetAt(static_cast<il2cpp_array_size_t>(L_611), (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7)L_622);
+		// _tsMesh.uv[offsetIndex] = new Vector2((float)i / surfaceVertexCount * _sideUvScale.x + _sideUvOffset.x, 1f * _sideUvScale.y + _sideUvOffset.y);
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_612;
+		L_612 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_612);
+		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_613 = L_612->___uv_4;
+		int32_t L_614 = V_30;
+		int32_t L_615 = V_28;
+		int32_t L_616 = V_0;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_617 = (&__this->____sideUvScale_63);
+		float L_618 = L_617->___x_0;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_619 = (&__this->____sideUvOffset_64);
+		float L_620 = L_619->___x_0;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_621 = (&__this->____sideUvScale_63);
+		float L_622 = L_621->___y_1;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_623 = (&__this->____sideUvOffset_64);
+		float L_624 = L_623->___y_1;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_625;
+		memset((&L_625), 0, sizeof(L_625));
+		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_625), ((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(((float)(((float)L_615)/((float)L_616))), L_618)), L_620)), ((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply((1.0f), L_622)), L_624)), /*hidden argument*/NULL);
+		NullCheck(L_613);
+		(L_613)->SetAt(static_cast<il2cpp_array_size_t>(L_614), (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7)L_625);
 	}
 
-IL_0d60:
+IL_0e2b:
 	{
-		// if (clockwise) tsMesh.uv[offsetIndex].x = 1f - tsMesh.uv[offsetIndex].x;
-		bool L_623 = V_6;
-		if (!L_623)
+		// if (_sideUvRotation != 0f)
+		float L_626 = __this->____sideUvRotation_65;
+		if ((((float)L_626) == ((float)(0.0f))))
 		{
-			goto IL_0d98;
+			goto IL_0e7b;
 		}
 	}
 	{
-		// if (clockwise) tsMesh.uv[offsetIndex].x = 1f - tsMesh.uv[offsetIndex].x;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_624 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
-		NullCheck(L_624);
-		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_625 = L_624->___uv_4;
-		int32_t L_626 = V_30;
-		NullCheck(L_625);
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_627 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		// _tsMesh.uv[offsetIndex] = Quaternion.AngleAxis(_sideUvRotation, Vector3.forward) * _tsMesh.uv[offsetIndex];
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_627;
+		L_627 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
 		NullCheck(L_627);
 		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_628 = L_627->___uv_4;
 		int32_t L_629 = V_30;
+		float L_630 = __this->____sideUvRotation_65;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_631;
+		L_631 = Vector3_get_forward_mAA55A7034304DF8B2152EAD49AE779FC4CA2EB4A_inline(NULL);
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_632;
+		L_632 = Quaternion_AngleAxis_mF37022977B297E63AA70D69EA1C4C922FF22CC80(L_630, L_631, NULL);
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_633;
+		L_633 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_633);
+		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_634 = L_633->___uv_4;
+		int32_t L_635 = V_30;
+		NullCheck(L_634);
+		int32_t L_636 = L_635;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_637 = (L_634)->GetAt(static_cast<il2cpp_array_size_t>(L_636));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_638;
+		L_638 = Vector2_op_Implicit_m6D9CABB2C791A192867D7A4559D132BE86DD3EB7_inline(L_637, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_639;
+		L_639 = Quaternion_op_Multiply_mE1EBA73F9173432B50F8F17CE8190C5A7986FB8C(L_632, L_638, NULL);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_640;
+		L_640 = Vector2_op_Implicit_mE8EBEE9291F11BB02F062D6E000F4798968CBD96_inline(L_639, NULL);
 		NullCheck(L_628);
-		float L_630 = ((L_628)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_629)))->___x_0;
-		((L_625)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_626)))->___x_0 = ((float)il2cpp_codegen_subtract((1.0f), L_630));
+		(L_628)->SetAt(static_cast<il2cpp_array_size_t>(L_629), (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7)L_640);
 	}
 
-IL_0d98:
+IL_0e7b:
 	{
-		// for (int i = 0; i < surfaceVertexCount + 1; i++)
-		int32_t L_631 = V_28;
-		V_28 = ((int32_t)il2cpp_codegen_add(L_631, 1));
-	}
-
-IL_0d9e:
-	{
-		// for (int i = 0; i < surfaceVertexCount + 1; i++)
-		int32_t L_632 = V_28;
-		int32_t L_633 = V_0;
-		if ((((int32_t)L_632) < ((int32_t)((int32_t)il2cpp_codegen_add(L_633, 1)))))
+		// if (clockwise)
+		bool L_641 = V_6;
+		if (!L_641)
 		{
-			goto IL_0af5;
+			goto IL_0eb3;
 		}
 	}
 	{
-		// int written = WriteTris(ref surfaceTris, ref tsMesh.triangles, 0, 0, false);
-		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C** L_634 = (&__this->___surfaceTris_70);
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_635 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
-		NullCheck(L_635);
-		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C** L_636 = (&L_635->___triangles_8);
-		int32_t L_637;
-		L_637 = SurfaceGenerator_WriteTris_m61B7A44F9E6EB4B97E9848F9875F0A45F47E8A2B(__this, L_634, L_636, 0, 0, (bool)0, NULL);
-		V_26 = L_637;
-		// written = WriteTris(ref surfaceTris, ref tsMesh.triangles, surfaceVertexCount, written, true);
-		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C** L_638 = (&__this->___surfaceTris_70);
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_639 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
-		NullCheck(L_639);
-		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C** L_640 = (&L_639->___triangles_8);
-		int32_t L_641 = V_0;
-		int32_t L_642 = V_26;
-		int32_t L_643;
-		L_643 = SurfaceGenerator_WriteTris_m61B7A44F9E6EB4B97E9848F9875F0A45F47E8A2B(__this, L_638, L_640, L_641, L_642, (bool)1, NULL);
-		V_26 = L_643;
-		// MeshUtility.GeneratePlaneTriangles(ref wallTris, sampleCount - 1, 2, flipSide, 0, 0, true);
-		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C** L_644 = (&__this->___wallTris_71);
-		int32_t L_645;
-		L_645 = SplineUser_get_sampleCount_m72EB98E357EB6A53B94626C14D2F0CAF87997AFC_inline(__this, NULL);
-		bool L_646 = V_8;
-		il2cpp_codegen_runtime_class_init_inline(MeshUtility_t290F5EC43C76DF1C4B2D3C845F319E4C9E5D82BA_il2cpp_TypeInfo_var);
-		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_647;
-		L_647 = MeshUtility_GeneratePlaneTriangles_m7330D4B70527489798A2A095F6152DBCB8FADC3F(L_644, ((int32_t)il2cpp_codegen_subtract(L_645, 1)), 2, L_646, 0, 0, (bool)1, NULL);
-		// WriteTris(ref wallTris, ref tsMesh.triangles, surfaceVertexCount * 2, written, false);
-		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C** L_648 = (&__this->___wallTris_71);
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_649 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
-		NullCheck(L_649);
-		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C** L_650 = (&L_649->___triangles_8);
+		// _tsMesh.uv[offsetIndex].x = 1f - _tsMesh.uv[offsetIndex].x;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_642;
+		L_642 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_642);
+		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_643 = L_642->___uv_4;
+		int32_t L_644 = V_30;
+		NullCheck(L_643);
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_645;
+		L_645 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_645);
+		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_646 = L_645->___uv_4;
+		int32_t L_647 = V_30;
+		NullCheck(L_646);
+		float L_648 = ((L_646)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_647)))->___x_0;
+		((L_643)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_644)))->___x_0 = ((float)il2cpp_codegen_subtract((1.0f), L_648));
+	}
+
+IL_0eb3:
+	{
+		// for (int i = 0; i < surfaceVertexCount + 1; i++)
+		int32_t L_649 = V_28;
+		V_28 = ((int32_t)il2cpp_codegen_add(L_649, 1));
+	}
+
+IL_0eb9:
+	{
+		// for (int i = 0; i < surfaceVertexCount + 1; i++)
+		int32_t L_650 = V_28;
 		int32_t L_651 = V_0;
-		int32_t L_652 = V_26;
-		int32_t L_653;
-		L_653 = SurfaceGenerator_WriteTris_m61B7A44F9E6EB4B97E9848F9875F0A45F47E8A2B(__this, L_648, L_650, ((int32_t)il2cpp_codegen_multiply(L_651, 2)), L_652, (bool)0, NULL);
+		if ((((int32_t)L_650) < ((int32_t)((int32_t)il2cpp_codegen_add(L_651, 1)))))
+		{
+			goto IL_0bc0;
+		}
+	}
+	{
+		// int written = WriteTris(ref surfaceTris, ref _tsMesh.triangles, 0, 0, false);
+		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C** L_652 = (&__this->___surfaceTris_72);
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_653;
+		L_653 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_653);
+		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C** L_654 = (&L_653->___triangles_8);
+		int32_t L_655;
+		L_655 = SurfaceGenerator_WriteTris_m61B7A44F9E6EB4B97E9848F9875F0A45F47E8A2B(__this, L_652, L_654, 0, 0, (bool)0, NULL);
+		V_26 = L_655;
+		// written = WriteTris(ref surfaceTris, ref _tsMesh.triangles, surfaceVertexCount, written, true);
+		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C** L_656 = (&__this->___surfaceTris_72);
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_657;
+		L_657 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_657);
+		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C** L_658 = (&L_657->___triangles_8);
+		int32_t L_659 = V_0;
+		int32_t L_660 = V_26;
+		int32_t L_661;
+		L_661 = SurfaceGenerator_WriteTris_m61B7A44F9E6EB4B97E9848F9875F0A45F47E8A2B(__this, L_656, L_658, L_659, L_660, (bool)1, NULL);
+		V_26 = L_661;
+		// MeshUtility.GeneratePlaneTriangles(ref wallTris, sampleCount - 1, 2, flipSide, 0, 0, true);
+		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C** L_662 = (&__this->___wallTris_73);
+		int32_t L_663;
+		L_663 = SplineUser_get_sampleCount_m72EB98E357EB6A53B94626C14D2F0CAF87997AFC_inline(__this, NULL);
+		bool L_664 = V_8;
+		il2cpp_codegen_runtime_class_init_inline(MeshUtility_t290F5EC43C76DF1C4B2D3C845F319E4C9E5D82BA_il2cpp_TypeInfo_var);
+		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_665;
+		L_665 = MeshUtility_GeneratePlaneTriangles_m7330D4B70527489798A2A095F6152DBCB8FADC3F(L_662, ((int32_t)il2cpp_codegen_subtract(L_663, 1)), 2, L_664, 0, 0, (bool)1, NULL);
+		// WriteTris(ref wallTris, ref _tsMesh.triangles, surfaceVertexCount * 2, written, false);
+		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C** L_666 = (&__this->___wallTris_73);
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_667;
+		L_667 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_667);
+		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C** L_668 = (&L_667->___triangles_8);
+		int32_t L_669 = V_0;
+		int32_t L_670 = V_26;
+		int32_t L_671;
+		L_671 = SurfaceGenerator_WriteTris_m61B7A44F9E6EB4B97E9848F9875F0A45F47E8A2B(__this, L_666, L_668, ((int32_t)il2cpp_codegen_multiply(L_669, 2)), L_670, (bool)0, NULL);
 		return;
 	}
 
-IL_0e1a:
+IL_0f35:
 	{
-		// WriteTris(ref surfaceTris, ref tsMesh.triangles, 0, 0, false);
-		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C** L_654 = (&__this->___surfaceTris_70);
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_655 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
-		NullCheck(L_655);
-		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C** L_656 = (&L_655->___triangles_8);
-		int32_t L_657;
-		L_657 = SurfaceGenerator_WriteTris_m61B7A44F9E6EB4B97E9848F9875F0A45F47E8A2B(__this, L_654, L_656, 0, 0, (bool)0, NULL);
+		// WriteTris(ref surfaceTris, ref _tsMesh.triangles, 0, 0, false);
+		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C** L_672 = (&__this->___surfaceTris_72);
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_673;
+		L_673 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_673);
+		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C** L_674 = (&L_673->___triangles_8);
+		int32_t L_675;
+		L_675 = SurfaceGenerator_WriteTris_m61B7A44F9E6EB4B97E9848F9875F0A45F47E8A2B(__this, L_672, L_674, 0, 0, (bool)0, NULL);
 		// }
 		return;
 	}
@@ -13119,8 +13850,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SurfaceGenerator_GenerateSurfaceTris_mC4
 	}
 	{
 		// MeshUtility.Triangulate(projectedVerts, ref surfaceTris);
-		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_0 = __this->___projectedVerts_69;
-		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C** L_1 = (&__this->___surfaceTris_70);
+		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_0 = __this->___projectedVerts_71;
+		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C** L_1 = (&__this->___surfaceTris_72);
 		il2cpp_codegen_runtime_class_init_inline(MeshUtility_t290F5EC43C76DF1C4B2D3C845F319E4C9E5D82BA_il2cpp_TypeInfo_var);
 		MeshUtility_Triangulate_m3625C9B8D4574B5BEE141432A03C5A53994E01EA(L_0, L_1, NULL);
 		// if (flip) MeshUtility.FlipTriangles(ref surfaceTris);
@@ -13132,7 +13863,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SurfaceGenerator_GenerateSurfaceTris_mC4
 	}
 	{
 		// if (flip) MeshUtility.FlipTriangles(ref surfaceTris);
-		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C** L_3 = (&__this->___surfaceTris_70);
+		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C** L_3 = (&__this->___surfaceTris_72);
 		il2cpp_codegen_runtime_class_init_inline(MeshUtility_t290F5EC43C76DF1C4B2D3C845F319E4C9E5D82BA_il2cpp_TypeInfo_var);
 		MeshUtility_FlipTriangles_mB5795227632C8EA9B421E2A579841CE6DA15A1E1(L_3, NULL);
 	}
@@ -13383,6 +14114,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SurfaceGenerator_GetIdentityVerts_m76E37
 	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	int32_t V_1 = 0;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_2;
+	memset((&V_2), 0, sizeof(V_2));
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 G_B5_0;
 	memset((&G_B5_0), 0, sizeof(G_B5_0));
 	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 G_B5_1;
@@ -13426,7 +14159,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SurfaceGenerator_GetIdentityVerts_m76E37
 		L_2 = Quaternion_Inverse_mD9C060AC626A7B406F4984AC98F8358DC89EF512(L_1, NULL);
 		V_0 = L_2;
 		// if (identityVertices.Length != sampleCount)
-		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_3 = __this->___identityVertices_67;
+		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_3 = __this->___identityVertices_69;
 		NullCheck(L_3);
 		int32_t L_4;
 		L_4 = SplineUser_get_sampleCount_m72EB98E357EB6A53B94626C14D2F0CAF87997AFC_inline(__this, NULL);
@@ -13440,160 +14173,146 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SurfaceGenerator_GetIdentityVerts_m76E37
 		int32_t L_5;
 		L_5 = SplineUser_get_sampleCount_m72EB98E357EB6A53B94626C14D2F0CAF87997AFC_inline(__this, NULL);
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_6 = (Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C*)(Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C*)SZArrayNew(Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C_il2cpp_TypeInfo_var, (uint32_t)L_5);
-		__this->___identityVertices_67 = L_6;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___identityVertices_67), (void*)L_6);
+		__this->___identityVertices_69 = L_6;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___identityVertices_69), (void*)L_6);
 		// identityNormals = new Vector3[sampleCount];
 		int32_t L_7;
 		L_7 = SplineUser_get_sampleCount_m72EB98E357EB6A53B94626C14D2F0CAF87997AFC_inline(__this, NULL);
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_8 = (Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C*)(Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C*)SZArrayNew(Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C_il2cpp_TypeInfo_var, (uint32_t)L_7);
-		__this->___identityNormals_68 = L_8;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___identityNormals_68), (void*)L_8);
+		__this->___identityNormals_70 = L_8;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___identityNormals_70), (void*)L_8);
 	}
 
 IL_003e:
 	{
 		// for (int i = 0; i < sampleCount; i++)
 		V_1 = 0;
-		goto IL_00d3;
+		goto IL_00bc;
 	}
 
-IL_0045:
+IL_0042:
 	{
-		// identityVertices[i] = vertsRotation * (GetSampleRaw(i).position - center + (clockwise ? -GetSampleRaw(i).right : GetSampleRaw(i).right) * _expand);
-		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_9 = __this->___identityVertices_67;
-		int32_t L_10 = V_1;
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_11 = V_0;
-		int32_t L_12 = V_1;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_13;
-		L_13 = SplineUser_GetSampleRaw_m348FCC800AC627A1C1FE4D63D0D6258FBE771315(__this, L_12, NULL);
-		NullCheck(L_13);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_14 = L_13->___position_0;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_15 = ___center0;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_16;
-		L_16 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_14, L_15, NULL);
-		bool L_17 = ___clockwise2;
-		G_B4_0 = L_16;
-		G_B4_1 = L_11;
-		G_B4_2 = L_10;
-		G_B4_3 = L_9;
-		if (L_17)
+		// GetSampleRaw(i, ref evalResult);
+		int32_t L_9 = V_1;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_10 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
+		SplineUser_GetSampleRaw_m9E2F85951E397274852DB80A6EC5C634822AB110(__this, L_9, L_10, NULL);
+		// Vector3 right = evalResult.right;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_11 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12;
+		L_12 = SplineSample_get_right_mEAF1BE463979ED78C482FEADFCCE3E694E3DA491(L_11, NULL);
+		V_2 = L_12;
+		// identityVertices[i] = vertsRotation * (evalResult.position - center + (clockwise ? -right : right) * _expand);
+		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_13 = __this->___identityVertices_69;
+		int32_t L_14 = V_1;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_15 = V_0;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_16 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_17 = L_16->___position_0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_18 = ___center0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_19;
+		L_19 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_17, L_18, NULL);
+		bool L_20 = ___clockwise2;
+		G_B4_0 = L_19;
+		G_B4_1 = L_15;
+		G_B4_2 = L_14;
+		G_B4_3 = L_13;
+		if (L_20)
 		{
-			G_B5_0 = L_16;
-			G_B5_1 = L_11;
-			G_B5_2 = L_10;
-			G_B5_3 = L_9;
-			goto IL_0070;
+			G_B5_0 = L_19;
+			G_B5_1 = L_15;
+			G_B5_2 = L_14;
+			G_B5_3 = L_13;
+			goto IL_007a;
 		}
 	}
 	{
-		int32_t L_18 = V_1;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_19;
-		L_19 = SplineUser_GetSampleRaw_m348FCC800AC627A1C1FE4D63D0D6258FBE771315(__this, L_18, NULL);
-		NullCheck(L_19);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_20;
-		L_20 = SplineSample_get_right_mEAF1BE463979ED78C482FEADFCCE3E694E3DA491(L_19, NULL);
-		G_B6_0 = L_20;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_21 = V_2;
+		G_B6_0 = L_21;
 		G_B6_1 = G_B4_0;
 		G_B6_2 = G_B4_1;
 		G_B6_3 = G_B4_2;
 		G_B6_4 = G_B4_3;
-		goto IL_0081;
+		goto IL_0080;
 	}
 
-IL_0070:
+IL_007a:
 	{
-		int32_t L_21 = V_1;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_22;
-		L_22 = SplineUser_GetSampleRaw_m348FCC800AC627A1C1FE4D63D0D6258FBE771315(__this, L_21, NULL);
-		NullCheck(L_22);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_22 = V_2;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_23;
-		L_23 = SplineSample_get_right_mEAF1BE463979ED78C482FEADFCCE3E694E3DA491(L_22, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_24;
-		L_24 = Vector3_op_UnaryNegation_m5450829F333BD2A88AF9A592C4EE331661225915_inline(L_23, NULL);
-		G_B6_0 = L_24;
+		L_23 = Vector3_op_UnaryNegation_m5450829F333BD2A88AF9A592C4EE331661225915_inline(L_22, NULL);
+		G_B6_0 = L_23;
 		G_B6_1 = G_B5_0;
 		G_B6_2 = G_B5_1;
 		G_B6_3 = G_B5_2;
 		G_B6_4 = G_B5_3;
 	}
 
-IL_0081:
+IL_0080:
 	{
-		float L_25 = __this->____expand_60;
+		float L_24 = __this->____expand_61;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_25;
+		L_25 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(G_B6_0, L_24, NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_26;
-		L_26 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(G_B6_0, L_25, NULL);
+		L_26 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(G_B6_1, L_25, NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_27;
-		L_27 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(G_B6_1, L_26, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_28;
-		L_28 = Quaternion_op_Multiply_mE1EBA73F9173432B50F8F17CE8190C5A7986FB8C(G_B6_2, L_27, NULL);
+		L_27 = Quaternion_op_Multiply_mE1EBA73F9173432B50F8F17CE8190C5A7986FB8C(G_B6_2, L_26, NULL);
 		NullCheck(G_B6_4);
-		(G_B6_4)->SetAt(static_cast<il2cpp_array_size_t>(G_B6_3), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_28);
-		// identityNormals[i] = vertsRotation * (clockwise ? -GetSampleRaw(i).right : GetSampleRaw(i).right);
-		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_29 = __this->___identityNormals_68;
-		int32_t L_30 = V_1;
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_31 = V_0;
-		bool L_32 = ___clockwise2;
-		G_B7_0 = L_31;
-		G_B7_1 = L_30;
-		G_B7_2 = L_29;
-		if (L_32)
+		(G_B6_4)->SetAt(static_cast<il2cpp_array_size_t>(G_B6_3), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_27);
+		// identityNormals[i] = vertsRotation * (clockwise ? -right : right);
+		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_28 = __this->___identityNormals_70;
+		int32_t L_29 = V_1;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_30 = V_0;
+		bool L_31 = ___clockwise2;
+		G_B7_0 = L_30;
+		G_B7_1 = L_29;
+		G_B7_2 = L_28;
+		if (L_31)
 		{
-			G_B8_0 = L_31;
-			G_B8_1 = L_30;
-			G_B8_2 = L_29;
-			goto IL_00b4;
+			G_B8_0 = L_30;
+			G_B8_1 = L_29;
+			G_B8_2 = L_28;
+			goto IL_00a8;
 		}
 	}
 	{
-		int32_t L_33 = V_1;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_34;
-		L_34 = SplineUser_GetSampleRaw_m348FCC800AC627A1C1FE4D63D0D6258FBE771315(__this, L_33, NULL);
-		NullCheck(L_34);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_35;
-		L_35 = SplineSample_get_right_mEAF1BE463979ED78C482FEADFCCE3E694E3DA491(L_34, NULL);
-		G_B9_0 = L_35;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_32 = V_2;
+		G_B9_0 = L_32;
 		G_B9_1 = G_B7_0;
 		G_B9_2 = G_B7_1;
 		G_B9_3 = G_B7_2;
-		goto IL_00c5;
+		goto IL_00ae;
 	}
 
-IL_00b4:
+IL_00a8:
 	{
-		int32_t L_36 = V_1;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_37;
-		L_37 = SplineUser_GetSampleRaw_m348FCC800AC627A1C1FE4D63D0D6258FBE771315(__this, L_36, NULL);
-		NullCheck(L_37);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_38;
-		L_38 = SplineSample_get_right_mEAF1BE463979ED78C482FEADFCCE3E694E3DA491(L_37, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_39;
-		L_39 = Vector3_op_UnaryNegation_m5450829F333BD2A88AF9A592C4EE331661225915_inline(L_38, NULL);
-		G_B9_0 = L_39;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_33 = V_2;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_34;
+		L_34 = Vector3_op_UnaryNegation_m5450829F333BD2A88AF9A592C4EE331661225915_inline(L_33, NULL);
+		G_B9_0 = L_34;
 		G_B9_1 = G_B8_0;
 		G_B9_2 = G_B8_1;
 		G_B9_3 = G_B8_2;
 	}
 
-IL_00c5:
+IL_00ae:
 	{
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_40;
-		L_40 = Quaternion_op_Multiply_mE1EBA73F9173432B50F8F17CE8190C5A7986FB8C(G_B9_1, G_B9_0, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_35;
+		L_35 = Quaternion_op_Multiply_mE1EBA73F9173432B50F8F17CE8190C5A7986FB8C(G_B9_1, G_B9_0, NULL);
 		NullCheck(G_B9_3);
-		(G_B9_3)->SetAt(static_cast<il2cpp_array_size_t>(G_B9_2), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_40);
+		(G_B9_3)->SetAt(static_cast<il2cpp_array_size_t>(G_B9_2), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_35);
 		// for (int i = 0; i < sampleCount; i++)
-		int32_t L_41 = V_1;
-		V_1 = ((int32_t)il2cpp_codegen_add(L_41, 1));
+		int32_t L_36 = V_1;
+		V_1 = ((int32_t)il2cpp_codegen_add(L_36, 1));
 	}
 
-IL_00d3:
+IL_00bc:
 	{
 		// for (int i = 0; i < sampleCount; i++)
-		int32_t L_42 = V_1;
-		int32_t L_43;
-		L_43 = SplineUser_get_sampleCount_m72EB98E357EB6A53B94626C14D2F0CAF87997AFC_inline(__this, NULL);
-		if ((((int32_t)L_42) < ((int32_t)L_43)))
+		int32_t L_37 = V_1;
+		int32_t L_38;
+		L_38 = SplineUser_get_sampleCount_m72EB98E357EB6A53B94626C14D2F0CAF87997AFC_inline(__this, NULL);
+		if ((((int32_t)L_37) < ((int32_t)L_38)))
 		{
-			goto IL_0045;
+			goto IL_0042;
 		}
 	}
 	{
@@ -13638,13 +14357,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SurfaceGenerator_GetProjectedVertices_mC
 		L_3 = Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline(NULL);
 		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_2 = L_3;
 		// Vector3 off = _trsRight * offset.x + _trsUp * offset.y + _trsForward * offset.z;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = __this->____trsRight_75;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = __this->____trsRight_77;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5;
 		L_5 = MeshGenerator_get_offset_m05B30B6A00C843F0C0D2D97FE5C13544BE501436_inline(__this, NULL);
 		float L_6 = L_5.___x_2;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_7;
 		L_7 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_4, L_6, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8 = __this->____trsUp_76;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8 = __this->____trsUp_78;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9;
 		L_9 = MeshGenerator_get_offset_m05B30B6A00C843F0C0D2D97FE5C13544BE501436_inline(__this, NULL);
 		float L_10 = L_9.___y_3;
@@ -13652,7 +14371,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SurfaceGenerator_GetProjectedVertices_mC
 		L_11 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_8, L_10, NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12;
 		L_12 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_7, L_11, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_13 = __this->____trsForward_77;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_13 = __this->____trsForward_79;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_14;
 		L_14 = MeshGenerator_get_offset_m05B30B6A00C843F0C0D2D97FE5C13544BE501436_inline(__this, NULL);
 		float L_15 = L_14.___z_4;
@@ -13663,44 +14382,42 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SurfaceGenerator_GetProjectedVertices_mC
 		V_0 = L_17;
 		// for (int i = 0; i < count; i++)
 		V_3 = 0;
-		goto IL_00ab;
+		goto IL_00b6;
 	}
 
 IL_0067:
 	{
-		// center += GetSampleRaw(i).position + off;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_18 = ___center1;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_19 = ___center1;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_20 = (*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_19);
-		int32_t L_21 = V_3;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_22;
-		L_22 = SplineUser_GetSampleRaw_m348FCC800AC627A1C1FE4D63D0D6258FBE771315(__this, L_21, NULL);
-		NullCheck(L_22);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_23 = L_22->___position_0;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_24 = V_0;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_25;
-		L_25 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_23, L_24, NULL);
+		// GetSampleRaw(i, ref evalResult);
+		int32_t L_18 = V_3;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_19 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
+		SplineUser_GetSampleRaw_m9E2F85951E397274852DB80A6EC5C634822AB110(__this, L_18, L_19, NULL);
+		// center += evalResult.position + off;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_20 = ___center1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_21 = ___center1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_22 = (*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_21);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_23 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_24 = L_23->___position_0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_25 = V_0;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_26;
-		L_26 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_20, L_25, NULL);
-		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_18 = L_26;
-		// normal += GetSampleRaw(i).up;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_27 = ___normal2;
+		L_26 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_24, L_25, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_27;
+		L_27 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_22, L_26, NULL);
+		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_20 = L_27;
+		// normal += evalResult.up;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_28 = ___normal2;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_29 = (*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_28);
-		int32_t L_30 = V_3;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_31;
-		L_31 = SplineUser_GetSampleRaw_m348FCC800AC627A1C1FE4D63D0D6258FBE771315(__this, L_30, NULL);
-		NullCheck(L_31);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_29 = ___normal2;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_30 = (*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_29);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_31 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_32 = L_31->___up_1;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_33;
-		L_33 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_29, L_32, NULL);
-		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_27 = L_33;
+		L_33 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_30, L_32, NULL);
+		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_28 = L_33;
 		// for (int i = 0; i < count; i++)
 		int32_t L_34 = V_3;
 		V_3 = ((int32_t)il2cpp_codegen_add(L_34, 1));
 	}
 
-IL_00ab:
+IL_00b6:
 	{
 		// for (int i = 0; i < count; i++)
 		int32_t L_35 = V_3;
@@ -13743,125 +14460,126 @@ IL_00ab:
 		L_51 = Quaternion_op_Multiply_mE1EBA73F9173432B50F8F17CE8190C5A7986FB8C(L_47, L_50, NULL);
 		V_2 = L_51;
 		// if (projectedVerts.Length != count) projectedVerts = new Vector2[count];
-		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_52 = __this->___projectedVerts_69;
+		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_52 = __this->___projectedVerts_71;
 		NullCheck(L_52);
 		int32_t L_53 = ___count0;
 		if ((((int32_t)((int32_t)(((RuntimeArray*)L_52)->max_length))) == ((int32_t)L_53)))
 		{
-			goto IL_0106;
+			goto IL_0111;
 		}
 	}
 	{
 		// if (projectedVerts.Length != count) projectedVerts = new Vector2[count];
 		int32_t L_54 = ___count0;
 		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_55 = (Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA*)(Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA*)SZArrayNew(Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA_il2cpp_TypeInfo_var, (uint32_t)L_54);
-		__this->___projectedVerts_69 = L_55;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___projectedVerts_69), (void*)L_55);
+		__this->___projectedVerts_71 = L_55;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___projectedVerts_71), (void*)L_55);
 	}
 
-IL_0106:
+IL_0111:
 	{
 		// for (int i = 0; i < count; i++)
 		V_4 = 0;
-		goto IL_01ad;
+		goto IL_01c4;
 	}
 
-IL_010e:
+IL_0119:
 	{
-		// Vector3 point = GetSampleRaw(i).position + off - center;
+		// GetSampleRaw(i, ref evalResult);
 		int32_t L_56 = V_4;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_57;
-		L_57 = SplineUser_GetSampleRaw_m348FCC800AC627A1C1FE4D63D0D6258FBE771315(__this, L_56, NULL);
-		NullCheck(L_57);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_58 = L_57->___position_0;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_59 = V_0;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_60;
-		L_60 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_58, L_59, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_61 = ___center1;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_62 = (*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_61);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_63;
-		L_63 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_60, L_62, NULL);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_57 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
+		SplineUser_GetSampleRaw_m9E2F85951E397274852DB80A6EC5C634822AB110(__this, L_56, L_57, NULL);
+		// Vector3 point = evalResult.position + off - center;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_58 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_59 = L_58->___position_0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_60 = V_0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_61;
+		L_61 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_59, L_60, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_62 = ___center1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_63 = (*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_62);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_64;
+		L_64 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_61, L_63, NULL);
 		// float projectionPointX = Vector3.Project(point, right).magnitude;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_64 = L_63;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_65 = V_2;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_66;
-		L_66 = Vector3_Project_m85DF3CB297EC5E1A17BD6266FF65E86AB7372C9B_inline(L_64, L_65, NULL);
-		V_7 = L_66;
-		float L_67;
-		L_67 = Vector3_get_magnitude_mF0D6017E90B345F1F52D1CC564C640F1A847AF2D_inline((&V_7), NULL);
-		V_5 = L_67;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_65 = L_64;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_66 = V_2;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_67;
+		L_67 = Vector3_Project_m85DF3CB297EC5E1A17BD6266FF65E86AB7372C9B_inline(L_65, L_66, NULL);
+		V_7 = L_67;
+		float L_68;
+		L_68 = Vector3_get_magnitude_mF0D6017E90B345F1F52D1CC564C640F1A847AF2D_inline((&V_7), NULL);
+		V_5 = L_68;
 		// if (Vector3.Dot(point, right) < 0.0f) projectionPointX *= -1f;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_68 = L_64;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_69 = V_2;
-		float L_70;
-		L_70 = Vector3_Dot_mBB86BB940AA0A32FA7D3C02AC42E5BC7095A5D52_inline(L_68, L_69, NULL);
-		G_B7_0 = L_68;
-		if ((!(((float)L_70) < ((float)(0.0f)))))
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_69 = L_65;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_70 = V_2;
+		float L_71;
+		L_71 = Vector3_Dot_mBB86BB940AA0A32FA7D3C02AC42E5BC7095A5D52_inline(L_69, L_70, NULL);
+		G_B7_0 = L_69;
+		if ((!(((float)L_71) < ((float)(0.0f)))))
 		{
-			G_B8_0 = L_68;
-			goto IL_0156;
+			G_B8_0 = L_69;
+			goto IL_016d;
 		}
 	}
 	{
 		// if (Vector3.Dot(point, right) < 0.0f) projectionPointX *= -1f;
-		float L_71 = V_5;
-		V_5 = ((float)il2cpp_codegen_multiply(L_71, (-1.0f)));
+		float L_72 = V_5;
+		V_5 = ((float)il2cpp_codegen_multiply(L_72, (-1.0f)));
 		G_B8_0 = G_B7_0;
 	}
 
-IL_0156:
+IL_016d:
 	{
 		// float projectionPointY = Vector3.Project(point, up).magnitude;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_72 = G_B8_0;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_73 = V_1;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_74;
-		L_74 = Vector3_Project_m85DF3CB297EC5E1A17BD6266FF65E86AB7372C9B_inline(L_72, L_73, NULL);
-		V_7 = L_74;
-		float L_75;
-		L_75 = Vector3_get_magnitude_mF0D6017E90B345F1F52D1CC564C640F1A847AF2D_inline((&V_7), NULL);
-		V_6 = L_75;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_73 = G_B8_0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_74 = V_1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_75;
+		L_75 = Vector3_Project_m85DF3CB297EC5E1A17BD6266FF65E86AB7372C9B_inline(L_73, L_74, NULL);
+		V_7 = L_75;
+		float L_76;
+		L_76 = Vector3_get_magnitude_mF0D6017E90B345F1F52D1CC564C640F1A847AF2D_inline((&V_7), NULL);
+		V_6 = L_76;
 		// if (Vector3.Dot(point, up) < 0.0f) projectionPointY *= -1f;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_76 = V_1;
-		float L_77;
-		L_77 = Vector3_Dot_mBB86BB940AA0A32FA7D3C02AC42E5BC7095A5D52_inline(L_72, L_76, NULL);
-		if ((!(((float)L_77) < ((float)(0.0f)))))
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_77 = V_1;
+		float L_78;
+		L_78 = Vector3_Dot_mBB86BB940AA0A32FA7D3C02AC42E5BC7095A5D52_inline(L_73, L_77, NULL);
+		if ((!(((float)L_78) < ((float)(0.0f)))))
 		{
-			goto IL_017f;
+			goto IL_0196;
 		}
 	}
 	{
 		// if (Vector3.Dot(point, up) < 0.0f) projectionPointY *= -1f;
-		float L_78 = V_6;
-		V_6 = ((float)il2cpp_codegen_multiply(L_78, (-1.0f)));
+		float L_79 = V_6;
+		V_6 = ((float)il2cpp_codegen_multiply(L_79, (-1.0f)));
 	}
 
-IL_017f:
+IL_0196:
 	{
 		// projectedVerts[i].x = projectionPointX;
-		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_79 = __this->___projectedVerts_69;
-		int32_t L_80 = V_4;
-		NullCheck(L_79);
-		float L_81 = V_5;
-		((L_79)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_80)))->___x_0 = L_81;
+		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_80 = __this->___projectedVerts_71;
+		int32_t L_81 = V_4;
+		NullCheck(L_80);
+		float L_82 = V_5;
+		((L_80)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_81)))->___x_0 = L_82;
 		// projectedVerts[i].y = projectionPointY;
-		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_82 = __this->___projectedVerts_69;
-		int32_t L_83 = V_4;
-		NullCheck(L_82);
-		float L_84 = V_6;
-		((L_82)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_83)))->___y_1 = L_84;
-		// for (int i = 0; i < count; i++)
-		int32_t L_85 = V_4;
-		V_4 = ((int32_t)il2cpp_codegen_add(L_85, 1));
-	}
-
-IL_01ad:
-	{
+		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_83 = __this->___projectedVerts_71;
+		int32_t L_84 = V_4;
+		NullCheck(L_83);
+		float L_85 = V_6;
+		((L_83)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_84)))->___y_1 = L_85;
 		// for (int i = 0; i < count; i++)
 		int32_t L_86 = V_4;
-		int32_t L_87 = ___count0;
-		if ((((int32_t)L_86) < ((int32_t)L_87)))
+		V_4 = ((int32_t)il2cpp_codegen_add(L_86, 1));
+	}
+
+IL_01c4:
+	{
+		// for (int i = 0; i < count; i++)
+		int32_t L_87 = V_4;
+		int32_t L_88 = ___count0;
+		if ((((int32_t)L_87) < ((int32_t)L_88)))
 		{
-			goto IL_010e;
+			goto IL_0119;
 		}
 	}
 	{
@@ -13886,53 +14604,53 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SurfaceGenerator__ctor_m8E49CAB544241821
 		// private Vector2 _sideUvScale = Vector2.one;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_0;
 		L_0 = Vector2_get_one_m9097EB8DC23C26118A591AF16702796C3EF51DFB_inline(NULL);
-		__this->____sideUvScale_62 = L_0;
+		__this->____sideUvScale_63 = L_0;
 		// private Vector2 _sideUvOffset = Vector2.zero;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_1;
 		L_1 = Vector2_get_zero_m32506C40EC2EE7D5D4410BF40D3EE683A3D5F32C_inline(NULL);
-		__this->____sideUvOffset_63 = L_1;
+		__this->____sideUvOffset_64 = L_1;
 		// private Vector3 _extrudeOffset = Vector3.zero;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2;
 		L_2 = Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline(NULL);
-		__this->____extrudeOffset_65 = L_2;
+		__this->____extrudeOffset_67 = L_2;
 		// private SplineSample[] extrudeResults = new SplineSample[0];
 		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_3 = (SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF*)(SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF*)SZArrayNew(SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF_il2cpp_TypeInfo_var, (uint32_t)0);
-		__this->___extrudeResults_66 = L_3;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___extrudeResults_66), (void*)L_3);
+		__this->___extrudeResults_68 = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___extrudeResults_68), (void*)L_3);
 		// private Vector3[] identityVertices = new Vector3[0];
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_4 = (Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C*)(Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C*)SZArrayNew(Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C_il2cpp_TypeInfo_var, (uint32_t)0);
-		__this->___identityVertices_67 = L_4;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___identityVertices_67), (void*)L_4);
+		__this->___identityVertices_69 = L_4;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___identityVertices_69), (void*)L_4);
 		// private Vector3[] identityNormals = new Vector3[0];
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_5 = (Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C*)(Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C*)SZArrayNew(Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C_il2cpp_TypeInfo_var, (uint32_t)0);
-		__this->___identityNormals_68 = L_5;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___identityNormals_68), (void*)L_5);
+		__this->___identityNormals_70 = L_5;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___identityNormals_70), (void*)L_5);
 		// private Vector2[] projectedVerts = new Vector2[0];
 		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_6 = (Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA*)(Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA*)SZArrayNew(Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA_il2cpp_TypeInfo_var, (uint32_t)0);
-		__this->___projectedVerts_69 = L_6;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___projectedVerts_69), (void*)L_6);
+		__this->___projectedVerts_71 = L_6;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___projectedVerts_71), (void*)L_6);
 		// private int[] surfaceTris = new int[0];
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_7 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, (uint32_t)0);
-		__this->___surfaceTris_70 = L_7;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___surfaceTris_70), (void*)L_7);
+		__this->___surfaceTris_72 = L_7;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___surfaceTris_72), (void*)L_7);
 		// private int[] wallTris = new int[0];
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_8 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, (uint32_t)0);
-		__this->___wallTris_71 = L_8;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___wallTris_71), (void*)L_8);
+		__this->___wallTris_73 = L_8;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___wallTris_73), (void*)L_8);
 		// private double _extrudeTo = 1.0;
-		__this->____extrudeTo_73 = (1.0);
+		__this->____extrudeTo_75 = (1.0);
 		// private Vector3 _trsRight = Vector3.right;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9;
 		L_9 = Vector3_get_right_mFF573AFBBB2186E7AFA1BA7CA271A78DF67E4EA0_inline(NULL);
-		__this->____trsRight_75 = L_9;
+		__this->____trsRight_77 = L_9;
 		// private Vector3 _trsUp = Vector3.up;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10;
 		L_10 = Vector3_get_up_m128AF3FDC820BF59D5DE86D973E7DE3F20C3AEBA_inline(NULL);
-		__this->____trsUp_76 = L_10;
+		__this->____trsUp_78 = L_10;
 		// private Vector3 _trsForward = Vector3.forward;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_11;
 		L_11 = Vector3_get_forward_mAA55A7034304DF8B2152EAD49AE779FC4CA2EB4A_inline(NULL);
-		__this->____trsForward_77 = L_11;
+		__this->____trsForward_79 = L_11;
 		il2cpp_codegen_runtime_class_init_inline(MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E_il2cpp_TypeInfo_var);
 		MeshGenerator__ctor_m5D5CE5E6D63ED2D3AE7688622270EA42D9363ED6(__this, NULL);
 		return;
@@ -13951,7 +14669,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t TubeGenerator_get_sides_m2A23B7B82AB7
 {
 	{
 		// get { return _sides; }
-		int32_t L_0 = __this->____sides_60;
+		int32_t L_0 = __this->____sides_61;
 		return L_0;
 	}
 }
@@ -13961,7 +14679,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TubeGenerator_set_sides_m9FDE5439BD42CF3
 	{
 		// if (value != _sides)
 		int32_t L_0 = ___value0;
-		int32_t L_1 = __this->____sides_60;
+		int32_t L_1 = __this->____sides_61;
 		if ((((int32_t)L_0) == ((int32_t)L_1)))
 		{
 			goto IL_001d;
@@ -13984,7 +14702,7 @@ IL_0010:
 	{
 		// _sides = value;
 		int32_t L_3 = ___value0;
-		__this->____sides_60 = L_3;
+		__this->____sides_61 = L_3;
 		// Rebuild();
 		VirtualActionInvoker0::Invoke(12 /* System.Void Dreamteck.Splines.SplineUser::Rebuild() */, __this);
 	}
@@ -14000,7 +14718,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t TubeGenerator_get_capMode_m17A6A45C45
 {
 	{
 		// get { return _capMode; }
-		int32_t L_0 = __this->____capMode_62;
+		int32_t L_0 = __this->____capMode_63;
 		return L_0;
 	}
 }
@@ -14010,7 +14728,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TubeGenerator_set_capMode_m8ACAA95623C2A
 	{
 		// if (value != _capMode)
 		int32_t L_0 = ___value0;
-		int32_t L_1 = __this->____capMode_62;
+		int32_t L_1 = __this->____capMode_63;
 		if ((((int32_t)L_0) == ((int32_t)L_1)))
 		{
 			goto IL_0016;
@@ -14019,7 +14737,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TubeGenerator_set_capMode_m8ACAA95623C2A
 	{
 		// _capMode = value;
 		int32_t L_2 = ___value0;
-		__this->____capMode_62 = L_2;
+		__this->____capMode_63 = L_2;
 		// Rebuild();
 		VirtualActionInvoker0::Invoke(12 /* System.Void Dreamteck.Splines.SplineUser::Rebuild() */, __this);
 	}
@@ -14035,7 +14753,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t TubeGenerator_get_roundCapLatitude_m0
 {
 	{
 		// get { return _roundCapLatitude; }
-		int32_t L_0 = __this->____roundCapLatitude_61;
+		int32_t L_0 = __this->____roundCapLatitude_62;
 		return L_0;
 	}
 }
@@ -14059,7 +14777,7 @@ IL_0007:
 	{
 		// if (value != _roundCapLatitude)
 		int32_t L_1 = ___value0;
-		int32_t L_2 = __this->____roundCapLatitude_61;
+		int32_t L_2 = __this->____roundCapLatitude_62;
 		if ((((int32_t)L_1) == ((int32_t)L_2)))
 		{
 			goto IL_0026;
@@ -14068,9 +14786,9 @@ IL_0007:
 	{
 		// _roundCapLatitude = value;
 		int32_t L_3 = ___value0;
-		__this->____roundCapLatitude_61 = L_3;
+		__this->____roundCapLatitude_62 = L_3;
 		// if(_capMode == CapMethod.Round) Rebuild();
-		int32_t L_4 = __this->____capMode_62;
+		int32_t L_4 = __this->____capMode_63;
 		if ((!(((uint32_t)L_4) == ((uint32_t)2))))
 		{
 			goto IL_0026;
@@ -14092,7 +14810,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float TubeGenerator_get_revolve_mF1E1E28A766C
 {
 	{
 		// get { return _revolve; }
-		float L_0 = __this->____revolve_63;
+		float L_0 = __this->____revolve_64;
 		return L_0;
 	}
 }
@@ -14102,7 +14820,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TubeGenerator_set_revolve_mB16DD076C1180
 	{
 		// if (value != _revolve)
 		float L_0 = ___value0;
-		float L_1 = __this->____revolve_63;
+		float L_1 = __this->____revolve_64;
 		if ((((float)L_0) == ((float)L_1)))
 		{
 			goto IL_0016;
@@ -14111,7 +14829,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TubeGenerator_set_revolve_mB16DD076C1180
 	{
 		// _revolve = value;
 		float L_2 = ___value0;
-		__this->____revolve_63 = L_2;
+		__this->____revolve_64 = L_2;
 		// Rebuild();
 		VirtualActionInvoker0::Invoke(12 /* System.Void Dreamteck.Splines.SplineUser::Rebuild() */, __this);
 	}
@@ -14127,7 +14845,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float TubeGenerator_get_capUVScale_m70A0E1FC6
 {
 	{
 		// get { return _capUVScale; }
-		float L_0 = __this->____capUVScale_64;
+		float L_0 = __this->____capUVScale_65;
 		return L_0;
 	}
 }
@@ -14137,7 +14855,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TubeGenerator_set_capUVScale_m7389358950
 	{
 		// if (value != _capUVScale)
 		float L_0 = ___value0;
-		float L_1 = __this->____capUVScale_64;
+		float L_1 = __this->____capUVScale_65;
 		if ((((float)L_0) == ((float)L_1)))
 		{
 			goto IL_0016;
@@ -14146,7 +14864,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TubeGenerator_set_capUVScale_m7389358950
 	{
 		// _capUVScale = value;
 		float L_2 = ___value0;
-		__this->____capUVScale_64 = L_2;
+		__this->____capUVScale_65 = L_2;
 		// Rebuild();
 		VirtualActionInvoker0::Invoke(12 /* System.Void Dreamteck.Splines.SplineUser::Rebuild() */, __this);
 	}
@@ -14162,7 +14880,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float TubeGenerator_get_uvTwist_mD3A38D7B5F13
 {
 	{
 		// get { return _uvTwist; }
-		float L_0 = __this->____uvTwist_65;
+		float L_0 = __this->____uvTwist_66;
 		return L_0;
 	}
 }
@@ -14172,7 +14890,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TubeGenerator_set_uvTwist_mBBEF178D776C1
 	{
 		// if (value != _uvTwist)
 		float L_0 = ___value0;
-		float L_1 = __this->____uvTwist_65;
+		float L_1 = __this->____uvTwist_66;
 		if ((((float)L_0) == ((float)L_1)))
 		{
 			goto IL_0016;
@@ -14181,7 +14899,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TubeGenerator_set_uvTwist_mBBEF178D776C1
 	{
 		// _uvTwist = value;
 		float L_2 = ___value0;
-		__this->____uvTwist_65 = L_2;
+		__this->____uvTwist_66 = L_2;
 		// Rebuild();
 		VirtualActionInvoker0::Invoke(12 /* System.Void Dreamteck.Splines.SplineUser::Rebuild() */, __this);
 	}
@@ -14204,7 +14922,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TubeGenerator_get_useCap_mC2B357A091859C
 	bool V_0 = false;
 	{
 		// bool isCapSet = _capMode != CapMethod.None;
-		int32_t L_0 = __this->____capMode_62;
+		int32_t L_0 = __this->____capMode_63;
 		V_0 = (bool)((!(((uint32_t)L_0) <= ((uint32_t)0)))? 1 : 0);
 		// if (spline != null) return isCapSet && (!spline.isClosed || span < 1f);
 		SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* L_1;
@@ -14259,32 +14977,26 @@ IL_003e:
 		return L_7;
 	}
 }
+// System.String Dreamteck.Splines.TubeGenerator::get_meshName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* TubeGenerator_get_meshName_m439148AF22AD465044E23EA4248915950C3B6DCA (TubeGenerator_t4E485B46B06DA51CFB07F5C1E751CC1010BCD2DE* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1FFAD832E2A46056E6477B083852CDF7D4E226E3);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// protected override string meshName => "Tube";
+		return _stringLiteral1FFAD832E2A46056E6477B083852CDF7D4E226E3;
+	}
+}
 // System.Void Dreamteck.Splines.TubeGenerator::Reset()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TubeGenerator_Reset_m8BC233568E353B168BEA3BC868DA5B45EAFA42DA (TubeGenerator_t4E485B46B06DA51CFB07F5C1E751CC1010BCD2DE* __this, const RuntimeMethod* method) 
 {
 	{
 		// base.Reset();
 		MeshGenerator_Reset_m26E544E1F41159BC58620D6246DDA1EC6AB4CA0F(__this, NULL);
-		// }
-		return;
-	}
-}
-// System.Void Dreamteck.Splines.TubeGenerator::Awake()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TubeGenerator_Awake_mD9611A4F23DB7F70544ED1C53C45C344B6A77930 (TubeGenerator_t4E485B46B06DA51CFB07F5C1E751CC1010BCD2DE* __this, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEB5F7E205563AF268B2398339D6BC44920D66CE0);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		// base.Awake();
-		MeshGenerator_Awake_m0B8F023A8612CDFFC6AAEE858462B8CB97B48960(__this, NULL);
-		// mesh.name = "tube";
-		Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* L_0 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___mesh_54;
-		NullCheck(L_0);
-		Object_set_name_mC79E6DC8FFD72479C90F0C4CC7F42A0FEAF5AE47(L_0, _stringLiteralEB5F7E205563AF268B2398339D6BC44920D66CE0, NULL);
 		// }
 		return;
 	}
@@ -14296,7 +15008,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TubeGenerator_BuildMesh_mC2BEAA2160EAF6F
 	int32_t V_1 = 0;
 	{
 		// if (_sides <= 2) return;
-		int32_t L_0 = __this->____sides_60;
+		int32_t L_0 = __this->____sides_61;
 		if ((((int32_t)L_0) > ((int32_t)2)))
 		{
 			goto IL_000a;
@@ -14312,14 +15024,14 @@ IL_000a:
 		// base.BuildMesh();
 		MeshGenerator_BuildMesh_m8593689F27E5E6B70A36B3E4058C9FA5E933A07A(__this, NULL);
 		// bodyVertexCount = (_sides + 1) * sampleCount;
-		int32_t L_1 = __this->____sides_60;
+		int32_t L_1 = __this->____sides_61;
 		int32_t L_2;
 		L_2 = SplineUser_get_sampleCount_m72EB98E357EB6A53B94626C14D2F0CAF87997AFC_inline(__this, NULL);
-		__this->___bodyVertexCount_66 = ((int32_t)il2cpp_codegen_multiply(((int32_t)il2cpp_codegen_add(L_1, 1)), L_2));
+		__this->___bodyVertexCount_67 = ((int32_t)il2cpp_codegen_multiply(((int32_t)il2cpp_codegen_add(L_1, 1)), L_2));
 		// CapMethod _capModeFinal = _capMode;
-		int32_t L_3 = __this->____capMode_62;
+		int32_t L_3 = __this->____capMode_63;
 		V_0 = L_3;
-		// if (!useCap) _capModeFinal = CapMethod.None;
+		// if (!useCap)
 		bool L_4;
 		L_4 = TubeGenerator_get_useCap_mC2B357A091859CE074115197AB1AE7DA64E55B1E(__this, NULL);
 		if (L_4)
@@ -14328,7 +15040,7 @@ IL_000a:
 		}
 	}
 	{
-		// if (!useCap) _capModeFinal = CapMethod.None;
+		// _capModeFinal = CapMethod.None;
 		V_0 = 0;
 	}
 
@@ -14354,8 +15066,8 @@ IL_0036:
 IL_0040:
 	{
 		// case CapMethod.Flat: capVertexCount = _sides + 1; break;
-		int32_t L_7 = __this->____sides_60;
-		__this->___capVertexCount_68 = ((int32_t)il2cpp_codegen_add(L_7, 1));
+		int32_t L_7 = __this->____sides_61;
+		__this->___capVertexCount_69 = ((int32_t)il2cpp_codegen_add(L_7, 1));
 		// case CapMethod.Flat: capVertexCount = _sides + 1; break;
 		goto IL_006e;
 	}
@@ -14363,10 +15075,10 @@ IL_0040:
 IL_0050:
 	{
 		// case CapMethod.Round: capVertexCount = _roundCapLatitude * (sides + 1); break;
-		int32_t L_8 = __this->____roundCapLatitude_61;
+		int32_t L_8 = __this->____roundCapLatitude_62;
 		int32_t L_9;
 		L_9 = TubeGenerator_get_sides_m2A23B7B82AB71570B35044BDA1A4125046DDD277_inline(__this, NULL);
-		__this->___capVertexCount_68 = ((int32_t)il2cpp_codegen_multiply(L_8, ((int32_t)il2cpp_codegen_add(L_9, 1))));
+		__this->___capVertexCount_69 = ((int32_t)il2cpp_codegen_multiply(L_8, ((int32_t)il2cpp_codegen_add(L_9, 1))));
 		// case CapMethod.Round: capVertexCount = _roundCapLatitude * (sides + 1); break;
 		goto IL_006e;
 	}
@@ -14374,20 +15086,20 @@ IL_0050:
 IL_0067:
 	{
 		// default: capVertexCount = 0; break;
-		__this->___capVertexCount_68 = 0;
+		__this->___capVertexCount_69 = 0;
 	}
 
 IL_006e:
 	{
 		// int vertexCount = bodyVertexCount + capVertexCount * 2;
-		int32_t L_10 = __this->___bodyVertexCount_66;
-		int32_t L_11 = __this->___capVertexCount_68;
+		int32_t L_10 = __this->___bodyVertexCount_67;
+		int32_t L_11 = __this->___capVertexCount_69;
 		V_1 = ((int32_t)il2cpp_codegen_add(L_10, ((int32_t)il2cpp_codegen_multiply(L_11, 2))));
 		// bodyTrisCount = _sides * (sampleCount - 1) * 2 * 3;
-		int32_t L_12 = __this->____sides_60;
+		int32_t L_12 = __this->____sides_61;
 		int32_t L_13;
 		L_13 = SplineUser_get_sampleCount_m72EB98E357EB6A53B94626C14D2F0CAF87997AFC_inline(__this, NULL);
-		__this->___bodyTrisCount_67 = ((int32_t)il2cpp_codegen_multiply(((int32_t)il2cpp_codegen_multiply(((int32_t)il2cpp_codegen_multiply(L_12, ((int32_t)il2cpp_codegen_subtract(L_13, 1)))), 2)), 3));
+		__this->___bodyTrisCount_68 = ((int32_t)il2cpp_codegen_multiply(((int32_t)il2cpp_codegen_multiply(((int32_t)il2cpp_codegen_multiply(L_12, ((int32_t)il2cpp_codegen_subtract(L_13, 1)))), 2)), 3));
 		int32_t L_14 = V_0;
 		if ((((int32_t)L_14) == ((int32_t)1)))
 		{
@@ -14408,8 +15120,8 @@ IL_006e:
 IL_00a1:
 	{
 		// case CapMethod.Flat: capTrisCount = (_sides - 1) * 3 * 2; break;
-		int32_t L_16 = __this->____sides_60;
-		__this->___capTrisCount_69 = ((int32_t)il2cpp_codegen_multiply(((int32_t)il2cpp_codegen_multiply(((int32_t)il2cpp_codegen_subtract(L_16, 1)), 3)), 2));
+		int32_t L_16 = __this->____sides_61;
+		__this->___capTrisCount_70 = ((int32_t)il2cpp_codegen_multiply(((int32_t)il2cpp_codegen_multiply(((int32_t)il2cpp_codegen_subtract(L_16, 1)), 3)), 2));
 		// case CapMethod.Flat: capTrisCount = (_sides - 1) * 3 * 2; break;
 		goto IL_00d3;
 	}
@@ -14417,9 +15129,9 @@ IL_00a1:
 IL_00b5:
 	{
 		// case CapMethod.Round: capTrisCount = _sides * _roundCapLatitude * 6; break;
-		int32_t L_17 = __this->____sides_60;
-		int32_t L_18 = __this->____roundCapLatitude_61;
-		__this->___capTrisCount_69 = ((int32_t)il2cpp_codegen_multiply(((int32_t)il2cpp_codegen_multiply(L_17, L_18)), 6));
+		int32_t L_17 = __this->____sides_61;
+		int32_t L_18 = __this->____roundCapLatitude_62;
+		__this->___capTrisCount_70 = ((int32_t)il2cpp_codegen_multiply(((int32_t)il2cpp_codegen_multiply(L_17, L_18)), 6));
 		// case CapMethod.Round: capTrisCount = _sides * _roundCapLatitude * 6; break;
 		goto IL_00d3;
 	}
@@ -14427,16 +15139,16 @@ IL_00b5:
 IL_00cc:
 	{
 		// default: capTrisCount = 0; break;
-		__this->___capTrisCount_69 = 0;
+		__this->___capTrisCount_70 = 0;
 	}
 
 IL_00d3:
 	{
 		// AllocateMesh(vertexCount, bodyTrisCount + capTrisCount * 2);
 		int32_t L_19 = V_1;
-		int32_t L_20 = __this->___bodyTrisCount_67;
-		int32_t L_21 = __this->___capTrisCount_69;
-		VirtualActionInvoker2< int32_t, int32_t >::Invoke(24 /* System.Void Dreamteck.Splines.MeshGenerator::AllocateMesh(System.Int32,System.Int32) */, __this, L_19, ((int32_t)il2cpp_codegen_add(L_20, ((int32_t)il2cpp_codegen_multiply(L_21, 2)))));
+		int32_t L_20 = __this->___bodyTrisCount_68;
+		int32_t L_21 = __this->___capTrisCount_70;
+		VirtualActionInvoker2< int32_t, int32_t >::Invoke(26 /* System.Void Dreamteck.Splines.MeshGenerator::AllocateMesh(System.Int32,System.Int32) */, __this, L_19, ((int32_t)il2cpp_codegen_add(L_20, ((int32_t)il2cpp_codegen_multiply(L_21, 2)))));
 		// Generate();
 		TubeGenerator_Generate_mBE76AB24F9F2DCD24E3233039313A2BF273A95C5(__this, NULL);
 		int32_t L_22 = V_0;
@@ -14516,23 +15228,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TubeGenerator_Generate_mBE76AB24F9F2DCD2
 
 IL_0020:
 	{
-		// GetSample(i, evalResult);
+		// GetSample(i, ref evalResult);
 		int32_t L_3 = V_2;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_4 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
-		SplineUser_GetSample_m3BC18583D33B76D600B873A10966C3AAD9744139(__this, L_3, L_4, NULL);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_4 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
+		SplineUser_GetSample_m880DFE2CAAE9E9F4D85F68B13E9DE816186C3D8E(__this, L_3, L_4, NULL);
 		// Vector3 center = evalResult.position;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_5 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
-		NullCheck(L_5);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_5 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = L_5->___position_0;
 		V_3 = L_6;
 		// Vector3 right = evalResult.right;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_7 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
-		NullCheck(L_7);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_7 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8;
 		L_8 = SplineSample_get_right_mEAF1BE463979ED78C482FEADFCCE3E694E3DA491(L_7, NULL);
 		V_4 = L_8;
 		// float resultSize = GetBaseSize(evalResult);
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_9 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 L_9 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27;
 		float L_10;
 		L_10 = MeshGenerator_GetBaseSize_m3AA0C08209F5E80A02EDE2F76C32D1249A47E5B1(__this, L_9, NULL);
 		V_5 = L_10;
@@ -14557,8 +15267,7 @@ IL_0020:
 		L_18 = MeshGenerator_get_offset_m05B30B6A00C843F0C0D2D97FE5C13544BE501436_inline(__this, NULL);
 		float L_19 = L_18.___y_3;
 		float L_20 = V_5;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_21 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
-		NullCheck(L_21);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_21 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_22 = L_21->___up_1;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_23;
 		L_23 = Vector3_op_Multiply_m7F3B0FA9256CE368D7636558EFEFC4AB0E1A0F41_inline(((float)il2cpp_codegen_multiply(L_19, L_20)), L_22, NULL);
@@ -14568,8 +15277,7 @@ IL_0020:
 		L_25 = MeshGenerator_get_offset_m05B30B6A00C843F0C0D2D97FE5C13544BE501436_inline(__this, NULL);
 		float L_26 = L_25.___z_4;
 		float L_27 = V_5;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_28 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
-		NullCheck(L_28);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_28 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_29 = L_28->___forward_2;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_30;
 		L_30 = Vector3_op_Multiply_m7F3B0FA9256CE368D7636558EFEFC4AB0E1A0F41_inline(((float)il2cpp_codegen_multiply(L_26, L_27)), L_29, NULL);
@@ -14609,7 +15317,7 @@ IL_00cb:
 IL_00d2:
 	{
 		// Color vertexColor = GetBaseColor(evalResult) * color;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_36 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 L_36 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_37;
 		L_37 = MeshGenerator_GetBaseColor_mA53F6B90FFB54A8BA028FD12E109CB36B83F5723(__this, L_36, NULL);
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_38;
@@ -14626,21 +15334,21 @@ IL_00f3:
 	{
 		// float anglePercent = (float)(n) / _sides;
 		int32_t L_40 = V_7;
-		int32_t L_41 = __this->____sides_60;
+		int32_t L_41 = __this->____sides_61;
 		V_8 = ((float)(((float)L_40)/((float)L_41)));
 		// Quaternion rot = Quaternion.AngleAxis(_revolve * anglePercent + rotation + 180f, evalResult.forward);
-		float L_42 = __this->____revolve_63;
+		float L_42 = __this->____revolve_64;
 		float L_43 = V_8;
 		float L_44;
 		L_44 = MeshGenerator_get_rotation_mF01F123A8637DB897577510B334D675B3B9C55CE_inline(__this, NULL);
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_45 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
-		NullCheck(L_45);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_45 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_46 = L_45->___forward_2;
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_47;
 		L_47 = Quaternion_AngleAxis_mF37022977B297E63AA70D69EA1C4C922FF22CC80(((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(L_42, L_43)), L_44)), (180.0f))), L_46, NULL);
 		V_9 = L_47;
-		// tsMesh.vertices[vertexIndex] = center + rot * right * (size * resultSize * 0.5f);
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_48 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		// _tsMesh.vertices[vertexIndex] = center + rot * right * (size * resultSize * 0.5f);
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_48;
+		L_48 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
 		NullCheck(L_48);
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_49 = L_48->___vertices_0;
 		int32_t L_50 = V_0;
@@ -14659,13 +15367,13 @@ IL_00f3:
 		NullCheck(L_49);
 		(L_49)->SetAt(static_cast<il2cpp_array_size_t>(L_50), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_58);
 		// CalculateUVs(evalResult.percent, anglePercent);
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_59 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
-		NullCheck(L_59);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_59 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
 		double L_60 = L_59->___percent_5;
 		float L_61 = V_8;
 		MeshGenerator_CalculateUVs_m6EF52B8AA80896038E1731EF4906EC64CC65FC48(__this, L_60, L_61, NULL);
-		// tsMesh.uv[vertexIndex] = Vector2.one * 0.5f + (Vector2)(Quaternion.AngleAxis(uvRotation + 180f, Vector3.forward) * (Vector2.one * 0.5f - (uvs + Vector2.right * ((float)evalResult.percent * _uvTwist))));
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_62 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		// _tsMesh.uv[vertexIndex] = Vector2.one * 0.5f + (Vector2)(Quaternion.AngleAxis(uvRotation + 180f, Vector3.forward) * (Vector2.one * 0.5f - (__uvs + Vector2.right * ((float)evalResult.percent * _uvTwist))));
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_62;
+		L_62 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
 		NullCheck(L_62);
 		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_63 = L_62->___uv_4;
 		int32_t L_64 = V_0;
@@ -14684,13 +15392,12 @@ IL_00f3:
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_71;
 		L_71 = Vector2_op_Multiply_m2D984B613020089BF5165BA4CA10988E2DC771FE_inline(L_70, (0.5f), NULL);
 		il2cpp_codegen_runtime_class_init_inline(MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E_il2cpp_TypeInfo_var);
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_72 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E_StaticFields*)il2cpp_codegen_static_fields_for(MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E_il2cpp_TypeInfo_var))->___uvs_59;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_72 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E_StaticFields*)il2cpp_codegen_static_fields_for(MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E_il2cpp_TypeInfo_var))->_____uvs_55;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_73;
 		L_73 = Vector2_get_right_m99043ED6B3D5AEA5033313FE3DA9571F39D1B280_inline(NULL);
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_74 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
-		NullCheck(L_74);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_74 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
 		double L_75 = L_74->___percent_5;
-		float L_76 = __this->____uvTwist_65;
+		float L_76 = __this->____uvTwist_66;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_77;
 		L_77 = Vector2_op_Multiply_m2D984B613020089BF5165BA4CA10988E2DC771FE_inline(L_73, ((float)il2cpp_codegen_multiply(((float)L_75), L_76)), NULL);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_78;
@@ -14707,12 +15414,14 @@ IL_00f3:
 		L_83 = Vector2_op_Addition_m8136742CE6EE33BA4EB81C5F584678455917D2AE_inline(L_66, L_82, NULL);
 		NullCheck(L_63);
 		(L_63)->SetAt(static_cast<il2cpp_array_size_t>(L_64), (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7)L_83);
-		// tsMesh.normals[vertexIndex] = Vector3.Normalize(tsMesh.vertices[vertexIndex] - center);
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_84 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		// _tsMesh.normals[vertexIndex] = Vector3.Normalize(_tsMesh.vertices[vertexIndex] - center);
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_84;
+		L_84 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
 		NullCheck(L_84);
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_85 = L_84->___normals_1;
 		int32_t L_86 = V_0;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_87 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_87;
+		L_87 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
 		NullCheck(L_87);
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_88 = L_87->___vertices_0;
 		int32_t L_89 = V_0;
@@ -14726,8 +15435,9 @@ IL_00f3:
 		L_94 = Vector3_Normalize_mEF8349CC39674236CFC694189AFD36E31F89AC8F_inline(L_93, NULL);
 		NullCheck(L_85);
 		(L_85)->SetAt(static_cast<il2cpp_array_size_t>(L_86), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_94);
-		// tsMesh.colors[vertexIndex] = vertexColor;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_95 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		// _tsMesh.colors[vertexIndex] = vertexColor;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_95;
+		L_95 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
 		NullCheck(L_95);
 		ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389* L_96 = L_95->___colors_3;
 		int32_t L_97 = V_0;
@@ -14746,7 +15456,7 @@ IL_023e:
 	{
 		// for (int n = 0; n < _sides + 1; n++)
 		int32_t L_101 = V_7;
-		int32_t L_102 = __this->____sides_60;
+		int32_t L_102 = __this->____sides_61;
 		if ((((int32_t)L_101) < ((int32_t)((int32_t)il2cpp_codegen_add(L_102, 1)))))
 		{
 			goto IL_00f3;
@@ -14770,11 +15480,12 @@ IL_0251:
 		}
 	}
 	{
-		// MeshUtility.GeneratePlaneTriangles(ref tsMesh.triangles, _sides, sampleCount, false);
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_106 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		// MeshUtility.GeneratePlaneTriangles(ref _tsMesh.triangles, _sides, sampleCount, false);
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_106;
+		L_106 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
 		NullCheck(L_106);
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C** L_107 = (&L_106->___triangles_8);
-		int32_t L_108 = __this->____sides_60;
+		int32_t L_108 = __this->____sides_61;
 		int32_t L_109;
 		L_109 = SplineUser_get_sampleCount_m72EB98E357EB6A53B94626C14D2F0CAF87997AFC_inline(__this, NULL);
 		il2cpp_codegen_runtime_class_init_inline(MeshUtility_t290F5EC43C76DF1C4B2D3C845F319E4C9E5D82BA_il2cpp_TypeInfo_var);
@@ -14798,9 +15509,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TubeGenerator_GenerateFlatCaps_m0273F58B
 	int32_t V_8 = 0;
 	int32_t G_B9_0 = 0;
 	{
-		// GetSample(0, evalResult);
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_0 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
-		SplineUser_GetSample_m3BC18583D33B76D600B873A10966C3AAD9744139(__this, 0, L_0, NULL);
+		// GetSample(0, ref evalResult);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_0 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
+		SplineUser_GetSample_m880DFE2CAAE9E9F4D85F68B13E9DE816186C3D8E(__this, 0, L_0, NULL);
 		// for (int i = 0; i < _sides+1; i++)
 		V_2 = 0;
 		goto IL_0101;
@@ -14809,15 +15520,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TubeGenerator_GenerateFlatCaps_m0273F58B
 IL_0014:
 	{
 		// int index = bodyVertexCount + i;
-		int32_t L_1 = __this->___bodyVertexCount_66;
+		int32_t L_1 = __this->___bodyVertexCount_67;
 		int32_t L_2 = V_2;
 		V_3 = ((int32_t)il2cpp_codegen_add(L_1, L_2));
-		// tsMesh.vertices[index] = tsMesh.vertices[i];
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_3 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		// _tsMesh.vertices[index] = _tsMesh.vertices[i];
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_3;
+		L_3 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
 		NullCheck(L_3);
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_4 = L_3->___vertices_0;
 		int32_t L_5 = V_3;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_6 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_6;
+		L_6 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
 		NullCheck(L_6);
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_7 = L_6->___vertices_0;
 		int32_t L_8 = V_2;
@@ -14826,24 +15539,26 @@ IL_0014:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10 = (L_7)->GetAt(static_cast<il2cpp_array_size_t>(L_9));
 		NullCheck(L_4);
 		(L_4)->SetAt(static_cast<il2cpp_array_size_t>(L_5), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_10);
-		// tsMesh.normals[index] = -evalResult.forward;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_11 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		// _tsMesh.normals[index] = -evalResult.forward;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_11;
+		L_11 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
 		NullCheck(L_11);
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_12 = L_11->___normals_1;
 		int32_t L_13 = V_3;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_14 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
-		NullCheck(L_14);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_14 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_15 = L_14->___forward_2;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_16;
 		L_16 = Vector3_op_UnaryNegation_m5450829F333BD2A88AF9A592C4EE331661225915_inline(L_15, NULL);
 		NullCheck(L_12);
 		(L_12)->SetAt(static_cast<il2cpp_array_size_t>(L_13), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_16);
-		// tsMesh.colors[index] = tsMesh.colors[i];
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_17 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		// _tsMesh.colors[index] = _tsMesh.colors[i];
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_17;
+		L_17 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
 		NullCheck(L_17);
 		ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389* L_18 = L_17->___colors_3;
 		int32_t L_19 = V_3;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_20 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_20;
+		L_20 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
 		NullCheck(L_20);
 		ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389* L_21 = L_20->___colors_3;
 		int32_t L_22 = V_2;
@@ -14852,14 +15567,15 @@ IL_0014:
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_24 = (L_21)->GetAt(static_cast<il2cpp_array_size_t>(L_23));
 		NullCheck(L_18);
 		(L_18)->SetAt(static_cast<il2cpp_array_size_t>(L_19), (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F)L_24);
-		// tsMesh.uv[index] = Quaternion.AngleAxis(_revolve * (((float)i) / (_sides - 1)), Vector3.forward) * Vector2.right * (0.5f * capUVScale) + Vector3.right * 0.5f + Vector3.up * 0.5f;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_25 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		// _tsMesh.uv[index] = Quaternion.AngleAxis(_revolve * (((float)i) / (_sides - 1)), Vector3.forward) * Vector2.right * (0.5f * capUVScale) + Vector3.right * 0.5f + Vector3.up * 0.5f;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_25;
+		L_25 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
 		NullCheck(L_25);
 		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_26 = L_25->___uv_4;
 		int32_t L_27 = V_3;
-		float L_28 = __this->____revolve_63;
+		float L_28 = __this->____revolve_64;
 		int32_t L_29 = V_2;
-		int32_t L_30 = __this->____sides_60;
+		int32_t L_30 = __this->____sides_61;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_31;
 		L_31 = Vector3_get_forward_mAA55A7034304DF8B2152EAD49AE779FC4CA2EB4A_inline(NULL);
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_32;
@@ -14899,41 +15615,43 @@ IL_0101:
 	{
 		// for (int i = 0; i < _sides+1; i++)
 		int32_t L_46 = V_2;
-		int32_t L_47 = __this->____sides_60;
+		int32_t L_47 = __this->____sides_61;
 		if ((((int32_t)L_46) < ((int32_t)((int32_t)il2cpp_codegen_add(L_47, 1)))))
 		{
 			goto IL_0014;
 		}
 	}
 	{
-		// GetSample(sampleCount - 1, evalResult);
+		// GetSample(sampleCount - 1, ref evalResult);
 		int32_t L_48;
 		L_48 = SplineUser_get_sampleCount_m72EB98E357EB6A53B94626C14D2F0CAF87997AFC_inline(__this, NULL);
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_49 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
-		SplineUser_GetSample_m3BC18583D33B76D600B873A10966C3AAD9744139(__this, ((int32_t)il2cpp_codegen_subtract(L_48, 1)), L_49, NULL);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_49 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
+		SplineUser_GetSample_m880DFE2CAAE9E9F4D85F68B13E9DE816186C3D8E(__this, ((int32_t)il2cpp_codegen_subtract(L_48, 1)), L_49, NULL);
 		// for (int i = 0; i < _sides + 1; i++)
 		V_4 = 0;
-		goto IL_0243;
+		goto IL_023b;
 	}
 
 IL_012b:
 	{
 		// int index = bodyVertexCount + (_sides + 1) + i;
-		int32_t L_50 = __this->___bodyVertexCount_66;
-		int32_t L_51 = __this->____sides_60;
+		int32_t L_50 = __this->___bodyVertexCount_67;
+		int32_t L_51 = __this->____sides_61;
 		int32_t L_52 = V_4;
 		V_5 = ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(L_50, ((int32_t)il2cpp_codegen_add(L_51, 1)))), L_52));
 		// int bodyIndex = bodyVertexCount - (_sides + 1) + i;
-		int32_t L_53 = __this->___bodyVertexCount_66;
-		int32_t L_54 = __this->____sides_60;
+		int32_t L_53 = __this->___bodyVertexCount_67;
+		int32_t L_54 = __this->____sides_61;
 		int32_t L_55 = V_4;
 		V_6 = ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_subtract(L_53, ((int32_t)il2cpp_codegen_add(L_54, 1)))), L_55));
-		// tsMesh.vertices[index] = tsMesh.vertices[bodyIndex];
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_56 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		// _tsMesh.vertices[index] = _tsMesh.vertices[bodyIndex];
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_56;
+		L_56 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
 		NullCheck(L_56);
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_57 = L_56->___vertices_0;
 		int32_t L_58 = V_5;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_59 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_59;
+		L_59 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
 		NullCheck(L_59);
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_60 = L_59->___vertices_0;
 		int32_t L_61 = V_6;
@@ -14942,223 +15660,229 @@ IL_012b:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_63 = (L_60)->GetAt(static_cast<il2cpp_array_size_t>(L_62));
 		NullCheck(L_57);
 		(L_57)->SetAt(static_cast<il2cpp_array_size_t>(L_58), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_63);
-		// tsMesh.normals[index] = GetSampleRaw(sampleCount -1).forward;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_64 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		// _tsMesh.normals[index] = evalResult.forward;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_64;
+		L_64 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
 		NullCheck(L_64);
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_65 = L_64->___normals_1;
 		int32_t L_66 = V_5;
-		int32_t L_67;
-		L_67 = SplineUser_get_sampleCount_m72EB98E357EB6A53B94626C14D2F0CAF87997AFC_inline(__this, NULL);
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_68;
-		L_68 = SplineUser_GetSampleRaw_m348FCC800AC627A1C1FE4D63D0D6258FBE771315(__this, ((int32_t)il2cpp_codegen_subtract(L_67, 1)), NULL);
-		NullCheck(L_68);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_69 = L_68->___forward_2;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_67 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_68 = L_67->___forward_2;
 		NullCheck(L_65);
-		(L_65)->SetAt(static_cast<il2cpp_array_size_t>(L_66), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_69);
-		// tsMesh.colors[index] = tsMesh.colors[bodyIndex];
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_70 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
-		NullCheck(L_70);
-		ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389* L_71 = L_70->___colors_3;
-		int32_t L_72 = V_5;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_73 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		(L_65)->SetAt(static_cast<il2cpp_array_size_t>(L_66), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_68);
+		// _tsMesh.colors[index] = _tsMesh.colors[bodyIndex];
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_69;
+		L_69 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_69);
+		ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389* L_70 = L_69->___colors_3;
+		int32_t L_71 = V_5;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_72;
+		L_72 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_72);
+		ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389* L_73 = L_72->___colors_3;
+		int32_t L_74 = V_6;
 		NullCheck(L_73);
-		ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389* L_74 = L_73->___colors_3;
-		int32_t L_75 = V_6;
-		NullCheck(L_74);
-		int32_t L_76 = L_75;
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_77 = (L_74)->GetAt(static_cast<il2cpp_array_size_t>(L_76));
-		NullCheck(L_71);
-		(L_71)->SetAt(static_cast<il2cpp_array_size_t>(L_72), (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F)L_77);
-		// tsMesh.uv[index] = Quaternion.AngleAxis(_revolve * ((float)(bodyIndex) / (_sides - 1)), Vector3.forward) * Vector2.right * (0.5f * capUVScale) + Vector3.right * 0.5f + Vector3.up * 0.5f;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_78 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
-		NullCheck(L_78);
-		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_79 = L_78->___uv_4;
-		int32_t L_80 = V_5;
-		float L_81 = __this->____revolve_63;
-		int32_t L_82 = V_6;
-		int32_t L_83 = __this->____sides_60;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_84;
-		L_84 = Vector3_get_forward_mAA55A7034304DF8B2152EAD49AE779FC4CA2EB4A_inline(NULL);
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_85;
-		L_85 = Quaternion_AngleAxis_mF37022977B297E63AA70D69EA1C4C922FF22CC80(((float)il2cpp_codegen_multiply(L_81, ((float)(((float)L_82)/((float)((int32_t)il2cpp_codegen_subtract(L_83, 1))))))), L_84, NULL);
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_86;
-		L_86 = Vector2_get_right_m99043ED6B3D5AEA5033313FE3DA9571F39D1B280_inline(NULL);
+		int32_t L_75 = L_74;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_76 = (L_73)->GetAt(static_cast<il2cpp_array_size_t>(L_75));
+		NullCheck(L_70);
+		(L_70)->SetAt(static_cast<il2cpp_array_size_t>(L_71), (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F)L_76);
+		// _tsMesh.uv[index] = Quaternion.AngleAxis(_revolve * ((float)(bodyIndex) / (_sides - 1)), Vector3.forward) * Vector2.right * (0.5f * capUVScale) + Vector3.right * 0.5f + Vector3.up * 0.5f;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_77;
+		L_77 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_77);
+		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_78 = L_77->___uv_4;
+		int32_t L_79 = V_5;
+		float L_80 = __this->____revolve_64;
+		int32_t L_81 = V_6;
+		int32_t L_82 = __this->____sides_61;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_83;
+		L_83 = Vector3_get_forward_mAA55A7034304DF8B2152EAD49AE779FC4CA2EB4A_inline(NULL);
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_84;
+		L_84 = Quaternion_AngleAxis_mF37022977B297E63AA70D69EA1C4C922FF22CC80(((float)il2cpp_codegen_multiply(L_80, ((float)(((float)L_81)/((float)((int32_t)il2cpp_codegen_subtract(L_82, 1))))))), L_83, NULL);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_85;
+		L_85 = Vector2_get_right_m99043ED6B3D5AEA5033313FE3DA9571F39D1B280_inline(NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_86;
+		L_86 = Vector2_op_Implicit_m6D9CABB2C791A192867D7A4559D132BE86DD3EB7_inline(L_85, NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_87;
-		L_87 = Vector2_op_Implicit_m6D9CABB2C791A192867D7A4559D132BE86DD3EB7_inline(L_86, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_88;
-		L_88 = Quaternion_op_Multiply_mE1EBA73F9173432B50F8F17CE8190C5A7986FB8C(L_85, L_87, NULL);
-		float L_89;
-		L_89 = TubeGenerator_get_capUVScale_m70A0E1FC65CCF46007C52FA081BBD2864F0F2866_inline(__this, NULL);
+		L_87 = Quaternion_op_Multiply_mE1EBA73F9173432B50F8F17CE8190C5A7986FB8C(L_84, L_86, NULL);
+		float L_88;
+		L_88 = TubeGenerator_get_capUVScale_m70A0E1FC65CCF46007C52FA081BBD2864F0F2866_inline(__this, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_89;
+		L_89 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_87, ((float)il2cpp_codegen_multiply((0.5f), L_88)), NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_90;
-		L_90 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_88, ((float)il2cpp_codegen_multiply((0.5f), L_89)), NULL);
+		L_90 = Vector3_get_right_mFF573AFBBB2186E7AFA1BA7CA271A78DF67E4EA0_inline(NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_91;
-		L_91 = Vector3_get_right_mFF573AFBBB2186E7AFA1BA7CA271A78DF67E4EA0_inline(NULL);
+		L_91 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_90, (0.5f), NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_92;
-		L_92 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_91, (0.5f), NULL);
+		L_92 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_89, L_91, NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_93;
-		L_93 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_90, L_92, NULL);
+		L_93 = Vector3_get_up_m128AF3FDC820BF59D5DE86D973E7DE3F20C3AEBA_inline(NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_94;
-		L_94 = Vector3_get_up_m128AF3FDC820BF59D5DE86D973E7DE3F20C3AEBA_inline(NULL);
+		L_94 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_93, (0.5f), NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_95;
-		L_95 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_94, (0.5f), NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_96;
-		L_96 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_93, L_95, NULL);
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_97;
-		L_97 = Vector2_op_Implicit_mE8EBEE9291F11BB02F062D6E000F4798968CBD96_inline(L_96, NULL);
-		NullCheck(L_79);
-		(L_79)->SetAt(static_cast<il2cpp_array_size_t>(L_80), (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7)L_97);
+		L_95 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_92, L_94, NULL);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_96;
+		L_96 = Vector2_op_Implicit_mE8EBEE9291F11BB02F062D6E000F4798968CBD96_inline(L_95, NULL);
+		NullCheck(L_78);
+		(L_78)->SetAt(static_cast<il2cpp_array_size_t>(L_79), (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7)L_96);
 		// for (int i = 0; i < _sides + 1; i++)
-		int32_t L_98 = V_4;
-		V_4 = ((int32_t)il2cpp_codegen_add(L_98, 1));
+		int32_t L_97 = V_4;
+		V_4 = ((int32_t)il2cpp_codegen_add(L_97, 1));
 	}
 
-IL_0243:
+IL_023b:
 	{
 		// for (int i = 0; i < _sides + 1; i++)
-		int32_t L_99 = V_4;
-		int32_t L_100 = __this->____sides_60;
-		if ((((int32_t)L_99) < ((int32_t)((int32_t)il2cpp_codegen_add(L_100, 1)))))
+		int32_t L_98 = V_4;
+		int32_t L_99 = __this->____sides_61;
+		if ((((int32_t)L_98) < ((int32_t)((int32_t)il2cpp_codegen_add(L_99, 1)))))
 		{
 			goto IL_012b;
 		}
 	}
 	{
 		// int t = bodyTrisCount;
-		int32_t L_101 = __this->___bodyTrisCount_67;
-		V_0 = L_101;
+		int32_t L_100 = __this->___bodyTrisCount_68;
+		V_0 = L_100;
 		// bool fullIntegrity = _revolve == 360f;
-		float L_102 = __this->____revolve_63;
+		float L_101 = __this->____revolve_64;
 		// int finalSides = fullIntegrity ? _sides - 1 : _sides;
-		if (((((float)L_102) == ((float)(360.0f)))? 1 : 0))
+		if (((((float)L_101) == ((float)(360.0f)))? 1 : 0))
 		{
-			goto IL_0270;
+			goto IL_0268;
 		}
 	}
 	{
-		int32_t L_103 = __this->____sides_60;
-		G_B9_0 = L_103;
-		goto IL_0278;
+		int32_t L_102 = __this->____sides_61;
+		G_B9_0 = L_102;
+		goto IL_0270;
+	}
+
+IL_0268:
+	{
+		int32_t L_103 = __this->____sides_61;
+		G_B9_0 = ((int32_t)il2cpp_codegen_subtract(L_103, 1));
 	}
 
 IL_0270:
 	{
-		int32_t L_104 = __this->____sides_60;
-		G_B9_0 = ((int32_t)il2cpp_codegen_subtract(L_104, 1));
-	}
-
-IL_0278:
-	{
 		V_1 = G_B9_0;
 		// for (int i = 0; i < finalSides - 1; i++)
 		V_7 = 0;
-		goto IL_02d3;
+		goto IL_02cb;
 	}
 
-IL_027e:
+IL_0276:
 	{
-		// tsMesh.triangles[t++] = i + bodyVertexCount + 2;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_105 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		// _tsMesh.triangles[t++] = i + bodyVertexCount + 2;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_104;
+		L_104 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_104);
+		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_105 = L_104->___triangles_8;
+		int32_t L_106 = V_0;
+		int32_t L_107 = L_106;
+		V_0 = ((int32_t)il2cpp_codegen_add(L_107, 1));
+		int32_t L_108 = V_7;
+		int32_t L_109 = __this->___bodyVertexCount_67;
 		NullCheck(L_105);
-		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_106 = L_105->___triangles_8;
-		int32_t L_107 = V_0;
-		int32_t L_108 = L_107;
-		V_0 = ((int32_t)il2cpp_codegen_add(L_108, 1));
-		int32_t L_109 = V_7;
-		int32_t L_110 = __this->___bodyVertexCount_66;
-		NullCheck(L_106);
-		(L_106)->SetAt(static_cast<il2cpp_array_size_t>(L_108), (int32_t)((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(L_109, L_110)), 2)));
-		// tsMesh.triangles[t++] = i + +bodyVertexCount + 1;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_111 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		(L_105)->SetAt(static_cast<il2cpp_array_size_t>(L_107), (int32_t)((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(L_108, L_109)), 2)));
+		// _tsMesh.triangles[t++] = i + +bodyVertexCount + 1;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_110;
+		L_110 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_110);
+		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_111 = L_110->___triangles_8;
+		int32_t L_112 = V_0;
+		int32_t L_113 = L_112;
+		V_0 = ((int32_t)il2cpp_codegen_add(L_113, 1));
+		int32_t L_114 = V_7;
+		int32_t L_115 = __this->___bodyVertexCount_67;
 		NullCheck(L_111);
-		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_112 = L_111->___triangles_8;
-		int32_t L_113 = V_0;
-		int32_t L_114 = L_113;
-		V_0 = ((int32_t)il2cpp_codegen_add(L_114, 1));
-		int32_t L_115 = V_7;
-		int32_t L_116 = __this->___bodyVertexCount_66;
-		NullCheck(L_112);
-		(L_112)->SetAt(static_cast<il2cpp_array_size_t>(L_114), (int32_t)((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(L_115, L_116)), 1)));
-		// tsMesh.triangles[t++] = bodyVertexCount;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_117 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		(L_111)->SetAt(static_cast<il2cpp_array_size_t>(L_113), (int32_t)((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(L_114, L_115)), 1)));
+		// _tsMesh.triangles[t++] = bodyVertexCount;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_116;
+		L_116 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_116);
+		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_117 = L_116->___triangles_8;
+		int32_t L_118 = V_0;
+		int32_t L_119 = L_118;
+		V_0 = ((int32_t)il2cpp_codegen_add(L_119, 1));
+		int32_t L_120 = __this->___bodyVertexCount_67;
 		NullCheck(L_117);
-		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_118 = L_117->___triangles_8;
-		int32_t L_119 = V_0;
-		int32_t L_120 = L_119;
-		V_0 = ((int32_t)il2cpp_codegen_add(L_120, 1));
-		int32_t L_121 = __this->___bodyVertexCount_66;
-		NullCheck(L_118);
-		(L_118)->SetAt(static_cast<il2cpp_array_size_t>(L_120), (int32_t)L_121);
+		(L_117)->SetAt(static_cast<il2cpp_array_size_t>(L_119), (int32_t)L_120);
+		// for (int i = 0; i < finalSides - 1; i++)
+		int32_t L_121 = V_7;
+		V_7 = ((int32_t)il2cpp_codegen_add(L_121, 1));
+	}
+
+IL_02cb:
+	{
 		// for (int i = 0; i < finalSides - 1; i++)
 		int32_t L_122 = V_7;
-		V_7 = ((int32_t)il2cpp_codegen_add(L_122, 1));
-	}
-
-IL_02d3:
-	{
-		// for (int i = 0; i < finalSides - 1; i++)
-		int32_t L_123 = V_7;
-		int32_t L_124 = V_1;
-		if ((((int32_t)L_123) < ((int32_t)((int32_t)il2cpp_codegen_subtract(L_124, 1)))))
+		int32_t L_123 = V_1;
+		if ((((int32_t)L_122) < ((int32_t)((int32_t)il2cpp_codegen_subtract(L_123, 1)))))
 		{
-			goto IL_027e;
+			goto IL_0276;
 		}
 	}
 	{
 		// for (int i = 0; i < finalSides - 1; i++)
 		V_8 = 0;
-		goto IL_034f;
+		goto IL_0347;
 	}
 
-IL_02df:
+IL_02d7:
 	{
-		// tsMesh.triangles[t++] = bodyVertexCount + (_sides + 1);
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_125 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		// _tsMesh.triangles[t++] = bodyVertexCount + (_sides + 1);
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_124;
+		L_124 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_124);
+		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_125 = L_124->___triangles_8;
+		int32_t L_126 = V_0;
+		int32_t L_127 = L_126;
+		V_0 = ((int32_t)il2cpp_codegen_add(L_127, 1));
+		int32_t L_128 = __this->___bodyVertexCount_67;
+		int32_t L_129 = __this->____sides_61;
 		NullCheck(L_125);
-		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_126 = L_125->___triangles_8;
-		int32_t L_127 = V_0;
-		int32_t L_128 = L_127;
-		V_0 = ((int32_t)il2cpp_codegen_add(L_128, 1));
-		int32_t L_129 = __this->___bodyVertexCount_66;
-		int32_t L_130 = __this->____sides_60;
-		NullCheck(L_126);
-		(L_126)->SetAt(static_cast<il2cpp_array_size_t>(L_128), (int32_t)((int32_t)il2cpp_codegen_add(L_129, ((int32_t)il2cpp_codegen_add(L_130, 1)))));
-		// tsMesh.triangles[t++] = i + 1 + bodyVertexCount + (_sides + 1);
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_131 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		(L_125)->SetAt(static_cast<il2cpp_array_size_t>(L_127), (int32_t)((int32_t)il2cpp_codegen_add(L_128, ((int32_t)il2cpp_codegen_add(L_129, 1)))));
+		// _tsMesh.triangles[t++] = i + 1 + bodyVertexCount + (_sides + 1);
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_130;
+		L_130 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_130);
+		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_131 = L_130->___triangles_8;
+		int32_t L_132 = V_0;
+		int32_t L_133 = L_132;
+		V_0 = ((int32_t)il2cpp_codegen_add(L_133, 1));
+		int32_t L_134 = V_8;
+		int32_t L_135 = __this->___bodyVertexCount_67;
+		int32_t L_136 = __this->____sides_61;
 		NullCheck(L_131);
-		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_132 = L_131->___triangles_8;
-		int32_t L_133 = V_0;
-		int32_t L_134 = L_133;
-		V_0 = ((int32_t)il2cpp_codegen_add(L_134, 1));
-		int32_t L_135 = V_8;
-		int32_t L_136 = __this->___bodyVertexCount_66;
-		int32_t L_137 = __this->____sides_60;
-		NullCheck(L_132);
-		(L_132)->SetAt(static_cast<il2cpp_array_size_t>(L_134), (int32_t)((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(L_135, 1)), L_136)), ((int32_t)il2cpp_codegen_add(L_137, 1)))));
-		// tsMesh.triangles[t++] = i + 2 + bodyVertexCount + (_sides + 1);
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_138 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		(L_131)->SetAt(static_cast<il2cpp_array_size_t>(L_133), (int32_t)((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(L_134, 1)), L_135)), ((int32_t)il2cpp_codegen_add(L_136, 1)))));
+		// _tsMesh.triangles[t++] = i + 2 + bodyVertexCount + (_sides + 1);
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_137;
+		L_137 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_137);
+		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_138 = L_137->___triangles_8;
+		int32_t L_139 = V_0;
+		int32_t L_140 = L_139;
+		V_0 = ((int32_t)il2cpp_codegen_add(L_140, 1));
+		int32_t L_141 = V_8;
+		int32_t L_142 = __this->___bodyVertexCount_67;
+		int32_t L_143 = __this->____sides_61;
 		NullCheck(L_138);
-		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_139 = L_138->___triangles_8;
-		int32_t L_140 = V_0;
-		int32_t L_141 = L_140;
-		V_0 = ((int32_t)il2cpp_codegen_add(L_141, 1));
-		int32_t L_142 = V_8;
-		int32_t L_143 = __this->___bodyVertexCount_66;
-		int32_t L_144 = __this->____sides_60;
-		NullCheck(L_139);
-		(L_139)->SetAt(static_cast<il2cpp_array_size_t>(L_141), (int32_t)((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(L_142, 2)), L_143)), ((int32_t)il2cpp_codegen_add(L_144, 1)))));
+		(L_138)->SetAt(static_cast<il2cpp_array_size_t>(L_140), (int32_t)((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(L_141, 2)), L_142)), ((int32_t)il2cpp_codegen_add(L_143, 1)))));
+		// for (int i = 0; i < finalSides - 1; i++)
+		int32_t L_144 = V_8;
+		V_8 = ((int32_t)il2cpp_codegen_add(L_144, 1));
+	}
+
+IL_0347:
+	{
 		// for (int i = 0; i < finalSides - 1; i++)
 		int32_t L_145 = V_8;
-		V_8 = ((int32_t)il2cpp_codegen_add(L_145, 1));
-	}
-
-IL_034f:
-	{
-		// for (int i = 0; i < finalSides - 1; i++)
-		int32_t L_146 = V_8;
-		int32_t L_147 = V_1;
-		if ((((int32_t)L_146) < ((int32_t)((int32_t)il2cpp_codegen_subtract(L_147, 1)))))
+		int32_t L_146 = V_1;
+		if ((((int32_t)L_145) < ((int32_t)((int32_t)il2cpp_codegen_subtract(L_146, 1)))))
 		{
-			goto IL_02df;
+			goto IL_02d7;
 		}
 	}
 	{
@@ -15214,12 +15938,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TubeGenerator_GenerateRoundCaps_mF8B5160
 	int32_t V_34 = 0;
 	int32_t V_35 = 0;
 	{
-		// GetSample(0, evalResult);
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_0 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
-		SplineUser_GetSample_m3BC18583D33B76D600B873A10966C3AAD9744139(__this, 0, L_0, NULL);
+		// GetSample(0, ref evalResult);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_0 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
+		SplineUser_GetSample_m880DFE2CAAE9E9F4D85F68B13E9DE816186C3D8E(__this, 0, L_0, NULL);
 		// Vector3 center = evalResult.position;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_1 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
-		NullCheck(L_1);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_1 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2 = L_1->___position_0;
 		V_0 = L_2;
 		// bool hasOffset = offset != Vector3.zero;
@@ -15231,7 +15954,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TubeGenerator_GenerateRoundCaps_mF8B5160
 		L_5 = Vector3_op_Inequality_m9F170CDFBF1E490E559DA5D06D6547501A402BBF_inline(L_3, L_4, NULL);
 		V_1 = L_5;
 		// float resultSize = GetBaseSize(evalResult);
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_6 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 L_6 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27;
 		float L_7;
 		L_7 = MeshGenerator_GetBaseSize_m3AA0C08209F5E80A02EDE2F76C32D1249A47E5B1(__this, L_6, NULL);
 		V_2 = L_7;
@@ -15249,8 +15972,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TubeGenerator_GenerateRoundCaps_mF8B5160
 		L_10 = MeshGenerator_get_offset_m05B30B6A00C843F0C0D2D97FE5C13544BE501436_inline(__this, NULL);
 		float L_11 = L_10.___x_2;
 		float L_12 = V_2;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_13 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
-		NullCheck(L_13);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_13 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_14;
 		L_14 = SplineSample_get_right_mEAF1BE463979ED78C482FEADFCCE3E694E3DA491(L_13, NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_15;
@@ -15259,8 +15981,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TubeGenerator_GenerateRoundCaps_mF8B5160
 		L_16 = MeshGenerator_get_offset_m05B30B6A00C843F0C0D2D97FE5C13544BE501436_inline(__this, NULL);
 		float L_17 = L_16.___y_3;
 		float L_18 = V_2;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_19 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
-		NullCheck(L_19);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_19 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_20 = L_19->___up_1;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_21;
 		L_21 = Vector3_op_Multiply_m7F3B0FA9256CE368D7636558EFEFC4AB0E1A0F41_inline(((float)il2cpp_codegen_multiply(L_17, L_18)), L_20, NULL);
@@ -15270,8 +15991,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TubeGenerator_GenerateRoundCaps_mF8B5160
 		L_23 = MeshGenerator_get_offset_m05B30B6A00C843F0C0D2D97FE5C13544BE501436_inline(__this, NULL);
 		float L_24 = L_23.___z_4;
 		float L_25 = V_2;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_26 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
-		NullCheck(L_26);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_26 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_27 = L_26->___forward_2;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_28;
 		L_28 = Vector3_op_Multiply_m7F3B0FA9256CE368D7636558EFEFC4AB0E1A0F41_inline(((float)il2cpp_codegen_multiply(L_24, L_25)), L_27, NULL);
@@ -15285,13 +16005,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TubeGenerator_GenerateRoundCaps_mF8B5160
 IL_00a2:
 	{
 		// Quaternion lookRot = Quaternion.LookRotation(-evalResult.forward, evalResult.up);
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_31 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
-		NullCheck(L_31);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_31 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_32 = L_31->___forward_2;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_33;
 		L_33 = Vector3_op_UnaryNegation_m5450829F333BD2A88AF9A592C4EE331661225915_inline(L_32, NULL);
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_34 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
-		NullCheck(L_34);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_34 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_35 = L_34->___up_1;
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_36;
 		L_36 = Quaternion_LookRotation_mFB02EDC8F733774DFAC3BEA4B4BB265A228F8307(L_33, L_35, NULL);
@@ -15332,8 +16050,7 @@ IL_00a2:
 IL_00f5:
 	{
 		// case UVMode.Clip: startV = (float)evalResult.percent;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_39 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
-		NullCheck(L_39);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_39 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
 		double L_40 = L_39->___percent_5;
 		V_4 = ((float)L_40);
 		// capLengthPercent = (size * 0.5f) / spline.CalculateLength(); break;
@@ -15354,8 +16071,7 @@ IL_0131:
 		// startV = spline.CalculateLength(0.0, evalResult.percent);
 		SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* L_44;
 		L_44 = SplineUser_get_spline_mFCDA5843B398053A190E9A6B6971331A19033E15_inline(__this, NULL);
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_45 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
-		NullCheck(L_45);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_45 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
 		double L_46 = L_45->___percent_5;
 		NullCheck(L_44);
 		float L_47;
@@ -15403,7 +16119,7 @@ IL_0181:
 IL_01a7:
 	{
 		// Color vertexColor = GetBaseColor(evalResult) * color;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_56 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 L_56 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_57;
 		L_57 = MeshGenerator_GetBaseColor_mA53F6B90FFB54A8BA028FD12E109CB36B83F5723(__this, L_56, NULL);
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_58;
@@ -15420,7 +16136,7 @@ IL_01c8:
 	{
 		// float latitudePercent = ((float)lat / _roundCapLatitude);
 		int32_t L_60 = V_9;
-		int32_t L_61 = __this->____roundCapLatitude_61;
+		int32_t L_61 = __this->____roundCapLatitude_62;
 		V_10 = ((float)(((float)L_60)/((float)L_61)));
 		// float latAngle = 90f * latitudePercent;
 		float L_62 = V_10;
@@ -15438,14 +16154,14 @@ IL_01e7:
 		L_64 = TubeGenerator_get_sides_m2A23B7B82AB71570B35044BDA1A4125046DDD277_inline(__this, NULL);
 		V_13 = ((float)(((float)L_63)/((float)L_64)));
 		// int index = bodyVertexCount + lon + (lat-1) * (sides + 1);
-		int32_t L_65 = __this->___bodyVertexCount_66;
+		int32_t L_65 = __this->___bodyVertexCount_67;
 		int32_t L_66 = V_12;
 		int32_t L_67 = V_9;
 		int32_t L_68;
 		L_68 = TubeGenerator_get_sides_m2A23B7B82AB71570B35044BDA1A4125046DDD277_inline(__this, NULL);
 		V_14 = ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(L_65, L_66)), ((int32_t)il2cpp_codegen_multiply(((int32_t)il2cpp_codegen_subtract(L_67, 1)), ((int32_t)il2cpp_codegen_add(L_68, 1))))));
 		// Quaternion rot = Quaternion.AngleAxis(_revolve * anglePercent + rotation + 180f, -Vector3.forward) * Quaternion.AngleAxis(latAngle, Vector3.up);
-		float L_69 = __this->____revolve_63;
+		float L_69 = __this->____revolve_64;
 		float L_70 = V_13;
 		float L_71;
 		L_71 = MeshGenerator_get_rotation_mF01F123A8637DB897577510B334D675B3B9C55CE_inline(__this, NULL);
@@ -15463,8 +16179,9 @@ IL_01e7:
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_78;
 		L_78 = Quaternion_op_Multiply_mCB375FCCC12A2EC8F9EB824A1BFB4453B58C2012_inline(L_74, L_77, NULL);
 		V_15 = L_78;
-		// tsMesh.vertices[index] = center + lookRot * rot * -Vector3.right * (size * 0.5f * evalResult.size);
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_79 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		// _tsMesh.vertices[index] = center + lookRot * rot * -Vector3.right * (size * 0.5f * evalResult.size);
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_79;
+		L_79 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
 		NullCheck(L_79);
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_80 = L_79->___vertices_0;
 		int32_t L_81 = V_14;
@@ -15481,8 +16198,7 @@ IL_01e7:
 		L_88 = Quaternion_op_Multiply_mE1EBA73F9173432B50F8F17CE8190C5A7986FB8C(L_85, L_87, NULL);
 		float L_89;
 		L_89 = MeshGenerator_get_size_mC28EA87F5850994F45B8E6CF2301BB12E4A881C2_inline(__this, NULL);
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_90 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
-		NullCheck(L_90);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_90 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
 		float L_91 = L_90->___size_4;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_92;
 		L_92 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_88, ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_multiply(L_89, (0.5f))), L_91)), NULL);
@@ -15490,20 +16206,23 @@ IL_01e7:
 		L_93 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_82, L_92, NULL);
 		NullCheck(L_80);
 		(L_80)->SetAt(static_cast<il2cpp_array_size_t>(L_81), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_93);
-		// tsMesh.colors[index] = vertexColor;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_94 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		// _tsMesh.colors[index] = vertexColor;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_94;
+		L_94 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
 		NullCheck(L_94);
 		ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389* L_95 = L_94->___colors_3;
 		int32_t L_96 = V_14;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_97 = V_6;
 		NullCheck(L_95);
 		(L_95)->SetAt(static_cast<il2cpp_array_size_t>(L_96), (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F)L_97);
-		// tsMesh.normals[index] = (tsMesh.vertices[index] - center).normalized;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_98 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		// _tsMesh.normals[index] = (_tsMesh.vertices[index] - center).normalized;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_98;
+		L_98 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
 		NullCheck(L_98);
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_99 = L_98->___normals_1;
 		int32_t L_100 = V_14;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_101 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_101;
+		L_101 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
 		NullCheck(L_101);
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_102 = L_101->___vertices_0;
 		int32_t L_103 = V_14;
@@ -15529,7 +16248,7 @@ IL_01e7:
 		L_113 = MeshGenerator_get_uvScale_m096A30E796CA2F89EADB0DA7A9DA085674DF5B48_inline(__this, NULL);
 		float L_114 = L_113.___x_0;
 		float L_115 = V_16;
-		float L_116 = __this->____uvTwist_65;
+		float L_116 = __this->____uvTwist_66;
 		float L_117 = V_16;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_118;
 		L_118 = MeshGenerator_get_uvScale_m096A30E796CA2F89EADB0DA7A9DA085674DF5B48_inline(__this, NULL);
@@ -15542,8 +16261,9 @@ IL_01e7:
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_122;
 		L_122 = Vector2_op_Subtraction_m44475FCDAD2DA2F98D78A6625EC2DCDFE8803837_inline(L_120, L_121, NULL);
 		V_17 = L_122;
-		// tsMesh.uv[index] = Vector2.one * 0.5f + (Vector2)(Quaternion.AngleAxis(uvRotation + 180f, Vector3.forward) * (Vector2.one * 0.5f - baseUV));
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_123 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		// _tsMesh.uv[index] = Vector2.one * 0.5f + (Vector2)(Quaternion.AngleAxis(uvRotation + 180f, Vector3.forward) * (Vector2.one * 0.5f - baseUV));
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_123;
+		L_123 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
 		NullCheck(L_123);
 		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_124 = L_123->___uv_4;
 		int32_t L_125 = V_14;
@@ -15600,7 +16320,7 @@ IL_0394:
 	{
 		// for (int lat = 1; lat < _roundCapLatitude+1; lat++)
 		int32_t L_143 = V_9;
-		int32_t L_144 = __this->____roundCapLatitude_61;
+		int32_t L_144 = __this->____roundCapLatitude_62;
 		if ((((int32_t)L_143) < ((int32_t)((int32_t)il2cpp_codegen_add(L_144, 1)))))
 		{
 			goto IL_01c8;
@@ -15608,7 +16328,7 @@ IL_0394:
 	}
 	{
 		// int t = bodyTrisCount;
-		int32_t L_145 = __this->___bodyTrisCount_67;
+		int32_t L_145 = __this->___bodyTrisCount_68;
 		V_7 = L_145;
 		// for (int z = -1; z < _roundCapLatitude - 1; z++)
 		V_19 = (-1);
@@ -15625,7 +16345,7 @@ IL_03b3:
 IL_03bb:
 	{
 		// int current = bodyVertexCount + x + z * (sides + 1);
-		int32_t L_146 = __this->___bodyVertexCount_66;
+		int32_t L_146 = __this->___bodyVertexCount_67;
 		int32_t L_147 = V_20;
 		int32_t L_148 = V_19;
 		int32_t L_149;
@@ -15648,15 +16368,16 @@ IL_03bb:
 		int32_t L_153 = V_20;
 		V_21 = L_153;
 		// next = bodyVertexCount + x;
-		int32_t L_154 = __this->___bodyVertexCount_66;
+		int32_t L_154 = __this->___bodyVertexCount_67;
 		int32_t L_155 = V_20;
 		V_22 = ((int32_t)il2cpp_codegen_add(L_154, L_155));
 	}
 
 IL_03f3:
 	{
-		// tsMesh.triangles[t++] = next + 1;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_156 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		// _tsMesh.triangles[t++] = next + 1;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_156;
+		L_156 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
 		NullCheck(L_156);
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_157 = L_156->___triangles_8;
 		int32_t L_158 = V_7;
@@ -15665,8 +16386,9 @@ IL_03f3:
 		int32_t L_160 = V_22;
 		NullCheck(L_157);
 		(L_157)->SetAt(static_cast<il2cpp_array_size_t>(L_159), (int32_t)((int32_t)il2cpp_codegen_add(L_160, 1)));
-		// tsMesh.triangles[t++] = current + 1;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_161 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		// _tsMesh.triangles[t++] = current + 1;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_161;
+		L_161 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
 		NullCheck(L_161);
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_162 = L_161->___triangles_8;
 		int32_t L_163 = V_7;
@@ -15675,8 +16397,9 @@ IL_03f3:
 		int32_t L_165 = V_21;
 		NullCheck(L_162);
 		(L_162)->SetAt(static_cast<il2cpp_array_size_t>(L_164), (int32_t)((int32_t)il2cpp_codegen_add(L_165, 1)));
-		// tsMesh.triangles[t++] = current;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_166 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		// _tsMesh.triangles[t++] = current;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_166;
+		L_166 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
 		NullCheck(L_166);
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_167 = L_166->___triangles_8;
 		int32_t L_168 = V_7;
@@ -15685,8 +16408,9 @@ IL_03f3:
 		int32_t L_170 = V_21;
 		NullCheck(L_167);
 		(L_167)->SetAt(static_cast<il2cpp_array_size_t>(L_169), (int32_t)L_170);
-		// tsMesh.triangles[t++] = next;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_171 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		// _tsMesh.triangles[t++] = next;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_171;
+		L_171 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
 		NullCheck(L_171);
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_172 = L_171->___triangles_8;
 		int32_t L_173 = V_7;
@@ -15695,8 +16419,9 @@ IL_03f3:
 		int32_t L_175 = V_22;
 		NullCheck(L_172);
 		(L_172)->SetAt(static_cast<il2cpp_array_size_t>(L_174), (int32_t)L_175);
-		// tsMesh.triangles[t++] = next + 1;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_176 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		// _tsMesh.triangles[t++] = next + 1;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_176;
+		L_176 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
 		NullCheck(L_176);
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_177 = L_176->___triangles_8;
 		int32_t L_178 = V_7;
@@ -15705,8 +16430,9 @@ IL_03f3:
 		int32_t L_180 = V_22;
 		NullCheck(L_177);
 		(L_177)->SetAt(static_cast<il2cpp_array_size_t>(L_179), (int32_t)((int32_t)il2cpp_codegen_add(L_180, 1)));
-		// tsMesh.triangles[t++] = current;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_181 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		// _tsMesh.triangles[t++] = current;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_181;
+		L_181 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
 		NullCheck(L_181);
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_182 = L_181->___triangles_8;
 		int32_t L_183 = V_7;
@@ -15741,25 +16467,24 @@ IL_0490:
 	{
 		// for (int z = -1; z < _roundCapLatitude - 1; z++)
 		int32_t L_190 = V_19;
-		int32_t L_191 = __this->____roundCapLatitude_61;
+		int32_t L_191 = __this->____roundCapLatitude_62;
 		if ((((int32_t)L_190) < ((int32_t)((int32_t)il2cpp_codegen_subtract(L_191, 1)))))
 		{
 			goto IL_03b3;
 		}
 	}
 	{
-		// GetSample(sampleCount - 1, evalResult);
+		// GetSample(sampleCount - 1, ref evalResult);
 		int32_t L_192;
 		L_192 = SplineUser_get_sampleCount_m72EB98E357EB6A53B94626C14D2F0CAF87997AFC_inline(__this, NULL);
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_193 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
-		SplineUser_GetSample_m3BC18583D33B76D600B873A10966C3AAD9744139(__this, ((int32_t)il2cpp_codegen_subtract(L_192, 1)), L_193, NULL);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_193 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
+		SplineUser_GetSample_m880DFE2CAAE9E9F4D85F68B13E9DE816186C3D8E(__this, ((int32_t)il2cpp_codegen_subtract(L_192, 1)), L_193, NULL);
 		// center = evalResult.position;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_194 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
-		NullCheck(L_194);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_194 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_195 = L_194->___position_0;
 		V_0 = L_195;
 		// resultSize = GetBaseSize(evalResult);
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_196 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 L_196 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27;
 		float L_197;
 		L_197 = MeshGenerator_GetBaseSize_m3AA0C08209F5E80A02EDE2F76C32D1249A47E5B1(__this, L_196, NULL);
 		V_2 = L_197;
@@ -15777,8 +16502,7 @@ IL_0490:
 		L_200 = MeshGenerator_get_offset_m05B30B6A00C843F0C0D2D97FE5C13544BE501436_inline(__this, NULL);
 		float L_201 = L_200.___x_2;
 		float L_202 = V_2;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_203 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
-		NullCheck(L_203);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_203 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_204;
 		L_204 = SplineSample_get_right_mEAF1BE463979ED78C482FEADFCCE3E694E3DA491(L_203, NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_205;
@@ -15787,8 +16511,7 @@ IL_0490:
 		L_206 = MeshGenerator_get_offset_m05B30B6A00C843F0C0D2D97FE5C13544BE501436_inline(__this, NULL);
 		float L_207 = L_206.___y_3;
 		float L_208 = V_2;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_209 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
-		NullCheck(L_209);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_209 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_210 = L_209->___up_1;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_211;
 		L_211 = Vector3_op_Multiply_m7F3B0FA9256CE368D7636558EFEFC4AB0E1A0F41_inline(((float)il2cpp_codegen_multiply(L_207, L_208)), L_210, NULL);
@@ -15798,8 +16521,7 @@ IL_0490:
 		L_213 = MeshGenerator_get_offset_m05B30B6A00C843F0C0D2D97FE5C13544BE501436_inline(__this, NULL);
 		float L_214 = L_213.___z_4;
 		float L_215 = V_2;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_216 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
-		NullCheck(L_216);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_216 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_217 = L_216->___forward_2;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_218;
 		L_218 = Vector3_op_Multiply_m7F3B0FA9256CE368D7636558EFEFC4AB0E1A0F41_inline(((float)il2cpp_codegen_multiply(L_214, L_215)), L_217, NULL);
@@ -15813,11 +16535,9 @@ IL_0490:
 IL_0537:
 	{
 		// lookRot = Quaternion.LookRotation(evalResult.forward, evalResult.up);
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_221 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
-		NullCheck(L_221);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_221 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_222 = L_221->___forward_2;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_223 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
-		NullCheck(L_223);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_223 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_224 = L_223->___up_1;
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_225;
 		L_225 = Quaternion_LookRotation_mFB02EDC8F733774DFAC3BEA4B4BB265A228F8307(L_222, L_224, NULL);
@@ -15854,8 +16574,7 @@ IL_0537:
 IL_0574:
 	{
 		// case UVMode.Clip: startV = (float)evalResult.percent; break;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_228 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
-		NullCheck(L_228);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_228 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
 		double L_229 = L_228->___percent_5;
 		V_4 = ((float)L_229);
 		// case UVMode.Clip: startV = (float)evalResult.percent; break;
@@ -15867,8 +16586,7 @@ IL_0584:
 		// case UVMode.UniformClip: startV = spline.CalculateLength(0.0, evalResult.percent); break;
 		SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* L_230;
 		L_230 = SplineUser_get_spline_mFCDA5843B398053A190E9A6B6971331A19033E15_inline(__this, NULL);
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_231 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
-		NullCheck(L_231);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_231 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
 		double L_232 = L_231->___percent_5;
 		NullCheck(L_230);
 		float L_233;
@@ -15900,7 +16618,7 @@ IL_05b0:
 IL_05cf:
 	{
 		// vertexColor = GetBaseColor(evalResult) * color;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_236 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 L_236 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_237;
 		L_237 = MeshGenerator_GetBaseColor_mA53F6B90FFB54A8BA028FD12E109CB36B83F5723(__this, L_236, NULL);
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_238;
@@ -15917,7 +16635,7 @@ IL_05f0:
 	{
 		// float latitudePercent = ((float)lat / _roundCapLatitude);
 		int32_t L_240 = V_23;
-		int32_t L_241 = __this->____roundCapLatitude_61;
+		int32_t L_241 = __this->____roundCapLatitude_62;
 		V_24 = ((float)(((float)L_240)/((float)L_241)));
 		// float latAngle = 90f * latitudePercent;
 		float L_242 = V_24;
@@ -15935,15 +16653,15 @@ IL_060f:
 		L_244 = TubeGenerator_get_sides_m2A23B7B82AB71570B35044BDA1A4125046DDD277_inline(__this, NULL);
 		V_27 = ((float)(((float)L_243)/((float)L_244)));
 		// int index = bodyVertexCount + capVertexCount + lon + (lat - 1) * (sides + 1);
-		int32_t L_245 = __this->___bodyVertexCount_66;
-		int32_t L_246 = __this->___capVertexCount_68;
+		int32_t L_245 = __this->___bodyVertexCount_67;
+		int32_t L_246 = __this->___capVertexCount_69;
 		int32_t L_247 = V_26;
 		int32_t L_248 = V_23;
 		int32_t L_249;
 		L_249 = TubeGenerator_get_sides_m2A23B7B82AB71570B35044BDA1A4125046DDD277_inline(__this, NULL);
 		V_28 = ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(L_245, L_246)), L_247)), ((int32_t)il2cpp_codegen_multiply(((int32_t)il2cpp_codegen_subtract(L_248, 1)), ((int32_t)il2cpp_codegen_add(L_249, 1))))));
 		// Quaternion rot = Quaternion.AngleAxis(_revolve * anglePercent + rotation + 180f, Vector3.forward) * Quaternion.AngleAxis(latAngle, -Vector3.up);
-		float L_250 = __this->____revolve_63;
+		float L_250 = __this->____revolve_64;
 		float L_251 = V_27;
 		float L_252;
 		L_252 = MeshGenerator_get_rotation_mF01F123A8637DB897577510B334D675B3B9C55CE_inline(__this, NULL);
@@ -15961,8 +16679,9 @@ IL_060f:
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_259;
 		L_259 = Quaternion_op_Multiply_mCB375FCCC12A2EC8F9EB824A1BFB4453B58C2012_inline(L_254, L_258, NULL);
 		V_29 = L_259;
-		// tsMesh.vertices[index] = center + lookRot * rot * Vector3.right * size * 0.5f * evalResult.size;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_260 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		// _tsMesh.vertices[index] = center + lookRot * rot * Vector3.right * size * 0.5f * evalResult.size;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_260;
+		L_260 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
 		NullCheck(L_260);
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_261 = L_260->___vertices_0;
 		int32_t L_262 = V_28;
@@ -15981,8 +16700,7 @@ IL_060f:
 		L_270 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_268, L_269, NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_271;
 		L_271 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_270, (0.5f), NULL);
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_272 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
-		NullCheck(L_272);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_272 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
 		float L_273 = L_272->___size_4;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_274;
 		L_274 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_271, L_273, NULL);
@@ -15990,12 +16708,14 @@ IL_060f:
 		L_275 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_263, L_274, NULL);
 		NullCheck(L_261);
 		(L_261)->SetAt(static_cast<il2cpp_array_size_t>(L_262), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_275);
-		// tsMesh.normals[index] = (tsMesh.vertices[index] - center).normalized;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_276 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		// _tsMesh.normals[index] = (_tsMesh.vertices[index] - center).normalized;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_276;
+		L_276 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
 		NullCheck(L_276);
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_277 = L_276->___normals_1;
 		int32_t L_278 = V_28;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_279 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_279;
+		L_279 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
 		NullCheck(L_279);
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_280 = L_279->___vertices_0;
 		int32_t L_281 = V_28;
@@ -16010,8 +16730,9 @@ IL_060f:
 		L_286 = Vector3_get_normalized_m736BBF65D5CDA7A18414370D15B4DFCC1E466F07_inline((&V_18), NULL);
 		NullCheck(L_277);
 		(L_277)->SetAt(static_cast<il2cpp_array_size_t>(L_278), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_286);
-		// tsMesh.colors[index] = vertexColor;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_287 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		// _tsMesh.colors[index] = vertexColor;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_287;
+		L_287 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
 		NullCheck(L_287);
 		ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389* L_288 = L_287->___colors_3;
 		int32_t L_289 = V_28;
@@ -16029,7 +16750,7 @@ IL_060f:
 		L_295 = MeshGenerator_get_uvScale_m096A30E796CA2F89EADB0DA7A9DA085674DF5B48_inline(__this, NULL);
 		float L_296 = L_295.___x_0;
 		float L_297 = V_30;
-		float L_298 = __this->____uvTwist_65;
+		float L_298 = __this->____uvTwist_66;
 		float L_299 = V_30;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_300;
 		L_300 = MeshGenerator_get_uvScale_m096A30E796CA2F89EADB0DA7A9DA085674DF5B48_inline(__this, NULL);
@@ -16042,8 +16763,9 @@ IL_060f:
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_304;
 		L_304 = Vector2_op_Subtraction_m44475FCDAD2DA2F98D78A6625EC2DCDFE8803837_inline(L_302, L_303, NULL);
 		V_31 = L_304;
-		// tsMesh.uv[index] = Vector2.one * 0.5f + (Vector2)(Quaternion.AngleAxis(uvRotation + 180f, Vector3.forward) * (Vector2.one * 0.5f - baseUV));
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_305 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		// _tsMesh.uv[index] = Vector2.one * 0.5f + (Vector2)(Quaternion.AngleAxis(uvRotation + 180f, Vector3.forward) * (Vector2.one * 0.5f - baseUV));
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_305;
+		L_305 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
 		NullCheck(L_305);
 		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_306 = L_305->___uv_4;
 		int32_t L_307 = V_28;
@@ -16100,7 +16822,7 @@ IL_07c6:
 	{
 		// for (int lat = 1; lat < _roundCapLatitude+1; lat++)
 		int32_t L_325 = V_23;
-		int32_t L_326 = __this->____roundCapLatitude_61;
+		int32_t L_326 = __this->____roundCapLatitude_62;
 		if ((((int32_t)L_325) < ((int32_t)((int32_t)il2cpp_codegen_add(L_326, 1)))))
 		{
 			goto IL_05f0;
@@ -16122,8 +16844,8 @@ IL_07dd:
 IL_07e5:
 	{
 		// int current = bodyVertexCount + capVertexCount + x + z * (sides + 1);
-		int32_t L_327 = __this->___bodyVertexCount_66;
-		int32_t L_328 = __this->___capVertexCount_68;
+		int32_t L_327 = __this->___bodyVertexCount_67;
+		int32_t L_328 = __this->___capVertexCount_69;
 		int32_t L_329 = V_33;
 		int32_t L_330 = V_32;
 		int32_t L_331;
@@ -16143,21 +16865,22 @@ IL_07e5:
 	}
 	{
 		// current = bodyVertexCount - (_sides+1) + x;
-		int32_t L_335 = __this->___bodyVertexCount_66;
-		int32_t L_336 = __this->____sides_60;
+		int32_t L_335 = __this->___bodyVertexCount_67;
+		int32_t L_336 = __this->____sides_61;
 		int32_t L_337 = V_33;
 		V_34 = ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_subtract(L_335, ((int32_t)il2cpp_codegen_add(L_336, 1)))), L_337));
 		// next = bodyVertexCount + capVertexCount + x;
-		int32_t L_338 = __this->___bodyVertexCount_66;
-		int32_t L_339 = __this->___capVertexCount_68;
+		int32_t L_338 = __this->___bodyVertexCount_67;
+		int32_t L_339 = __this->___capVertexCount_69;
 		int32_t L_340 = V_33;
 		V_35 = ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(L_338, L_339)), L_340));
 	}
 
 IL_083b:
 	{
-		// tsMesh.triangles[t++] = current+1;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_341 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		// _tsMesh.triangles[t++] = current+1;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_341;
+		L_341 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
 		NullCheck(L_341);
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_342 = L_341->___triangles_8;
 		int32_t L_343 = V_7;
@@ -16166,8 +16889,9 @@ IL_083b:
 		int32_t L_345 = V_34;
 		NullCheck(L_342);
 		(L_342)->SetAt(static_cast<il2cpp_array_size_t>(L_344), (int32_t)((int32_t)il2cpp_codegen_add(L_345, 1)));
-		// tsMesh.triangles[t++] = next + 1;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_346 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		// _tsMesh.triangles[t++] = next + 1;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_346;
+		L_346 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
 		NullCheck(L_346);
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_347 = L_346->___triangles_8;
 		int32_t L_348 = V_7;
@@ -16176,8 +16900,9 @@ IL_083b:
 		int32_t L_350 = V_35;
 		NullCheck(L_347);
 		(L_347)->SetAt(static_cast<il2cpp_array_size_t>(L_349), (int32_t)((int32_t)il2cpp_codegen_add(L_350, 1)));
-		// tsMesh.triangles[t++] = next;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_351 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		// _tsMesh.triangles[t++] = next;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_351;
+		L_351 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
 		NullCheck(L_351);
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_352 = L_351->___triangles_8;
 		int32_t L_353 = V_7;
@@ -16186,8 +16911,9 @@ IL_083b:
 		int32_t L_355 = V_35;
 		NullCheck(L_352);
 		(L_352)->SetAt(static_cast<il2cpp_array_size_t>(L_354), (int32_t)L_355);
-		// tsMesh.triangles[t++] = next;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_356 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		// _tsMesh.triangles[t++] = next;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_356;
+		L_356 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
 		NullCheck(L_356);
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_357 = L_356->___triangles_8;
 		int32_t L_358 = V_7;
@@ -16196,8 +16922,9 @@ IL_083b:
 		int32_t L_360 = V_35;
 		NullCheck(L_357);
 		(L_357)->SetAt(static_cast<il2cpp_array_size_t>(L_359), (int32_t)L_360);
-		// tsMesh.triangles[t++] = current;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_361 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		// _tsMesh.triangles[t++] = current;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_361;
+		L_361 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
 		NullCheck(L_361);
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_362 = L_361->___triangles_8;
 		int32_t L_363 = V_7;
@@ -16206,8 +16933,9 @@ IL_083b:
 		int32_t L_365 = V_34;
 		NullCheck(L_362);
 		(L_362)->SetAt(static_cast<il2cpp_array_size_t>(L_364), (int32_t)L_365);
-		// tsMesh.triangles[t++] = current + 1;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_366 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		// _tsMesh.triangles[t++] = current + 1;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_366;
+		L_366 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
 		NullCheck(L_366);
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_367 = L_366->___triangles_8;
 		int32_t L_368 = V_7;
@@ -16242,7 +16970,7 @@ IL_08d8:
 	{
 		// for (int z = -1; z < _roundCapLatitude - 1; z++)
 		int32_t L_375 = V_32;
-		int32_t L_376 = __this->____roundCapLatitude_61;
+		int32_t L_376 = __this->____roundCapLatitude_62;
 		if ((((int32_t)L_375) < ((int32_t)((int32_t)il2cpp_codegen_subtract(L_376, 1)))))
 		{
 			goto IL_07dd;
@@ -16264,13 +16992,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TubeGenerator__ctor_m47166C30428386E3441
 	}
 	{
 		// private int _sides = 12;
-		__this->____sides_60 = ((int32_t)12);
+		__this->____sides_61 = ((int32_t)12);
 		// private int _roundCapLatitude = 6;
-		__this->____roundCapLatitude_61 = 6;
+		__this->____roundCapLatitude_62 = 6;
 		// private float _revolve = 360f;
-		__this->____revolve_63 = (360.0f);
+		__this->____revolve_64 = (360.0f);
 		// private float _capUVScale = 1f;
-		__this->____capUVScale_64 = (1.0f);
+		__this->____capUVScale_65 = (1.0f);
 		il2cpp_codegen_runtime_class_init_inline(MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E_il2cpp_TypeInfo_var);
 		MeshGenerator__ctor_m5D5CE5E6D63ED2D3AE7688622270EA42D9363ED6(__this, NULL);
 		return;
@@ -16289,7 +17017,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t WaveformGenerator_get_axis_m99992B775
 {
 	{
 		// get { return _axis; }
-		int32_t L_0 = __this->____axis_60;
+		int32_t L_0 = __this->____axis_61;
 		return L_0;
 	}
 }
@@ -16299,7 +17027,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WaveformGenerator_set_axis_m1E12E0C2F8B0
 	{
 		// if (value != _axis)
 		int32_t L_0 = ___value0;
-		int32_t L_1 = __this->____axis_60;
+		int32_t L_1 = __this->____axis_61;
 		if ((((int32_t)L_0) == ((int32_t)L_1)))
 		{
 			goto IL_0016;
@@ -16308,7 +17036,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WaveformGenerator_set_axis_m1E12E0C2F8B0
 	{
 		// _axis = value;
 		int32_t L_2 = ___value0;
-		__this->____axis_60 = L_2;
+		__this->____axis_61 = L_2;
 		// Rebuild();
 		VirtualActionInvoker0::Invoke(12 /* System.Void Dreamteck.Splines.SplineUser::Rebuild() */, __this);
 	}
@@ -16324,7 +17052,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WaveformGenerator_get_symmetry_m495D2759
 {
 	{
 		// get { return _symmetry; }
-		bool L_0 = __this->____symmetry_61;
+		bool L_0 = __this->____symmetry_62;
 		return L_0;
 	}
 }
@@ -16334,7 +17062,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WaveformGenerator_set_symmetry_m877092DB
 	{
 		// if (value != _symmetry)
 		bool L_0 = ___value0;
-		bool L_1 = __this->____symmetry_61;
+		bool L_1 = __this->____symmetry_62;
 		if ((((int32_t)L_0) == ((int32_t)L_1)))
 		{
 			goto IL_0016;
@@ -16343,7 +17071,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WaveformGenerator_set_symmetry_m877092DB
 	{
 		// _symmetry = value;
 		bool L_2 = ___value0;
-		__this->____symmetry_61 = L_2;
+		__this->____symmetry_62 = L_2;
 		// Rebuild();
 		VirtualActionInvoker0::Invoke(12 /* System.Void Dreamteck.Splines.SplineUser::Rebuild() */, __this);
 	}
@@ -16359,7 +17087,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t WaveformGenerator_get_uvWrapMode_m6D1
 {
 	{
 		// get { return _uvWrapMode; }
-		int32_t L_0 = __this->____uvWrapMode_62;
+		int32_t L_0 = __this->____uvWrapMode_63;
 		return L_0;
 	}
 }
@@ -16369,7 +17097,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WaveformGenerator_set_uvWrapMode_m185415
 	{
 		// if (value != _uvWrapMode)
 		int32_t L_0 = ___value0;
-		int32_t L_1 = __this->____uvWrapMode_62;
+		int32_t L_1 = __this->____uvWrapMode_63;
 		if ((((int32_t)L_0) == ((int32_t)L_1)))
 		{
 			goto IL_0016;
@@ -16378,7 +17106,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WaveformGenerator_set_uvWrapMode_m185415
 	{
 		// _uvWrapMode = value;
 		int32_t L_2 = ___value0;
-		__this->____uvWrapMode_62 = L_2;
+		__this->____uvWrapMode_63 = L_2;
 		// Rebuild();
 		VirtualActionInvoker0::Invoke(12 /* System.Void Dreamteck.Splines.SplineUser::Rebuild() */, __this);
 	}
@@ -16394,7 +17122,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t WaveformGenerator_get_slices_m0ABE4E2
 {
 	{
 		// get { return _slices; }
-		int32_t L_0 = __this->____slices_63;
+		int32_t L_0 = __this->____slices_64;
 		return L_0;
 	}
 }
@@ -16404,7 +17132,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WaveformGenerator_set_slices_mC1F91D6D07
 	{
 		// if (value != _slices)
 		int32_t L_0 = ___value0;
-		int32_t L_1 = __this->____slices_63;
+		int32_t L_1 = __this->____slices_64;
 		if ((((int32_t)L_0) == ((int32_t)L_1)))
 		{
 			goto IL_001d;
@@ -16427,7 +17155,7 @@ IL_0010:
 	{
 		// _slices = value;
 		int32_t L_3 = ___value0;
-		__this->____slices_63 = L_3;
+		__this->____slices_64 = L_3;
 		// Rebuild();
 		VirtualActionInvoker0::Invoke(12 /* System.Void Dreamteck.Splines.SplineUser::Rebuild() */, __this);
 	}
@@ -16438,24 +17166,18 @@ IL_001d:
 		return;
 	}
 }
-// System.Void Dreamteck.Splines.WaveformGenerator::Awake()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WaveformGenerator_Awake_m0683449A86E70120F3AECA896DFC4F5EB3FFE256 (WaveformGenerator_t88067D558E128EBDBE4C561A4F312243DBE055B1* __this, const RuntimeMethod* method) 
+// System.String Dreamteck.Splines.WaveformGenerator::get_meshName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WaveformGenerator_get_meshName_m6DDE767F908734EFC8A51BB7B6C2C8826488EDD3 (WaveformGenerator_t88067D558E128EBDBE4C561A4F312243DBE055B1* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC8030254E2A044716BE5C6218DC805EFA9F40947);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE3FB52A6A499BD50CACB93900D84D32D55B8CD1D);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// base.Awake();
-		MeshGenerator_Awake_m0B8F023A8612CDFFC6AAEE858462B8CB97B48960(__this, NULL);
-		// mesh.name = "waveform";
-		Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* L_0 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___mesh_54;
-		NullCheck(L_0);
-		Object_set_name_mC79E6DC8FFD72479C90F0C4CC7F42A0FEAF5AE47(L_0, _stringLiteralC8030254E2A044716BE5C6218DC805EFA9F40947, NULL);
-		// }
-		return;
+		// protected override string meshName => "Waveform";
+		return _stringLiteralE3FB52A6A499BD50CACB93900D84D32D55B8CD1D;
 	}
 }
 // System.Void Dreamteck.Splines.WaveformGenerator::BuildMesh()
@@ -16505,11 +17227,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WaveformGenerator_Generate_m837886E04F0C
 	float V_3 = 0.0f;
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_4;
 	memset((&V_4), 0, sizeof(V_4));
-	int32_t V_5 = 0;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_5;
+	memset((&V_5), 0, sizeof(V_5));
 	int32_t V_6 = 0;
-	float V_7 = 0.0f;
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_8;
-	memset((&V_8), 0, sizeof(V_8));
+	int32_t V_7 = 0;
+	float V_8 = 0.0f;
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_9;
 	memset((&V_9), 0, sizeof(V_9));
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_10;
@@ -16518,16 +17240,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WaveformGenerator_Generate_m837886E04F0C
 	memset((&V_11), 0, sizeof(V_11));
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_12;
 	memset((&V_12), 0, sizeof(V_12));
-	float V_13 = 0.0f;
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_14;
-	memset((&V_14), 0, sizeof(V_14));
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_13;
+	memset((&V_13), 0, sizeof(V_13));
+	float V_14 = 0.0f;
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_15;
 	memset((&V_15), 0, sizeof(V_15));
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_16;
 	memset((&V_16), 0, sizeof(V_16));
-	int32_t V_17 = 0;
-	float V_18 = 0.0f;
-	int32_t V_19 = 0;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_17;
+	memset((&V_17), 0, sizeof(V_17));
+	int32_t V_18 = 0;
+	float V_19 = 0.0f;
+	int32_t V_20 = 0;
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* G_B14_0 = NULL;
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* G_B13_0 = NULL;
 	float G_B15_0 = 0.0f;
@@ -16544,14 +17268,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WaveformGenerator_Generate_m837886E04F0C
 		// int vertexCount = sampleCount * (_slices + 1);
 		int32_t L_0;
 		L_0 = SplineUser_get_sampleCount_m72EB98E357EB6A53B94626C14D2F0CAF87997AFC_inline(__this, NULL);
-		int32_t L_1 = __this->____slices_63;
+		int32_t L_1 = __this->____slices_64;
 		V_0 = ((int32_t)il2cpp_codegen_multiply(L_0, ((int32_t)il2cpp_codegen_add(L_1, 1))));
 		// AllocateMesh(vertexCount, _slices * (sampleCount - 1) * 6);
 		int32_t L_2 = V_0;
-		int32_t L_3 = __this->____slices_63;
+		int32_t L_3 = __this->____slices_64;
 		int32_t L_4;
 		L_4 = SplineUser_get_sampleCount_m72EB98E357EB6A53B94626C14D2F0CAF87997AFC_inline(__this, NULL);
-		VirtualActionInvoker2< int32_t, int32_t >::Invoke(24 /* System.Void Dreamteck.Splines.MeshGenerator::AllocateMesh(System.Int32,System.Int32) */, __this, L_2, ((int32_t)il2cpp_codegen_multiply(((int32_t)il2cpp_codegen_multiply(L_3, ((int32_t)il2cpp_codegen_subtract(L_4, 1)))), 6)));
+		VirtualActionInvoker2< int32_t, int32_t >::Invoke(26 /* System.Void Dreamteck.Splines.MeshGenerator::AllocateMesh(System.Int32,System.Int32) */, __this, L_2, ((int32_t)il2cpp_codegen_multiply(((int32_t)il2cpp_codegen_multiply(L_3, ((int32_t)il2cpp_codegen_subtract(L_4, 1)))), 6)));
 		// int vertIndex = 0;
 		V_1 = 0;
 		// float avgTop = 0f;
@@ -16563,7 +17287,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WaveformGenerator_Generate_m837886E04F0C
 		L_5 = SplineUser_get_spline_mFCDA5843B398053A190E9A6B6971331A19033E15_inline(__this, NULL);
 		NullCheck(L_5);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6;
-		L_6 = SplineComputer_get_position_m446882D1914FB13D41458DE237BCF5B685A1F854_inline(L_5, NULL);
+		L_6 = SplineComputer_get_position_m446882D1914FB13D41458DE237BCF5B685A1F854(L_5, NULL);
 		// Vector3 normal = spline.TransformDirection(Vector3.right);
 		SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* L_7;
 		L_7 = SplineUser_get_spline_mFCDA5843B398053A190E9A6B6971331A19033E15_inline(__this, NULL);
@@ -16574,16 +17298,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WaveformGenerator_Generate_m837886E04F0C
 		L_9 = SplineComputer_TransformDirection_m1765BDC618FE42CD60FA7824994CDAE27E85EB2C(L_7, L_8, NULL);
 		V_4 = L_9;
 		// switch (_axis)
-		int32_t L_10 = __this->____axis_60;
-		V_5 = L_10;
-		int32_t L_11 = V_5;
+		int32_t L_10 = __this->____axis_61;
+		V_6 = L_10;
+		int32_t L_11 = V_6;
 		if ((((int32_t)L_11) == ((int32_t)1)))
 		{
 			goto IL_0068;
 		}
 	}
 	{
-		int32_t L_12 = V_5;
+		int32_t L_12 = V_6;
 		if ((((int32_t)L_12) == ((int32_t)2)))
 		{
 			goto IL_007c;
@@ -16623,561 +17347,565 @@ IL_007c:
 
 IL_008e:
 	{
+		// Vector3 lastPosition = Vector3.zero;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_19;
+		L_19 = Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline(NULL);
+		V_5 = L_19;
 		// for (int i = 0; i < sampleCount; i++)
-		V_6 = 0;
-		goto IL_0476;
+		V_7 = 0;
+		goto IL_047d;
 	}
 
-IL_0096:
+IL_009d:
 	{
-		// evalResult = GetSampleRaw(i);
-		int32_t L_19 = V_6;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_20;
-		L_20 = SplineUser_GetSampleRaw_m348FCC800AC627A1C1FE4D63D0D6258FBE771315(__this, L_19, NULL);
-		((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26 = L_20;
-		Il2CppCodeGenWriteBarrier((void**)(&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26), (void*)L_20);
+		// GetSample(i, ref evalResult);
+		int32_t L_20 = V_7;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_21 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
+		SplineUser_GetSample_m880DFE2CAAE9E9F4D85F68B13E9DE816186C3D8E(__this, L_20, L_21, NULL);
 		// float resultSize = GetBaseSize(evalResult);
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_21 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
-		float L_22;
-		L_22 = MeshGenerator_GetBaseSize_m3AA0C08209F5E80A02EDE2F76C32D1249A47E5B1(__this, L_21, NULL);
-		V_7 = L_22;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 L_22 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27;
+		float L_23;
+		L_23 = MeshGenerator_GetBaseSize_m3AA0C08209F5E80A02EDE2F76C32D1249A47E5B1(__this, L_22, NULL);
+		V_8 = L_23;
 		// Vector3 samplePosition = evalResult.position;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_23 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
-		NullCheck(L_23);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_24 = L_23->___position_0;
-		V_8 = L_24;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_24 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_25 = L_24->___position_0;
+		V_9 = L_25;
 		// Vector3 localSamplePosition = spline.InverseTransformPoint(samplePosition);
-		SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* L_25;
-		L_25 = SplineUser_get_spline_mFCDA5843B398053A190E9A6B6971331A19033E15_inline(__this, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_26 = V_8;
-		NullCheck(L_25);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_27;
-		L_27 = SplineComputer_InverseTransformPoint_mECCF2D72C06C4113F8702CAE2D91A1A1ED8C5A9E(L_25, L_26, NULL);
-		V_9 = L_27;
-		// Vector3 bottomPosition = localSamplePosition;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_28 = V_9;
+		SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* L_26;
+		L_26 = SplineUser_get_spline_mFCDA5843B398053A190E9A6B6971331A19033E15_inline(__this, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_27 = V_9;
+		NullCheck(L_26);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_28;
+		L_28 = SplineComputer_InverseTransformPoint_mECCF2D72C06C4113F8702CAE2D91A1A1ED8C5A9E(L_26, L_27, NULL);
 		V_10 = L_28;
+		// Vector3 bottomPosition = localSamplePosition;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_29 = V_10;
+		V_11 = L_29;
 		// Vector3 sampleDirection = evalResult.forward;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_29 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
-		NullCheck(L_29);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_30 = L_29->___forward_2;
-		V_11 = L_30;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_30 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_31 = L_30->___forward_2;
+		V_12 = L_31;
 		// Vector3 sampleNormal = evalResult.up;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_31 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
-		NullCheck(L_31);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_32 = L_31->___up_1;
-		V_12 = L_32;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_32 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_33 = L_32->___up_1;
+		V_13 = L_33;
 		// float heightPercent = 1f;
-		V_13 = (1.0f);
+		V_14 = (1.0f);
 		// if (_uvWrapMode == UVWrapMode.UniformX || _uvWrapMode == UVWrapMode.Uniform)
-		int32_t L_33 = __this->____uvWrapMode_62;
-		if ((((int32_t)L_33) == ((int32_t)1)))
+		int32_t L_34 = __this->____uvWrapMode_63;
+		if ((((int32_t)L_34) == ((int32_t)1)))
 		{
-			goto IL_0105;
+			goto IL_010c;
 		}
 	}
 	{
-		int32_t L_34 = __this->____uvWrapMode_62;
-		if ((!(((uint32_t)L_34) == ((uint32_t)3))))
+		int32_t L_35 = __this->____uvWrapMode_63;
+		if ((!(((uint32_t)L_35) == ((uint32_t)3))))
 		{
-			goto IL_012c;
+			goto IL_0126;
 		}
 	}
 
-IL_0105:
+IL_010c:
 	{
-		// if (i > 0) totalLength += Vector3.Distance(evalResult.position, GetSampleRaw(i - 1).position);
-		int32_t L_35 = V_6;
-		if ((((int32_t)L_35) <= ((int32_t)0)))
+		// if (i > 0)
+		int32_t L_36 = V_7;
+		if ((((int32_t)L_36) <= ((int32_t)0)))
 		{
-			goto IL_012c;
+			goto IL_0126;
 		}
 	}
 	{
-		// if (i > 0) totalLength += Vector3.Distance(evalResult.position, GetSampleRaw(i - 1).position);
-		float L_36 = V_3;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_37 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
-		NullCheck(L_37);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_38 = L_37->___position_0;
-		int32_t L_39 = V_6;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_40;
-		L_40 = SplineUser_GetSampleRaw_m348FCC800AC627A1C1FE4D63D0D6258FBE771315(__this, ((int32_t)il2cpp_codegen_subtract(L_39, 1)), NULL);
-		NullCheck(L_40);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_41 = L_40->___position_0;
-		float L_42;
-		L_42 = Vector3_Distance_m2314DB9B8BD01157E013DF87BEA557375C7F9FF9_inline(L_38, L_41, NULL);
-		V_3 = ((float)il2cpp_codegen_add(L_36, L_42));
+		// totalLength += Vector3.Distance(evalResult.position, lastPosition);
+		float L_37 = V_3;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_38 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_39 = L_38->___position_0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_40 = V_5;
+		float L_41;
+		L_41 = Vector3_Distance_m2314DB9B8BD01157E013DF87BEA557375C7F9FF9_inline(L_39, L_40, NULL);
+		V_3 = ((float)il2cpp_codegen_add(L_37, L_41));
 	}
 
-IL_012c:
+IL_0126:
 	{
 		// switch (_axis)
-		int32_t L_43 = __this->____axis_60;
-		V_5 = L_43;
-		int32_t L_44 = V_5;
-		switch (L_44)
+		int32_t L_42 = __this->____axis_61;
+		V_6 = L_42;
+		int32_t L_43 = V_6;
+		switch (L_43)
 		{
 			case 0:
 			{
-				goto IL_014c;
+				goto IL_0146;
 			}
 			case 1:
 			{
-				goto IL_0193;
+				goto IL_018d;
 			}
 			case 2:
 			{
-				goto IL_01d7;
+				goto IL_01d1;
 			}
 		}
 	}
 	{
-		goto IL_0219;
+		goto IL_0213;
 	}
 
-IL_014c:
+IL_0146:
 	{
 		// case Axis.X: bottomPosition.x = _symmetry ? -localSamplePosition.x : 0f;  heightPercent = uvScale.y * Mathf.Abs(localSamplePosition.x); avgTop += localSamplePosition.x; break;
-		bool L_45 = __this->____symmetry_61;
-		G_B13_0 = (&V_10);
-		if (L_45)
+		bool L_44 = __this->____symmetry_62;
+		G_B13_0 = (&V_11);
+		if (L_44)
 		{
-			G_B14_0 = (&V_10);
-			goto IL_015d;
+			G_B14_0 = (&V_11);
+			goto IL_0157;
 		}
 	}
 	{
 		G_B15_0 = (0.0f);
 		G_B15_1 = G_B13_0;
-		goto IL_0165;
+		goto IL_015f;
 	}
 
-IL_015d:
+IL_0157:
 	{
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_46 = V_9;
-		float L_47 = L_46.___x_2;
-		G_B15_0 = ((-L_47));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_45 = V_10;
+		float L_46 = L_45.___x_2;
+		G_B15_0 = ((-L_46));
 		G_B15_1 = G_B14_0;
 	}
 
-IL_0165:
+IL_015f:
 	{
 		G_B15_1->___x_2 = G_B15_0;
 		// case Axis.X: bottomPosition.x = _symmetry ? -localSamplePosition.x : 0f;  heightPercent = uvScale.y * Mathf.Abs(localSamplePosition.x); avgTop += localSamplePosition.x; break;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_48;
-		L_48 = MeshGenerator_get_uvScale_m096A30E796CA2F89EADB0DA7A9DA085674DF5B48_inline(__this, NULL);
-		float L_49 = L_48.___y_1;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_50 = V_9;
-		float L_51 = L_50.___x_2;
-		float L_52;
-		L_52 = fabsf(L_51);
-		V_13 = ((float)il2cpp_codegen_multiply(L_49, L_52));
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_47;
+		L_47 = MeshGenerator_get_uvScale_m096A30E796CA2F89EADB0DA7A9DA085674DF5B48_inline(__this, NULL);
+		float L_48 = L_47.___y_1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_49 = V_10;
+		float L_50 = L_49.___x_2;
+		float L_51;
+		L_51 = fabsf(L_50);
+		V_14 = ((float)il2cpp_codegen_multiply(L_48, L_51));
 		// case Axis.X: bottomPosition.x = _symmetry ? -localSamplePosition.x : 0f;  heightPercent = uvScale.y * Mathf.Abs(localSamplePosition.x); avgTop += localSamplePosition.x; break;
-		float L_53 = V_2;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_54 = V_9;
-		float L_55 = L_54.___x_2;
-		V_2 = ((float)il2cpp_codegen_add(L_53, L_55));
+		float L_52 = V_2;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_53 = V_10;
+		float L_54 = L_53.___x_2;
+		V_2 = ((float)il2cpp_codegen_add(L_52, L_54));
 		// case Axis.X: bottomPosition.x = _symmetry ? -localSamplePosition.x : 0f;  heightPercent = uvScale.y * Mathf.Abs(localSamplePosition.x); avgTop += localSamplePosition.x; break;
-		goto IL_0219;
+		goto IL_0213;
 	}
 
-IL_0193:
+IL_018d:
 	{
 		// case Axis.Y: bottomPosition.y = _symmetry ? -localSamplePosition.y : 0f;  heightPercent = uvScale.y * Mathf.Abs(localSamplePosition.y); avgTop += localSamplePosition.y; break;
-		bool L_56 = __this->____symmetry_61;
-		G_B17_0 = (&V_10);
-		if (L_56)
+		bool L_55 = __this->____symmetry_62;
+		G_B17_0 = (&V_11);
+		if (L_55)
 		{
-			G_B18_0 = (&V_10);
-			goto IL_01a4;
+			G_B18_0 = (&V_11);
+			goto IL_019e;
 		}
 	}
 	{
 		G_B19_0 = (0.0f);
 		G_B19_1 = G_B17_0;
-		goto IL_01ac;
+		goto IL_01a6;
 	}
 
-IL_01a4:
+IL_019e:
 	{
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_57 = V_9;
-		float L_58 = L_57.___y_3;
-		G_B19_0 = ((-L_58));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_56 = V_10;
+		float L_57 = L_56.___y_3;
+		G_B19_0 = ((-L_57));
 		G_B19_1 = G_B18_0;
 	}
 
-IL_01ac:
+IL_01a6:
 	{
 		G_B19_1->___y_3 = G_B19_0;
 		// case Axis.Y: bottomPosition.y = _symmetry ? -localSamplePosition.y : 0f;  heightPercent = uvScale.y * Mathf.Abs(localSamplePosition.y); avgTop += localSamplePosition.y; break;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_59;
-		L_59 = MeshGenerator_get_uvScale_m096A30E796CA2F89EADB0DA7A9DA085674DF5B48_inline(__this, NULL);
-		float L_60 = L_59.___y_1;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_61 = V_9;
-		float L_62 = L_61.___y_3;
-		float L_63;
-		L_63 = fabsf(L_62);
-		V_13 = ((float)il2cpp_codegen_multiply(L_60, L_63));
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_58;
+		L_58 = MeshGenerator_get_uvScale_m096A30E796CA2F89EADB0DA7A9DA085674DF5B48_inline(__this, NULL);
+		float L_59 = L_58.___y_1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_60 = V_10;
+		float L_61 = L_60.___y_3;
+		float L_62;
+		L_62 = fabsf(L_61);
+		V_14 = ((float)il2cpp_codegen_multiply(L_59, L_62));
 		// case Axis.Y: bottomPosition.y = _symmetry ? -localSamplePosition.y : 0f;  heightPercent = uvScale.y * Mathf.Abs(localSamplePosition.y); avgTop += localSamplePosition.y; break;
-		float L_64 = V_2;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_65 = V_9;
-		float L_66 = L_65.___y_3;
-		V_2 = ((float)il2cpp_codegen_add(L_64, L_66));
+		float L_63 = V_2;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_64 = V_10;
+		float L_65 = L_64.___y_3;
+		V_2 = ((float)il2cpp_codegen_add(L_63, L_65));
 		// case Axis.Y: bottomPosition.y = _symmetry ? -localSamplePosition.y : 0f;  heightPercent = uvScale.y * Mathf.Abs(localSamplePosition.y); avgTop += localSamplePosition.y; break;
-		goto IL_0219;
+		goto IL_0213;
 	}
 
-IL_01d7:
+IL_01d1:
 	{
 		// case Axis.Z: bottomPosition.z = _symmetry ? -localSamplePosition.z : 0f;  heightPercent = uvScale.y * Mathf.Abs(localSamplePosition.z); avgTop += localSamplePosition.z; break;
-		bool L_67 = __this->____symmetry_61;
-		G_B21_0 = (&V_10);
-		if (L_67)
+		bool L_66 = __this->____symmetry_62;
+		G_B21_0 = (&V_11);
+		if (L_66)
 		{
-			G_B22_0 = (&V_10);
-			goto IL_01e8;
+			G_B22_0 = (&V_11);
+			goto IL_01e2;
 		}
 	}
 	{
 		G_B23_0 = (0.0f);
 		G_B23_1 = G_B21_0;
-		goto IL_01f0;
+		goto IL_01ea;
 	}
 
-IL_01e8:
+IL_01e2:
 	{
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_68 = V_9;
-		float L_69 = L_68.___z_4;
-		G_B23_0 = ((-L_69));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_67 = V_10;
+		float L_68 = L_67.___z_4;
+		G_B23_0 = ((-L_68));
 		G_B23_1 = G_B22_0;
 	}
 
-IL_01f0:
+IL_01ea:
 	{
 		G_B23_1->___z_4 = G_B23_0;
 		// case Axis.Z: bottomPosition.z = _symmetry ? -localSamplePosition.z : 0f;  heightPercent = uvScale.y * Mathf.Abs(localSamplePosition.z); avgTop += localSamplePosition.z; break;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_70;
-		L_70 = MeshGenerator_get_uvScale_m096A30E796CA2F89EADB0DA7A9DA085674DF5B48_inline(__this, NULL);
-		float L_71 = L_70.___y_1;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_72 = V_9;
-		float L_73 = L_72.___z_4;
-		float L_74;
-		L_74 = fabsf(L_73);
-		V_13 = ((float)il2cpp_codegen_multiply(L_71, L_74));
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_69;
+		L_69 = MeshGenerator_get_uvScale_m096A30E796CA2F89EADB0DA7A9DA085674DF5B48_inline(__this, NULL);
+		float L_70 = L_69.___y_1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_71 = V_10;
+		float L_72 = L_71.___z_4;
+		float L_73;
+		L_73 = fabsf(L_72);
+		V_14 = ((float)il2cpp_codegen_multiply(L_70, L_73));
 		// case Axis.Z: bottomPosition.z = _symmetry ? -localSamplePosition.z : 0f;  heightPercent = uvScale.y * Mathf.Abs(localSamplePosition.z); avgTop += localSamplePosition.z; break;
-		float L_75 = V_2;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_76 = V_9;
-		float L_77 = L_76.___z_4;
-		V_2 = ((float)il2cpp_codegen_add(L_75, L_77));
+		float L_74 = V_2;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_75 = V_10;
+		float L_76 = L_75.___z_4;
+		V_2 = ((float)il2cpp_codegen_add(L_74, L_76));
 	}
 
-IL_0219:
+IL_0213:
 	{
 		// bottomPosition = spline.TransformPoint(bottomPosition);
-		SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* L_78;
-		L_78 = SplineUser_get_spline_mFCDA5843B398053A190E9A6B6971331A19033E15_inline(__this, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_79 = V_10;
-		NullCheck(L_78);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_80;
-		L_80 = SplineComputer_TransformPoint_mA8122BC79A397AE6179382B56C731ED460816171(L_78, L_79, NULL);
-		V_10 = L_80;
+		SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* L_77;
+		L_77 = SplineUser_get_spline_mFCDA5843B398053A190E9A6B6971331A19033E15_inline(__this, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_78 = V_11;
+		NullCheck(L_77);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_79;
+		L_79 = SplineComputer_TransformPoint_mA8122BC79A397AE6179382B56C731ED460816171(L_77, L_78, NULL);
+		V_11 = L_79;
 		// Vector3 right = Vector3.Cross(normal, sampleDirection).normalized;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_81 = V_4;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_82 = V_11;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_80 = V_4;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_81 = V_12;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_82;
+		L_82 = Vector3_Cross_mF93A280558BCE756D13B6CC5DCD7DE8A43148987_inline(L_80, L_81, NULL);
+		V_17 = L_82;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_83;
-		L_83 = Vector3_Cross_mF93A280558BCE756D13B6CC5DCD7DE8A43148987_inline(L_81, L_82, NULL);
-		V_16 = L_83;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_84;
-		L_84 = Vector3_get_normalized_m736BBF65D5CDA7A18414370D15B4DFCC1E466F07_inline((&V_16), NULL);
-		V_14 = L_84;
+		L_83 = Vector3_get_normalized_m736BBF65D5CDA7A18414370D15B4DFCC1E466F07_inline((&V_17), NULL);
+		V_15 = L_83;
 		// Vector3 offsetRight = Vector3.Cross(sampleNormal, sampleDirection);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_84 = V_13;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_85 = V_12;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_86 = V_11;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_87;
-		L_87 = Vector3_Cross_mF93A280558BCE756D13B6CC5DCD7DE8A43148987_inline(L_85, L_86, NULL);
-		V_15 = L_87;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_86;
+		L_86 = Vector3_Cross_mF93A280558BCE756D13B6CC5DCD7DE8A43148987_inline(L_84, L_85, NULL);
+		V_16 = L_86;
 		// for (int n = 0; n < _slices + 1; n++)
-		V_17 = 0;
-		goto IL_0461;
+		V_18 = 0;
+		goto IL_045b;
 	}
 
-IL_024f:
+IL_0249:
 	{
 		// float slicePercent = ((float)n / _slices);
-		int32_t L_88 = V_17;
-		int32_t L_89 = __this->____slices_63;
-		V_18 = ((float)(((float)L_88)/((float)L_89)));
-		// tsMesh.vertices[vertIndex] = Vector3.Lerp(bottomPosition, samplePosition, slicePercent) + normal * (offset.y * resultSize) + offsetRight * (offset.x * resultSize);
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_90 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
-		NullCheck(L_90);
-		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_91 = L_90->___vertices_0;
-		int32_t L_92 = V_1;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_93 = V_10;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_94 = V_8;
-		float L_95 = V_18;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_96;
-		L_96 = Vector3_Lerp_m3A906D0530A94FAABB94F0F905E84D99BE85C3F8_inline(L_93, L_94, L_95, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_97 = V_4;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_98;
-		L_98 = MeshGenerator_get_offset_m05B30B6A00C843F0C0D2D97FE5C13544BE501436_inline(__this, NULL);
-		float L_99 = L_98.___y_3;
-		float L_100 = V_7;
+		int32_t L_87 = V_18;
+		int32_t L_88 = __this->____slices_64;
+		V_19 = ((float)(((float)L_87)/((float)L_88)));
+		// _tsMesh.vertices[vertIndex] = Vector3.Lerp(bottomPosition, samplePosition, slicePercent) + normal * (offset.y * resultSize) + offsetRight * (offset.x * resultSize);
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_89;
+		L_89 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_89);
+		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_90 = L_89->___vertices_0;
+		int32_t L_91 = V_1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_92 = V_11;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_93 = V_9;
+		float L_94 = V_19;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_95;
+		L_95 = Vector3_Lerp_m3A906D0530A94FAABB94F0F905E84D99BE85C3F8_inline(L_92, L_93, L_94, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_96 = V_4;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_97;
+		L_97 = MeshGenerator_get_offset_m05B30B6A00C843F0C0D2D97FE5C13544BE501436_inline(__this, NULL);
+		float L_98 = L_97.___y_3;
+		float L_99 = V_8;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_100;
+		L_100 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_96, ((float)il2cpp_codegen_multiply(L_98, L_99)), NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_101;
-		L_101 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_97, ((float)il2cpp_codegen_multiply(L_99, L_100)), NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_102;
-		L_102 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_96, L_101, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_103 = V_15;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_104;
-		L_104 = MeshGenerator_get_offset_m05B30B6A00C843F0C0D2D97FE5C13544BE501436_inline(__this, NULL);
-		float L_105 = L_104.___x_2;
-		float L_106 = V_7;
+		L_101 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_95, L_100, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_102 = V_16;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_103;
+		L_103 = MeshGenerator_get_offset_m05B30B6A00C843F0C0D2D97FE5C13544BE501436_inline(__this, NULL);
+		float L_104 = L_103.___x_2;
+		float L_105 = V_8;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_106;
+		L_106 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_102, ((float)il2cpp_codegen_multiply(L_104, L_105)), NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_107;
-		L_107 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_103, ((float)il2cpp_codegen_multiply(L_105, L_106)), NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_108;
-		L_108 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_102, L_107, NULL);
-		NullCheck(L_91);
-		(L_91)->SetAt(static_cast<il2cpp_array_size_t>(L_92), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_108);
-		// tsMesh.normals[vertIndex] = right;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_109 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		L_107 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_101, L_106, NULL);
+		NullCheck(L_90);
+		(L_90)->SetAt(static_cast<il2cpp_array_size_t>(L_91), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_107);
+		// _tsMesh.normals[vertIndex] = right;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_108;
+		L_108 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_108);
+		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_109 = L_108->___normals_1;
+		int32_t L_110 = V_1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_111 = V_15;
 		NullCheck(L_109);
-		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_110 = L_109->___normals_1;
-		int32_t L_111 = V_1;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_112 = V_14;
-		NullCheck(L_110);
-		(L_110)->SetAt(static_cast<il2cpp_array_size_t>(L_111), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_112);
+		(L_109)->SetAt(static_cast<il2cpp_array_size_t>(L_110), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_111);
 		// switch (_uvWrapMode)
-		int32_t L_113 = __this->____uvWrapMode_62;
-		V_19 = L_113;
-		int32_t L_114 = V_19;
-		switch (L_114)
+		int32_t L_112 = __this->____uvWrapMode_63;
+		V_20 = L_112;
+		int32_t L_113 = V_20;
+		switch (L_113)
 		{
 			case 0:
 			{
-				goto IL_02e3;
+				goto IL_02dd;
 			}
 			case 1:
 			{
-				goto IL_033c;
+				goto IL_0336;
 			}
 			case 2:
 			{
-				goto IL_038a;
+				goto IL_0384;
 			}
 			case 3:
 			{
-				goto IL_03e3;
+				goto IL_03dd;
 			}
 		}
 	}
 	{
-		goto IL_042f;
+		goto IL_0429;
 	}
 
-IL_02e3:
+IL_02dd:
 	{
-		// case UVWrapMode.Clamp: tsMesh.uv[vertIndex] = new Vector2((float)evalResult.percent * uvScale.x + uvOffset.x, slicePercent * uvScale.y + uvOffset.y); break;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_115 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		// case UVWrapMode.Clamp: _tsMesh.uv[vertIndex] = new Vector2((float)evalResult.percent * uvScale.x + uvOffset.x, slicePercent * uvScale.y + uvOffset.y); break;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_114;
+		L_114 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_114);
+		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_115 = L_114->___uv_4;
+		int32_t L_116 = V_1;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_117 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
+		double L_118 = L_117->___percent_5;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_119;
+		L_119 = MeshGenerator_get_uvScale_m096A30E796CA2F89EADB0DA7A9DA085674DF5B48_inline(__this, NULL);
+		float L_120 = L_119.___x_0;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_121;
+		L_121 = MeshGenerator_get_uvOffset_m97DFF76D2B0A2F4B426D5E2AB9CF8630D315154D_inline(__this, NULL);
+		float L_122 = L_121.___x_0;
+		float L_123 = V_19;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_124;
+		L_124 = MeshGenerator_get_uvScale_m096A30E796CA2F89EADB0DA7A9DA085674DF5B48_inline(__this, NULL);
+		float L_125 = L_124.___y_1;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_126;
+		L_126 = MeshGenerator_get_uvOffset_m97DFF76D2B0A2F4B426D5E2AB9CF8630D315154D_inline(__this, NULL);
+		float L_127 = L_126.___y_1;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_128;
+		memset((&L_128), 0, sizeof(L_128));
+		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_128), ((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(((float)L_118), L_120)), L_122)), ((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(L_123, L_125)), L_127)), /*hidden argument*/NULL);
 		NullCheck(L_115);
-		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_116 = L_115->___uv_4;
-		int32_t L_117 = V_1;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_118 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
-		NullCheck(L_118);
-		double L_119 = L_118->___percent_5;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_120;
-		L_120 = MeshGenerator_get_uvScale_m096A30E796CA2F89EADB0DA7A9DA085674DF5B48_inline(__this, NULL);
-		float L_121 = L_120.___x_0;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_122;
-		L_122 = MeshGenerator_get_uvOffset_m97DFF76D2B0A2F4B426D5E2AB9CF8630D315154D_inline(__this, NULL);
-		float L_123 = L_122.___x_0;
-		float L_124 = V_18;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_125;
-		L_125 = MeshGenerator_get_uvScale_m096A30E796CA2F89EADB0DA7A9DA085674DF5B48_inline(__this, NULL);
-		float L_126 = L_125.___y_1;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_127;
-		L_127 = MeshGenerator_get_uvOffset_m97DFF76D2B0A2F4B426D5E2AB9CF8630D315154D_inline(__this, NULL);
-		float L_128 = L_127.___y_1;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_129;
-		memset((&L_129), 0, sizeof(L_129));
-		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_129), ((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(((float)L_119), L_121)), L_123)), ((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(L_124, L_126)), L_128)), /*hidden argument*/NULL);
-		NullCheck(L_116);
-		(L_116)->SetAt(static_cast<il2cpp_array_size_t>(L_117), (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7)L_129);
-		// case UVWrapMode.Clamp: tsMesh.uv[vertIndex] = new Vector2((float)evalResult.percent * uvScale.x + uvOffset.x, slicePercent * uvScale.y + uvOffset.y); break;
-		goto IL_042f;
+		(L_115)->SetAt(static_cast<il2cpp_array_size_t>(L_116), (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7)L_128);
+		// case UVWrapMode.Clamp: _tsMesh.uv[vertIndex] = new Vector2((float)evalResult.percent * uvScale.x + uvOffset.x, slicePercent * uvScale.y + uvOffset.y); break;
+		goto IL_0429;
 	}
 
-IL_033c:
+IL_0336:
 	{
-		// case UVWrapMode.UniformX: tsMesh.uv[vertIndex] = new Vector2(totalLength * uvScale.x + uvOffset.x, slicePercent * uvScale.y + uvOffset.y); break;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_130 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		// case UVWrapMode.UniformX: _tsMesh.uv[vertIndex] = new Vector2(totalLength * uvScale.x + uvOffset.x, slicePercent * uvScale.y + uvOffset.y); break;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_129;
+		L_129 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_129);
+		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_130 = L_129->___uv_4;
+		int32_t L_131 = V_1;
+		float L_132 = V_3;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_133;
+		L_133 = MeshGenerator_get_uvScale_m096A30E796CA2F89EADB0DA7A9DA085674DF5B48_inline(__this, NULL);
+		float L_134 = L_133.___x_0;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_135;
+		L_135 = MeshGenerator_get_uvOffset_m97DFF76D2B0A2F4B426D5E2AB9CF8630D315154D_inline(__this, NULL);
+		float L_136 = L_135.___x_0;
+		float L_137 = V_19;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_138;
+		L_138 = MeshGenerator_get_uvScale_m096A30E796CA2F89EADB0DA7A9DA085674DF5B48_inline(__this, NULL);
+		float L_139 = L_138.___y_1;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_140;
+		L_140 = MeshGenerator_get_uvOffset_m97DFF76D2B0A2F4B426D5E2AB9CF8630D315154D_inline(__this, NULL);
+		float L_141 = L_140.___y_1;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_142;
+		memset((&L_142), 0, sizeof(L_142));
+		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_142), ((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(L_132, L_134)), L_136)), ((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(L_137, L_139)), L_141)), /*hidden argument*/NULL);
 		NullCheck(L_130);
-		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_131 = L_130->___uv_4;
-		int32_t L_132 = V_1;
-		float L_133 = V_3;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_134;
-		L_134 = MeshGenerator_get_uvScale_m096A30E796CA2F89EADB0DA7A9DA085674DF5B48_inline(__this, NULL);
-		float L_135 = L_134.___x_0;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_136;
-		L_136 = MeshGenerator_get_uvOffset_m97DFF76D2B0A2F4B426D5E2AB9CF8630D315154D_inline(__this, NULL);
-		float L_137 = L_136.___x_0;
-		float L_138 = V_18;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_139;
-		L_139 = MeshGenerator_get_uvScale_m096A30E796CA2F89EADB0DA7A9DA085674DF5B48_inline(__this, NULL);
-		float L_140 = L_139.___y_1;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_141;
-		L_141 = MeshGenerator_get_uvOffset_m97DFF76D2B0A2F4B426D5E2AB9CF8630D315154D_inline(__this, NULL);
-		float L_142 = L_141.___y_1;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_143;
-		memset((&L_143), 0, sizeof(L_143));
-		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_143), ((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(L_133, L_135)), L_137)), ((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(L_138, L_140)), L_142)), /*hidden argument*/NULL);
-		NullCheck(L_131);
-		(L_131)->SetAt(static_cast<il2cpp_array_size_t>(L_132), (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7)L_143);
-		// case UVWrapMode.UniformX: tsMesh.uv[vertIndex] = new Vector2(totalLength * uvScale.x + uvOffset.x, slicePercent * uvScale.y + uvOffset.y); break;
-		goto IL_042f;
+		(L_130)->SetAt(static_cast<il2cpp_array_size_t>(L_131), (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7)L_142);
+		// case UVWrapMode.UniformX: _tsMesh.uv[vertIndex] = new Vector2(totalLength * uvScale.x + uvOffset.x, slicePercent * uvScale.y + uvOffset.y); break;
+		goto IL_0429;
 	}
 
-IL_038a:
+IL_0384:
 	{
-		// case UVWrapMode.UniformY: tsMesh.uv[vertIndex] = new Vector2((float)evalResult.percent * uvScale.x + uvOffset.x, heightPercent * slicePercent * uvScale.y + uvOffset.y); break;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_144 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		// case UVWrapMode.UniformY: _tsMesh.uv[vertIndex] = new Vector2((float)evalResult.percent * uvScale.x + uvOffset.x, heightPercent * slicePercent * uvScale.y + uvOffset.y); break;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_143;
+		L_143 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_143);
+		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_144 = L_143->___uv_4;
+		int32_t L_145 = V_1;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_146 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
+		double L_147 = L_146->___percent_5;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_148;
+		L_148 = MeshGenerator_get_uvScale_m096A30E796CA2F89EADB0DA7A9DA085674DF5B48_inline(__this, NULL);
+		float L_149 = L_148.___x_0;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_150;
+		L_150 = MeshGenerator_get_uvOffset_m97DFF76D2B0A2F4B426D5E2AB9CF8630D315154D_inline(__this, NULL);
+		float L_151 = L_150.___x_0;
+		float L_152 = V_14;
+		float L_153 = V_19;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_154;
+		L_154 = MeshGenerator_get_uvScale_m096A30E796CA2F89EADB0DA7A9DA085674DF5B48_inline(__this, NULL);
+		float L_155 = L_154.___y_1;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_156;
+		L_156 = MeshGenerator_get_uvOffset_m97DFF76D2B0A2F4B426D5E2AB9CF8630D315154D_inline(__this, NULL);
+		float L_157 = L_156.___y_1;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_158;
+		memset((&L_158), 0, sizeof(L_158));
+		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_158), ((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(((float)L_147), L_149)), L_151)), ((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_multiply(L_152, L_153)), L_155)), L_157)), /*hidden argument*/NULL);
 		NullCheck(L_144);
-		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_145 = L_144->___uv_4;
-		int32_t L_146 = V_1;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_147 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
-		NullCheck(L_147);
-		double L_148 = L_147->___percent_5;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_149;
-		L_149 = MeshGenerator_get_uvScale_m096A30E796CA2F89EADB0DA7A9DA085674DF5B48_inline(__this, NULL);
-		float L_150 = L_149.___x_0;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_151;
-		L_151 = MeshGenerator_get_uvOffset_m97DFF76D2B0A2F4B426D5E2AB9CF8630D315154D_inline(__this, NULL);
-		float L_152 = L_151.___x_0;
-		float L_153 = V_13;
-		float L_154 = V_18;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_155;
-		L_155 = MeshGenerator_get_uvScale_m096A30E796CA2F89EADB0DA7A9DA085674DF5B48_inline(__this, NULL);
-		float L_156 = L_155.___y_1;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_157;
-		L_157 = MeshGenerator_get_uvOffset_m97DFF76D2B0A2F4B426D5E2AB9CF8630D315154D_inline(__this, NULL);
-		float L_158 = L_157.___y_1;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_159;
-		memset((&L_159), 0, sizeof(L_159));
-		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_159), ((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(((float)L_148), L_150)), L_152)), ((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_multiply(L_153, L_154)), L_156)), L_158)), /*hidden argument*/NULL);
-		NullCheck(L_145);
-		(L_145)->SetAt(static_cast<il2cpp_array_size_t>(L_146), (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7)L_159);
-		// case UVWrapMode.UniformY: tsMesh.uv[vertIndex] = new Vector2((float)evalResult.percent * uvScale.x + uvOffset.x, heightPercent * slicePercent * uvScale.y + uvOffset.y); break;
-		goto IL_042f;
+		(L_144)->SetAt(static_cast<il2cpp_array_size_t>(L_145), (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7)L_158);
+		// case UVWrapMode.UniformY: _tsMesh.uv[vertIndex] = new Vector2((float)evalResult.percent * uvScale.x + uvOffset.x, heightPercent * slicePercent * uvScale.y + uvOffset.y); break;
+		goto IL_0429;
 	}
 
-IL_03e3:
+IL_03dd:
 	{
-		// case UVWrapMode.Uniform: tsMesh.uv[vertIndex] = new Vector2(totalLength * uvScale.x + uvOffset.x, heightPercent * slicePercent * uvScale.y + uvOffset.y); break;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_160 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
+		// case UVWrapMode.Uniform: _tsMesh.uv[vertIndex] = new Vector2(totalLength * uvScale.x + uvOffset.x, heightPercent * slicePercent * uvScale.y + uvOffset.y); break;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_159;
+		L_159 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_159);
+		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_160 = L_159->___uv_4;
+		int32_t L_161 = V_1;
+		float L_162 = V_3;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_163;
+		L_163 = MeshGenerator_get_uvScale_m096A30E796CA2F89EADB0DA7A9DA085674DF5B48_inline(__this, NULL);
+		float L_164 = L_163.___x_0;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_165;
+		L_165 = MeshGenerator_get_uvOffset_m97DFF76D2B0A2F4B426D5E2AB9CF8630D315154D_inline(__this, NULL);
+		float L_166 = L_165.___x_0;
+		float L_167 = V_14;
+		float L_168 = V_19;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_169;
+		L_169 = MeshGenerator_get_uvScale_m096A30E796CA2F89EADB0DA7A9DA085674DF5B48_inline(__this, NULL);
+		float L_170 = L_169.___y_1;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_171;
+		L_171 = MeshGenerator_get_uvOffset_m97DFF76D2B0A2F4B426D5E2AB9CF8630D315154D_inline(__this, NULL);
+		float L_172 = L_171.___y_1;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_173;
+		memset((&L_173), 0, sizeof(L_173));
+		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_173), ((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(L_162, L_164)), L_166)), ((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_multiply(L_167, L_168)), L_170)), L_172)), /*hidden argument*/NULL);
 		NullCheck(L_160);
-		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_161 = L_160->___uv_4;
-		int32_t L_162 = V_1;
-		float L_163 = V_3;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_164;
-		L_164 = MeshGenerator_get_uvScale_m096A30E796CA2F89EADB0DA7A9DA085674DF5B48_inline(__this, NULL);
-		float L_165 = L_164.___x_0;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_166;
-		L_166 = MeshGenerator_get_uvOffset_m97DFF76D2B0A2F4B426D5E2AB9CF8630D315154D_inline(__this, NULL);
-		float L_167 = L_166.___x_0;
-		float L_168 = V_13;
-		float L_169 = V_18;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_170;
-		L_170 = MeshGenerator_get_uvScale_m096A30E796CA2F89EADB0DA7A9DA085674DF5B48_inline(__this, NULL);
-		float L_171 = L_170.___y_1;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_172;
-		L_172 = MeshGenerator_get_uvOffset_m97DFF76D2B0A2F4B426D5E2AB9CF8630D315154D_inline(__this, NULL);
-		float L_173 = L_172.___y_1;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_174;
-		memset((&L_174), 0, sizeof(L_174));
-		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_174), ((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(L_163, L_165)), L_167)), ((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_multiply(L_168, L_169)), L_171)), L_173)), /*hidden argument*/NULL);
-		NullCheck(L_161);
-		(L_161)->SetAt(static_cast<il2cpp_array_size_t>(L_162), (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7)L_174);
+		(L_160)->SetAt(static_cast<il2cpp_array_size_t>(L_161), (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7)L_173);
 	}
 
-IL_042f:
+IL_0429:
 	{
-		// tsMesh.colors[vertIndex] = GetBaseColor(evalResult) * color;
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_175 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
-		NullCheck(L_175);
-		ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389* L_176 = L_175->___colors_3;
-		int32_t L_177 = V_1;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_178 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_26;
+		// _tsMesh.colors[vertIndex] = GetBaseColor(evalResult) * color;
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_174;
+		L_174 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_174);
+		ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389* L_175 = L_174->___colors_3;
+		int32_t L_176 = V_1;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 L_177 = ((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_178;
+		L_178 = MeshGenerator_GetBaseColor_mA53F6B90FFB54A8BA028FD12E109CB36B83F5723(__this, L_177, NULL);
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_179;
-		L_179 = MeshGenerator_GetBaseColor_mA53F6B90FFB54A8BA028FD12E109CB36B83F5723(__this, L_178, NULL);
+		L_179 = MeshGenerator_get_color_m304FC1A34B1FE17F535528AFDCE7A1AC90258A33_inline(__this, NULL);
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_180;
-		L_180 = MeshGenerator_get_color_m304FC1A34B1FE17F535528AFDCE7A1AC90258A33_inline(__this, NULL);
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_181;
-		L_181 = Color_op_Multiply_mD0296202733CB2D5342FB7C82B48AEDA63036758_inline(L_179, L_180, NULL);
-		NullCheck(L_176);
-		(L_176)->SetAt(static_cast<il2cpp_array_size_t>(L_177), (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F)L_181);
+		L_180 = Color_op_Multiply_mD0296202733CB2D5342FB7C82B48AEDA63036758_inline(L_178, L_179, NULL);
+		NullCheck(L_175);
+		(L_175)->SetAt(static_cast<il2cpp_array_size_t>(L_176), (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F)L_180);
 		// vertIndex++;
-		int32_t L_182 = V_1;
-		V_1 = ((int32_t)il2cpp_codegen_add(L_182, 1));
+		int32_t L_181 = V_1;
+		V_1 = ((int32_t)il2cpp_codegen_add(L_181, 1));
 		// for (int n = 0; n < _slices + 1; n++)
-		int32_t L_183 = V_17;
-		V_17 = ((int32_t)il2cpp_codegen_add(L_183, 1));
+		int32_t L_182 = V_18;
+		V_18 = ((int32_t)il2cpp_codegen_add(L_182, 1));
 	}
 
-IL_0461:
+IL_045b:
 	{
 		// for (int n = 0; n < _slices + 1; n++)
-		int32_t L_184 = V_17;
-		int32_t L_185 = __this->____slices_63;
-		if ((((int32_t)L_184) < ((int32_t)((int32_t)il2cpp_codegen_add(L_185, 1)))))
+		int32_t L_183 = V_18;
+		int32_t L_184 = __this->____slices_64;
+		if ((((int32_t)L_183) < ((int32_t)((int32_t)il2cpp_codegen_add(L_184, 1)))))
 		{
-			goto IL_024f;
+			goto IL_0249;
 		}
 	}
 	{
+		// lastPosition = evalResult.position;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_185 = (&((SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE*)__this)->___evalResult_27);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_186 = L_185->___position_0;
+		V_5 = L_186;
 		// for (int i = 0; i < sampleCount; i++)
-		int32_t L_186 = V_6;
-		V_6 = ((int32_t)il2cpp_codegen_add(L_186, 1));
+		int32_t L_187 = V_7;
+		V_7 = ((int32_t)il2cpp_codegen_add(L_187, 1));
 	}
 
-IL_0476:
+IL_047d:
 	{
 		// for (int i = 0; i < sampleCount; i++)
-		int32_t L_187 = V_6;
-		int32_t L_188;
-		L_188 = SplineUser_get_sampleCount_m72EB98E357EB6A53B94626C14D2F0CAF87997AFC_inline(__this, NULL);
-		if ((((int32_t)L_187) < ((int32_t)L_188)))
-		{
-			goto IL_0096;
-		}
-	}
-	{
-		// if (sampleCount > 0) avgTop /= sampleCount;
+		int32_t L_188 = V_7;
 		int32_t L_189;
 		L_189 = SplineUser_get_sampleCount_m72EB98E357EB6A53B94626C14D2F0CAF87997AFC_inline(__this, NULL);
-		if ((((int32_t)L_189) <= ((int32_t)0)))
+		if ((((int32_t)L_188) < ((int32_t)L_189)))
 		{
-			goto IL_0496;
+			goto IL_009d;
 		}
 	}
 	{
 		// if (sampleCount > 0) avgTop /= sampleCount;
-		float L_190 = V_2;
-		int32_t L_191;
-		L_191 = SplineUser_get_sampleCount_m72EB98E357EB6A53B94626C14D2F0CAF87997AFC_inline(__this, NULL);
-		V_2 = ((float)(L_190/((float)L_191)));
+		int32_t L_190;
+		L_190 = SplineUser_get_sampleCount_m72EB98E357EB6A53B94626C14D2F0CAF87997AFC_inline(__this, NULL);
+		if ((((int32_t)L_190) <= ((int32_t)0)))
+		{
+			goto IL_049d;
+		}
+	}
+	{
+		// if (sampleCount > 0) avgTop /= sampleCount;
+		float L_191 = V_2;
+		int32_t L_192;
+		L_192 = SplineUser_get_sampleCount_m72EB98E357EB6A53B94626C14D2F0CAF87997AFC_inline(__this, NULL);
+		V_2 = ((float)(L_191/((float)L_192)));
 	}
 
-IL_0496:
+IL_049d:
 	{
-		// MeshUtility.GeneratePlaneTriangles(ref tsMesh.triangles, _slices, sampleCount, avgTop < 0f);
-		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_192 = ((MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E*)__this)->___tsMesh_53;
-		NullCheck(L_192);
-		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C** L_193 = (&L_192->___triangles_8);
-		int32_t L_194 = __this->____slices_63;
-		int32_t L_195;
-		L_195 = SplineUser_get_sampleCount_m72EB98E357EB6A53B94626C14D2F0CAF87997AFC_inline(__this, NULL);
-		float L_196 = V_2;
+		// MeshUtility.GeneratePlaneTriangles(ref _tsMesh.triangles, _slices, sampleCount, avgTop < 0f);
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_193;
+		L_193 = MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline(__this, NULL);
+		NullCheck(L_193);
+		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C** L_194 = (&L_193->___triangles_8);
+		int32_t L_195 = __this->____slices_64;
+		int32_t L_196;
+		L_196 = SplineUser_get_sampleCount_m72EB98E357EB6A53B94626C14D2F0CAF87997AFC_inline(__this, NULL);
+		float L_197 = V_2;
 		il2cpp_codegen_runtime_class_init_inline(MeshUtility_t290F5EC43C76DF1C4B2D3C845F319E4C9E5D82BA_il2cpp_TypeInfo_var);
-		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_197;
-		L_197 = MeshUtility_GeneratePlaneTriangles_m7330D4B70527489798A2A095F6152DBCB8FADC3F(L_193, L_194, L_195, (bool)((((float)L_196) < ((float)(0.0f)))? 1 : 0), 0, 0, (bool)0, NULL);
+		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_198;
+		L_198 = MeshUtility_GeneratePlaneTriangles_m7330D4B70527489798A2A095F6152DBCB8FADC3F(L_194, L_195, L_196, (bool)((((float)L_197) < ((float)(0.0f)))? 1 : 0), 0, 0, (bool)0, NULL);
 		// }
 		return;
 	}
@@ -17193,9 +17921,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WaveformGenerator__ctor_mCD8D89EE95D3621
 	}
 	{
 		// private Axis _axis = Axis.Y;
-		__this->____axis_60 = 1;
+		__this->____axis_61 = 1;
 		// private int _slices = 1;
-		__this->____slices_63 = 1;
+		__this->____slices_64 = 1;
 		il2cpp_codegen_runtime_class_init_inline(MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E_il2cpp_TypeInfo_var);
 		MeshGenerator__ctor_m5D5CE5E6D63ED2D3AE7688622270EA42D9363ED6(__this, NULL);
 		return;
@@ -17209,8 +17937,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WaveformGenerator__ctor_mCD8D89EE95D3621
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Int32 Dreamteck.Splines.SampleCollection::get_Count()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t SampleCollection_get_Count_m4CD74F577287B307B57A1E6A07AA4A7D5032128F (SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* __this, const RuntimeMethod* method) 
+// System.Int32 Dreamteck.Splines.SampleCollection::get_length()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t SampleCollection_get_length_mB42A3EAF2CB5B8F16CBF5D91048A6DC72A17BD3B (SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* __this, const RuntimeMethod* method) 
 {
 	{
 		// get { return samples.Length; }
@@ -17223,10 +17951,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t SampleCollection_get_Count_m4CD74F577
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SampleCollection_get_hasSamples_mB6A2376A38325B047A3CFB35EFEF4DE64F48070F (SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* __this, const RuntimeMethod* method) 
 {
 	{
-		// get { return Count > 0; }
-		int32_t L_0;
-		L_0 = SampleCollection_get_Count_m4CD74F577287B307B57A1E6A07AA4A7D5032128F(__this, NULL);
-		return (bool)((((int32_t)L_0) > ((int32_t)0))? 1 : 0);
+		// get { return samples.Length > 0; }
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_0 = __this->___samples_0;
+		NullCheck(L_0);
+		return (bool)((!(((uint32_t)(((RuntimeArray*)L_0)->max_length)) <= ((uint32_t)0)))? 1 : 0);
 	}
 }
 // System.Void Dreamteck.Splines.SampleCollection::.ctor()
@@ -17237,7 +17965,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SampleCollection__ctor_m2B54EDA6616B6E2B
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
@@ -17249,14 +17976,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SampleCollection__ctor_m2B54EDA6616B6E2B
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_1 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, (uint32_t)0);
 		__this->___optimizedIndices_1 = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___optimizedIndices_1), (void*)L_1);
-		// private SplineSample _workSample = new SplineSample();
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_2 = (SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143*)il2cpp_codegen_object_new(SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143_il2cpp_TypeInfo_var);
-		NullCheck(L_2);
-		SplineSample__ctor_m7DA9B02EC62251E38E12FAD0BACEE7E75DDC61DB(L_2, NULL);
-		__this->____workSample_3 = L_2;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____workSample_3), (void*)L_2);
-		// public double clipFrom = 0.0, clipTo = 1.0;
-		__this->___clipTo_5 = (1.0);
 		// public SampleCollection()
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		// }
@@ -17271,7 +17990,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SampleCollection__ctor_mD9FB437915A12411
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
@@ -17283,33 +18001,25 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SampleCollection__ctor_mD9FB437915A12411
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_1 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, (uint32_t)0);
 		__this->___optimizedIndices_1 = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___optimizedIndices_1), (void*)L_1);
-		// private SplineSample _workSample = new SplineSample();
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_2 = (SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143*)il2cpp_codegen_object_new(SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143_il2cpp_TypeInfo_var);
-		NullCheck(L_2);
-		SplineSample__ctor_m7DA9B02EC62251E38E12FAD0BACEE7E75DDC61DB(L_2, NULL);
-		__this->____workSample_3 = L_2;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____workSample_3), (void*)L_2);
-		// public double clipFrom = 0.0, clipTo = 1.0;
-		__this->___clipTo_5 = (1.0);
 		// public SampleCollection(SampleCollection input)
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		// samples = input.samples;
-		SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* L_3 = ___input0;
-		NullCheck(L_3);
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_4 = L_3->___samples_0;
-		__this->___samples_0 = L_4;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___samples_0), (void*)L_4);
+		SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* L_2 = ___input0;
+		NullCheck(L_2);
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_3 = L_2->___samples_0;
+		__this->___samples_0 = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___samples_0), (void*)L_3);
 		// optimizedIndices = input.optimizedIndices;
-		SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* L_5 = ___input0;
-		NullCheck(L_5);
-		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_6 = L_5->___optimizedIndices_1;
-		__this->___optimizedIndices_1 = L_6;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___optimizedIndices_1), (void*)L_6);
+		SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* L_4 = ___input0;
+		NullCheck(L_4);
+		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_5 = L_4->___optimizedIndices_1;
+		__this->___optimizedIndices_1 = L_5;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___optimizedIndices_1), (void*)L_5);
 		// sampleMode = input.sampleMode;
-		SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* L_7 = ___input0;
-		NullCheck(L_7);
-		int32_t L_8 = L_7->___sampleMode_2;
-		__this->___sampleMode_2 = L_8;
+		SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* L_6 = ___input0;
+		NullCheck(L_6);
+		int32_t L_7 = L_6->___sampleMode_2;
+		__this->___sampleMode_2 = L_7;
 		// }
 		return;
 	}
@@ -17334,30 +18044,30 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t SampleCollection_GetClippedSampleCoun
 		int32_t L_4 = __this->___sampleMode_2;
 		if (L_4)
 		{
-			goto IL_0038;
+			goto IL_003c;
 		}
 	}
 	{
-		// startIndex = DMath.FloorInt((Count - 1) * clipFrom);
+		// startIndex = DMath.FloorInt((samples.Length - 1) * clipFrom);
 		int32_t* L_5 = ___startIndex2;
-		int32_t L_6;
-		L_6 = SampleCollection_get_Count_m4CD74F577287B307B57A1E6A07AA4A7D5032128F(__this, NULL);
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_6 = __this->___samples_0;
+		NullCheck(L_6);
 		double L_7 = ___clipFrom0;
 		int32_t L_8;
-		L_8 = DMath_FloorInt_m53383BF81F27E02DAC2452C667F4953143E1C925(((double)il2cpp_codegen_multiply(((double)((int32_t)il2cpp_codegen_subtract(L_6, 1))), L_7)), NULL);
+		L_8 = DMath_FloorInt_m53383BF81F27E02DAC2452C667F4953143E1C925(((double)il2cpp_codegen_multiply(((double)((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_6)->max_length)), 1))), L_7)), NULL);
 		*((int32_t*)L_5) = (int32_t)L_8;
-		// endIndex = DMath.CeilInt((Count - 1) * clipTo);
+		// endIndex = DMath.CeilInt((samples.Length - 1) * clipTo);
 		int32_t* L_9 = ___endIndex3;
-		int32_t L_10;
-		L_10 = SampleCollection_get_Count_m4CD74F577287B307B57A1E6A07AA4A7D5032128F(__this, NULL);
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_10 = __this->___samples_0;
+		NullCheck(L_10);
 		double L_11 = ___clipTo1;
 		int32_t L_12;
-		L_12 = DMath_CeilInt_m30A0442D9F9301FF6EE6213F2983A9725A7FDEFC(((double)il2cpp_codegen_multiply(((double)((int32_t)il2cpp_codegen_subtract(L_10, 1))), L_11)), NULL);
+		L_12 = DMath_CeilInt_m30A0442D9F9301FF6EE6213F2983A9725A7FDEFC(((double)il2cpp_codegen_multiply(((double)((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_10)->max_length)), 1))), L_11)), NULL);
 		*((int32_t*)L_9) = (int32_t)L_12;
-		goto IL_0082;
+		goto IL_0088;
 	}
 
-IL_0038:
+IL_003c:
 	{
 		// double clipFromLerp = 0.0, clipToLerp = 0.0;
 		V_1 = (0.0);
@@ -17371,57 +18081,57 @@ IL_0038:
 		double L_15 = ___clipTo1;
 		int32_t* L_16 = ___endIndex3;
 		SampleCollection_GetSamplingValues_mEFAC249D9870E0F0EE0CFC9637EF39BBC68AE843(__this, L_15, L_16, (&V_2), NULL);
-		// if (clipToLerp > 0.0 && endIndex < Count - 1) endIndex++;
+		// if (clipToLerp > 0.0 && endIndex < samples.Length - 1) endIndex++;
 		double L_17 = V_2;
 		if ((!(((double)L_17) > ((double)(0.0)))))
 		{
-			goto IL_0082;
+			goto IL_0088;
 		}
 	}
 	{
 		int32_t* L_18 = ___endIndex3;
 		int32_t L_19 = *((int32_t*)L_18);
-		int32_t L_20;
-		L_20 = SampleCollection_get_Count_m4CD74F577287B307B57A1E6A07AA4A7D5032128F(__this, NULL);
-		if ((((int32_t)L_19) >= ((int32_t)((int32_t)il2cpp_codegen_subtract(L_20, 1)))))
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_20 = __this->___samples_0;
+		NullCheck(L_20);
+		if ((((int32_t)L_19) >= ((int32_t)((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_20)->max_length)), 1)))))
 		{
-			goto IL_0082;
+			goto IL_0088;
 		}
 	}
 	{
-		// if (clipToLerp > 0.0 && endIndex < Count - 1) endIndex++;
+		// if (clipToLerp > 0.0 && endIndex < samples.Length - 1) endIndex++;
 		int32_t* L_21 = ___endIndex3;
 		int32_t* L_22 = ___endIndex3;
 		int32_t L_23 = *((int32_t*)L_22);
 		*((int32_t*)L_21) = (int32_t)((int32_t)il2cpp_codegen_add(L_23, 1));
 	}
 
-IL_0082:
+IL_0088:
 	{
 		// if (clipTo < clipFrom) //Handle looping segments
 		double L_24 = ___clipTo1;
 		double L_25 = ___clipFrom0;
 		if ((!(((double)L_24) < ((double)L_25))))
 		{
-			goto IL_0098;
+			goto IL_00a0;
 		}
 	}
 	{
 		// int toSamples = endIndex + 1;
 		int32_t* L_26 = ___endIndex3;
 		int32_t L_27 = *((int32_t*)L_26);
-		// int fromSamples = Count - startIndex;
-		int32_t L_28;
-		L_28 = SampleCollection_get_Count_m4CD74F577287B307B57A1E6A07AA4A7D5032128F(__this, NULL);
+		// int fromSamples = samples.Length - startIndex;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_28 = __this->___samples_0;
+		NullCheck(L_28);
 		int32_t* L_29 = ___startIndex2;
 		int32_t L_30 = *((int32_t*)L_29);
-		V_3 = ((int32_t)il2cpp_codegen_subtract(L_28, L_30));
+		V_3 = ((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_28)->max_length)), L_30));
 		// return toSamples + fromSamples;
 		int32_t L_31 = V_3;
 		return ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(L_27, 1)), L_31));
 	}
 
-IL_0098:
+IL_00a0:
 	{
 		// return endIndex - startIndex + 1;
 		int32_t* L_32 = ___endIndex3;
@@ -17447,7 +18157,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SampleCollection_GetSamplingValues_mEFAC
 		int32_t L_1 = __this->___sampleMode_2;
 		if ((!(((uint32_t)L_1) == ((uint32_t)2))))
 		{
-			goto IL_00ae;
+			goto IL_00b8;
 		}
 	}
 	{
@@ -17504,65 +18214,59 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SampleCollection_GetSamplingValues_mEFAC
 
 IL_007b:
 	{
-		// if (sampleIndex < Count - 1) lerp = DMath.InverseLerp(samples[sampleIndex].percent, samples[sampleIndex + 1].percent, lerpPercent);
+		// if (sampleIndex < samples.Length - 1)
 		int32_t* L_22 = ___sampleIndex1;
 		int32_t L_23 = *((int32_t*)L_22);
-		int32_t L_24;
-		L_24 = SampleCollection_get_Count_m4CD74F577287B307B57A1E6A07AA4A7D5032128F(__this, NULL);
-		if ((((int32_t)L_23) >= ((int32_t)((int32_t)il2cpp_codegen_subtract(L_24, 1)))))
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_24 = __this->___samples_0;
+		NullCheck(L_24);
+		if ((((int32_t)L_23) >= ((int32_t)((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_24)->max_length)), 1)))))
 		{
-			goto IL_00ad;
+			goto IL_00b7;
 		}
 	}
 	{
-		// if (sampleIndex < Count - 1) lerp = DMath.InverseLerp(samples[sampleIndex].percent, samples[sampleIndex + 1].percent, lerpPercent);
+		// lerp = DMath.InverseLerp(samples[sampleIndex].percent, samples[sampleIndex + 1].percent, lerpPercent);
 		double* L_25 = ___lerp2;
 		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_26 = __this->___samples_0;
 		int32_t* L_27 = ___sampleIndex1;
 		int32_t L_28 = *((int32_t*)L_27);
 		NullCheck(L_26);
-		int32_t L_29 = L_28;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_30 = (L_26)->GetAt(static_cast<il2cpp_array_size_t>(L_29));
+		double L_29 = ((L_26)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_28)))->___percent_5;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_30 = __this->___samples_0;
+		int32_t* L_31 = ___sampleIndex1;
+		int32_t L_32 = *((int32_t*)L_31);
 		NullCheck(L_30);
-		double L_31 = L_30->___percent_5;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_32 = __this->___samples_0;
-		int32_t* L_33 = ___sampleIndex1;
-		int32_t L_34 = *((int32_t*)L_33);
-		NullCheck(L_32);
-		int32_t L_35 = ((int32_t)il2cpp_codegen_add(L_34, 1));
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_36 = (L_32)->GetAt(static_cast<il2cpp_array_size_t>(L_35));
-		NullCheck(L_36);
-		double L_37 = L_36->___percent_5;
-		double L_38 = V_2;
-		double L_39;
-		L_39 = DMath_InverseLerp_m7311A58A9A929618111D117E90594D116B356B9D(L_31, L_37, L_38, NULL);
-		*((double*)L_25) = (double)L_39;
+		double L_33 = ((L_30)->GetAddressAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_32, 1)))))->___percent_5;
+		double L_34 = V_2;
+		double L_35;
+		L_35 = DMath_InverseLerp_m7311A58A9A929618111D117E90594D116B356B9D(L_29, L_33, L_34, NULL);
+		*((double*)L_25) = (double)L_35;
 	}
 
-IL_00ad:
+IL_00b7:
 	{
 		// return;
 		return;
 	}
 
-IL_00ae:
+IL_00b8:
 	{
-		// sampleIndex = DMath.FloorInt(percent * (Count - 1));
-		int32_t* L_40 = ___sampleIndex1;
-		double L_41 = ___percent0;
-		int32_t L_42;
-		L_42 = SampleCollection_get_Count_m4CD74F577287B307B57A1E6A07AA4A7D5032128F(__this, NULL);
-		int32_t L_43;
-		L_43 = DMath_FloorInt_m53383BF81F27E02DAC2452C667F4953143E1C925(((double)il2cpp_codegen_multiply(L_41, ((double)((int32_t)il2cpp_codegen_subtract(L_42, 1))))), NULL);
-		*((int32_t*)L_40) = (int32_t)L_43;
-		// lerp = (Count - 1) * percent - sampleIndex;
-		double* L_44 = ___lerp2;
-		int32_t L_45;
-		L_45 = SampleCollection_get_Count_m4CD74F577287B307B57A1E6A07AA4A7D5032128F(__this, NULL);
-		double L_46 = ___percent0;
-		int32_t* L_47 = ___sampleIndex1;
-		int32_t L_48 = *((int32_t*)L_47);
-		*((double*)L_44) = (double)((double)il2cpp_codegen_subtract(((double)il2cpp_codegen_multiply(((double)((int32_t)il2cpp_codegen_subtract(L_45, 1))), L_46)), ((double)L_48)));
+		// sampleIndex = DMath.FloorInt(percent * (samples.Length - 1));
+		int32_t* L_36 = ___sampleIndex1;
+		double L_37 = ___percent0;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_38 = __this->___samples_0;
+		NullCheck(L_38);
+		int32_t L_39;
+		L_39 = DMath_FloorInt_m53383BF81F27E02DAC2452C667F4953143E1C925(((double)il2cpp_codegen_multiply(L_37, ((double)((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_38)->max_length)), 1))))), NULL);
+		*((int32_t*)L_36) = (int32_t)L_39;
+		// lerp = (samples.Length - 1) * percent - sampleIndex;
+		double* L_40 = ___lerp2;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_41 = __this->___samples_0;
+		NullCheck(L_41);
+		double L_42 = ___percent0;
+		int32_t* L_43 = ___sampleIndex1;
+		int32_t L_44 = *((int32_t*)L_43);
+		*((double*)L_40) = (double)((double)il2cpp_codegen_subtract(((double)il2cpp_codegen_multiply(((double)((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_41)->max_length)), 1))), L_42)), ((double)L_44)));
 		// }
 		return;
 	}
@@ -17593,82 +18297,58 @@ IL_000e:
 		// GetSamplingValues(percent, out index, out lerp);
 		double L_2 = ___percent0;
 		SampleCollection_GetSamplingValues_mEFAC249D9870E0F0EE0CFC9637EF39BBC68AE843(__this, L_2, (&V_0), (&V_1), NULL);
-		// if (lerp > 0.0) return Vector3.Lerp(samples[index].position, samples[index + 1].position, (float)lerp);
+		// if (lerp > 0.0)
 		double L_3 = V_1;
 		if ((!(((double)L_3) > ((double)(0.0)))))
 		{
-			goto IL_0049;
+			goto IL_0051;
 		}
 	}
 	{
-		// if (lerp > 0.0) return Vector3.Lerp(samples[index].position, samples[index + 1].position, (float)lerp);
+		// return Vector3.Lerp(samples[index].position, samples[index + 1].position, (float)lerp);
 		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_4 = __this->___samples_0;
 		int32_t L_5 = V_0;
 		NullCheck(L_4);
-		int32_t L_6 = L_5;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_7 = (L_4)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_5)))->___position_0;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_7 = __this->___samples_0;
+		int32_t L_8 = V_0;
 		NullCheck(L_7);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8 = L_7->___position_0;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_9 = __this->___samples_0;
-		int32_t L_10 = V_0;
-		NullCheck(L_9);
-		int32_t L_11 = ((int32_t)il2cpp_codegen_add(L_10, 1));
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_12 = (L_9)->GetAt(static_cast<il2cpp_array_size_t>(L_11));
-		NullCheck(L_12);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_13 = L_12->___position_0;
-		double L_14 = V_1;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_15;
-		L_15 = Vector3_Lerp_m3A906D0530A94FAABB94F0F905E84D99BE85C3F8_inline(L_8, L_13, ((float)L_14), NULL);
-		return L_15;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9 = ((L_7)->GetAddressAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_8, 1)))))->___position_0;
+		double L_10 = V_1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_11;
+		L_11 = Vector3_Lerp_m3A906D0530A94FAABB94F0F905E84D99BE85C3F8_inline(L_6, L_9, ((float)L_10), NULL);
+		return L_11;
 	}
 
-IL_0049:
+IL_0051:
 	{
-		// else return samples[index].position;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_16 = __this->___samples_0;
-		int32_t L_17 = V_0;
-		NullCheck(L_16);
-		int32_t L_18 = L_17;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_19 = (L_16)->GetAt(static_cast<il2cpp_array_size_t>(L_18));
-		NullCheck(L_19);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_20 = L_19->___position_0;
-		return L_20;
+		// return samples[index].position;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_12 = __this->___samples_0;
+		int32_t L_13 = V_0;
+		NullCheck(L_12);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_14 = ((L_12)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_13)))->___position_0;
+		return L_14;
 	}
 }
 // Dreamteck.Splines.SplineSample Dreamteck.Splines.SampleCollection::Evaluate(System.Double)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* SampleCollection_Evaluate_mBAC7EF0F05390FAAC84F8BA6AAD7C18B59521E82 (SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* __this, double ___percent0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 SampleCollection_Evaluate_mBAC7EF0F05390FAAC84F8BA6AAD7C18B59521E82 (SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* __this, double ___percent0, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* V_0 = NULL;
+	SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 V_0;
+	memset((&V_0), 0, sizeof(V_0));
 	{
 		// SplineSample result = new SplineSample();
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_0 = (SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143*)il2cpp_codegen_object_new(SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143_il2cpp_TypeInfo_var);
-		NullCheck(L_0);
-		SplineSample__ctor_m7DA9B02EC62251E38E12FAD0BACEE7E75DDC61DB(L_0, NULL);
-		V_0 = L_0;
-		// Evaluate(percent, result);
-		double L_1 = ___percent0;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_2 = V_0;
-		SampleCollection_Evaluate_mF6024ABA400EE30B80F468DCF53A1C28ACE21306(__this, L_1, L_2, NULL);
+		il2cpp_codegen_initobj((&V_0), sizeof(SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143));
+		// Evaluate(percent, ref result);
+		double L_0 = ___percent0;
+		SampleCollection_Evaluate_mAAC912C0D30624A4CE054FDD16943264D579BD20(__this, L_0, (&V_0), NULL);
 		// return result;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_3 = V_0;
-		return L_3;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 L_1 = V_0;
+		return L_1;
 	}
 }
-// System.Void Dreamteck.Splines.SampleCollection::Evaluate(System.Double,Dreamteck.Splines.SplineSample)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SampleCollection_Evaluate_mF6024ABA400EE30B80F468DCF53A1C28ACE21306 (SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* __this, double ___percent0, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ___result1, const RuntimeMethod* method) 
+// System.Void Dreamteck.Splines.SampleCollection::Evaluate(System.Double,Dreamteck.Splines.SplineSample&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SampleCollection_Evaluate_mAAC912C0D30624A4CE054FDD16943264D579BD20 (SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* __this, double ___percent0, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ___result1, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
 	int32_t V_0 = 0;
 	double V_1 = 0.0;
 	{
@@ -17682,10 +18362,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SampleCollection_Evaluate_mF6024ABA400EE
 	}
 	{
 		// result = new SplineSample();
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_1 = (SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143*)il2cpp_codegen_object_new(SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143_il2cpp_TypeInfo_var);
-		NullCheck(L_1);
-		SplineSample__ctor_m7DA9B02EC62251E38E12FAD0BACEE7E75DDC61DB(L_1, NULL);
-		___result1 = L_1;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_1 = ___result1;
+		il2cpp_codegen_initobj(L_1, sizeof(SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143));
 		// return;
 		return;
 	}
@@ -17695,42 +18373,35 @@ IL_0010:
 		// GetSamplingValues(percent, out index, out lerp);
 		double L_2 = ___percent0;
 		SampleCollection_GetSamplingValues_mEFAC249D9870E0F0EE0CFC9637EF39BBC68AE843(__this, L_2, (&V_0), (&V_1), NULL);
-		// if (lerp > 0.0) SplineSample.Lerp(samples[index], samples[index + 1], lerp, result);
+		// if (lerp > 0.0)
 		double L_3 = V_1;
 		if ((!(((double)L_3) > ((double)(0.0)))))
 		{
-			goto IL_0041;
+			goto IL_0049;
 		}
 	}
 	{
-		// if (lerp > 0.0) SplineSample.Lerp(samples[index], samples[index + 1], lerp, result);
+		// SplineSample.Lerp(ref samples[index], ref samples[index + 1], lerp, ref result);
 		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_4 = __this->___samples_0;
 		int32_t L_5 = V_0;
 		NullCheck(L_4);
-		int32_t L_6 = L_5;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_7 = (L_4)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_8 = __this->___samples_0;
-		int32_t L_9 = V_0;
-		NullCheck(L_8);
-		int32_t L_10 = ((int32_t)il2cpp_codegen_add(L_9, 1));
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_11 = (L_8)->GetAt(static_cast<il2cpp_array_size_t>(L_10));
-		double L_12 = V_1;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_13 = ___result1;
-		SplineSample_Lerp_m110B177EE8A19CE9EA649E4C799D2124CFD2D3CF(L_7, L_11, L_12, L_13, NULL);
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_6 = __this->___samples_0;
+		int32_t L_7 = V_0;
+		NullCheck(L_6);
+		double L_8 = V_1;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_9 = ___result1;
+		SplineSample_Lerp_mDC2046D9C41B063337F15327E3B8FF688E8C4352(((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_5))), ((L_6)->GetAddressAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_7, 1))))), L_8, L_9, NULL);
 		return;
 	}
 
-IL_0041:
+IL_0049:
 	{
-		// else result.CopyFrom(samples[index]);
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_14 = ___result1;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_15 = __this->___samples_0;
-		int32_t L_16 = V_0;
-		NullCheck(L_15);
-		int32_t L_17 = L_16;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_18 = (L_15)->GetAt(static_cast<il2cpp_array_size_t>(L_17));
-		NullCheck(L_14);
-		SplineSample_CopyFrom_m78352CD91991F2090066C4C8897A2306D6CDC701(L_14, L_18, NULL);
+		// result.FastCopy(ref samples[index]);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_10 = ___result1;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_11 = __this->___samples_0;
+		int32_t L_12 = V_0;
+		NullCheck(L_11);
+		SplineSample_FastCopy_m8DD8D90BE9DD47EED748197D5872BB4A1AA05CEF(L_10, ((L_11)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_12))), NULL);
 		// }
 		return;
 	}
@@ -17780,66 +18451,66 @@ IL_0011:
 		// GetSamplingValues(to, out toIndex, out lerp);
 		double L_4 = ___to2;
 		SampleCollection_GetSamplingValues_mEFAC249D9870E0F0EE0CFC9637EF39BBC68AE843(__this, L_4, (&V_1), (&V_2), NULL);
-		// if (lerp > 0.0 && toIndex < Count - 1) toIndex++;
+		// if (lerp > 0.0 && toIndex < samples.Length - 1)
 		double L_5 = V_2;
 		if ((!(((double)L_5) > ((double)(0.0)))))
 		{
-			goto IL_004c;
+			goto IL_004e;
 		}
 	}
 	{
 		int32_t L_6 = V_1;
-		int32_t L_7;
-		L_7 = SampleCollection_get_Count_m4CD74F577287B307B57A1E6A07AA4A7D5032128F(__this, NULL);
-		if ((((int32_t)L_6) >= ((int32_t)((int32_t)il2cpp_codegen_subtract(L_7, 1)))))
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_7 = __this->___samples_0;
+		NullCheck(L_7);
+		if ((((int32_t)L_6) >= ((int32_t)((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_7)->max_length)), 1)))))
 		{
-			goto IL_004c;
+			goto IL_004e;
 		}
 	}
 	{
-		// if (lerp > 0.0 && toIndex < Count - 1) toIndex++;
+		// toIndex++;
 		int32_t L_8 = V_1;
 		V_1 = ((int32_t)il2cpp_codegen_add(L_8, 1));
 	}
 
-IL_004c:
+IL_004e:
 	{
 		// int clippedIterations = toIndex - fromIndex + 1;
 		int32_t L_9 = V_1;
 		int32_t L_10 = V_0;
 		V_3 = ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_subtract(L_9, L_10)), 1));
-		// if (results == null) results = new SplineSample[clippedIterations];
+		// if (results == null)
 		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF** L_11 = ___results0;
 		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_12 = *((SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF**)L_11);
 		if (L_12)
 		{
-			goto IL_0060;
+			goto IL_0062;
 		}
 	}
 	{
-		// if (results == null) results = new SplineSample[clippedIterations];
+		// results = new SplineSample[clippedIterations];
 		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF** L_13 = ___results0;
 		int32_t L_14 = V_3;
 		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_15 = (SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF*)(SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF*)SZArrayNew(SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF_il2cpp_TypeInfo_var, (uint32_t)L_14);
 		*((RuntimeObject**)L_13) = (RuntimeObject*)L_15;
 		Il2CppCodeGenWriteBarrier((void**)(RuntimeObject**)L_13, (void*)(RuntimeObject*)L_15);
-		goto IL_006f;
+		goto IL_0071;
 	}
 
-IL_0060:
+IL_0062:
 	{
-		// else if (results.Length != clippedIterations) results = new SplineSample[clippedIterations];
+		// else if (results.Length != clippedIterations)
 		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF** L_16 = ___results0;
 		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_17 = *((SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF**)L_16);
 		NullCheck(L_17);
 		int32_t L_18 = V_3;
 		if ((((int32_t)((int32_t)(((RuntimeArray*)L_17)->max_length))) == ((int32_t)L_18)))
 		{
-			goto IL_006f;
+			goto IL_0071;
 		}
 	}
 	{
-		// else if (results.Length != clippedIterations) results = new SplineSample[clippedIterations];
+		// results = new SplineSample[clippedIterations];
 		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF** L_19 = ___results0;
 		int32_t L_20 = V_3;
 		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_21 = (SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF*)(SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF*)SZArrayNew(SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF_il2cpp_TypeInfo_var, (uint32_t)L_20);
@@ -17847,17 +18518,16 @@ IL_0060:
 		Il2CppCodeGenWriteBarrier((void**)(RuntimeObject**)L_19, (void*)(RuntimeObject*)L_21);
 	}
 
-IL_006f:
+IL_0071:
 	{
 		// results[0] = Evaluate(from);
 		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF** L_22 = ___results0;
 		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_23 = *((SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF**)L_22);
 		double L_24 = ___from1;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_25;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 L_25;
 		L_25 = SampleCollection_Evaluate_mBAC7EF0F05390FAAC84F8BA6AAD7C18B59521E82(__this, L_24, NULL);
 		NullCheck(L_23);
-		ArrayElementTypeCheck (L_23, L_25);
-		(L_23)->SetAt(static_cast<il2cpp_array_size_t>(0), (SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143*)L_25);
+		(L_23)->SetAt(static_cast<il2cpp_array_size_t>(0), (SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143)L_25);
 		// results[results.Length - 1] = Evaluate(to);
 		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF** L_26 = ___results0;
 		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_27 = *((SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF**)L_26);
@@ -17865,46 +18535,42 @@ IL_006f:
 		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_29 = *((SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF**)L_28);
 		NullCheck(L_29);
 		double L_30 = ___to2;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_31;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 L_31;
 		L_31 = SampleCollection_Evaluate_mBAC7EF0F05390FAAC84F8BA6AAD7C18B59521E82(__this, L_30, NULL);
 		NullCheck(L_27);
-		ArrayElementTypeCheck (L_27, L_31);
-		(L_27)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_29)->max_length)), 1))), (SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143*)L_31);
-		// for (int i = 1; i < results.Length - 1; i++) results[i] = samples[i + fromIndex];
+		(L_27)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_29)->max_length)), 1))), (SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143)L_31);
+		// for (int i = 1; i < results.Length - 1; i++)
 		V_4 = 1;
-		goto IL_00a5;
+		goto IL_00bc;
 	}
 
-IL_008f:
+IL_0099:
 	{
-		// for (int i = 1; i < results.Length - 1; i++) results[i] = samples[i + fromIndex];
+		// results[i].FastCopy(ref samples[i + fromIndex]);
 		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF** L_32 = ___results0;
 		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_33 = *((SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF**)L_32);
 		int32_t L_34 = V_4;
+		NullCheck(L_33);
 		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_35 = __this->___samples_0;
 		int32_t L_36 = V_4;
 		int32_t L_37 = V_0;
 		NullCheck(L_35);
-		int32_t L_38 = ((int32_t)il2cpp_codegen_add(L_36, L_37));
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_39 = (L_35)->GetAt(static_cast<il2cpp_array_size_t>(L_38));
-		NullCheck(L_33);
-		ArrayElementTypeCheck (L_33, L_39);
-		(L_33)->SetAt(static_cast<il2cpp_array_size_t>(L_34), (SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143*)L_39);
-		// for (int i = 1; i < results.Length - 1; i++) results[i] = samples[i + fromIndex];
-		int32_t L_40 = V_4;
-		V_4 = ((int32_t)il2cpp_codegen_add(L_40, 1));
+		SplineSample_FastCopy_m8DD8D90BE9DD47EED748197D5872BB4A1AA05CEF(((L_33)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_34))), ((L_35)->GetAddressAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_36, L_37))))), NULL);
+		// for (int i = 1; i < results.Length - 1; i++)
+		int32_t L_38 = V_4;
+		V_4 = ((int32_t)il2cpp_codegen_add(L_38, 1));
 	}
 
-IL_00a5:
+IL_00bc:
 	{
-		// for (int i = 1; i < results.Length - 1; i++) results[i] = samples[i + fromIndex];
-		int32_t L_41 = V_4;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF** L_42 = ___results0;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_43 = *((SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF**)L_42);
-		NullCheck(L_43);
-		if ((((int32_t)L_41) < ((int32_t)((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_43)->max_length)), 1)))))
+		// for (int i = 1; i < results.Length - 1; i++)
+		int32_t L_39 = V_4;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF** L_40 = ___results0;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_41 = *((SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF**)L_40);
+		NullCheck(L_41);
+		if ((((int32_t)L_39) < ((int32_t)((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_41)->max_length)), 1)))))
 		{
-			goto IL_008f;
+			goto IL_0099;
 		}
 	}
 	{
@@ -17957,66 +18623,66 @@ IL_0011:
 		// GetSamplingValues(to, out toIndex, out lerp);
 		double L_4 = ___to2;
 		SampleCollection_GetSamplingValues_mEFAC249D9870E0F0EE0CFC9637EF39BBC68AE843(__this, L_4, (&V_1), (&V_2), NULL);
-		// if (lerp > 0.0 && toIndex < Count - 1) toIndex++;
+		// if (lerp > 0.0 && toIndex < samples.Length - 1)
 		double L_5 = V_2;
 		if ((!(((double)L_5) > ((double)(0.0)))))
 		{
-			goto IL_004c;
+			goto IL_004e;
 		}
 	}
 	{
 		int32_t L_6 = V_1;
-		int32_t L_7;
-		L_7 = SampleCollection_get_Count_m4CD74F577287B307B57A1E6A07AA4A7D5032128F(__this, NULL);
-		if ((((int32_t)L_6) >= ((int32_t)((int32_t)il2cpp_codegen_subtract(L_7, 1)))))
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_7 = __this->___samples_0;
+		NullCheck(L_7);
+		if ((((int32_t)L_6) >= ((int32_t)((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_7)->max_length)), 1)))))
 		{
-			goto IL_004c;
+			goto IL_004e;
 		}
 	}
 	{
-		// if (lerp > 0.0 && toIndex < Count - 1) toIndex++;
+		// toIndex++;
 		int32_t L_8 = V_1;
 		V_1 = ((int32_t)il2cpp_codegen_add(L_8, 1));
 	}
 
-IL_004c:
+IL_004e:
 	{
 		// int clippedIterations = toIndex - fromIndex + 1;
 		int32_t L_9 = V_1;
 		int32_t L_10 = V_0;
 		V_3 = ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_subtract(L_9, L_10)), 1));
-		// if (positions == null) positions = new Vector3[clippedIterations];
+		// if (positions == null)
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C** L_11 = ___positions0;
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_12 = *((Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C**)L_11);
 		if (L_12)
 		{
-			goto IL_0060;
+			goto IL_0062;
 		}
 	}
 	{
-		// if (positions == null) positions = new Vector3[clippedIterations];
+		// positions = new Vector3[clippedIterations];
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C** L_13 = ___positions0;
 		int32_t L_14 = V_3;
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_15 = (Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C*)(Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C*)SZArrayNew(Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C_il2cpp_TypeInfo_var, (uint32_t)L_14);
 		*((RuntimeObject**)L_13) = (RuntimeObject*)L_15;
 		Il2CppCodeGenWriteBarrier((void**)(RuntimeObject**)L_13, (void*)(RuntimeObject*)L_15);
-		goto IL_006f;
+		goto IL_0071;
 	}
 
-IL_0060:
+IL_0062:
 	{
-		// else if (positions.Length != clippedIterations) positions = new Vector3[clippedIterations];
+		// else if (positions.Length != clippedIterations)
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C** L_16 = ___positions0;
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_17 = *((Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C**)L_16);
 		NullCheck(L_17);
 		int32_t L_18 = V_3;
 		if ((((int32_t)((int32_t)(((RuntimeArray*)L_17)->max_length))) == ((int32_t)L_18)))
 		{
-			goto IL_006f;
+			goto IL_0071;
 		}
 	}
 	{
-		// else if (positions.Length != clippedIterations) positions = new Vector3[clippedIterations];
+		// positions = new Vector3[clippedIterations];
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C** L_19 = ___positions0;
 		int32_t L_20 = V_3;
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_21 = (Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C*)(Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C*)SZArrayNew(Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C_il2cpp_TypeInfo_var, (uint32_t)L_20);
@@ -18024,7 +18690,7 @@ IL_0060:
 		Il2CppCodeGenWriteBarrier((void**)(RuntimeObject**)L_19, (void*)(RuntimeObject*)L_21);
 	}
 
-IL_006f:
+IL_0071:
 	{
 		// positions[0] = EvaluatePosition(from);
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C** L_22 = ___positions0;
@@ -18045,14 +18711,14 @@ IL_006f:
 		L_31 = SampleCollection_EvaluatePosition_m5F4239473DA1391082355974BCA8D5FE36981595(__this, L_30, NULL);
 		NullCheck(L_27);
 		(L_27)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_29)->max_length)), 1))), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_31);
-		// for (int i = 1; i < positions.Length - 1; i++) positions[i] = samples[i + fromIndex].position;
+		// for (int i = 1; i < positions.Length - 1; i++)
 		V_4 = 1;
-		goto IL_00b6;
+		goto IL_00bc;
 	}
 
-IL_0097:
+IL_0099:
 	{
-		// for (int i = 1; i < positions.Length - 1; i++) positions[i] = samples[i + fromIndex].position;
+		// positions[i] = samples[i + fromIndex].position;
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C** L_32 = ___positions0;
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_33 = *((Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C**)L_32);
 		int32_t L_34 = V_4;
@@ -18060,27 +18726,24 @@ IL_0097:
 		int32_t L_36 = V_4;
 		int32_t L_37 = V_0;
 		NullCheck(L_35);
-		int32_t L_38 = ((int32_t)il2cpp_codegen_add(L_36, L_37));
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_39 = (L_35)->GetAt(static_cast<il2cpp_array_size_t>(L_38));
-		NullCheck(L_39);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_40 = L_39->___position_0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_38 = ((L_35)->GetAddressAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_36, L_37)))))->___position_0;
 		NullCheck(L_33);
-		(L_33)->SetAt(static_cast<il2cpp_array_size_t>(L_34), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_40);
-		// for (int i = 1; i < positions.Length - 1; i++) positions[i] = samples[i + fromIndex].position;
-		int32_t L_41 = V_4;
-		V_4 = ((int32_t)il2cpp_codegen_add(L_41, 1));
+		(L_33)->SetAt(static_cast<il2cpp_array_size_t>(L_34), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_38);
+		// for (int i = 1; i < positions.Length - 1; i++)
+		int32_t L_39 = V_4;
+		V_4 = ((int32_t)il2cpp_codegen_add(L_39, 1));
 	}
 
-IL_00b6:
+IL_00bc:
 	{
-		// for (int i = 1; i < positions.Length - 1; i++) positions[i] = samples[i + fromIndex].position;
-		int32_t L_42 = V_4;
-		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C** L_43 = ___positions0;
-		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_44 = *((Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C**)L_43);
-		NullCheck(L_44);
-		if ((((int32_t)L_42) < ((int32_t)((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_44)->max_length)), 1)))))
+		// for (int i = 1; i < positions.Length - 1; i++)
+		int32_t L_40 = V_4;
+		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C** L_41 = ___positions0;
+		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_42 = *((Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C**)L_41);
+		NullCheck(L_42);
+		if ((((int32_t)L_40) < ((int32_t)((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_42)->max_length)), 1)))))
 		{
-			goto IL_0097;
+			goto IL_0099;
 		}
 	}
 	{
@@ -18102,6 +18765,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double SampleCollection_Travel_mCC4EB579751BC
 	bool V_7 = false;
 	float V_8 = 0.0f;
 	double V_9 = 0.0;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_10;
+	memset((&V_10), 0, sizeof(V_10));
 	{
 		// moved = 0f;
 		float* L_0 = ___moved3;
@@ -18217,10 +18882,10 @@ IL_0073:
 		V_4 = (0.0f);
 		// int minIndex = 0;
 		V_5 = 0;
-		// int maxIndex = Count - 1;
-		int32_t L_17;
-		L_17 = SampleCollection_get_Count_m4CD74F577287B307B57A1E6A07AA4A7D5032128F(__this, NULL);
-		V_6 = ((int32_t)il2cpp_codegen_subtract(L_17, 1));
+		// int maxIndex = samples.Length - 1;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_17 = __this->___samples_0;
+		NullCheck(L_17);
+		V_6 = ((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_17)->max_length)), 1));
 		// bool samplesAreLooped = clipTo < clipFrom;
 		double L_18 = ___clipTo5;
 		double L_19 = ___clipFrom4;
@@ -18229,7 +18894,7 @@ IL_0073:
 		bool L_20 = V_7;
 		if (!L_20)
 		{
-			goto IL_0192;
+			goto IL_01b0;
 		}
 	}
 	{
@@ -18243,278 +18908,254 @@ IL_0073:
 		double L_23 = V_3;
 		if ((!(((double)L_23) > ((double)(0.0)))))
 		{
-			goto IL_0192;
+			goto IL_01b0;
 		}
 	}
 	{
 		// if (lerp > 0.0) maxIndex++;
 		int32_t L_24 = V_6;
 		V_6 = ((int32_t)il2cpp_codegen_add(L_24, 1));
-		goto IL_0192;
+		goto IL_01b0;
 	}
 
-IL_00c8:
+IL_00ca:
 	{
-		// lastDistance = Vector3.Distance(samples[sampleIndex].position, lastPos);
+		// Vector3 transformedPos = samples[sampleIndex].position;
 		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_25 = __this->___samples_0;
 		int32_t L_26 = V_2;
 		NullCheck(L_25);
-		int32_t L_27 = L_26;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_28 = (L_25)->GetAt(static_cast<il2cpp_array_size_t>(L_27));
-		NullCheck(L_28);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_29 = L_28->___position_0;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_30 = V_1;
-		float L_31;
-		L_31 = Vector3_Distance_m2314DB9B8BD01157E013DF87BEA557375C7F9FF9_inline(L_29, L_30, NULL);
-		V_4 = L_31;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_27 = ((L_25)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_26)))->___position_0;
+		V_10 = L_27;
+		// lastDistance = Vector3.Distance(transformedPos, lastPos);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_28 = V_10;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_29 = V_1;
+		float L_30;
+		L_30 = Vector3_Distance_m2314DB9B8BD01157E013DF87BEA557375C7F9FF9_inline(L_28, L_29, NULL);
+		V_4 = L_30;
 		// moved += lastDistance;
+		float* L_31 = ___moved3;
 		float* L_32 = ___moved3;
-		float* L_33 = ___moved3;
-		float L_34 = *((float*)L_33);
-		float L_35 = V_4;
-		*((float*)L_32) = (float)((float)il2cpp_codegen_add(L_34, L_35));
+		float L_33 = *((float*)L_32);
+		float L_34 = V_4;
+		*((float*)L_31) = (float)((float)il2cpp_codegen_add(L_33, L_34));
 		// if (moved >= distance) break;
-		float* L_36 = ___moved3;
-		float L_37 = *((float*)L_36);
-		float L_38 = ___distance1;
-		if ((((float)L_37) >= ((float)L_38)))
+		float* L_35 = ___moved3;
+		float L_36 = *((float*)L_35);
+		float L_37 = ___distance1;
+		if ((((float)L_36) >= ((float)L_37)))
 		{
-			goto IL_019b;
+			goto IL_01b9;
 		}
 	}
 	{
-		// lastPos = samples[sampleIndex].position;
+		// lastPos = transformedPos;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_38 = V_10;
+		V_1 = L_38;
+		// lastPercent = samples[sampleIndex].percent;
 		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_39 = __this->___samples_0;
 		int32_t L_40 = V_2;
 		NullCheck(L_39);
-		int32_t L_41 = L_40;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_42 = (L_39)->GetAt(static_cast<il2cpp_array_size_t>(L_41));
-		NullCheck(L_42);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_43 = L_42->___position_0;
-		V_1 = L_43;
-		// lastPercent = samples[sampleIndex].percent;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_44 = __this->___samples_0;
-		int32_t L_45 = V_2;
-		NullCheck(L_44);
-		int32_t L_46 = L_45;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_47 = (L_44)->GetAt(static_cast<il2cpp_array_size_t>(L_46));
-		NullCheck(L_47);
-		double L_48 = L_47->___percent_5;
-		V_0 = L_48;
+		double L_41 = ((L_39)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_40)))->___percent_5;
+		V_0 = L_41;
 		// if (direction == Spline.Direction.Forward)
-		int32_t L_49 = ___direction2;
-		if ((!(((uint32_t)L_49) == ((uint32_t)1))))
+		int32_t L_42 = ___direction2;
+		if ((!(((uint32_t)L_42) == ((uint32_t)1))))
 		{
-			goto IL_014b;
+			goto IL_015b;
 		}
 	}
 	{
-		// if (sampleIndex == Count - 1)
-		int32_t L_50 = V_2;
-		int32_t L_51;
-		L_51 = SampleCollection_get_Count_m4CD74F577287B307B57A1E6A07AA4A7D5032128F(__this, NULL);
-		if ((!(((uint32_t)L_50) == ((uint32_t)((int32_t)il2cpp_codegen_subtract(L_51, 1))))))
+		// if (sampleIndex == samples.Length - 1)
+		int32_t L_43 = V_2;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_44 = __this->___samples_0;
+		NullCheck(L_44);
+		if ((!(((uint32_t)L_43) == ((uint32_t)((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_44)->max_length)), 1))))))
 		{
-			goto IL_013c;
+			goto IL_014c;
 		}
 	}
 	{
 		// if (samplesAreLooped)
-		bool L_52 = V_7;
-		if (!L_52)
+		bool L_45 = V_7;
+		if (!L_45)
 		{
-			goto IL_019b;
+			goto IL_01b9;
 		}
 	}
 	{
 		// lastPos = samples[0].position;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_53 = __this->___samples_0;
-		NullCheck(L_53);
-		int32_t L_54 = 0;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_55 = (L_53)->GetAt(static_cast<il2cpp_array_size_t>(L_54));
-		NullCheck(L_55);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_56 = L_55->___position_0;
-		V_1 = L_56;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_46 = __this->___samples_0;
+		NullCheck(L_46);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_47 = ((L_46)->GetAddressAt(static_cast<il2cpp_array_size_t>(0)))->___position_0;
+		V_1 = L_47;
 		// lastPercent = samples[0].percent;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_57 = __this->___samples_0;
-		NullCheck(L_57);
-		int32_t L_58 = 0;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_59 = (L_57)->GetAt(static_cast<il2cpp_array_size_t>(L_58));
-		NullCheck(L_59);
-		double L_60 = L_59->___percent_5;
-		V_0 = L_60;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_48 = __this->___samples_0;
+		NullCheck(L_48);
+		double L_49 = ((L_48)->GetAddressAt(static_cast<il2cpp_array_size_t>(0)))->___percent_5;
+		V_0 = L_49;
 		// sampleIndex = 1;
 		V_2 = 1;
 	}
 
-IL_013c:
+IL_014c:
 	{
 		// if (samplesAreLooped && sampleIndex == maxIndex) break;
-		bool L_61 = V_7;
-		if (!L_61)
+		bool L_50 = V_7;
+		if (!L_50)
 		{
-			goto IL_0145;
+			goto IL_0155;
 		}
 	}
 	{
-		int32_t L_62 = V_2;
-		int32_t L_63 = V_6;
-		if ((((int32_t)L_62) == ((int32_t)L_63)))
+		int32_t L_51 = V_2;
+		int32_t L_52 = V_6;
+		if ((((int32_t)L_51) == ((int32_t)L_52)))
 		{
-			goto IL_019b;
+			goto IL_01b9;
 		}
 	}
 
-IL_0145:
+IL_0155:
 	{
 		// sampleIndex++;
-		int32_t L_64 = V_2;
-		V_2 = ((int32_t)il2cpp_codegen_add(L_64, 1));
-		goto IL_0192;
+		int32_t L_53 = V_2;
+		V_2 = ((int32_t)il2cpp_codegen_add(L_53, 1));
+		goto IL_01b0;
 	}
 
-IL_014b:
+IL_015b:
 	{
 		// if (sampleIndex == 0)
-		int32_t L_65 = V_2;
-		if (L_65)
+		int32_t L_54 = V_2;
+		if (L_54)
 		{
-			goto IL_0185;
+			goto IL_01a3;
 		}
 	}
 	{
 		// if (samplesAreLooped)
-		bool L_66 = V_7;
-		if (!L_66)
+		bool L_55 = V_7;
+		if (!L_55)
 		{
-			goto IL_019b;
+			goto IL_01b9;
 		}
 	}
 	{
-		// lastPos = samples[Count-1].position;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_67 = __this->___samples_0;
-		int32_t L_68;
-		L_68 = SampleCollection_get_Count_m4CD74F577287B307B57A1E6A07AA4A7D5032128F(__this, NULL);
-		NullCheck(L_67);
-		int32_t L_69 = ((int32_t)il2cpp_codegen_subtract(L_68, 1));
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_70 = (L_67)->GetAt(static_cast<il2cpp_array_size_t>(L_69));
-		NullCheck(L_70);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_71 = L_70->___position_0;
-		V_1 = L_71;
-		// lastPercent = samples[Count - 1].percent;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_72 = __this->___samples_0;
-		int32_t L_73;
-		L_73 = SampleCollection_get_Count_m4CD74F577287B307B57A1E6A07AA4A7D5032128F(__this, NULL);
-		NullCheck(L_72);
-		int32_t L_74 = ((int32_t)il2cpp_codegen_subtract(L_73, 1));
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_75 = (L_72)->GetAt(static_cast<il2cpp_array_size_t>(L_74));
-		NullCheck(L_75);
-		double L_76 = L_75->___percent_5;
-		V_0 = L_76;
-		// sampleIndex = Count - 2;
-		int32_t L_77;
-		L_77 = SampleCollection_get_Count_m4CD74F577287B307B57A1E6A07AA4A7D5032128F(__this, NULL);
-		V_2 = ((int32_t)il2cpp_codegen_subtract(L_77, 2));
+		// lastPos = samples[samples.Length - 1].position;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_56 = __this->___samples_0;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_57 = __this->___samples_0;
+		NullCheck(L_57);
+		NullCheck(L_56);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_58 = ((L_56)->GetAddressAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_57)->max_length)), 1)))))->___position_0;
+		V_1 = L_58;
+		// lastPercent = samples[samples.Length - 1].percent;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_59 = __this->___samples_0;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_60 = __this->___samples_0;
+		NullCheck(L_60);
+		NullCheck(L_59);
+		double L_61 = ((L_59)->GetAddressAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_60)->max_length)), 1)))))->___percent_5;
+		V_0 = L_61;
+		// sampleIndex = samples.Length - 2;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_62 = __this->___samples_0;
+		NullCheck(L_62);
+		V_2 = ((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_62)->max_length)), 2));
 	}
 
-IL_0185:
+IL_01a3:
 	{
 		// if (samplesAreLooped && sampleIndex == minIndex) break;
-		bool L_78 = V_7;
-		if (!L_78)
+		bool L_63 = V_7;
+		if (!L_63)
 		{
-			goto IL_018e;
+			goto IL_01ac;
 		}
 	}
 	{
-		int32_t L_79 = V_2;
-		int32_t L_80 = V_5;
-		if ((((int32_t)L_79) == ((int32_t)L_80)))
+		int32_t L_64 = V_2;
+		int32_t L_65 = V_5;
+		if ((((int32_t)L_64) == ((int32_t)L_65)))
 		{
-			goto IL_019b;
+			goto IL_01b9;
 		}
 	}
 
-IL_018e:
+IL_01ac:
 	{
 		// sampleIndex--;
-		int32_t L_81 = V_2;
-		V_2 = ((int32_t)il2cpp_codegen_subtract(L_81, 1));
+		int32_t L_66 = V_2;
+		V_2 = ((int32_t)il2cpp_codegen_subtract(L_66, 1));
 	}
 
-IL_0192:
+IL_01b0:
 	{
 		// while (moved < distance)
-		float* L_82 = ___moved3;
-		float L_83 = *((float*)L_82);
-		float L_84 = ___distance1;
-		if ((((float)L_83) < ((float)L_84)))
+		float* L_67 = ___moved3;
+		float L_68 = *((float*)L_67);
+		float L_69 = ___distance1;
+		if ((((float)L_68) < ((float)L_69)))
 		{
-			goto IL_00c8;
+			goto IL_00ca;
 		}
 	}
 
-IL_019b:
+IL_01b9:
 	{
 		// float moveExcess = 0f;
 		V_8 = (0.0f);
-		// if (moved > distance) moveExcess = moved - distance;
-		float* L_85 = ___moved3;
-		float L_86 = *((float*)L_85);
-		float L_87 = ___distance1;
-		if ((!(((float)L_86) > ((float)L_87))))
+		// if (moved > distance)
+		float* L_70 = ___moved3;
+		float L_71 = *((float*)L_70);
+		float L_72 = ___distance1;
+		if ((!(((float)L_71) > ((float)L_72))))
 		{
-			goto IL_01af;
+			goto IL_01cd;
 		}
 	}
 	{
-		// if (moved > distance) moveExcess = moved - distance;
-		float* L_88 = ___moved3;
-		float L_89 = *((float*)L_88);
-		float L_90 = ___distance1;
-		V_8 = ((float)il2cpp_codegen_subtract(L_89, L_90));
+		// moveExcess = moved - distance;
+		float* L_73 = ___moved3;
+		float L_74 = *((float*)L_73);
+		float L_75 = ___distance1;
+		V_8 = ((float)il2cpp_codegen_subtract(L_74, L_75));
 	}
 
-IL_01af:
+IL_01cd:
 	{
 		// double lerpPercent = 0.0;
 		V_9 = (0.0);
 		// if(lastDistance > 0.0)
-		float L_91 = V_4;
-		if ((!(((double)((double)L_91)) > ((double)(0.0)))))
+		float L_76 = V_4;
+		if ((!(((double)((double)L_76)) > ((double)(0.0)))))
 		{
-			goto IL_01d0;
+			goto IL_01ee;
 		}
 	}
 	{
 		// lerpPercent = moveExcess / lastDistance;
-		float L_92 = V_8;
-		float L_93 = V_4;
-		V_9 = ((double)((float)(L_92/L_93)));
+		float L_77 = V_8;
+		float L_78 = V_4;
+		V_9 = ((double)((float)(L_77/L_78)));
 	}
 
-IL_01d0:
+IL_01ee:
 	{
 		// double p = DMath.Lerp(lastPercent, samples[sampleIndex].percent, 1f - lerpPercent);
-		double L_94 = V_0;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_95 = __this->___samples_0;
-		int32_t L_96 = V_2;
-		NullCheck(L_95);
-		int32_t L_97 = L_96;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_98 = (L_95)->GetAt(static_cast<il2cpp_array_size_t>(L_97));
-		NullCheck(L_98);
-		double L_99 = L_98->___percent_5;
-		double L_100 = V_9;
-		double L_101;
-		L_101 = DMath_Lerp_mCDB4B52E6B47DA3EE2EE07BA18FB351804E38ED9(L_94, L_99, ((double)il2cpp_codegen_subtract((1.0), L_100)), NULL);
+		double L_79 = V_0;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_80 = __this->___samples_0;
+		int32_t L_81 = V_2;
+		NullCheck(L_80);
+		double L_82 = ((L_80)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_81)))->___percent_5;
+		double L_83 = V_9;
+		double L_84;
+		L_84 = DMath_Lerp_mCDB4B52E6B47DA3EE2EE07BA18FB351804E38ED9(L_79, L_82, ((double)il2cpp_codegen_subtract((1.0), L_83)), NULL);
 		// moved -= moveExcess;
-		float* L_102 = ___moved3;
-		float* L_103 = ___moved3;
-		float L_104 = *((float*)L_103);
-		float L_105 = V_8;
-		*((float*)L_102) = (float)((float)il2cpp_codegen_subtract(L_104, L_105));
+		float* L_85 = ___moved3;
+		float* L_86 = ___moved3;
+		float L_87 = *((float*)L_86);
+		float L_88 = V_8;
+		*((float*)L_85) = (float)((float)il2cpp_codegen_subtract(L_87, L_88));
 		// return p;
-		return L_101;
+		return L_84;
 	}
 }
 // System.Double Dreamteck.Splines.SampleCollection::TravelWithOffset(System.Double,System.Single,Dreamteck.Splines.Spline/Direction,UnityEngine.Vector3,System.Single&,System.Double,System.Double)
@@ -18614,46 +19255,39 @@ IL_0040:
 
 IL_004c:
 	{
-		// Evaluate(start, _workSample);
+		// Evaluate(start, ref _workSample);
 		double L_11 = ___start0;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_12 = __this->____workSample_3;
-		SampleCollection_Evaluate_mF6024ABA400EE30B80F468DCF53A1C28ACE21306(__this, L_11, L_12, NULL);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_12 = (&__this->____workSample_3);
+		SampleCollection_Evaluate_mAAC912C0D30624A4CE054FDD16943264D579BD20(__this, L_11, L_12, NULL);
 		// Vector3 lastPos = _workSample.position + _workSample.up * (offset.y * _workSample.size) + _workSample.right * (offset.x * _workSample.size) + _workSample.forward * (offset.z * _workSample.size);
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_13 = __this->____workSample_3;
-		NullCheck(L_13);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_13 = (&__this->____workSample_3);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_14 = L_13->___position_0;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_15 = __this->____workSample_3;
-		NullCheck(L_15);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_15 = (&__this->____workSample_3);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_16 = L_15->___up_1;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_17 = ___offset3;
 		float L_18 = L_17.___y_3;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_19 = __this->____workSample_3;
-		NullCheck(L_19);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_19 = (&__this->____workSample_3);
 		float L_20 = L_19->___size_4;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_21;
 		L_21 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_16, ((float)il2cpp_codegen_multiply(L_18, L_20)), NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_22;
 		L_22 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_14, L_21, NULL);
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_23 = __this->____workSample_3;
-		NullCheck(L_23);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_23 = (&__this->____workSample_3);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_24;
 		L_24 = SplineSample_get_right_mEAF1BE463979ED78C482FEADFCCE3E694E3DA491(L_23, NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_25 = ___offset3;
 		float L_26 = L_25.___x_2;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_27 = __this->____workSample_3;
-		NullCheck(L_27);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_27 = (&__this->____workSample_3);
 		float L_28 = L_27->___size_4;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_29;
 		L_29 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_24, ((float)il2cpp_codegen_multiply(L_26, L_28)), NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_30;
 		L_30 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_22, L_29, NULL);
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_31 = __this->____workSample_3;
-		NullCheck(L_31);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_31 = (&__this->____workSample_3);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_32 = L_31->___forward_2;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_33 = ___offset3;
 		float L_34 = L_33.___z_4;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_35 = __this->____workSample_3;
-		NullCheck(L_35);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_35 = (&__this->____workSample_3);
 		float L_36 = L_35->___size_4;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_37;
 		L_37 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_32, ((float)il2cpp_codegen_multiply(L_34, L_36)), NULL);
@@ -18689,9 +19323,9 @@ IL_00fc:
 		V_4 = (0.0f);
 		// int minIndex = 0;
 		V_5 = 0;
-		// int maxIndex = Count - 1;
+		// int maxIndex = length - 1;
 		int32_t L_43;
-		L_43 = SampleCollection_get_Count_m4CD74F577287B307B57A1E6A07AA4A7D5032128F(__this, NULL);
+		L_43 = SampleCollection_get_length_mB42A3EAF2CB5B8F16CBF5D91048A6DC72A17BD3B(__this, NULL);
 		V_6 = ((int32_t)il2cpp_codegen_subtract(L_43, 1));
 		// bool samplesAreLooped = clipTo < clipFrom;
 		double L_44 = ___clipTo6;
@@ -18701,7 +19335,7 @@ IL_00fc:
 		bool L_46 = V_7;
 		if (!L_46)
 		{
-			goto IL_03b9;
+			goto IL_041d;
 		}
 	}
 	{
@@ -18715,437 +19349,371 @@ IL_00fc:
 		double L_49 = V_3;
 		if ((!(((double)L_49) > ((double)(0.0)))))
 		{
-			goto IL_03b9;
+			goto IL_041d;
 		}
 	}
 	{
 		// if (lerp > 0.0) maxIndex++;
 		int32_t L_50 = V_6;
 		V_6 = ((int32_t)il2cpp_codegen_add(L_50, 1));
-		goto IL_03b9;
+		goto IL_041d;
 	}
 
 IL_0151:
 	{
-		// Vector3 newPos = samples[sampleIndex].position + samples[sampleIndex].up * (offset.y * samples[sampleIndex].size) + samples[sampleIndex].right * (offset.x * samples[sampleIndex].size) + samples[sampleIndex].forward * (offset.z * samples[sampleIndex].size);
+		// Vector3 newPos = samples[sampleIndex].position +
+		//     samples[sampleIndex].up * (offset.y * samples[sampleIndex].size) +
+		//     samples[sampleIndex].right * (offset.x * samples[sampleIndex].size) +
+		//     samples[sampleIndex].forward * (offset.z * samples[sampleIndex].size);
 		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_51 = __this->___samples_0;
 		int32_t L_52 = V_2;
 		NullCheck(L_51);
-		int32_t L_53 = L_52;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_54 = (L_51)->GetAt(static_cast<il2cpp_array_size_t>(L_53));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_53 = ((L_51)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_52)))->___position_0;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_54 = __this->___samples_0;
+		int32_t L_55 = V_2;
 		NullCheck(L_54);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_55 = L_54->___position_0;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_56 = __this->___samples_0;
-		int32_t L_57 = V_2;
-		NullCheck(L_56);
-		int32_t L_58 = L_57;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_59 = (L_56)->GetAt(static_cast<il2cpp_array_size_t>(L_58));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_56 = ((L_54)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_55)))->___up_1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_57 = ___offset3;
+		float L_58 = L_57.___y_3;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_59 = __this->___samples_0;
+		int32_t L_60 = V_2;
 		NullCheck(L_59);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_60 = L_59->___up_1;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_61 = ___offset3;
-		float L_62 = L_61.___y_3;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_63 = __this->___samples_0;
-		int32_t L_64 = V_2;
-		NullCheck(L_63);
-		int32_t L_65 = L_64;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_66 = (L_63)->GetAt(static_cast<il2cpp_array_size_t>(L_65));
-		NullCheck(L_66);
-		float L_67 = L_66->___size_4;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_68;
-		L_68 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_60, ((float)il2cpp_codegen_multiply(L_62, L_67)), NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_69;
-		L_69 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_55, L_68, NULL);
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_70 = __this->___samples_0;
-		int32_t L_71 = V_2;
-		NullCheck(L_70);
-		int32_t L_72 = L_71;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_73 = (L_70)->GetAt(static_cast<il2cpp_array_size_t>(L_72));
-		NullCheck(L_73);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_74;
-		L_74 = SplineSample_get_right_mEAF1BE463979ED78C482FEADFCCE3E694E3DA491(L_73, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_75 = ___offset3;
-		float L_76 = L_75.___x_2;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_77 = __this->___samples_0;
-		int32_t L_78 = V_2;
-		NullCheck(L_77);
-		int32_t L_79 = L_78;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_80 = (L_77)->GetAt(static_cast<il2cpp_array_size_t>(L_79));
-		NullCheck(L_80);
-		float L_81 = L_80->___size_4;
+		float L_61 = ((L_59)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_60)))->___size_4;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_62;
+		L_62 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_56, ((float)il2cpp_codegen_multiply(L_58, L_61)), NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_63;
+		L_63 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_53, L_62, NULL);
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_64 = __this->___samples_0;
+		int32_t L_65 = V_2;
+		NullCheck(L_64);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_66;
+		L_66 = SplineSample_get_right_mEAF1BE463979ED78C482FEADFCCE3E694E3DA491(((L_64)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_65))), NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_67 = ___offset3;
+		float L_68 = L_67.___x_2;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_69 = __this->___samples_0;
+		int32_t L_70 = V_2;
+		NullCheck(L_69);
+		float L_71 = ((L_69)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_70)))->___size_4;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_72;
+		L_72 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_66, ((float)il2cpp_codegen_multiply(L_68, L_71)), NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_73;
+		L_73 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_63, L_72, NULL);
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_74 = __this->___samples_0;
+		int32_t L_75 = V_2;
+		NullCheck(L_74);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_76 = ((L_74)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_75)))->___forward_2;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_77 = ___offset3;
+		float L_78 = L_77.___z_4;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_79 = __this->___samples_0;
+		int32_t L_80 = V_2;
+		NullCheck(L_79);
+		float L_81 = ((L_79)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_80)))->___size_4;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_82;
-		L_82 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_74, ((float)il2cpp_codegen_multiply(L_76, L_81)), NULL);
+		L_82 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_76, ((float)il2cpp_codegen_multiply(L_78, L_81)), NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_83;
-		L_83 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_69, L_82, NULL);
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_84 = __this->___samples_0;
-		int32_t L_85 = V_2;
-		NullCheck(L_84);
-		int32_t L_86 = L_85;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_87 = (L_84)->GetAt(static_cast<il2cpp_array_size_t>(L_86));
-		NullCheck(L_87);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_88 = L_87->___forward_2;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_89 = ___offset3;
-		float L_90 = L_89.___z_4;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_91 = __this->___samples_0;
-		int32_t L_92 = V_2;
-		NullCheck(L_91);
-		int32_t L_93 = L_92;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_94 = (L_91)->GetAt(static_cast<il2cpp_array_size_t>(L_93));
-		NullCheck(L_94);
-		float L_95 = L_94->___size_4;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_96;
-		L_96 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_88, ((float)il2cpp_codegen_multiply(L_90, L_95)), NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_97;
-		L_97 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_83, L_96, NULL);
-		V_9 = L_97;
+		L_83 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_73, L_82, NULL);
+		V_9 = L_83;
 		// lastDistance = Vector3.Distance(newPos, lastPos);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_98 = V_9;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_99 = V_1;
-		float L_100;
-		L_100 = Vector3_Distance_m2314DB9B8BD01157E013DF87BEA557375C7F9FF9_inline(L_98, L_99, NULL);
-		V_4 = L_100;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_84 = V_9;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_85 = V_1;
+		float L_86;
+		L_86 = Vector3_Distance_m2314DB9B8BD01157E013DF87BEA557375C7F9FF9_inline(L_84, L_85, NULL);
+		V_4 = L_86;
 		// moved += lastDistance;
-		float* L_101 = ___moved4;
-		float* L_102 = ___moved4;
-		float L_103 = *((float*)L_102);
-		float L_104 = V_4;
-		*((float*)L_101) = (float)((float)il2cpp_codegen_add(L_103, L_104));
+		float* L_87 = ___moved4;
+		float* L_88 = ___moved4;
+		float L_89 = *((float*)L_88);
+		float L_90 = V_4;
+		*((float*)L_87) = (float)((float)il2cpp_codegen_add(L_89, L_90));
 		// if (moved >= distance)
-		float* L_105 = ___moved4;
-		float L_106 = *((float*)L_105);
-		float L_107 = ___distance1;
-		if ((((float)L_106) >= ((float)L_107)))
+		float* L_91 = ___moved4;
+		float L_92 = *((float*)L_91);
+		float L_93 = ___distance1;
+		if ((((float)L_92) >= ((float)L_93)))
 		{
-			goto IL_03c2;
+			goto IL_0426;
 		}
 	}
 	{
 		// lastPos = newPos;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_108 = V_9;
-		V_1 = L_108;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_94 = V_9;
+		V_1 = L_94;
 		// lastPercent = samples[sampleIndex].percent;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_109 = __this->___samples_0;
-		int32_t L_110 = V_2;
-		NullCheck(L_109);
-		int32_t L_111 = L_110;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_112 = (L_109)->GetAt(static_cast<il2cpp_array_size_t>(L_111));
-		NullCheck(L_112);
-		double L_113 = L_112->___percent_5;
-		V_0 = L_113;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_95 = __this->___samples_0;
+		int32_t L_96 = V_2;
+		NullCheck(L_95);
+		double L_97 = ((L_95)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_96)))->___percent_5;
+		V_0 = L_97;
 		// if (direction == Spline.Direction.Forward)
-		int32_t L_114 = ___direction2;
-		if ((!(((uint32_t)L_114) == ((uint32_t)1))))
+		int32_t L_98 = ___direction2;
+		if ((!(((uint32_t)L_98) == ((uint32_t)1))))
 		{
-			goto IL_02e4;
+			goto IL_0324;
 		}
 	}
 	{
-		// if (sampleIndex == Count - 1)
-		int32_t L_115 = V_2;
-		int32_t L_116;
-		L_116 = SampleCollection_get_Count_m4CD74F577287B307B57A1E6A07AA4A7D5032128F(__this, NULL);
-		if ((!(((uint32_t)L_115) == ((uint32_t)((int32_t)il2cpp_codegen_subtract(L_116, 1))))))
+		// if (sampleIndex == length - 1)
+		int32_t L_99 = V_2;
+		int32_t L_100;
+		L_100 = SampleCollection_get_length_mB42A3EAF2CB5B8F16CBF5D91048A6DC72A17BD3B(__this, NULL);
+		if ((!(((uint32_t)L_99) == ((uint32_t)((int32_t)il2cpp_codegen_subtract(L_100, 1))))))
 		{
-			goto IL_02cf;
+			goto IL_030f;
 		}
 	}
 	{
 		// if (samplesAreLooped)
-		bool L_117 = V_7;
-		if (!L_117)
+		bool L_101 = V_7;
+		if (!L_101)
 		{
-			goto IL_03c2;
+			goto IL_0426;
 		}
 	}
 	{
-		// lastPos = samples[0].position + samples[0].up * (offset.y * samples[0].size) + samples[0].right * (offset.x * samples[0].size) + samples[0].forward * (offset.z * samples[0].size);
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_118 = __this->___samples_0;
-		NullCheck(L_118);
-		int32_t L_119 = 0;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_120 = (L_118)->GetAt(static_cast<il2cpp_array_size_t>(L_119));
+		// lastPos = samples[0].position +
+		//     samples[0].up * (offset.y * samples[0].size) +
+		//     samples[0].right * (offset.x * samples[0].size) +
+		//     samples[0].forward * (offset.z * samples[0].size);
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_102 = __this->___samples_0;
+		NullCheck(L_102);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_103 = ((L_102)->GetAddressAt(static_cast<il2cpp_array_size_t>(0)))->___position_0;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_104 = __this->___samples_0;
+		NullCheck(L_104);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_105 = ((L_104)->GetAddressAt(static_cast<il2cpp_array_size_t>(0)))->___up_1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_106 = ___offset3;
+		float L_107 = L_106.___y_3;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_108 = __this->___samples_0;
+		NullCheck(L_108);
+		float L_109 = ((L_108)->GetAddressAt(static_cast<il2cpp_array_size_t>(0)))->___size_4;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_110;
+		L_110 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_105, ((float)il2cpp_codegen_multiply(L_107, L_109)), NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_111;
+		L_111 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_103, L_110, NULL);
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_112 = __this->___samples_0;
+		NullCheck(L_112);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_113;
+		L_113 = SplineSample_get_right_mEAF1BE463979ED78C482FEADFCCE3E694E3DA491(((L_112)->GetAddressAt(static_cast<il2cpp_array_size_t>(0))), NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_114 = ___offset3;
+		float L_115 = L_114.___x_2;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_116 = __this->___samples_0;
+		NullCheck(L_116);
+		float L_117 = ((L_116)->GetAddressAt(static_cast<il2cpp_array_size_t>(0)))->___size_4;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_118;
+		L_118 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_113, ((float)il2cpp_codegen_multiply(L_115, L_117)), NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_119;
+		L_119 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_111, L_118, NULL);
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_120 = __this->___samples_0;
 		NullCheck(L_120);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_121 = L_120->___position_0;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_122 = __this->___samples_0;
-		NullCheck(L_122);
-		int32_t L_123 = 0;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_124 = (L_122)->GetAt(static_cast<il2cpp_array_size_t>(L_123));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_121 = ((L_120)->GetAddressAt(static_cast<il2cpp_array_size_t>(0)))->___forward_2;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_122 = ___offset3;
+		float L_123 = L_122.___z_4;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_124 = __this->___samples_0;
 		NullCheck(L_124);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_125 = L_124->___up_1;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_126 = ___offset3;
-		float L_127 = L_126.___y_3;
+		float L_125 = ((L_124)->GetAddressAt(static_cast<il2cpp_array_size_t>(0)))->___size_4;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_126;
+		L_126 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_121, ((float)il2cpp_codegen_multiply(L_123, L_125)), NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_127;
+		L_127 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_119, L_126, NULL);
+		V_1 = L_127;
+		// lastPercent = samples[0].percent;
 		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_128 = __this->___samples_0;
 		NullCheck(L_128);
-		int32_t L_129 = 0;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_130 = (L_128)->GetAt(static_cast<il2cpp_array_size_t>(L_129));
-		NullCheck(L_130);
-		float L_131 = L_130->___size_4;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_132;
-		L_132 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_125, ((float)il2cpp_codegen_multiply(L_127, L_131)), NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_133;
-		L_133 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_121, L_132, NULL);
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_134 = __this->___samples_0;
-		NullCheck(L_134);
-		int32_t L_135 = 0;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_136 = (L_134)->GetAt(static_cast<il2cpp_array_size_t>(L_135));
-		NullCheck(L_136);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_137;
-		L_137 = SplineSample_get_right_mEAF1BE463979ED78C482FEADFCCE3E694E3DA491(L_136, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_138 = ___offset3;
-		float L_139 = L_138.___x_2;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_140 = __this->___samples_0;
-		NullCheck(L_140);
-		int32_t L_141 = 0;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_142 = (L_140)->GetAt(static_cast<il2cpp_array_size_t>(L_141));
-		NullCheck(L_142);
-		float L_143 = L_142->___size_4;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_144;
-		L_144 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_137, ((float)il2cpp_codegen_multiply(L_139, L_143)), NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_145;
-		L_145 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_133, L_144, NULL);
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_146 = __this->___samples_0;
-		NullCheck(L_146);
-		int32_t L_147 = 0;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_148 = (L_146)->GetAt(static_cast<il2cpp_array_size_t>(L_147));
-		NullCheck(L_148);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_149 = L_148->___forward_2;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_150 = ___offset3;
-		float L_151 = L_150.___z_4;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_152 = __this->___samples_0;
-		NullCheck(L_152);
-		int32_t L_153 = 0;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_154 = (L_152)->GetAt(static_cast<il2cpp_array_size_t>(L_153));
-		NullCheck(L_154);
-		float L_155 = L_154->___size_4;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_156;
-		L_156 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_149, ((float)il2cpp_codegen_multiply(L_151, L_155)), NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_157;
-		L_157 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_145, L_156, NULL);
-		V_1 = L_157;
-		// lastPercent = samples[0].percent;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_158 = __this->___samples_0;
-		NullCheck(L_158);
-		int32_t L_159 = 0;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_160 = (L_158)->GetAt(static_cast<il2cpp_array_size_t>(L_159));
-		NullCheck(L_160);
-		double L_161 = L_160->___percent_5;
-		V_0 = L_161;
+		double L_129 = ((L_128)->GetAddressAt(static_cast<il2cpp_array_size_t>(0)))->___percent_5;
+		V_0 = L_129;
 		// sampleIndex = 1;
 		V_2 = 1;
 	}
 
-IL_02cf:
+IL_030f:
 	{
 		// if (samplesAreLooped && sampleIndex == maxIndex) break;
-		bool L_162 = V_7;
-		if (!L_162)
+		bool L_130 = V_7;
+		if (!L_130)
 		{
-			goto IL_02db;
+			goto IL_031b;
 		}
 	}
 	{
-		int32_t L_163 = V_2;
-		int32_t L_164 = V_6;
-		if ((((int32_t)L_163) == ((int32_t)L_164)))
+		int32_t L_131 = V_2;
+		int32_t L_132 = V_6;
+		if ((((int32_t)L_131) == ((int32_t)L_132)))
 		{
-			goto IL_03c2;
+			goto IL_0426;
 		}
 	}
 
-IL_02db:
+IL_031b:
 	{
 		// sampleIndex++;
-		int32_t L_165 = V_2;
-		V_2 = ((int32_t)il2cpp_codegen_add(L_165, 1));
-		goto IL_03b9;
+		int32_t L_133 = V_2;
+		V_2 = ((int32_t)il2cpp_codegen_add(L_133, 1));
+		goto IL_041d;
 	}
 
-IL_02e4:
+IL_0324:
 	{
 		// if (sampleIndex == 0)
-		int32_t L_166 = V_2;
-		if (L_166)
+		int32_t L_134 = V_2;
+		if (L_134)
 		{
-			goto IL_03ac;
+			goto IL_0410;
 		}
 	}
 	{
 		// if (samplesAreLooped)
-		bool L_167 = V_7;
-		if (!L_167)
+		bool L_135 = V_7;
+		if (!L_135)
 		{
-			goto IL_03c2;
+			goto IL_0426;
 		}
 	}
 	{
-		// int lastIndex = Count - 1;
-		int32_t L_168;
-		L_168 = SampleCollection_get_Count_m4CD74F577287B307B57A1E6A07AA4A7D5032128F(__this, NULL);
-		V_10 = ((int32_t)il2cpp_codegen_subtract(L_168, 1));
-		// lastPos = samples[lastIndex].position + samples[lastIndex].up * (offset.y * samples[lastIndex].size) + samples[lastIndex].right * (offset.x * samples[lastIndex].size) + samples[lastIndex].forward * (offset.z * samples[lastIndex].size);
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_169 = __this->___samples_0;
-		int32_t L_170 = V_10;
-		NullCheck(L_169);
-		int32_t L_171 = L_170;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_172 = (L_169)->GetAt(static_cast<il2cpp_array_size_t>(L_171));
-		NullCheck(L_172);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_173 = L_172->___position_0;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_174 = __this->___samples_0;
-		int32_t L_175 = V_10;
-		NullCheck(L_174);
-		int32_t L_176 = L_175;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_177 = (L_174)->GetAt(static_cast<il2cpp_array_size_t>(L_176));
-		NullCheck(L_177);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_178 = L_177->___up_1;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_179 = ___offset3;
-		float L_180 = L_179.___y_3;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_181 = __this->___samples_0;
-		int32_t L_182 = V_10;
-		NullCheck(L_181);
-		int32_t L_183 = L_182;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_184 = (L_181)->GetAt(static_cast<il2cpp_array_size_t>(L_183));
-		NullCheck(L_184);
-		float L_185 = L_184->___size_4;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_186;
-		L_186 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_178, ((float)il2cpp_codegen_multiply(L_180, L_185)), NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_187;
-		L_187 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_173, L_186, NULL);
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_188 = __this->___samples_0;
-		int32_t L_189 = V_10;
-		NullCheck(L_188);
-		int32_t L_190 = L_189;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_191 = (L_188)->GetAt(static_cast<il2cpp_array_size_t>(L_190));
-		NullCheck(L_191);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_192;
-		L_192 = SplineSample_get_right_mEAF1BE463979ED78C482FEADFCCE3E694E3DA491(L_191, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_193 = ___offset3;
-		float L_194 = L_193.___x_2;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_195 = __this->___samples_0;
-		int32_t L_196 = V_10;
-		NullCheck(L_195);
-		int32_t L_197 = L_196;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_198 = (L_195)->GetAt(static_cast<il2cpp_array_size_t>(L_197));
-		NullCheck(L_198);
-		float L_199 = L_198->___size_4;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_200;
-		L_200 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_192, ((float)il2cpp_codegen_multiply(L_194, L_199)), NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_201;
-		L_201 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_187, L_200, NULL);
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_202 = __this->___samples_0;
-		int32_t L_203 = V_10;
-		NullCheck(L_202);
-		int32_t L_204 = L_203;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_205 = (L_202)->GetAt(static_cast<il2cpp_array_size_t>(L_204));
-		NullCheck(L_205);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_206 = L_205->___forward_2;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_207 = ___offset3;
-		float L_208 = L_207.___z_4;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_209 = __this->___samples_0;
-		int32_t L_210 = V_10;
-		NullCheck(L_209);
-		int32_t L_211 = L_210;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_212 = (L_209)->GetAt(static_cast<il2cpp_array_size_t>(L_211));
-		NullCheck(L_212);
-		float L_213 = L_212->___size_4;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_214;
-		L_214 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_206, ((float)il2cpp_codegen_multiply(L_208, L_213)), NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_215;
-		L_215 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_201, L_214, NULL);
-		V_1 = L_215;
+		// int lastIndex = samples.Length - 1;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_136 = __this->___samples_0;
+		NullCheck(L_136);
+		V_10 = ((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_136)->max_length)), 1));
+		// lastPos = samples[lastIndex].position +
+		//     samples[lastIndex].up * (offset.y * samples[lastIndex].size) +
+		//     samples[lastIndex].right * (offset.x * samples[lastIndex].size) +
+		//     samples[lastIndex].forward * (offset.z * samples[lastIndex].size);
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_137 = __this->___samples_0;
+		int32_t L_138 = V_10;
+		NullCheck(L_137);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_139 = ((L_137)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_138)))->___position_0;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_140 = __this->___samples_0;
+		int32_t L_141 = V_10;
+		NullCheck(L_140);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_142 = ((L_140)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_141)))->___up_1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_143 = ___offset3;
+		float L_144 = L_143.___y_3;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_145 = __this->___samples_0;
+		int32_t L_146 = V_10;
+		NullCheck(L_145);
+		float L_147 = ((L_145)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_146)))->___size_4;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_148;
+		L_148 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_142, ((float)il2cpp_codegen_multiply(L_144, L_147)), NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_149;
+		L_149 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_139, L_148, NULL);
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_150 = __this->___samples_0;
+		int32_t L_151 = V_10;
+		NullCheck(L_150);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_152;
+		L_152 = SplineSample_get_right_mEAF1BE463979ED78C482FEADFCCE3E694E3DA491(((L_150)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_151))), NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_153 = ___offset3;
+		float L_154 = L_153.___x_2;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_155 = __this->___samples_0;
+		int32_t L_156 = V_10;
+		NullCheck(L_155);
+		float L_157 = ((L_155)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_156)))->___size_4;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_158;
+		L_158 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_152, ((float)il2cpp_codegen_multiply(L_154, L_157)), NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_159;
+		L_159 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_149, L_158, NULL);
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_160 = __this->___samples_0;
+		int32_t L_161 = V_10;
+		NullCheck(L_160);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_162 = ((L_160)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_161)))->___forward_2;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_163 = ___offset3;
+		float L_164 = L_163.___z_4;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_165 = __this->___samples_0;
+		int32_t L_166 = V_10;
+		NullCheck(L_165);
+		float L_167 = ((L_165)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_166)))->___size_4;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_168;
+		L_168 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_162, ((float)il2cpp_codegen_multiply(L_164, L_167)), NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_169;
+		L_169 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_159, L_168, NULL);
+		V_1 = L_169;
 		// lastPercent = samples[lastIndex].percent;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_216 = __this->___samples_0;
-		int32_t L_217 = V_10;
-		NullCheck(L_216);
-		int32_t L_218 = L_217;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_219 = (L_216)->GetAt(static_cast<il2cpp_array_size_t>(L_218));
-		NullCheck(L_219);
-		double L_220 = L_219->___percent_5;
-		V_0 = L_220;
-		// sampleIndex = Count - 2;
-		int32_t L_221;
-		L_221 = SampleCollection_get_Count_m4CD74F577287B307B57A1E6A07AA4A7D5032128F(__this, NULL);
-		V_2 = ((int32_t)il2cpp_codegen_subtract(L_221, 2));
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_170 = __this->___samples_0;
+		int32_t L_171 = V_10;
+		NullCheck(L_170);
+		double L_172 = ((L_170)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_171)))->___percent_5;
+		V_0 = L_172;
+		// sampleIndex = samples.Length - 2;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_173 = __this->___samples_0;
+		NullCheck(L_173);
+		V_2 = ((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_173)->max_length)), 2));
 	}
 
-IL_03ac:
+IL_0410:
 	{
 		// if (samplesAreLooped && sampleIndex == minIndex) break;
-		bool L_222 = V_7;
-		if (!L_222)
+		bool L_174 = V_7;
+		if (!L_174)
 		{
-			goto IL_03b5;
+			goto IL_0419;
 		}
 	}
 	{
-		int32_t L_223 = V_2;
-		int32_t L_224 = V_5;
-		if ((((int32_t)L_223) == ((int32_t)L_224)))
+		int32_t L_175 = V_2;
+		int32_t L_176 = V_5;
+		if ((((int32_t)L_175) == ((int32_t)L_176)))
 		{
-			goto IL_03c2;
+			goto IL_0426;
 		}
 	}
 
-IL_03b5:
+IL_0419:
 	{
 		// sampleIndex--;
-		int32_t L_225 = V_2;
-		V_2 = ((int32_t)il2cpp_codegen_subtract(L_225, 1));
+		int32_t L_177 = V_2;
+		V_2 = ((int32_t)il2cpp_codegen_subtract(L_177, 1));
 	}
 
-IL_03b9:
+IL_041d:
 	{
 		// while (moved < distance)
-		float* L_226 = ___moved4;
-		float L_227 = *((float*)L_226);
-		float L_228 = ___distance1;
-		if ((((float)L_227) < ((float)L_228)))
+		float* L_178 = ___moved4;
+		float L_179 = *((float*)L_178);
+		float L_180 = ___distance1;
+		if ((((float)L_179) < ((float)L_180)))
 		{
 			goto IL_0151;
 		}
 	}
 
-IL_03c2:
+IL_0426:
 	{
 		// float moveExcess = 0f;
 		V_8 = (0.0f);
 		// if (moved > distance)
-		float* L_229 = ___moved4;
-		float L_230 = *((float*)L_229);
-		float L_231 = ___distance1;
-		if ((!(((float)L_230) > ((float)L_231))))
+		float* L_181 = ___moved4;
+		float L_182 = *((float*)L_181);
+		float L_183 = ___distance1;
+		if ((!(((float)L_182) > ((float)L_183))))
 		{
-			goto IL_03d6;
+			goto IL_043a;
 		}
 	}
 	{
 		// moveExcess = moved - distance;
-		float* L_232 = ___moved4;
-		float L_233 = *((float*)L_232);
-		float L_234 = ___distance1;
-		V_8 = ((float)il2cpp_codegen_subtract(L_233, L_234));
+		float* L_184 = ___moved4;
+		float L_185 = *((float*)L_184);
+		float L_186 = ___distance1;
+		V_8 = ((float)il2cpp_codegen_subtract(L_185, L_186));
 	}
 
-IL_03d6:
+IL_043a:
 	{
 		// double p = DMath.Lerp(lastPercent, samples[sampleIndex].percent, 1f - moveExcess / lastDistance);
-		double L_235 = V_0;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_236 = __this->___samples_0;
-		int32_t L_237 = V_2;
-		NullCheck(L_236);
-		int32_t L_238 = L_237;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_239 = (L_236)->GetAt(static_cast<il2cpp_array_size_t>(L_238));
-		NullCheck(L_239);
-		double L_240 = L_239->___percent_5;
-		float L_241 = V_8;
-		float L_242 = V_4;
-		double L_243;
-		L_243 = DMath_Lerp_mCDB4B52E6B47DA3EE2EE07BA18FB351804E38ED9(L_235, L_240, ((double)((float)il2cpp_codegen_subtract((1.0f), ((float)(L_241/L_242))))), NULL);
+		double L_187 = V_0;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_188 = __this->___samples_0;
+		int32_t L_189 = V_2;
+		NullCheck(L_188);
+		double L_190 = ((L_188)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_189)))->___percent_5;
+		float L_191 = V_8;
+		float L_192 = V_4;
+		double L_193;
+		L_193 = DMath_Lerp_mCDB4B52E6B47DA3EE2EE07BA18FB351804E38ED9(L_187, L_190, ((double)((float)il2cpp_codegen_subtract((1.0f), ((float)(L_191/L_192))))), NULL);
 		// moved -= moveExcess;
-		float* L_244 = ___moved4;
-		float* L_245 = ___moved4;
-		float L_246 = *((float*)L_245);
-		float L_247 = V_8;
-		*((float*)L_244) = (float)((float)il2cpp_codegen_subtract(L_246, L_247));
+		float* L_194 = ___moved4;
+		float* L_195 = ___moved4;
+		float L_196 = *((float*)L_195);
+		float L_197 = V_8;
+		*((float*)L_194) = (float)((float)il2cpp_codegen_subtract(L_196, L_197));
 		// return p;
-		return L_243;
+		return L_193;
 	}
 }
 // System.Double Dreamteck.Splines.SampleCollection::Travel(System.Double,System.Single,Dreamteck.Splines.Spline/Direction)
@@ -19162,13 +19730,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double SampleCollection_Travel_m03CAC4B8DB605
 		return L_3;
 	}
 }
-// System.Void Dreamteck.Splines.SampleCollection::Project(UnityEngine.Vector3,System.Int32,Dreamteck.Splines.SplineSample,System.Double,System.Double)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SampleCollection_Project_m9B76C6B2E3A8200FDADAC758D417BFC581817F4A (SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___position0, int32_t ___controlPointCount1, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ___result2, double ___from3, double ___to4, const RuntimeMethod* method) 
+// System.Void Dreamteck.Splines.SampleCollection::Project(UnityEngine.Vector3,System.Int32,Dreamteck.Splines.SplineSample&,System.Double,System.Double)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SampleCollection_Project_mB4F44CAE815483E587671F56A0C61C5BFF66F6B7 (SampleCollection_t3BD25558B6B30C03435AB5EE0C463CB998601265* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___position0, int32_t ___controlPointCount1, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* ___result2, double ___from3, double ___to4, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Spline_t12C5A067E46309006E34F9A5B0AD58FCD51BEAD1_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
@@ -19218,67 +19785,42 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SampleCollection_Project_m9B76C6B2E3A820
 
 IL_0009:
 	{
-		// if (Count == 1)
-		int32_t L_1;
-		L_1 = SampleCollection_get_Count_m4CD74F577287B307B57A1E6A07AA4A7D5032128F(__this, NULL);
-		if ((!(((uint32_t)L_1) == ((uint32_t)1))))
+		// if (samples.Length == 1)
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_1 = __this->___samples_0;
+		NullCheck(L_1);
+		if ((!(((uint32_t)((int32_t)(((RuntimeArray*)L_1)->max_length))) == ((uint32_t)1))))
 		{
-			goto IL_0034;
+			goto IL_0027;
 		}
 	}
 	{
-		// if (result == null) result = new SplineSample(samples[0]);
+		// result.FastCopy(ref samples[0]);
 		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_2 = ___result2;
-		if (L_2)
-		{
-			goto IL_0025;
-		}
-	}
-	{
-		// if (result == null) result = new SplineSample(samples[0]);
 		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_3 = __this->___samples_0;
 		NullCheck(L_3);
-		int32_t L_4 = 0;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_5 = (L_3)->GetAt(static_cast<il2cpp_array_size_t>(L_4));
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_6 = (SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143*)il2cpp_codegen_object_new(SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143_il2cpp_TypeInfo_var);
-		NullCheck(L_6);
-		SplineSample__ctor_mB06F05646531A8824E65D3C0EF61A76774109AEC(L_6, L_5, NULL);
-		___result2 = L_6;
-		return;
-	}
-
-IL_0025:
-	{
-		// else result.CopyFrom(samples[0]);
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_7 = ___result2;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_8 = __this->___samples_0;
-		NullCheck(L_8);
-		int32_t L_9 = 0;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_10 = (L_8)->GetAt(static_cast<il2cpp_array_size_t>(L_9));
-		NullCheck(L_7);
-		SplineSample_CopyFrom_m78352CD91991F2090066C4C8897A2306D6CDC701(L_7, L_10, NULL);
+		SplineSample_FastCopy_m8DD8D90BE9DD47EED748197D5872BB4A1AA05CEF(L_2, ((L_3)->GetAddressAt(static_cast<il2cpp_array_size_t>(0))), NULL);
 		// return;
 		return;
 	}
 
-IL_0034:
+IL_0027:
 	{
 		// Spline.FormatFromTo(ref from, ref to);
 		il2cpp_codegen_runtime_class_init_inline(Spline_t12C5A067E46309006E34F9A5B0AD58FCD51BEAD1_il2cpp_TypeInfo_var);
 		Spline_FormatFromTo_m22E4F3E55C75E1ADE65714E8C8B27E3C535F9B04((&___from3), (&___to4), (bool)1, NULL);
 		// int steps = (controlPointCount - 1) * 4; //Sampling four points per segment is enough to find the closest point range
-		int32_t L_11 = ___controlPointCount1;
-		V_0 = ((int32_t)il2cpp_codegen_multiply(((int32_t)il2cpp_codegen_subtract(L_11, 1)), 4));
-		// int step = Count / steps;
-		int32_t L_12;
-		L_12 = SampleCollection_get_Count_m4CD74F577287B307B57A1E6A07AA4A7D5032128F(__this, NULL);
-		int32_t L_13 = V_0;
-		V_1 = ((int32_t)(L_12/L_13));
+		int32_t L_4 = ___controlPointCount1;
+		V_0 = ((int32_t)il2cpp_codegen_multiply(((int32_t)il2cpp_codegen_subtract(L_4, 1)), 4));
+		// int step = samples.Length / steps;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_5 = __this->___samples_0;
+		NullCheck(L_5);
+		int32_t L_6 = V_0;
+		V_1 = ((int32_t)(((int32_t)(((RuntimeArray*)L_5)->max_length))/L_6));
 		// if (step < 1) step = 1;
-		int32_t L_14 = V_1;
-		if ((((int32_t)L_14) >= ((int32_t)1)))
+		int32_t L_7 = V_1;
+		if ((((int32_t)L_7) >= ((int32_t)1)))
 		{
-			goto IL_0053;
+			goto IL_0048;
 		}
 	}
 	{
@@ -19286,282 +19828,267 @@ IL_0034:
 		V_1 = 1;
 	}
 
-IL_0053:
+IL_0048:
 	{
 		// float minDist = (position - samples[0].position).sqrMagnitude;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_15 = ___position0;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_16 = __this->___samples_0;
-		NullCheck(L_16);
-		int32_t L_17 = 0;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_18 = (L_16)->GetAt(static_cast<il2cpp_array_size_t>(L_17));
-		NullCheck(L_18);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_19 = L_18->___position_0;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_20;
-		L_20 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_15, L_19, NULL);
-		V_17 = L_20;
-		float L_21;
-		L_21 = Vector3_get_sqrMagnitude_m43C27DEC47C4811FB30AB474FF2131A963B66FC8_inline((&V_17), NULL);
-		V_2 = L_21;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8 = ___position0;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_9 = __this->___samples_0;
+		NullCheck(L_9);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10 = ((L_9)->GetAddressAt(static_cast<il2cpp_array_size_t>(0)))->___position_0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_11;
+		L_11 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_8, L_10, NULL);
+		V_17 = L_11;
+		float L_12;
+		L_12 = Vector3_get_sqrMagnitude_m43C27DEC47C4811FB30AB474FF2131A963B66FC8_inline((&V_17), NULL);
+		V_2 = L_12;
 		// int fromIndex = 0;
 		V_3 = 0;
-		// int toIndex = Count - 1;
-		int32_t L_22;
-		L_22 = SampleCollection_get_Count_m4CD74F577287B307B57A1E6A07AA4A7D5032128F(__this, NULL);
-		V_4 = ((int32_t)il2cpp_codegen_subtract(L_22, 1));
+		// int toIndex = samples.Length - 1;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_13 = __this->___samples_0;
+		NullCheck(L_13);
+		V_4 = ((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_13)->max_length)), 1));
 		// if (from != 0.0) GetSamplingValues(from, out fromIndex, out lerp);
-		double L_23 = ___from3;
-		if ((((double)L_23) == ((double)(0.0))))
+		double L_14 = ___from3;
+		if ((((double)L_14) == ((double)(0.0))))
 		{
-			goto IL_0095;
+			goto IL_0090;
 		}
 	}
 	{
 		// if (from != 0.0) GetSamplingValues(from, out fromIndex, out lerp);
-		double L_24 = ___from3;
-		SampleCollection_GetSamplingValues_mEFAC249D9870E0F0EE0CFC9637EF39BBC68AE843(__this, L_24, (&V_3), (&V_5), NULL);
+		double L_15 = ___from3;
+		SampleCollection_GetSamplingValues_mEFAC249D9870E0F0EE0CFC9637EF39BBC68AE843(__this, L_15, (&V_3), (&V_5), NULL);
 	}
 
-IL_0095:
+IL_0090:
 	{
 		// if (to != 1.0)
-		double L_25 = ___to4;
-		if ((((double)L_25) == ((double)(1.0))))
+		double L_16 = ___to4;
+		if ((((double)L_16) == ((double)(1.0))))
 		{
-			goto IL_00cd;
+			goto IL_00ca;
 		}
 	}
 	{
 		// GetSamplingValues(to, out toIndex, out lerp);
-		double L_26 = ___to4;
-		SampleCollection_GetSamplingValues_mEFAC249D9870E0F0EE0CFC9637EF39BBC68AE843(__this, L_26, (&V_4), (&V_5), NULL);
-		// if (lerp > 0.0 && toIndex < Count - 1) toIndex++;
-		double L_27 = V_5;
-		if ((!(((double)L_27) > ((double)(0.0)))))
+		double L_17 = ___to4;
+		SampleCollection_GetSamplingValues_mEFAC249D9870E0F0EE0CFC9637EF39BBC68AE843(__this, L_17, (&V_4), (&V_5), NULL);
+		// if (lerp > 0.0 && toIndex < samples.Length - 1) toIndex++;
+		double L_18 = V_5;
+		if ((!(((double)L_18) > ((double)(0.0)))))
 		{
-			goto IL_00cd;
+			goto IL_00ca;
 		}
 	}
 	{
-		int32_t L_28 = V_4;
-		int32_t L_29;
-		L_29 = SampleCollection_get_Count_m4CD74F577287B307B57A1E6A07AA4A7D5032128F(__this, NULL);
-		if ((((int32_t)L_28) >= ((int32_t)((int32_t)il2cpp_codegen_subtract(L_29, 1)))))
+		int32_t L_19 = V_4;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_20 = __this->___samples_0;
+		NullCheck(L_20);
+		if ((((int32_t)L_19) >= ((int32_t)((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_20)->max_length)), 1)))))
 		{
-			goto IL_00cd;
+			goto IL_00ca;
 		}
 	}
 	{
-		// if (lerp > 0.0 && toIndex < Count - 1) toIndex++;
-		int32_t L_30 = V_4;
-		V_4 = ((int32_t)il2cpp_codegen_add(L_30, 1));
+		// if (lerp > 0.0 && toIndex < samples.Length - 1) toIndex++;
+		int32_t L_21 = V_4;
+		V_4 = ((int32_t)il2cpp_codegen_add(L_21, 1));
 	}
 
-IL_00cd:
+IL_00ca:
 	{
 		// int checkFrom = fromIndex;
-		int32_t L_31 = V_3;
-		V_6 = L_31;
+		int32_t L_22 = V_3;
+		V_6 = L_22;
 		// int checkTo = toIndex;
-		int32_t L_32 = V_4;
-		V_7 = L_32;
+		int32_t L_23 = V_4;
+		V_7 = L_23;
 		// for (int i = fromIndex; i < toIndex; i += step)
-		int32_t L_33 = V_3;
-		V_18 = L_33;
-		goto IL_0158;
+		int32_t L_24 = V_3;
+		V_18 = L_24;
+		goto IL_0162;
 	}
 
 IL_00d9:
 	{
 		// if (i >= toIndex) i = toIndex-1;
-		int32_t L_34 = V_18;
-		int32_t L_35 = V_4;
-		if ((((int32_t)L_34) < ((int32_t)L_35)))
+		int32_t L_25 = V_18;
+		int32_t L_26 = V_4;
+		if ((((int32_t)L_25) < ((int32_t)L_26)))
 		{
 			goto IL_00e5;
 		}
 	}
 	{
 		// if (i >= toIndex) i = toIndex-1;
-		int32_t L_36 = V_4;
-		V_18 = ((int32_t)il2cpp_codegen_subtract(L_36, 1));
+		int32_t L_27 = V_4;
+		V_18 = ((int32_t)il2cpp_codegen_subtract(L_27, 1));
 	}
 
 IL_00e5:
 	{
 		// Vector3 projected = LinearAlgebraUtility.ProjectOnLine(samples[i].position, samples[Mathf.Min(i + step, toIndex)].position, position);
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_37 = __this->___samples_0;
-		int32_t L_38 = V_18;
-		NullCheck(L_37);
-		int32_t L_39 = L_38;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_40 = (L_37)->GetAt(static_cast<il2cpp_array_size_t>(L_39));
-		NullCheck(L_40);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_41 = L_40->___position_0;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_42 = __this->___samples_0;
-		int32_t L_43 = V_18;
-		int32_t L_44 = V_1;
-		int32_t L_45 = V_4;
-		int32_t L_46;
-		L_46 = Mathf_Min_m888083F74FF5655778F0403BB5E9608BEFDEA8CB_inline(((int32_t)il2cpp_codegen_add(L_43, L_44)), L_45, NULL);
-		NullCheck(L_42);
-		int32_t L_47 = L_46;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_48 = (L_42)->GetAt(static_cast<il2cpp_array_size_t>(L_47));
-		NullCheck(L_48);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_49 = L_48->___position_0;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_50 = ___position0;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_51;
-		L_51 = LinearAlgebraUtility_ProjectOnLine_m5A6BF6DD69841B252A2A1D18F802453BACAAE278(L_41, L_49, L_50, NULL);
-		V_19 = L_51;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_28 = __this->___samples_0;
+		int32_t L_29 = V_18;
+		NullCheck(L_28);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_30 = ((L_28)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_29)))->___position_0;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_31 = __this->___samples_0;
+		int32_t L_32 = V_18;
+		int32_t L_33 = V_1;
+		int32_t L_34 = V_4;
+		int32_t L_35;
+		L_35 = Mathf_Min_m888083F74FF5655778F0403BB5E9608BEFDEA8CB_inline(((int32_t)il2cpp_codegen_add(L_32, L_33)), L_34, NULL);
+		NullCheck(L_31);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_36 = ((L_31)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_35)))->___position_0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_37 = ___position0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_38;
+		L_38 = LinearAlgebraUtility_ProjectOnLine_m5A6BF6DD69841B252A2A1D18F802453BACAAE278(L_30, L_36, L_37, NULL);
+		V_19 = L_38;
 		// float dist = (position - projected).sqrMagnitude;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_52 = ___position0;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_53 = V_19;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_54;
-		L_54 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_52, L_53, NULL);
-		V_17 = L_54;
-		float L_55;
-		L_55 = Vector3_get_sqrMagnitude_m43C27DEC47C4811FB30AB474FF2131A963B66FC8_inline((&V_17), NULL);
-		V_20 = L_55;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_39 = ___position0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_40 = V_19;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_41;
+		L_41 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_39, L_40, NULL);
+		V_17 = L_41;
+		float L_42;
+		L_42 = Vector3_get_sqrMagnitude_m43C27DEC47C4811FB30AB474FF2131A963B66FC8_inline((&V_17), NULL);
+		V_20 = L_42;
 		// if (dist < minDist)
-		float L_56 = V_20;
-		float L_57 = V_2;
-		if ((!(((float)L_56) < ((float)L_57))))
+		float L_43 = V_20;
+		float L_44 = V_2;
+		if ((!(((float)L_43) < ((float)L_44))))
 		{
-			goto IL_014c;
+			goto IL_0156;
 		}
 	}
 	{
 		// minDist = dist;
-		float L_58 = V_20;
-		V_2 = L_58;
+		float L_45 = V_20;
+		V_2 = L_45;
 		// checkFrom = Mathf.Max(i - step, 0);
-		int32_t L_59 = V_18;
-		int32_t L_60 = V_1;
-		int32_t L_61;
-		L_61 = Mathf_Max_m7FA442918DE37E3A00106D1F2E789D65829792B8_inline(((int32_t)il2cpp_codegen_subtract(L_59, L_60)), 0, NULL);
-		V_6 = L_61;
-		// checkTo = Mathf.Min(i + step, Count - 1);
-		int32_t L_62 = V_18;
-		int32_t L_63 = V_1;
-		int32_t L_64;
-		L_64 = SampleCollection_get_Count_m4CD74F577287B307B57A1E6A07AA4A7D5032128F(__this, NULL);
-		int32_t L_65;
-		L_65 = Mathf_Min_m888083F74FF5655778F0403BB5E9608BEFDEA8CB_inline(((int32_t)il2cpp_codegen_add(L_62, L_63)), ((int32_t)il2cpp_codegen_subtract(L_64, 1)), NULL);
-		V_7 = L_65;
+		int32_t L_46 = V_18;
+		int32_t L_47 = V_1;
+		int32_t L_48;
+		L_48 = Mathf_Max_m7FA442918DE37E3A00106D1F2E789D65829792B8_inline(((int32_t)il2cpp_codegen_subtract(L_46, L_47)), 0, NULL);
+		V_6 = L_48;
+		// checkTo = Mathf.Min(i + step, samples.Length - 1);
+		int32_t L_49 = V_18;
+		int32_t L_50 = V_1;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_51 = __this->___samples_0;
+		NullCheck(L_51);
+		int32_t L_52;
+		L_52 = Mathf_Min_m888083F74FF5655778F0403BB5E9608BEFDEA8CB_inline(((int32_t)il2cpp_codegen_add(L_49, L_50)), ((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_51)->max_length)), 1)), NULL);
+		V_7 = L_52;
 	}
 
-IL_014c:
+IL_0156:
 	{
 		// if (i == toIndex) break;
-		int32_t L_66 = V_18;
-		int32_t L_67 = V_4;
-		if ((((int32_t)L_66) == ((int32_t)L_67)))
+		int32_t L_53 = V_18;
+		int32_t L_54 = V_4;
+		if ((((int32_t)L_53) == ((int32_t)L_54)))
 		{
-			goto IL_0161;
+			goto IL_016b;
 		}
 	}
 	{
 		// for (int i = fromIndex; i < toIndex; i += step)
-		int32_t L_68 = V_18;
-		int32_t L_69 = V_1;
-		V_18 = ((int32_t)il2cpp_codegen_add(L_68, L_69));
+		int32_t L_55 = V_18;
+		int32_t L_56 = V_1;
+		V_18 = ((int32_t)il2cpp_codegen_add(L_55, L_56));
 	}
 
-IL_0158:
+IL_0162:
 	{
 		// for (int i = fromIndex; i < toIndex; i += step)
-		int32_t L_70 = V_18;
-		int32_t L_71 = V_4;
-		if ((((int32_t)L_70) < ((int32_t)L_71)))
+		int32_t L_57 = V_18;
+		int32_t L_58 = V_4;
+		if ((((int32_t)L_57) < ((int32_t)L_58)))
 		{
 			goto IL_00d9;
 		}
 	}
 
-IL_0161:
+IL_016b:
 	{
 		// minDist = (position - samples[checkFrom].position).sqrMagnitude;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_72 = ___position0;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_73 = __this->___samples_0;
-		int32_t L_74 = V_6;
-		NullCheck(L_73);
-		int32_t L_75 = L_74;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_76 = (L_73)->GetAt(static_cast<il2cpp_array_size_t>(L_75));
-		NullCheck(L_76);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_77 = L_76->___position_0;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_78;
-		L_78 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_72, L_77, NULL);
-		V_17 = L_78;
-		float L_79;
-		L_79 = Vector3_get_sqrMagnitude_m43C27DEC47C4811FB30AB474FF2131A963B66FC8_inline((&V_17), NULL);
-		V_2 = L_79;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_59 = ___position0;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_60 = __this->___samples_0;
+		int32_t L_61 = V_6;
+		NullCheck(L_60);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_62 = ((L_60)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_61)))->___position_0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_63;
+		L_63 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_59, L_62, NULL);
+		V_17 = L_63;
+		float L_64;
+		L_64 = Vector3_get_sqrMagnitude_m43C27DEC47C4811FB30AB474FF2131A963B66FC8_inline((&V_17), NULL);
+		V_2 = L_64;
 		// int index = checkFrom;
-		int32_t L_80 = V_6;
-		V_8 = L_80;
+		int32_t L_65 = V_6;
+		V_8 = L_65;
 		// for (int i = checkFrom + 1; i <= checkTo; i++)
-		int32_t L_81 = V_6;
-		V_21 = ((int32_t)il2cpp_codegen_add(L_81, 1));
-		goto IL_01bc;
+		int32_t L_66 = V_6;
+		V_21 = ((int32_t)il2cpp_codegen_add(L_66, 1));
+		goto IL_01ce;
 	}
 
-IL_018b:
+IL_0199:
 	{
 		// float dist = (position - samples[i].position).sqrMagnitude;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_82 = ___position0;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_83 = __this->___samples_0;
-		int32_t L_84 = V_21;
-		NullCheck(L_83);
-		int32_t L_85 = L_84;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_86 = (L_83)->GetAt(static_cast<il2cpp_array_size_t>(L_85));
-		NullCheck(L_86);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_87 = L_86->___position_0;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_88;
-		L_88 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_82, L_87, NULL);
-		V_17 = L_88;
-		float L_89;
-		L_89 = Vector3_get_sqrMagnitude_m43C27DEC47C4811FB30AB474FF2131A963B66FC8_inline((&V_17), NULL);
-		V_22 = L_89;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_67 = ___position0;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_68 = __this->___samples_0;
+		int32_t L_69 = V_21;
+		NullCheck(L_68);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_70 = ((L_68)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_69)))->___position_0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_71;
+		L_71 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_67, L_70, NULL);
+		V_17 = L_71;
+		float L_72;
+		L_72 = Vector3_get_sqrMagnitude_m43C27DEC47C4811FB30AB474FF2131A963B66FC8_inline((&V_17), NULL);
+		V_22 = L_72;
 		// if (dist < minDist)
-		float L_90 = V_22;
-		float L_91 = V_2;
-		if ((!(((float)L_90) < ((float)L_91))))
+		float L_73 = V_22;
+		float L_74 = V_2;
+		if ((!(((float)L_73) < ((float)L_74))))
 		{
-			goto IL_01b6;
+			goto IL_01c8;
 		}
 	}
 	{
 		// minDist = dist;
-		float L_92 = V_22;
-		V_2 = L_92;
+		float L_75 = V_22;
+		V_2 = L_75;
 		// index = i;
-		int32_t L_93 = V_21;
-		V_8 = L_93;
+		int32_t L_76 = V_21;
+		V_8 = L_76;
 	}
 
-IL_01b6:
+IL_01c8:
 	{
 		// for (int i = checkFrom + 1; i <= checkTo; i++)
-		int32_t L_94 = V_21;
-		V_21 = ((int32_t)il2cpp_codegen_add(L_94, 1));
+		int32_t L_77 = V_21;
+		V_21 = ((int32_t)il2cpp_codegen_add(L_77, 1));
 	}
 
-IL_01bc:
+IL_01ce:
 	{
 		// for (int i = checkFrom + 1; i <= checkTo; i++)
-		int32_t L_95 = V_21;
-		int32_t L_96 = V_7;
-		if ((((int32_t)L_95) <= ((int32_t)L_96)))
+		int32_t L_78 = V_21;
+		int32_t L_79 = V_7;
+		if ((((int32_t)L_78) <= ((int32_t)L_79)))
 		{
-			goto IL_018b;
+			goto IL_0199;
 		}
 	}
 	{
 		// int backIndex = index - 1;
-		int32_t L_97 = V_8;
-		V_9 = ((int32_t)il2cpp_codegen_subtract(L_97, 1));
+		int32_t L_80 = V_8;
+		V_9 = ((int32_t)il2cpp_codegen_subtract(L_80, 1));
 		// if (backIndex < 0) backIndex = 0;
-		int32_t L_98 = V_9;
-		if ((((int32_t)L_98) >= ((int32_t)0)))
+		int32_t L_81 = V_9;
+		if ((((int32_t)L_81) >= ((int32_t)0)))
 		{
-			goto IL_01d0;
+			goto IL_01e2;
 		}
 	}
 	{
@@ -19569,498 +20096,426 @@ IL_01bc:
 		V_9 = 0;
 	}
 
-IL_01d0:
+IL_01e2:
 	{
 		// int frontIndex = index + 1;
-		int32_t L_99 = V_8;
-		V_10 = ((int32_t)il2cpp_codegen_add(L_99, 1));
-		// if (frontIndex > Count - 1) frontIndex = Count - 1;
-		int32_t L_100 = V_10;
-		int32_t L_101;
-		L_101 = SampleCollection_get_Count_m4CD74F577287B307B57A1E6A07AA4A7D5032128F(__this, NULL);
-		if ((((int32_t)L_100) <= ((int32_t)((int32_t)il2cpp_codegen_subtract(L_101, 1)))))
+		int32_t L_82 = V_8;
+		V_10 = ((int32_t)il2cpp_codegen_add(L_82, 1));
+		// if (frontIndex > samples.Length - 1) frontIndex = samples.Length - 1;
+		int32_t L_83 = V_10;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_84 = __this->___samples_0;
+		NullCheck(L_84);
+		if ((((int32_t)L_83) <= ((int32_t)((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_84)->max_length)), 1)))))
 		{
-			goto IL_01ec;
+			goto IL_0202;
 		}
 	}
 	{
-		// if (frontIndex > Count - 1) frontIndex = Count - 1;
-		int32_t L_102;
-		L_102 = SampleCollection_get_Count_m4CD74F577287B307B57A1E6A07AA4A7D5032128F(__this, NULL);
-		V_10 = ((int32_t)il2cpp_codegen_subtract(L_102, 1));
+		// if (frontIndex > samples.Length - 1) frontIndex = samples.Length - 1;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_85 = __this->___samples_0;
+		NullCheck(L_85);
+		V_10 = ((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_85)->max_length)), 1));
 	}
 
-IL_01ec:
+IL_0202:
 	{
 		// Vector3 back = LinearAlgebraUtility.ProjectOnLine(samples[backIndex].position, samples[index].position, position);
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_103 = __this->___samples_0;
-		int32_t L_104 = V_9;
-		NullCheck(L_103);
-		int32_t L_105 = L_104;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_106 = (L_103)->GetAt(static_cast<il2cpp_array_size_t>(L_105));
-		NullCheck(L_106);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_107 = L_106->___position_0;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_108 = __this->___samples_0;
-		int32_t L_109 = V_8;
-		NullCheck(L_108);
-		int32_t L_110 = L_109;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_111 = (L_108)->GetAt(static_cast<il2cpp_array_size_t>(L_110));
-		NullCheck(L_111);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_112 = L_111->___position_0;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_113 = ___position0;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_114;
-		L_114 = LinearAlgebraUtility_ProjectOnLine_m5A6BF6DD69841B252A2A1D18F802453BACAAE278(L_107, L_112, L_113, NULL);
-		V_11 = L_114;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_86 = __this->___samples_0;
+		int32_t L_87 = V_9;
+		NullCheck(L_86);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_88 = ((L_86)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_87)))->___position_0;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_89 = __this->___samples_0;
+		int32_t L_90 = V_8;
+		NullCheck(L_89);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_91 = ((L_89)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_90)))->___position_0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_92 = ___position0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_93;
+		L_93 = LinearAlgebraUtility_ProjectOnLine_m5A6BF6DD69841B252A2A1D18F802453BACAAE278(L_88, L_91, L_92, NULL);
+		V_11 = L_93;
 		// Vector3 front = LinearAlgebraUtility.ProjectOnLine(samples[index].position, samples[frontIndex].position, position);
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_115 = __this->___samples_0;
-		int32_t L_116 = V_8;
-		NullCheck(L_115);
-		int32_t L_117 = L_116;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_118 = (L_115)->GetAt(static_cast<il2cpp_array_size_t>(L_117));
-		NullCheck(L_118);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_119 = L_118->___position_0;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_120 = __this->___samples_0;
-		int32_t L_121 = V_10;
-		NullCheck(L_120);
-		int32_t L_122 = L_121;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_123 = (L_120)->GetAt(static_cast<il2cpp_array_size_t>(L_122));
-		NullCheck(L_123);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_124 = L_123->___position_0;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_125 = ___position0;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_126;
-		L_126 = LinearAlgebraUtility_ProjectOnLine_m5A6BF6DD69841B252A2A1D18F802453BACAAE278(L_119, L_124, L_125, NULL);
-		V_12 = L_126;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_94 = __this->___samples_0;
+		int32_t L_95 = V_8;
+		NullCheck(L_94);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_96 = ((L_94)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_95)))->___position_0;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_97 = __this->___samples_0;
+		int32_t L_98 = V_10;
+		NullCheck(L_97);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_99 = ((L_97)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_98)))->___position_0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_100 = ___position0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_101;
+		L_101 = LinearAlgebraUtility_ProjectOnLine_m5A6BF6DD69841B252A2A1D18F802453BACAAE278(L_96, L_99, L_100, NULL);
+		V_12 = L_101;
 		// float backLength = (samples[index].position - samples[backIndex].position).magnitude;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_127 = __this->___samples_0;
-		int32_t L_128 = V_8;
-		NullCheck(L_127);
-		int32_t L_129 = L_128;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_130 = (L_127)->GetAt(static_cast<il2cpp_array_size_t>(L_129));
-		NullCheck(L_130);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_131 = L_130->___position_0;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_132 = __this->___samples_0;
-		int32_t L_133 = V_9;
-		NullCheck(L_132);
-		int32_t L_134 = L_133;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_135 = (L_132)->GetAt(static_cast<il2cpp_array_size_t>(L_134));
-		NullCheck(L_135);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_136 = L_135->___position_0;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_137;
-		L_137 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_131, L_136, NULL);
-		V_17 = L_137;
-		float L_138;
-		L_138 = Vector3_get_magnitude_mF0D6017E90B345F1F52D1CC564C640F1A847AF2D_inline((&V_17), NULL);
-		V_13 = L_138;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_102 = __this->___samples_0;
+		int32_t L_103 = V_8;
+		NullCheck(L_102);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_104 = ((L_102)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_103)))->___position_0;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_105 = __this->___samples_0;
+		int32_t L_106 = V_9;
+		NullCheck(L_105);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_107 = ((L_105)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_106)))->___position_0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_108;
+		L_108 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_104, L_107, NULL);
+		V_17 = L_108;
+		float L_109;
+		L_109 = Vector3_get_magnitude_mF0D6017E90B345F1F52D1CC564C640F1A847AF2D_inline((&V_17), NULL);
+		V_13 = L_109;
 		// float frontLength = (samples[index].position - samples[frontIndex].position).magnitude;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_139 = __this->___samples_0;
-		int32_t L_140 = V_8;
-		NullCheck(L_139);
-		int32_t L_141 = L_140;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_142 = (L_139)->GetAt(static_cast<il2cpp_array_size_t>(L_141));
-		NullCheck(L_142);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_143 = L_142->___position_0;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_144 = __this->___samples_0;
-		int32_t L_145 = V_10;
-		NullCheck(L_144);
-		int32_t L_146 = L_145;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_147 = (L_144)->GetAt(static_cast<il2cpp_array_size_t>(L_146));
-		NullCheck(L_147);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_148 = L_147->___position_0;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_149;
-		L_149 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_143, L_148, NULL);
-		V_17 = L_149;
-		float L_150;
-		L_150 = Vector3_get_magnitude_mF0D6017E90B345F1F52D1CC564C640F1A847AF2D_inline((&V_17), NULL);
-		V_14 = L_150;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_110 = __this->___samples_0;
+		int32_t L_111 = V_8;
+		NullCheck(L_110);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_112 = ((L_110)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_111)))->___position_0;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_113 = __this->___samples_0;
+		int32_t L_114 = V_10;
+		NullCheck(L_113);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_115 = ((L_113)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_114)))->___position_0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_116;
+		L_116 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_112, L_115, NULL);
+		V_17 = L_116;
+		float L_117;
+		L_117 = Vector3_get_magnitude_mF0D6017E90B345F1F52D1CC564C640F1A847AF2D_inline((&V_17), NULL);
+		V_14 = L_117;
 		// float backProjectDist = (back - samples[backIndex].position).magnitude;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_151 = V_11;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_152 = __this->___samples_0;
-		int32_t L_153 = V_9;
-		NullCheck(L_152);
-		int32_t L_154 = L_153;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_155 = (L_152)->GetAt(static_cast<il2cpp_array_size_t>(L_154));
-		NullCheck(L_155);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_156 = L_155->___position_0;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_157;
-		L_157 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_151, L_156, NULL);
-		V_17 = L_157;
-		float L_158;
-		L_158 = Vector3_get_magnitude_mF0D6017E90B345F1F52D1CC564C640F1A847AF2D_inline((&V_17), NULL);
-		V_15 = L_158;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_118 = V_11;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_119 = __this->___samples_0;
+		int32_t L_120 = V_9;
+		NullCheck(L_119);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_121 = ((L_119)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_120)))->___position_0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_122;
+		L_122 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_118, L_121, NULL);
+		V_17 = L_122;
+		float L_123;
+		L_123 = Vector3_get_magnitude_mF0D6017E90B345F1F52D1CC564C640F1A847AF2D_inline((&V_17), NULL);
+		V_15 = L_123;
 		// float frontProjectDist = (front - samples[frontIndex].position).magnitude;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_159 = V_12;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_160 = __this->___samples_0;
-		int32_t L_161 = V_10;
-		NullCheck(L_160);
-		int32_t L_162 = L_161;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_163 = (L_160)->GetAt(static_cast<il2cpp_array_size_t>(L_162));
-		NullCheck(L_163);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_164 = L_163->___position_0;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_165;
-		L_165 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_159, L_164, NULL);
-		V_17 = L_165;
-		float L_166;
-		L_166 = Vector3_get_magnitude_mF0D6017E90B345F1F52D1CC564C640F1A847AF2D_inline((&V_17), NULL);
-		V_16 = L_166;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_124 = V_12;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_125 = __this->___samples_0;
+		int32_t L_126 = V_10;
+		NullCheck(L_125);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_127 = ((L_125)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_126)))->___position_0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_128;
+		L_128 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_124, L_127, NULL);
+		V_17 = L_128;
+		float L_129;
+		L_129 = Vector3_get_magnitude_mF0D6017E90B345F1F52D1CC564C640F1A847AF2D_inline((&V_17), NULL);
+		V_16 = L_129;
 		// if (backIndex < index && index < frontIndex)
-		int32_t L_167 = V_9;
-		int32_t L_168 = V_8;
-		if ((((int32_t)L_167) >= ((int32_t)L_168)))
+		int32_t L_130 = V_9;
+		int32_t L_131 = V_8;
+		if ((((int32_t)L_130) >= ((int32_t)L_131)))
 		{
-			goto IL_03a0;
+			goto IL_03ee;
 		}
 	}
 	{
-		int32_t L_169 = V_8;
-		int32_t L_170 = V_10;
-		if ((((int32_t)L_169) >= ((int32_t)L_170)))
+		int32_t L_132 = V_8;
+		int32_t L_133 = V_10;
+		if ((((int32_t)L_132) >= ((int32_t)L_133)))
 		{
-			goto IL_03a0;
+			goto IL_03ee;
 		}
 	}
 	{
 		// if ((position - back).sqrMagnitude < (position - front).sqrMagnitude)
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_171 = ___position0;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_172 = V_11;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_173;
-		L_173 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_171, L_172, NULL);
-		V_17 = L_173;
-		float L_174;
-		L_174 = Vector3_get_sqrMagnitude_m43C27DEC47C4811FB30AB474FF2131A963B66FC8_inline((&V_17), NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_175 = ___position0;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_176 = V_12;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_177;
-		L_177 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_175, L_176, NULL);
-		V_17 = L_177;
-		float L_178;
-		L_178 = Vector3_get_sqrMagnitude_m43C27DEC47C4811FB30AB474FF2131A963B66FC8_inline((&V_17), NULL);
-		if ((!(((float)L_174) < ((float)L_178))))
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_134 = ___position0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_135 = V_11;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_136;
+		L_136 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_134, L_135, NULL);
+		V_17 = L_136;
+		float L_137;
+		L_137 = Vector3_get_sqrMagnitude_m43C27DEC47C4811FB30AB474FF2131A963B66FC8_inline((&V_17), NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_138 = ___position0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_139 = V_12;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_140;
+		L_140 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_138, L_139, NULL);
+		V_17 = L_140;
+		float L_141;
+		L_141 = Vector3_get_sqrMagnitude_m43C27DEC47C4811FB30AB474FF2131A963B66FC8_inline((&V_17), NULL);
+		if ((!(((float)L_137) < ((float)L_141))))
 		{
-			goto IL_0351;
+			goto IL_0397;
 		}
 	}
 	{
-		// SplineSample.Lerp(samples[backIndex], samples[index], backProjectDist / backLength, result);
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_179 = __this->___samples_0;
-		int32_t L_180 = V_9;
-		NullCheck(L_179);
-		int32_t L_181 = L_180;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_182 = (L_179)->GetAt(static_cast<il2cpp_array_size_t>(L_181));
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_183 = __this->___samples_0;
-		int32_t L_184 = V_8;
-		NullCheck(L_183);
-		int32_t L_185 = L_184;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_186 = (L_183)->GetAt(static_cast<il2cpp_array_size_t>(L_185));
-		float L_187 = V_15;
-		float L_188 = V_13;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_189 = ___result2;
-		SplineSample_Lerp_m8B6172938B0453C682A4F606B5C9BA03EEA57E2F(L_182, L_186, ((float)(L_187/L_188)), L_189, NULL);
+		// SplineSample.Lerp(ref samples[backIndex], ref samples[index], backProjectDist / backLength, ref result);
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_142 = __this->___samples_0;
+		int32_t L_143 = V_9;
+		NullCheck(L_142);
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_144 = __this->___samples_0;
+		int32_t L_145 = V_8;
+		NullCheck(L_144);
+		float L_146 = V_15;
+		float L_147 = V_13;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_148 = ___result2;
+		SplineSample_Lerp_m714FB2D7D68C98B87E44014ABB468884D761142C(((L_142)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_143))), ((L_144)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_145))), ((float)(L_146/L_147)), L_148, NULL);
 		// if (sampleMode == SplineComputer.SampleMode.Uniform) result.percent = DMath.Lerp(GetSamplePercent(backIndex), GetSamplePercent(index), backProjectDist / backLength);
-		int32_t L_190 = __this->___sampleMode_2;
-		if ((!(((uint32_t)L_190) == ((uint32_t)1))))
+		int32_t L_149 = __this->___sampleMode_2;
+		if ((!(((uint32_t)L_149) == ((uint32_t)1))))
 		{
-			goto IL_0436;
+			goto IL_0494;
 		}
 	}
 	{
 		// if (sampleMode == SplineComputer.SampleMode.Uniform) result.percent = DMath.Lerp(GetSamplePercent(backIndex), GetSamplePercent(index), backProjectDist / backLength);
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_191 = ___result2;
-		int32_t L_192 = V_9;
-		double L_193;
-		L_193 = SampleCollection_GetSamplePercent_m786D6EBE7E0B8497A7A61C7C9383369EBF521DE0(__this, L_192, NULL);
-		int32_t L_194 = V_8;
-		double L_195;
-		L_195 = SampleCollection_GetSamplePercent_m786D6EBE7E0B8497A7A61C7C9383369EBF521DE0(__this, L_194, NULL);
-		float L_196 = V_15;
-		float L_197 = V_13;
-		double L_198;
-		L_198 = DMath_Lerp_mCDB4B52E6B47DA3EE2EE07BA18FB351804E38ED9(L_193, L_195, ((double)((float)(L_196/L_197))), NULL);
-		NullCheck(L_191);
-		L_191->___percent_5 = L_198;
-		goto IL_0436;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_150 = ___result2;
+		int32_t L_151 = V_9;
+		double L_152;
+		L_152 = SampleCollection_GetSamplePercent_m786D6EBE7E0B8497A7A61C7C9383369EBF521DE0(__this, L_151, NULL);
+		int32_t L_153 = V_8;
+		double L_154;
+		L_154 = SampleCollection_GetSamplePercent_m786D6EBE7E0B8497A7A61C7C9383369EBF521DE0(__this, L_153, NULL);
+		float L_155 = V_15;
+		float L_156 = V_13;
+		double L_157;
+		L_157 = DMath_Lerp_mCDB4B52E6B47DA3EE2EE07BA18FB351804E38ED9(L_152, L_154, ((double)((float)(L_155/L_156))), NULL);
+		L_150->___percent_5 = L_157;
+		goto IL_0494;
 	}
 
-IL_0351:
+IL_0397:
 	{
-		// SplineSample.Lerp(samples[frontIndex], samples[index], frontProjectDist / frontLength, result);
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_199 = __this->___samples_0;
-		int32_t L_200 = V_10;
-		NullCheck(L_199);
-		int32_t L_201 = L_200;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_202 = (L_199)->GetAt(static_cast<il2cpp_array_size_t>(L_201));
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_203 = __this->___samples_0;
-		int32_t L_204 = V_8;
-		NullCheck(L_203);
-		int32_t L_205 = L_204;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_206 = (L_203)->GetAt(static_cast<il2cpp_array_size_t>(L_205));
-		float L_207 = V_16;
-		float L_208 = V_14;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_209 = ___result2;
-		SplineSample_Lerp_m8B6172938B0453C682A4F606B5C9BA03EEA57E2F(L_202, L_206, ((float)(L_207/L_208)), L_209, NULL);
+		// SplineSample.Lerp(ref samples[frontIndex], ref samples[index], frontProjectDist / frontLength, ref result);
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_158 = __this->___samples_0;
+		int32_t L_159 = V_10;
+		NullCheck(L_158);
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_160 = __this->___samples_0;
+		int32_t L_161 = V_8;
+		NullCheck(L_160);
+		float L_162 = V_16;
+		float L_163 = V_14;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_164 = ___result2;
+		SplineSample_Lerp_m714FB2D7D68C98B87E44014ABB468884D761142C(((L_158)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_159))), ((L_160)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_161))), ((float)(L_162/L_163)), L_164, NULL);
 		// if (sampleMode == SplineComputer.SampleMode.Uniform) result.percent = DMath.Lerp(GetSamplePercent(frontIndex), GetSamplePercent(index), frontProjectDist / frontLength);
-		int32_t L_210 = __this->___sampleMode_2;
-		if ((!(((uint32_t)L_210) == ((uint32_t)1))))
+		int32_t L_165 = __this->___sampleMode_2;
+		if ((!(((uint32_t)L_165) == ((uint32_t)1))))
 		{
-			goto IL_0436;
+			goto IL_0494;
 		}
 	}
 	{
 		// if (sampleMode == SplineComputer.SampleMode.Uniform) result.percent = DMath.Lerp(GetSamplePercent(frontIndex), GetSamplePercent(index), frontProjectDist / frontLength);
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_211 = ___result2;
-		int32_t L_212 = V_10;
-		double L_213;
-		L_213 = SampleCollection_GetSamplePercent_m786D6EBE7E0B8497A7A61C7C9383369EBF521DE0(__this, L_212, NULL);
-		int32_t L_214 = V_8;
-		double L_215;
-		L_215 = SampleCollection_GetSamplePercent_m786D6EBE7E0B8497A7A61C7C9383369EBF521DE0(__this, L_214, NULL);
-		float L_216 = V_16;
-		float L_217 = V_14;
-		double L_218;
-		L_218 = DMath_Lerp_mCDB4B52E6B47DA3EE2EE07BA18FB351804E38ED9(L_213, L_215, ((double)((float)(L_216/L_217))), NULL);
-		NullCheck(L_211);
-		L_211->___percent_5 = L_218;
-		goto IL_0436;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_166 = ___result2;
+		int32_t L_167 = V_10;
+		double L_168;
+		L_168 = SampleCollection_GetSamplePercent_m786D6EBE7E0B8497A7A61C7C9383369EBF521DE0(__this, L_167, NULL);
+		int32_t L_169 = V_8;
+		double L_170;
+		L_170 = SampleCollection_GetSamplePercent_m786D6EBE7E0B8497A7A61C7C9383369EBF521DE0(__this, L_169, NULL);
+		float L_171 = V_16;
+		float L_172 = V_14;
+		double L_173;
+		L_173 = DMath_Lerp_mCDB4B52E6B47DA3EE2EE07BA18FB351804E38ED9(L_168, L_170, ((double)((float)(L_171/L_172))), NULL);
+		L_166->___percent_5 = L_173;
+		goto IL_0494;
 	}
 
-IL_03a0:
+IL_03ee:
 	{
 		// else if (backIndex < index)
-		int32_t L_219 = V_9;
-		int32_t L_220 = V_8;
-		if ((((int32_t)L_219) >= ((int32_t)L_220)))
+		int32_t L_174 = V_9;
+		int32_t L_175 = V_8;
+		if ((((int32_t)L_174) >= ((int32_t)L_175)))
 		{
-			goto IL_03ef;
+			goto IL_0445;
 		}
 	}
 	{
-		// SplineSample.Lerp(samples[backIndex], samples[index], backProjectDist / backLength, result);
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_221 = __this->___samples_0;
-		int32_t L_222 = V_9;
-		NullCheck(L_221);
-		int32_t L_223 = L_222;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_224 = (L_221)->GetAt(static_cast<il2cpp_array_size_t>(L_223));
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_225 = __this->___samples_0;
-		int32_t L_226 = V_8;
-		NullCheck(L_225);
-		int32_t L_227 = L_226;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_228 = (L_225)->GetAt(static_cast<il2cpp_array_size_t>(L_227));
-		float L_229 = V_15;
-		float L_230 = V_13;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_231 = ___result2;
-		SplineSample_Lerp_m8B6172938B0453C682A4F606B5C9BA03EEA57E2F(L_224, L_228, ((float)(L_229/L_230)), L_231, NULL);
+		// SplineSample.Lerp(ref samples[backIndex], ref samples[index], backProjectDist / backLength, ref result);
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_176 = __this->___samples_0;
+		int32_t L_177 = V_9;
+		NullCheck(L_176);
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_178 = __this->___samples_0;
+		int32_t L_179 = V_8;
+		NullCheck(L_178);
+		float L_180 = V_15;
+		float L_181 = V_13;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_182 = ___result2;
+		SplineSample_Lerp_m714FB2D7D68C98B87E44014ABB468884D761142C(((L_176)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_177))), ((L_178)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_179))), ((float)(L_180/L_181)), L_182, NULL);
 		// if (sampleMode == SplineComputer.SampleMode.Uniform) result.percent = DMath.Lerp(GetSamplePercent(backIndex), GetSamplePercent(index), backProjectDist / backLength);
-		int32_t L_232 = __this->___sampleMode_2;
-		if ((!(((uint32_t)L_232) == ((uint32_t)1))))
+		int32_t L_183 = __this->___sampleMode_2;
+		if ((!(((uint32_t)L_183) == ((uint32_t)1))))
 		{
-			goto IL_0436;
+			goto IL_0494;
 		}
 	}
 	{
 		// if (sampleMode == SplineComputer.SampleMode.Uniform) result.percent = DMath.Lerp(GetSamplePercent(backIndex), GetSamplePercent(index), backProjectDist / backLength);
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_233 = ___result2;
-		int32_t L_234 = V_9;
-		double L_235;
-		L_235 = SampleCollection_GetSamplePercent_m786D6EBE7E0B8497A7A61C7C9383369EBF521DE0(__this, L_234, NULL);
-		int32_t L_236 = V_8;
-		double L_237;
-		L_237 = SampleCollection_GetSamplePercent_m786D6EBE7E0B8497A7A61C7C9383369EBF521DE0(__this, L_236, NULL);
-		float L_238 = V_15;
-		float L_239 = V_13;
-		double L_240;
-		L_240 = DMath_Lerp_mCDB4B52E6B47DA3EE2EE07BA18FB351804E38ED9(L_235, L_237, ((double)((float)(L_238/L_239))), NULL);
-		NullCheck(L_233);
-		L_233->___percent_5 = L_240;
-		goto IL_0436;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_184 = ___result2;
+		int32_t L_185 = V_9;
+		double L_186;
+		L_186 = SampleCollection_GetSamplePercent_m786D6EBE7E0B8497A7A61C7C9383369EBF521DE0(__this, L_185, NULL);
+		int32_t L_187 = V_8;
+		double L_188;
+		L_188 = SampleCollection_GetSamplePercent_m786D6EBE7E0B8497A7A61C7C9383369EBF521DE0(__this, L_187, NULL);
+		float L_189 = V_15;
+		float L_190 = V_13;
+		double L_191;
+		L_191 = DMath_Lerp_mCDB4B52E6B47DA3EE2EE07BA18FB351804E38ED9(L_186, L_188, ((double)((float)(L_189/L_190))), NULL);
+		L_184->___percent_5 = L_191;
+		goto IL_0494;
 	}
 
-IL_03ef:
+IL_0445:
 	{
-		// SplineSample.Lerp(samples[frontIndex], samples[index], frontProjectDist / frontLength, result);
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_241 = __this->___samples_0;
-		int32_t L_242 = V_10;
-		NullCheck(L_241);
-		int32_t L_243 = L_242;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_244 = (L_241)->GetAt(static_cast<il2cpp_array_size_t>(L_243));
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_245 = __this->___samples_0;
-		int32_t L_246 = V_8;
-		NullCheck(L_245);
-		int32_t L_247 = L_246;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_248 = (L_245)->GetAt(static_cast<il2cpp_array_size_t>(L_247));
-		float L_249 = V_16;
-		float L_250 = V_14;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_251 = ___result2;
-		SplineSample_Lerp_m8B6172938B0453C682A4F606B5C9BA03EEA57E2F(L_244, L_248, ((float)(L_249/L_250)), L_251, NULL);
+		// SplineSample.Lerp(ref samples[frontIndex], ref samples[index], frontProjectDist / frontLength, ref result);
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_192 = __this->___samples_0;
+		int32_t L_193 = V_10;
+		NullCheck(L_192);
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_194 = __this->___samples_0;
+		int32_t L_195 = V_8;
+		NullCheck(L_194);
+		float L_196 = V_16;
+		float L_197 = V_14;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_198 = ___result2;
+		SplineSample_Lerp_m714FB2D7D68C98B87E44014ABB468884D761142C(((L_192)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_193))), ((L_194)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_195))), ((float)(L_196/L_197)), L_198, NULL);
 		// if (sampleMode == SplineComputer.SampleMode.Uniform) result.percent = DMath.Lerp(GetSamplePercent(frontIndex), GetSamplePercent(index), frontProjectDist / frontLength);
-		int32_t L_252 = __this->___sampleMode_2;
-		if ((!(((uint32_t)L_252) == ((uint32_t)1))))
+		int32_t L_199 = __this->___sampleMode_2;
+		if ((!(((uint32_t)L_199) == ((uint32_t)1))))
 		{
-			goto IL_0436;
+			goto IL_0494;
 		}
 	}
 	{
 		// if (sampleMode == SplineComputer.SampleMode.Uniform) result.percent = DMath.Lerp(GetSamplePercent(frontIndex), GetSamplePercent(index), frontProjectDist / frontLength);
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_253 = ___result2;
-		int32_t L_254 = V_10;
-		double L_255;
-		L_255 = SampleCollection_GetSamplePercent_m786D6EBE7E0B8497A7A61C7C9383369EBF521DE0(__this, L_254, NULL);
-		int32_t L_256 = V_8;
-		double L_257;
-		L_257 = SampleCollection_GetSamplePercent_m786D6EBE7E0B8497A7A61C7C9383369EBF521DE0(__this, L_256, NULL);
-		float L_258 = V_16;
-		float L_259 = V_14;
-		double L_260;
-		L_260 = DMath_Lerp_mCDB4B52E6B47DA3EE2EE07BA18FB351804E38ED9(L_255, L_257, ((double)((float)(L_258/L_259))), NULL);
-		NullCheck(L_253);
-		L_253->___percent_5 = L_260;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_200 = ___result2;
+		int32_t L_201 = V_10;
+		double L_202;
+		L_202 = SampleCollection_GetSamplePercent_m786D6EBE7E0B8497A7A61C7C9383369EBF521DE0(__this, L_201, NULL);
+		int32_t L_203 = V_8;
+		double L_204;
+		L_204 = SampleCollection_GetSamplePercent_m786D6EBE7E0B8497A7A61C7C9383369EBF521DE0(__this, L_203, NULL);
+		float L_205 = V_16;
+		float L_206 = V_14;
+		double L_207;
+		L_207 = DMath_Lerp_mCDB4B52E6B47DA3EE2EE07BA18FB351804E38ED9(L_202, L_204, ((double)((float)(L_205/L_206))), NULL);
+		L_200->___percent_5 = L_207;
 	}
 
-IL_0436:
+IL_0494:
 	{
-		// if (Count > 1 && from == 0.0 && to == 1.0 && result.percent < samples[1].percent) //Handle looped splines
-		int32_t L_261;
-		L_261 = SampleCollection_get_Count_m4CD74F577287B307B57A1E6A07AA4A7D5032128F(__this, NULL);
-		if ((((int32_t)L_261) <= ((int32_t)1)))
+		// if (samples.Length > 1 && from == 0.0 && to == 1.0 && result.percent < samples[1].percent) //Handle looped splines
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_208 = __this->___samples_0;
+		NullCheck(L_208);
+		if ((((int32_t)((int32_t)(((RuntimeArray*)L_208)->max_length))) <= ((int32_t)1)))
 		{
-			goto IL_055f;
+			goto IL_05eb;
 		}
 	}
 	{
-		double L_262 = ___from3;
-		if ((!(((double)L_262) == ((double)(0.0)))))
+		double L_209 = ___from3;
+		if ((!(((double)L_209) == ((double)(0.0)))))
 		{
-			goto IL_055f;
+			goto IL_05eb;
 		}
 	}
 	{
-		double L_263 = ___to4;
-		if ((!(((double)L_263) == ((double)(1.0)))))
+		double L_210 = ___to4;
+		if ((!(((double)L_210) == ((double)(1.0)))))
 		{
-			goto IL_055f;
+			goto IL_05eb;
 		}
 	}
 	{
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_264 = ___result2;
-		NullCheck(L_264);
-		double L_265 = L_264->___percent_5;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_266 = __this->___samples_0;
-		NullCheck(L_266);
-		int32_t L_267 = 1;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_268 = (L_266)->GetAt(static_cast<il2cpp_array_size_t>(L_267));
-		NullCheck(L_268);
-		double L_269 = L_268->___percent_5;
-		if ((!(((double)L_265) < ((double)L_269))))
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_211 = ___result2;
+		double L_212 = L_211->___percent_5;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_213 = __this->___samples_0;
+		NullCheck(L_213);
+		double L_214 = ((L_213)->GetAddressAt(static_cast<il2cpp_array_size_t>(1)))->___percent_5;
+		if ((!(((double)L_212) < ((double)L_214))))
 		{
-			goto IL_055f;
+			goto IL_05eb;
 		}
 	}
 	{
-		// Vector3 projected = LinearAlgebraUtility.ProjectOnLine(samples[Count - 1].position, samples[Count - 2].position, position);
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_270 = __this->___samples_0;
-		int32_t L_271;
-		L_271 = SampleCollection_get_Count_m4CD74F577287B307B57A1E6A07AA4A7D5032128F(__this, NULL);
-		NullCheck(L_270);
-		int32_t L_272 = ((int32_t)il2cpp_codegen_subtract(L_271, 1));
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_273 = (L_270)->GetAt(static_cast<il2cpp_array_size_t>(L_272));
-		NullCheck(L_273);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_274 = L_273->___position_0;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_275 = __this->___samples_0;
-		int32_t L_276;
-		L_276 = SampleCollection_get_Count_m4CD74F577287B307B57A1E6A07AA4A7D5032128F(__this, NULL);
-		NullCheck(L_275);
-		int32_t L_277 = ((int32_t)il2cpp_codegen_subtract(L_276, 2));
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_278 = (L_275)->GetAt(static_cast<il2cpp_array_size_t>(L_277));
-		NullCheck(L_278);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_279 = L_278->___position_0;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_280 = ___position0;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_281;
-		L_281 = LinearAlgebraUtility_ProjectOnLine_m5A6BF6DD69841B252A2A1D18F802453BACAAE278(L_274, L_279, L_280, NULL);
-		V_23 = L_281;
+		// Vector3 projected = LinearAlgebraUtility.ProjectOnLine(samples[samples.Length - 1].position, samples[samples.Length - 2].position, position);
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_215 = __this->___samples_0;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_216 = __this->___samples_0;
+		NullCheck(L_216);
+		NullCheck(L_215);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_217 = ((L_215)->GetAddressAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_216)->max_length)), 1)))))->___position_0;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_218 = __this->___samples_0;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_219 = __this->___samples_0;
+		NullCheck(L_219);
+		NullCheck(L_218);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_220 = ((L_218)->GetAddressAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_219)->max_length)), 2)))))->___position_0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_221 = ___position0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_222;
+		L_222 = LinearAlgebraUtility_ProjectOnLine_m5A6BF6DD69841B252A2A1D18F802453BACAAE278(L_217, L_220, L_221, NULL);
+		V_23 = L_222;
 		// if ((position - projected).sqrMagnitude < (position - result.position).sqrMagnitude)
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_282 = ___position0;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_283 = V_23;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_284;
-		L_284 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_282, L_283, NULL);
-		V_17 = L_284;
-		float L_285;
-		L_285 = Vector3_get_sqrMagnitude_m43C27DEC47C4811FB30AB474FF2131A963B66FC8_inline((&V_17), NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_286 = ___position0;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_287 = ___result2;
-		NullCheck(L_287);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_288 = L_287->___position_0;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_289;
-		L_289 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_286, L_288, NULL);
-		V_17 = L_289;
-		float L_290;
-		L_290 = Vector3_get_sqrMagnitude_m43C27DEC47C4811FB30AB474FF2131A963B66FC8_inline((&V_17), NULL);
-		if ((!(((float)L_285) < ((float)L_290))))
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_223 = ___position0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_224 = V_23;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_225;
+		L_225 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_223, L_224, NULL);
+		V_17 = L_225;
+		float L_226;
+		L_226 = Vector3_get_sqrMagnitude_m43C27DEC47C4811FB30AB474FF2131A963B66FC8_inline((&V_17), NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_227 = ___position0;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_228 = ___result2;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_229 = L_228->___position_0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_230;
+		L_230 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_227, L_229, NULL);
+		V_17 = L_230;
+		float L_231;
+		L_231 = Vector3_get_sqrMagnitude_m43C27DEC47C4811FB30AB474FF2131A963B66FC8_inline((&V_17), NULL);
+		if ((!(((float)L_226) < ((float)L_231))))
 		{
-			goto IL_055f;
+			goto IL_05eb;
 		}
 	}
 	{
-		// double l = LinearAlgebraUtility.InverseLerp(samples[Count - 1].position, samples[Count - 2].position, projected);
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_291 = __this->___samples_0;
-		int32_t L_292;
-		L_292 = SampleCollection_get_Count_m4CD74F577287B307B57A1E6A07AA4A7D5032128F(__this, NULL);
-		NullCheck(L_291);
-		int32_t L_293 = ((int32_t)il2cpp_codegen_subtract(L_292, 1));
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_294 = (L_291)->GetAt(static_cast<il2cpp_array_size_t>(L_293));
-		NullCheck(L_294);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_295 = L_294->___position_0;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_296 = __this->___samples_0;
-		int32_t L_297;
-		L_297 = SampleCollection_get_Count_m4CD74F577287B307B57A1E6A07AA4A7D5032128F(__this, NULL);
-		NullCheck(L_296);
-		int32_t L_298 = ((int32_t)il2cpp_codegen_subtract(L_297, 2));
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_299 = (L_296)->GetAt(static_cast<il2cpp_array_size_t>(L_298));
-		NullCheck(L_299);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_300 = L_299->___position_0;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_301 = V_23;
-		float L_302;
-		L_302 = LinearAlgebraUtility_InverseLerp_m09FCFA5329C5F9B0FBE3E4D2BE69D4C4108F7968(L_295, L_300, L_301, NULL);
-		V_24 = ((double)L_302);
-		// SplineSample.Lerp(samples[Count - 1], samples[Count - 2], l, result);
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_303 = __this->___samples_0;
-		int32_t L_304;
-		L_304 = SampleCollection_get_Count_m4CD74F577287B307B57A1E6A07AA4A7D5032128F(__this, NULL);
-		NullCheck(L_303);
-		int32_t L_305 = ((int32_t)il2cpp_codegen_subtract(L_304, 1));
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_306 = (L_303)->GetAt(static_cast<il2cpp_array_size_t>(L_305));
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_307 = __this->___samples_0;
-		int32_t L_308;
-		L_308 = SampleCollection_get_Count_m4CD74F577287B307B57A1E6A07AA4A7D5032128F(__this, NULL);
-		NullCheck(L_307);
-		int32_t L_309 = ((int32_t)il2cpp_codegen_subtract(L_308, 2));
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_310 = (L_307)->GetAt(static_cast<il2cpp_array_size_t>(L_309));
-		double L_311 = V_24;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_312 = ___result2;
-		SplineSample_Lerp_m110B177EE8A19CE9EA649E4C799D2124CFD2D3CF(L_306, L_310, L_311, L_312, NULL);
-		// if (sampleMode == SplineComputer.SampleMode.Uniform) result.percent = DMath.Lerp(GetSamplePercent(Count - 1), GetSamplePercent(Count - 2), l);
-		int32_t L_313 = __this->___sampleMode_2;
-		if ((!(((uint32_t)L_313) == ((uint32_t)1))))
+		// double l = LinearAlgebraUtility.InverseLerp(samples[samples.Length - 1].position, samples[samples.Length - 2].position, projected);
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_232 = __this->___samples_0;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_233 = __this->___samples_0;
+		NullCheck(L_233);
+		NullCheck(L_232);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_234 = ((L_232)->GetAddressAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_233)->max_length)), 1)))))->___position_0;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_235 = __this->___samples_0;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_236 = __this->___samples_0;
+		NullCheck(L_236);
+		NullCheck(L_235);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_237 = ((L_235)->GetAddressAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_236)->max_length)), 2)))))->___position_0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_238 = V_23;
+		float L_239;
+		L_239 = LinearAlgebraUtility_InverseLerp_m09FCFA5329C5F9B0FBE3E4D2BE69D4C4108F7968(L_234, L_237, L_238, NULL);
+		V_24 = ((double)L_239);
+		// SplineSample.Lerp(ref samples[samples.Length - 1], ref samples[samples.Length - 2], l, ref result);
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_240 = __this->___samples_0;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_241 = __this->___samples_0;
+		NullCheck(L_241);
+		NullCheck(L_240);
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_242 = __this->___samples_0;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_243 = __this->___samples_0;
+		NullCheck(L_243);
+		NullCheck(L_242);
+		double L_244 = V_24;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_245 = ___result2;
+		SplineSample_Lerp_mDC2046D9C41B063337F15327E3B8FF688E8C4352(((L_240)->GetAddressAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_241)->max_length)), 1))))), ((L_242)->GetAddressAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_243)->max_length)), 2))))), L_244, L_245, NULL);
+		// if (sampleMode == SplineComputer.SampleMode.Uniform) result.percent = DMath.Lerp(GetSamplePercent(samples.Length - 1), GetSamplePercent(samples.Length - 2), l);
+		int32_t L_246 = __this->___sampleMode_2;
+		if ((!(((uint32_t)L_246) == ((uint32_t)1))))
 		{
-			goto IL_055f;
+			goto IL_05eb;
 		}
 	}
 	{
-		// if (sampleMode == SplineComputer.SampleMode.Uniform) result.percent = DMath.Lerp(GetSamplePercent(Count - 1), GetSamplePercent(Count - 2), l);
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_314 = ___result2;
-		int32_t L_315;
-		L_315 = SampleCollection_get_Count_m4CD74F577287B307B57A1E6A07AA4A7D5032128F(__this, NULL);
-		double L_316;
-		L_316 = SampleCollection_GetSamplePercent_m786D6EBE7E0B8497A7A61C7C9383369EBF521DE0(__this, ((int32_t)il2cpp_codegen_subtract(L_315, 1)), NULL);
-		int32_t L_317;
-		L_317 = SampleCollection_get_Count_m4CD74F577287B307B57A1E6A07AA4A7D5032128F(__this, NULL);
-		double L_318;
-		L_318 = SampleCollection_GetSamplePercent_m786D6EBE7E0B8497A7A61C7C9383369EBF521DE0(__this, ((int32_t)il2cpp_codegen_subtract(L_317, 2)), NULL);
-		double L_319 = V_24;
-		double L_320;
-		L_320 = DMath_Lerp_mCDB4B52E6B47DA3EE2EE07BA18FB351804E38ED9(L_316, L_318, L_319, NULL);
-		NullCheck(L_314);
-		L_314->___percent_5 = L_320;
+		// if (sampleMode == SplineComputer.SampleMode.Uniform) result.percent = DMath.Lerp(GetSamplePercent(samples.Length - 1), GetSamplePercent(samples.Length - 2), l);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_247 = ___result2;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_248 = __this->___samples_0;
+		NullCheck(L_248);
+		double L_249;
+		L_249 = SampleCollection_GetSamplePercent_m786D6EBE7E0B8497A7A61C7C9383369EBF521DE0(__this, ((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_248)->max_length)), 1)), NULL);
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_250 = __this->___samples_0;
+		NullCheck(L_250);
+		double L_251;
+		L_251 = SampleCollection_GetSamplePercent_m786D6EBE7E0B8497A7A61C7C9383369EBF521DE0(__this, ((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_250)->max_length)), 2)), NULL);
+		double L_252 = V_24;
+		double L_253;
+		L_253 = DMath_Lerp_mCDB4B52E6B47DA3EE2EE07BA18FB351804E38ED9(L_249, L_251, L_252, NULL);
+		L_247->___percent_5 = L_253;
 	}
 
-IL_055f:
+IL_05eb:
 	{
 		// }
 		return;
@@ -20074,7 +20529,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double SampleCollection_GetSamplePercent_m786
 		int32_t L_0 = __this->___sampleMode_2;
 		if ((!(((uint32_t)L_0) == ((uint32_t)2))))
 		{
-			goto IL_001e;
+			goto IL_0022;
 		}
 	}
 	{
@@ -20086,20 +20541,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double SampleCollection_GetSamplePercent_m786
 		int32_t L_4 = L_3;
 		int32_t L_5 = (L_2)->GetAt(static_cast<il2cpp_array_size_t>(L_4));
 		NullCheck(L_1);
-		int32_t L_6 = L_5;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_7 = (L_1)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
-		NullCheck(L_7);
-		double L_8 = L_7->___percent_5;
-		return L_8;
+		double L_6 = ((L_1)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_5)))->___percent_5;
+		return L_6;
 	}
 
-IL_001e:
+IL_0022:
 	{
-		// return (double)sampleIndex / (Count - 1);
-		int32_t L_9 = ___sampleIndex0;
-		int32_t L_10;
-		L_10 = SampleCollection_get_Count_m4CD74F577287B307B57A1E6A07AA4A7D5032128F(__this, NULL);
-		return ((double)(((double)L_9)/((double)((int32_t)il2cpp_codegen_subtract(L_10, 1)))));
+		// return (double)sampleIndex / (samples.Length - 1);
+		int32_t L_7 = ___sampleIndex0;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_8 = __this->___samples_0;
+		NullCheck(L_8);
+		return ((double)(((double)L_7)/((double)((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_8)->max_length)), 1)))));
 	}
 }
 // System.Single Dreamteck.Splines.SampleCollection::CalculateLength(System.Double,System.Double)
@@ -20118,6 +20570,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float SampleCollection_CalculateLength_m3F7C0
 	int32_t V_3 = 0;
 	double V_4 = 0.0;
 	int32_t V_5 = 0;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_6;
+	memset((&V_6), 0, sizeof(V_6));
 	{
 		// if (!hasSamples) return 0f;
 		bool L_0;
@@ -20139,7 +20593,7 @@ IL_000e:
 		Spline_FormatFromTo_m22E4F3E55C75E1ADE65714E8C8B27E3C535F9B04((&___from0), (&___to1), (bool)1, NULL);
 		// float length = 0f;
 		V_0 = (0.0f);
-		// Vector3 pos = EvaluatePosition(from);
+		// Vector3 lastPos = EvaluatePosition(from);
 		double L_1 = ___from0;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2;
 		L_2 = SampleCollection_EvaluatePosition_m5F4239473DA1391082355974BCA8D5FE36981595(__this, L_1, NULL);
@@ -20150,7 +20604,7 @@ IL_000e:
 		// GetSamplingValues(to, out toIndex, out lerp);
 		double L_4 = ___to1;
 		SampleCollection_GetSamplingValues_mEFAC249D9870E0F0EE0CFC9637EF39BBC68AE843(__this, L_4, (&V_3), (&V_4), NULL);
-		// if (lerp > 0.0 && toIndex < Count - 1)
+		// if (lerp > 0.0 && toIndex < this.length - 1)
 		double L_5 = V_4;
 		if ((!(((double)L_5) > ((double)(0.0)))))
 		{
@@ -20160,7 +20614,7 @@ IL_000e:
 	{
 		int32_t L_6 = V_3;
 		int32_t L_7;
-		L_7 = SampleCollection_get_Count_m4CD74F577287B307B57A1E6A07AA4A7D5032128F(__this, NULL);
+		L_7 = SampleCollection_get_length_mB42A3EAF2CB5B8F16CBF5D91048A6DC72A17BD3B(__this, NULL);
 		if ((((int32_t)L_6) >= ((int32_t)((int32_t)il2cpp_codegen_subtract(L_7, 1)))))
 		{
 			goto IL_0058;
@@ -20177,61 +20631,55 @@ IL_0058:
 		// for (int i = fromIndex+1; i < toIndex; i++)
 		int32_t L_9 = V_2;
 		V_5 = ((int32_t)il2cpp_codegen_add(L_9, 1));
-		goto IL_008b;
+		goto IL_0087;
 	}
 
 IL_005f:
 	{
-		// length += Vector3.Distance(samples[i].position, pos);
-		float L_10 = V_0;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_11 = __this->___samples_0;
-		int32_t L_12 = V_5;
-		NullCheck(L_11);
-		int32_t L_13 = L_12;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_14 = (L_11)->GetAt(static_cast<il2cpp_array_size_t>(L_13));
-		NullCheck(L_14);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_15 = L_14->___position_0;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_16 = V_1;
-		float L_17;
-		L_17 = Vector3_Distance_m2314DB9B8BD01157E013DF87BEA557375C7F9FF9_inline(L_15, L_16, NULL);
-		V_0 = ((float)il2cpp_codegen_add(L_10, L_17));
-		// pos = samples[i].position;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_18 = __this->___samples_0;
-		int32_t L_19 = V_5;
-		NullCheck(L_18);
-		int32_t L_20 = L_19;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_21 = (L_18)->GetAt(static_cast<il2cpp_array_size_t>(L_20));
-		NullCheck(L_21);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_22 = L_21->___position_0;
-		V_1 = L_22;
+		// Vector3 currentPos = samples[i].position;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_10 = __this->___samples_0;
+		int32_t L_11 = V_5;
+		NullCheck(L_10);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12 = ((L_10)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_11)))->___position_0;
+		V_6 = L_12;
+		// length += Vector3.Distance(currentPos, lastPos);
+		float L_13 = V_0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_14 = V_6;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_15 = V_1;
+		float L_16;
+		L_16 = Vector3_Distance_m2314DB9B8BD01157E013DF87BEA557375C7F9FF9_inline(L_14, L_15, NULL);
+		V_0 = ((float)il2cpp_codegen_add(L_13, L_16));
+		// lastPos = currentPos;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_17 = V_6;
+		V_1 = L_17;
 		// for (int i = fromIndex+1; i < toIndex; i++)
-		int32_t L_23 = V_5;
-		V_5 = ((int32_t)il2cpp_codegen_add(L_23, 1));
+		int32_t L_18 = V_5;
+		V_5 = ((int32_t)il2cpp_codegen_add(L_18, 1));
 	}
 
-IL_008b:
+IL_0087:
 	{
 		// for (int i = fromIndex+1; i < toIndex; i++)
-		int32_t L_24 = V_5;
-		int32_t L_25 = V_3;
-		if ((((int32_t)L_24) < ((int32_t)L_25)))
+		int32_t L_19 = V_5;
+		int32_t L_20 = V_3;
+		if ((((int32_t)L_19) < ((int32_t)L_20)))
 		{
 			goto IL_005f;
 		}
 	}
 	{
-		// length += Vector3.Distance(EvaluatePosition(to), pos);
-		float L_26 = V_0;
-		double L_27 = ___to1;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_28;
-		L_28 = SampleCollection_EvaluatePosition_m5F4239473DA1391082355974BCA8D5FE36981595(__this, L_27, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_29 = V_1;
-		float L_30;
-		L_30 = Vector3_Distance_m2314DB9B8BD01157E013DF87BEA557375C7F9FF9_inline(L_28, L_29, NULL);
-		V_0 = ((float)il2cpp_codegen_add(L_26, L_30));
+		// length += Vector3.Distance(EvaluatePosition(to), lastPos);
+		float L_21 = V_0;
+		double L_22 = ___to1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_23;
+		L_23 = SampleCollection_EvaluatePosition_m5F4239473DA1391082355974BCA8D5FE36981595(__this, L_22, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_24 = V_1;
+		float L_25;
+		L_25 = Vector3_Distance_m2314DB9B8BD01157E013DF87BEA557375C7F9FF9_inline(L_23, L_24, NULL);
+		V_0 = ((float)il2cpp_codegen_add(L_21, L_25));
 		// return length;
-		float L_31 = V_0;
-		return L_31;
+		float L_26 = V_0;
+		return L_26;
 	}
 }
 // System.Single Dreamteck.Splines.SampleCollection::CalculateLengthWithOffset(UnityEngine.Vector3,System.Double,System.Double)
@@ -20273,46 +20721,39 @@ IL_000e:
 		Spline_FormatFromTo_m22E4F3E55C75E1ADE65714E8C8B27E3C535F9B04((&___from1), (&___to2), (bool)1, NULL);
 		// float length = 0f;
 		V_0 = (0.0f);
-		// Evaluate(from, _workSample);
+		// Evaluate(from, ref _workSample);
 		double L_1 = ___from1;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_2 = __this->____workSample_3;
-		SampleCollection_Evaluate_mF6024ABA400EE30B80F468DCF53A1C28ACE21306(__this, L_1, L_2, NULL);
-		// Vector3 pos = _workSample.position + _workSample.up * (offset.y * _workSample.size) + _workSample.right * (offset.x * _workSample.size) + _workSample.forward * (offset.z * _workSample.size);
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_3 = __this->____workSample_3;
-		NullCheck(L_3);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_2 = (&__this->____workSample_3);
+		SampleCollection_Evaluate_mAAC912C0D30624A4CE054FDD16943264D579BD20(__this, L_1, L_2, NULL);
+		// Vector3 lastPos = _workSample.position + _workSample.up * (offset.y * _workSample.size) + _workSample.right * (offset.x * _workSample.size) + _workSample.forward * (offset.z * _workSample.size);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_3 = (&__this->____workSample_3);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = L_3->___position_0;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_5 = __this->____workSample_3;
-		NullCheck(L_5);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_5 = (&__this->____workSample_3);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = L_5->___up_1;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_7 = ___offset0;
 		float L_8 = L_7.___y_3;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_9 = __this->____workSample_3;
-		NullCheck(L_9);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_9 = (&__this->____workSample_3);
 		float L_10 = L_9->___size_4;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_11;
 		L_11 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_6, ((float)il2cpp_codegen_multiply(L_8, L_10)), NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12;
 		L_12 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_4, L_11, NULL);
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_13 = __this->____workSample_3;
-		NullCheck(L_13);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_13 = (&__this->____workSample_3);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_14;
 		L_14 = SplineSample_get_right_mEAF1BE463979ED78C482FEADFCCE3E694E3DA491(L_13, NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_15 = ___offset0;
 		float L_16 = L_15.___x_2;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_17 = __this->____workSample_3;
-		NullCheck(L_17);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_17 = (&__this->____workSample_3);
 		float L_18 = L_17->___size_4;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_19;
 		L_19 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_14, ((float)il2cpp_codegen_multiply(L_16, L_18)), NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_20;
 		L_20 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_12, L_19, NULL);
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_21 = __this->____workSample_3;
-		NullCheck(L_21);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_21 = (&__this->____workSample_3);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_22 = L_21->___forward_2;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_23 = ___offset0;
 		float L_24 = L_23.___z_4;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_25 = __this->____workSample_3;
-		NullCheck(L_25);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_25 = (&__this->____workSample_3);
 		float L_26 = L_25->___size_4;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_27;
 		L_27 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_22, ((float)il2cpp_codegen_multiply(L_24, L_26)), NULL);
@@ -20325,7 +20766,7 @@ IL_000e:
 		// GetSamplingValues(to, out toIndex, out lerp);
 		double L_30 = ___to2;
 		SampleCollection_GetSamplingValues_mEFAC249D9870E0F0EE0CFC9637EF39BBC68AE843(__this, L_30, (&V_3), (&V_4), NULL);
-		// if (lerp > 0.0 && toIndex < Count - 1)
+		// if (lerp > 0.0 && toIndex < this.length - 1)
 		double L_31 = V_4;
 		if ((!(((double)L_31) > ((double)(0.0)))))
 		{
@@ -20335,7 +20776,7 @@ IL_000e:
 	{
 		int32_t L_32 = V_3;
 		int32_t L_33;
-		L_33 = SampleCollection_get_Count_m4CD74F577287B307B57A1E6A07AA4A7D5032128F(__this, NULL);
+		L_33 = SampleCollection_get_length_mB42A3EAF2CB5B8F16CBF5D91048A6DC72A17BD3B(__this, NULL);
 		if ((((int32_t)L_32) >= ((int32_t)((int32_t)il2cpp_codegen_subtract(L_33, 1)))))
 		{
 			goto IL_00de;
@@ -20352,7 +20793,7 @@ IL_00de:
 		// for (int i = fromIndex + 1; i < toIndex; i++)
 		int32_t L_35 = V_2;
 		V_5 = ((int32_t)il2cpp_codegen_add(L_35, 1));
-		goto IL_0193;
+		goto IL_01af;
 	}
 
 IL_00e8:
@@ -20361,158 +20802,129 @@ IL_00e8:
 		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_36 = __this->___samples_0;
 		int32_t L_37 = V_5;
 		NullCheck(L_36);
-		int32_t L_38 = L_37;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_39 = (L_36)->GetAt(static_cast<il2cpp_array_size_t>(L_38));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_38 = ((L_36)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_37)))->___position_0;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_39 = __this->___samples_0;
+		int32_t L_40 = V_5;
 		NullCheck(L_39);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_40 = L_39->___position_0;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_41 = __this->___samples_0;
-		int32_t L_42 = V_5;
-		NullCheck(L_41);
-		int32_t L_43 = L_42;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_44 = (L_41)->GetAt(static_cast<il2cpp_array_size_t>(L_43));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_41 = ((L_39)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_40)))->___up_1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_42 = ___offset0;
+		float L_43 = L_42.___y_3;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_44 = __this->___samples_0;
+		int32_t L_45 = V_5;
 		NullCheck(L_44);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_45 = L_44->___up_1;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_46 = ___offset0;
-		float L_47 = L_46.___y_3;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_48 = __this->___samples_0;
-		int32_t L_49 = V_5;
-		NullCheck(L_48);
-		int32_t L_50 = L_49;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_51 = (L_48)->GetAt(static_cast<il2cpp_array_size_t>(L_50));
-		NullCheck(L_51);
-		float L_52 = L_51->___size_4;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_53;
-		L_53 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_45, ((float)il2cpp_codegen_multiply(L_47, L_52)), NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_54;
-		L_54 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_40, L_53, NULL);
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_55 = __this->___samples_0;
-		int32_t L_56 = V_5;
-		NullCheck(L_55);
-		int32_t L_57 = L_56;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_58 = (L_55)->GetAt(static_cast<il2cpp_array_size_t>(L_57));
-		NullCheck(L_58);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_59;
-		L_59 = SplineSample_get_right_mEAF1BE463979ED78C482FEADFCCE3E694E3DA491(L_58, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_60 = ___offset0;
-		float L_61 = L_60.___x_2;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_62 = __this->___samples_0;
-		int32_t L_63 = V_5;
-		NullCheck(L_62);
-		int32_t L_64 = L_63;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_65 = (L_62)->GetAt(static_cast<il2cpp_array_size_t>(L_64));
-		NullCheck(L_65);
-		float L_66 = L_65->___size_4;
+		float L_46 = ((L_44)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_45)))->___size_4;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_47;
+		L_47 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_41, ((float)il2cpp_codegen_multiply(L_43, L_46)), NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_48;
+		L_48 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_38, L_47, NULL);
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_49 = __this->___samples_0;
+		int32_t L_50 = V_5;
+		NullCheck(L_49);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_51;
+		L_51 = SplineSample_get_right_mEAF1BE463979ED78C482FEADFCCE3E694E3DA491(((L_49)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_50))), NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_52 = ___offset0;
+		float L_53 = L_52.___x_2;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_54 = __this->___samples_0;
+		int32_t L_55 = V_5;
+		NullCheck(L_54);
+		float L_56 = ((L_54)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_55)))->___size_4;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_57;
+		L_57 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_51, ((float)il2cpp_codegen_multiply(L_53, L_56)), NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_58;
+		L_58 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_48, L_57, NULL);
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_59 = __this->___samples_0;
+		int32_t L_60 = V_5;
+		NullCheck(L_59);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_61 = ((L_59)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_60)))->___forward_2;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_62 = ___offset0;
+		float L_63 = L_62.___z_4;
+		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_64 = __this->___samples_0;
+		int32_t L_65 = V_5;
+		NullCheck(L_64);
+		float L_66 = ((L_64)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_65)))->___size_4;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_67;
-		L_67 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_59, ((float)il2cpp_codegen_multiply(L_61, L_66)), NULL);
+		L_67 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_61, ((float)il2cpp_codegen_multiply(L_63, L_66)), NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_68;
-		L_68 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_54, L_67, NULL);
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_69 = __this->___samples_0;
-		int32_t L_70 = V_5;
-		NullCheck(L_69);
-		int32_t L_71 = L_70;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_72 = (L_69)->GetAt(static_cast<il2cpp_array_size_t>(L_71));
-		NullCheck(L_72);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_73 = L_72->___forward_2;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_74 = ___offset0;
-		float L_75 = L_74.___z_4;
-		SplineSampleU5BU5D_tB493CC7910756D46A1100238E91C55D5578FE1CF* L_76 = __this->___samples_0;
-		int32_t L_77 = V_5;
-		NullCheck(L_76);
-		int32_t L_78 = L_77;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_79 = (L_76)->GetAt(static_cast<il2cpp_array_size_t>(L_78));
-		NullCheck(L_79);
-		float L_80 = L_79->___size_4;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_81;
-		L_81 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_73, ((float)il2cpp_codegen_multiply(L_75, L_80)), NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_82;
-		L_82 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_68, L_81, NULL);
-		V_6 = L_82;
-		// length += Vector3.Distance(newPos, pos);
-		float L_83 = V_0;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_84 = V_6;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_85 = V_1;
-		float L_86;
-		L_86 = Vector3_Distance_m2314DB9B8BD01157E013DF87BEA557375C7F9FF9_inline(L_84, L_85, NULL);
-		V_0 = ((float)il2cpp_codegen_add(L_83, L_86));
-		// pos = newPos;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_87 = V_6;
-		V_1 = L_87;
+		L_68 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_58, L_67, NULL);
+		V_6 = L_68;
+		// length += Vector3.Distance(newPos, lastPos);
+		float L_69 = V_0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_70 = V_6;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_71 = V_1;
+		float L_72;
+		L_72 = Vector3_Distance_m2314DB9B8BD01157E013DF87BEA557375C7F9FF9_inline(L_70, L_71, NULL);
+		V_0 = ((float)il2cpp_codegen_add(L_69, L_72));
+		// lastPos = newPos;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_73 = V_6;
+		V_1 = L_73;
 		// for (int i = fromIndex + 1; i < toIndex; i++)
-		int32_t L_88 = V_5;
-		V_5 = ((int32_t)il2cpp_codegen_add(L_88, 1));
+		int32_t L_74 = V_5;
+		V_5 = ((int32_t)il2cpp_codegen_add(L_74, 1));
 	}
 
-IL_0193:
+IL_01af:
 	{
 		// for (int i = fromIndex + 1; i < toIndex; i++)
-		int32_t L_89 = V_5;
-		int32_t L_90 = V_3;
-		if ((((int32_t)L_89) < ((int32_t)L_90)))
+		int32_t L_75 = V_5;
+		int32_t L_76 = V_3;
+		if ((((int32_t)L_75) < ((int32_t)L_76)))
 		{
 			goto IL_00e8;
 		}
 	}
 	{
-		// Evaluate(to, _workSample);
-		double L_91 = ___to2;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_92 = __this->____workSample_3;
-		SampleCollection_Evaluate_mF6024ABA400EE30B80F468DCF53A1C28ACE21306(__this, L_91, L_92, NULL);
+		// Evaluate(to, ref _workSample);
+		double L_77 = ___to2;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_78 = (&__this->____workSample_3);
+		SampleCollection_Evaluate_mAAC912C0D30624A4CE054FDD16943264D579BD20(__this, L_77, L_78, NULL);
 		// _workSample.position += _workSample.up * (offset.y * _workSample.size) + _workSample.right * (offset.x * _workSample.size) + _workSample.forward * (offset.z * _workSample.size);
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_93 = __this->____workSample_3;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_94 = L_93;
-		NullCheck(L_94);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_95 = L_94->___position_0;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_96 = __this->____workSample_3;
-		NullCheck(L_96);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_97 = L_96->___up_1;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_98 = ___offset0;
-		float L_99 = L_98.___y_3;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_100 = __this->____workSample_3;
-		NullCheck(L_100);
-		float L_101 = L_100->___size_4;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_102;
-		L_102 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_97, ((float)il2cpp_codegen_multiply(L_99, L_101)), NULL);
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_103 = __this->____workSample_3;
-		NullCheck(L_103);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_79 = (&__this->____workSample_3);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_80 = (&L_79->___position_0);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_81 = L_80;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_82 = (*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_81);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_83 = (&__this->____workSample_3);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_84 = L_83->___up_1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_85 = ___offset0;
+		float L_86 = L_85.___y_3;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_87 = (&__this->____workSample_3);
+		float L_88 = L_87->___size_4;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_89;
+		L_89 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_84, ((float)il2cpp_codegen_multiply(L_86, L_88)), NULL);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_90 = (&__this->____workSample_3);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_91;
+		L_91 = SplineSample_get_right_mEAF1BE463979ED78C482FEADFCCE3E694E3DA491(L_90, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_92 = ___offset0;
+		float L_93 = L_92.___x_2;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_94 = (&__this->____workSample_3);
+		float L_95 = L_94->___size_4;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_96;
+		L_96 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_91, ((float)il2cpp_codegen_multiply(L_93, L_95)), NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_97;
+		L_97 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_89, L_96, NULL);
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_98 = (&__this->____workSample_3);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_99 = L_98->___forward_2;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_100 = ___offset0;
+		float L_101 = L_100.___z_4;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_102 = (&__this->____workSample_3);
+		float L_103 = L_102->___size_4;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_104;
-		L_104 = SplineSample_get_right_mEAF1BE463979ED78C482FEADFCCE3E694E3DA491(L_103, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_105 = ___offset0;
-		float L_106 = L_105.___x_2;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_107 = __this->____workSample_3;
-		NullCheck(L_107);
-		float L_108 = L_107->___size_4;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_109;
-		L_109 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_104, ((float)il2cpp_codegen_multiply(L_106, L_108)), NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_110;
-		L_110 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_102, L_109, NULL);
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_111 = __this->____workSample_3;
-		NullCheck(L_111);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_112 = L_111->___forward_2;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_113 = ___offset0;
-		float L_114 = L_113.___z_4;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_115 = __this->____workSample_3;
-		NullCheck(L_115);
-		float L_116 = L_115->___size_4;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_117;
-		L_117 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_112, ((float)il2cpp_codegen_multiply(L_114, L_116)), NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_118;
-		L_118 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_110, L_117, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_119;
-		L_119 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_95, L_118, NULL);
-		NullCheck(L_94);
-		L_94->___position_0 = L_119;
-		// length += Vector3.Distance(_workSample.position, pos);
-		float L_120 = V_0;
-		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_121 = __this->____workSample_3;
-		NullCheck(L_121);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_122 = L_121->___position_0;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_123 = V_1;
-		float L_124;
-		L_124 = Vector3_Distance_m2314DB9B8BD01157E013DF87BEA557375C7F9FF9_inline(L_122, L_123, NULL);
-		V_0 = ((float)il2cpp_codegen_add(L_120, L_124));
+		L_104 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_99, ((float)il2cpp_codegen_multiply(L_101, L_103)), NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_105;
+		L_105 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_97, L_104, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_106;
+		L_106 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_82, L_105, NULL);
+		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_81 = L_106;
+		// length += Vector3.Distance(_workSample.position, lastPos);
+		float L_107 = V_0;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143* L_108 = (&__this->____workSample_3);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_109 = L_108->___position_0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_110 = V_1;
+		float L_111;
+		L_111 = Vector3_Distance_m2314DB9B8BD01157E013DF87BEA557375C7F9FF9_inline(L_109, L_110, NULL);
+		V_0 = ((float)il2cpp_codegen_add(L_107, L_111));
 		// return length;
-		float L_125 = V_0;
-		return L_125;
+		float L_112 = V_0;
+		return L_112;
 	}
 }
 #ifdef __clang__
@@ -20754,7 +21166,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t SplinePoint_get_type_mACD
 {
 	{
 		// get { return _type; }
-		int32_t L_0 = __this->____type_0;
+		int32_t L_0 = __this->____type_1;
 		return L_0;
 	}
 }
@@ -20796,11 +21208,27 @@ IL_0038:
 		return;
 	}
 }
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A* SplinePositioner_get_followTarget_mF4DA2D84E33A70829EFF3AAF12C876487D633715_inline (SplinePositioner_t65907A7478BF746830F2EC0659B5B7AC010129AC* __this, const RuntimeMethod* method) 
+{
+	{
+		// get { return _followTarget; }
+		SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A* L_0 = __this->____followTarget_51;
+		return L_0;
+	}
+}
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t SplinePositioner_get_mode_mE89FF72BE2024DD0A2DEE7155DB5880964BC3240_inline (SplinePositioner_t65907A7478BF746830F2EC0659B5B7AC010129AC* __this, const RuntimeMethod* method) 
 {
 	{
 		// get { return _mode;  }
-		int32_t L_0 = __this->____mode_52;
+		int32_t L_0 = __this->____mode_56;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 SplineTracer_get_result_m8A513BF63623991012285DF1DA233EFD51A76C47_inline (SplineTracer_t9766EB3D9E6D71F61FEAB72E1BB46410C74E989A* __this, const RuntimeMethod* method) 
+{
+	{
+		// get { return _result; }
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 L_0 = __this->____result_42;
 		return L_0;
 	}
 }
@@ -20842,7 +21270,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR double SplineUser_get_clipFrom_m2
 {
 	{
 		// return _clipFrom;
-		double L_0 = __this->____clipFrom_15;
+		double L_0 = __this->____clipFrom_14;
 		return L_0;
 	}
 }
@@ -20850,7 +21278,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR double SplineUser_get_clipTo_mE82
 {
 	{
 		// return _clipTo;
-		double L_0 = __this->____clipTo_16;
+		double L_0 = __this->____clipTo_15;
 		return L_0;
 	}
 }
@@ -20924,11 +21352,19 @@ IL_0009:
 		return L_1;
 	}
 }
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* MeshGenerator_get__tsMesh_m0DCC74C0ABE21DC1F71A558F952607D9F1AF03CC_inline (MeshGenerator_t718A189DF63CD3415551A03D5F28DE13FB113B9E* __this, const RuntimeMethod* method) 
+{
+	{
+		// protected TS_Mesh _tsMesh { get; private set; }
+		TS_Mesh_t29220587F68F74F425DD451797DEFD5D9FC7F969* L_0 = __this->___U3C_tsMeshU3Ek__BackingField_56;
+		return L_0;
+	}
+}
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t SplineUser_get_sampleCount_m72EB98E357EB6A53B94626C14D2F0CAF87997AFC_inline (SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE* __this, const RuntimeMethod* method) 
 {
 	{
 		// get { return _sampleCount; }
-		int32_t L_0 = __this->____sampleCount_24;
+		int32_t L_0 = __this->____sampleCount_25;
 		return L_0;
 	}
 }
@@ -21303,6 +21739,16 @@ IL_0009:
 		return L_1;
 	}
 }
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void TransformModule_set_splineResult_m0DDF74A97858048914CCC84042A3C62E28D4AFD8_inline (TransformModule_t3CAD9DEFF242B9200AC9FA51CF3F3417DCE72A8B* __this, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 ___value0, const RuntimeMethod* method) 
+{
+	{
+		// _splineResult = value;
+		SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 L_0 = ___value0;
+		__this->____splineResult_7 = L_0;
+		// }
+		return;
+	}
+}
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void EmptySplineHandler_Invoke_mE91CF4B98F35A97F8D3227EE70F664A4A9C1D312_inline (EmptySplineHandler_tE478C5FE71C329376B3839120C7312D47A85D9E8* __this, const RuntimeMethod* method) 
 {
 	typedef void (*FunctionPointerType) (RuntimeObject*, const RuntimeMethod*);
@@ -21312,6 +21758,32 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void JunctionHandler_Invoke_m8DF9
 {
 	typedef void (*FunctionPointerType) (RuntimeObject*, List_1_tC286A128F0893DC219DD3E0A289632F1C4EF5791*, const RuntimeMethod*);
 	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___passed0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Dot_mBB86BB940AA0A32FA7D3C02AC42E5BC7095A5D52_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___lhs0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___rhs1, const RuntimeMethod* method) 
+{
+	float V_0 = 0.0f;
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___lhs0;
+		float L_1 = L_0.___x_2;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2 = ___rhs1;
+		float L_3 = L_2.___x_2;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = ___lhs0;
+		float L_5 = L_4.___y_3;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___rhs1;
+		float L_7 = L_6.___y_3;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8 = ___lhs0;
+		float L_9 = L_8.___z_4;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10 = ___rhs1;
+		float L_11 = L_10.___z_4;
+		V_0 = ((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(L_1, L_3)), ((float)il2cpp_codegen_multiply(L_5, L_7)))), ((float)il2cpp_codegen_multiply(L_9, L_11))));
+		goto IL_002d;
+	}
+
+IL_002d:
+	{
+		float L_12 = V_0;
+		return L_12;
+	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool SplineUser_get_autoUpdate_mE971A36D7170716FF13A8BA403EC02986F8D886E_inline (SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE* __this, const RuntimeMethod* method) 
 {
@@ -21325,15 +21797,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t SplineComputer_get_sample
 {
 	{
 		// get { return _sampleMode; }
-		int32_t L_0 = __this->____sampleMode_20;
-		return L_0;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR OffsetModifier_t6750449B324B80EB198DAF68209DDC8F041A363C* SplineUser_get_offsetModifier_mE21C06401900A7944EF4351516BC525EA47F4C8C_inline (SplineUser_tEDB25CC79FE113D73D8649FABA2908AAEEB6C3DE* __this, const RuntimeMethod* method) 
-{
-	{
-		// return _offsetModifier;
-		OffsetModifier_t6750449B324B80EB198DAF68209DDC8F041A363C* L_0 = __this->____offsetModifier_8;
+		int32_t L_0 = __this->____sampleMode_14;
 		return L_0;
 	}
 }
@@ -21618,32 +22082,6 @@ IL_0034:
 		return L_7;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Dot_mBB86BB940AA0A32FA7D3C02AC42E5BC7095A5D52_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___lhs0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___rhs1, const RuntimeMethod* method) 
-{
-	float V_0 = 0.0f;
-	{
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___lhs0;
-		float L_1 = L_0.___x_2;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2 = ___rhs1;
-		float L_3 = L_2.___x_2;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = ___lhs0;
-		float L_5 = L_4.___y_3;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___rhs1;
-		float L_7 = L_6.___y_3;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8 = ___lhs0;
-		float L_9 = L_8.___z_4;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10 = ___rhs1;
-		float L_11 = L_10.___z_4;
-		V_0 = ((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(L_1, L_3)), ((float)il2cpp_codegen_multiply(L_5, L_7)))), ((float)il2cpp_codegen_multiply(L_9, L_11))));
-		goto IL_002d;
-	}
-
-IL_002d:
-	{
-		float L_12 = V_0;
-		return L_12;
-	}
-}
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_get_zero_m32506C40EC2EE7D5D4410BF40D3EE683A3D5F32C_inline (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21670,7 +22108,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t TubeGenerator_get_sides_m
 {
 	{
 		// get { return _sides; }
-		int32_t L_0 = __this->____sides_60;
+		int32_t L_0 = __this->____sides_61;
 		return L_0;
 	}
 }
@@ -21750,7 +22188,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float TubeGenerator_get_capUVScal
 {
 	{
 		// get { return _capUVScale; }
-		float L_0 = __this->____capUVScale_64;
+		float L_0 = __this->____capUVScale_65;
 		return L_0;
 	}
 }
@@ -21834,14 +22272,6 @@ IL_00e5:
 	{
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_65 = V_0;
 		return L_65;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 SplineComputer_get_position_m446882D1914FB13D41458DE237BCF5B685A1F854_inline (SplineComputer_tD91FD662973937372715D22E05E6CD8F7D90CC28* __this, const RuntimeMethod* method) 
-{
-	{
-		// return _lastPosition;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = __this->____lastPosition_30;
-		return L_0;
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_Lerp_m3A906D0530A94FAABB94F0F905E84D99BE85C3F8_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___a0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___b1, float ___t2, const RuntimeMethod* method) 

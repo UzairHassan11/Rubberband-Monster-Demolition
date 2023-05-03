@@ -39,6 +39,7 @@ public class SlingshotController : MonoBehaviour
                 aiming = true;
                 car.TurnDirectionalArrow(true);
                 TurnPercentageText(true);
+                SoundManager.Instance.PlaySound(ClipName.Rope);
             }
         }
         

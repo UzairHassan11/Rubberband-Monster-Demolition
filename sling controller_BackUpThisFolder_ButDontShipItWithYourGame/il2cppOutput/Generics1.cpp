@@ -1255,6 +1255,8 @@ struct Action_1_t2911595D38450EF319BB383454C9CE406D803543;
 struct Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A;
 // System.Action`1<Dreamteck.Splines.SplinePoint>
 struct Action_1_t29D63C42F33E40A5DECE4F5C0C281BD3FA5B7BFC;
+// System.Action`1<Dreamteck.Splines.SplineSample>
+struct Action_1_tE2105168E3D3E865F871A05715865DB79443C23C;
 // System.Action`1<UnityEngine.UIElements.StylePropertyName>
 struct Action_1_t3104132B6015C879F4B3C59428F1B9C5DAAE0FD3;
 // System.Action`1<UnityEngine.UIElements.StyleSheets.StylePropertyValue>
@@ -6643,20 +6645,63 @@ struct Rotate_tE965CA0281A547AB38B881A3416FF97756D3F4D7_marshaled_com
 // Dreamteck.Splines.SplinePoint
 struct SplinePoint_t803756424E55814ED6D69A9F4386106A4334C084 
 {
+	// System.Boolean Dreamteck.Splines.SplinePoint::isDirty
+	bool ___isDirty_0;
 	// Dreamteck.Splines.SplinePoint/Type Dreamteck.Splines.SplinePoint::_type
-	int32_t ____type_0;
+	int32_t ____type_1;
 	// UnityEngine.Vector3 Dreamteck.Splines.SplinePoint::position
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___position_1;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___position_2;
 	// UnityEngine.Color Dreamteck.Splines.SplinePoint::color
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___color_2;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___color_3;
 	// UnityEngine.Vector3 Dreamteck.Splines.SplinePoint::normal
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___normal_3;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___normal_4;
 	// System.Single Dreamteck.Splines.SplinePoint::size
-	float ___size_4;
+	float ___size_5;
 	// UnityEngine.Vector3 Dreamteck.Splines.SplinePoint::tangent
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___tangent_5;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___tangent_6;
 	// UnityEngine.Vector3 Dreamteck.Splines.SplinePoint::tangent2
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___tangent2_6;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___tangent2_7;
+};
+// Native definition for P/Invoke marshalling of Dreamteck.Splines.SplinePoint
+struct SplinePoint_t803756424E55814ED6D69A9F4386106A4334C084_marshaled_pinvoke
+{
+	int32_t ___isDirty_0;
+	int32_t ____type_1;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___position_2;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___color_3;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___normal_4;
+	float ___size_5;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___tangent_6;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___tangent2_7;
+};
+// Native definition for COM marshalling of Dreamteck.Splines.SplinePoint
+struct SplinePoint_t803756424E55814ED6D69A9F4386106A4334C084_marshaled_com
+{
+	int32_t ___isDirty_0;
+	int32_t ____type_1;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___position_2;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___color_3;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___normal_4;
+	float ___size_5;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___tangent_6;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___tangent2_7;
+};
+
+// Dreamteck.Splines.SplineSample
+struct SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 
+{
+	// UnityEngine.Vector3 Dreamteck.Splines.SplineSample::position
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___position_0;
+	// UnityEngine.Vector3 Dreamteck.Splines.SplineSample::up
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___up_1;
+	// UnityEngine.Vector3 Dreamteck.Splines.SplineSample::forward
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___forward_2;
+	// UnityEngine.Color Dreamteck.Splines.SplineSample::color
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___color_3;
+	// System.Single Dreamteck.Splines.SplineSample::size
+	float ___size_4;
+	// System.Double Dreamteck.Splines.SplineSample::percent
+	double ___percent_5;
 };
 
 // UnityEngine.UIElements.StyleSheets.StylePropertyId
@@ -8138,6 +8183,11 @@ struct Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A  : public MulticastDel
 
 // System.Action`1<Dreamteck.Splines.SplinePoint>
 struct Action_1_t29D63C42F33E40A5DECE4F5C0C281BD3FA5B7BFC  : public MulticastDelegate_t
+{
+};
+
+// System.Action`1<Dreamteck.Splines.SplineSample>
+struct Action_1_tE2105168E3D3E865F871A05715865DB79443C23C  : public MulticastDelegate_t
 {
 };
 
@@ -19618,6 +19668,84 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m0FFF5302ACAF73B4490962A0
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m43AF44872EECC69EC183A8CE63913F13C562CED5_gshared (Action_1_t29D63C42F33E40A5DECE4F5C0C281BD3FA5B7BFC* __this, SplinePoint_t803756424E55814ED6D69A9F4386106A4334C084 ___obj0, const RuntimeMethod* method) 
 {
 	typedef void (*FunctionPointerType) (RuntimeObject*, SplinePoint_t803756424E55814ED6D69A9F4386106A4334C084, const RuntimeMethod*);
+	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+void Action_1_Invoke_m39F9A9BA01B4A5F851F6F3AED54178591A40CEDA_Multicast(Action_1_tE2105168E3D3E865F871A05715865DB79443C23C* __this, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 ___obj0, const RuntimeMethod* method)
+{
+	il2cpp_array_size_t length = __this->___delegates_13->max_length;
+	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
+	for (il2cpp_array_size_t i = 0; i < length; i++)
+	{
+		Action_1_tE2105168E3D3E865F871A05715865DB79443C23C* currentDelegate = reinterpret_cast<Action_1_tE2105168E3D3E865F871A05715865DB79443C23C*>(delegatesToInvoke[i]);
+		typedef void (*FunctionPointerType) (RuntimeObject*, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143, const RuntimeMethod*);
+		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
+	}
+}
+void Action_1_Invoke_m39F9A9BA01B4A5F851F6F3AED54178591A40CEDA_OpenInst(Action_1_tE2105168E3D3E865F871A05715865DB79443C23C* __this, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 ___obj0, const RuntimeMethod* method)
+{
+	typedef void (*FunctionPointerType) (SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143, const RuntimeMethod*);
+	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
+}
+void Action_1_Invoke_m39F9A9BA01B4A5F851F6F3AED54178591A40CEDA_OpenStatic(Action_1_tE2105168E3D3E865F871A05715865DB79443C23C* __this, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 ___obj0, const RuntimeMethod* method)
+{
+	typedef void (*FunctionPointerType) (SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143, const RuntimeMethod*);
+	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
+}
+void Action_1_Invoke_m39F9A9BA01B4A5F851F6F3AED54178591A40CEDA_OpenStaticInvoker(Action_1_tE2105168E3D3E865F871A05715865DB79443C23C* __this, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 ___obj0, const RuntimeMethod* method)
+{
+	InvokerActionInvoker1< SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
+}
+void Action_1_Invoke_m39F9A9BA01B4A5F851F6F3AED54178591A40CEDA_ClosedStaticInvoker(Action_1_tE2105168E3D3E865F871A05715865DB79443C23C* __this, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 ___obj0, const RuntimeMethod* method)
+{
+	InvokerActionInvoker2< RuntimeObject*, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
+}
+// System.Void System.Action`1<Dreamteck.Splines.SplineSample>::.ctor(System.Object,System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_mAB6DB7DE595BAD13910091FD9FF0A968F704DA0B_gshared (Action_1_tE2105168E3D3E865F871A05715865DB79443C23C* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
+{
+	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
+	__this->___method_3 = ___method1;
+	__this->___m_target_2 = ___object0;
+	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
+	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
+	__this->___method_code_6 = (intptr_t)__this;
+	if (MethodIsStatic((RuntimeMethod*)___method1))
+	{
+		bool isOpen = parameterCount == 1;
+		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
+			if (isOpen)
+				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m39F9A9BA01B4A5F851F6F3AED54178591A40CEDA_OpenStaticInvoker;
+			else
+				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m39F9A9BA01B4A5F851F6F3AED54178591A40CEDA_ClosedStaticInvoker;
+		else
+			if (isOpen)
+				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m39F9A9BA01B4A5F851F6F3AED54178591A40CEDA_OpenStatic;
+			else
+				{
+					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
+					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
+				}
+	}
+	else
+	{
+		if (___object0 == NULL)
+			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
+		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
+		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
+	}
+	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_m39F9A9BA01B4A5F851F6F3AED54178591A40CEDA_Multicast;
+}
+// System.Void System.Action`1<Dreamteck.Splines.SplineSample>::Invoke(T)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m39F9A9BA01B4A5F851F6F3AED54178591A40CEDA_gshared (Action_1_tE2105168E3D3E865F871A05715865DB79443C23C* __this, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143 ___obj0, const RuntimeMethod* method) 
+{
+	typedef void (*FunctionPointerType) (RuntimeObject*, SplineSample_t608441A65388113877A1DA48BBBDCB6CFD3B1143, const RuntimeMethod*);
 	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
 }
 #ifdef __clang__

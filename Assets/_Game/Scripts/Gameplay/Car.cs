@@ -1,5 +1,7 @@
+using System;
 using _Game.Scripts.Gameplay;
 using Dreamteck.Splines;
+using MoreMountains.NiceVibrations;
 using UnityEngine;
 using VoxelDestruction;
 
@@ -31,6 +33,8 @@ public class Car : MonoBehaviour
 
     [SerializeField] private GameObject []carMeshes;
 
+    private bool isShooted;
+    
     #endregion
 
     #region unity
@@ -49,6 +53,16 @@ public class Car : MonoBehaviour
         {
             _midAirControl.ControlAfterRamp();
         }
+
+        if (isShooted)
+        {
+            if (IfCarStopped())
+            {
+                // do reset work
+                isShooted = false;
+                print("car stopped");
+            }
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -57,13 +71,23 @@ public class Car : MonoBehaviour
         {
             _rigidbody.constraints = RigidbodyConstraints.FreezeRotationZ;
             GameManager.instance.ChangeGameState(GameState.FinalMomentum);
+            MMVibrationManager.Haptic(HapticTypes.MediumImpact);
         }
-        else if (other.CompareTag("Finish"))
+        // else if (other.CompareTag("Finish"))
+        // {
+        //     CameraManager.instance.SetAnimatorState(CamStates.endPoint);
+        //     MMVibrationManager.Haptic(HapticTypes.HeavyImpact);
+        //     ParticlesController.instance.SpawnParticle(ParticlesNames.Explosion, _transform);
+        //     GameManager.instance.ChangeGameState(GameState.Idle, 3);
+        //     CameraManager.instance.TurnSpeedFx(false);
+        // }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.collider.name.Contains("VoxelModel"))
         {
-            CameraManager.instance.SetAnimatorState(CamStates.endPoint);
-            ParticlesController.instance.SpawnParticle(ParticlesNames.Explosion, _transform);
-            GameManager.instance.ChangeGameState(GameState.Idle, 3);
-            CameraManager.instance.TurnSpeedFx(false);
+            CarHitVoxel();
         }
     }
 
@@ -71,6 +95,22 @@ public class Car : MonoBehaviour
     
     #region others
 
+    void CarHitVoxel()
+    {
+        isShooted = false;
+        CameraManager.instance.SetAnimatorState(CamStates.endPoint);
+        MMVibrationManager.Haptic(HapticTypes.HeavyImpact);
+        ParticlesController.instance.SpawnParticle(ParticlesNames.Explosion, _transform);
+        GameManager.instance.ChangeGameState(GameState.Idle, 3);
+        CameraManager.instance.TurnSpeedFx(false);
+        SoundManager.Instance.PlaySound(ClipName.Break);
+    }
+    
+    bool IfCarStopped()
+    {
+        return _rigidbody.velocity.magnitude < 1;
+    }
+    
     public void TurnDirectionalArrow(bool state)
     {
         _directionalArrow.TurnIt(state);
@@ -95,6 +135,7 @@ public class Car : MonoBehaviour
     
     public void ShootCar(float speed)
     {
+        isShooted = true;
         trailsContainer.SetActive(true);
         _rigidbody.transform.parent = null;
         _rigidbody.useGravity = true;

@@ -4,8 +4,7 @@
 // {
 	public class SoundManager : MonoBehaviour
 	{
-
-		public static    SoundManager Instance { get; private set; }
+		public static SoundManager Instance { get; private set; }
 		public AudioSource  bgSoundSource;
 		// [SerializeField] AudioSource  bgAmbienceSoundSource;
 		[SerializeField] AudioSource  sFXSoundSource;
@@ -76,5 +75,7 @@
 //class end
 public enum ClipName
 {
-	Button
+	Button,
+	Rope,
+	Break
 }
