@@ -205,6 +205,9 @@ public class Car : MonoBehaviour
 
     void AssignCarMesh(int i)
     {
+        if (i >= carMeshes.Length)
+            i = carMeshes.Length - 1;
+        
         for (int j = 0; j < carMeshes.Length; j++)
         {
             if(i == j)

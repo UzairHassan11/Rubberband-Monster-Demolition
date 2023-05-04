@@ -63,5 +63,6 @@ public enum CamStates
     start,
     gameplay,
     endPoint,
-    finalMomentum
+    finalMomentum,
+    win
 }

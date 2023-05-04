@@ -886,6 +886,7 @@ namespace VoxelDestruction
                                 continue;
                         
                             // GameManager.instance.uiManager.GiveReward(fragmentsT[fragments[i]]);
+                            HideFragment(fragmentsT[fragments[i]]);
                             // fragmentsT[fragments[i]].DOScale(0, 2);
                                 // .OnComplete(() => fragmentsT[fragments[i]].gameObject.SetActive(false));
                             
@@ -1488,6 +1489,21 @@ namespace VoxelDestruction
         }
 
         #endregion
+        
+        public void HideFragment(Transform t)
+        {
+            StartCoroutine(hideFragment(t));
+        }
+
+        private WaitForSeconds _waitFor5Seconds = new WaitForSeconds(4), _waitFor1Seconds = new WaitForSeconds(.5f);
+        IEnumerator hideFragment(Transform t)
+        {
+            float animTime = 1;
+            yield return _waitFor5Seconds;
+            t.GetChild(0).DOScale(Vector3.zero, .5f);
+            yield return _waitFor1Seconds;
+            t.gameObject.SetActive(false);
+        }
     }
     
     [Serializable]

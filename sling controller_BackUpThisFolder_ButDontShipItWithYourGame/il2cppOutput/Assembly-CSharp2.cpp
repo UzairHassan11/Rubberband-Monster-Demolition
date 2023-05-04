@@ -441,6 +441,8 @@ struct VoxelObject_t246F5A3DAA90EB8AB971DAB2203EFF1129DB54DC;
 struct VoxelStruct_t6AA2EB43470BACF4B6CEDC49F7540835359BF3F8;
 // UnityEngine.WWW
 struct WWW_tEADA9A43B98FC277E498F8E3206A3B8C4E5AF3FB;
+// UnityEngine.WaitForSeconds
+struct WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3;
 // Better.StreamingAssets.ZipArchive.ZipArchiveException
 struct ZipArchiveException_t7B04905358E8A4603C5DD57D34EF26C3445640F0;
 // Better.StreamingAssets.BSA_TestSceneGUI/<>c__DisplayClass26_0
@@ -3961,6 +3963,10 @@ struct VoxelObject_t246F5A3DAA90EB8AB971DAB2203EFF1129DB54DC  : public MonoBehav
 	MeshBuilderParallel_tDFE1D16D69F5CCEF2B7C4651D6741836F54169BB* ___parallelBuilder_62;
 	// VoxelDestruction.MeshBuilderSafe VoxelDestruction.VoxelObject::safeBuilder
 	MeshBuilderSafe_t21A282FC5AC3046B7BCADCD523034935B73F615C* ___safeBuilder_63;
+	// UnityEngine.WaitForSeconds VoxelDestruction.VoxelObject::_waitFor5Seconds
+	WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* ____waitFor5Seconds_64;
+	// UnityEngine.WaitForSeconds VoxelDestruction.VoxelObject::_waitFor1Seconds
+	WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* ____waitFor1Seconds_65;
 };
 
 // VoxelDestruction.VoxelStruct
