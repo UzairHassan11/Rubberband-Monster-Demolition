@@ -34,6 +34,12 @@ public class Car : MonoBehaviour
     [SerializeField] private GameObject []carMeshes;
 
     private bool isShooted;
+
+    private float deltaDist, carStopCheckCurrentDelay = 0;
+
+    private Vector3 lastPos;
+
+    [SerializeField] private float carStopCheckDelay = .1f;
     
     #endregion
 
@@ -45,6 +51,7 @@ public class Car : MonoBehaviour
         startPosition = _transform.position;
         parent = _transform.parent;
         AssignCollisionScale();
+        lastPos = _transform.position;
     }
 
     private void Update()
@@ -54,17 +61,26 @@ public class Car : MonoBehaviour
             _midAirControl.ControlAfterRamp();
         }
 
-        // if (isShooted)
-        // {
-        //     if (IfCarStopped())
-        //     {
-        //         print(_rigidbody.velocity.magnitude);
-        //         // do reset work
-        //         isShooted = false;
-        //         print("car stopped");
-        //         CarStopped();
-        //     }
-        // }
+        if (isShooted)
+        {
+            if (carStopCheckCurrentDelay < carStopCheckDelay)
+            {
+                carStopCheckCurrentDelay += Time.deltaTime;
+            }
+            else
+            {
+                if (IfCarStopped())
+                {
+                    isShooted = false;
+                    print("CarStopped");
+                    Invoke("CarStopped", 1f);
+                }
+                else
+                {
+                    lastPos = _transform.position;
+                }
+            }
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -89,7 +105,14 @@ public class Car : MonoBehaviour
     {
         if (collision.collider.name.Contains("VoxelModel"))
         {
-            CarHitVoxel();
+            if(isShooted)
+                CarHitVoxel();
+        }
+        else if (collision.collider.CompareTag("Finish"))
+        {
+            isShooted = false;
+            print("CarStopped");
+            Invoke("CarStopped", 1f);
         }
     }
 
@@ -100,6 +123,7 @@ public class Car : MonoBehaviour
     void CarHitVoxel()
     {
         isShooted = false;
+        carStopCheckCurrentDelay = 0;
         CameraManager.instance.SetAnimatorState(CamStates.endPoint);
         MMVibrationManager.Haptic(HapticTypes.HeavyImpact);
         ParticlesController.instance.SpawnParticle(ParticlesNames.Explosion, _transform);
@@ -111,13 +135,16 @@ public class Car : MonoBehaviour
     void CarStopped()
     {
         isShooted = false;
+        lastPos = _transform.position;
+        carStopCheckCurrentDelay = 0;
         GameManager.instance.ChangeGameState(GameState.Idle, .5f);
         // CameraManager.instance.TurnSpeedFx(false);
     }
     
     bool IfCarStopped()
     {
-        return _rigidbody.velocity.magnitude < 0.1f;
+        //return _rigidbody.velocity.magnitude < 0.1f;
+        return Vector3.Distance(_transform.position, lastPos) == 0;
     }
     
     public void TurnDirectionalArrow(bool state)
@@ -149,6 +176,7 @@ public class Car : MonoBehaviour
         _rigidbody.transform.parent = null;
         _rigidbody.useGravity = true;
         _rigidbody.AddForce(_rigidbody.transform.forward * speed, ForceMode.Impulse);
+        CameraManager.instance.Change_GP_Cam_Follow_Offset(false);
     }
 
     #endregion
@@ -166,6 +194,8 @@ public class Car : MonoBehaviour
         _transform.rotation = Quaternion.identity;
         _transform.position = startPosition;
         _transform.parent = parent;
+        lastPos = _transform.position;
+        CameraManager.instance.Change_GP_Cam_Follow_Offset(true);
     }
 
     void AssignCarMesh(int i)

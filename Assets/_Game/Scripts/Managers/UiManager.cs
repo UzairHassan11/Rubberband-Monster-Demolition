@@ -140,7 +140,7 @@ public class UiManager : MonoBehaviour
         Text currentText = plusAnims[0];
         plusAnims.RemoveAt(0);
         currentText.GetComponent<RectTransform>().position = pos;
-        currentText.text = "+"+ cash +"$";
+        currentText.text = "+"+ cash;
         // Color c = currentText.color;
         // c.a = 1;
         // currentText.color = c;

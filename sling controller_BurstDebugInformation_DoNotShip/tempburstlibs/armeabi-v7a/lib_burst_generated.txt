@@ -114,6 +114,7 @@ Library: lib_burst_generated
 --compilation-defines=MOREMOUNTAINS_NICEVIBRATIONS
 --compilation-defines=ODIN_INSPECTOR
 --compilation-defines=DREAMTECK_SPLINES
+--compilation-defines=UNITY_POST_PROCESSING_STACK_V2
 --compilation-defines=PACKAGE_PHYSICS
 --compilation-defines=PACKAGE_PHYSICS2D
 --compilation-defines=PACKAGE_TILEMAP
@@ -126,6 +127,9 @@ Library: lib_burst_generated
 --compilation-defines=MODULE_PHYSICS_EXISTS
 --compilation-defines=MODULE_PHYSICS_2D_EXISTS
 --compilation-defines=MODULE_PARTICLE_SYSTEM_EXISTS
+--compilation-defines=ENABLE_VR_MODULE
+--compilation-defines=ENABLE_XR_MODULE
+--compilation-defines=CINEMACHINE_POST_PROCESSING_V2
 --compilation-defines=CINEMACHINE_TIMELINE
 --compilation-defines=CINEMACHINE_PHYSICS_2D
 --compilation-defines=CINEMACHINE_PHYSICS
@@ -143,6 +147,7 @@ Library: lib_burst_generated
 --root-assembly=/Users/mac/Documents/GitHub/Rubberband Monster Demolition/Temp/StagingArea/Data/Managed/Unity.VisualScripting.State.dll
 --root-assembly=/Users/mac/Documents/GitHub/Rubberband Monster Demolition/Temp/StagingArea/Data/Managed/Assembly-CSharp-firstpass.dll
 --root-assembly=/Users/mac/Documents/GitHub/Rubberband Monster Demolition/Temp/StagingArea/Data/Managed/Unity.VisualScripting.Core.dll
+--root-assembly=/Users/mac/Documents/GitHub/Rubberband Monster Demolition/Temp/StagingArea/Data/Managed/Unity.Postprocessing.Runtime.dll
 --root-assembly=/Users/mac/Documents/GitHub/Rubberband Monster Demolition/Temp/StagingArea/Data/Managed/Dreamteck.Utilities.dll
 --root-assembly=/Users/mac/Documents/GitHub/Rubberband Monster Demolition/Temp/StagingArea/Data/Managed/MoreMountains.NiceVibrations.Haptics.dll
 --root-assembly=/Users/mac/Documents/GitHub/Rubberband Monster Demolition/Temp/StagingArea/Data/Managed/MoreMountains.NiceVibrations.Demos.dll

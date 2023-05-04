@@ -1,3 +1,4 @@
+using MoreMountains.NiceVibrations;
 using UnityEngine;
 
 public class RewardTrigger : MonoBehaviour
@@ -6,6 +7,7 @@ public class RewardTrigger : MonoBehaviour
     {
         if (other.name.Contains("VoxelModel"))
         {
+            MMVibrationManager.Haptic(HapticTypes.LightImpact);
             GameManager.instance.uiManager.GiveReward(other.transform);
         }
     }

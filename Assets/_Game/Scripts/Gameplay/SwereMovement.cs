@@ -83,6 +83,11 @@ public class SwereMovement : MonoBehaviour
         return Mathf.InverseLerp(minMaxZ.y, UpgradesManager.instance.upgrades[0].GetMaxActualValue, _transform.localPosition.z);
     }
 
+    public float GetCurrentPercentage()
+    {
+        return Mathf.InverseLerp(minMaxZ.y, minMaxZ.x, _transform.localPosition.z);
+    }
+    
     public void AssignCurrentMaxZ()
     {
         minMaxZ.x = UpgradesManager.instance.upgrades[0].GetCurrentActualValue;

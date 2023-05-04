@@ -1,4 +1,6 @@
 using UnityEngine;
+using Cinemachine;
+using DG.Tweening;
 
 public class CameraManager : MonoBehaviour
 {
@@ -18,6 +20,17 @@ public class CameraManager : MonoBehaviour
 
     [SerializeField] private GameObject speedFx;
 
+    [SerializeField] private CinemachineVirtualCamera GP_Cam;
+
+    [SerializeField] private Vector3 inSlingOffset, shootOffset;
+
+    private CinemachineFramingTransposer GP_transposer;
+
+    private void Start()
+    {
+        GP_transposer = GP_Cam.GetCinemachineComponent<CinemachineFramingTransposer>();
+    }
+
     public void SetAnimatorState(CamStates camState)
     {
         animator.CrossFade(camState.ToString(), .1f);
@@ -36,6 +49,12 @@ public class CameraManager : MonoBehaviour
     public void TurnSpeedFx(bool state)
     {
         speedFx.SetActive(state);
+    }
+
+    public void Change_GP_Cam_Follow_Offset(bool inSling)
+    {
+        DOTween.To(() => GP_transposer.m_TrackedObjectOffset, x => GP_transposer.m_TrackedObjectOffset = x,
+            (inSling ? inSlingOffset : shootOffset), .5f);
     }
 }
 [System.Serializable]
