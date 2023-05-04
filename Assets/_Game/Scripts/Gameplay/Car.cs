@@ -86,6 +86,7 @@ public class Car : MonoBehaviour
     {
         if (other.CompareTag("Ramp"))
         {
+            trailsContainer.SetActive(false);
             _rigidbody.constraints = RigidbodyConstraints.FreezeRotationZ;
             GameManager.instance.ChangeGameState(GameState.FinalMomentum);
             MMVibrationManager.Haptic(HapticTypes.MediumImpact);
@@ -206,7 +207,12 @@ public class Car : MonoBehaviour
     {
         for (int j = 0; j < carMeshes.Length; j++)
         {
-            carMeshes[j].SetActive(i == j);
+            if(i == j)
+            {
+                carMeshes[j].SetActive(true);
+                trailsContainer = carMeshes[j].transform.GetChild(carMeshes[j].transform.childCount - 1).gameObject;
+            }else
+                carMeshes[j].SetActive(false);
         }
     }
 }

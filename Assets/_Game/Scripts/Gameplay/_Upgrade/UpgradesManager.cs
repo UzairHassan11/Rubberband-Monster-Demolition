@@ -166,12 +166,15 @@ public class Upgrade
             upgradeButton.cashSection.SetActive(false);
             
             if(upgradeButton.nextUpgradeText)
-                upgradeButton.nextUpgradeText.text = "Max";
+                upgradeButton.nextUpgradeText.text = "MAX";
             if (upgradeButton.currentUpgradeText)
                 upgradeButton.currentUpgradeText.text = GetCurrentActualValue.ToString();
 
+            if(upgradeButton.upgradeLevelText)
+                upgradeButton.upgradeLevelText.text = "MAX";
+            
             if(upgradeButton.nameText)
-                upgradeButton.nameText.text = "Max";
+                upgradeButton.nameText.text = "MAX";
             
             // if(upgradeButton.image)
             //     upgradeButton.image.sprite = GetNextSprite;
@@ -184,9 +187,11 @@ public class Upgrade
             upgradeButton.priceText.text = GetNextPrice.ToString("F0");
             
             if(upgradeButton.nextUpgradeText)
-                upgradeButton.nextUpgradeText.text = GetNextActualValue.ToString();
+                upgradeButton.nextUpgradeText.text = GetNextUpgradeValue.ToString();
             if(upgradeButton.currentUpgradeText)
                 upgradeButton.currentUpgradeText.text = GetCurrentActualValue.ToString();
+            if(upgradeButton.upgradeLevelText)
+                upgradeButton.upgradeLevelText.text = "Level " + GetCurrentUpgradeValue;
 
             if(upgradeButton.cashSection)
                 upgradeButton.cashSection.SetActive(true);
@@ -212,6 +217,7 @@ public class Upgrade
         
         float nextPrice = GetNextPrice;
         upgradeButton.button.interactable = GameManager.instance.uiManager.PlayerCash >= nextPrice;
+        upgradeButton.lockImage.SetActive(GameManager.instance.uiManager.PlayerCash < nextPrice);
     }
 
     #endregion
@@ -246,6 +252,8 @@ public class Upgrade
     
     public float GetNextUpgradeValue => upgradeValue[NextUpgrade];
     public float GetPreviousUpgradeValue => upgradeValue[NextUpgrade - 1];
+    public float GetCurrentUpgradeValue => upgradeValue[NextUpgrade];
+    
     public float GetUpgradeValueWithIndex(int i) => upgradeValue[i];
     
     

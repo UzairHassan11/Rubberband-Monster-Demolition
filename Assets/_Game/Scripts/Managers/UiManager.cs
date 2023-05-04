@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -29,7 +30,7 @@ public class UiManager : MonoBehaviour
     
     #endregion
 
-    [SerializeField] private Text levelText, cashText;
+    [SerializeField] private TextMeshProUGUI levelText, cashText;
     
     [SerializeField] private bool test;
     
@@ -41,7 +42,7 @@ public class UiManager : MonoBehaviour
     void Start()
     {
         if(levelText)
-            levelText.text = "Level " + LevelNumberAnalytics.ToString("00");
+            levelText.text = "LVL " + LevelNumberAnalytics.ToString("00");
         if (!test)
         {
             // GameAnalytics.NewProgressionEvent(GAProgressionStatus.Start, "LevelStart", LevelNumberAnalytics);

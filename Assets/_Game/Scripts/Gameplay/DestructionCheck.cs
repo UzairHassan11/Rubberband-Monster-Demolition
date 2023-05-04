@@ -21,15 +21,10 @@ public class DestructionCheck : MonoBehaviour
 
         public void DestructionCall(Vector3 pos, float strength, float percentage)
         {
+            destructionSlider.DOValue(destructionPercentageRequired - percentage, 1);
+
             if (percentage >= destructionPercentageRequired)
-            {
                 GameManager.instance.ChangeGameState(GameState.Win);
-            }
-            else
-            {
-                // StartCoroutine(fillSlider(destructionPercentageRequired - percentage));
-                destructionSlider.DOValue(destructionPercentageRequired - percentage, 1);
-            }
         }
 
         
