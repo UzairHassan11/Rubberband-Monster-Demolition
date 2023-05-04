@@ -1,4 +1,3 @@
-using System;
 using _Game.Scripts.Gameplay;
 using Dreamteck.Splines;
 using MoreMountains.NiceVibrations;
@@ -17,9 +16,7 @@ public class Car : MonoBehaviour
 
     [SerializeField] private Rigidbody _rigidbody;
 
-    [SerializeField] private Transform cam;
-
-    [SerializeField] private GameObject trailsContainer, cam2;
+    [SerializeField] private GameObject trailsContainer;
 
     [SerializeField] private float followTrackSpeedMultiple;
 
@@ -40,6 +37,8 @@ public class Car : MonoBehaviour
     private Vector3 lastPos;
 
     [SerializeField] private float carStopCheckDelay = .1f;
+
+    [SerializeField] private ParticleSystem upgradeEffect;
     
     #endregion
 
@@ -111,7 +110,6 @@ public class Car : MonoBehaviour
         else if (collision.collider.CompareTag("Finish"))
         {
             isShooted = false;
-            print("CarStopped");
             Invoke("CarStopped", 1f);
         }
     }
@@ -181,10 +179,16 @@ public class Car : MonoBehaviour
 
     #endregion
 
-    public void AssignCollisionScale()
+    public void AssignCollisionScale(
+        // bool start = false
+        )
     {
+        
         _voxelCollider.collisionScale = UpgradesManager.instance.upgrades[1].GetCurrentActualValue;
         AssignCarMesh(UpgradesManager.instance.upgrades[1].NextUpgrade);
+        // if(!start)
+        upgradeEffect.gameObject.SetActive(true);
+        upgradeEffect.Play();
     }
 
     public void ResetMe()

@@ -11,8 +11,8 @@ public class UiManager : MonoBehaviour
     
     public float PlayerCash
     {
-        get => PlayerPrefs.GetFloat("PlayerCash", 100000);
-        set => PlayerPrefs.SetFloat("PlayerCash", value);
+        get => PlayerPrefs.GetFloat("PlayerCash", 100);
+        private set => PlayerPrefs.SetFloat("PlayerCash", value);
     }
     
     int LevelNumberPref
@@ -29,7 +29,7 @@ public class UiManager : MonoBehaviour
     
     #endregion
 
-    [SerializeField] private Text levelText;
+    [SerializeField] private Text levelText, cashText;
     
     [SerializeField] private bool test;
     
@@ -48,6 +48,7 @@ public class UiManager : MonoBehaviour
         }
 
         waitPerFragmentRewardDelay = new WaitForSeconds(perFragmentRewardDelay);
+        AddCash(0);
     }
 
     public void ShowStartPanel()
@@ -170,7 +171,8 @@ public class UiManager : MonoBehaviour
     private WaitForSeconds waitPerFragmentRewardDelay;
     public void GiveReward(Transform t)
     {
-        StartCoroutine(giveReward(t));
+        // StartCoroutine(giveReward(t));
+        AddCash(rewardPerBaseFragment * UpgradesManager.instance.upgrades[2].GetCurrentActualValue);
     }
 
     IEnumerator giveReward(Transform t)
@@ -179,6 +181,22 @@ public class UiManager : MonoBehaviour
         yield return waitPerFragmentRewardDelay;
         ShowPlusAnim(t, rewardPerBaseFragment * UpgradesManager.instance.upgrades[2].GetCurrentActualValue);
     }
-    
+
+    private bool animatingCash;
+
+    public void AddCash(float cashDelta)
+    {
+        if (!animatingCash)
+        {
+            animatingCash = true;
+            cashText.transform.DOScale(.1f, .25f).SetRelative(true).SetEase(Ease.Linear).SetLoops(2, LoopType.Yoyo)
+                .OnComplete(() => animatingCash = false);
+        }
+
+        UpgradesManager.instance.UpdateAllButtons();
+        PlayerCash += cashDelta;
+        cashText.text = PlayerCash.ToString("F0");
+    }
+
     #endregion
 }

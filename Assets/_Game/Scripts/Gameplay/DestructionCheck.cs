@@ -2,6 +2,7 @@ using System.Collections;
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
+using VoxelDestruction;
 
 public class DestructionCheck : MonoBehaviour
     {
@@ -10,6 +11,8 @@ public class DestructionCheck : MonoBehaviour
 
         [SerializeField] private Slider destructionSlider;
 
+        [SerializeField] private VoxelObject _voxelObject;
+        
         private void Start()
         {
             destructionSlider.maxValue = destructionPercentageRequired;

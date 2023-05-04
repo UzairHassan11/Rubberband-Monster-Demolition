@@ -88,8 +88,16 @@ public class SwereMovement : MonoBehaviour
         return Mathf.InverseLerp(minMaxZ.y, minMaxZ.x, _transform.localPosition.z);
     }
     
-    public void AssignCurrentMaxZ()
+    public void AssignCurrentMaxZ(
+        // bool start = false
+        )
     {
         minMaxZ.x = UpgradesManager.instance.upgrades[0].GetCurrentActualValue;
+        // if(!start)
+        
+        upgradeEffect.gameObject.SetActive(true);
+        upgradeEffect.Play();
     }
+
+    [SerializeField] private ParticleSystem upgradeEffect;
 }

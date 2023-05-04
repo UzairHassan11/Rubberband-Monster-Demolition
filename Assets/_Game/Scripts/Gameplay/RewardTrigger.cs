@@ -1,3 +1,4 @@
+using DG.Tweening;
 using MoreMountains.NiceVibrations;
 using UnityEngine;
 
@@ -9,6 +10,8 @@ public class RewardTrigger : MonoBehaviour
         {
             MMVibrationManager.Haptic(HapticTypes.LightImpact);
             GameManager.instance.uiManager.GiveReward(other.transform);
+            // other.transform.root.DOScale(Vector3.zero, 1).SetDelay(3);
+            other.gameObject.SetActive(false);
         }
     }
 }

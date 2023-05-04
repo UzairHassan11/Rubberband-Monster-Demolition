@@ -129,7 +129,7 @@ public class Upgrade
         if (GameManager.instance.uiManager.PlayerCash >= price && UpgradesManager.instance.PurchaseCheck(this))
         {
             MMVibrationManager.Haptic(HapticTypes.Success);
-            GameManager.instance.uiManager.PlayerCash -= price;
+            GameManager.instance.uiManager.AddCash(-price);
             NextUpgrade++;
             if (NextUpgrade >= upgradePrices.Length)
                 NextUpgrade = upgradePrices.Length;

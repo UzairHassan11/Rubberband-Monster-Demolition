@@ -27,7 +27,7 @@ namespace _Game.Scripts.Gameplay
         {
             if (arrowMat)
             {
-                arrowMat.SetColor("_Color", _gradient.Evaluate(_swereMovement.GetPercentage()));
+                arrowMat.SetColor("_Color", _gradient.Evaluate(_swereMovement.GetCurrentPercentage()));
             }
         }
 
