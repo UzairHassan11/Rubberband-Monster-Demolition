@@ -1,4 +1,5 @@
 using _Game.Scripts.Gameplay;
+using DG.Tweening;
 using Dreamteck.Splines;
 using MoreMountains.NiceVibrations;
 using UnityEngine;
@@ -87,7 +88,7 @@ public class Car : MonoBehaviour
         if (other.CompareTag("Ramp"))
         {
             trailsContainer.SetActive(false);
-            _rigidbody.constraints = RigidbodyConstraints.FreezeRotationZ;
+            // _rigidbody.constraints = RigidbodyConstraints.FreezeRotationZ;
             GameManager.instance.ChangeGameState(GameState.FinalMomentum);
             MMVibrationManager.Haptic(HapticTypes.MediumImpact);
         }
@@ -126,7 +127,7 @@ public class Car : MonoBehaviour
         CameraManager.instance.SetAnimatorState(CamStates.endPoint);
         MMVibrationManager.Haptic(HapticTypes.HeavyImpact);
         ParticlesController.instance.SpawnParticle(ParticlesNames.Explosion, _transform);
-        GameManager.instance.ChangeGameState(GameState.Idle, 3);
+        GameManager.instance.ChangeGameState(GameState.Idle, 4);
         // CameraManager.instance.TurnSpeedFx(false);
         SoundManager.Instance.PlaySound(ClipName.Break);
     }
@@ -194,7 +195,7 @@ public class Car : MonoBehaviour
 
     public void ResetMe()
     {
-        _rigidbody.constraints = RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezeRotationX;
+        // _rigidbody.constraints = RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezeRotationX;
         _rigidbody.Sleep();
         _transform.rotation = Quaternion.identity;
         _transform.position = startPosition;
@@ -203,10 +204,18 @@ public class Car : MonoBehaviour
         CameraManager.instance.Change_GP_Cam_Follow_Offset(true);
     }
 
+    private bool playingScaleAnim;
     void AssignCarMesh(int i)
     {
         if (i >= carMeshes.Length)
             i = carMeshes.Length - 1;
+
+        if (!playingScaleAnim)
+        {
+            playingScaleAnim = true;
+            _transform.DOScale(.5f, .25f).SetEase(Ease.Linear).SetEase(Ease.Linear).SetRelative(true).SetLoops(2, LoopType.Yoyo)
+                .OnComplete(() => playingScaleAnim = false);
+        }
         
         for (int j = 0; j < carMeshes.Length; j++)
         {
@@ -214,8 +223,11 @@ public class Car : MonoBehaviour
             {
                 carMeshes[j].SetActive(true);
                 trailsContainer = carMeshes[j].transform.GetChild(carMeshes[j].transform.childCount - 1).gameObject;
-            }else
+            }
+            else
+            {
                 carMeshes[j].SetActive(false);
+            }
         }
     }
 }

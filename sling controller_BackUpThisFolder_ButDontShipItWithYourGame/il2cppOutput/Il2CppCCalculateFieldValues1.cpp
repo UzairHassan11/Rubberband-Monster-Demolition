@@ -950,6 +950,8 @@ struct RawVoxelU5BU5D_tF6CD24CDF21466A4EA475F61689A677372146A98;
 struct RequireComponentU5BU5D_t29B8922A4CC605C50E015637033A7A4B0EF564E9;
 // TMPro.RichTextTagAttribute[]
 struct RichTextTagAttributeU5BU5D_t5816316EFD8F59DBC30B9F88E15828C564E47B6D;
+// RopeMinikit.Rope[]
+struct RopeU5BU5D_tBDA1BDE339066CB42D2E72B1B9E160CB5A8121BF;
 // System.Linq.Expressions.Interpreter.RuntimeLabel[]
 struct RuntimeLabelU5BU5D_t7B07C229EF5FA8E68637F8C76A93B0B74B47B684;
 // UnityEngine.RuntimePlatform[]
@@ -1150,8 +1152,6 @@ struct DelayTriggerEvents_tD6B0EE01C7202FE2A6ACC669D4CD2EE93DBE06F6;
 struct Delegate_t;
 // VoxelDestruction.Demo_Bomb
 struct Demo_Bomb_tB805F052D49F4D3B541DCEF3393F2A3210321833;
-// DestructionCheck
-struct DestructionCheck_t11E79790521BF5B5CA5E7F5248CA357A684C6E9C;
 // VoxelDestruction.DestructionFragmentNRSettings
 struct DestructionFragmentNRSettings_tD2392AB36BEFC23A51A6534E74ED0934F207463A;
 // VoxelDestruction.DestructionFragmentRSettings
@@ -1516,6 +1516,8 @@ struct Rigidbody_t268697F5A994213ED97393309870968BC1C7393C;
 struct RijndaelManaged_t67DFB0E9542F21D9EED0227003A19D9F5ECF2E39;
 // RopeMinikit.Rope
 struct Rope_tFEC2A883B9304CD7F07F1CD3AB972B53657CD1A6;
+// RopeDynamics
+struct RopeDynamics_t640BEC66E2EFD445BAEC7DEBCD0691CE8EC643C2;
 // System.Runtime.Serialization.SafeSerializationManager
 struct SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6;
 // System.Xml.Schema.SchemaElementDecl
@@ -6256,25 +6258,6 @@ struct U3CCountDownU3Ed__6_tF1DA0187386259C25C663ABA5C0B45B2549EB8F4  : public R
 	RuntimeObject* ___U3CU3E2__current_1;
 	// VoxelDestruction.Demo_Bomb VoxelDestruction.Demo_Bomb/<CountDown>d__6::<>4__this
 	Demo_Bomb_tB805F052D49F4D3B541DCEF3393F2A3210321833* ___U3CU3E4__this_2;
-};
-
-// DestructionCheck/<fillSlider>d__5
-struct U3CfillSliderU3Ed__5_t189BEE18919E57F30CC390AD709C392BD321DFA5  : public RuntimeObject
-{
-	// System.Int32 DestructionCheck/<fillSlider>d__5::<>1__state
-	int32_t ___U3CU3E1__state_0;
-	// System.Object DestructionCheck/<fillSlider>d__5::<>2__current
-	RuntimeObject* ___U3CU3E2__current_1;
-	// DestructionCheck DestructionCheck/<fillSlider>d__5::<>4__this
-	DestructionCheck_t11E79790521BF5B5CA5E7F5248CA357A684C6E9C* ___U3CU3E4__this_2;
-	// System.Single DestructionCheck/<fillSlider>d__5::val
-	float ___val_3;
-	// System.Single DestructionCheck/<fillSlider>d__5::<animTime>5__2
-	float ___U3CanimTimeU3E5__2_4;
-	// System.Single DestructionCheck/<fillSlider>d__5::<curTime>5__3
-	float ___U3CcurTimeU3E5__3_5;
-	// System.Single DestructionCheck/<fillSlider>d__5::<sliderVal>5__4
-	float ___U3CsliderValU3E5__4_6;
 };
 
 // Unity.VisualScripting.DivisionHandler/<>c
@@ -31052,6 +31035,8 @@ struct Car_t1AF5AAAECFBC5A0599D39EA6BFE317CB4BFAA40C  : public MonoBehaviour_t53
 	ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* ___upgradeEffect_20;
 	// System.Single Car::velocityBeforeSpline
 	float ___velocityBeforeSpline_21;
+	// System.Boolean Car::playingScaleAnim
+	bool ___playingScaleAnim_22;
 };
 
 // CarMidAirControl
@@ -31252,10 +31237,12 @@ struct DestructionCheck_t11E79790521BF5B5CA5E7F5248CA357A684C6E9C  : public Mono
 {
 	// System.Single DestructionCheck::destructionPercentageRequired
 	float ___destructionPercentageRequired_4;
-	// UnityEngine.UI.Slider DestructionCheck::destructionSlider
-	Slider_t87EA570E3D6556CABF57456C2F3873FFD86E652F* ___destructionSlider_5;
+	// UnityEngine.UI.Slider DestructionCheck::greenSlider
+	Slider_t87EA570E3D6556CABF57456C2F3873FFD86E652F* ___greenSlider_5;
+	// UnityEngine.UI.Slider DestructionCheck::redSlider
+	Slider_t87EA570E3D6556CABF57456C2F3873FFD86E652F* ___redSlider_6;
 	// UnityEngine.GameObject DestructionCheck::finalBombs
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___finalBombs_6;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___finalBombs_7;
 };
 
 // _Game.Scripts.Gameplay.DirectionalArrow
@@ -31865,6 +31852,27 @@ struct RopeConnection_tC3BAD0EEDF75D5D6CFB262363EB84260C58A4697_StaticFields
 	ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389* ___colors_4;
 };
 
+// RopeDynamics
+struct RopeDynamics_t640BEC66E2EFD445BAEC7DEBCD0691CE8EC643C2  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// RopeMinikit.Rope[] RopeDynamics::ropes
+	RopeU5BU5D_tBDA1BDE339066CB42D2E72B1B9E160CB5A8121BF* ___ropes_4;
+	// UnityEngine.Vector2 RopeDynamics::radiusLimits
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___radiusLimits_5;
+	// UnityEngine.Vector2 RopeDynamics::resolutionLimits
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___resolutionLimits_6;
+	// UnityEngine.Vector2 RopeDynamics::stiffnessLimits
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___stiffnessLimits_7;
+	// UnityEngine.Material RopeDynamics::ropeMat
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___ropeMat_8;
+	// UnityEngine.Gradient RopeDynamics::colourGradient
+	Gradient_tA7FEBE2FDB4929FFF6C997134841046F713DAC1E* ___colourGradient_9;
+	// System.Single RopeDynamics::seatLerpValue
+	float ___seatLerpValue_10;
+	// SwereMovement RopeDynamics::_swereMovement
+	SwereMovement_tCEA3B3539A8CE394F432AFCC42D08F5F310632FA* ____swereMovement_11;
+};
+
 // RopeMinikit.RopeMouseInteraction
 struct RopeMouseInteraction_tECC684F248981780EE94941F4D05778059507586  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -31942,30 +31950,32 @@ struct SlingshotController_tD087C49495F77E408672AA7CB6BE2A5BAEB0BDA0  : public M
 {
 	// Car SlingshotController::car
 	Car_t1AF5AAAECFBC5A0599D39EA6BFE317CB4BFAA40C* ___car_4;
+	// RopeDynamics SlingshotController::_ropeDynamics
+	RopeDynamics_t640BEC66E2EFD445BAEC7DEBCD0691CE8EC643C2* ____ropeDynamics_5;
 	// UnityEngine.Transform SlingshotController::movementTransform
-	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___movementTransform_5;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___movementTransform_6;
 	// UnityEngine.Transform SlingshotController::rotationTransform
-	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___rotationTransform_6;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___rotationTransform_7;
 	// UnityEngine.Vector2 SlingshotController::minMaxRotation
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___minMaxRotation_7;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___minMaxRotation_8;
 	// SwereMovement SlingshotController::_swerveMovement
-	SwereMovement_tCEA3B3539A8CE394F432AFCC42D08F5F310632FA* ____swerveMovement_8;
+	SwereMovement_tCEA3B3539A8CE394F432AFCC42D08F5F310632FA* ____swerveMovement_9;
 	// System.Boolean SlingshotController::swerveX
-	bool ___swerveX_9;
+	bool ___swerveX_10;
 	// System.Boolean SlingshotController::swerveZ
-	bool ___swerveZ_10;
+	bool ___swerveZ_11;
 	// UnityEngine.Rigidbody SlingshotController::rb
-	Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* ___rb_11;
+	Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* ___rb_12;
 	// UnityEngine.Vector2 SlingshotController::carShootForce
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___carShootForce_12;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___carShootForce_13;
 	// System.Boolean SlingshotController::idle
-	bool ___idle_13;
+	bool ___idle_14;
 	// System.Boolean SlingshotController::aiming
-	bool ___aiming_14;
+	bool ___aiming_15;
 	// TMPro.TextMeshPro SlingshotController::powerPercentageText
-	TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* ___powerPercentageText_15;
+	TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* ___powerPercentageText_16;
 	// UnityEngine.Vector3 SlingshotController::rotationVector
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___rotationVector_16;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___rotationVector_17;
 };
 
 // SoftBackdrop
@@ -38335,21 +38345,21 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5752[4] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5753[6] = 
 {
 	static_cast<int32_t>(offsetof(ContinuousHaptic_tC6698BECA7CC7AE7C4FBDA265BEE9BA05D983E37_StaticFields, ___Instance_4)),static_cast<int32_t>(offsetof(ContinuousHaptic_tC6698BECA7CC7AE7C4FBDA265BEE9BA05D983E37, ___hapticDelayLimits_5)),static_cast<int32_t>(offsetof(ContinuousHaptic_tC6698BECA7CC7AE7C4FBDA265BEE9BA05D983E37, ___mappingValues_6)),static_cast<int32_t>(offsetof(ContinuousHaptic_tC6698BECA7CC7AE7C4FBDA265BEE9BA05D983E37, ___currentDelay_7)),static_cast<int32_t>(offsetof(ContinuousHaptic_tC6698BECA7CC7AE7C4FBDA265BEE9BA05D983E37, ___seatTransform_8)),static_cast<int32_t>(offsetof(ContinuousHaptic_tC6698BECA7CC7AE7C4FBDA265BEE9BA05D983E37, ___timer_9)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5754[18] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5754[19] = 
 {
-	static_cast<int32_t>(offsetof(Car_t1AF5AAAECFBC5A0599D39EA6BFE317CB4BFAA40C, ____voxelCollider_4)),static_cast<int32_t>(offsetof(Car_t1AF5AAAECFBC5A0599D39EA6BFE317CB4BFAA40C, ____directionalArrow_5)),static_cast<int32_t>(offsetof(Car_t1AF5AAAECFBC5A0599D39EA6BFE317CB4BFAA40C, ____splineFollower_6)),static_cast<int32_t>(offsetof(Car_t1AF5AAAECFBC5A0599D39EA6BFE317CB4BFAA40C, ____rigidbody_7)),static_cast<int32_t>(offsetof(Car_t1AF5AAAECFBC5A0599D39EA6BFE317CB4BFAA40C, ___trailsContainer_8)),static_cast<int32_t>(offsetof(Car_t1AF5AAAECFBC5A0599D39EA6BFE317CB4BFAA40C, ___followTrackSpeedMultiple_9)),static_cast<int32_t>(offsetof(Car_t1AF5AAAECFBC5A0599D39EA6BFE317CB4BFAA40C, ____midAirControl_10)),static_cast<int32_t>(offsetof(Car_t1AF5AAAECFBC5A0599D39EA6BFE317CB4BFAA40C, ___startPosition_11)),static_cast<int32_t>(offsetof(Car_t1AF5AAAECFBC5A0599D39EA6BFE317CB4BFAA40C, ___parent_12)),static_cast<int32_t>(offsetof(Car_t1AF5AAAECFBC5A0599D39EA6BFE317CB4BFAA40C, ____transform_13)),static_cast<int32_t>(offsetof(Car_t1AF5AAAECFBC5A0599D39EA6BFE317CB4BFAA40C, ___carMeshes_14)),static_cast<int32_t>(offsetof(Car_t1AF5AAAECFBC5A0599D39EA6BFE317CB4BFAA40C, ___isShooted_15)),static_cast<int32_t>(offsetof(Car_t1AF5AAAECFBC5A0599D39EA6BFE317CB4BFAA40C, ___deltaDist_16)),static_cast<int32_t>(offsetof(Car_t1AF5AAAECFBC5A0599D39EA6BFE317CB4BFAA40C, ___carStopCheckCurrentDelay_17)),static_cast<int32_t>(offsetof(Car_t1AF5AAAECFBC5A0599D39EA6BFE317CB4BFAA40C, ___lastPos_18)),static_cast<int32_t>(offsetof(Car_t1AF5AAAECFBC5A0599D39EA6BFE317CB4BFAA40C, ___carStopCheckDelay_19)),static_cast<int32_t>(offsetof(Car_t1AF5AAAECFBC5A0599D39EA6BFE317CB4BFAA40C, ___upgradeEffect_20)),static_cast<int32_t>(offsetof(Car_t1AF5AAAECFBC5A0599D39EA6BFE317CB4BFAA40C, ___velocityBeforeSpline_21)),};
+	static_cast<int32_t>(offsetof(Car_t1AF5AAAECFBC5A0599D39EA6BFE317CB4BFAA40C, ____voxelCollider_4)),static_cast<int32_t>(offsetof(Car_t1AF5AAAECFBC5A0599D39EA6BFE317CB4BFAA40C, ____directionalArrow_5)),static_cast<int32_t>(offsetof(Car_t1AF5AAAECFBC5A0599D39EA6BFE317CB4BFAA40C, ____splineFollower_6)),static_cast<int32_t>(offsetof(Car_t1AF5AAAECFBC5A0599D39EA6BFE317CB4BFAA40C, ____rigidbody_7)),static_cast<int32_t>(offsetof(Car_t1AF5AAAECFBC5A0599D39EA6BFE317CB4BFAA40C, ___trailsContainer_8)),static_cast<int32_t>(offsetof(Car_t1AF5AAAECFBC5A0599D39EA6BFE317CB4BFAA40C, ___followTrackSpeedMultiple_9)),static_cast<int32_t>(offsetof(Car_t1AF5AAAECFBC5A0599D39EA6BFE317CB4BFAA40C, ____midAirControl_10)),static_cast<int32_t>(offsetof(Car_t1AF5AAAECFBC5A0599D39EA6BFE317CB4BFAA40C, ___startPosition_11)),static_cast<int32_t>(offsetof(Car_t1AF5AAAECFBC5A0599D39EA6BFE317CB4BFAA40C, ___parent_12)),static_cast<int32_t>(offsetof(Car_t1AF5AAAECFBC5A0599D39EA6BFE317CB4BFAA40C, ____transform_13)),static_cast<int32_t>(offsetof(Car_t1AF5AAAECFBC5A0599D39EA6BFE317CB4BFAA40C, ___carMeshes_14)),static_cast<int32_t>(offsetof(Car_t1AF5AAAECFBC5A0599D39EA6BFE317CB4BFAA40C, ___isShooted_15)),static_cast<int32_t>(offsetof(Car_t1AF5AAAECFBC5A0599D39EA6BFE317CB4BFAA40C, ___deltaDist_16)),static_cast<int32_t>(offsetof(Car_t1AF5AAAECFBC5A0599D39EA6BFE317CB4BFAA40C, ___carStopCheckCurrentDelay_17)),static_cast<int32_t>(offsetof(Car_t1AF5AAAECFBC5A0599D39EA6BFE317CB4BFAA40C, ___lastPos_18)),static_cast<int32_t>(offsetof(Car_t1AF5AAAECFBC5A0599D39EA6BFE317CB4BFAA40C, ___carStopCheckDelay_19)),static_cast<int32_t>(offsetof(Car_t1AF5AAAECFBC5A0599D39EA6BFE317CB4BFAA40C, ___upgradeEffect_20)),static_cast<int32_t>(offsetof(Car_t1AF5AAAECFBC5A0599D39EA6BFE317CB4BFAA40C, ___velocityBeforeSpline_21)),static_cast<int32_t>(offsetof(Car_t1AF5AAAECFBC5A0599D39EA6BFE317CB4BFAA40C, ___playingScaleAnim_22)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5755[7] = 
 {
 	static_cast<int32_t>(offsetof(CarMidAirControl_t2FE80E710D9AD79CBB820ED19FA762AF11ECBC10, ____swereMovement_4)),static_cast<int32_t>(offsetof(CarMidAirControl_t2FE80E710D9AD79CBB820ED19FA762AF11ECBC10, ___minMaxAngle_5)),static_cast<int32_t>(offsetof(CarMidAirControl_t2FE80E710D9AD79CBB820ED19FA762AF11ECBC10, ___rb_6)),static_cast<int32_t>(offsetof(CarMidAirControl_t2FE80E710D9AD79CBB820ED19FA762AF11ECBC10, ___sensitivity_7)),static_cast<int32_t>(offsetof(CarMidAirControl_t2FE80E710D9AD79CBB820ED19FA762AF11ECBC10, ___x_8)),static_cast<int32_t>(offsetof(CarMidAirControl_t2FE80E710D9AD79CBB820ED19FA762AF11ECBC10, ___y_9)),static_cast<int32_t>(offsetof(CarMidAirControl_t2FE80E710D9AD79CBB820ED19FA762AF11ECBC10, ___z_10)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5756[7] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5756[4] = 
 {
-	static_cast<int32_t>(offsetof(U3CfillSliderU3Ed__5_t189BEE18919E57F30CC390AD709C392BD321DFA5, ___U3CU3E1__state_0)),static_cast<int32_t>(offsetof(U3CfillSliderU3Ed__5_t189BEE18919E57F30CC390AD709C392BD321DFA5, ___U3CU3E2__current_1)),static_cast<int32_t>(offsetof(U3CfillSliderU3Ed__5_t189BEE18919E57F30CC390AD709C392BD321DFA5, ___U3CU3E4__this_2)),static_cast<int32_t>(offsetof(U3CfillSliderU3Ed__5_t189BEE18919E57F30CC390AD709C392BD321DFA5, ___val_3)),static_cast<int32_t>(offsetof(U3CfillSliderU3Ed__5_t189BEE18919E57F30CC390AD709C392BD321DFA5, ___U3CanimTimeU3E5__2_4)),static_cast<int32_t>(offsetof(U3CfillSliderU3Ed__5_t189BEE18919E57F30CC390AD709C392BD321DFA5, ___U3CcurTimeU3E5__3_5)),static_cast<int32_t>(offsetof(U3CfillSliderU3Ed__5_t189BEE18919E57F30CC390AD709C392BD321DFA5, ___U3CsliderValU3E5__4_6)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5757[3] = 
+	static_cast<int32_t>(offsetof(DestructionCheck_t11E79790521BF5B5CA5E7F5248CA357A684C6E9C, ___destructionPercentageRequired_4)),static_cast<int32_t>(offsetof(DestructionCheck_t11E79790521BF5B5CA5E7F5248CA357A684C6E9C, ___greenSlider_5)),static_cast<int32_t>(offsetof(DestructionCheck_t11E79790521BF5B5CA5E7F5248CA357A684C6E9C, ___redSlider_6)),static_cast<int32_t>(offsetof(DestructionCheck_t11E79790521BF5B5CA5E7F5248CA357A684C6E9C, ___finalBombs_7)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5758[8] = 
 {
-	static_cast<int32_t>(offsetof(DestructionCheck_t11E79790521BF5B5CA5E7F5248CA357A684C6E9C, ___destructionPercentageRequired_4)),static_cast<int32_t>(offsetof(DestructionCheck_t11E79790521BF5B5CA5E7F5248CA357A684C6E9C, ___destructionSlider_5)),static_cast<int32_t>(offsetof(DestructionCheck_t11E79790521BF5B5CA5E7F5248CA357A684C6E9C, ___finalBombs_6)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5759[13] = 
+	static_cast<int32_t>(offsetof(RopeDynamics_t640BEC66E2EFD445BAEC7DEBCD0691CE8EC643C2, ___ropes_4)),static_cast<int32_t>(offsetof(RopeDynamics_t640BEC66E2EFD445BAEC7DEBCD0691CE8EC643C2, ___radiusLimits_5)),static_cast<int32_t>(offsetof(RopeDynamics_t640BEC66E2EFD445BAEC7DEBCD0691CE8EC643C2, ___resolutionLimits_6)),static_cast<int32_t>(offsetof(RopeDynamics_t640BEC66E2EFD445BAEC7DEBCD0691CE8EC643C2, ___stiffnessLimits_7)),static_cast<int32_t>(offsetof(RopeDynamics_t640BEC66E2EFD445BAEC7DEBCD0691CE8EC643C2, ___ropeMat_8)),static_cast<int32_t>(offsetof(RopeDynamics_t640BEC66E2EFD445BAEC7DEBCD0691CE8EC643C2, ___colourGradient_9)),static_cast<int32_t>(offsetof(RopeDynamics_t640BEC66E2EFD445BAEC7DEBCD0691CE8EC643C2, ___seatLerpValue_10)),static_cast<int32_t>(offsetof(RopeDynamics_t640BEC66E2EFD445BAEC7DEBCD0691CE8EC643C2, ____swereMovement_11)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5759[14] = 
 {
-	static_cast<int32_t>(offsetof(SlingshotController_tD087C49495F77E408672AA7CB6BE2A5BAEB0BDA0, ___car_4)),static_cast<int32_t>(offsetof(SlingshotController_tD087C49495F77E408672AA7CB6BE2A5BAEB0BDA0, ___movementTransform_5)),static_cast<int32_t>(offsetof(SlingshotController_tD087C49495F77E408672AA7CB6BE2A5BAEB0BDA0, ___rotationTransform_6)),static_cast<int32_t>(offsetof(SlingshotController_tD087C49495F77E408672AA7CB6BE2A5BAEB0BDA0, ___minMaxRotation_7)),static_cast<int32_t>(offsetof(SlingshotController_tD087C49495F77E408672AA7CB6BE2A5BAEB0BDA0, ____swerveMovement_8)),static_cast<int32_t>(offsetof(SlingshotController_tD087C49495F77E408672AA7CB6BE2A5BAEB0BDA0, ___swerveX_9)),static_cast<int32_t>(offsetof(SlingshotController_tD087C49495F77E408672AA7CB6BE2A5BAEB0BDA0, ___swerveZ_10)),static_cast<int32_t>(offsetof(SlingshotController_tD087C49495F77E408672AA7CB6BE2A5BAEB0BDA0, ___rb_11)),static_cast<int32_t>(offsetof(SlingshotController_tD087C49495F77E408672AA7CB6BE2A5BAEB0BDA0, ___carShootForce_12)),static_cast<int32_t>(offsetof(SlingshotController_tD087C49495F77E408672AA7CB6BE2A5BAEB0BDA0, ___idle_13)),static_cast<int32_t>(offsetof(SlingshotController_tD087C49495F77E408672AA7CB6BE2A5BAEB0BDA0, ___aiming_14)),static_cast<int32_t>(offsetof(SlingshotController_tD087C49495F77E408672AA7CB6BE2A5BAEB0BDA0, ___powerPercentageText_15)),static_cast<int32_t>(offsetof(SlingshotController_tD087C49495F77E408672AA7CB6BE2A5BAEB0BDA0, ___rotationVector_16)),};
+	static_cast<int32_t>(offsetof(SlingshotController_tD087C49495F77E408672AA7CB6BE2A5BAEB0BDA0, ___car_4)),static_cast<int32_t>(offsetof(SlingshotController_tD087C49495F77E408672AA7CB6BE2A5BAEB0BDA0, ____ropeDynamics_5)),static_cast<int32_t>(offsetof(SlingshotController_tD087C49495F77E408672AA7CB6BE2A5BAEB0BDA0, ___movementTransform_6)),static_cast<int32_t>(offsetof(SlingshotController_tD087C49495F77E408672AA7CB6BE2A5BAEB0BDA0, ___rotationTransform_7)),static_cast<int32_t>(offsetof(SlingshotController_tD087C49495F77E408672AA7CB6BE2A5BAEB0BDA0, ___minMaxRotation_8)),static_cast<int32_t>(offsetof(SlingshotController_tD087C49495F77E408672AA7CB6BE2A5BAEB0BDA0, ____swerveMovement_9)),static_cast<int32_t>(offsetof(SlingshotController_tD087C49495F77E408672AA7CB6BE2A5BAEB0BDA0, ___swerveX_10)),static_cast<int32_t>(offsetof(SlingshotController_tD087C49495F77E408672AA7CB6BE2A5BAEB0BDA0, ___swerveZ_11)),static_cast<int32_t>(offsetof(SlingshotController_tD087C49495F77E408672AA7CB6BE2A5BAEB0BDA0, ___rb_12)),static_cast<int32_t>(offsetof(SlingshotController_tD087C49495F77E408672AA7CB6BE2A5BAEB0BDA0, ___carShootForce_13)),static_cast<int32_t>(offsetof(SlingshotController_tD087C49495F77E408672AA7CB6BE2A5BAEB0BDA0, ___idle_14)),static_cast<int32_t>(offsetof(SlingshotController_tD087C49495F77E408672AA7CB6BE2A5BAEB0BDA0, ___aiming_15)),static_cast<int32_t>(offsetof(SlingshotController_tD087C49495F77E408672AA7CB6BE2A5BAEB0BDA0, ___powerPercentageText_16)),static_cast<int32_t>(offsetof(SlingshotController_tD087C49495F77E408672AA7CB6BE2A5BAEB0BDA0, ___rotationVector_17)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5760[1] = 
 {
 	static_cast<int32_t>(offsetof(SplineTrigger_t365232BCF32C4EA6447E42E6267FBD80B4494BE8, ____splineComputer_4)),};

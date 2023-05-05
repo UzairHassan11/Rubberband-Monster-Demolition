@@ -12,8 +12,11 @@ public class RewardTrigger : MonoBehaviour
                 MMVibrationManager.Haptic(HapticTypes.LightImpact);
                 GameManager.instance.uiManager.GiveReward(other.transform);
             }
+
             // other.transform.root.DOScale(Vector3.zero, 1).SetDelay(3);
             other.gameObject.SetActive(false);
+            ParticlesController.instance.SpawnParticle(ParticlesNames.WaterSplash, other.transform, 0,
+                new Vector3(0, 1, 0));
         }
     }
 }

@@ -1500,9 +1500,9 @@ namespace VoxelDestruction
         {
             float animTime = 1;
             yield return _waitFor5Seconds;
-            t.GetChild(0).DOScale(Vector3.zero, .5f);
-            yield return _waitFor1Seconds;
-            t.gameObject.SetActive(false);
+            t.GetChild(0).DOScale(0.001f, .5f);
+            // yield return _waitFor1Seconds;
+            // t.gameObject.SetActive(false);
         }
     }
     

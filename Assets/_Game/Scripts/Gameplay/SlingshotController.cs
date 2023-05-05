@@ -7,6 +7,8 @@ public class SlingshotController : MonoBehaviour
     #region vars
 
     [SerializeField] private Car car;
+
+    [SerializeField] private RopeDynamics _ropeDynamics;
     
     [SerializeField] private Transform movementTransform, rotationTransform;
 
@@ -52,6 +54,7 @@ public class SlingshotController : MonoBehaviour
             MapRotation();
             AssignPercentageText();
             ContinuousHaptic.instance.PlayContinuousHaptic();
+            _ropeDynamics.MapValues();
         }
         
         if (aiming)
@@ -93,6 +96,7 @@ public class SlingshotController : MonoBehaviour
         movementTransform.DOLocalMoveX(0, .15f);
         movementTransform.DOLocalMoveZ(_swerveMovement.minMaxZ.y, .15f);
         rotationTransform.DOLocalRotate(Vector3.zero, .15f);
+        _ropeDynamics.MapValues(true);
     }
 
     void AssignPercentageText()

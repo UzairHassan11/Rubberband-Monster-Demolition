@@ -172,7 +172,7 @@ public class UiManager : MonoBehaviour
     private WaitForSeconds waitPerFragmentRewardDelay;
     public void GiveReward(Transform t)
     {
-        // StartCoroutine(giveReward(t));
+        StartCoroutine(giveReward(t));
         AddCash(rewardPerBaseFragment * UpgradesManager.instance.upgrades[2].GetCurrentActualValue);
     }
 
