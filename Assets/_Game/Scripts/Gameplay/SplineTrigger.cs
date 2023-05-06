@@ -1,6 +1,5 @@
 using Dreamteck.Splines;
 using UnityEngine;
-using VoxelDestruction;
 
 public class SplineTrigger : MonoBehaviour
 {

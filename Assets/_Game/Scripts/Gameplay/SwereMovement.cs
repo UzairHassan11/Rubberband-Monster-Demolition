@@ -96,7 +96,7 @@ public class SwereMovement : MonoBehaviour
         // if(!start)
         
         upgradeEffect.gameObject.SetActive(true);
-        upgradeEffect.Play();
+        upgradeEffect.Play(true);
     }
 
     [SerializeField] private ParticleSystem upgradeEffect;

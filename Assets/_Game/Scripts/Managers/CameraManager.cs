@@ -35,6 +35,14 @@ public class CameraManager : MonoBehaviour
     {
         animator.CrossFade(camState.ToString(), .1f);
     }
+
+    [SerializeField] private int customIndex;
+
+    [ContextMenu("SetCustomIndex")]
+    void SetCustomIndex()
+    {
+        SetAnimatorState(customIndex);
+    }
     
     public void SetAnimatorState(int index)
     {
@@ -53,6 +61,7 @@ public class CameraManager : MonoBehaviour
 
     public void Change_GP_Cam_Follow_Offset(bool inSling)
     {
+        if(GP_transposer)
         DOTween.To(() => GP_transposer.m_TrackedObjectOffset, x => GP_transposer.m_TrackedObjectOffset = x,
             (inSling ? inSlingOffset : shootOffset), .5f);
     }
@@ -62,6 +71,7 @@ public enum CamStates
 {
     start,
     gameplay,
+    gameplay2,
     endPoint,
     finalMomentum,
     win

@@ -3659,8 +3659,8 @@ MonoBehaviour:
   failPanel: {fileID: 6258945295016927595}
   cashObject: {fileID: 0}
   plusCash: {fileID: 4521621898688142806}
-  rewardPerBaseFragment: 5
-  perFragmentRewardDelay: 0.5
+  rewardPerBaseFragment: 1
+  perFragmentRewardDelay: 0
 --- !u!1 &7948929781722042439
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,4 +1,3 @@
-using _Game.Scripts.Gameplay;
 using DG.Tweening;
 using Dreamteck.Splines;
 using MoreMountains.NiceVibrations;
@@ -8,6 +7,8 @@ using VoxelDestruction;
 public class Car : MonoBehaviour
 {
     #region vars
+
+    [SerializeField] private bool toonLevel;
 
     [SerializeField] private VoxelCollider _voxelCollider;
     
@@ -31,13 +32,13 @@ public class Car : MonoBehaviour
 
     [SerializeField] private GameObject []carMeshes;
 
-    private bool isShooted;
+    private bool isShooted, followingSpline, goneForRamp;
 
     private float deltaDist, carStopCheckCurrentDelay = 0;
 
     private Vector3 lastPos;
 
-    [SerializeField] private float carStopCheckDelay = .1f;
+    [SerializeField] private float carStopCheckDelay = .1f, minMovementDelta = .2f;
 
     [SerializeField] private ParticleSystem upgradeEffect;
     
@@ -52,6 +53,7 @@ public class Car : MonoBehaviour
         parent = _transform.parent;
         AssignCollisionScale();
         lastPos = _transform.position;
+        AssignCarsStyle();
     }
 
     private void Update()
@@ -61,7 +63,7 @@ public class Car : MonoBehaviour
             _midAirControl.ControlAfterRamp();
         }
 
-        if (isShooted)
+        if (isShooted && !followingSpline && !goneForRamp)
         {
             if (carStopCheckCurrentDelay < carStopCheckDelay)
             {
@@ -72,7 +74,6 @@ public class Car : MonoBehaviour
                 if (IfCarStopped())
                 {
                     isShooted = false;
-                    print("CarStopped");
                     Invoke("CarStopped", 1f);
                 }
                 else
@@ -81,6 +82,9 @@ public class Car : MonoBehaviour
                 }
             }
         }
+
+        if (goneForRamp)
+            _rigidbody.maxAngularVelocity = 5;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -118,19 +122,7 @@ public class Car : MonoBehaviour
 
     #endregion
     
-    #region others
-
-    void CarHitVoxel()
-    {
-        isShooted = false;
-        carStopCheckCurrentDelay = 0;
-        CameraManager.instance.SetAnimatorState(CamStates.endPoint);
-        MMVibrationManager.Haptic(HapticTypes.HeavyImpact);
-        ParticlesController.instance.SpawnParticle(ParticlesNames.Explosion, _transform);
-        GameManager.instance.ChangeGameState(GameState.Idle, 4);
-        // CameraManager.instance.TurnSpeedFx(false);
-        SoundManager.Instance.PlaySound(ClipName.Break);
-    }
+    #region movement-related
 
     void CarStopped()
     {
@@ -144,34 +136,39 @@ public class Car : MonoBehaviour
     bool IfCarStopped()
     {
         //return _rigidbody.velocity.magnitude < 0.1f;
-        return Vector3.Distance(_transform.position, lastPos) == 0;
-    }
-    
-    public void TurnDirectionalArrow(bool state)
-    {
-        _directionalArrow.TurnIt(state);
+        // print(Vector3.Distance(_transform.position, lastPos).ToString("F1"));
+        return Vector3.Distance(_transform.position, lastPos) < minMovementDelta;
     }
 
     private float velocityBeforeSpline;
     public void FollowSpline(SplineComputer sCom)
     {
+        followingSpline = true;
         velocityBeforeSpline = _rigidbody.velocity.magnitude;
         _rigidbody.Sleep();
+        // if(_rigidbody==null)
+        //     print("_rigidbody==null");
         _rigidbody.useGravity = false;
         _rigidbody.velocity = Vector3.zero;
+        // if(sCom==null)
+        //     print("sCom==null");
         _splineFollower.spline = sCom;
         _splineFollower.followSpeed = velocityBeforeSpline * followTrackSpeedMultiple;
+        _splineFollower.SetDistance(0);
         _splineFollower.follow = true;
     }
     public void ContinueAfterSpline()
     {
+        // _rigidbody.constraints = RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezeRotationX;
+        followingSpline = false;
+        goneForRamp = true;
         _splineFollower.follow = false;
         ShootCar(velocityBeforeSpline);
     }
     
     public void ShootCar(float speed)
     {
-        isShooted = true;
+        Invoke("CheckCarDelta", carStopCheckDelay);
         trailsContainer.SetActive(true);
         _rigidbody.transform.parent = null;
         _rigidbody.useGravity = true;
@@ -179,23 +176,48 @@ public class Car : MonoBehaviour
         CameraManager.instance.Change_GP_Cam_Follow_Offset(false);
     }
 
+    void CheckCarDelta()
+    {
+        isShooted = true;
+    }
+    
     #endregion
 
+    #region other
+
+    void CarHitVoxel()
+    {
+        isShooted = false;
+        carStopCheckCurrentDelay = 0;
+        CameraManager.instance.SetAnimatorState(CamStates.endPoint);
+        MMVibrationManager.Haptic(HapticTypes.HeavyImpact);
+        ParticlesController.instance.SpawnParticle(ParticlesNames.Explosion, _transform);
+        GameManager.instance.ChangeGameState(GameState.Idle, 4);
+        // CameraManager.instance.TurnSpeedFx(false);
+        SoundManager.Instance.PlaySound(ClipName.Break);
+    }
+    
+    public void TurnDirectionalArrow(bool state)
+    {
+        _directionalArrow.TurnIt(state);
+    }
+    
     public void AssignCollisionScale(
         // bool start = false
-        )
+    )
     {
-        
         _voxelCollider.collisionScale = UpgradesManager.instance.upgrades[1].GetCurrentActualValue;
         AssignCarMesh(UpgradesManager.instance.upgrades[1].NextUpgrade);
         // if(!start)
         upgradeEffect.gameObject.SetActive(true);
-        upgradeEffect.Play();
+        upgradeEffect.Play(true);
     }
 
     public void ResetMe()
     {
         // _rigidbody.constraints = RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezeRotationX;
+        goneForRamp = false;
+        followingSpline = false;
         _rigidbody.Sleep();
         _transform.rotation = Quaternion.identity;
         _transform.position = startPosition;
@@ -203,6 +225,10 @@ public class Car : MonoBehaviour
         lastPos = _transform.position;
         CameraManager.instance.Change_GP_Cam_Follow_Offset(true);
     }
+
+    #endregion
+
+    #region car-meshes
 
     private bool playingScaleAnim;
     void AssignCarMesh(int i)
@@ -230,4 +256,16 @@ public class Car : MonoBehaviour
             }
         }
     }
+
+    private void AssignCarsStyle()
+    {
+        for (int j = 0; j < carMeshes.Length; j++)
+        {
+            carMeshes[j].GetComponent<MeshRenderer>().enabled = toonLevel;
+            carMeshes[j].transform.GetChild(0).gameObject.SetActive(toonLevel);
+            carMeshes[j].transform.GetChild(1).gameObject.SetActive(!toonLevel);
+        }
+    }
+
+    #endregion
 }
