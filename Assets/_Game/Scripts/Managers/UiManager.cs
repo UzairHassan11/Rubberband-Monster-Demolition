@@ -38,6 +38,9 @@ public class UiManager : MonoBehaviour
 
     [SerializeField] private Transform cashObject;
     
+    public Joystick _joystick;
+
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -48,8 +51,15 @@ public class UiManager : MonoBehaviour
             // GameAnalytics.NewProgressionEvent(GAProgressionStatus.Start, "LevelStart", LevelNumberAnalytics);
         }
 
+        Invoke("ShowStartPanel", 1);
         waitPerFragmentRewardDelay = new WaitForSeconds(perFragmentRewardDelay);
         AddCash(0);
+    }
+
+    public void TurnJoystick(bool state)
+    {
+        _joystick.GetComponent<CanvasGroup>().alpha = state ? .3f : 0;
+        _joystick.GetComponent<Image>().raycastTarget = state;
     }
 
     public void ShowStartPanel()

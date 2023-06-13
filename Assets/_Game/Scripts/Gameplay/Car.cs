@@ -26,6 +26,8 @@ public class Car : MonoBehaviour
 
     private Vector3 startPosition;
 
+    private Quaternion startRotation;
+
     private Transform parent;
     
     Transform _transform;
@@ -49,7 +51,7 @@ public class Car : MonoBehaviour
     private void Start()
     {
         _transform = transform;
-        startPosition = _transform.position;
+        startPosition = _transform.localPosition;
         parent = _transform.parent;
         AssignCollisionScale();
         lastPos = _transform.position;
@@ -63,7 +65,9 @@ public class Car : MonoBehaviour
             _midAirControl.ControlAfterRamp();
         }
 
-        if (isShooted && !followingSpline && !goneForRamp)
+        if (isShooted && !followingSpline 
+                      && !goneForRamp
+                      )
         {
             if (carStopCheckCurrentDelay < carStopCheckDelay)
             {
@@ -73,8 +77,8 @@ public class Car : MonoBehaviour
             {
                 if (IfCarStopped())
                 {
-                    isShooted = false;
-                    Invoke("CarStopped", 1f);
+                    // isShooted = false;
+                    Invoke("CarStopped", .5f);
                 }
                 else
                 {
@@ -84,7 +88,7 @@ public class Car : MonoBehaviour
         }
 
         if (goneForRamp)
-            _rigidbody.maxAngularVelocity = 5;
+            _rigidbody.maxAngularVelocity = 1;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -94,6 +98,8 @@ public class Car : MonoBehaviour
             trailsContainer.SetActive(false);
             // _rigidbody.constraints = RigidbodyConstraints.FreezeRotationZ;
             GameManager.instance.ChangeGameState(GameState.FinalMomentum);
+            GameManager.instance.uiManager.TurnJoystick(true);
+            SoundManager.Instance.PlaySound(ClipName.Ramp);
             MMVibrationManager.Haptic(HapticTypes.MediumImpact);
         }
         // else if (other.CompareTag("Finish"))
@@ -110,13 +116,17 @@ public class Car : MonoBehaviour
     {
         if (collision.collider.name.Contains("VoxelModel"))
         {
-            if(isShooted)
+            if (isShooted)
+            {
                 CarHitVoxel();
+            }
         }
         else if (collision.collider.CompareTag("Finish"))
         {
-            isShooted = false;
-            Invoke("CarStopped", 1f);
+            // print("Finish");
+            GameManager.instance.uiManager.TurnJoystick(false);
+            CameraManager.instance.SetAnimatorState(CamStates.endPoint);
+            Invoke("CarStopped", .5f);
         }
     }
 
@@ -126,9 +136,14 @@ public class Car : MonoBehaviour
 
     void CarStopped()
     {
+        if (!isShooted)
+        {
+            return;
+        }
         isShooted = false;
         lastPos = _transform.position;
         carStopCheckCurrentDelay = 0;
+        GameManager.instance.uiManager.TurnJoystick(false);
         GameManager.instance.ChangeGameState(GameState.Idle, .5f);
         // CameraManager.instance.TurnSpeedFx(false);
     }
@@ -136,8 +151,13 @@ public class Car : MonoBehaviour
     bool IfCarStopped()
     {
         //return _rigidbody.velocity.magnitude < 0.1f;
-        // print(Vector3.Distance(_transform.position, lastPos).ToString("F1"));
+        // print(Vector3.Distance(_transform.position, lastPos).ToString("F3"));
         return Vector3.Distance(_transform.position, lastPos) < minMovementDelta;
+    }
+
+    public void AssignSpline(SplineComputer sCom)
+    {
+        _splineFollower.spline = sCom;
     }
 
     private float velocityBeforeSpline;
@@ -153,6 +173,7 @@ public class Car : MonoBehaviour
         // if(sCom==null)
         //     print("sCom==null");
         _splineFollower.spline = sCom;
+        // _splineFollower.spline = null;
         _splineFollower.followSpeed = velocityBeforeSpline * followTrackSpeedMultiple;
         _splineFollower.SetDistance(0);
         _splineFollower.follow = true;
@@ -163,6 +184,7 @@ public class Car : MonoBehaviour
         followingSpline = false;
         goneForRamp = true;
         _splineFollower.follow = false;
+        _splineFollower.spline = null;
         ShootCar(velocityBeforeSpline);
     }
     
@@ -187,6 +209,7 @@ public class Car : MonoBehaviour
 
     void CarHitVoxel()
     {
+        GameManager.instance.uiManager.TurnJoystick(false);
         isShooted = false;
         carStopCheckCurrentDelay = 0;
         CameraManager.instance.SetAnimatorState(CamStates.endPoint);
@@ -219,9 +242,9 @@ public class Car : MonoBehaviour
         goneForRamp = false;
         followingSpline = false;
         _rigidbody.Sleep();
-        _transform.rotation = Quaternion.identity;
-        _transform.position = startPosition;
         _transform.parent = parent;
+        _transform.localPosition = startPosition;
+        _transform.localEulerAngles = Vector3.zero;
         lastPos = _transform.position;
         CameraManager.instance.Change_GP_Cam_Follow_Offset(true);
     }

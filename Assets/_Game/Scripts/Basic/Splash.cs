@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Facebook.Unity;
 
 public class Splash : MonoBehaviour
 {
@@ -15,12 +16,7 @@ public class Splash : MonoBehaviour
     void Start()
     {
         //Invoke("LoadScene", 2);
-        SceneManager.LoadScene(1);
-    }
-
-    void LoadScene()
-    {
-        SceneManager.LoadScene(1);
-
+        FB.Init("494146132843012");
+        SceneManager.LoadScene(LevelNumberPref);
     }
 }

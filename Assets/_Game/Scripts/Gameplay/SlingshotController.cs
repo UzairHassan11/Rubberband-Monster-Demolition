@@ -41,7 +41,7 @@ public class SlingshotController : MonoBehaviour
                 aiming = true;
                 car.TurnDirectionalArrow(true);
                 TurnPercentageText(true);
-                SoundManager.Instance.PlaySound(ClipName.Rope);
+                SoundManager.Instance.PlayRopeLoop(true);
             }
         }
         
@@ -67,6 +67,7 @@ public class SlingshotController : MonoBehaviour
                 ShootCar();
                 car.TurnDirectionalArrow(false);
                 TurnPercentageText(false);
+                SoundManager.Instance.PlayRopeLoop(false);
             }
         }
         // arrowMat.SetTextureOffset();
@@ -87,7 +88,7 @@ public class SlingshotController : MonoBehaviour
     {
         float speed = Mathf.Lerp(carShootForce.x, carShootForce.y, _swerveMovement.GetPercentage());
         //CameraManager.instance.TurnSpeedFx(true);
-        car.ShootCar(speed);
+            car.ShootCar(speed);
     }
 
     void ResetSlingshot()

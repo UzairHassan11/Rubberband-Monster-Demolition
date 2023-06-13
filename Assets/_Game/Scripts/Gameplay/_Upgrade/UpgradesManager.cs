@@ -1,5 +1,4 @@
 using System;
-// using MoreMountains.NiceVibrations;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -138,6 +137,7 @@ public class Upgrade
             
             UpgradesManager.instance.UpdateAllButtons();
             UpgradesManager.instance.UpgradeAnim(upgradeButton.transform);
+            SoundManager.Instance.PlaySound(ClipName.Upgrade);
             // if (!animatingUpgradeText)
             // {
             //     animatingUpgradeText = true;

@@ -7,7 +7,7 @@
 		public static SoundManager Instance { get; private set; }
 		public AudioSource  bgSoundSource;
 		// [SerializeField] AudioSource  bgAmbienceSoundSource;
-		[SerializeField] AudioSource  sFXSoundSource;
+		[SerializeField] AudioSource  sFXSoundSource, ropeLoop;
 
 		public AudioClip bgClip;
 		// public AudioClip bgAmbienceClip;
@@ -70,12 +70,22 @@
 			if(GameSettings.Instance.toggleStatusSFX)
 				sFXSoundSource.PlayOneShot(_audioClips[index]);
 		}
+		public void PlayRopeLoop(bool play)
+		{
+			if(GameSettings.Instance.toggleStatusSFX)
+				if(play)
+					ropeLoop.Play();
+				else
+					ropeLoop.Pause();
+		}
 	}
 // }
 //class end
 public enum ClipName
 {
 	Button,
-	Rope,
-	Break
+	Ramp,
+	Break,
+	Water,
+	Upgrade
 }

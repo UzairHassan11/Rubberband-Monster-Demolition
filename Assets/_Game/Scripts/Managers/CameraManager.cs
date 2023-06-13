@@ -4,7 +4,6 @@ using DG.Tweening;
 
 public class CameraManager : MonoBehaviour
 {
-    
     #region singleton
 
     public static CameraManager instance;
@@ -23,14 +22,21 @@ public class CameraManager : MonoBehaviour
     [SerializeField] private CinemachineVirtualCamera GP_Cam;
 
     [SerializeField] private Vector3 inSlingOffset, shootOffset;
+    [SerializeField] private Vector3 inSlingRotation, shootRotation;
 
     private CinemachineFramingTransposer GP_transposer;
 
     private void Start()
     {
         GP_transposer = GP_Cam.GetCinemachineComponent<CinemachineFramingTransposer>();
+        Invoke("SwitchToStartCam", 1);
     }
 
+    void SwitchToStartCam()
+    {
+        SetAnimatorState(0);
+    }
+    
     public void SetAnimatorState(CamStates camState)
     {
         animator.CrossFade(camState.ToString(), .1f);
@@ -64,6 +70,8 @@ public class CameraManager : MonoBehaviour
         if(GP_transposer)
         DOTween.To(() => GP_transposer.m_TrackedObjectOffset, x => GP_transposer.m_TrackedObjectOffset = x,
             (inSling ? inSlingOffset : shootOffset), .5f);
+        // GP_Cam.transform.localEulerAngles = inSling ? inSlingRotation : shootRotation;
+        // GP_Cam.transform.DOLocalRotate(inSling ? inSlingRotation : shootRotation, .5f);
     }
 }
 [System.Serializable]

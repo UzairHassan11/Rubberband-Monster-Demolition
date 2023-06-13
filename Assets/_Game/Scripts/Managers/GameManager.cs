@@ -66,11 +66,11 @@ public class GameManager : MonoBehaviour
             _slingshotController.ResetCar();
             uiManager.ShowStartPanel();
         }
-        else if (currentGameState == GameState.FinalMomentum &&
-                 requestedState == GameState.Win)
+        else if (requestedState == GameState.Win)
         {
             currentGameState = requestedState;
             uiManager.ShowWinPanel(2);
+            UpgradesManager.instance.ResetAllUpdates();
             //Time.timeScale = 1;
             CameraManager.instance.SetAnimatorState(CamStates.endPoint);
         }
@@ -84,6 +84,12 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    [ContextMenu("win")]
+    public void Win()
+    {
+        ChangeGameState(GameState.Win);
+    }
+    
     public void ChangeGameState(GameState requestedState, float delay)
     {
         StartCoroutine(ChangeGameStateWithDelay(requestedState, delay));
